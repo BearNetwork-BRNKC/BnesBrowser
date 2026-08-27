@@ -8,7 +8,7 @@
 # Execution:
 #
 #   pwsh -NoProfile -ExecutionPolicy Bypass `
-#       -File S:\Ai_Agent\BNES\bnes-brave-core\run_remaining.ps1 `
+#       -File S:\Ai_Agent\BNES\BnesBrowser\run_remaining.ps1 `
 #       -SafeBuild
 #
 # Optional:
@@ -62,7 +62,7 @@
 #   This system intentionally refuses to guess when upstream
 #   changes cross a BNES ownership boundary.
 #
-# pwsh -NoProfile -ExecutionPolicy Bypass ` -File S:\Ai_Agent\BNES\bnes-brave-core\run_remaining.ps1 `-SafeBuild
+# pwsh -NoProfile -ExecutionPolicy Bypass ` -File S:\Ai_Agent\BNES\BnesBrowser\run_remaining.ps1 `-SafeBuild
 #
 # ============================================================
 
@@ -91,7 +91,7 @@ $OutName = 'Release_GN'
 $SetupName = 'BnesBrowser_setup.exe'
 $SetupPath = Join-Path $BuildRoot $SetupName
 
-$BnesCore = 'S:\Ai_Agent\BNES\bnes-brave-core'
+$BnesCore = 'S:\Ai_Agent\BNES\BnesBrowser'
 
 $BnesStateDir = Join-Path $BuildRoot '.bnes'
 $SnapshotRoot = Join-Path $BnesStateDir 'snapshots'
@@ -423,7 +423,7 @@ function Get-GitState {
 # SOURCE OWNERSHIP
 #
 # BNES canonical source:
-#   S:\Ai_Agent\BNES\bnes-brave-core
+#   S:\Ai_Agent\BNES\BnesBrowser
 #
 # Build projection:
 #   E:\BnesBrowser-build\src\brave
@@ -2321,7 +2321,7 @@ function Invoke-VerifyOnly {
 
     Invoke-BnesProtectedOverlayGuard `
         -TreeRoot $BnesCore `
-        -Label 'source bnes-brave-core'
+        -Label 'source BnesBrowser'
 
     if (Test-Path -LiteralPath $BraveDir -PathType Container) {
 
@@ -2591,7 +2591,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BnesCore `
-            -Label 'source bnes-brave-core'
+            -Label 'source BnesBrowser'
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
@@ -2700,7 +2700,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BnesCore `
-            -Label 'source bnes-brave-core FINAL'
+            -Label 'source BnesBrowser FINAL'
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
@@ -2771,7 +2771,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BnesCore `
-            -Label 'source bnes-brave-core POST-BUILD'
+            -Label 'source BnesBrowser POST-BUILD'
 
         Invoke-BnesProtectedOverlayGuard `
             -Root $BraveDir `
