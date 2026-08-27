@@ -16,6 +16,12 @@
 #   -Init
 #       Run pnpm run init before build.
 #
+#   -AllowUpstreamSync
+#       Explicitly allow ONE upstream Brave/Chromium gclient sync.
+#       BNES is now independent from Brave; the only acknowledged upstream
+#       is https://github.com/BearNetwork-BRNKC/BnesBrowser.git.
+#       Without this switch, -Init is REFUSED and will not sync with Brave.
+#
 #   -MapOnly
 #       Perform BNES projection only and stop before build.
 #
@@ -70,6 +76,7 @@
 param(
     [switch]$MapOnly,
     [switch]$Init,
+    [switch]$AllowUpstreamSync,
     [switch]$SafeBuild,
     [switch]$Rollback,
     [switch]$VerifyOnly,
@@ -1391,6 +1398,68 @@ function Initialize-BnesEnvironment {
 # INIT CHROMIUM / BRAVE
 # ============================================================
 
+function Invoke-BnesRemotePolicy {
+    param(
+        [switch]$AttemptingSync
+    )
+
+    $upstreamUrl = [string]''
+
+    $gitDir = Join-Path $BnesCore '.git'
+
+    if (Test-Path -LiteralPath $gitDir -PathType Container) {
+        Push-Location $BnesCore
+        try {
+            $upstreamUrl = ((git remote get-url upstream 2>$null) | Out-String).Trim()
+        }
+        catch {
+            $upstreamUrl = [string]''
+        }
+        finally {
+            Pop-Location
+        }
+    }
+
+    if (-not $AttemptingSync) {
+        if ([string]::IsNullOrWhiteSpace($upstreamUrl)) {
+            Write-Info "未設定 git remote 'upstream'（符合 BNES 獨立政策，最快）。"
+        }
+        elseif ($upstreamUrl -like '*brave/*') {
+            Write-Warn "偵測到 git remote 'upstream' 仍指向 Brave：$upstreamUrl"
+            Write-Warn 'BNES 目前唯一認同的上游是 BearNetwork-BRNKC/BnesBrowser。'
+            Write-Warn "建議移除：git -C $BnesCore remote remove upstream"
+        }
+        else {
+            Write-Info "git remote 'upstream' = $upstreamUrl"
+        }
+        return
+    }
+
+    if ([string]::IsNullOrWhiteSpace($upstreamUrl)) {
+        Write-Info '未設定上游 remote；允許 sync。'
+        return
+    }
+
+    if ($upstreamUrl -like '*brave/*') {
+        Write-Warn "偵測到 git remote 'upstream' 仍指向 Brave：$upstreamUrl"
+        throw @"
+UPSTREAM REMOTE POLICY VIOLATION
+
+git remote 'upstream' 仍指向 Brave：
+$upstreamUrl
+
+BNES 已獨立於 Brave，唯一認同的上游是：
+https://github.com/BearNetwork-BRNKC/BnesBrowser.git
+
+此系統拒絕對 Brave 做 gclient sync（-Init）。
+請先移除該 remote：
+  git -C $BnesCore remote remove upstream
+"@
+    }
+
+    Write-Info "上游 remote 非 Brave，允許 sync：$upstreamUrl"
+}
+
 function Invoke-UpstreamInit {
 
     Write-Stage '上游 Chromium / Brave toolchain initialization'
@@ -1398,6 +1467,33 @@ function Invoke-UpstreamInit {
     if (-not $Init -and -not (Get-EnvFlag 'INIT_CHROMIUM')) {
         Write-Info '未要求 INIT_CHROMIUM，略過 upstream init。'
         return 0
+    }
+
+    Write-Stage 'BNES 上游同步政策稽核'
+
+    Invoke-BnesRemotePolicy -AttemptingSync $true
+
+    # --------------------------------------------------------
+    # BNES 已獨立於 Brave。封裝打包不應對 Brave 做 gclient sync。
+    # 需要 -Init 時，必須同時明確給 -AllowUpstreamSync 才會放行。
+    # --------------------------------------------------------
+    if (-not $AllowUpstreamSync) {
+        throw @'
+UPSTREAM SYNC REFUSED BY BNES POLICY
+
+你要求執行 upstream init（pnpm run init = gclient sync）。
+但 BNES 已與 Brave 分叉，唯一認同的上游是：
+  https://github.com/BearNetwork-BRNKC/BnesBrowser.git
+
+封裝打包不應對 Brave/Chromium 做同步。
+
+若你真的需要一次上游 sync（例如 Chromium 大版本升級），
+必須同時明確傳入：
+
+  pwsh ...\run_remaining.ps1 -SafeBuild -Init -AllowUpstreamSync
+
+並確認 git remote 'upstream' 不是 brave/brave-core。
+'@
     }
 
     $lockFiles =
@@ -2401,6 +2497,8 @@ try {
     }
 
     New-BoundaryManifest
+
+    Invoke-BnesRemotePolicy -AttemptingSync $false
 
     # --------------------------------------------------------
     # SPECIAL COMMANDS
