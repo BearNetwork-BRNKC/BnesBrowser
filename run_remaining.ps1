@@ -506,7 +506,32 @@ $syncIgnore = @(
     'gn-project-generators',
     'bat-native-tweetnacl',
     'depot_tools',
-    'omaha'
+    'omaha',
+    # ------------------------------------------------------------------
+    # BNES 分叉版修正 (2026-08-27):
+    # 以下是 gclient / hooks 下載的真實編譯依賴。它們在 BnesBrowser
+    # (canonical) 中只是空 stub（已被 .gitignore 排除，不會 commit），
+    # 只有建構目錄 E:\...\src\brave 有真實內容可供 ninja 編譯。
+    # 若不加進 syncIgnore，Sync-BnesTree 的 Remove-StaleBnesPaths(SAFEDEL)
+    # 會把它們當成「E 有、S 缺」的過期項整個刪除，且 gclient 又因
+    # hooks3.log 標記 EXIT=0 而被略過、不會拉回，導致編譯找不到依賴而失敗。
+    # ------------------------------------------------------------------
+    'argon2',
+    'ethash',
+    'bitcoin-core',
+    'playlist_component',
+    'bip39wally-core-native',
+    'cryptography',
+    'reclient_configs',
+    'node',
+    'node-win-x64',
+    'wintun',
+    'brave-vpn-wireguard-nt-dlls',
+    'brave-vpn-wireguard-tunnel-dlls',
+    'rust',
+    'wasm',
+    'opengrep',
+    'ast-grep'
 )
 
 # ============================================================
