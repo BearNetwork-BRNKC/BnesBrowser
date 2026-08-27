@@ -1,0 +1,12 @@
+diff --git a/components/content_settings/renderer/content_settings_agent_impl.h b/components/content_settings/renderer/content_settings_agent_impl.h
+index bae7a3cfa6b360a4c646b859baec73f9613c98f7..823e170dc3379453c5ed56e02ba467257d92d310 100644
+--- a/components/content_settings/renderer/content_settings_agent_impl.h
++++ b/components/content_settings/renderer/content_settings_agent_impl.h
+@@ -97,6 +97,7 @@ class ContentSettingsAgentImpl
+   void SetRendererContentSettingRulesForTest(
+       const RendererContentSettingRules& rules);
+ 
++  BRAVE_CONTENT_SETTINGS_AGENT_IMPL_H_
+  protected:
+   // Allow this to be overridden by tests.
+   virtual void BindContentSettingsManager(

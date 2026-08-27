@@ -1,0 +1,13 @@
+diff --git a/chrome/android/java/src/org/chromium/chrome/browser/bookmarks/BookmarkManagerOpenerImpl.java b/chrome/android/java/src/org/chromium/chrome/browser/bookmarks/BookmarkManagerOpenerImpl.java
+index 75ccf8c948cd0df61be7b7ba6808f32fedd21a27..d6629d468be8d7834b03f6463cf5bcb24856b6fe 100644
+--- a/chrome/android/java/src/org/chromium/chrome/browser/bookmarks/BookmarkManagerOpenerImpl.java
++++ b/chrome/android/java/src/org/chromium/chrome/browser/bookmarks/BookmarkManagerOpenerImpl.java
+@@ -101,7 +101,7 @@ public class BookmarkManagerOpenerImpl implements BookmarkManagerOpener {
+         Intent intent =
+                 new Intent(
+                         activity == null ? ContextUtils.getApplicationContext() : activity,
+-                        BookmarkActivity.class);
++                        org.chromium.chrome.browser.app.bookmarks.BraveBookmarkActivity.class);
+         ProfileIntentUtils.addProfileToIntent(profile, intent);
+         intent.setData(Uri.parse(url));
+         if (activity != null) {

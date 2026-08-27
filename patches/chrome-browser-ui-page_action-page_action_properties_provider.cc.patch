@@ -1,0 +1,25 @@
+diff --git a/chrome/browser/ui/page_action/page_action_properties_provider.cc b/chrome/browser/ui/page_action/page_action_properties_provider.cc
+index f1de552ff6cc683c2ae6045b2b29e92a719925f5..f54d83fcdd878d6f026979a6601ff917b850cb02 100644
+--- a/chrome/browser/ui/page_action/page_action_properties_provider.cc
++++ b/chrome/browser/ui/page_action/page_action_properties_provider.cc
+@@ -227,6 +227,20 @@ constexpr auto kPageActionProperties = base::MakeFixedFlatMap<
+             .element_identifier = kAutofillAddressPageActionElementId,
+         },
+     },
++    {
++        kActionShowPartitionedStorage,
++        {
++            .histogram_name = "PartitionedStorage",
++            .type = brave::kPartitionedStorageActionIconType,
++        },
++    },
++    {
++        kActionShowPsstIcon,
++        {
++           .histogram_name = "PsstIcon",
++           .type = brave::kPsstIconActionIconType,
++        },
++    },
+     {
+         kActionVirtualCardEnroll,
+         {

@@ -1,0 +1,12 @@
+diff --git a/scripts/build/typescript/typescript.gni b/scripts/build/typescript/typescript.gni
+index 5c8de4672cc72f45fce139fd9edd0e3c4244aa7f..0a4a5b627950e44ee24c3e31d6ef59bc66626b72 100644
+--- a/scripts/build/typescript/typescript.gni
++++ b/scripts/build/typescript/typescript.gni
+@@ -229,6 +229,7 @@ template("ts_library") {
+ 
+       foreach(src, sources) {
+         _extension = get_path_info(src, "extension")
++        if (label_matches(src, ["//brave/*"])) { src = get_path_info(src, "name") }
+ 
+         # Any .d.ts file does not generate a corresponding a .js file, but we
+         # copy it over into the generated build folder instead, as tsc doesn't

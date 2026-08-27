@@ -1,0 +1,12 @@
+diff --git a/services/network/cors/cors_url_loader.cc b/services/network/cors/cors_url_loader.cc
+index bec00d1713ed0247d588c1735a642f5b68df8fb6..2e1e86ad0922e82f1840177782d335d9afe2dede 100644
+--- a/services/network/cors/cors_url_loader.cc
++++ b/services/network/cors/cors_url_loader.cc
+@@ -985,6 +985,7 @@ void CorsURLLoader::StartRequest() {
+         cors::ShouldAllowUnsafeHeaders(
+             *origin_access_list_, request_.request_initiator, request_.url);
+ 
++    BRAVE_CORS_URL_LOADER_START_REQUEST
+     if (!has_custom_origin_header_with_bypass) {
+       if (tainted_) {
+         request_.headers.SetHeader(net::HttpRequestHeaders::kOrigin,

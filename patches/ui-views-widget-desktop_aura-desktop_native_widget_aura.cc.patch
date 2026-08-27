@@ -1,0 +1,17 @@
+diff --git a/ui/views/widget/desktop_aura/desktop_native_widget_aura.cc b/ui/views/widget/desktop_aura/desktop_native_widget_aura.cc
+index dd1a03dc9476a94328e3a680a87c44a21d6c9b31..c71a5bec8c4616cef40fe1dc885f2009fbc1e6b7 100644
+--- a/ui/views/widget/desktop_aura/desktop_native_widget_aura.cc
++++ b/ui/views/widget/desktop_aura/desktop_native_widget_aura.cc
+@@ -549,10 +549,10 @@ void DesktopNativeWidgetAura::UpdateWindowTransparency() {
+       desktop_window_tree_host_->ShouldWindowContentsBeTransparent();
+ 
+   auto* window_tree_host = desktop_window_tree_host_->AsWindowTreeHost();
+-  window_tree_host->compositor()->SetBackgroundColor(
++  window_tree_host->compositor()->SetBackgroundColor(desktop_window_tree_host_->GetBackgroundColor(
+       transparent
+           ? SK_ColorTRANSPARENT
+-          : GetWidget()->GetColorProvider()->GetColor(ui::kColorFrameActive));
++          : GetWidget()->GetColorProvider()->GetColor(ui::kColorFrameActive)));
+   window_tree_host->window()->SetTransparent(transparent);
+ 
+   content_window_->SetTransparent(transparent);

@@ -1,0 +1,31 @@
+diff --git a/components/sync/service/sync_prefs.cc b/components/sync/service/sync_prefs.cc
+index 0d20f0b7789965ad1d92fde58a0b8667ef067ecb..2b140a320cbfd197e457748bd737106fbc3c032e 100644
+--- a/components/sync/service/sync_prefs.cc
++++ b/components/sync/service/sync_prefs.cc
+@@ -700,6 +700,8 @@ const char* SyncPrefs::GetPrefNameForType(UserSelectableType type) {
+       return prefs::internal::kSyncProductComparison;
+     case UserSelectableType::kCookies:
+       return prefs::internal::kSyncCookies;
++    case UserSelectableType::kAIChat:
++      return prefs::internal::kSyncAIChat;
+   }
+   NOTREACHED();
+ }
+@@ -786,6 +788,8 @@ bool SyncPrefs::IsTypeSupportedInTransportMode(UserSelectableType type) {
+       // ChromeOS-only type.
+       return false;
+ #endif
++    case UserSelectableType::kAIChat:
++      return true;
+   }
+   NOTREACHED();
+ }
+@@ -1180,6 +1184,8 @@ bool SyncPrefs::IsTypeSelectedByDefaultInTransportMode(
+       // All other types are always enabled by default with
+       // kReplaceSyncPromosWithSignInPromos.
+       return IsReplaceSyncPromosWithSignInPromosEnabled();
++    case UserSelectableType::kAIChat:
++      return true;
+   }
+   NOTREACHED();
+ }

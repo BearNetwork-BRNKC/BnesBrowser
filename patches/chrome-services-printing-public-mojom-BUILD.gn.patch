@@ -1,0 +1,12 @@
+diff --git a/chrome/services/printing/public/mojom/BUILD.gn b/chrome/services/printing/public/mojom/BUILD.gn
+index 42b0c6205413d5aed27d4e9a00df77cbba381589..428b628f0e52c853599f49d15e98e87a31ec8a5d 100644
+--- a/chrome/services/printing/public/mojom/BUILD.gn
++++ b/chrome/services/printing/public/mojom/BUILD.gn
+@@ -21,6 +21,7 @@ mojom("mojom") {
+     "//url/mojom:url_mojom_gurl",
+   ]
+ 
++  import("//brave/services/printing/public/mojom/sources.gni") sources += brave_services_printing_public_mojom_sources public_deps += brave_services_printing_public_mojom_public_deps
+   enabled_features = []
+ 
+   if (is_chromeos) {

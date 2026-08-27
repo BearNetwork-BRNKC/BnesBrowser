@@ -1,0 +1,31 @@
+diff --git a/chrome/browser/ui/browser.h b/chrome/browser/ui/browser.h
+index 324951ceb77a20ed5eb85a736cd087166218b077..b353487c1cafdee06e7c1d38bfbdb18ea49772e5 100644
+--- a/chrome/browser/ui/browser.h
++++ b/chrome/browser/ui/browser.h
+@@ -559,6 +559,8 @@ class Browser : public TabStripModelObserver,
+ #endif
+ 
+  private:
++  friend class BookmarkPrefsService;
++  friend class BraveBrowser;
+   friend class BrowserTest;
+   friend class ExclusiveAccessTest;
+   friend class FullscreenControllerInteractiveTest;
+@@ -753,7 +755,7 @@ class Browser : public TabStripModelObserver,
+ 
+   // Handle changes to tab strip model.
+   void OnTabInsertedAt(content::WebContents* contents, int index);
+-  void OnTabClosing(tabs::TabInterface* tab, bool* had_active_modal_dialog);
++  virtual void OnTabClosing(tabs::TabInterface* tab, bool* had_active_modal_dialog);
+   void OnTabDetached(tabs::TabInterface* tab,
+                      bool was_active,
+                      bool had_active_modal_dialog);
+@@ -788,7 +790,7 @@ class Browser : public TabStripModelObserver,
+   //   updates), then scheduled_updates_ is updated for the |source| and update
+   //   pair and a task is scheduled (assuming it isn't running already)
+   //   that invokes ProcessPendingUIUpdates.
+-  void ScheduleUIUpdate(content::WebContents* source, unsigned changed_flags);
++  virtual void ScheduleUIUpdate(content::WebContents* source, unsigned changed_flags);
+ 
+   // Processes all pending updates to the UI that have been scheduled by
+   // ScheduleUIUpdate in scheduled_updates_.

@@ -1,0 +1,19 @@
+diff --git a/components/webui/version/resources/about_version.css b/components/webui/version/resources/about_version.css
+index 33e926a18ce3c9356a3af5c96e406f720fba31f5..4cef90adb27f6b2e8dc9bc09607d8eed4d5d355e 100644
+--- a/components/webui/version/resources/about_version.css
++++ b/components/webui/version/resources/about_version.css
+@@ -39,6 +39,7 @@ body {
+ }
+ 
+ #inner {
++  border-spacing: 0 5px;
+   padding-top: 10px;
+   word-break: break-word;
+ }
+@@ -131,3 +132,6 @@ body {
+   position: fixed;
+   width: 1px;
+ }
++
++.label,
++.version { vertical-align: baseline; }

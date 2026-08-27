@@ -1,0 +1,17 @@
+diff --git a/chrome/browser/ui/autofill/chrome_autofill_client.cc b/chrome/browser/ui/autofill/chrome_autofill_client.cc
+index ef05e909c5c41e003602c087b7e8e792c2877aef..4320619e9ced7122121d411262d38a805b755a0f 100644
+--- a/chrome/browser/ui/autofill/chrome_autofill_client.cc
++++ b/chrome/browser/ui/autofill/chrome_autofill_client.cc
+@@ -276,6 +276,12 @@ ui::ElementIdentifier GetElementId(AutofillClient::IphFeature iph_feature) {
+ // static
+ void ChromeAutofillClient::CreateForWebContents(
+     content::WebContents* web_contents) {
++  if (!FromWebContents(web_contents)) {
++    web_contents->SetUserData(
++        UserDataKey(),
++        base::WrapUnique(new BraveChromeAutofillClient(web_contents)));
++  }
++  return;
+   DCHECK(web_contents);
+   if (!FromWebContents(web_contents)) {
+     web_contents->SetUserData(

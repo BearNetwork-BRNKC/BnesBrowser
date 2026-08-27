@@ -1,0 +1,12 @@
+diff --git a/chrome/utility/BUILD.gn b/chrome/utility/BUILD.gn
+index 500cbc7ed8e76b552a23147279fc233af9649197..f0db97f2fa87c9426c61680635b834338328c0a5 100644
+--- a/chrome/utility/BUILD.gn
++++ b/chrome/utility/BUILD.gn
+@@ -267,6 +267,7 @@ static_library("utility") {
+   if (is_android) {
+     deps += [ "//chrome/services/readaloud" ]
+   }
++  import("//brave/utility/sources.gni") sources += brave_utility_sources deps += brave_utility_deps public_deps += brave_utility_public_deps
+ }
+ 
+ if (!is_android) {

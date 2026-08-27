@@ -1,0 +1,134 @@
+/* Copyright (c) 2021 The Brave Authors. All rights reserved.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+#include "base/feature_list.h"
+
+#include <algorithm>
+#include <optional>
+
+#include "base/check.h"
+#include "base/check_op.h"
+#include "base/containers/flat_map.h"
+#include "base/containers/flat_set.h"
+#include "base/dcheck_is_on.h"
+#include "base/feature_override.h"
+#include "base/no_destructor.h"
+
+namespace base {
+
+static inline bool operator<(const std::reference_wrapper<const Feature>& lhs,
+                             const std::reference_wrapper<const Feature>& rhs) {
+  // Compare internal pointers directly, because there must only ever be one
+  // struct instance for a given feature name.
+  return &lhs.get() < &rhs.get();
+}
+
+namespace internal {
+namespace {
+
+using DefaultStateOverrides =
+    flat_map<std::reference_wrapper<const Feature>, FeatureState>;
+
+using UnsortedDefaultStateOverrides =
+    std::vector<DefaultStateOverrides::value_type>;
+
+constexpr size_t kDefaultStateOverridesReserve = 64 * 4;
+
+UnsortedDefaultStateOverrides& GetUnsortedDefaultStateOverrides() {
+  static NoDestructor<UnsortedDefaultStateOverrides>
+      startup_default_state_overrides([] {
+        UnsortedDefaultStateOverrides v;
+        v.reserve(kDefaultStateOverridesReserve);
+        return v;
+      }());
+  return *startup_default_state_overrides;
+}
+
+const DefaultStateOverrides& GetDefaultStateOverrides() {
+  static const NoDestructor<DefaultStateOverrides> kDefaultStateOverrides([] {
+    DefaultStateOverrides sorted_overrides =
+        std::move(GetUnsortedDefaultStateOverrides());
+    DCHECK_EQ(GetUnsortedDefaultStateOverrides().capacity(), 0u);
+#if !defined(COMPONENT_BUILD)
+    CHECK_GE(kDefaultStateOverridesReserve, sorted_overrides.size())
+        << "kDefaultStateOverridesReserve should be increased";
+#endif
+    return sorted_overrides;
+  }());
+  return *kDefaultStateOverrides;
+}
+
+}  // namespace
+
+FeatureDefaultStateOverrider::FeatureDefaultStateOverrider(
+    std::initializer_list<FeatureOverrideInfo> overrides) {
+  auto& default_state_overrides = GetUnsortedDefaultStateOverrides();
+#if DCHECK_IS_ON()
+  {
+    flat_set<std::reference_wrapper<const Feature>> new_overrides;
+    new_overrides.reserve(overrides.size());
+    for (const auto& override : overrides) {
+      DCHECK(new_overrides.insert(override.first).second)
+          << "Feature " << override.first.get().name
+          << " is duplicated in the current override macros";
+      DCHECK(!std::ranges::any_of(default_state_overrides,
+                                  [&override](const auto& v) {
+                                    return &v.first.get() ==
+                                           &override.first.get();
+                                  }))
+          << "Feature " << override.first.get().name
+          << " has already been overridden";
+    }
+  }
+#endif
+  default_state_overrides.insert(default_state_overrides.end(),
+                                 overrides.begin(), overrides.end());
+}
+
+// Returns the default state override for the given feature, if any.
+// Used by feature_override.h macros to query compile-time overrides.
+FeatureState GetDefaultStateOverrideForFeature(const Feature& feature) {
+  const auto& default_state_overrides = GetDefaultStateOverrides();
+  const auto it = default_state_overrides.find(feature);
+  return it != default_state_overrides.end() ? it->second
+                                             : feature.default_state;
+}
+
+// BNES: helper consumed by the locally-modified upstream
+// FeatureList::IsFeatureOverridden() as a fallback once no runtime override is
+// found. Returns whether the feature has a compile-time default-state override
+// registered via OVERRIDE_FEATURE_DEFAULT_STATES.
+bool IsFeatureOverridden(std::string_view feature_name) {
+  const auto& overrides = GetDefaultStateOverrides();
+  return std::ranges::any_of(overrides, [&](const auto& kv) {
+    return kv.first.get().name == feature_name;
+  });
+}
+
+// BNES: helper consumed by the locally-modified upstream
+// FeatureList::GetStateIfOverridden() as a fallback once no runtime override
+// is found. Returns the enabled state of the compile-time default-state
+// override for |feature|, or nullopt if the feature is not overridden at
+// compile time.
+std::optional<bool> GetStateIfOverridden(const Feature& feature) {
+  const auto& overrides = GetDefaultStateOverrides();
+  const auto it = overrides.find(feature);
+  if (it != overrides.end()) {
+    return it->second == FEATURE_ENABLED_BY_DEFAULT;
+  }
+  return std::nullopt;
+}
+
+}  // namespace internal
+
+// BNES: effective compile-time (default) state of a feature, honoring any
+// compile-time default-state override (OVERRIDE_FEATURE_DEFAULT_STATES).
+FeatureState FeatureList::GetCompileTimeFeatureState(const Feature& feature) {
+  return internal::GetDefaultStateOverrideForFeature(feature);
+}
+
+}  // namespace base
+
+#include <base/feature_list.cc>

@@ -1,0 +1,102 @@
+{
+  "name": "BNES wallet CRX allowlist",
+  "extensionId": "mjkhlgmnolenfmeiobklbfclkmbopinj",
+  "sentinel": "BNES_GUARD wallet-crx-allow",
+  "note": "L0 manifest. Upstream Brave must never delete this file. run_remaining.ps1 fails the build if any required overlay is missing or lost its markers after a merge.",
+  "files": [
+    {
+      "path": "bnes/protected_overlays.json",
+      "owned": "bnes",
+      "mustContain": ["mjkhlgmnolenfmeiobklbfclkmbopinj", "BNES_GUARD wallet-crx-allow"]
+    },
+    {
+      "path": "browser/extensions/bnes_extension_constants.h",
+      "owned": "bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "kBnesWalletExtensionId",
+        "mjkhlgmnolenfmeiobklbfclkmbopinj"
+      ]
+    },
+    {
+      "path": "chromium_src/components/crx_file/crx_verifier.cc",
+      "owned": "brave+bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "ERROR_REQUIRED_PROOF_MISSING",
+        "kBnesWalletCrxId",
+        "mjkhlgmnolenfmeiobklbfclkmbopinj",
+        "Verify_Chromium"
+      ]
+    },
+    {
+      "path": "chromium_src/extensions/browser/crx_installer.h",
+      "owned": "bnes",
+      "mustContain": ["BNES_GUARD wallet-crx-allow", "AllowInstall_ChromiumImpl"]
+    },
+    {
+      "path": "chromium_src/extensions/browser/crx_installer.cc",
+      "owned": "bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "AllowInstall_ChromiumImpl",
+        "IsBnesWalletExtensionId",
+        "OffStoreInstallAllowedFromSettingsPage"
+      ]
+    },
+    {
+      "path": "chromium_src/extensions/browser/install_verifier.h",
+      "owned": "bnes",
+      "mustContain": ["BNES_GUARD wallet-crx-allow", "NeedsVerification_ChromiumImpl"]
+    },
+    {
+      "path": "chromium_src/extensions/browser/install_verifier.cc",
+      "owned": "brave+bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "NeedsVerification_ChromiumImpl",
+        "IsBnesWalletExtensionId",
+        "kBnesWalletExtensionId"
+      ]
+    },
+    {
+      "path": "chromium_src/chrome/browser/download/download_crx_util.cc",
+      "owned": "bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "IsTrustedExtensionDownload_Chromium",
+        "kBnesWalletExtensionId"
+      ]
+    },
+    {
+      "path": "chromium_src/chrome/browser/resources/extensions/drop_overlay.ts",
+      "owned": "bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "drop_overlay-chromium.js",
+        "dragWrapperHandler_",
+        "dragEnabled = true"
+      ]
+    },
+    {
+      "path": "browser/extensions/brave_extension_provider.cc",
+      "owned": "brave+bnes",
+      "mustContain": [
+        "BNES_GUARD wallet-crx-allow",
+        "MustRemainEnabled",
+        "kBnesWalletExtensionId"
+      ]
+    },
+    {
+      "path": "browser/extensions/brave_extension_provider.h",
+      "owned": "brave+bnes",
+      "mustContain": ["BNES_GUARD wallet-crx-allow", "MustRemainEnabled"]
+    }
+  ],
+  "forbidden": [
+    {
+      "path": "brave/chromium_src/chrome/browser/resources/extensions/manager.html.ts",
+      "reason": "Wrong overlay path. chromium_src overlays belong at repo-root chromium_src/, not brave/chromium_src/. This file was previously committed here and never applied."
+    }
+  ]
+}

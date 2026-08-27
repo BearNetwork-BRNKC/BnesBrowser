@@ -1,0 +1,46 @@
+diff --git a/components/sync_device_info/device_info.h b/components/sync_device_info/device_info.h
+index e6d291f4d4a606fb715b42028c3d89b4a46ea23a..1ca0e20fab768796d18bc9a1376b06593bdf3acf 100644
+--- a/components/sync_device_info/device_info.h
++++ b/components/sync_device_info/device_info.h
+@@ -210,7 +210,9 @@ class DeviceInfo {
+                  desktop_to_ios_promo_receiving_types,
+              GlicExperimentalTriggeringState glic_experimental_triggering_state,
+              std::optional<int> glic_experimental_triggering_version,
+-             std::optional<std::string> android_os_build_fingerprint_prefix);
++             std::optional<std::string> android_os_build_fingerprint_prefix,
++             SelfDeleteSupport self_delete_support =
++                 SelfDeleteSupport::kNotSupported);
+ 
+   DeviceInfo& operator=(const DeviceInfo&) = delete;
+ 
+@@ -347,6 +349,22 @@ class DeviceInfo {
+   // Glic. Pass std::nullopt if unavailable.
+   void set_glic_experimental_triggering_version(std::optional<int> version);
+ 
++  DeviceInfo(DeviceInfo&&);
++
++  SelfDeleteSupport self_delete_support() const {
++    return self_delete_support_;
++  }
++  void set_self_delete_support(SelfDeleteSupport self_delete_support) {
++    self_delete_support_ = self_delete_support;
++  }
++  // Gets the OS in string form.
++  std::string GetOSString() const;
++  // Gets the device type in string form.
++  std::string GetDeviceTypeString() const;
++  // Converts the DeviceInfo values to a JS friendly DictionaryValue,
++  // which extension APIs can expose to third party apps.
++  base::DictValue ToValue() const;
++
+  private:
+   // Used by DeepCopyForTesting().
+   DeviceInfo(const DeviceInfo& other);
+@@ -426,6 +444,7 @@ class DeviceInfo {
+   // |IsStoredLocalDeviceInfoStillAccurate| in device_info_sync_bridge.cc or
+   // else changes in that member might not trigger uploads of updated
+   // DeviceInfos.
++  SelfDeleteSupport self_delete_support_;
+ };
+ 
+ }  // namespace syncer

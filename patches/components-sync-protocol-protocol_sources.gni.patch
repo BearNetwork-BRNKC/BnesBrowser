@@ -1,0 +1,9 @@
+diff --git a/components/sync/protocol/protocol_sources.gni b/components/sync/protocol/protocol_sources.gni
+index 362234205f17bba23e8214d6dbce617f1e3099c2..5cc83fbeeb01e55e281a1e302f3f1be61704e16a 100644
+--- a/components/sync/protocol/protocol_sources.gni
++++ b/components/sync/protocol/protocol_sources.gni
+@@ -98,3 +98,4 @@ sync_protocol_sources = [
+   "wifi_configuration_specifics.proto",
+   "workspace_desk_specifics.proto",
+ ]
++import("//brave/components/sync/protocol/protocol_sources.gni") sync_protocol_sources += brave_sync_protocol_sources

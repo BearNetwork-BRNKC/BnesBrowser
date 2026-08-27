@@ -1,0 +1,12 @@
+diff --git a/components/download/public/background_service/clients.h b/components/download/public/background_service/clients.h
+index 6bf051c9a76face5153cd342782059f37c41d7ca..8bdb2889c30e731139a12969f0a2d04743304f7b 100644
+--- a/components/download/public/background_service/clients.h
++++ b/components/download/public/background_service/clients.h
+@@ -49,6 +49,7 @@ enum class DownloadClient {
+ 
+   // New clients should be added above here.
+   BOUNDARY = 8,
++  CUSTOM_LIST_SUBSCRIPTIONS = 255,
+ };
+ 
+ // Get a string that represents a particular client. Used in histograms and

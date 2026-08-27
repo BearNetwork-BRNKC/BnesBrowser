@@ -1,0 +1,12 @@
+diff --git a/base/test/BUILD.gn b/base/test/BUILD.gn
+index dc1a5996fc73b01b2e6b82b60bb51ee67e23e897..03fa3ae07a5dfb06ac43c88d1c0fe78bfa5ef000 100644
+--- a/base/test/BUILD.gn
++++ b/base/test/BUILD.gn
+@@ -427,6 +427,7 @@ static_library("test_support") {
+   # TODO(crbug.com/40031409): Fix code that adds exit-time destructors and
+   # enable the diagnostic by removing this line.
+   configs += [ "//build/config/compiler:no_exit_time_destructors" ]
++  import("//brave/base/sources.gni") sources += brave_base_test_support_sources
+ }
+ 
+ component("proto_test_support") {

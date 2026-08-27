@@ -1,0 +1,13 @@
+diff --git a/chrome/browser/ui/side_panel/side_panel_entry.h b/chrome/browser/ui/side_panel/side_panel_entry.h
+index 2d97e1fc1bad8e58d2f5571f4f7e3daadf4a00d7..a592ba691bca8f3fa4cfe2bd6cbc9c221eabb92d 100644
+--- a/chrome/browser/ui/side_panel/side_panel_entry.h
++++ b/chrome/browser/ui/side_panel/side_panel_entry.h
+@@ -34,7 +34,7 @@ class SidePanelEntry final : public ui::PropertyHandler {
+  public:
+ 
+   // The default and minimum acceptable side panel content width.
+-  static constexpr int kSidePanelDefaultContentWidth = 360;
++  static constexpr int kSidePanelDefaultContentWidth = 400;
+   using CreateContentCallback =
+       base::RepeatingCallback<SidePanelNativeView(SidePanelEntryScope&)>;
+   using Id = SidePanelEntryId;

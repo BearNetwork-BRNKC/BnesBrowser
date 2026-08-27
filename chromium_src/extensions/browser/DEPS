@@ -1,0 +1,6 @@
+include_rules = [
+  "+brave/browser/extensions/bnes_extension_constants.h",
+  "+brave/grit/brave_generated_resources.h",
+  "+extensions/browser/install",
+  "+extensions/common",
+]

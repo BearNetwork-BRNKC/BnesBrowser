@@ -1,0 +1,91 @@
+/* Copyright (c) 2021 The Brave Authors. All rights reserved.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+#ifndef BRAVE_BROWSER_UI_BRAVE_BROWSER_H_
+#define BRAVE_BROWSER_UI_BRAVE_BROWSER_H_
+
+#include <string>
+
+#include "base/containers/flat_set.h"
+#include "base/memory/scoped_refptr.h"
+#include "base/memory/weak_ptr.h"
+#include "chrome/browser/ui/browser.h"
+
+namespace content {
+class WebContents;
+}  // namespace content
+
+class BraveBrowser : public Browser {
+ public:
+  explicit BraveBrowser(const CreateParams& params);
+  ~BraveBrowser() override;
+
+  BraveBrowser(const BraveBrowser&) = delete;
+  BraveBrowser& operator=(const BraveBrowser&) = delete;
+
+  // Browser overrides:
+  void ScheduleUIUpdate(content::WebContents* source,
+                        unsigned changed_flags) override;
+  void OnTabStripModelChanged(
+      TabStripModel* tab_strip_model,
+      const TabStripModelChange& change,
+      const TabStripSelectionChange& selection) override;
+  void BeforeUnloadFired(content::WebContents* source,
+                         bool proceed,
+                         bool* proceed_to_fire_unload) override;
+  void UpdateTargetURL(content::WebContents* source, const GURL& url) override;
+  content::WebContents* AddNewContents(
+      content::WebContents* source,
+      std::unique_ptr<content::WebContents> new_contents,
+      const GURL& target_url,
+      WindowOpenDisposition disposition,
+      const blink::mojom::WindowFeatures& window_features,
+      bool user_gesture,
+      bool* was_blocked) override;
+
+  void OnTabClosing(tabs::TabInterface* tab,
+                    bool* had_active_modal_dialog) override;
+  void TabStripEmpty() override;
+
+  void RunFileChooser(content::RenderFrameHost* render_frame_host,
+                      scoped_refptr<content::FileSelectListener> listener,
+                      const blink::mojom::FileChooserParams& params) override;
+
+  // Returns true when we should ask browser closing to users before handling
+  // any warning/onbeforeunload handlers.
+  bool ShouldAskForBrowserClosingBeforeHandlers();
+
+  // Allows ignoring onbeforeunload handlers when closing selected tabs.
+  void SetTabsToIgnoreBeforeUnloadHandlers(
+      const base::flat_set<tabs::TabHandle>& for_contents);
+
+  void set_ignore_enable_closing_last_tab_pref() {
+    ignore_enable_closing_last_tab_pref_ = true;
+  }
+
+ private:
+  friend class BraveTestLauncherDelegate;
+  friend class WindowClosingConfirmBrowserTest;
+  friend class InProcessBrowserTest;
+
+  // static
+  static void SuppressBrowserWindowClosingDialogForTesting(bool suppress);
+
+  bool AreAllTabsSharedPinnedTabs();
+
+  bool ShouldSuppressDialogs(content::WebContents* source) override;
+
+  // When "kEnableClosingLastTab" is false, browser will try to add new tab in
+  // TabStripEmpty() if there is no tab. But, in some cases, we should not add
+  // new tab, like when user tries to "Bring all tabs" to other window.
+  bool ignore_enable_closing_last_tab_pref_ = false;
+
+  // WebContents for which onbeforeunload handlers should be ignored.
+  base::flat_set<tabs::TabHandle> tabs_closing_with_onbeforeunload_ignore_;
+
+  base::WeakPtrFactory<BraveBrowser> weak_ptr_factory_{this};
+};
+
+#endif  // BRAVE_BROWSER_UI_BRAVE_BROWSER_H_

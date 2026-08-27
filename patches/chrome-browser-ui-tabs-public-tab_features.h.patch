@@ -1,0 +1,22 @@
+diff --git a/chrome/browser/ui/tabs/public/tab_features.h b/chrome/browser/ui/tabs/public/tab_features.h
+index d2fe7e52f189ffb606c67eae8572a4fa4ab09d16..0fbc39f3dc9975b5504633a30a683bbfeddfdcc9 100644
+--- a/chrome/browser/ui/tabs/public/tab_features.h
++++ b/chrome/browser/ui/tabs/public/tab_features.h
+@@ -202,7 +202,7 @@ class TabInterface;
+ class TabFeatures {
+  public:
+   TabFeatures();
+-  ~TabFeatures();
++  virtual ~TabFeatures();
+ 
+   TabFeatures(const TabFeatures&) = delete;
+   TabFeatures& operator=(const TabFeatures&) = delete;
+@@ -360,7 +360,7 @@ class TabFeatures {
+   }
+ 
+   // Called exactly once to initialize features.
+-  void Init(TabInterface& tab, Profile* profile);
++  virtual void Init(TabInterface& tab, Profile* profile);
+ 
+   static ui::UserDataFactoryWithOwner<TabInterface>&
+   GetUserDataFactoryForTesting();

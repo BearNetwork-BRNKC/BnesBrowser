@@ -1,0 +1,24 @@
+diff --git a/tools/metrics/histograms/metadata/page/histograms.xml b/tools/metrics/histograms/metadata/page/histograms.xml
+index f12a33f5ffcb90bd94a409b16eeefa740d61887d..434bbb4f37e46439137c9a8e729865a401760130 100644
+--- a/tools/metrics/histograms/metadata/page/histograms.xml
++++ b/tools/metrics/histograms/metadata/page/histograms.xml
+@@ -652,6 +652,19 @@ chromium-metrics-reviews@google.com.
+   <variant name=".TabSearch"/>
+   <variant name=".TabsFromOtherDevicesSidePanel"/>
+   <variant name=".UserEducation"/>
++<!-- Brave additions, as it is necessary for all types derived from
++BubbleContentsWrapperT.
++-->
++  <variant name=".AIChatPanel"/>
++  <variant name=".BraveNewsPanel"/>
++  <variant name=".CookieListOptInBubblePanel"/>
++  <variant name=".EmailAliasesPanel"/>
++  <variant name=".PlaylistPanel"/>
++  <variant name=".RewardsPanel"/>
++  <variant name=".ShieldsPanel"/>
++  <variant name=".TipPanel"/>
++  <variant name=".VPNPanel"/>
++  <variant name=".WalletPanel"/>
+ </variants>
+ 
+ <!-- LINT.ThenChange(//tools/metrics/histograms/metadata/ui/histograms.xml:TopChromeWebUIName) -->

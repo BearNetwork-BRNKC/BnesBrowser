@@ -1,0 +1,12 @@
+diff --git a/chrome/browser/ui/views/side_panel/BUILD.gn b/chrome/browser/ui/views/side_panel/BUILD.gn
+index a19a0cf63f636d845b3d2785a61706cf104276be..7548851441759c57693c5695ea09c65f98cbd2cf 100644
+--- a/chrome/browser/ui/views/side_panel/BUILD.gn
++++ b/chrome/browser/ui/views/side_panel/BUILD.gn
+@@ -183,6 +183,7 @@ source_set("side_panel") {
+     "//ui/webui",
+   ]
+ 
++  import("//brave/browser/ui/views/side_panel/sources.gni") deps += brave_browser_ui_views_side_panel_deps public_deps += brave_browser_ui_views_side_panel_public_deps
+   if (enable_extensions) {
+     public_deps += [
+       "//extensions/browser",

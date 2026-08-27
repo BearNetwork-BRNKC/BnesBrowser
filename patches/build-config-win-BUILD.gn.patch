@@ -1,0 +1,12 @@
+diff --git a/build/config/win/BUILD.gn b/build/config/win/BUILD.gn
+index 069432bbae2fff5c76785bcbc97ec663e7f04b35..5ee6a877b972d87199fb2d860d4e40f8143b64aa 100644
+--- a/build/config/win/BUILD.gn
++++ b/build/config/win/BUILD.gn
+@@ -177,6 +177,7 @@ config("compiler") {
+     ldflags += [ "/pdbpagesize:16384" ]
+   } else {
+     ldflags += [ "/pdbpagesize:8192" ]
++    import("//brave/build/config/win/config.gni") if (brave_win_use_large_pdb) { ldflags -= [ "/pdbpagesize:8192" ] ldflags += [ "/pdbpagesize:16384" ] }
+   }
+ 
+   if (!is_debug && !is_component_build) {

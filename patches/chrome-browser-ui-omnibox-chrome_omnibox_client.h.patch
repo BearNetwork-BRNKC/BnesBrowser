@@ -1,0 +1,13 @@
+diff --git a/chrome/browser/ui/omnibox/chrome_omnibox_client.h b/chrome/browser/ui/omnibox/chrome_omnibox_client.h
+index 8f9f48449ef292bfbe42488ec21a4f59511047f9..1cb25796e97d8f5973bb4bfc5b20aa3d45504445 100644
+--- a/chrome/browser/ui/omnibox/chrome_omnibox_client.h
++++ b/chrome/browser/ui/omnibox/chrome_omnibox_client.h
+@@ -34,7 +34,7 @@ namespace omnibox {
+ class OmniboxPopupCloser;
+ }  // namespace omnibox
+ 
+-class ChromeOmniboxClient final : public OmniboxClient {
++class ChromeOmniboxClient : public OmniboxClient {
+  public:
+   ChromeOmniboxClient(LocationBar* location_bar,
+                       Browser* browser,

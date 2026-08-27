@@ -1,0 +1,20 @@
+diff --git a/chrome/browser/BUILD.gn b/chrome/browser/BUILD.gn
+index e1d0017fc823e435bf28702d309297b33c296f76..e3c4e25f7e2d95b9480bc932a79b6a289fc717bf 100644
+--- a/chrome/browser/BUILD.gn
++++ b/chrome/browser/BUILD.gn
+@@ -4608,6 +4608,7 @@ source_set("browser") {
+   if (!is_android) {
+     deps += [ "//chrome/browser/contextual_cueing/internals" ]
+   }
++  public_deps += [ "//brave/browser:core" ]
+ 
+   # This target intentionally has no sources of its own and no
+   # allow_circular_includes_from; it only aggregates dependencies. Do NOT add
+@@ -4777,6 +4778,7 @@ group("browser_public_dependencies") {
+       "//components/offline_pages/core/background:background_offliner",
+     ]
+   }
++  import("//brave/browser/sources.gni") public_deps += brave_chrome_browser_public_deps
+ }
+ 
+ # All generated files in //chrome/browser/ depended on by

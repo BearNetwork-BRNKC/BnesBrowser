@@ -1,0 +1,12 @@
+diff --git a/chrome/browser/media/webrtc/webrtc_log_uploader.cc b/chrome/browser/media/webrtc/webrtc_log_uploader.cc
+index d08eb68932594a549da9674e81447c5139f8bd15..d4018c48db2de8856eb50baf125d46f3621d4f92 100644
+--- a/chrome/browser/media/webrtc/webrtc_log_uploader.cc
++++ b/chrome/browser/media/webrtc/webrtc_log_uploader.cc
+@@ -438,6 +438,7 @@ std::string WebRtcLogUploader::CompressLog(WebRtcLogBuffer* buffer) {
+ void WebRtcLogUploader::UploadCompressedLog(
+     WebRtcLogUploader::UploadDoneData upload_done_data,
+     std::unique_ptr<std::string> post_data) {
++  return; // feature disabled in Brave
+   DCHECK_CALLED_ON_VALID_SEQUENCE(main_sequence_checker_);
+ 
+   DecreaseLogCount();

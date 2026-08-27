@@ -1,0 +1,12 @@
+diff --git a/chrome/browser/ui/hid/BUILD.gn b/chrome/browser/ui/hid/BUILD.gn
+index be02bd97b52b52b2369c06899886ed9d44ff03f4..bc1f4393f18f75748b037a11657351de8500ddfd 100644
+--- a/chrome/browser/ui/hid/BUILD.gn
++++ b/chrome/browser/ui/hid/BUILD.gn
+@@ -27,6 +27,7 @@ source_set("hid") {
+     "//services/device/public/cpp/hid",
+     "//ui/base",
+   ]
++  import("//brave/components/brave_wallet/sources.gni") deps += brave_hid_deps
+ }
+ 
+ source_set("unit_tests") {

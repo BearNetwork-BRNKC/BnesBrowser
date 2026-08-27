@@ -1,0 +1,297 @@
+/* Copyright (c) 2024 The Brave Authors. All rights reserved.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+// @ts-expect-error
+import { leoShowAlert } from '//resources/brave/leo.bundle.js'
+import {
+  AsyncDirective,
+  directive,
+  nothing,
+} from '//resources/lit/v3_0/lit.rollup.js'
+import { loadTimeData } from '//resources/js/load_time_data.js'
+
+import {
+  ChangePasswordClientErrorCode,
+  ChangePasswordError,
+  ChangePasswordServerErrorCode,
+} from './change_password.mojom-webui.js'
+import {
+  LoginClientErrorCode,
+  LoginError,
+  LoginServerErrorCode,
+} from './login.mojom-webui.js'
+import {
+  RegisterClientErrorCode,
+  RegisterError,
+  RegisterServerErrorCode,
+} from './register.mojom-webui.js'
+import {
+  ResendVerificationEmailClientErrorCode,
+  ResendVerificationEmailError,
+  ResendVerificationEmailServerErrorCode,
+} from './resend_verification_email.mojom-webui.js'
+import {
+  ResetPasswordClientErrorCode,
+  ResetPasswordError,
+  ResetPasswordServerErrorCode,
+} from './reset_password.mojom-webui.js'
+import { BraveAccountStrings } from './brave_components_webui_strings.js'
+
+// Custom directive that freezes the previously rendered value when `freeze`
+// is true. Similar to Lit's `noChange` (not exported by Chromium's Lit wrapper
+// from //third_party/lit/v3_0/lit.ts), but instead of preventing the update,
+// it reuses the last rendered value.
+class FreezeWhenDirective extends AsyncDirective {
+  private previousValue: unknown = nothing
+
+  render(freeze: boolean, value: unknown): unknown {
+    return freeze ? this.previousValue : (this.previousValue = value)
+  }
+}
+
+export const freezeWhen = directive(FreezeWhenDirective)
+
+// Focuses a <leo-input>'s underlying native <input>.
+// On iOS WebKit, focusing via the shadow root's delegatesFocus leaves the
+// caret painted behind the placeholder (no selection is established).
+// Setting an explicit (empty) selection range forces WebKit to lay the caret
+// out correctly.
+export function focusLeoInput(leoInput: Element | null | undefined) {
+  const input = leoInput?.shadowRoot?.querySelector('input')
+  if (!input) {
+    // Fall back to host focus if the inner input isn't available yet.
+    ;(leoInput as HTMLElement | null | undefined)?.focus()
+    return
+  }
+  input.focus()
+  input.setSelectionRange(input.value.length, input.value.length)
+}
+
+export type Error =
+  | { kind: 'changePassword'; details: ChangePasswordError }
+  | { kind: 'login'; details: LoginError }
+  | { kind: 'register'; details: RegisterError }
+  | { kind: 'resendVerificationEmail'; details: ResendVerificationEmailError }
+  | { kind: 'resetPassword'; details: ResetPasswordError }
+
+const CHANGE_PASSWORD_CLIENT_ERROR_STRINGS: Partial<
+  Record<ChangePasswordClientErrorCode, string>
+> = {}
+
+const CHANGE_PASSWORD_SERVER_ERROR_STRINGS: Partial<
+  Record<ChangePasswordServerErrorCode, string>
+> = {
+  [ChangePasswordServerErrorCode.kTooManyVerifications]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_TOO_MANY_VERIFICATIONS,
+  [ChangePasswordServerErrorCode.kDailyVerificationLimitReachedForEmail]:
+    BraveAccountStrings.BRAVE_ACCOUNT_DAILY_VERIFICATION_LIMIT_REACHED_FOR_EMAIL,
+  [ChangePasswordServerErrorCode.kEmailAlreadyVerified]:
+    BraveAccountStrings.BRAVE_ACCOUNT_PASSWORD_RESET_EMAIL_ALREADY_VERIFIED,
+  [ChangePasswordServerErrorCode.kMaximumCodeVerificationAttemptsExceeded]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_MAXIMUM_CODE_VERIFICATION_ATTEMPTS_EXCEEDED,
+  [ChangePasswordServerErrorCode.kInvalidVerificationCode]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_INVALID_VERIFICATION_CODE,
+  [ChangePasswordServerErrorCode.kTokenHasExpired]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_TOKEN_HAS_EXPIRED,
+}
+
+const LOGIN_CLIENT_ERROR_STRINGS: Partial<
+  Record<LoginClientErrorCode, string>
+> = {
+  [LoginClientErrorCode.kInvalidLoginError]:
+    BraveAccountStrings.BRAVE_ACCOUNT_LOGIN_INCORRECT_PASSWORD,
+}
+
+const LOGIN_SERVER_ERROR_STRINGS: Partial<
+  Record<LoginServerErrorCode, string>
+> = {
+  [LoginServerErrorCode.kEmailNotVerified]:
+    BraveAccountStrings.BRAVE_ACCOUNT_LOGIN_EMAIL_NOT_VERIFIED,
+  [LoginServerErrorCode.kEmailDomainNotSupported]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_EMAIL_DOMAIN_NOT_SUPPORTED,
+  [LoginServerErrorCode.kIncorrectEmail]:
+    BraveAccountStrings.BRAVE_ACCOUNT_LOGIN_INCORRECT_EMAIL,
+  [LoginServerErrorCode.kIncorrectPassword]:
+    BraveAccountStrings.BRAVE_ACCOUNT_LOGIN_INCORRECT_PASSWORD,
+}
+
+const REGISTER_CLIENT_ERROR_STRINGS: Partial<
+  Record<RegisterClientErrorCode, string>
+> = {}
+
+const REGISTER_SERVER_ERROR_STRINGS: Partial<
+  Record<RegisterServerErrorCode, string>
+> = {
+  [RegisterServerErrorCode.kAccountExists]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_ACCOUNT_EXISTS,
+  [RegisterServerErrorCode.kEmailDomainNotSupported]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_EMAIL_DOMAIN_NOT_SUPPORTED,
+  [RegisterServerErrorCode.kTooManyVerifications]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_TOO_MANY_VERIFICATIONS,
+  [RegisterServerErrorCode.kMaximumCodeVerificationAttemptsExceeded]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_MAXIMUM_CODE_VERIFICATION_ATTEMPTS_EXCEEDED,
+  [RegisterServerErrorCode.kInvalidVerificationCode]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_INVALID_VERIFICATION_CODE,
+  [RegisterServerErrorCode.kRegistrationVerificationAlreadyPendingForThisEmail]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_REGISTRATION_VERIFICATION_ALREADY_PENDING_FOR_THIS_EMAIL,
+  [RegisterServerErrorCode.kDailyVerificationLimitReachedForEmail]:
+    BraveAccountStrings.BRAVE_ACCOUNT_DAILY_VERIFICATION_LIMIT_REACHED_FOR_EMAIL,
+  [RegisterServerErrorCode.kTokenHasExpired]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_TOKEN_HAS_EXPIRED,
+}
+
+const RESEND_VERIFICATION_EMAIL_CLIENT_ERROR_STRINGS: Partial<
+  Record<ResendVerificationEmailClientErrorCode, string>
+> = {}
+
+const RESEND_VERIFICATION_EMAIL_SERVER_ERROR_STRINGS: Partial<
+  Record<ResendVerificationEmailServerErrorCode, string>
+> = {
+  [ResendVerificationEmailServerErrorCode.kMaximumEmailSendAttemptsExceeded]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_MAXIMUM_SEND_ATTEMPTS_EXCEEDED,
+  [ResendVerificationEmailServerErrorCode.kEmailAlreadyVerified]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_ALREADY_VERIFIED,
+  [ResendVerificationEmailServerErrorCode.kMaximumCodeVerificationAttemptsExceeded]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_MAXIMUM_CODE_VERIFICATION_ATTEMPTS_EXCEEDED,
+  [ResendVerificationEmailServerErrorCode.kTokenHasExpired]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_TOKEN_HAS_EXPIRED,
+}
+
+const RESET_PASSWORD_CLIENT_ERROR_STRINGS: Partial<
+  Record<ResetPasswordClientErrorCode, string>
+> = {}
+
+const RESET_PASSWORD_SERVER_ERROR_STRINGS: Partial<
+  Record<ResetPasswordServerErrorCode, string>
+> = {
+  [ResetPasswordServerErrorCode.kTooManyVerifications]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_TOO_MANY_VERIFICATIONS,
+  [ResetPasswordServerErrorCode.kAccountDoesNotExist]:
+    BraveAccountStrings.BRAVE_ACCOUNT_ACCOUNT_DOES_NOT_EXIST,
+  [ResetPasswordServerErrorCode.kEmailDomainNotSupported]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_EMAIL_DOMAIN_NOT_SUPPORTED,
+  [ResetPasswordServerErrorCode.kDailyVerificationLimitReachedForEmail]:
+    BraveAccountStrings.BRAVE_ACCOUNT_DAILY_VERIFICATION_LIMIT_REACHED_FOR_EMAIL,
+  [ResetPasswordServerErrorCode.kEmailAlreadyVerified]:
+    BraveAccountStrings.BRAVE_ACCOUNT_PASSWORD_RESET_EMAIL_ALREADY_VERIFIED,
+  [ResetPasswordServerErrorCode.kMaximumCodeVerificationAttemptsExceeded]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_MAXIMUM_CODE_VERIFICATION_ATTEMPTS_EXCEEDED,
+  [ResetPasswordServerErrorCode.kInvalidVerificationCode]:
+    BraveAccountStrings.BRAVE_ACCOUNT_REGISTER_INVALID_VERIFICATION_CODE,
+  [ResetPasswordServerErrorCode.kTokenHasExpired]:
+    BraveAccountStrings.BRAVE_ACCOUNT_RESEND_CONFIRMATION_EMAIL_TOKEN_HAS_EXPIRED,
+}
+
+function getErrorMessageImpl<
+  ClientErrorCode extends
+    | ChangePasswordClientErrorCode
+    | LoginClientErrorCode
+    | RegisterClientErrorCode
+    | ResendVerificationEmailClientErrorCode
+    | ResetPasswordClientErrorCode,
+  ServerErrorCode extends
+    | ChangePasswordServerErrorCode
+    | LoginServerErrorCode
+    | RegisterServerErrorCode
+    | ResendVerificationEmailServerErrorCode
+    | ResetPasswordServerErrorCode,
+>(
+  clientErrorStrings: Partial<Record<ClientErrorCode, string>>,
+  serverErrorStrings: Partial<Record<ServerErrorCode, string>>,
+  error: {
+    clientError?: { errorCode: ClientErrorCode } | null
+    serverError?: {
+      netErrorOrHttpStatus: number
+      errorCode: ServerErrorCode
+    } | null
+  },
+): string {
+  const errorLabel = loadTimeData.getString(
+    BraveAccountStrings.BRAVE_ACCOUNT_ERROR,
+  )
+
+  if (error.clientError) {
+    const stringId = clientErrorStrings[error.clientError.errorCode]
+    if (stringId) {
+      return loadTimeData.getString(stringId)
+    }
+
+    return loadTimeData.getStringF(
+      BraveAccountStrings.BRAVE_ACCOUNT_CLIENT_ERROR,
+      ` (${errorLabel}=${error.clientError.errorCode})`,
+    )
+  }
+
+  const serverError = error.serverError!
+  const stringId = serverErrorStrings[serverError.errorCode]
+  if (stringId) {
+    return loadTimeData.getString(stringId)
+  }
+
+  return loadTimeData.getStringF(
+    BraveAccountStrings.BRAVE_ACCOUNT_SERVER_ERROR,
+    `${serverError.netErrorOrHttpStatus > 0 ? 'HTTP' : 'NET'}=${
+      serverError.netErrorOrHttpStatus
+    }`,
+    `, ${errorLabel}=${serverError.errorCode}`,
+  )
+}
+
+function getErrorMessage(error: Error): string {
+  switch (error.kind) {
+    case 'changePassword':
+      return getErrorMessageImpl(
+        CHANGE_PASSWORD_CLIENT_ERROR_STRINGS,
+        CHANGE_PASSWORD_SERVER_ERROR_STRINGS,
+        error.details,
+      )
+    case 'login':
+      return getErrorMessageImpl(
+        LOGIN_CLIENT_ERROR_STRINGS,
+        LOGIN_SERVER_ERROR_STRINGS,
+        error.details,
+      )
+    case 'register':
+      return getErrorMessageImpl(
+        REGISTER_CLIENT_ERROR_STRINGS,
+        REGISTER_SERVER_ERROR_STRINGS,
+        error.details,
+      )
+    case 'resendVerificationEmail':
+      return getErrorMessageImpl(
+        RESEND_VERIFICATION_EMAIL_CLIENT_ERROR_STRINGS,
+        RESEND_VERIFICATION_EMAIL_SERVER_ERROR_STRINGS,
+        error.details,
+      )
+    case 'resetPassword':
+      return getErrorMessageImpl(
+        RESET_PASSWORD_CLIENT_ERROR_STRINGS,
+        RESET_PASSWORD_SERVER_ERROR_STRINGS,
+        error.details,
+      )
+  }
+}
+
+function showAlert(type: 'success' | 'error', title: string, content: string) {
+  leoShowAlert({ type, title, content }, 0)
+}
+
+export function showSuccess(contentId: string, titleId: string) {
+  showAlert(
+    'success',
+    loadTimeData.getString(titleId),
+    loadTimeData.getString(contentId),
+  )
+}
+
+export function showError(error: Error, titleId?: string) {
+  showAlert(
+    'error',
+    loadTimeData.getString(
+      titleId ?? BraveAccountStrings.BRAVE_ACCOUNT_ERROR_TOAST_TITLE,
+    ),
+    getErrorMessage(error),
+  )
+}

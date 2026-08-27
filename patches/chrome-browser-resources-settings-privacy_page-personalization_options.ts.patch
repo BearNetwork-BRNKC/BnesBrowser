@@ -1,0 +1,52 @@
+diff --git a/chrome/browser/resources/settings/privacy_page/personalization_options.ts b/chrome/browser/resources/settings/privacy_page/personalization_options.ts
+index e69db9c4e25538ac3fb82a3ab383630450beff84..50f8c04057892d0c9c156e68cd24a574d43342c9 100644
+--- a/chrome/browser/resources/settings/privacy_page/personalization_options.ts
++++ b/chrome/browser/resources/settings/privacy_page/personalization_options.ts
+@@ -81,7 +81,7 @@ export class SettingsPersonalizationOptionsElement extends
+     return {
+       syncStatus: Object,
+ 
+-      // <if expr="_google_chrome and not is_chromeos">
++      // <if expr="not is_chromeos">
+       // TODO(dbeam): make a virtual.* pref namespace and set/get this normally
+       // (but handled differently in C++).
+       metricsReportingPref_: {
+@@ -150,7 +150,7 @@ export class SettingsPersonalizationOptionsElement extends
+ 
+   declare syncStatus: SyncStatus;
+ 
+-  // <if expr="_google_chrome and not is_chromeos">
++  // <if expr="not is_chromeos">
+   declare private metricsReportingPref_:
+       chrome.settingsPrivate.PrefObject<boolean>;
+   declare private showRestart_: boolean;
+@@ -201,7 +201,7 @@ export class SettingsPersonalizationOptionsElement extends
+   override ready() {
+     super.ready();
+ 
+-    // <if expr="_google_chrome and not is_chromeos">
++    // <if expr="not is_chromeos">
+     const setMetricsReportingPref = (metricsReporting: MetricsReporting) =>
+         this.setMetricsReportingPref_(metricsReporting);
+     this.addWebUiListener('metrics-reporting-change', setMetricsReportingPref);
+@@ -216,9 +216,11 @@ export class SettingsPersonalizationOptionsElement extends
+         this.setChromeSigninUserChoiceInfo_.bind(this));
+     // </if>
+ 
++    // <if expr="_google_chrome">
+     this.registerHelpBubble(
+         ANONYMIZED_URL_COLLECTION_ID,
+         this.$.urlCollectionToggle.getBubbleAnchor(), {paddingTop: 10});
++    // </if>
+   }
+ 
+   // <if expr="is_chromeos">
+@@ -239,7 +241,7 @@ export class SettingsPersonalizationOptionsElement extends
+   }
+   // </if>
+ 
+-  // <if expr="_google_chrome and not is_chromeos">
++  // <if expr="not is_chromeos">
+   private onMetricsReportingChange_() {
+     const control = this.shadowRoot!.querySelector<SettingsToggleButtonElement>(
+         '#metricsReportingControl');

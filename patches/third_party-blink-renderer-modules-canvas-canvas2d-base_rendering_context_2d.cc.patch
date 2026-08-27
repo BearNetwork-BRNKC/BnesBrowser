@@ -1,0 +1,28 @@
+diff --git a/third_party/blink/renderer/modules/canvas/canvas2d/base_rendering_context_2d.cc b/third_party/blink/renderer/modules/canvas/canvas2d/base_rendering_context_2d.cc
+index 1ab234ddb6343a7280bbbb01602d02693b10f206..ca87bc74f6b942cf4f8acfb5d7b567f496126ddb 100644
+--- a/third_party/blink/renderer/modules/canvas/canvas2d/base_rendering_context_2d.cc
++++ b/third_party/blink/renderer/modules/canvas/canvas2d/base_rendering_context_2d.cc
+@@ -354,6 +354,7 @@ ImageData* BaseRenderingContext2D::getImageData(
+ perfetto::EventContext GetEventContext();
+ 
+ ImageData* BaseRenderingContext2D::getImageDataInternal(
++    BRAVE_GET_IMAGE_DATA_PARAMS
+     int sx,
+     int sy,
+     int sw,
+@@ -515,6 +516,7 @@ ImageData* BaseRenderingContext2D::getImageDataInternal(
+       DCHECK(!bounds.intersect(SkIRect::MakeXYWH(sx, sy, sw, sh)));
+     }
+   }
++  BRAVE_GET_IMAGE_DATA
+ 
+   return image_data;
+ }
+@@ -1187,6 +1189,7 @@ TextMetrics* BaseRenderingContext2D::measureText(const String& text) {
+       return MakeGarbageCollected<TextMetrics>();
+     }
+ 
++    BRAVE_BASE_RENDERING_CONTEXT_2D_MEASURE_TEXT
+     canvas->GetDocument().UpdateStyleAndLayoutTreeForElement(
+         canvas, DocumentUpdateReason::kCanvas);
+   }

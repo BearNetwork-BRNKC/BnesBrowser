@@ -1,0 +1,733 @@
+# Copyright (c) 2025 The Brave Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this file,
+# You can obtain one at https://mozilla.org/MPL/2.0/.
+#
+# rewriters.pyl — ast-grep op specs for plaster. Data only: a Python literal
+# (ast.literal_eval), so no imports, calls, or names.
+#
+# Three op categories, each keyed by an op id "<namespace>.<name>".
+#
+# The namespace says which sources an op may be used on. It is matched against
+# the namespace claiming a plaster's target suffix (`foo.cc.yaml` -> `.cc` ->
+# `cxx`), so two ops may share a name as long as they are in different
+# namespaces. `all` is the global namespace: its ops apply to every target,
+# whatever the suffix, and are what a name falls back to when nothing matches
+# the target's own namespace.
+#
+#   "ast.matcher" — a structural query:
+#       template: ast-grep rule body (the part under `rule:`). Its {placeholder}
+#                 fields are the matcher's inputs; they are inferred from the
+#                 template, not declared.
+#       result:   what each match yields:
+#                 node:     the <tree-sitter kind> each match is.
+#                 captures: optional { name: [candidate, ...] } of values read
+#                 out of the matched code, which a rewriter using this matcher
+#                 may reference as {name} in its `replace` templates. Each
+#                 candidate derives the value from the metavariables the
+#                 template binds, and the first one whose metavariables are all
+#                 bound wins. A value that upstream can spell more than one
+#                 way is expressed as a list, most specific first:
+#                     { "text": "VAR" }        the text $VAR matched.
+#                     { "span": ["A", "B"] }   the source from the start of $A
+#                                              to the start of $B, for a value
+#                                              no single node covers. It takes
+#                                              whatever lies between them, so
+#                                              $B must be the token right after
+#                                              the wanted text.
+#                     { "literal": "void" }    a fixed string, for code that
+#                                              binds nothing; it always
+#                                              resolves, so it is only useful
+#                                              last.
+#                 Captures are resolved lazily, and only the ones a rendered
+#                 template names are read, so a matcher may offer a capture that
+#                 does not resolve for every node it matches. A capture with no
+#                 applicable candidate is an error naming the op and the line.
+#                 Whitespace in a resolved value is collapsed to single spaces,
+#                 since captures are spliced into generated code as a single
+#                 expression -- so a capture suits a declaration or a type, not
+#                 text whose own spacing matters (a string literal, a comment).
+#
+#   "ast.rewriter" — edits each node a matcher finds:
+#       matcher:  id of the "ast.matcher" op locating the node(s).
+#       inputs:   the interface the rewriter requires, so the template it uses
+#                 can be rendered. Distinct from the matcher's captures, which
+#                 the engine supplies per match rather than the caller.
+#       when_set: optional { input: template } making an input optional. When
+#                 the caller passes a non-empty value, {input} renders as that
+#                 template (which may itself read the input, other inputs, and
+#                 captures); when the value is empty, it renders as nothing. It
+#                 is how one op covers a shape with an optional part, instead of
+#                 near-duplicate ops that differ only by a lead or a suffix.
+#       replace:  { re_pattern, replace }, re.sub'd over each match's source;
+#                 `replace` is {input}/{capture}-formatted first (literal
+#                 braces: {{ }}).
+#                 Optional `consume_before` / `consume_after` tokens (also
+#                 {input}-formatted) are folded into the rewritten span when the
+#                 matched node stops short of an adjacent token (e.g. the `:`
+#                 after an access_specifier, the space before a `final`
+#                 specifier, or a class member's leading indentation).
+#       first_match: optional bool; when true only the first match (in source
+#                 order) is rewritten and any later matches are ignored. Use it
+#                 when the matcher can legitimately find several nodes but the
+#                 rewrite belongs to only the first (e.g. a class that reopens
+#                 `private:` more than once).
+#       result:   { node: <kind> } being replaced.
+#
+# An op yields every match in source order; the caller (plaster) decides how
+# many it expects. Input values are injected verbatim into the rule's `regex:`
+# fields, so the caller escapes any regex metacharacters.
+#
+#   "regex_macro" — a named, reusable `regex:` substitution: the templated
+#       equivalent of a substitution's own `regex:` block (see the `Regex`
+#       rewriter), keyed the same way as the ast ops above ("<lang>.<name>").
+#       description: Markdown documenting what the macro is for, meant for a
+#                future `plaster --help <macro>`, the same way a `Rewriter`'s
+#                `HELP` is.
+#       inputs:  the macro's `{placeholder}`s, each documented rather than
+#                bare, since a macro is meant to be read and reused by
+#                someone other than its author: { name, description }, where
+#                `name` is threaded into `pattern`/`re_pattern`/`replace` via
+#                `str.format` and `description` explains what to pass and why.
+#       One of either `pattern` (escaped for you) or `re_pattern`, plus
+#       `replace` and optional `re_flags` -- exactly the fields a
+#       substitution's own `regex:` block takes, applied as one `re.subn`. A
+#       macro need not know the target's current spelling of a value it is
+#       changing (e.g. one of several states a toggle can hold): the pattern
+#       can match every known spelling via alternation and `replace` can
+#       overwrite it wholesale with the wanted one, taken as an input, rather
+#       than the macro inspecting what is there. The substitution's own
+#       `count:` is what tells the caller a match -- and so a change --
+#       actually happened.
+
+{
+    "ast.matcher": {
+
+        # The full method, including a multi-line signature and either its
+        # trailing semicolon (a bodyless declaration) or its inline `{ ... }`
+        # body (a definition). The name is matched by text, so methods
+        # (field_identifier), destructors (destructor_name, e.g. "~Foo") and
+        # constructors (identifier) are all found. Overloads sharing the name
+        # each produce their own match. The result node is a field_declaration
+        # for a bodyless method, a declaration for a bodyless con/destructor,
+        # or a function_definition for one defined inline.
+        #
+        # Templated functions are guaranteed to be skipped.
+        "cxx.find_class_method_decl": {
+            "template": """\
+any:
+  - kind: field_declaration
+  - kind: declaration
+  - all:
+      - kind: function_definition
+      - not:
+          inside:
+            kind: template_declaration
+            stopBy: end
+has:
+  kind: function_declarator
+  stopBy: end
+  has:
+    field: declarator
+    regex: ^{method_name}$
+inside:
+  kind: class_specifier
+  stopBy: end
+  has:
+    field: name
+    regex: ^{class_name}$
+""",
+            "result": {
+                "node": "field_declaration",
+            },
+        },
+
+        # The `private` access specifier opening `class_name`'s private section.
+        # The node is the `private` keyword; the `:` that follows is a separate
+        # token immediately after it. The specifier must be a *direct* member of
+        # `class_name`: its immediate parent is the class body
+        # (field_declaration_list), whose immediate parent is the class. Nesting
+        # through the body with the default (neighbor) `stopBy` -- rather than an
+        # `stopBy: end` ancestor search -- keeps a nested class's own `private:`
+        # from matching the enclosing class.
+        "cxx.find_class_private_section": {
+            "template": """\
+kind: access_specifier
+regex: ^private$
+inside:
+  kind: field_declaration_list
+  inside:
+    kind: class_specifier
+    has:
+      field: name
+      regex: ^{class_name}$
+""",
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # Finds the protected section in a given class.
+        "cxx.find_class_protected_section": {
+            "template": """\
+kind: access_specifier
+regex: ^protected$
+inside:
+  kind: field_declaration_list
+  inside:
+    kind: class_specifier
+    has:
+      field: name
+      regex: ^{class_name}$
+""",
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # Finds the first access specifier after the `public:` section, the
+        # first match being the boundary of the `public:` section.
+        "cxx.find_section_after_public": {
+            "template": """\
+kind: access_specifier
+regex: ^(private|protected)$
+follows:
+  kind: access_specifier
+  regex: ^public$
+  stopBy: end
+inside:
+  kind: field_declaration_list
+  inside:
+    kind: class_specifier
+    has:
+      field: name
+      regex: ^{class_name}$
+""",
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # The body of a class after the `public:` section is found.
+        "cxx.find_class_body_with_public": {
+            "template": """\
+kind: field_declaration_list
+has:
+  kind: access_specifier
+  regex: ^public$
+inside:
+  kind: class_specifier
+  has:
+    field: name
+    regex: ^{class_name}$
+""",
+            "result": {
+                "node": "field_declaration_list",
+            },
+        },
+
+        # The `final` specifier on `class_name`'s declaration (the
+        # virtual_specifier node holding the `final` keyword). Only the
+        # class-head `final` matches; a method's trailing `final` is nested
+        # under its declaration, not directly inside the class.
+        "cxx.find_class_final": {
+            "template": """\
+kind: virtual_specifier
+regex: ^final$
+inside:
+  kind: class_specifier
+  has:
+    field: name
+    regex: ^{class_name}$
+""",
+            "result": {
+                "node": "virtual_specifier",
+            },
+        },
+
+        # The body (compound_statement) of the definition of `function_name`.
+        # The match is the whole `{ ... }` block of the function_definition
+        # whose declarator text is exactly `function_name` -- a qualified
+        # `Class::Method` for a member, or the bare name for a free function.
+        # The function_declarator is reached with `stopBy: end`, so
+        # return-type wrappers (pointer/reference declarators, a trailing return
+        # type) between it and the definition do not matter. Anchoring on the
+        # AST body -- rather than a regex from the signature to the first `{` --
+        # is immune to braces in the parameter list (a `= {}` default argument),
+        # a multi-line signature, or an earlier overload. Each overload sharing
+        # the name yields its own match.
+        #
+        # `return_type` captures the function's return type exactly as upstream
+        # spells it. No single node holds it: the C++ grammar puts a leading
+        # `const` in a type_qualifier *sibling* of the `type` field, hangs `*`
+        # and `&` off the declarator, and leaves `type` as a bare `auto` when
+        # the real type trails the parameter list. So the candidates read, in
+        # order: a trailing return type; else the source from the leading
+        # qualifier to the name (`const std::vector<int>& Foo::Get`); else the
+        # source from the type to the name (`Widget* Foo::Get`, `bool Foo::Is`).
+        # Each of the three parts is optional in the rule, so a con/destructor
+        # -- which has no `type` field at all -- still matches; for it the
+        # candidates fall through to the literal `void`, which is what a body
+        # wrapped in a lambda there returns.
+        "cxx.find_function_body": {
+            "template": """\
+kind: compound_statement
+inside:
+  kind: function_definition
+  all:
+    - has:
+        kind: function_declarator
+        stopBy: end
+        all:
+          - has:
+              field: declarator
+              pattern: $FUNCTION
+              regex: ^{function_name}$
+          - any:
+              - has:
+                  kind: trailing_return_type
+                  has:
+                    kind: type_descriptor
+                    pattern: $TRAILING_RETURN_TYPE
+              - not:
+                  has:
+                    kind: trailing_return_type
+    - any:
+        - has:
+            field: type
+            pattern: $RETURN_TYPE
+        - not:
+            has:
+              field: type
+              pattern: $_
+    - any:
+        - has:
+            kind: type_qualifier
+            pattern: $LEADING_QUALIFIER
+        - not:
+            has:
+              kind: type_qualifier
+""",
+            "result": {
+                "node": "compound_statement",
+                "captures": {
+                    "return_type": [
+                        {
+                            "text": "TRAILING_RETURN_TYPE"
+                        },
+                        {
+                            "span": ["LEADING_QUALIFIER", "FUNCTION"]
+                        },
+                        {
+                            "span": ["RETURN_TYPE", "FUNCTION"]
+                        },
+                        {
+                            "literal": "void"
+                        },
+                    ],
+                },
+            },
+        },
+
+        # The last entry of the enum named `enum_name`: the final `enumerator`
+        # among the ones its body holds. `ofRule` narrows what `nthChild`
+        # counts to entries alone, so a comment sitting after the last entry, or
+        # anywhere else in the body, does not displace it. Anchoring on the
+        # entry, rather than on the body's closing brace, also means the match
+        # never depends on where that brace sits.
+        "cxx.find_last_enum_entry": {
+            "template": """\
+kind: enumerator
+nthChild:
+  position: 1
+  reverse: true
+  ofRule:
+    kind: enumerator
+inside:
+  kind: enumerator_list
+  inside:
+    kind: enum_specifier
+    has:
+      field: name
+      regex: ^{enum_name}$
+""",
+            "result": {
+                "node": "enumerator",
+            },
+        },
+
+        # Every identifier-family token whose text is exactly `class_name`:
+        # type positions (type_identifier), the `Class::` qualifier
+        # (namespace_identifier), the ctor/dtor name and bare uses (identifier),
+        # and the delegating/base name in a member initializer (`: Class(...)`,
+        # a field_identifier). The last is scoped to the name slot (first child
+        # of a field_initializer), so a member access like `other.Class` in the
+        # argument list is left untouched.
+        "cxx.find_class_name_tokens": {
+            "template": """\
+any:
+  - kind: type_identifier
+  - kind: namespace_identifier
+  - kind: identifier
+  - all:
+      - kind: field_identifier
+      - nthChild: 1
+      - inside:
+          kind: field_initializer
+regex: ^{class_name}$
+""",
+            "result": {
+                "node": "identifier",
+            },
+        },
+
+        # A `runtime_enabled_features.json5` feature entry: the object, in
+        # that file's list of features, whose `name` field is `feature_name`.
+        #
+        # Matched through `has`/`all` rather than a `{name: "...", $$$REST}`
+        # as preceeding comments confuse the parser.
+        "js.find_runtime_feature_entry": {
+            "template": """\
+kind: object
+has:
+  kind: pair
+  all:
+    - has:
+        field: key
+        regex: ^name$
+    - has:
+        field: value
+        regex: ^"{feature_name}"$
+""",
+            "result": {
+                "node": "object",
+            },
+        },
+    },
+    "ast.rewriter": {
+
+        # The whole method declaration (multi-line signature and trailing
+        # semicolon included) with `virtual ` inserted before the type. Any
+        # attributes are re-emitted.
+        "cxx.make_virtual": {
+            "matcher": "cxx.find_class_method_decl",
+            "inputs": ["class_name", "method_name"],
+            "replace": {
+                "re_pattern": "^((?:\\[\\[.*?\\]\\]\\s*)*)",
+                "replace": "\\1virtual ",
+            },
+            "result": {
+                "node": "field_declaration",
+            },
+        },
+
+        # The class's first `private:` section with a `friend` declaration
+        # inserted as its first line. The matcher stops at the `private`
+        # keyword, so the op consumes the original `:` and re-emits it. A class
+        # may reopen `private:` more than once, so `first_match` keeps the
+        # friend in the first section only.
+        "cxx.add_friend": {
+            "matcher": "cxx.find_class_private_section",
+            "inputs": ["class_name", "friend_type"],
+            "first_match": True,
+            "replace": {
+                "consume_after": ":",
+                "re_pattern": "$",
+                "replace": ":\\n  friend {friend_type};",
+            },
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # `class_name`'s declaration with its `final` specifier removed, so the
+        # class can be subclassed. `consume_before` also drops the leading space
+        # before `final` so no doubled space is left behind.
+        "cxx.drop_final": {
+            "matcher": "cxx.find_class_final",
+            "inputs": ["class_name"],
+            "replace": {
+                "consume_before": " ",
+                "re_pattern": "^final$",
+                "replace": "",
+            },
+            "result": {
+                "node": "virtual_specifier",
+            },
+        },
+
+        # The function body with `prologue` inserted as its first statement,
+        # right after the opening brace. The matcher lands on the whole
+        # compound_statement, so anchoring the replace on `^{` inserts after the
+        # brace and leaves the rest of the body untouched. The caller passes
+        # `prologue` already indented to the body's first-statement level and
+        # with backslashes escaped for the `re.sub` replacement.
+        "cxx.preempt_function_impl": {
+            "matcher": "cxx.find_function_body",
+            "inputs": ["function_name", "prologue"],
+            "replace": {
+                "re_pattern": "^\\{",
+                "replace": "{{\\n{prologue}",
+            },
+            "result": {
+                "node": "compound_statement",
+            },
+        },
+
+        # The function body wrapped in an immediately-invoked `[&]` lambda, with
+        # `epilogue` appended after it. The matcher lands on the whole
+        # compound_statement; a DOTALL `^{ ... }$` capture folds the entire
+        # upstream body (`\1`) between a lambda prefix and its `}();`
+        # invocation, so the body's own lines are re-emitted verbatim, then
+        # appends `epilogue` as the body's trailing statements. The lambda
+        # states the enclosing function's `return_type` rather than deducing
+        # one, so a body returning `{}` still compiles and a `T&` return is not
+        # quietly deduced to a `T` copy. The caller passes `epilogue` indented
+        # to the body level, with backslashes escaped for the `re.sub`
+        # replacement.
+        # `result_var` is optional: when the caller names one, `when_set`
+        # expands it to a declaration binding the wrapped body's value, and
+        # when it is empty the placeholder renders as nothing, leaving a bare
+        # void wrap. The variable is declared with the same `return_type` the
+        # lambda returns, which keeps a reference or pointer return exactly as
+        # upstream declared it (an `auto` lead would decay `const T&` to a `T`
+        # copy).
+        "cxx.after_function_impl": {
+            "matcher": "cxx.find_function_body",
+            "inputs": ["function_name", "result_var", "epilogue"],
+            "when_set": {
+                "result_var": "{return_type} {result_var} = ",
+            },
+            "replace": {
+                "re_pattern": "(?s)^\\{(.*)\\}$",
+                "replace": "{{\\n  {result_var}[&]() -> {return_type} "
+                "{{\\1  }}();\\n{epilogue}\\n}}",
+            },
+            "result": {
+                "node": "compound_statement",
+            },
+        },
+
+        # Each matched name token replaced with `rename`. The matcher already
+        # pinned every match's text to exactly `class_name`, so the whole token
+        # (`^.+$`) is swapped for the new name.
+        "cxx.rename_class": {
+            "matcher": "cxx.find_class_name_tokens",
+            "inputs": ["class_name", "rename"],
+            "replace": {
+                "re_pattern": "^.+$",
+                "replace": "{rename}",
+            },
+            "result": {
+                "node": "identifier",
+            },
+        },
+
+        # Inserts `code` under an existing `protected:` specifier for the class.
+        "cxx.add_to_protected": {
+            "matcher": "cxx.find_class_protected_section",
+            "inputs": ["class_name", "code"],
+            "first_match": True,
+            "replace": {
+                "consume_after": ":",
+                "re_pattern": "$",
+                "replace": ":\\n{code}",
+            },
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # Inserts a fresh `protected:` section just before an existing
+        # `private:` one, and adds `code` under it. The matched `private`
+        # keyword's own leading whitespace prefixes the new `protected:`, so it
+        # inherits the class's indentation; `code` arrives at the member level
+        # and `indent` re-emits the `private` keyword at its original column.
+        "cxx.add_protected_before_private": {
+            "matcher": "cxx.find_class_private_section",
+            "inputs": ["class_name", "code", "indent"],
+            "first_match": True,
+            "replace": {
+                "re_pattern": "^private$",
+                "replace": "protected:\\n{code}\\n\\n{indent}private",
+            },
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # Appends `code` at the end of `class_name`'s public section, just
+        # before the section that follows it. `consume_before` folds the
+        # keyword's entire leading indentation (`indent`) into the span so the
+        # replacement controls all whitespace: `code` (already member-indented)
+        # becomes the last public line(s), a blank line separates it, then the
+        # boundary keyword (`\1`) is re-emitted at that same `indent`.
+        "cxx.append_to_public_before_section": {
+            "matcher": "cxx.find_section_after_public",
+            "inputs": ["class_name", "code", "indent"],
+            "first_match": True,
+            "replace": {
+                "consume_before": "{indent}",
+                "re_pattern": "^(private|protected)$",
+                "replace": "{code}\\n\\n{indent}\\1",
+            },
+            "result": {
+                "node": "access_specifier",
+            },
+        },
+
+        # Appends `code` at the end of `class_name`'s public section when it is
+        # the last (or only) section, inserting it just before the body's
+        # closing brace. The pattern consumes the final `}` together with the
+        # newline and indentation on its line, so inline method bodies earlier
+        # in the class are left alone and the brace is re-emitted at its
+        # original column (`indent`) after the appended, member-indented `code`.
+        "cxx.append_to_public_before_close": {
+            "matcher": "cxx.find_class_body_with_public",
+            "inputs": ["class_name", "code", "indent"],
+            "first_match": True,
+            "replace": {
+                "re_pattern": "\\n[ \\t]*\\}$",
+                "replace": "\\n{code}\\n{indent}}}",
+            },
+            "result": {
+                "node": "field_declaration_list",
+            },
+        },
+
+        # The enum's max-value entry, the last one, which the caller has already
+        # established is the declared one, replaced by `entries` followed by
+        # that entry itself, its name (`\1`) re-emitted so the match's own
+        # spelling carries over. `entries` arrives with its first line
+        # unindented, the match starting at the column the entry already sits
+        # at, and `indent` opens every line after it.
+        # `value` is optional: when the caller names the entry to re-point at,
+        # `when_set` expands it to the value this one now takes, and when it is
+        # empty the placeholder renders as nothing, which is what an entry
+        # carrying no value of its own needs, since it simply follows on from
+        # whatever was inserted above it.
+        "cxx.insert_enum_entries_before_max_value": {
+            "matcher": "cxx.find_last_enum_entry",
+            "inputs": ["enum_name", "entries", "indent", "value"],
+            "when_set": {
+                "value": " = {value}",
+            },
+            "replace": {
+                "re_pattern": "(?s)^(\\w+).*$",
+                "replace": "{entries}\\n{indent}\\1{value}",
+            },
+            "result": {
+                "node": "enumerator",
+            },
+        },
+
+        # `entries` appended after the enum's last entry, which is re-emitted
+        # (`\1`) with the separator the new entries now require. `comma` is the
+        # separator the source already has, if any: it is folded into the
+        # rewritten span so it cannot be left dangling after the appended
+        # entries, and is empty for a last entry that carries none (the closing
+        # brace allows it). `entries` arrives fully indented, as it opens a
+        # line of its own.
+        "cxx.append_enum_entries_after_last": {
+            "matcher": "cxx.find_last_enum_entry",
+            "inputs": ["enum_name", "entries", "comma"],
+            "replace": {
+                "consume_after": "{comma}",
+                "re_pattern": "(?s)^(.*)$",
+                "replace": "\\1,\\n{entries}",
+            },
+            "result": {
+                "node": "enumerator",
+            },
+        },
+
+        # Both ops below set a feature entry's `base_feature_status`, which is
+        # what forces the default state of the `base::Feature` the entry
+        # generates. Which one applies depends on whether the entry already
+        # declares the field, so the two are paired and chosen between by
+        # `js.set_blink_runtime_enabled_feature_state`'s frontend rewriter.
+        #
+        # We leave a trailing comment on the field, so the substitution always
+        # produces a diff even when upstream's own value already agrees with
+        # ours, as feature flags are preemtively overridden most of the time.
+
+        # The field is absent, so it is inserted directly after `name`. The
+        # negative lookahead is what establishes absence; with the field
+        # present this op matches nothing, and the count check reports it.
+        "js.add_blink_runtime_enabled_feature_state": {
+            "matcher": "js.find_runtime_feature_entry",
+            "inputs": ["feature_name", "value"],
+            "replace": {
+                "re_pattern":
+                    "([ \\t]*)((?<![A-Za-z0-9_])name:\\s*\"[^\"]*\",)"
+                    "(?![\\s\\S]*?(?<![A-Za-z0-9_])base_feature_status:)",
+                "replace":
+                    "\\1\\2\\n\\1base_feature_status: \"{value}\",  "
+                    "// feature state is enforced via plaster rewrite.",
+            },
+            "result": {
+                "node": "object",
+            },
+        },
+
+        # The field is already declared, so only its value changes, wherever
+        # in the entry it sits. Upstream tends to put it last, next to
+        # `copied_from_base_feature_if`, rather than beside `name`. The
+        # optional trailing group swallows a comment an earlier run left, so
+        # reapplying does not stack up copies of it.
+        "js.set_blink_runtime_enabled_feature_state": {
+            "matcher": "js.find_runtime_feature_entry",
+            "inputs": ["feature_name", "value"],
+            "replace": {
+                "re_pattern":
+                    "((?<![A-Za-z0-9_])base_feature_status:\\s*\")[^\"]*(\",)"
+                    "(?:[ \\t]*// feature state is enforced via plaster "
+                    "rewrite\\.)?",
+                "replace":
+                    "\\1{value}\\2  "
+                    "// feature state is enforced via plaster rewrite.",
+            },
+            "result": {
+                "node": "object",
+            },
+        },
+    },
+    "regex_macro": {
+        "cxx.set_feature_flag_default_state": {
+            "description": """\
+Sets a new value to a `BASE_FEATURE` feature flag.
+
+`set_feature_flag_default_state` can be safely used even when the value being
+assigned is already set, with the intent of preventing sliding back.
+
+```yaml
+substitutions:
+  - description: Ship kMyFeature disabled.
+    set_feature_flag_default_state:
+      feature_name: kMyFeature
+      value: base::FEATURE_DISABLED_BY_DEFAULT
+```
+
+```diff
++// kMyFeature feature state is enforced via plaster rewrite.
+ BASE_FEATURE(kMyFeature,
+              "MyFeature",
+-             base::FEATURE_ENABLED_BY_DEFAULT);
++             base::FEATURE_DISABLED_BY_DEFAULT);
+```
+""",
+            "inputs": [
+                {
+                    "name": "feature_name",
+                    "description": "The `BASE_FEATURE` feature flag name, e.g. `kMyFeature`.",
+                },
+                {
+                    "name": "value",
+                    "description": "The new value, e.g. `base::FEATURE_DISABLED_BY_DEFAULT`.",
+                },
+            ],
+            "re_pattern": "([ \\t]*)(BASE_FEATURE\\(\\s*{feature_name}\\s*,)([^;]*,)?(\\s*)[^;]*?(\\);)",
+            "replace": "\\1// {feature_name} feature state is enforced via plaster rewrite.\\n\\1\\2\\3\\4{value}\\5",
+        },
+    },
+}

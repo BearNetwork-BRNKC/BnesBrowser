@@ -1,0 +1,162 @@
+/* Copyright (c) 2025 The Brave Authors. All rights reserved.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+package org.chromium.chrome.browser.ui.messages.snackbar;
+
+import android.app.Activity;
+import android.view.ViewGroup;
+
+import org.chromium.base.Log;
+import org.chromium.base.supplier.NonNullObservableSupplier;
+import org.chromium.build.annotations.NullMarked;
+import org.chromium.build.annotations.Nullable;
+import org.chromium.ui.base.WindowAndroid;
+import org.chromium.ui.modaldialog.ModalDialogManager;
+
+/** Brave's extension of SnackbarManager. */
+@NullMarked
+public class BraveSnackbarManager extends SnackbarManager {
+    private static final String TAG = "BraveSnackbarManager";
+
+    // Will be deleted in bytecode. Variable from the parent class will be used instead.
+    @SuppressWarnings({"UnusedVariable", "HidingField"})
+    protected @Nullable SnackbarView mView;
+
+    private @Nullable Runnable mPendingClickCallback;
+
+    // The single New Tab Takeover notice currently outstanding in this (window-scoped) manager, or
+    // null when none is showing or queued. Each NTP tab creates its own BraveNewTabTakeoverInfobar
+    // but they share this manager, so remembering the live notice here lets a later NTP detect it
+    // and avoid enqueueing a duplicate. It is released from the notice's SnackbarController on
+    // every
+    // dismissal path, and is naturally gone when this manager (and its activity) is destroyed, so
+    // unlike a static flag it cannot leak across sessions or get stuck set.
+    private @Nullable Snackbar mNewTabTakeoverInfobar;
+
+    public BraveSnackbarManager(
+            Activity activity,
+            ViewGroup snackbarParentView,
+            @Nullable WindowAndroid windowAndroid,
+            @Nullable NonNullObservableSupplier<Integer> additionalBottomMarginPxSupplier,
+            @Nullable ModalDialogManager modalDialogManager) {
+        super(
+                activity,
+                snackbarParentView,
+                windowAndroid,
+                additionalBottomMarginPxSupplier,
+                modalDialogManager);
+    }
+
+    public BraveSnackbarManager(
+            Activity activity,
+            ViewGroup snackbarParentView,
+            @Nullable WindowAndroid windowAndroid,
+            @Nullable NonNullObservableSupplier<Integer> additionalBottomMarginPxSupplier,
+            @Nullable ModalDialogManager modalDialogManager,
+            NonNullObservableSupplier<Boolean> persistentFullscreenModeSupplier) {
+        super(
+                activity,
+                snackbarParentView,
+                windowAndroid,
+                additionalBottomMarginPxSupplier,
+                modalDialogManager,
+                persistentFullscreenModeSupplier);
+    }
+
+    @Override
+    public void showSnackbar(Snackbar snackbar) {
+        super.showSnackbar(snackbar);
+
+        tryMakeSnackbarClickable();
+    }
+
+    /** Returns whether a New Tab Takeover notice is currently outstanding (showing or queued). */
+    public boolean hasNewTabTakeoverInfobar() {
+        return mNewTabTakeoverInfobar != null;
+    }
+
+    /**
+     * Shows the given New Tab Takeover notice and remembers it as the single outstanding one (see
+     * {@link #hasNewTabTakeoverInfobar()}). The caller must release it via {@link
+     * #clearNewTabTakeoverInfobar()} from the notice's controller when it is dismissed.
+     */
+    public void showNewTabTakeoverInfobar(Snackbar snackbar) {
+        mNewTabTakeoverInfobar = snackbar;
+        showSnackbar(snackbar);
+    }
+
+    /** Releases the remembered New Tab Takeover notice once it has been dismissed. */
+    public void clearNewTabTakeoverInfobar() {
+        mNewTabTakeoverInfobar = null;
+    }
+
+    /**
+     * Stores the callback to be executed when the snackbar is clicked.
+     *
+     * @param clickCallback Callback to execute when the snackbar is clicked.
+     */
+    public void makeSnackbarClickable(Runnable clickCallback) {
+        if (clickCallback == null) {
+            Log.e(TAG, "makeSnackbarClickable: clickCallback is null");
+            return;
+        }
+
+        mPendingClickCallback = clickCallback;
+    }
+
+    private void tryMakeSnackbarClickable() {
+        if (!isShowing()) {
+            return;
+        }
+
+        if (mView instanceof BraveSnackbarView) {
+            ((BraveSnackbarView) mView).makeClickable(mPendingClickCallback);
+        }
+    }
+
+    /**
+     * Sets custom text on the snackbar with title, page title, and URL.
+     *
+     * @param title The title text (e.g., "Get back to your most recent tab")
+     * @param pageTitle The page title
+     * @param url The URL to display
+     */
+    public void setCustomText(String title, String pageTitle, String url) {
+        if (!isShowing()) {
+            return;
+        }
+
+        if (mView instanceof BraveSnackbarView) {
+            ((BraveSnackbarView) mView).setCustomText(title, pageTitle, url);
+        }
+    }
+
+    /**
+     * Switches the currently showing snackbar to a layout where the action button sits on its own
+     * line below the message, optionally with a trailing close button (see {@link
+     * BraveSnackbarView#setActionBelowMessage(int, String, Runnable)}). Must be called after {@link
+     * #showSnackbar(Snackbar)}.
+     *
+     * @param closeIconResId Drawable resource for the close button. Ignored when {@code
+     *     onCloseCallback} is null.
+     * @param closeContentDescription Accessibility label for the close button, or null.
+     * @param onCloseCallback Invoked when the close button is tapped; when null no close button is
+     *     added.
+     */
+    public void setActionBelowMessage(
+            int closeIconResId,
+            @Nullable String closeContentDescription,
+            @Nullable Runnable onCloseCallback) {
+        if (!isShowing()) {
+            return;
+        }
+
+        if (mView instanceof BraveSnackbarView) {
+            ((BraveSnackbarView) mView)
+                    .setActionBelowMessage(
+                            closeIconResId, closeContentDescription, onCloseCallback);
+        }
+    }
+}

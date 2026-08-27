@@ -1,0 +1,1211 @@
+// Copyright (c) 2023 The Brave Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this file,
+// You can obtain one at https://mozilla.org/MPL/2.0/.
+
+#include "brave/components/ai_chat/core/browser/model_service.h"
+
+#include <algorithm>
+#include <array>
+#include <cstdint>
+#include <ios>
+#include <iterator>
+#include <memory>
+#include <optional>
+#include <ostream>
+#include <string>
+#include <string_view>
+#include <utility>
+
+#include "base/base64.h"
+#include "base/check.h"
+#include "base/check_deref.h"
+#include "base/containers/checked_iterators.h"
+#include "base/functional/bind.h"
+#include "base/logging.h"
+#include "base/memory/scoped_refptr.h"
+#include "base/metrics/field_trial_params.h"
+#include "base/no_destructor.h"
+#include "base/numerics/checked_math.h"
+#include "base/numerics/safe_math.h"
+#include "base/strings/strcat.h"
+#include "base/strings/string_util.h"
+#include "base/uuid.h"
+#include "base/values.h"
+#include "brave/components/ai_chat/core/browser/constants.h"
+#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "brave/components/ai_chat/core/browser/engine/engine_consumer_conversation_api.h"
+#include "brave/components/ai_chat/core/browser/engine/engine_consumer_oai.h"
+#include "brave/components/ai_chat/core/browser/engine/oblivious_http_config_manager.h"
+#include "brave/components/ai_chat/core/browser/model_validator.h"
+#include "brave/components/ai_chat/core/browser/utils.h"
+#include "brave/components/ai_chat/core/common/constants.h"
+#include "brave/components/ai_chat/core/common/features.h"
+#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
+#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "components/grit/brave_components_strings.h"
+#include "components/os_crypt/async/browser/os_crypt_async.h"
+#include "components/prefs/pref_registry_simple.h"
+#include "components/prefs/pref_service.h"
+#include "components/prefs/scoped_user_pref_update.h"
+#include "services/network/public/cpp/shared_url_loader_factory.h"
+#include "ui/base/l10n/l10n_util.h"
+#include "url/gurl.h"
+
+namespace ai_chat {
+class AIChatCredentialManager;
+
+namespace {
+constexpr char kDefaultModelKey[] = "brave.ai_chat.default_model_key";
+constexpr char kCustomModelsList[] = "brave.ai_chat.custom_models";
+constexpr char kCustomModelItemLabelKey[] = "label";
+constexpr char kCustomModelContextSizeKey[] = "context_size";
+constexpr char kCustomModelSystemPromptKey[] = "model_system_prompt";
+constexpr char kCustomModelItemApiKey[] = "api_key";
+constexpr char kCustomModelItemKey[] = "key";
+constexpr char kCustomModelVisionSupport[] = "vision_support";
+constexpr char kCustomModelSupportsTools[] = "supports_tools";
+
+// When adding new models, especially for display, make sure to add the UI
+// strings to ai_chat_ui_strings.grdp and ai_chat/core/constants.cc.
+// This also applies for modifying keys, since some of the strings are based
+// on the model key. Also be sure to migrate prefs if changing or removing
+// keys.
+
+// Llama2 Token Allocation:
+// - Llama2 has a context limit: tokens + max_new_tokens <= 4096
+//
+// Breakdown:
+// - Reserved for max_new_tokens: 400 tokens
+// - Reserved for prompt: 300 tokens
+// - Reserved for page content: 4096 - (400 + 300) = 3396 tokens
+// - Long conversation warning threshold: 3396 * 0.80 = 2716 tokens
+
+// Claude Token Allocation:
+// - Claude has total token limit 100k tokens (75k words)
+//
+// Breakdown:
+// - Reserverd for page content: 100k / 2 = 50k tokens
+// - Long conversation warning threshold: 100k * 0.80 = 80k tokens
+
+const std::vector<mojom::ModelPtr>& GetLeoModels() {
+  // TODO(petemill): When removing kFreemiumAvailable flag, and not having any
+  // BASIC and PREMIUM-only models, remove all the `switchToBasicModel`-related
+  // functions.
+  static const base::NoDestructor<std::vector<mojom::ModelPtr>> kModels([]() {
+    static const auto kFreemiumAccess =
+        features::kFreemiumAvailable.Get()
+            ? mojom::ModelAccess::BASIC_AND_PREMIUM
+            : mojom::ModelAccess::PREMIUM;
+
+    std::vector<mojom::ModelPtr> models;
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->name = "automatic";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = kFreemiumAccess;
+      options->max_associated_content_length = 180000;
+      options->long_conversation_warning_character_limit = 320000;
+
+      auto model = mojom::Model::New();
+      model->key = kChatAutomaticModelKey;
+      model->display_name = "Automatic";
+      model->vision_support = true;
+      model->supports_tools = features::kAutomaticModelSupportsTools.Get();
+      model->supported_capabilities =
+          model->supports_tools
+              ? std::vector{mojom::ConversationCapability::CHAT,
+                            mojom::ConversationCapability::CONTENT_AGENT,
+                            mojom::ConversationCapability::DEEP_RESEARCH}
+              : std::vector{mojom::ConversationCapability::CHAT,
+                            mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = true;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+      models.push_back(std::move(model));
+    }
+
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Anthropic";
+      options->name = kClaudeHaikuModelName;
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = kFreemiumAccess;
+      options->max_associated_content_length = 180000;
+      options->long_conversation_warning_character_limit = 320000;
+
+      auto model = mojom::Model::New();
+      model->key = kClaudeHaikuModelKey;
+      model->display_name = "Claude Haiku";
+      model->vision_support = true;
+      model->supports_tools = true;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::CONTENT_AGENT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Anthropic";
+      options->name = kClaudeSonnetModelName;
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 180000;
+      options->long_conversation_warning_character_limit = 320000;
+
+      auto model = mojom::Model::New();
+      model->key = kClaudeSonnetModelKey;
+      model->display_name = "Claude Sonnet";
+      model->vision_support = true;
+      model->supports_tools = true;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::CONTENT_AGENT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = true;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Alibaba Cloud";
+      options->name = "qwen-14b-instruct";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = features::kFreemiumAvailable.Get()
+                            ? mojom::ModelAccess::BASIC_AND_PREMIUM
+                            : mojom::ModelAccess::BASIC;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-qwen";
+      model->display_name = "Qwen 3.5 35B";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = true;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // GLM 4.7 Flash
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Z.ai";
+      options->name = "glm-4-7-flash";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = features::kFreemiumAvailable.Get()
+                            ? mojom::ModelAccess::BASIC_AND_PREMIUM
+                            : mojom::ModelAccess::BASIC;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-glm-4-7-flash";
+      model->display_name = "GLM 4.7 Flash";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Nemotron Nano 3 30B
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "NVIDIA";
+      options->name = "nemotron-nano-3-30b";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = features::kFreemiumAvailable.Get()
+                            ? mojom::ModelAccess::BASIC_AND_PREMIUM
+                            : mojom::ModelAccess::BASIC;
+      options->max_associated_content_length = 128000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-nemotron-nano-3-30b";
+      model->display_name = "Nemotron Nano 3 30B";
+      model->vision_support = false;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // GPT 5.4
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "OpenAI";
+      options->name = "bedrock-openai.gpt-5.4";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 1088000;
+      options->long_conversation_warning_character_limit = 870400;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-gpt-5-4-bedrock";
+      model->display_name = "GPT 5.4";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Grok 4.3
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "xAI";
+      options->name = "bedrock-xai.grok-4.3";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 1088000;
+      options->long_conversation_warning_character_limit = 870400;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-grok-4-3-bedrock";
+      model->display_name = "Grok 4.3";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Mistral Large 3
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Mistral";
+      options->name = "mistral-large";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-mistral-large";
+      model->display_name = "Mistral Large 3";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Kimi K2.5
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Moonshot AI";
+      options->name = "kimi-k2-5";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-kimi-k2-5";
+      model->display_name = "Kimi K2.5";
+      model->vision_support = false;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Qwen 3.5 122B
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Alibaba Cloud";
+      options->name = "qwen-3-235b";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-qwen-3-235b";
+      model->display_name = "Qwen 3.5 122B";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Deepseek V3.2
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Deepseek";
+      options->name = "deepseek-v3-2";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 64000;
+      options->long_conversation_warning_character_limit = 9700;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-deepseek-v3-2";
+      model->display_name = "Deepseek V3.2";
+      model->vision_support = false;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Claude Opus
+    {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Anthropic";
+      options->name = "claude-opus";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = mojom::ModelAccess::PREMIUM;
+      options->max_associated_content_length = 180000;
+      options->long_conversation_warning_character_limit = 320000;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-claude-opus";
+      model->display_name = "Claude Opus";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // Brave Summary (Ocelot)
+    if (features::IsBraveSummaryModelEnabled()) {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Brave";
+      options->name = "brave-summary";
+      options->category = mojom::ModelCategory::SUMMARY;
+      options->access = features::kFreemiumAvailable.Get()
+                            ? mojom::ModelAccess::BASIC_AND_PREMIUM
+                            : mojom::ModelAccess::BASIC;
+      options->max_associated_content_length = 180000;
+      options->long_conversation_warning_character_limit = 320000;
+
+      auto model = mojom::Model::New();
+      model->key = "chat-brave-summary";
+      model->display_name = "Brave Ocelot";
+      model->vision_support = true;
+      model->supports_tools = false;
+      model->supported_capabilities = {
+          mojom::ConversationCapability::CHAT,
+          mojom::ConversationCapability::DEEP_RESEARCH};
+      model->is_suggested_model = false;
+      model->is_near_model = false;
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+
+      models.push_back(std::move(model));
+    }
+
+    // GLM (NEAR)
+    if (features::IsNEARModelsEnabled()) {
+      auto options = mojom::LeoModelOptions::New();
+      options->display_maker = "Z.ai";
+      options->category = mojom::ModelCategory::CHAT;
+      options->access = kFreemiumAccess;
+      options->max_associated_content_length = 128000;
+      options->long_conversation_warning_character_limit = 128000;
+
+      auto model = mojom::Model::New();
+      model->vision_support = false;
+      model->supports_tools = false;
+      model->is_suggested_model = true;
+      model->is_near_model = true;
+
+      // GLM 5.1 (private inference / OHTTP)
+      options->name = "near-glm-5-1";
+      model->key = "chat-near-glm-5-1";
+      model->display_name = "GLM 5.1";
+      model->supported_capabilities = {mojom::ConversationCapability::CHAT};
+      model->supports_private_inference = true;
+
+      model->options =
+          mojom::ModelOptions::NewLeoModelOptions(std::move(options));
+      models.push_back(std::move(model));
+    }
+
+    return models;
+  }());
+
+  return *kModels;
+}
+
+}  // namespace
+
+// TODO(nullhook): Handle encryption/decryption failures
+// https://github.com/brave/brave-browser/issues/55033
+std::string ModelService::EncryptAPIKey(const std::string& api_key) const {
+  if (api_key.empty()) {
+    return std::string();
+  }
+
+  // Currently this is called upon adding new custom model, and the API key
+  // would not be stored into pref, hence the model can not be properly used
+  // unless user re-add or edit the model manually. We should surface this
+  // error to UI to fail adding a custom model instead of silently fail here.
+  // https://github.com/brave/brave-browser/issues/55033
+  std::string encrypted_api_key;
+  if (!encryptor_ || !encryptor_->EncryptString(api_key, &encrypted_api_key)) {
+    VLOG(1) << "Encrypt api key failure";
+    return std::string();
+  }
+
+  return base::Base64Encode(encrypted_api_key);
+}
+
+std::string ModelService::DecryptAPIKey(
+    const std::string& encoded_api_key) const {
+  if (encoded_api_key.empty()) {
+    return std::string();
+  }
+
+  std::string encrypted_api_key;
+  if (!base::Base64Decode(encoded_api_key, &encrypted_api_key)) {
+    VLOG(1) << "base64 decode api key failure";
+    return std::string();
+  }
+
+  // `encryptor_` is unset between `ModelService` construction and
+  // `OnEncryptorReady()` firing; `InitModels()` runs synchronously in the
+  // constructor and reaches here, so we tolerate the missing-encryptor case
+  // and return an empty key. Once the encryptor arrives,
+  // `OnEncryptorReady()` refreshes keys in place via
+  // `RefreshCustomModelApiKeys()` so callers see the real value.
+  // We should consider surface these error to UI too rather than silently fail,
+  // see https://github.com/brave/brave-browser/issues/55033.
+  std::string api_key;
+  if (!encryptor_ || !encryptor_->DecryptString(encrypted_api_key, &api_key)) {
+    VLOG(1) << "Decrypt api key failure";
+    return std::string();
+  }
+
+  return api_key;
+}
+
+base::DictValue ModelService::CustomModelToPrefDict(
+    mojom::ModelPtr model) const {
+  base::DictValue model_dict = base::DictValue();
+
+  mojom::CustomModelOptions options =
+      *model->options->get_custom_model_options();
+
+  model_dict.Set(kCustomModelItemKey, model->key);
+  model_dict.Set(kCustomModelItemLabelKey, model->display_name);
+  model_dict.Set(kCustomModelVisionSupport, model->vision_support);
+  model_dict.Set(kCustomModelSupportsTools, model->supports_tools);
+  model_dict.Set(kCustomModelItemModelKey, options.model_request_name);
+  model_dict.Set(kCustomModelItemEndpointUrlKey, options.endpoint.spec());
+  model_dict.Set(kCustomModelItemApiKey, EncryptAPIKey(options.api_key));
+  model_dict.Set(kCustomModelContextSizeKey,
+                 static_cast<int32_t>(options.context_size));
+
+  // Save system prompt (even if empty to allow clearing)
+  if (options.model_system_prompt.has_value()) {
+    model_dict.Set(kCustomModelSystemPromptKey,
+                   options.model_system_prompt.value());
+  }
+
+  return model_dict;
+}
+
+ModelService::ModelService(PrefService* prefs_service,
+                           os_crypt_async::OSCryptAsync* os_crypt_async,
+                           network::NetworkContextGetter network_context_getter)
+    : pref_service_(prefs_service),
+      network_context_getter_(std::move(network_context_getter)) {
+  ObliviousHttpConfigManager::DeleteExpiredKeyConfigs(pref_service_);
+  // Load the model list synchronously so callers can resolve a default
+  // model immediately after construction. Custom-model API keys decrypt
+  // to empty strings until `OnEncryptorReady()` delivers the `Encryptor`;
+  // it then refreshes the keys in place and notifies observers via
+  // `OnModelListUpdated()` so engines refresh via `UpdateModelOptions()`.
+  InitModels();
+
+  // Perform migrations which depend on finding out about user's premium status.
+  const std::string& default_model_user_pref = GetDefaultModelKey();
+  if (default_model_user_pref == "chat-claude-instant") {
+    // 2024-05 Migration for old "claude instant" model
+    // The migration is performed here instead of
+    // ai_chat::prefs::MigrateProfilePrefs because the migration requires
+    // knowing about premium status.
+    // First set to an equivalent model that is available to all users. When
+    // we are told about premium status, we can switch to the premium
+    // equivalent.
+    SetDefaultModelKey(kClaudeHaikuModelKey);
+    is_migrating_claude_instant_ = true;
+  }
+
+  CHECK_DEREF(os_crypt_async)
+      .GetInstance(base::BindOnce(&ModelService::OnEncryptorReady,
+                                  weak_ptr_factory_.GetWeakPtr()));
+}
+
+ModelService::~ModelService() = default;
+
+void ModelService::OnEncryptorReady(
+    scoped_refptr<os_crypt_async::Encryptor> encryptor) {
+  encryptor_ = std::move(encryptor);
+  // Refresh custom-model API keys in-place. Notifies observers via
+  // `OnModelListUpdated()`, which propagates to engines through
+  // `ConversationHandler::OnModelListUpdated()` ->
+  // `engine_->UpdateModelOptions()`.
+  RefreshCustomModelApiKeys();
+  observers_.Notify(&Observer::OnModelListUpdated);
+}
+
+void ModelService::RefreshCustomModelApiKeys() {
+  CHECK(encryptor_);
+  const base::ListValue& custom_models_pref =
+      pref_service_->GetList(kCustomModelsList);
+  for (const base::Value& item : custom_models_pref) {
+    const base::DictValue& pref_dict = item.GetDict();
+    const std::string* key = pref_dict.FindString(kCustomModelItemKey);
+    const std::string* encrypted = pref_dict.FindString(kCustomModelItemApiKey);
+    if (!key || !encrypted) {
+      continue;
+    }
+    auto it = std::ranges::find_if(models_, [&](const mojom::ModelPtr& m) {
+      return m->key == *key && m->options->is_custom_model_options();
+    });
+    if (it != models_.end()) {
+      (*it)->options->get_custom_model_options()->api_key =
+          DecryptAPIKey(*encrypted);
+    }
+  }
+}
+
+// static
+void ModelService::RegisterProfilePrefs(PrefRegistrySimple* registry) {
+  registry->RegisterListPref(kCustomModelsList, {});
+  registry->RegisterStringPref(kDefaultModelKey,
+                               features::kAIModelsDefaultKey.Get());
+}
+
+// static
+void ModelService::MigrateProfilePrefs(PrefService* profile_prefs) {
+  if (ai_chat::features::IsAIChatEnabled()) {
+    profile_prefs->ClearPref(prefs::kObseleteBraveChatAutoGenerateQuestions);
+
+    // Migrate old model keys to "chat-automatic"
+    constexpr std::array<const char*, 12> kOldModelKeys = {
+        // Added: June 6, 2024. Checks can be removed eventually
+        "chat-default",
+        // Added: May 28, 2025. Checks can be removed eventually
+        "chat-leo-expanded",
+        // Added: July 15, 2025. Checks can be removed eventually
+        "chat-vision-basic",
+        // These 4 added Feb 26, 2026. Checks can be removed eventually
+        "chat-llama-4-scout",
+        "chat-pixtral-large",
+        "chat-deepseek-v3-1",
+        "chat-near-deepseek-v3-1",
+        // Added: Jun 2, 2026. Checks can be removed eventually
+        "chat-llama-4-maverick",
+        "chat-gpt-oss-20b",
+        "chat-gpt-oss-120b",
+        "chat-qwen-3-coder-480b",
+        // Added: July 22, 2026. Checks can be removed eventually
+        "chat-basic",
+    };
+
+    if (auto* default_model_value =
+            profile_prefs->GetUserPrefValue(kDefaultModelKey)) {
+      const std::string& current_value = default_model_value->GetString();
+      for (const char* old_key : kOldModelKeys) {
+        if (base::EqualsCaseInsensitiveASCII(current_value, old_key)) {
+          profile_prefs->ClearPref(kDefaultModelKey);
+          break;
+        }
+      }
+    }
+  }
+}
+
+// Custom models do not have fixed properties pertaining to the number of
+// characters they can process before a potential-coherence-loss warning is
+// shown. Leo Models have hard-coded values, but custom models' properties are
+// based on their context size, which may or may not have been provided by the
+// user. For this reason, we set the long_conversation_warning_character_limit
+// and max_associated_content_length after the model has been loaded and
+// validated.
+void ModelService::SetAssociatedContentLengthMetrics(mojom::Model& model) {
+  if (!model.options->is_custom_model_options()) {
+    // Only set metrics for custom models
+    return;
+  }
+
+  if (!ModelValidator::HasValidContextSize(
+          *model.options->get_custom_model_options())) {
+    model.options->get_custom_model_options()->context_size =
+        kDefaultCustomModelContextSize;
+  }
+
+  uint32_t max_associated_content_length =
+      ModelService::CalcuateMaxAssociatedContentLengthForModel(model);
+
+  model.options->get_custom_model_options()->max_associated_content_length =
+      max_associated_content_length;
+
+  base::CheckedNumeric<uint32_t> warn_at = base::CheckMul<size_t>(
+      max_associated_content_length, kMaxContentLengthThreshold);
+
+  if (warn_at.IsValid()) {
+    model.options->get_custom_model_options()
+        ->long_conversation_warning_character_limit = warn_at.ValueOrDie();
+  }
+}
+
+// static
+size_t ModelService::CalcuateMaxAssociatedContentLengthForModel(
+    const mojom::Model& model) {
+  if (model.options->is_leo_model_options()) {
+    return model.options->get_leo_model_options()
+        ->max_associated_content_length;
+  }
+
+  const auto context_size =
+      model.options->get_custom_model_options()->context_size;
+
+  constexpr uint32_t reserved_tokens =
+      kReservedTokensForMaxNewTokens + kReservedTokensForPrompt;
+
+  // CheckedNumerics for safe math
+  base::CheckedNumeric<size_t> safeContextSize(context_size);
+  base::CheckedNumeric<size_t> safeReservedTokens(reserved_tokens);
+  base::CheckedNumeric<size_t> safeCharsPerToken(kDefaultCharsPerToken);
+
+  return ((safeContextSize - safeReservedTokens) * safeCharsPerToken)
+      .ValueOrDie();
+}
+
+// static
+const mojom::Model* ModelService::GetModelForTesting(std::string_view key) {
+  const std::vector<mojom::ModelPtr>& all_models = GetLeoModels();
+
+  auto match_iter = std::find_if(
+      all_models.cbegin(), all_models.cend(),
+      [key](const mojom::ModelPtr& model) { return model->key == key; });
+  if (match_iter != all_models.cend()) {
+    return &*match_iter->get();
+  }
+
+  return nullptr;
+}
+
+void ModelService::OnPremiumStatus(mojom::PremiumStatus status) {
+  if (is_migrating_claude_instant_) {
+    is_migrating_claude_instant_ = false;
+    if (status != mojom::PremiumStatus::Inactive) {
+      SetDefaultModelKey("chat-claude-sonnet");
+    }
+  } else if (IsPremiumStatus(status)) {
+    // If user hasn't changed default model and we configure that premium
+    // default model is different to non-premium default model, then change to
+    // premium default model.
+    const base::Value* user_value =
+        pref_service_->GetUserPrefValue(kDefaultModelKey);
+    if (!user_value &&
+        features::kAIModelsDefaultKey.Get() !=
+            features::kAIModelsPremiumDefaultKey.Get() &&
+        GetDefaultModelKey() != features::kAIModelsPremiumDefaultKey.Get()) {
+      // We don't call SetDefaultModelKey as we don't want to actually set
+      // the pref value for the user, we only want to change the default so
+      // that the user benefits from future changes to the default.
+      pref_service_->SetDefaultPrefValue(
+          kDefaultModelKey,
+          base::Value(features::kAIModelsPremiumDefaultKey.Get()));
+      for (auto& obs : observers_) {
+        obs.OnDefaultModelChanged(features::kAIModelsDefaultKey.Get(),
+                                  features::kAIModelsPremiumDefaultKey.Get());
+      }
+    }
+  }
+}
+
+void ModelService::InitModels() {
+  // Get leo and custom models
+  const std::vector<mojom::ModelPtr>& leo_models = GetLeoModels();
+  const std::vector<mojom::ModelPtr> custom_models = GetCustomModels();
+
+  // Reserve space in the combined models vector
+  models_.clear();
+  models_.reserve(leo_models.size() + custom_models.size());
+
+  // Ensure we return only in intended display order
+  std::transform(leo_models.cbegin(), leo_models.cend(),
+                 std::back_inserter(models_),
+                 [](const mojom::ModelPtr& model) { return model.Clone(); });
+
+  std::transform(custom_models.cbegin(), custom_models.cend(),
+                 std::back_inserter(models_),
+                 [](const mojom::ModelPtr& model) { return model.Clone(); });
+
+  for (auto& obs : observers_) {
+    obs.OnModelListUpdated();
+  }
+}
+
+const std::vector<mojom::ModelPtr>& ModelService::GetModels() {
+  return models_;
+}
+
+std::vector<mojom::ModelWithSubtitlePtr>
+ModelService::GetModelsWithSubtitles() {
+  const auto& all_models = GetModels();
+  std::vector<mojom::ModelWithSubtitlePtr> models;
+
+  for (const auto& model : all_models) {
+    auto model_with_subtitle = mojom::ModelWithSubtitle::New();
+    model_with_subtitle->model = model->Clone();
+
+    if (model->options->is_leo_model_options()) {
+      if (model->key == "chat-claude-instant") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_CLAUDE_INSTANT_SUBTITLE);
+      } else if (model->key == "chat-claude-haiku") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_CLAUDE_HAIKU_SUBTITLE);
+      } else if (model->key == "chat-claude-sonnet") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_CLAUDE_SONNET_SUBTITLE);
+      } else if (model->key == "chat-qwen") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_QWEN_SUBTITLE);
+      } else if (model->key == "chat-near-glm-5-1") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_NEAR_GLM_5_1_SUBTITLE);
+      } else if (model->key == "chat-automatic") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_AUTOMATIC_SUBTITLE);
+      } else if (model->key == "chat-glm-4-7-flash") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_GLM_4_7_FLASH_SUBTITLE);
+      } else if (model->key == "chat-gpt-5-4-bedrock") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_GPT_5_4_BEDROCK_SUBTITLE);
+      } else if (model->key == "chat-grok-4-3-bedrock") {
+        model_with_subtitle->subtitle = l10n_util::GetStringUTF8(
+            IDS_CHAT_UI_CHAT_GROK_4_3_BEDROCK_SUBTITLE);
+      } else if (model->key == "chat-nemotron-nano-3-30b") {
+        model_with_subtitle->subtitle = l10n_util::GetStringUTF8(
+            IDS_CHAT_UI_CHAT_NEMOTRON_NANO_3_30B_SUBTITLE);
+      } else if (model->key == "chat-mistral-large") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_MISTRAL_LARGE_SUBTITLE);
+      } else if (model->key == "chat-kimi-k2-5") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_KIMI_K2_5_SUBTITLE);
+      } else if (model->key == "chat-qwen-3-235b") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_QWEN_3_235B_SUBTITLE);
+      } else if (model->key == "chat-deepseek-v3-2") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_DEEPSEEK_V3_2_SUBTITLE);
+      } else if (model->key == "chat-claude-opus") {
+        model_with_subtitle->subtitle =
+            l10n_util::GetStringUTF8(IDS_CHAT_UI_CHAT_CLAUDE_OPUS_SUBTITLE);
+      }
+    }
+
+    if (model->options->is_custom_model_options()) {
+      model_with_subtitle->subtitle = "";
+    }
+
+    models.emplace_back(std::move(model_with_subtitle));
+  }
+  return models;
+}
+
+const mojom::Model* ModelService::GetModel(std::string_view key) {
+  const std::vector<mojom::ModelPtr>& all_models = GetModels();
+
+  auto match_iter = std::find_if(
+      all_models.cbegin(), all_models.cend(),
+      [key](const mojom::ModelPtr& model) { return model->key == key; });
+  if (match_iter != all_models.cend()) {
+    return &*match_iter->get();
+  }
+
+  return nullptr;
+}
+
+std::optional<std::string> ModelService::GetLeoModelKeyByName(
+    std::string_view name) {
+  const std::vector<mojom::ModelPtr>& leo_models = GetLeoModels();
+
+  auto match_iter = std::find_if(
+      leo_models.cbegin(), leo_models.cend(),
+      [name](const mojom::ModelPtr& model) {
+        CHECK(model->options->is_leo_model_options());
+        return model->options->get_leo_model_options()->name == name;
+      });
+  if (match_iter != leo_models.cend()) {
+    return (*match_iter)->key;
+  }
+
+  return std::nullopt;
+}
+
+std::optional<std::string> ModelService::GetLeoModelNameByKey(
+    std::string_view key) {
+  const std::vector<mojom::ModelPtr>& leo_models = GetLeoModels();
+
+  auto match_iter = std::find_if(
+      leo_models.cbegin(), leo_models.cend(),
+      [key](const mojom::ModelPtr& model) { return model->key == key; });
+  if (match_iter != leo_models.cend()) {
+    CHECK((*match_iter)->options->is_leo_model_options());
+    return (*match_iter)->options->get_leo_model_options()->name;
+  }
+
+  return std::nullopt;
+}
+
+void ModelService::AddCustomModel(mojom::ModelPtr model) {
+  CHECK(model->key.empty()) << "Model key should be empty for new models.";
+
+  model->key = base::StrCat(
+      {"custom:",
+       base::Uuid::GenerateRandomV4().AsLowercaseString().substr(0, 8)});
+
+  // Validate the model
+  ModelValidationResult result = ModelValidator::ValidateCustomModelOptions(
+      *model->options->get_custom_model_options());
+  if (result != ModelValidationResult::kSuccess) {
+    if (result == ModelValidationResult::kInvalidContextSize) {
+      VLOG(2) << "Invalid context size for model: " << model->key;
+      model->options->get_custom_model_options()->context_size =
+          kDefaultCustomModelContextSize;
+    }
+  }
+
+  base::ListValue custom_models_pref =
+      pref_service_->GetList(kCustomModelsList).Clone();
+  base::DictValue model_dict = CustomModelToPrefDict(std::move(model));
+  custom_models_pref.Append(std::move(model_dict));
+  pref_service_->SetList(kCustomModelsList, std::move(custom_models_pref));
+
+  InitModels();
+}
+
+void ModelService::SaveCustomModel(uint32_t index, mojom::ModelPtr model) {
+  // Validate the model
+  ModelValidationResult result = ModelValidator::ValidateCustomModelOptions(
+      *model->options->get_custom_model_options());
+  if (result != ModelValidationResult::kSuccess) {
+    if (result == ModelValidationResult::kInvalidContextSize) {
+      VLOG(2) << "Invalid context size for model: " << model->key;
+      model->options->get_custom_model_options()->context_size =
+          kDefaultCustomModelContextSize;
+    }
+  }
+
+  // Set metrics for AI Chat content length warnings
+  SetAssociatedContentLengthMetrics(*model);
+
+  base::ListValue custom_models_pref =
+      pref_service_->GetList(kCustomModelsList).Clone();
+
+  if (index >= custom_models_pref.size() || index < 0) {
+    return;
+  }
+
+  auto model_iter = custom_models_pref.begin() + index;
+
+  const std::string& existing_key =
+      *model_iter->GetDict().FindString(kCustomModelItemKey);
+
+  // Make sure the key is not changed when modifying the model
+  // because Dict::Merge is destructive.
+  CHECK(existing_key == model->key)
+      << "Model key mismatch. Existing key: " << existing_key
+      << ", sent model key: " << model->key << ".";
+
+  base::DictValue model_dict = CustomModelToPrefDict(std::move(model));
+  model_iter->GetDict().Merge(std::move(model_dict));
+
+  pref_service_->SetList(kCustomModelsList, std::move(custom_models_pref));
+
+  InitModels();
+}
+
+void ModelService::DeleteCustomModel(uint32_t index) {
+  base::ListValue custom_models_pref =
+      pref_service_->GetList(kCustomModelsList).Clone();
+
+  if (index >= custom_models_pref.size() || index < 0) {
+    return;
+  }
+
+  auto model = custom_models_pref.begin() + index;
+  std::string removed_key = *model->GetDict().FindString(kCustomModelItemKey);
+
+  auto current_default_key = GetDefaultModelKey();
+
+  // If the removed model is the default model, clear the default model key.
+  if (current_default_key == removed_key) {
+    pref_service_->ClearPref(kDefaultModelKey);
+    DVLOG(1) << "Default model key " << removed_key
+             << " was removed. Cleared default model key.";
+    for (auto& obs : observers_) {
+      obs.OnDefaultModelChanged(removed_key, GetDefaultModelKey());
+    }
+  }
+
+  custom_models_pref.erase(model);
+  pref_service_->SetList(kCustomModelsList, std::move(custom_models_pref));
+
+  InitModels();
+
+  for (auto& obs : observers_) {
+    obs.OnModelRemoved(removed_key);
+  }
+}
+
+void ModelService::MaybeDeleteCustomModels(CustomModelPredicate predicate) {
+  ScopedListPrefUpdate update(pref_service_, kCustomModelsList);
+  bool any_removed = false;
+
+  // Remove models matching predicate
+  auto it = update->begin();
+  while (it != update->end()) {
+    const base::DictValue& model_dict = it->GetDict();
+
+    if (predicate.Run(model_dict)) {
+      std::string removed_key = *model_dict.FindString(kCustomModelItemKey);
+      any_removed = true;
+
+      // Check if this is the default model
+      if (GetDefaultModelKey() == removed_key) {
+        pref_service_->ClearPref(kDefaultModelKey);
+        DVLOG(1) << "Default model key " << removed_key
+                 << " was removed. Cleared default model key.";
+        for (auto& obs : observers_) {
+          obs.OnDefaultModelChanged(removed_key, GetDefaultModelKey());
+        }
+      }
+
+      it = update->erase(it);
+
+      // Notify observers immediately after removing
+      for (auto& obs : observers_) {
+        obs.OnModelRemoved(removed_key);
+      }
+    } else {
+      ++it;
+    }
+  }
+
+  if (any_removed) {
+    InitModels();
+  }
+}
+
+void ModelService::SetDefaultModelKey(const std::string& new_key) {
+  const auto& models = GetModels();
+
+  bool does_model_exist = std::ranges::contains(
+      models, new_key, [](const mojom::ModelPtr& model) { return model->key; });
+
+  if (!does_model_exist) {
+    DVLOG(1) << "Default model key " << new_key
+             << " does not exist in the model list.";
+    return;
+  }
+
+  // Don't continue migrating if user choses another default in the meantime
+  is_migrating_claude_instant_ = false;
+
+  const std::string previous_default_key = GetDefaultModelKey();
+
+  if (previous_default_key == new_key) {
+    // Nothing to do
+    return;
+  }
+
+  pref_service_->SetString(kDefaultModelKey, new_key);
+
+  for (auto& obs : observers_) {
+    obs.OnDefaultModelChanged(previous_default_key, new_key);
+  }
+}
+
+void ModelService::SetDefaultModelKeyWithoutValidationForTesting(
+    const std::string& model_key) {
+  pref_service_->SetString(kDefaultModelKey, model_key);
+}
+
+const std::string& ModelService::GetDefaultModelKey() {
+  return pref_service_->GetString(kDefaultModelKey);
+}
+
+const std::vector<mojom::ModelPtr> ModelService::GetCustomModels() {
+  std::vector<mojom::ModelPtr> models;
+
+  const base::ListValue& custom_models_pref =
+      pref_service_->GetList(kCustomModelsList);
+
+  for (const base::Value& item : custom_models_pref) {
+    const base::DictValue& model_pref = item.GetDict();
+    auto custom_model_opts = mojom::CustomModelOptions::New();
+    custom_model_opts->model_request_name =
+        *model_pref.FindString(kCustomModelItemModelKey);
+    custom_model_opts->endpoint =
+        GURL(*model_pref.FindString(kCustomModelItemEndpointUrlKey));
+    custom_model_opts->context_size =
+        model_pref.FindInt(kCustomModelContextSizeKey)
+            .value_or(kDefaultCustomModelContextSize);
+    custom_model_opts->api_key =
+        DecryptAPIKey(*model_pref.FindString(kCustomModelItemApiKey));
+
+    // Populate system prompt (if it exists)
+    if (const std::string* model_system_prompt =
+            model_pref.FindString(kCustomModelSystemPromptKey)) {
+      custom_model_opts->model_system_prompt = *model_system_prompt;
+    }
+
+    auto model = mojom::Model::New();
+    model->key = *model_pref.FindString(kCustomModelItemKey);
+    model->display_name = *model_pref.FindString(kCustomModelItemLabelKey);
+    model->vision_support =
+        model_pref.FindBool(kCustomModelVisionSupport).value_or(false);
+    model->supports_tools =
+        model_pref.FindBool(kCustomModelSupportsTools).value_or(false);
+    model->supported_capabilities = {mojom::ConversationCapability::CHAT};
+    model->options = mojom::ModelOptions::NewCustomModelOptions(
+        std::move(custom_model_opts));
+
+    // Validate the model
+    ModelValidationResult result = ModelValidator::ValidateCustomModelOptions(
+        *model->options->get_custom_model_options());
+    if (result != ModelValidationResult::kSuccess) {
+      if (result == ModelValidationResult::kInvalidContextSize) {
+        VLOG(2) << "Invalid context size for model: " << model->key;
+        model->options->get_custom_model_options()->context_size =
+            kDefaultCustomModelContextSize;
+      }
+    }
+
+    // Set metrics for AI Chat content length warnings
+    SetAssociatedContentLengthMetrics(*model);
+
+    models.push_back(std::move(model));
+  }
+
+  return models;
+}
+
+void ModelService::AddObserver(Observer* observer) {
+  observers_.AddObserver(observer);
+}
+
+void ModelService::RemoveObserver(Observer* observer) {
+  observers_.RemoveObserver(observer);
+}
+
+std::unique_ptr<EngineConsumer> ModelService::GetEngineForModel(
+    std::string model_key,
+    scoped_refptr<network::SharedURLLoaderFactory> url_loader_factory,
+    AIChatCredentialManager* credential_manager) {
+  const mojom::Model* model = GetModel(model_key);
+  if (!model) {
+    // Model no longer exists — fall back to the configured default.
+    model = GetModel(features::kAIModelsDefaultKey.Get());
+  }
+  CHECK(model) << "Default model missing from model list";
+
+  std::unique_ptr<EngineConsumer> engine;
+  if (model->supports_private_inference ||
+      model->options->is_custom_model_options()) {
+    DVLOG(1) << "Started AI engine: oai";
+    engine = std::make_unique<EngineConsumerOAIRemote>(
+        model->options.Clone(), url_loader_factory, network_context_getter_,
+        credential_manager, this, pref_service_);
+  } else if (model->options->is_leo_model_options()) {
+    DVLOG(1) << "Started AI engine: conversation api";
+    auto& leo_model_opts = model->options->get_leo_model_options();
+    engine = std::make_unique<EngineConsumerConversationAPI>(
+        *leo_model_opts, url_loader_factory, credential_manager, this,
+        pref_service_);
+  }
+
+  return engine;
+}
+
+}  // namespace ai_chat

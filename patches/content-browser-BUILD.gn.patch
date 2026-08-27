@@ -1,0 +1,12 @@
+diff --git a/content/browser/BUILD.gn b/content/browser/BUILD.gn
+index 7b194eabd7b0b327e6ffbc148c8809dd9bc0a6e5..eac30fc91c029ac062bd2bc0b6d63e83107b1771 100644
+--- a/content/browser/BUILD.gn
++++ b/content/browser/BUILD.gn
+@@ -3615,6 +3615,7 @@ source_set("browser") {
+     deps += [ "//components/vrp_flags" ]
+     public_deps += [ "//components/vrp_flags:mojom" ]
+   }
++  import("//brave/content/browser/sources.gni") sources += brave_content_browser_sources deps += brave_content_browser_deps
+ }
+ 
+ if (is_android) {

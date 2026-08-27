@@ -1,0 +1,12 @@
+diff --git a/chrome/browser/resources/settings/router.ts b/chrome/browser/resources/settings/router.ts
+index 7fb927120327cc9a208c374b007792425ef91a0a..a89417cab28ec9a4a1c0b2f5e9243f47f1a514a1 100644
+--- a/chrome/browser/resources/settings/router.ts
++++ b/chrome/browser/resources/settings/router.ts
+@@ -129,6 +129,7 @@ export interface SettingsRoutes {
+   IMPORT_DATA: Route;
+   SIGN_OUT: Route;
+   // </if>
++  GET_STARTED: Route; ORIGIN: Route; SHIELDS: Route; SOCIAL_BLOCKING: Route; EXTENSIONS: Route; EXTENSIONS_V2: Route; BRAVE_SYNC: Route; BRAVE_SYNC_SETUP: Route; BRAVE_WALLET: Route; BRAVE_WEB3: Route; BRAVE_NEW_TAB: Route; THEMES: Route; SITE_SETTINGS_AUTOPLAY: Route; SITE_SETTINGS_GOOGLE_SIGN_IN: Route; SITE_SETTINGS_BRAVE_OPEN_AI_CHAT: Route; SITE_SETTINGS_ETHEREUM: Route; SITE_SETTINGS_SOLANA: Route; SITE_SETTINGS_CARDANO: Route; SITE_SETTINGS_SHIELDS_STATUS: Route; SHIELDS_ADBLOCK: Route; SHORTCUTS: Route; BRAVE_WALLET_NETWORKS: Route; BRAVE_LEO_ASSISTANT: Route; BRAVE_LEO_CUSTOMIZATION: Route; BRAVE_LEO_ADD_MODEL: Route; BRAVE_CONTENT: Route; BRAVE_SURVEY_PANELIST: Route; DEFAULT_SEARCH: Route; PRIVATE_SEARCH: Route; EMAIL_ALIASES: Route;
+ }
+ 
+ /** Class for navigable routes. */
