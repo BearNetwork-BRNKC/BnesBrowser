@@ -1,73 +1,71 @@
-![Brave Browser](./docs/images/brave.svg)
+![BnesBrowser](./docs/images/brave.svg)
 
-# Brave Core
+# BnesBrowser Core
 
-Brave Core is a set of changes, APIs, and scripts used for customizing Chromium
-to make the Brave browser. Please also check
-https://github.com/brave/brave-browser which only holds the issues, releases and
-the wiki.
+BnesBrowser Core 是一組用於自訂 Chromium 的變更、API 和腳本，
+目的是打造 BnesBrowser 。 另外請參閱
+https://github.com/BearNetwork-BRNKC/BnesBrowser ，該倉庫僅存放議題、發佈版本以及
+wiki。
 
-## Overview
+## 概述
 
-This repository holds the build tools needed to build the Brave desktop browser
-for all platforms. In particular, it fetches and syncs code from the projects
-defined in `package.json` and `src/brave/DEPS`:
+本倉庫存放建置 BnesBrowser 桌面瀏覽器所需的工具，支援所有平台。
+特別是會從 `package.json` 和 `src/brave/DEPS` 中定義的專案取得與同步程式碼：
 
 - [Chromium](https://chromium.googlesource.com/chromium/src.git)
-  - Fetches code via `depot_tools`.
-  - Sets the branch for Chromium (ex: 65.0.3325.181).
+  - 透過 `depot_tools` 取得程式碼。
+  - 設定 Chromium 的分支（例如：65.0.3325.181）。
 - [brave-core](https://github.com/brave/brave-core)
-  - Mounted at `src/brave`.
-  - Maintains patches for 3rd party Chromium code.
+  - 掛載於 `src/brave`。
+  - 維護對第三方 Chromium 程式碼的修補程式。
 - [adblock-rust](https://github.com/brave/adblock-rust)
-  - Implements Brave's adblock engine.
-  - Linked through
-    [brave/adblock-rust-ffi](https://github.com/brave/brave-core/tree/master/components/adblock_rust_ffi).
+  - 實作 Brave 的廣告封鎖引擎。
+  - 透過
+    [brave/adblock-rust-ffi](https://github.com/brave/brave-core/tree/master/components/adblock_rust_ffi)
+    連結。
 
-## Resources
+## 資源
 
-- [Documentation and guides](https://github.com/brave/brave-core/blob/master/docs/README.md)
-- [Issues](https://github.com/brave/brave-browser/issues)
-- [Releases](https://github.com/brave/brave-browser/releases)
+- [文件與指南](https://github.com/brave/brave-core/blob/master/docs/README.md)
+- [議題追蹤](https://github.com/brave/brave-browser/issues)
+- [發佈版本](https://github.com/brave/brave-browser/releases)
 - [Wiki](https://github.com/brave/brave-browser/wiki)
 
-## Downloads
+## 下載
 
-You can [visit our website](https://brave.com/download) to get the latest stable
-release.
+您可以[造覽我們的網站](https://brave.com/download)取得最新的穩定
+發佈版本。
 
-## Contributing
+## 參與貢獻
 
-Please see the [contributing guidelines](./CONTRIBUTING.md).
+請參閱[參與指南](./CONTRIBUTING.md)。
 
-Our [Wiki](https://github.com/brave/brave-browser/wiki) also has some useful
-technical information, especially about setting the development environment.
+我們的[Wiki](https://github.com/brave/brave-browser/wiki)也有許多有用的
+技術資訊，特別是關於設定開發環境的說明。
 
-## Security Policy
+## 安全性政策
 
-Please see the [security policy](./SECURITY.md).
+請參閱[安全性政策](./SECURITY.md)。
 
-## Community
+## 社群
 
-[Join the Q&A community](https://community.brave.app/) if you'd like to get more
-involved with Brave. You can
-[ask for help](https://community.brave.app/c/support-and-troubleshooting),
-[discuss features you'd like to see](https://community.brave.app/c/brave-feature-requests),
-and a lot more. We'd love to have your help so that we can continue improving
-Brave.
+如果您想更深入參與 Brave，請[加入 Q&A 社群](https://community.brave.app/)。
+您可以
+[尋求協助](https://community.brave.app/c/support-and-troubleshooting)，
+[討論您希望看到的功能](https://community.brave.app/c/brave-feature-requests)，
+以及更多其他活動。 我們非常歡迎您的協助，讓我們能持續改進 Brave。
 
-You can also ask questions and interact in the
-[`community-guest`](https://bravesoftware.slack.com) channel on Brave Software's
-Slack.
+您也可以在 Brave Software 的
+Slack 上的 [`community-guest`](https://bravesoftware.slack.com) 頻道中提問和互動。
 
-Help us translate Brave to your language by submitting translations at
-https://explore.transifex.com/brave/brave_en/.
+請透過 https://explore.transifex.com/brave/brave_en/ 提交翻譯，
+協助我們將 Brave 翻譯成您的語言。
 
-Follow [@brave](https://x.com/brave) on X for important news and announcements.
+在 X 上追蹤 [@brave](https://x.com/brave) 以取得重要新聞和公告。
 
-## Install prerequisites
+## 安裝先決條件
 
-Follow the instructions for your platform:
+請根據您的平台遵循相應的指示：
 
 - [Android](https://github.com/brave/brave-browser/wiki/Android-Development-Environment)
 - [Linux](https://github.com/brave/brave-browser/wiki/Linux-Development-Environment)
@@ -75,127 +73,123 @@ Follow the instructions for your platform:
 - [macOS](https://github.com/brave/brave-browser/wiki/macOS-Development-Environment)
 - [Windows](https://github.com/brave/brave-browser/wiki/Windows-Development-Environment)
 
-## Clone and initialize
+## 複製並初始化
 
-Once you have the prerequisites installed, you can get the code and initialize
-the build environment.
+安裝好先決條件後，您可以取得程式碼並初始化建置環境。
 
-**Clone the repo.** `brave-core` must be checked out into `./src/brave` within a
-pre-existing project folder:
+**複製倉庫。** `BnesBrowser` 必須被複製到現有專案資料夾中的 `./src/brave` 目錄下：
 
 ```bash
-git clone git@github.com:brave/brave-core.git path-to-your-project-folder/src/brave
+git clone https://github.com/BearNetwork-BRNKC/BnesBrowser.git path-to-your-project-folder/src/brave
 cd path-to-your-project-folder/src/brave
 ```
 
-**Initialize the build environment.** This step will download the Chromium
-source, which has a large history (10's of gigabytes of data). This might take a
-really long time to finish depending on internet speed.
+**初始化建置環境。** 此步驟將下載 Chromium
+原始碼，其歷史記錄非常龐大（數十 GB 的資料）。 根據網路速度不同，這可能需要非常長的時間才能完成。
 
 ```bash
-# Most builds:
+# 大多數建置：
 pnpm run init
 
-# Android builds (replace `arm` with whichever CPU type you want to build for):
+# Android 建置（將 `arm` 替換為您想要建置的 CPU 類型）：
 pnpm run init --target_os=android --target_arch=arm
 
-# iOS builds:
+# iOS 建置：
 pnpm run init --target_os=ios
 ```
 
-Additional config needed to build are documented at
+其他建置所需的配置請參閱
 https://github.com/brave/brave-browser/wiki/Build-configuration
 
-Internal developers can find more information at
+內部開發人員可以在
 https://github.com/brave/internal/wiki/Build-configuration
+找到更多資訊。
 
-## Build Brave
+## 建置 Brave
 
-The default build type is component.
+預設建置類型為元件建置（component build）。
 
 ```
-# start the component build compile
+# 開始元件建置編譯
 pnpm run build
 ```
 
-To do a release build:
+若要進行發佈建置：
 
 ```
-# start the release compile
+# 開始發佈編譯
 pnpm run build Release
 ```
 
-brave-core based android builds should use
+基於 brave-core 的 Android 建置應使用
 `pnpm run build --target_os=android --target_arch=arm`
 
-brave-core based iOS builds should use the Xcode project found in
-`ios/brave-ios/App`. You can open this project directly or run
-`pnpm run ios_bootstrap --open_xcodeproj` to have it opened in Xcode. See the
-[iOS Developer Environment](https://github.com/brave/brave-browser/wiki/iOS-Development-Environment#Building)
-for more information on iOS builds.
+基於 brave-core 的 iOS 建置應使用位於
+`ios/brave-ios/App` 的 Xcode 專案。 您可以直接開啟該專案，
+或執行 `pnpm run ios_bootstrap --open_xcodeproj` 讓它自動在 Xcode 中被打開。
+有關 iOS 建置的更多資訊，請參閱
+[iOS 開發者環境](https://github.com/brave/brave-browser/wiki/iOS-Development-Environment#Building)。
 
-### Build Configurations
+### 建置組態
 
-Running a release build with `pnpm run build Release` can be very slow and use a
-lot of RAM, especially on Linux with the Gold LLVM plugin.
+使用 `pnpm run build Release` 進行發佈建置可能會非常緩慢，
+並使用大量 RAM，特別是在使用 Gold LLVM 外掛程式的 Linux 上。
 
-To run a statically linked build (takes longer to build, but starts faster):
+若要執行靜態連結建置（建置時間較長，但啟動速度較快）：
 
 ```bash
 pnpm run build Static
 ```
 
-To run a debug build (Component build with is_debug=true):
+若要執行偵錯建置（具有 is_debug=true 的元件建置）：
 
 ```bash
 pnpm run build Debug
 ```
 
-NOTE: the build will take a while to complete. Depending on your processor and
-memory, it could potentially take a few hours.
+注意：建置將需要一段時間。 根據您的處理器和
+記憶體，可能需要幾個小時。
 
-## Run Brave
+## 執行 Brave
 
-To start the build:
+若要啟動建置：
 
 `pnpm start [Release|Component|Static|Debug]`
 
-## Update Brave
+## 更新 Brave
 
 `pnpm run sync [--force] [--init] [--create] [brave_core_ref]`
 
-**This will attempt to stash your local changes in brave-core, but it's safer to
-commit local changes before running this**
+**此指令會嘗試將您在 brave-core 中的本機變更存入暫存，但在執行前提交本機變更會更安全**
 
-`pnpm run sync` will (depending on the below flags):
+`pnpm run sync` 會（根據以下旗標）執行以下操作：
 
-1. 📥 Update sub-projects (chromium, brave-core) to latest commit of a git ref
-   (e.g. tag or branch)
-2. 🤕 Apply patches
-3. 🔄 Update gclient DEPS dependencies
-4. ⏩ Run hooks
+1. 📥 將子專案（chromium、brave-core）更新至 git 參考（例如標籤或分支）的最新提交
+2. 🤕 套用修補程式
+3. 🔄 更新 gclient DEPS 相依性
+4. ⏩ 執行鉤子
 
-| flag                           | Description                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[no flags]`                   | updates chromium if needed and re-applies patches. If the chromium version did not change, it will only re-apply patches that have changed. Will update child dependencies **only if any project needed updating during this script run**. <br> **Use this if you want the script to manage keeping you up to date instead of pulling or switching branches manually. **   |
-| `--force`                      | updates both _Chromium_ and _brave-core_ to the latest remote commit for the current brave-core branch and the _Chromium_ ref specified in brave-core/package.json (e.g. `master` or `74.0.0.103`). Will re-apply all patches. Will force update all child dependencies. <br> **Use this if you're having trouble and want to force the branches back to a known state. ** |
-| `--init`                       | force update both _Chromium_ and _brave-core_ to the versions specified in brave-core/package.json and force updates all dependent repos - same as `pnpm run init`                                                                                                                                                                                                         |
-| `--sync_chromium (true/false)` | Will force or skip the chromium version update when applicable. Useful if you want to avoid a minor update when not ready for the larger build time a chromium update may result in. A warning will be output about the current code state expecting a different chromium version. Your build may fail as a result.                                                        |
-| `-D, --delete_unused_deps`     | Will delete from the working copy any dependencies that have been removed since the last sync. Mimics `gclient sync -D`.                                                                                                                                                                                                                                                   |
+| 旗標                           | 描述                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[無旗標]`                     | 在需要時更新 chromium 並重新套用修補程式。 如果 chromium 版本沒有變更，則只會重新套用已變更的修補程式。 **僅在本次指令執行期間有任何專案需要更新時**，才會更新子相依性。<br> **如果您希望指令自動管理更新狀態，而不是手動拉取或切換分支，請使用此選項。** |
+| `--force`                      | 將 _Chromium_ 和 _brave-core_ 都更新至目前 brave-core 分支和 `brave-core/package.json` 中指定的 _Chromium_ 參考（例如 `master` 或 `74.0.0.103`）的最新遠端提交。 將重新套用所有修補程式。 將強制更新所有子相依性。<br> **如果您遇到問題並希望將分支強制恢復到已知狀態，請使用此選項。** |
+| `--init`                       | 強制將 _Chromium_ 和 _brave-core_ 更新至 `brave-core/package.json` 中指定的版本，並強制更新所有相依倉庫 - 與 `pnpm run init` 相同                                                                                                                                                                                                                                 |
+| `--sync_chromium (true/false)` | 在適用時強制或略過 chromium 版本更新。 如果您希望在未準備好承受 chromium 更新可能導致的大量建置時間時避免小版本更新，此選項非常有用。 將會輸出有關目前程式碼狀態預期不同 chromium 版本的警告。 這可能導致您的建置失敗。                                                                      |
+| `-D, --delete_unused_deps`     | 將從工作複本中刪除自上次同步以來已移除的任何相依性。 模擬 `gclient sync -D`。                                                                                                                                                                                                                                                                                      |
 
-Run `pnpm run sync brave_core_ref` to checkout the specified _brave-core_ ref
-and update all dependent repos including chromium if needed.
+執行 `pnpm run sync brave_core_ref` 以簽出指定的 _brave-core_ 參考
+並更新所有相依倉庫，包括 chromium（如需要）。
 
-## Scenarios
+## 情境
 
-#### Create a new branch:
+#### 建立新分支：
 
 ```bash
 > cd src/brave
 src/brave> git checkout -b branch_name
 ```
 
-#### Checkout an existing branch or tag:
+#### 簽出現有分支或標籤：
 
 ```bash
 src/brave> git fetch origin
@@ -206,7 +200,7 @@ src/brave> pnpm run sync
 ...Running hooks...
 ```
 
-#### Update the current branch to the latest remote:
+#### 將目前分支更新至最新遠端版本：
 
 ```bash
 src/brave> git pull
@@ -216,7 +210,7 @@ src/brave> pnpm run sync
 ...Running hooks...
 ```
 
-#### Reset to latest brave-core master (via `init`, will always result in a longer build and will remove any pending changes in your brave-core working directory):
+#### 透過 `init` 重設至最新的 brave-core master（將導致較長的建置時間，並將移除 brave-core 工作目錄中所有未提交的變更）：
 
 ```bash
 src/brave> git checkout master
@@ -224,7 +218,7 @@ src/brave> git pull
 src/brave> pnpm run sync --init
 ```
 
-#### When you know that DEPS didn't change, but .patch files did (quickest attempt to perform a mini-sync before a build):
+#### 當您知道 DEPS 沒有變更，但 .patch 檔案有變更時（在建置前執行小型同步的最快嘗試）：
 
 ```bash
 src/brave> git checkout featureB
@@ -233,26 +227,25 @@ src/brave> pnpm run apply_patches
 ...Applying 2 patches...
 ```
 
-## Enabling third-party APIs
+## 啟用第三方 API
 
-1. **Google Safe Browsing**: Get an API key with SafeBrowsing API enabled from
-   https://console.developers.google.com/. Update the `GOOGLE_API_KEY`
-   environment variable with your key as per
-   https://www.chromium.org/developers/how-tos/api-keys to enable Google
-   SafeBrowsing.
+1. **Google Safe Browsing**：從
+    https://console.developers.google.com/ 取得已啟用 SafeBrowsing API 的金鑰。
+    根據 https://www.chromium.org/developers/how-tos/api-keys 的說明，
+    使用您的金鑰更新 `GOOGLE_API_KEY` 環境變數以啟用 Google
+    SafeBrowsing。
 
-## Development
+## 開發
 
-- [Security rules from Chromium](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/security/rules.md)
-- [IPC review guidelines](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/ipc-reviews.md)
-  (in particular
-  [this reference](https://docs.google.com/document/d/1Kw4aTuISF7csHnjOpDJGc7JYIjlvOAKRprCTBVWw_E4/edit#heading=h.84bpc1e9z1bg))
-- [Brave's internal security guidelines](https://github.com/brave/internal/wiki/Pull-request-security-audit-checklist)
-  (for employees only)
-- [Rust usage](https://github.com/brave/brave-core/blob/master/docs/rust.md)
+- [來自 Chromium 的安全性規則](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/security/rules.md)
+- [IPC 審查指南](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/ipc-reviews.md)
+   （特別是
+   [此參考文件](https://docs.google.com/document/d/1Kw4aTuISF7csHnjOpDJGc7JYIjlvOAKRprCTBVWw_E4/edit#heading=h.84bpc1e9z1bg)）
+- [Brave 內部安全性指南](https://github.com/brave/internal/wiki/Pull-request-security-audit-checklist)
+   （僅供員工使用）
+- [Rust 使用說明](https://github.com/brave/brave-core/blob/master/docs/rust.md)
 
-## Troubleshooting
+## 疑難排解
 
-See
-[Troubleshooting](https://github.com/brave/brave-browser/wiki/Troubleshooting)
-for solutions to common problems.
+有關常見問題的解決方案，請參閱
+[疑難排解](https://github.com/brave/brave-browser/wiki/Troubleshooting)。
