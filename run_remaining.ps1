@@ -28,8 +28,7 @@
 #   -SafeBuild
 #       Enable transactional isolation mode.
 #
-#   -Rollback
-#       Restore the previous transactional snapshot.
+
 #
 #   -VerifyOnly
 #       Verify current boundary / manifest / protected overlays
@@ -78,7 +77,6 @@ param(
     [switch]$Init,
     [switch]$AllowUpstreamSync,
     [switch]$SafeBuild,
-    [switch]$Rollback,
     [switch]$VerifyOnly,
     [switch]$ForceRecovery
 )
@@ -101,7 +99,6 @@ $SetupPath = Join-Path $BuildRoot $SetupName
 $BnesCore = 'S:\Ai_Agent\BNES\BnesBrowser'
 
 $BnesStateDir = Join-Path $BuildRoot '.bnes'
-$SnapshotRoot = Join-Path $BnesStateDir 'snapshots'
 $ManifestRoot = Join-Path $BnesStateDir 'manifests'
 $LogRoot = Join-Path $BnesStateDir 'logs'
 $LockFile = Join-Path $BnesStateDir 'build.lock'
@@ -213,9 +210,7 @@ function New-Directory {
 # INITIALIZE STATE DIRECTORIES
 # ============================================================
 
-New-Directory -Path $BuildRoot
 New-Directory -Path $BnesStateDir
-New-Directory -Path $SnapshotRoot
 New-Directory -Path $ManifestRoot
 New-Directory -Path $LogRoot
 
@@ -240,9 +235,7 @@ $LockFile
 這表示可能仍有另一個 build transaction 正在執行，
 或者上一輪 build 異常終止。
 
-請確認沒有其他 build 正在執行後：
-  1. 使用 -Rollback
-  2. 或使用 -ForceRecovery
+請確認沒有其他 build 正在執行後重新執行。
 
 系統拒絕直接覆寫現有 transaction。
 "@
@@ -467,7 +460,7 @@ function New-BoundaryManifest {
             automatic_upstream_to_bnes = $false
             automatic_delete_outside_projection = $false
             build_on_boundary_violation = $false
-            rollback_on_failure = $true
+            rollback_on_failure = $false
             last_good_only_after_verified_build = $true
         }
     }
@@ -882,143 +875,6 @@ BNES canonical source 是下游唯一權威來源。
 }
 
 # ============================================================
-# SNAPSHOT
-#
-# Snapshot the generated projection only.
-#
-# Canonical BNES source remains untouched and therefore does not
-# require destructive rollback.
-# ============================================================
-
-function New-ProjectionSnapshot {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string]$TransactionId
-    )
-
-    Write-Stage "建立 transaction snapshot：$TransactionId"
-
-    $snapshotDir =
-        Join-Path $SnapshotRoot $TransactionId
-
-    New-Directory -Path $snapshotDir
-
-    $projectionSnapshot =
-        Join-Path $snapshotDir 'src-brave'
-
-    if (Test-Path -LiteralPath $BraveDir -PathType Container) {
-
-        New-Directory -Path $projectionSnapshot
-
-        $robocopyArgs = @(
-            $BraveDir,
-            $projectionSnapshot,
-            '/MIR',
-            '/COPY:DAT',
-            '/DCOPY:DAT',
-            '/R:1',
-            '/W:1',
-            '/XJ',
-            '/NFL',
-            '/NDL',
-            '/NP'
-        )
-
-        & robocopy @robocopyArgs | Out-Null
-
-        $rc = $LASTEXITCODE
-
-        if ($rc -gt 7) {
-            throw "Snapshot robocopy 失敗。EXIT=$rc"
-        }
-    }
-
-    $metadata = [ordered]@{
-        transaction_id = $TransactionId
-        created_at = (Get-Date).ToString('o')
-        brave_projection = $BraveDir
-        snapshot = $projectionSnapshot
-        projection_hash =
-            if (Test-Path -LiteralPath $BraveDir -PathType Container) {
-                Get-DirectoryManifestHash -Root $BraveDir
-            }
-            else {
-                $null
-            }
-    }
-
-    $metadata |
-        ConvertTo-Json -Depth 20 |
-        Set-Content `
-            -LiteralPath (Join-Path $snapshotDir 'snapshot.json') `
-            -Encoding UTF8
-
-    Write-Ok "Snapshot 建立完成：$snapshotDir"
-
-    return $snapshotDir
-}
-
-# ============================================================
-# ROLLBACK
-# ============================================================
-
-function Restore-ProjectionSnapshot {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string]$SnapshotDir
-    )
-
-    Write-Stage "恢復 transaction snapshot"
-
-    $snapshotProjection =
-        Join-Path $SnapshotDir 'src-brave'
-
-    if (-not (Test-Path -LiteralPath $snapshotProjection -PathType Container)) {
-
-        Write-Warn "Snapshot 沒有 src-brave projection。"
-
-        if (Test-Path -LiteralPath $BraveDir -PathType Container) {
-            Remove-Item `
-                -LiteralPath $BraveDir `
-                -Recurse `
-                -Force
-        }
-
-        New-Directory -Path $BraveDir
-
-        Write-Ok "Build projection 已恢復為空狀態。"
-
-        return
-    }
-
-    New-Directory -Path $BraveDir
-
-    $robocopyArgs = @(
-        $snapshotProjection,
-        $BraveDir,
-        '/MIR',
-        '/COPY:DAT',
-        '/DCOPY:DAT',
-        '/R:1',
-        '/W:1',
-        '/XJ',
-        '/NFL',
-        '/NDL',
-        '/NP'
-    )
-
-    & robocopy @robocopyArgs | Out-Null
-
-    $rc = $LASTEXITCODE
-
-    if ($rc -gt 7) {
-        throw "Rollback robocopy 失敗。EXIT=$rc"
-    }
-
-    Write-Ok "Projection rollback 完成。"
-}
-
-# ============================================================
 # TRANSACTION STATE
 # ============================================================
 
@@ -1049,42 +905,6 @@ function Read-TransactionState {
 # ============================================================
 # ROLLBACK COMMAND
 # ============================================================
-
-function Invoke-ExplicitRollback {
-
-    $state = Read-TransactionState
-
-    if ($null -eq $state) {
-        throw "目前沒有 transaction state。"
-    }
-
-    if (-not $state.snapshot_dir) {
-        throw "Transaction state 缺少 snapshot_dir。"
-    }
-
-    if (-not (Test-Path -LiteralPath $state.snapshot_dir -PathType Container)) {
-        throw "Snapshot 不存在：$($state.snapshot_dir)"
-    }
-
-    Restore-ProjectionSnapshot `
-        -SnapshotDir $state.snapshot_dir
-
-    $state.status = 'ROLLED_BACK'
-    $state.rollback_at = (Get-Date).ToString('o')
-
-    Write-TransactionState `
-        -State @{
-            version = 1
-            status = 'ROLLED_BACK'
-            rollback_at = $state.rollback_at
-            previous_transaction = $state
-        }
-
-    Write-Ok "Rollback 完成。"
-}
-
-# ============================================================
-# SYNC
 #
 # IMPORTANT:
 #
@@ -1940,6 +1760,61 @@ function Invoke-GnGen {
 }
 
 # ============================================================
+# NODE DEPENDENCIES
+# ============================================================
+
+function Install-BnesNodeDependencies {
+
+    Write-Stage '安裝 Brave Node.js 依賴'
+
+    Push-Location $BraveDir
+
+    try {
+
+        $env:NODE_ENV = 'development'
+
+        $packageJsonPath = Join-Path $BraveDir 'package.json'
+
+        if (Test-Path -LiteralPath $packageJsonPath -PathType Leaf) {
+            $pkg = Get-Content -LiteralPath $packageJsonPath -Raw | ConvertFrom-Json
+            if ($pkg.devEngines.PSObject.Properties['packageManager']) {
+                $pkg.devEngines.PSObject.Properties.Remove('packageManager')
+                $pkg | ConvertTo-Json -Depth 20 | Set-Content -LiteralPath $packageJsonPath -Encoding UTF8
+                Write-Warn '已移除 package.json 中的 devEngines.packageManager 欄位以避免 pnpm 解析失敗。'
+            }
+        }
+
+        $nodeModulesPath = Join-Path $BraveDir 'node_modules'
+
+        if (Test-Path -LiteralPath $nodeModulesPath -PathType Container) {
+            Write-Warn '清理既有的 node_modules 以避免 pnpm store 損毀。'
+            Remove-Item -LiteralPath $nodeModulesPath -Recurse -Force -ErrorAction SilentlyContinue
+        }
+
+        pnpm install --frozen-lockfile 2>&1 |
+            Tee-Object `
+                -FilePath (
+                    Join-Path `
+                        $BuildRoot `
+                        'pnpm_install.log'
+                )
+
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        Pop-Location
+    }
+
+    if ($exitCode -ne 0) {
+        throw "pnpm install 失敗。EXIT=$exitCode"
+    }
+
+    Write-Ok 'Brave Node.js dependencies 安裝完成。'
+
+    return 0
+}
+
+# ============================================================
 # BRANDING
 # ============================================================
 
@@ -1960,6 +1835,8 @@ function Invoke-Branding {
         Write-Warn 'branding 已略過。'
         return 0
     }
+
+    Install-BnesNodeDependencies
 
     Push-Location $BraveDir
 
@@ -1996,6 +1873,163 @@ function Invoke-Branding {
     return 0
 }
 
+# ============================================================
+# WEB-DISCOVERY-PROJECT CORRUPTION GUARD
+#
+# web-discovery-project 是上游 Brave 委派的固定 git checkout，
+# 只在 build tree（E:）真實存在，且位於 $syncIgnore，
+# 並不會被 BNES canonical 投影 / SAFEDEL 碰觸。
+#
+# 但先前有「遞迴複製 / 快照還原」機制會在該目錄內造成損壞：
+#   - modules/parser/*（含 package.json、index.js）被刪除
+#   - 產生巢狀重複目錄：modules/modules/、configs/configs/、...
+#
+# 導致 ninja 的 web_discovery_project_resources 失敗：
+#   Module not found: Can't resolve '@web-discovery-project/parser'
+#
+# 本函式在 ninja 前就地偵測並修復該 checkout。
+# 只動可丟棄的 build tree，絕不碰 BNES canonical source。
+# 對健康的工作樹是 no-op（安全、可重入）。
+# ============================================================
+
+function Repair-WebDiscoveryProject {
+
+    $wdp = Join-Path $BraveDir 'vendor\web-discovery-project'
+
+    if (-not (Test-Path -LiteralPath $wdp -PathType Container)) {
+        return $false
+    }
+
+    $gitDir = Join-Path $wdp '.git'
+    if (-not (Test-Path -LiteralPath $gitDir -PathType Container)) {
+        Write-Info 'web-discovery-project 非 git checkout，略過損壞檢查。'
+        return $false
+    }
+
+    # --------------------------------------------------------
+    # DETECT
+    # --------------------------------------------------------
+
+    Push-Location $wdp
+    try {
+        $null = git status --porcelain 2>$null
+        if ($LASTEXITCODE -ne 0) {
+            Write-Warn "web-discovery-project git status 失敗（EXIT=$LASTEXITCODE），略過。"
+            return $false
+        }
+    }
+    finally {
+        Pop-Location
+    }
+
+    $parserPkg = Join-Path $wdp 'modules\parser\package.json'
+    $corrupt = -not (Test-Path -LiteralPath $parserPkg -PathType Leaf)
+
+    if (-not $corrupt) {
+
+        $nested =
+            Get-ChildItem `
+                -LiteralPath $wdp `
+                -Directory `
+                -Force `
+                -ErrorAction SilentlyContinue |
+            Where-Object {
+                Test-Path `
+                    -LiteralPath (Join-Path $_.FullName $_.Name) `
+                    -PathType Container
+            } |
+            Select-Object -First 1
+
+        if ($nested) {
+            $corrupt = $true
+        }
+    }
+
+    $link = Join-Path $wdp 'node_modules\@web-discovery-project\parser'
+
+    if (-not $corrupt) {
+        $corrupt = -not (
+            Test-Path `
+                -LiteralPath (Join-Path $link 'package.json') `
+                -PathType Leaf
+        )
+    }
+
+    if (-not $corrupt) {
+        return $false
+    }
+
+    # --------------------------------------------------------
+    # REPAIR (disposable build tree only)
+    # --------------------------------------------------------
+
+    Write-Warn '偵測到 web-discovery-project 工作樹損壞，開始自動修復。'
+    Write-Info "  路徑：$wdp"
+
+    Push-Location $wdp
+    try {
+
+        & git reset --hard HEAD 2>&1 |
+            Out-Null
+
+        if ($LASTEXITCODE -ne 0) {
+            throw "git reset --hard 失敗。EXIT=$LASTEXITCODE"
+        }
+
+        # 只清除未追蹤檔/目錄；node_modules 已被 .gitignore 排除，
+        # 因此既有的 webpack 依賴會被保留，僅重建需要的 link。
+        & git clean -fd 2>&1 |
+            Out-Null
+
+        if ($LASTEXITCODE -ne 0) {
+            throw "git clean -fd 失敗。EXIT=$LASTEXITCODE"
+        }
+
+        Write-Ok 'git reset / clean 完成。'
+
+        if (-not (Test-Path -LiteralPath $parserPkg -PathType Leaf)) {
+            throw "git reset 後 modules/parser/package.json 仍不存在：$parserPkg"
+        }
+
+        # 重建 npm workspace link: @web-discovery-project/parser -> modules/parser
+        $scoped = Join-Path $wdp 'node_modules\@web-discovery-project'
+        $target = Join-Path $wdp 'modules\parser'
+
+        if (-not (Test-Path -LiteralPath $scoped -PathType Container)) {
+            New-Item -ItemType Directory -Force -Path $scoped |
+                Out-Null
+        }
+
+        if (Test-Path -LiteralPath $link) {
+            Remove-Item `
+                -LiteralPath $link `
+                -Recurse `
+                -Force `
+                -ErrorAction SilentlyContinue
+        }
+
+        New-Item `
+            -ItemType Junction `
+            -Path $link `
+            -Target $target |
+            Out-Null
+
+        if (-not (Test-Path -LiteralPath (Join-Path $link 'package.json') -PathType Leaf)) {
+            throw 'parser junction 建立後 package.json 仍無法解析。'
+        }
+    }
+    finally {
+        Pop-Location
+    }
+
+    Write-Ok 'web-discovery-project 已自動修復。'
+
+    return $true
+}
+
+# ============================================================
+# NINJA RESOLUTION
+# ============================================================
 # ============================================================
 # NINJA RESOLUTION
 # ============================================================
@@ -2380,41 +2414,13 @@ function Invoke-TransactionFailure {
         Write-Host $_.Exception.Message -ForegroundColor Red
     }
 
-    if ($TransactionalMode -and $State.snapshot_dir) {
-
-        try {
-
-            Write-Warn 'Transactional mode：開始恢復 build projection。'
-
-            Restore-ProjectionSnapshot `
-                -SnapshotDir $State.snapshot_dir
-
-            $State.status = 'FAILED_ROLLED_BACK'
-            $State.rollback_at = (Get-Date).ToString('o')
-
-            Write-TransactionState `
-                -State $State
-
-            Write-Ok 'Build projection 已 rollback。'
-        }
-        catch {
-
-            Write-Host ''
-            Write-Host '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!' -ForegroundColor Red
-            Write-Host 'CRITICAL: AUTOMATIC ROLLBACK FAILED' -ForegroundColor Red
-            Write-Host '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!' -ForegroundColor Red
-            Write-Host ''
-            Write-Host $_.Exception.Message -ForegroundColor Red
-        }
-    }
-
     Write-Host ''
     Write-Host 'BNES SAFE BUILD POLICY:' -ForegroundColor Yellow
     Write-Host '  不自動修改 canonical source'
     Write-Host '  不自動解決 semantic conflict'
     Write-Host '  不自動猜測 GN dependency'
     Write-Host '  不自動把 upstream 修正寫回 BNES'
-    Write-Host '  保留 snapshot / logs / manifests'
+    Write-Host '  保留 logs / manifests'
     Write-Host ''
 
     return 1
@@ -2485,8 +2491,6 @@ $transactionState = @{
     canonical_root = $BnesCore
     projection_root = $BraveDir
 
-    snapshot_dir = $null
-
     stages = @{
         init = 'PENDING'
         sync = 'PENDING'
@@ -2529,20 +2533,6 @@ try {
     # SPECIAL COMMANDS
     # --------------------------------------------------------
 
-    if ($Rollback) {
-
-        New-BnesBuildLock
-
-        try {
-            Invoke-ExplicitRollback
-        }
-        finally {
-            Remove-BnesBuildLock
-        }
-
-        exit 0
-    }
-
     if ($VerifyOnly) {
 
         New-BnesBuildLock
@@ -2569,36 +2559,6 @@ try {
 
     $canonicalManifest =
         New-BnesCanonicalManifest
-
-    # --------------------------------------------------------
-    # TRANSACTION SNAPSHOT
-    # --------------------------------------------------------
-
-    if ($TransactionalMode) {
-
-        $snapshotDir =
-            New-ProjectionSnapshot `
-                -TransactionId $transactionId
-
-        $transactionState.snapshot_dir =
-            $snapshotDir
-    }
-    else {
-
-        Write-Warn @'
-目前不是 SafeBuild mode。
-
-這表示：
-  build projection 仍可能直接被 upstream / hooks 修改。
-
-建議正式建構永遠使用：
-
-  -SafeBuild
-'@
-    }
-
-    Write-TransactionState `
-        -State $transactionState
 
     # --------------------------------------------------------
     # ENVIRONMENT
@@ -2841,6 +2801,10 @@ BNES protected overlay validation 被略過。
     # --------------------------------------------------------
     # STEP 4
     # --------------------------------------------------------
+
+    # web-discovery-project 損壞自動偵測/修復（僅限可丟棄 build tree；
+    # 健康時為 no-op）。
+    Repair-WebDiscoveryProject
 
     Invoke-NinjaBuild
 

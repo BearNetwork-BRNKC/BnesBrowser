@@ -67,11 +67,6 @@
       "name": "node",
       "version": ">=24.16.0 <25.0.0",
       "onFail": "error"
-    },
-    "packageManager": {
-      "name": "pnpm",
-      "version": ">=11.9.0",
-      "onFail": "error"
     }
   },
   "homepage": "https:/github.com/brave/brave-core#readme",
