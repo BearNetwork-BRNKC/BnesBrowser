@@ -1647,7 +1647,11 @@ enable_brave_ads = false
 enable_brave_news = false
 enable_brave_rewards = false
 enable_brave_wallet = false
-enable_brave_vpn = false
+# NOTE: `enable_brave_vpn` is a computed variable (v1 || v2) and CANNOT be
+# overridden in args.gn. To actually strip the Brave VPN module (incl. the
+# wireguard service & v2 apps), override BOTH architecture flags below.
+enable_brave_vpn_v1 = false
+enable_brave_vpn_v2 = false
 
 # ------------------------------------------------------------
 # Windows installer
