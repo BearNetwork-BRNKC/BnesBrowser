@@ -1654,6 +1654,24 @@ enable_brave_vpn_v1 = false
 enable_brave_vpn_v2 = false
 
 # ------------------------------------------------------------
+# BNES independence: these depend on Brave private services / auth
+# that BNES does not (and should not) obtain.
+# ------------------------------------------------------------
+
+# Tor client is fetched at runtime from go-updater.brave.com via a component
+# that requires Brave's private signed auth. BNES cannot obtain that, so Tor
+# can never function -> strip the feature + UI entirely.
+enable_tor = false
+
+# AI Chat (Leo) requires Brave's hosted AI services. Stripped for full
+# independence and to remove a non-functional entry point.
+enable_ai_chat = false
+
+# Keep the "Brave Origin" paid variant disabled. This also disables the
+# Origin card in brave://settings/system and suppresses Purchased checks.
+is_brave_origin_branded = false
+
+# ------------------------------------------------------------
 # Windows installer
 # ------------------------------------------------------------
 
