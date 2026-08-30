@@ -33,7 +33,8 @@ void AddNothingToFilterSet(rust::Box<adblock::FilterSet>*) {}
 // (e.g. no network / component server rejects the request), load the rules
 // that are bundled directly into this binary. This makes the Shield work
 // fully offline and independent of any update server.
-void AddBnesBundledListToFilterSet(rust::Box<adblock::FilterSet>* filter_set) {
+void AddBnesBundledListToFilterSetFromComponent(
+    rust::Box<adblock::FilterSet>* filter_set) {
   // permission_mask == 0xff == ALL_FILTERING_PERMISSIONS so the default
   // engine treats these as universally applicable, matching upstream default.
   constexpr uint8_t kAllPermissions = 0xff;
@@ -162,7 +163,7 @@ void AdBlockComponentFiltersProvider::LoadFilterSet(
     // fall back to the rules bundled into this binary so that the Shield can
     // still block ads/trackers fully offline. If the updater later provides a
     // real component, an update will be pushed to refresh the rules.
-    std::move(cb).Run(base::BindOnce(AddBnesBundledListToFilterSet));
+    std::move(cb).Run(base::BindOnce(AddBnesBundledListToFilterSetFromComponent));
     return;
   }
 

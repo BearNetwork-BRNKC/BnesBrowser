@@ -52,9 +52,8 @@ struct RegexManagerDiscardPolicy;
 }  // namespace adblock
 namespace brave_shields {
 
-class AdBlockComponentFiltersProvider;
-class AdBlockDefaultResourceProvider;
 class AdBlockComponentServiceManager;
+class AdBlockBnesDefaultProvider;
 class AdBlockCustomFiltersProvider;
 class AdBlockCustomResourceProvider;
 class AdBlockLocalhostFiltersProvider;
@@ -275,6 +274,8 @@ class AdBlockService {
   std::unique_ptr<AdBlockSubscriptionServiceManager>
       subscription_service_manager_ GUARDED_BY_CONTEXT(sequence_checker_);
   std::unique_ptr<AdBlockComponentServiceManager> component_service_manager_
+      GUARDED_BY_CONTEXT(sequence_checker_);
+  std::unique_ptr<AdBlockBnesDefaultProvider> bnes_default_provider_
       GUARDED_BY_CONTEXT(sequence_checker_);
 
   std::unique_ptr<SourceProviderObserver> default_service_observer_

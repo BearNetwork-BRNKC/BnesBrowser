@@ -30,8 +30,6 @@ class PrefChangeRegistrar;
 
 namespace brave_shields {
 
-class ComponentProvidersGate;
-
 // The adblock component service manager, in charge of initializing and
 // managing adblock lists served via CRX components.
 class AdBlockComponentServiceManager
@@ -88,13 +86,6 @@ class AdBlockComponentServiceManager
     return component_filters_providers_;
   }
 
-  // Sentinel providers that block filter set loading until the catalog has
-  // loaded and all component providers have been registered.
-  std::unique_ptr<ComponentProvidersGate> default_gate_
-      GUARDED_BY_CONTEXT(sequence_checker_);
-  std::unique_ptr<ComponentProvidersGate> additional_gate_
-      GUARDED_BY_CONTEXT(sequence_checker_);
-
   raw_ptr<PrefService> local_state_ GUARDED_BY_CONTEXT(sequence_checker_);
   std::string locale_ GUARDED_BY_CONTEXT(sequence_checker_);
   std::map<std::string, std::unique_ptr<AdBlockComponentFiltersProvider>>
@@ -113,8 +104,6 @@ class AdBlockComponentServiceManager
   std::unique_ptr<PrefChangeRegistrar> local_state_change_registrar_;
 
   raw_ptr<AdBlockListP3A> list_p3a_;
-
-  base::RepeatingTimer update_check_timer_;
 
   SEQUENCE_CHECKER(sequence_checker_);
 

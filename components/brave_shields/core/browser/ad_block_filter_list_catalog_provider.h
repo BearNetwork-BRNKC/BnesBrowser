@@ -44,15 +44,9 @@ class AdBlockFilterListCatalogProvider {
   void AddObserver(Observer* observer);
   void RemoveObserver(Observer* observer);
 
- private:
   void OnFilterListCatalogLoaded(const std::string& catalog_json);
-  void OnComponentReady(const base::FilePath&);
-
-  base::FilePath component_path_;
 
   base::ObserverList<Observer> observers_;
-
-  base::WeakPtrFactory<AdBlockFilterListCatalogProvider> weak_factory_{this};
 };
 
 }  // namespace brave_shields

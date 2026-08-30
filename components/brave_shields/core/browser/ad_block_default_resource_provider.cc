@@ -12,17 +12,10 @@
 #include "base/task/thread_pool.h"
 #include "brave/components/brave_component_updater/browser/dat_file_util.h"
 #include "brave/components/brave_shields/core/browser/ad_block_component_installer.h"
-#include "brave/components/brave_shields/core/browser/bnes_default_list.h"
-#include "base/feature_list.h"
 
 namespace {
 
 constexpr char kAdBlockResourcesFilename[] = "resources.json";
-
-#if BUILDFLAG(IS_WIN)
-BASE_FEATURE(kBNESOfflineDefaultResourceEnabled,
-             base::FEATURE_ENABLED_BY_DEFAULT);
-#endif
 
 }  // namespace
 
@@ -83,12 +76,6 @@ void AdBlockDefaultResourceProvider::LoadResources(
     base::OnceCallback<void(AdblockResourceStorageBox)> cb) {
   base::FilePath resources_path = GetResourcesPath();
   if (resources_path.empty()) {
-#if BUILDFLAG(IS_WIN)
-    if (base::FeatureList::IsEnabled(kBNESOfflineDefaultResourceEnabled)) {
-      LoadOfflineResources(std::move(cb));
-      return;
-    }
-#endif
     // If the path is not ready yet, run the callback with empty resources to
     // avoid blocking filter data loads.
     auto empty_storage = adblock::new_empty_resource_storage();
@@ -108,26 +95,5 @@ void AdBlockDefaultResourceProvider::LoadResources(
           },
           std::move(cb)));
 }
-
-#if BUILDFLAG(IS_WIN)
-void AdBlockDefaultResourceProvider::LoadOfflineResources(
-    base::OnceCallback<void(AdblockResourceStorageBox)> cb) {
-  base::ThreadPool::PostTaskAndReplyWithResult(
-      FROM_HERE, {base::MayBlock()},
-      base::BindOnce(
-          [](std::string resources_json) {
-            return adblock::new_resource_storage(std::move(resources_json));
-          },
-          std::string(
-              reinterpret_cast<const char*>(bnes_filterlist::kBnesDefaultList),
-              bnes_filterlist::kBnesDefaultListSize)),
-      base::BindOnce(
-          [](base::OnceCallback<void(AdblockResourceStorageBox)> cb,
-             AdblockResourceStorageBox storage) {
-            std::move(cb).Run(std::move(storage));
-          },
-          std::move(cb)));
-}
-#endif
 
 }  // namespace brave_shields

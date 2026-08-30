@@ -37,11 +37,6 @@ class AdBlockDefaultResourceProvider : public AdBlockResourceProvider {
   void LoadResources(
       base::OnceCallback<void(AdblockResourceStorageBox)>) override;
 
-#if BUILDFLAG(IS_WIN)
-  void LoadOfflineResources(
-      base::OnceCallback<void(AdblockResourceStorageBox)> cb);
-#endif
-
  private:
   friend class ::AdBlockServiceTest;
 

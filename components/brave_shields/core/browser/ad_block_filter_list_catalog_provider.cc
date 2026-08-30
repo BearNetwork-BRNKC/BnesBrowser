@@ -8,27 +8,34 @@
 #include <string>
 #include <utility>
 
-#include "base/files/file_path.h"
-#include "base/task/thread_pool.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_installer.h"
 
-constexpr char kListCatalogFile[] = "list_catalog.json";
+namespace {
+
+constexpr char kBnesDefaultCatalogJson[] = R"([
+  {
+    "uuid": "bnes-default-filter-list",
+    "url": "",
+    "title": "BNES Default Filter List",
+    "langs": ["en"],
+    "support_url": "",
+    "desc": "Bundled default filter list for BNES (EasyList, EasyPrivacy, uBO, Brave, Cookie).",
+    "hidden": false,
+    "default_enabled": true,
+    "first_party_protections": false,
+    "permission_mask": 255,
+    "platforms": ["win32", "linux", "mac"],
+    "component_id": "",
+    "base64_public_key": ""
+  }
+])";
+
+}  // namespace
 
 namespace brave_shields {
 
 AdBlockFilterListCatalogProvider::AdBlockFilterListCatalogProvider(
-    component_updater::ComponentUpdateService* cus) {
-  TRACE_EVENT("brave.adblock", "RegisterAdBlockFilterListCatalogComponent",
-              perfetto::Flow::FromPointer(this));
-  // Can be nullptr in unit tests
-  if (cus) {
-    RegisterAdBlockFilterListCatalogComponent(
-        cus,
-        base::BindRepeating(&AdBlockFilterListCatalogProvider::OnComponentReady,
-                            weak_factory_.GetWeakPtr()));
-  }
-}
+    component_updater::ComponentUpdateService* cus) {}
 
 AdBlockFilterListCatalogProvider::~AdBlockFilterListCatalogProvider() = default;
 
@@ -53,38 +60,9 @@ void AdBlockFilterListCatalogProvider::OnFilterListCatalogLoaded(
   }
 }
 
-void AdBlockFilterListCatalogProvider::OnComponentReady(
-    const base::FilePath& path) {
-  TRACE_EVENT("brave.adblock",
-              "AdBlockFilterListCatalogProvider::OnComponentReady",
-              perfetto::Flow::FromPointer(this), "path", path.value());
-  component_path_ = path;
-
-  // Load the filter list catalog (as a string)
-  base::ThreadPool::PostTaskAndReplyWithResult(
-      FROM_HERE, {base::MayBlock()},
-      base::BindOnce(&brave_component_updater::GetDATFileAsString,
-                     component_path_.AppendASCII(kListCatalogFile)),
-      base::BindOnce(
-          &AdBlockFilterListCatalogProvider::OnFilterListCatalogLoaded,
-          weak_factory_.GetWeakPtr()));
-}
-
 void AdBlockFilterListCatalogProvider::LoadFilterListCatalog(
     base::OnceCallback<void(const std::string& catalog_json)> cb) {
-  if (component_path_.empty()) {
-    // No catalog component available (e.g. offline / no update server).
-    // Run the callback with an empty catalog so the observer can inject
-    // a bundled fallback instead of waiting indefinitely.
-    std::move(cb).Run(std::string());
-    return;
-  }
-
-  base::ThreadPool::PostTaskAndReplyWithResult(
-      FROM_HERE, {base::MayBlock()},
-      base::BindOnce(&brave_component_updater::GetDATFileAsString,
-                     component_path_.AppendASCII(kListCatalogFile)),
-      std::move(cb));
+  std::move(cb).Run(kBnesDefaultCatalogJson);
 }
 
 }  // namespace brave_shields
