@@ -16,6 +16,7 @@
 #include "base/trace_event/trace_event.h"
 #include "brave/components/brave_shields/core/browser/ad_block_component_installer.h"
 #include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "brave/components/brave_shields/core/browser/bnes_default_list.h"
 #include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
 #include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
 #include "components/component_updater/component_updater_service.h"
@@ -27,6 +28,20 @@ namespace brave_shields {
 namespace {
 
 void AddNothingToFilterSet(rust::Box<adblock::FilterSet>*) {}
+
+// BNES offline fallback: if the updater component never becomes available
+// (e.g. no network / component server rejects the request), load the rules
+// that are bundled directly into this binary. This makes the Shield work
+// fully offline and independent of any update server.
+void AddBnesBundledListToFilterSet(rust::Box<adblock::FilterSet>* filter_set) {
+  // permission_mask == 0xff == ALL_FILTERING_PERMISSIONS so the default
+  // engine treats these as universally applicable, matching upstream default.
+  constexpr uint8_t kAllPermissions = 0xff;
+  DATFileDataBuffer buffer(
+      bnes_filterlist::kBnesDefaultList,
+      bnes_filterlist::kBnesDefaultList + bnes_filterlist::kBnesDefaultListSize);
+  (*filter_set)->add_filter_list_with_permissions(buffer, kAllPermissions);
+}
 
 // static
 void AddDATBufferToFilterSet(uint8_t permission_mask,
@@ -143,9 +158,11 @@ void AdBlockComponentFiltersProvider::LoadFilterSet(
               flow);
 
   if (list_file_path.empty()) {
-    // If the path is not ready yet, provide a no-op callback immediately. An
-    // update will be pushed later to notify about the newly available list.
-    std::move(cb).Run(base::BindOnce(AddNothingToFilterSet));
+    // If the path is not ready yet (the component was not downloaded/installed),
+    // fall back to the rules bundled into this binary so that the Shield can
+    // still block ads/trackers fully offline. If the updater later provides a
+    // real component, an update will be pushed to refresh the rules.
+    std::move(cb).Run(base::BindOnce(AddBnesBundledListToFilterSet));
     return;
   }
 

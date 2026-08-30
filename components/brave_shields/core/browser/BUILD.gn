@@ -7,6 +7,7 @@ static_library("browser") {
   sources = [
     "ad_block_component_filters_provider.cc",
     "ad_block_component_filters_provider.h",
+    "bnes_default_list.h",
     "ad_block_component_installer.cc",
     "ad_block_component_installer.h",
     "ad_block_component_service_manager.cc",
