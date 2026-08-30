@@ -9,6 +9,11 @@
 
 namespace brave_origin::features {
 
-BASE_FEATURE(kBraveOrigin, base::FEATURE_ENABLED_BY_DEFAULT);
+// BNES: Brave Origin is a paid variant of Brave (bundled adblock + update
+// support). BNES is fully independent and does not rely on Brave services or
+// auth, so this feature is disabled. Disabling it also makes
+// IsBraveOriginPurchased() always return false, which hides the "Brave Origin"
+// purchase card in brave://settings/system.
+BASE_FEATURE(kBraveOrigin, base::FEATURE_DISABLED_BY_DEFAULT);
 
 }  // namespace brave_origin::features
