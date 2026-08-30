@@ -1635,7 +1635,7 @@ brave_product_name = "BnesBrowser"
 # General build
 # ------------------------------------------------------------
 
-enable_widevine = false
+enable_widevine = true
 treat_warnings_as_errors = false
 enable_pseudolocales = false
 
