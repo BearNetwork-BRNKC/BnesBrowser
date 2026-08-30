@@ -73,8 +73,10 @@ void AdBlockFilterListCatalogProvider::OnComponentReady(
 void AdBlockFilterListCatalogProvider::LoadFilterListCatalog(
     base::OnceCallback<void(const std::string& catalog_json)> cb) {
   if (component_path_.empty()) {
-    // If the path is not ready yet, don't run the callback. An update should be
-    // pushed soon.
+    // No catalog component available (e.g. offline / no update server).
+    // Run the callback with an empty catalog so the observer can inject
+    // a bundled fallback instead of waiting indefinitely.
+    std::move(cb).Run(std::string());
     return;
   }
 

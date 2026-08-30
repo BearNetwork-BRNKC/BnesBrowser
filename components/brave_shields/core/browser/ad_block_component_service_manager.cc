@@ -511,10 +511,36 @@ base::ListValue AdBlockComponentServiceManager::GetRegionalLists() {
   return list;
 }
 
+namespace {
+
+constexpr char kBnesDefaultCatalogJson[] = R"([
+  {
+    "uuid": "bnes-default-filter-list",
+    "url": "",
+    "title": "BNES Default Filter List",
+    "langs": ["en"],
+    "support_url": "",
+    "desc": "Bundled default filter list for BNES (EasyList, EasyPrivacy, uBO, Brave, Cookie).",
+    "hidden": false,
+    "default_enabled": true,
+    "first_party_protections": false,
+    "permission_mask": 255,
+    "platforms": ["win32", "linux", "mac"],
+    "component_id": "",
+    "base64_public_key": ""
+  }
+])";
+
+}  // namespace
+
 void AdBlockComponentServiceManager::OnFilterListCatalogLoaded(
     const std::string& catalog_json) {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
-  SetFilterListCatalog(FilterListCatalogFromJSON(catalog_json));
+  auto catalog = FilterListCatalogFromJSON(catalog_json);
+  if (catalog.empty()) {
+    catalog = FilterListCatalogFromJSON(kBnesDefaultCatalogJson);
+  }
+  SetFilterListCatalog(std::move(catalog));
 
   update_check_timer_.Start(
       FROM_HERE,
