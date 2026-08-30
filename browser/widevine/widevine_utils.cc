@@ -8,7 +8,6 @@
 #include <string>
 
 #include "brave/browser/widevine/widevine_permission_request.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
 #include "brave/components/constants/pref_names.h"
 #include "brave/components/widevine/constants.h"
 #include "brave/grit/brave_generated_resources.h"
@@ -24,13 +23,6 @@
 
 namespace {
 
-#if BUILDFLAG(ENABLE_WIDEVINE_CDM_COMPONENT)
-void InstallWidevineOnceRegistered() {
-  brave_component_updater::BraveOnDemandUpdater::GetInstance()->EnsureInstalled(
-      kWidevineComponentId);
-}
-#endif
-
 }  // namespace
 
 void EnableWidevineCdm() {
@@ -40,8 +32,7 @@ void EnableWidevineCdm() {
 
   SetWidevineEnabled(true);
 #if BUILDFLAG(ENABLE_WIDEVINE_CDM_COMPONENT)
-  RegisterWidevineCdmComponent(g_browser_process->component_updater(),
-                               base::BindOnce(&InstallWidevineOnceRegistered));
+  RegisterWidevineCdmComponent(g_browser_process->component_updater());
 #endif
 }
 
