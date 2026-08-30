@@ -2865,7 +2865,7 @@ BNES protected overlay validation 被略過。
             -Label 'source BnesBrowser POST-BUILD'
 
         Invoke-BnesProtectedOverlayGuard `
-            -Root $BraveDir `
+            -TreeRoot $BraveDir `
             -Label 'mapped src\brave POST-BUILD'
     }
 
