@@ -27,20 +27,16 @@ namespace brave_shields {
 
 namespace {
 
-void AddNothingToFilterSet(rust::Box<adblock::FilterSet>*) {}
-
 // BNES offline fallback: if the updater component never becomes available
 // (e.g. no network / component server rejects the request), load the rules
 // that are bundled directly into this binary. This makes the Shield work
 // fully offline and independent of any update server.
 void AddBnesBundledListToFilterSetFromComponent(
     rust::Box<adblock::FilterSet>* filter_set) {
-  // permission_mask == 0xff == ALL_FILTERING_PERMISSIONS so the default
-  // engine treats these as universally applicable, matching upstream default.
   constexpr uint8_t kAllPermissions = 0xff;
-  DATFileDataBuffer buffer(
-      bnes_filterlist::kBnesDefaultList,
-      bnes_filterlist::kBnesDefaultList + bnes_filterlist::kBnesDefaultListSize);
+  const auto* data =
+      reinterpret_cast<const unsigned char*>(bnes_filterlist::kBnesDefaultList);
+  DATFileDataBuffer buffer(data, data + bnes_filterlist::kBnesDefaultListSize);
   (*filter_set)->add_filter_list_with_permissions(buffer, kAllPermissions);
 }
 
