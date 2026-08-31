@@ -6,7 +6,76 @@
 ! @@||streaming-cdn.com^$xhr
 ! @@||video.example.com^
 !
-! --- Streaming CDN Exceptions ---
-! Add exceptions below for streaming CDNs blocked by EasyList:
-! @@||bfikuncdn.com^$xhr
-! @@||kkzycdn.com^$xhr
+! --- General Streaming Exceptions ---
+! Broad patterns for common streaming infrastructure.
+! These unbreak video playback across many movie / drama / sports sites.
+!
+! --- HLS / DASH / Manifest files ---
+@@||*.m3u8^$media
+@@||*.mpd^$media
+@@||*.m4s^$media
+@@||*.m4v^$media
+@@|/hls/$media,xhr
+@@|/dash/$media,xhr
+@@|/stream/$media,xhr
+@@|/video/$media,xhr
+@@|/player/$media,xhr
+!
+! --- Common streaming CDNs ---
+@@||*.akamaihd.net^$media,xhr
+@@||*.akamaized.net^$media,xhr
+@@||*.edgekey.net^$media,xhr
+@@||*.edgesuite.net^$media,xhr
+@@||*.cloudfront.net^$media,xhr
+@@||*.fastly.net^$media,xhr
+@@||*.cdnvideo.net^$media,xhr
+@@||*.cdnvideo.ru^$media,xhr
+@@||*.cdnthethirddiva.com^$media,xhr
+@@||*.cdntrex.com^$media,xhr
+@@||*.cdnstream.com^$media,xhr
+@@||*.streamingcdn.*^$media,xhr
+@@||*.streaming*.com^$media,xhr
+!
+! --- Common streaming player scripts / iframes ---
+@@||*.youtube.com/iframe_api$script
+@@||*.player.*.com^$subdocument
+@@||*.embed.*.com^$subdocument
+@@|/player.html$subdocument
+!
+! --- Common ad/tracking domains that break streaming players ---
+! These are often blocked by EasyList but are required for playback on many sites.
+! We only unblock them for media context to limit the privacy impact.
+||googlesyndication.com^$script,redirect=noopjs
+||googleadservices.com^$script,redirect=noopjs
+||doubleclick.net^$script,redirect=noopjs
+@@||googlevideo.com^$media
+@@||gvt1.com^$media
+@@||gvt2.com^$media
+@@||gvt3.com^$media
+@@||ytimg.com^$image
+@@||yt3.ggpht.com^$image
+@@||i.ytimg.com^$image
+!
+! --- Broad 1st-party streaming path exceptions ---
+! Many small movie sites use similar URL patterns.
+@@|/watch?*$media,xhr
+@@|/embed*$subdocument
+@@|/embed*$media,xhr
+@@|/vod*$media,xhr
+@@|/hls*$media,xhr
+@@|/m3u8*$media,xhr
+@@|/mpd*$media,xhr
+@@|/dash*$media,xhr
+@@|/stream*$media,xhr
+@@|/movie*$media,xhr
+@@|/film*$media,xhr
+@@|/tv*$media,xhr
+@@|/series*$media,xhr
+@@|/drama*$media,xhr
+@@|/anime*$media,xhr
+@@|/play*$media,xhr
+@@|/player*$media,xhr
+!
+! --- Site-specific fallbacks (keep growing as users report breakage) ---
+! @@||movieffm.net^$document
+! @@||movieffm.net^$all
