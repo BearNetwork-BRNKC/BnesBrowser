@@ -106,6 +106,25 @@ if (Test-Path $CustomList) {
 # --- Write merged .txt ---
 Write-Host "`nWriting merged list..."
 $finalContent = $combinedContent.ToString()
+
+# --- Strip Brave cosmetic `+js(set, navigator.connection, {})` for twitch.tv ---
+# This is a brave-fix webcompat rule that breaks Twitch player (Error #4000).
+# `+js(set, ...)` cannot be disabled via `@@||` allow rules; we must remove
+# the rule entirely from the bundled list so the bundled default engine never
+# injects navigator.connection = {} on twitch.tv frames.
+$removedRules = 0
+$finalContent = [regex]::Replace(
+    $finalContent,
+    '(?m)^[^\r\n]*\+js\(set,\s*navigator\.connection,\s*\{\s*\}\s*\)[^\r\n]*$',
+    { param($m)
+        $script:removedRules++
+        $null
+    }
+)
+if ($removedRules -gt 0) {
+    Write-Host "  Stripped $removedRules navigator.connection={} cosmetic rule(s) (twitch player compat)" -ForegroundColor Yellow
+}
+
 [System.IO.File]::WriteAllText($OutputTxt, $finalContent, [System.Text.Encoding]::UTF8)
 $txtSizeKB = [Math]::Round((Get-Item $OutputTxt).Length / 1024)
 Write-Host "  Written: $OutputTxt" -ForegroundColor Green
