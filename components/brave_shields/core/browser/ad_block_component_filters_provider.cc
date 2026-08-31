@@ -34,10 +34,9 @@ namespace {
 void AddBnesBundledListToFilterSetFromComponent(
     rust::Box<adblock::FilterSet>* filter_set) {
   constexpr uint8_t kAllPermissions = 0xff;
-  const auto* data =
-      reinterpret_cast<const unsigned char*>(bnes_filterlist::kBnesDefaultList);
-  DATFileDataBuffer buffer(data,
-                           data + bnes_filterlist::kBnesDefaultListSize);  // NOLINT
+  const unsigned char* begin = std::begin(bnes_filterlist::kBnesDefaultList);
+  const unsigned char* end = std::end(bnes_filterlist::kBnesDefaultList);
+  DATFileDataBuffer buffer(begin, end);
   (*filter_set)->add_filter_list_with_permissions(buffer, kAllPermissions);
 }
 
