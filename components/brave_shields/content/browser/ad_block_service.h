@@ -54,8 +54,10 @@ namespace brave_shields {
 
 class AdBlockComponentServiceManager;
 class AdBlockBnesDefaultProvider;
+class AdBlockComponentFiltersProvider;
 class AdBlockCustomFiltersProvider;
 class AdBlockCustomResourceProvider;
+class AdBlockDefaultResourceProvider;
 class AdBlockLocalhostFiltersProvider;
 class AdBlockFilterListCatalogProvider;
 class AdBlockSubscriptionServiceManager;

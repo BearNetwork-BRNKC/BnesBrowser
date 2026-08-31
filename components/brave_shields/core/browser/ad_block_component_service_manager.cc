@@ -104,6 +104,28 @@ bool IsAdBlockOnlyModeSupportedAndFeatureEnabled(const std::string& locale) {
 
 }  // namespace
 
+namespace {
+
+constexpr char kBnesDefaultCatalogJson[] = R"([
+  {
+    "uuid": "bnes-default-filter-list",
+    "url": "",
+    "title": "BNES Default Filter List",
+    "langs": ["en"],
+    "support_url": "",
+    "desc": "Bundled default filter list for BNES (EasyList, EasyPrivacy, uBO, Brave, Cookie).",
+    "hidden": false,
+    "default_enabled": true,
+    "first_party_protections": false,
+    "permission_mask": 255,
+    "platforms": ["win32", "linux", "mac"],
+    "component_id": "",
+    "base64_public_key": ""
+  }
+])";
+
+}  // namespace
+
 AdBlockComponentServiceManager::AdBlockComponentServiceManager(
     PrefService* local_state,
     AdBlockFiltersProviderManager* filters_provider_manager,
@@ -444,28 +466,6 @@ base::ListValue AdBlockComponentServiceManager::GetRegionalLists() {
 
   return list;
 }
-
-namespace {
-
-constexpr char kBnesDefaultCatalogJson[] = R"([
-  {
-    "uuid": "bnes-default-filter-list",
-    "url": "",
-    "title": "BNES Default Filter List",
-    "langs": ["en"],
-    "support_url": "",
-    "desc": "Bundled default filter list for BNES (EasyList, EasyPrivacy, uBO, Brave, Cookie).",
-    "hidden": false,
-    "default_enabled": true,
-    "first_party_protections": false,
-    "permission_mask": 255,
-    "platforms": ["win32", "linux", "mac"],
-    "component_id": "",
-    "base64_public_key": ""
-  }
-])";
-
-}  // namespace
 
 void AdBlockComponentServiceManager::OnFilterListCatalogLoaded(
     const std::string& catalog_json) {
