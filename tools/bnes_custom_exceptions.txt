@@ -1,0 +1,12 @@
+﻿! ===== BNES Custom Exceptions =====
+! Add custom exception rules here (lines starting with @@ are whitelists)
+! This file will NOT be overwritten by the generator.
+!
+! Examples:
+! @@||streaming-cdn.com^$xhr
+! @@||video.example.com^
+!
+! --- Streaming CDN Exceptions ---
+! Add exceptions below for streaming CDNs blocked by EasyList:
+! @@||bfikuncdn.com^$xhr
+! @@||kkzycdn.com^$xhr

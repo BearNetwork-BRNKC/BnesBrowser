@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # BNES Browser Transactional Safe Build System
 #
 # Purpose:
@@ -2827,6 +2827,23 @@ BNES protected overlay validation 被略過。
     # web-discovery-project 損壞自動偵測/修復（僅限可丟棄 build tree；
     # 健康時為 no-op）。
     Repair-WebDiscoveryProject
+
+    # --------------------------------------------------------
+    # STEP 3.8: GENERATE BNES FILTER LIST
+    # --------------------------------------------------------
+    Write-Stage 'GENERATE BNES FILTER LIST'
+    $filterScript = Join-Path $BnesCore 'tools\generate_bnes_filterlist.ps1'
+    $filterOutput = Join-Path $BraveDir 'components\brave_shields\core\browser'
+    if (Test-Path -LiteralPath $filterScript) {
+        Write-Info "執行 BNES 過濾清單合併腳本..."
+        & pwsh -ExecutionPolicy Bypass -File $filterScript -OutputDir $filterOutput
+        if ($LASTEXITCODE -ne 0) {
+            throw "BNES 過濾清單生成失敗！"
+        }
+        Write-Ok "過濾清單已生成至 $filterOutput"
+    } else {
+        Write-Warn "找不到過濾清單生成腳本: $filterScript"
+    }
 
     Invoke-NinjaBuild
 
