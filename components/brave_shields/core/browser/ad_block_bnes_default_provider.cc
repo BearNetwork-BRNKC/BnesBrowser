@@ -18,7 +18,7 @@ void AddBnesBundledListToFilterSet(rust::Box<adblock::FilterSet>* filter_set) {
   const auto* data =
       reinterpret_cast<const unsigned char*>(bnes_filterlist::kBnesDefaultList);
   brave_component_updater::DATFileDataBuffer buffer(
-      data, data + bnes_filterlist::kBnesDefaultListSize);
+      data, data + bnes_filterlist::kBnesDefaultListSize);  // NOLINT
   (*filter_set)->add_filter_list_with_permissions(buffer, kAllPermissions);
 }
 

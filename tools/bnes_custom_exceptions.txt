@@ -42,9 +42,16 @@
 @@||*.embed.*.com^$subdocument
 @@|/player.html$subdocument
 !
+! --- CRITICAL: Cloudflare Insights beacon (required by many sites) ---
+@@||cloudflareinsights.com^$script
+@@||cloudflareinsights.com^$xhr
+@@||static.cloudflareinsights.com^$script
+@@||static.cloudflareinsights.com^$xhr
+!
 ! --- Common ad/tracking domains that break streaming players ---
-! These are often blocked by EasyList but are required for playback on many sites.
-! We only unblock them for media context to limit the privacy impact.
+! Many small movie / drama sites load these as required anti-bot / analytics
+! scripts. Blocking them breaks the player initialization. We noop-redirect
+! script context to keep functionality without running the actual ads.
 ||googlesyndication.com^$script,redirect=noopjs
 ||googleadservices.com^$script,redirect=noopjs
 ||doubleclick.net^$script,redirect=noopjs
@@ -77,5 +84,66 @@
 @@|/player*$media,xhr
 !
 ! --- Site-specific fallbacks (keep growing as users report breakage) ---
-! @@||movieffm.net^$document
-! @@||movieffm.net^$all
+! These were confirmed to break player initialization when blocked.
+!
+! movieffm.net (and its anti-bot / loader domains)
+@@||movieffm.net^$document
+@@||cheapiefriseur.cfd^$all
+@@||cheapiefriseur.cfd^$xhr
+@@||janitorprecisiontrio.com^$script
+@@||janitorprecisiontrio.com^$xhr
+@@||agtcmuohbt.in^$script
+@@||agtcmuohbt.in^$xhr
+!
+! 楓林網 (maple-stage / maple-stage.com) and its ad loader chain.
+! Mui-player requires Hls.js + MSE; the loader chain below must not be blocked.
+@@||maple-stage.com^$document
+@@||maple-stage.com^$all
+@@||addthis.com^$script,domain=maple-stage.com
+@@||addthis.com^$xhr,domain=maple-stage.com
+@@||s7.addthis.com^$script,domain=maple-stage.com
+@@||avdb.me^$script
+@@||avdb.me^$xhr
+@@||ad.avdb.me^$script
+@@||ad.avdb.me^$xhr
+@@||avdb.me^$all
+@@||compass-fit.jp^$script
+@@||compass-fit.jp^$xhr
+@@||nt.compass-fit.jp^$script
+@@||nt.compass-fit.jp^$xhr
+!
+! Mui-player video path (楓林網 uses /vod/, /hls/, /api/)
+@@||maple-stage.com/hls/*$media,xhr
+@@||maple-stage.com/vod/*$media,xhr
+@@||maple-stage.com/api/*$xhr
+@@||*.maple-stage.com^$media,xhr
+!
+! Generic mui-player / Hls.js path exceptions (covers similar sites)
+@@||mui-player*.js^$script
+@@||hls.js^$script
+@@||hls.min.js^$script
+@@||/hls.js$script
+@@||/hls.min.js$script
+!
+! --- Twitch.tv (Error #4000 = browser missing required HLS/MSE feature) ---
+! Twitch streams are HLS over MSE. The manifest fetches go through
+! usher.ttvnw.net, video-weaver.*.ttvnw.net, hls.ttvnw.net, jtvnw.net.
+! If adblock or Brave's fingerprinting blocks any of these, the player
+! reports "unsupported browser" (error #4000). Allow list below.
+@@||twitch.tv^$document
+@@||www.twitch.tv^$document
+@@||*.twitch.tv^$media,xhr
+@@||usher.ttvnw.net^$xhr
+@@||usher.ttvnw.net^$media
+@@||video-weaver.*.ttvnw.net^$media,xhr
+@@||video-edge-*.*.ttvnw.net^$media,xhr
+@@||*.jtvnw.net^$media,xhr
+@@||*.ttvnw.net^$media,xhr
+@@||hls.ttvnw.net^$media,xhr
+@@||*.hls.ttvnw.net^$media,xhr
+@@||gql.twitch.tv^$xhr
+@@||passport.twitch.tv^$xhr
+@@||twitch.tv/api/*$xhr
+@@||*.twitchcdn.net^$media
+@@||*.twitchcdn.net^$xhr
+@@||twitch-extensibility.*^$script

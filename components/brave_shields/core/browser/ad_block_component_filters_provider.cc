@@ -36,7 +36,8 @@ void AddBnesBundledListToFilterSetFromComponent(
   constexpr uint8_t kAllPermissions = 0xff;
   const auto* data =
       reinterpret_cast<const unsigned char*>(bnes_filterlist::kBnesDefaultList);
-  DATFileDataBuffer buffer(data, data + bnes_filterlist::kBnesDefaultListSize);
+  DATFileDataBuffer buffer(data,
+                           data + bnes_filterlist::kBnesDefaultListSize);  // NOLINT
   (*filter_set)->add_filter_list_with_permissions(buffer, kAllPermissions);
 }
 
