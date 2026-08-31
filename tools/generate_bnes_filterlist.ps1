@@ -11,7 +11,7 @@ param(
 $ErrorActionPreference = "Stop"
 $OutputTxt  = Join-Path $OutputDir "bnes_default_list.txt"
 $OutputH    = Join-Path $OutputDir "bnes_default_list.h"
-$CacheDir   = Join-Path $PSScriptRoot "filterlist_cache"
+$CacheDir   = Join-Path $env:TEMP "bnes_filterlist_cache"
 $CustomList = Join-Path $PSScriptRoot "bnes_custom_exceptions.txt"
 
 Write-Host "=== BNES Filter List Generator ===" -ForegroundColor Cyan
@@ -100,26 +100,7 @@ if (Test-Path $CustomList) {
     [void]$combinedContent.AppendLine($customContent)
     Write-Host "  Loaded: $CustomList" -ForegroundColor Green
 } else {
-    # Create default custom exception template
-    $lines = @(
-        "! ===== BNES Custom Exceptions =====",
-        "! Add custom exception rules here (lines starting with @@ are whitelists)",
-        "! This file will NOT be overwritten by the generator.",
-        "!",
-        "! Examples:",
-        "! @@||streaming-cdn.com^`$xhr",
-        "! @@||video.example.com^",
-        "!",
-        "! --- Streaming CDN Exceptions ---",
-        "! Add exceptions below for streaming CDNs blocked by EasyList:",
-        "! @@||bfikuncdn.com^`$xhr",
-        "! @@||kkzycdn.com^`$xhr"
-    )
-    $templateContent = $lines -join "`r`n"
-    [System.IO.File]::WriteAllText($CustomList, $templateContent, [System.Text.Encoding]::UTF8)
-    Write-Host "  Created template: $CustomList" -ForegroundColor Yellow
-    [void]$combinedContent.AppendLine("! ===== BNES Custom Exceptions =====")
-    [void]$combinedContent.AppendLine($templateContent)
+    Write-Host "  No custom exceptions file found at $CustomList (skipping)" -ForegroundColor Yellow
 }
 
 # --- Write merged .txt ---
