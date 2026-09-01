@@ -2240,8 +2240,9 @@ declare_args() {
 
         foreach ($dep in $braveLitDeps) {
             if ($content -notmatch [regex]::Escape($dep)) {
-                $replacement = '${1}' + "`n    `" + $dep + '",'
-                $content = [regex]::Replace($content, '(?m)(    "//ui/webui/resources/cr_elements:build_ts",\r?\n)', $replacement)
+                $pattern = '(?m)(    "//ui/webui/resources/cr_elements:build_ts",\r?\n)'
+                $replacement = '${1}' + "`n    '" + $dep + "',"
+                $content = [regex]::Replace($content, $pattern, $replacement)
             }
         }
 
