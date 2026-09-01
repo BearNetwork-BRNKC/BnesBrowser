@@ -75,7 +75,7 @@ void ContentSettingsRegistry::BraveInit() {
            PermissionSettingsInfo::EXCEPTIONS_ON_SECURE_AND_INSECURE_ORIGINS);
 
   Register(ContentSettingsType::BRAVE_HTTPS_UPGRADE,
-           brave_shields::kHTTPSUpgrades, CONTENT_SETTING_ASK,
+           brave_shields::kHTTPSUpgrades, CONTENT_SETTING_BLOCK,
            WebsiteSettingsInfo::SYNCABLE, /*allowlisted_schemes=*/{},
            /*valid_settings=*/
            {CONTENT_SETTING_ALLOW, CONTENT_SETTING_ASK, CONTENT_SETTING_BLOCK},

@@ -312,9 +312,9 @@ IN_PROC_BROWSER_TEST_F(HttpsUpgradeBrowserTest, IsolateSettings) {
   // windows, nor vice versa.
   EXPECT_EQ(ControlType::ALLOW,
             brave_shields::GetHttpsUpgradeControlType(normal_map, host1));
-  EXPECT_EQ(ControlType::BLOCK_THIRD_PARTY,
+  EXPECT_EQ(ControlType::BLOCK,
             brave_shields::GetHttpsUpgradeControlType(incognito_map, host1));
-  EXPECT_EQ(ControlType::BLOCK_THIRD_PARTY,
+  EXPECT_EQ(ControlType::BLOCK,
             brave_shields::GetHttpsUpgradeControlType(normal_map, host2));
   EXPECT_EQ(ControlType::ALLOW,
             brave_shields::GetHttpsUpgradeControlType(incognito_map, host2));
@@ -333,7 +333,7 @@ IN_PROC_BROWSER_TEST_F(HttpsUpgradeBrowserTest, IsolateSettings) {
             brave_shields::GetHttpsUpgradeControlType(incognito_map, host1));
   EXPECT_EQ(ControlType::BLOCK,
             brave_shields::GetHttpsUpgradeControlType(incognito_map, host2));
-  EXPECT_EQ(ControlType::BLOCK_THIRD_PARTY,
+  EXPECT_EQ(ControlType::BLOCK,
             brave_shields::GetHttpsUpgradeControlType(normal_map, host2));
 
   // Set global setting to strict.
@@ -353,6 +353,6 @@ IN_PROC_BROWSER_TEST_F(HttpsUpgradeBrowserTest, IsolateSettings) {
   // Disabled global upgrades should apply to normal windows but not incognito.
   EXPECT_EQ(ControlType::ALLOW,
             brave_shields::GetHttpsUpgradeControlType(normal_map, GURL()));
-  EXPECT_EQ(ControlType::BLOCK_THIRD_PARTY,
+  EXPECT_EQ(ControlType::BLOCK,
             brave_shields::GetHttpsUpgradeControlType(incognito_map, GURL()));
 }

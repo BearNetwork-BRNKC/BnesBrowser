@@ -123,7 +123,7 @@ class BraveShieldsPage extends BraveShieldsPageBase {
       cookieControlTypes_: Array,
       cookieControlType_: {
         type: String,
-        value: 'block_third_party'
+        value: 'allow'
       },
       fingerprintingControlType_: String,
       httpsUpgradeControlType_: String,

@@ -32,7 +32,7 @@ void SetDefaultThirdPartyCookieBlockValue(Profile* profile) {
   profile->GetPrefs()->SetDefaultPrefValue(
       prefs::kCookieControlsMode,
       base::Value(static_cast<int>(
-          content_settings::CookieControlsMode::kBlockThirdParty)));
+          content_settings::CookieControlsMode::kOff)));
 }
 
 }  // namespace brave

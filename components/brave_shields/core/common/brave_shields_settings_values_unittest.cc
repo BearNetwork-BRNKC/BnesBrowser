@@ -100,7 +100,7 @@ TEST_F(ShieldsSettingsValuesTest, ControlTypeSettingTypeFailure) {
 
   using Setting =
       traits::BraveShieldsSetting<ContentSettingsType::BRAVE_COSMETIC_FILTERING,
-                                  ControlType, ControlType::BLOCK_THIRD_PARTY>;
+                                  ControlType, ControlType::BLOCK>;
 
   // Structure is invalid.
   if constexpr (DCHECK_IS_ON()) {

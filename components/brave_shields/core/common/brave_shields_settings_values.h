@@ -123,7 +123,7 @@ struct BraveShieldsSetting
 using CosmeticFilteringSetting = traits::BraveShieldsSetting<
     /*content_settings_type=*/ContentSettingsType::BRAVE_COSMETIC_FILTERING,
     /*SettingType=*/ControlType,
-    /*default_value=*/ControlType::BLOCK_THIRD_PARTY>;
+    /*default_value=*/ControlType::BLOCK>;
 
 using AutoShredSetting = traits::BraveShieldsSetting<
     /*content_settings_type=*/ContentSettingsType::BRAVE_AUTO_SHRED,

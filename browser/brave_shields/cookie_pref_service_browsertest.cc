@@ -62,7 +62,7 @@ IN_PROC_BROWSER_TEST_F(CookiePrefServiceTest, CookieControlType_Preference) {
   // Initial state
   auto setting = brave_shields::GetCookieControlType(
       content_settings(), cookie_settings().get(), GURL());
-  EXPECT_EQ(ControlType::BLOCK_THIRD_PARTY, setting);
+  EXPECT_EQ(ControlType::ALLOW, setting);
   EXPECT_EQ(CONTENT_SETTING_ALLOW, GetCookiePref());
 
   // Preference -> control

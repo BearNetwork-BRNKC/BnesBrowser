@@ -121,13 +121,13 @@ TEST_F(BraveShieldsSettingsServiceTest, IsBraveShieldsManaged) {
 TEST_F(BraveShieldsSettingsServiceTest, AdBlockMode) {
   // verify the initial values
   EXPECT_EQ(brave_shields_settings()->GetAdBlockMode(kTestUrl),
-            AdBlockMode::STANDARD);
+            AdBlockMode::AGGRESSIVE);
   EXPECT_EQ(
       brave_shields::GetAdControlType(GetHostContentSettingsMap(), kTestUrl),
       brave_shields::ControlType::BLOCK);
   EXPECT_EQ(brave_shields::GetCosmeticFilteringControlType(
                 GetHostContentSettingsMap(), kTestUrl),
-            brave_shields::ControlType::BLOCK_THIRD_PARTY);
+            brave_shields::ControlType::BLOCK);
 
   brave_shields_settings()->SetAdBlockMode(AdBlockMode::AGGRESSIVE, kTestUrl);
   EXPECT_EQ(brave_shields_settings()->GetAdBlockMode(kTestUrl),
@@ -163,13 +163,13 @@ TEST_F(BraveShieldsSettingsServiceTest, DefaultAdBlockMode) {
 
   // verify the initial default values
   EXPECT_EQ(brave_shields_settings()->GetDefaultAdBlockMode(),
-            AdBlockMode::STANDARD);
+            AdBlockMode::AGGRESSIVE);
   EXPECT_EQ(
       brave_shields::GetAdControlType(GetHostContentSettingsMap(), GURL()),
       brave_shields::ControlType::BLOCK);
   EXPECT_EQ(brave_shields::GetCosmeticFilteringControlType(
                 GetHostContentSettingsMap(), GURL()),
-            brave_shields::ControlType::BLOCK_THIRD_PARTY);
+            brave_shields::ControlType::BLOCK);
 
   brave_shields_settings()->SetDefaultAdBlockMode(AdBlockMode::AGGRESSIVE);
   EXPECT_EQ(brave_shields_settings()->GetDefaultAdBlockMode(),
