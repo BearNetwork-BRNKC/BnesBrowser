@@ -119,6 +119,6 @@ brave_updater_branding = {
     # not installed at all. If a real BNES update channel is ever required,
     # it must be a properly hosted Omaha 4 endpoint under our control.
     update_check_url =
-        "https://github.com/BearNetwork-BRNKC/bnes-brave-core"
+        "https://github.com/BearNetwork-BRNKC/BnesBrowser"
   }
 }

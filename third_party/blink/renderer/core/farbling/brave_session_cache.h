@@ -104,7 +104,7 @@ class CORE_EXPORT BraveSessionCache final
   bool AllowFontFamily(blink::WebContentSettingsClient* settings,
                        const blink::AtomicString& family_name);
   bool ShouldHideBraveBrand() const {
-    return default_shields_settings_->hide_brave_brand;
+    return true;
   }
   brave_shields::FarblingPRNG MakePseudoRandomGenerator(
       FarbleKey key = FarbleKey::kNone);

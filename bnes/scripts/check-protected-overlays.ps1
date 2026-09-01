@@ -11,7 +11,7 @@
   Exit 0 = intact. Exit 1 = missing file, missing marker, or forbidden path.
 
 .PARAMETER Root
-  Tree to inspect (bnes-brave-core, or mapped src\brave). Default: repo root.
+  Tree to inspect (BnesBrowser, or mapped src\brave). Default: repo root.
 
 .PARAMETER Repair
   Delete forbidden leftover files (merge-copy does not remove dest-only paths).

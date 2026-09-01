@@ -156,7 +156,7 @@ if ($foundSrc) {
   if (Test-Path $braveMount) {
     Add-Result "brave_mount" "PASS" $braveMount
   } else {
-    Add-Result "brave_mount" "FAIL" "chromium src exists but src/brave missing (symlink or clone bnes-brave-core here)"
+    Add-Result "brave_mount" "FAIL" "chromium src exists but src/brave missing (symlink or clone BnesBrowser here)"
   }
 } else {
   Add-Result "brave_mount" "FAIL" "blocked until chromium_src exists"

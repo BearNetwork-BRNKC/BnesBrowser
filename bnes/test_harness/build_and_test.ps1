@@ -7,8 +7,8 @@
 
 $ErrorActionPreference = "Stop"
 
-$RootDir = "S:\Ai_Agent\BNES\bnes-brave-core\bnes"
-$BraveRoot = "S:\Ai_Agent\BNES\bnes-brave-core"
+$RootDir = "S:\Ai_Agent\BNES\BnesBrowser\bnes"
+$BraveRoot = "S:\Ai_Agent\BNES\BnesBrowser"
 $HarnessDir = Join-Path $RootDir "test_harness"
 $OutputDir = Join-Path $HarnessDir "out"
 
