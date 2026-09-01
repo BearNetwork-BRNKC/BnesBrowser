@@ -2086,6 +2086,7 @@ function Repair-BraveGnCompatibility {
         $original = $content
 
         $content = $content -replace '(?m)^\s*assert\(enable_[^)]+\)\r?\n', ''
+        $content = $content -replace '(?m)^\s*assert\(toolkit_views\)\r?\n', ''
         $content = $content -replace '(?m)^\s*use_brave_grit\s*=\s*(true|false)\s*\r?\n', ''
         $content = $content -replace '(?m)^\s*if\s*\(\s*toolkit_views\s*\)\s*\{\r?\n', 'if (true) {'
 
@@ -2891,6 +2892,11 @@ BNES protected overlay validation 被略過。
     # STEP 2.5
     # --------------------------------------------------------
 
+    # Brave 152 移除大量 enable_* 的 declare_args()，但 BUILD.gn 仍有 assert()。
+    # 此函式在 build tree 自動清理這些已失效的 GN 語句（只動 build tree，
+    # 不動 BNES canonical source）。必須在任何一个 gn gen 之前執行。
+    Repair-BraveGnCompatibility
+
     Invoke-RedirectCc
 
     # --------------------------------------------------------
@@ -2990,11 +2996,6 @@ BNES protected overlay validation 被略過。
     # web-discovery-project 損壞自動偵測/修復（僅限可丟棄 build tree；
     # 健康時為 no-op）。
     Repair-WebDiscoveryProject
-
-    # Brave 152 移除大量 enable_* 的 declare_args()，但 BUILD.gn 仍有 assert()。
-    # 此函式在 build tree 自動清理這些已失效的 GN 語句（只動 build tree，
-    # 不動 BNES canonical source）。
-    Repair-BraveGnCompatibility
 
     # --------------------------------------------------------
     # STEP 3.8: GENERATE BNES FILTER LIST
