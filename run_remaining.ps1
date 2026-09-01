@@ -1663,10 +1663,6 @@ enable_brave_vpn_v2 = false
 # can never function -> strip the feature + UI entirely.
 enable_tor = false
 
-# AI Chat (Leo) requires Brave's hosted AI services. Stripped for full
-# independence and to remove a non-functional entry point.
-enable_ai_chat = false
-
 # Keep the "Brave Origin" paid variant disabled. This also disables the
 # Origin card in brave://settings/system and suppresses Purchased checks.
 is_brave_origin_branded = false
@@ -2047,6 +2043,176 @@ function Repair-WebDiscoveryProject {
     Write-Ok 'web-discovery-project 已自動修復。'
 
     return $true
+}
+
+# ============================================================
+# BRAVE GN COMPATIBILITY PATCH
+#
+# Brave 152 removed declare_args() for many enable_* flags from
+# brave_defaults.gni, but BUILD.gn files still reference them via
+# assert() and grit defines. This causes GN "Undefined identifier"
+# errors.
+#
+# This function patches the DISPOSABLE build tree only:
+#   - Strips assert(enable_*) from BUILD.gn files
+#   - Strips "enable_*=$enable_*" grit defines from brave/app/BUILD.gn
+#   - Adds declare_args() block to brave/build/args/brave_defaults.gni
+#
+# BNES canonical source is NEVER modified.
+# ============================================================
+
+function Repair-BraveGnCompatibility {
+
+    Write-Stage 'Brave GN compatibility patch (build tree only)'
+
+    $braveDir = $BraveDir
+    $patched = 0
+
+    # --------------------------------------------------------
+    # 1. Strip assert(enable_*) from BUILD.gn files
+    # --------------------------------------------------------
+
+    $buildGnFiles =
+        Get-ChildItem `
+            -LiteralPath $braveDir `
+            -Recurse `
+            -File `
+            -Filter 'BUILD.gn' `
+            -ErrorAction SilentlyContinue
+
+    foreach ($file in $buildGnFiles) {
+
+        $content = Get-Content -LiteralPath $file.FullName -Raw
+        $original = $content
+
+        $content = $content -replace '(?m)^\s*assert\(enable_[^)]+\)\r?\n', ''
+        $content = $content -replace '(?m)^\s*use_brave_grit\s*=\s*(true|false)\s*\r?\n', ''
+        $content = $content -replace '(?m)^\s*if\s*\(\s*toolkit_views\s*\)\s*\{\r?\n', 'if (true) {'
+
+        if ($content -ne $original) {
+            Set-Content -LiteralPath $file.FullName -Value $content -NoNewline
+            $patched++
+        }
+    }
+
+    # --------------------------------------------------------
+    # 2. Strip "enable_*=$enable_*" grit defines from brave/app/BUILD.gn
+    # --------------------------------------------------------
+
+    $appBuild = Join-Path $braveDir 'app\BUILD.gn'
+
+    if (Test-Path -LiteralPath $appBuild -PathType Leaf) {
+
+        $content = Get-Content -LiteralPath $appBuild -Raw
+        $original = $content
+
+        $content = $content -replace '(?m)^\s*"enable_[^"]+=\$enable_[^"]+",\r?\n', ''
+
+        if ($content -ne $original) {
+            Set-Content -LiteralPath $appBuild -Value $content -NoNewline
+            $patched++
+        }
+    }
+
+    # --------------------------------------------------------
+    # 3. Add declare_args() block to brave_defaults.gni if missing
+    # Also strip $enable_* references from grit defines in BUILD.gn
+    # files that don't import brave_defaults.gni (avoids duplicate
+    # declare_args conflicts with buildflags.gni etc.).
+    # --------------------------------------------------------
+
+    $defaultsGni = Join-Path $braveDir 'build\args\brave_defaults.gni'
+
+    if (Test-Path -LiteralPath $defaultsGni -PathType Leaf) {
+
+        $content = Get-Content -LiteralPath $defaultsGni -Raw
+
+        if ($content -notmatch 'declare_args\(\)') {
+
+            $declareArgs = @"
+
+declare_args() {
+  # BNES compatibility: Brave 152 removed these declare_args from
+  # brave_defaults.gni but BUILD.gn files still assert them.
+  enable_brave_ads = false
+  enable_brave_news = false
+  enable_brave_rewards = false
+  enable_brave_wallet = false
+  enable_brave_vpn = false
+  enable_brave_vpn_v1 = false
+  enable_brave_vpn_v2 = false
+  enable_tor = false
+  enable_ai_chat = false
+  enable_psst = false
+  enable_containers = true
+  enable_pin_shortcut = true
+  enable_playlist_webui = true
+  enable_request_otr = true
+  enable_speedreader = true
+  enable_text_recognition = true
+  enable_traffic_control = true
+  enable_local_ai = false
+  enable_extensions = true
+  enable_widevine = true
+  enable_print_preview = true
+  enable_session_service = true
+  enable_web_discovery_native = true
+  enable_brave_wayback_machine = true
+  enable_brave_talk = true
+  enable_brave_education = true
+  enable_custom_background = true
+  enable_brave_custom_profile_image_webui = true
+  enable_brave_ai_chat_agent_profile = false
+  enable_email_aliases = true
+  enable_commander = true
+  enable_playlist = true
+  enable_dsyms = true
+  enable_strict_query_check_for_search_suggestions = true
+  enable_brave_vpn_v2_apps = false
+  toolkit_views = false
+}
+"@
+
+            Set-Content -LiteralPath $defaultsGni -Value ($content + $declareArgs) -NoNewline
+            $patched++
+        }
+    }
+
+    # Strip "$enable_XXX=..." grit define lines from BUILD.gn files that
+    # don't import brave_defaults.gni (those variables are no longer in
+    # scope after Brave 152 removed their declare_args).
+    $gritDefineGnFiles =
+        Get-ChildItem `
+            -LiteralPath $braveDir `
+            -Recurse `
+            -File `
+            -Filter 'BUILD.gn' `
+            -ErrorAction SilentlyContinue |
+        Where-Object {
+            $c = Get-Content -LiteralPath $_.FullName -Raw
+            ($c -match '(?i)\$enable_(brave_wallet|brave_ads|brave_news|brave_rewards|brave_vpn|tor|ai_chat|psst|containers|pin_shortcut|playlist_webui|request_otr|speedreader|text_recognition|traffic_control|local_ai|extensions|widevine|print_preview|session_service|web_discovery_native|brave_wayback_machine|brave_talk|brave_education|custom_background|brave_custom_profile_image_webui|brave_ai_chat_agent_profile|email_aliases|commander|playlist|dsyms|strict_query_check_for_search_suggestions|brave_vpn_v2_apps)') -and
+            ($c -notmatch 'import\(.*brave_defaults\.gni')
+        }
+
+    foreach ($file in $gritDefineGnFiles) {
+
+        $content = Get-Content -LiteralPath $file.FullName -Raw
+        $original = $content
+
+        $content = $content -replace '(?im)^\s*"[^"]*\$enable_[^"]+",\s*\r?\n', ''
+
+        if ($content -ne $original) {
+            Set-Content -LiteralPath $file.FullName -Value $content -NoNewline
+            $patched++
+        }
+    }
+
+    if ($patched -gt 0) {
+        Write-Ok "Brave GN compatibility patch 完成：修改 $patched 個檔案。"
+    }
+    else {
+        Write-Info 'Brave GN compatibility patch：無需修改。'
+    }
 }
 
 # ============================================================
@@ -2824,6 +2990,11 @@ BNES protected overlay validation 被略過。
     # web-discovery-project 損壞自動偵測/修復（僅限可丟棄 build tree；
     # 健康時為 no-op）。
     Repair-WebDiscoveryProject
+
+    # Brave 152 移除大量 enable_* 的 declare_args()，但 BUILD.gn 仍有 assert()。
+    # 此函式在 build tree 自動清理這些已失效的 GN 語句（只動 build tree，
+    # 不動 BNES canonical source）。
+    Repair-BraveGnCompatibility
 
     # --------------------------------------------------------
     # STEP 3.8: GENERATE BNES FILTER LIST
