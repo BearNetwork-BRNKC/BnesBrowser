@@ -2214,6 +2214,41 @@ declare_args() {
     else {
         Write-Info 'Brave GN compatibility patch：無需修改。'
     }
+
+    # --------------------------------------------------------
+    # 4. Patch third_party/lit/v3_0 visibility for Brave targets
+    # --------------------------------------------------------
+    # Brave 152 added a restricted visibility list to lit/v3_0:build_ts
+    # but forgot to include Brave's own targets that depend on it.
+    # This causes "Dependency not allowed" errors for brave_account,
+    # brave_education, settings, and ui/webui/resources.
+    # Since lit is an upstream build-tree target (not BNES canonical),
+    # we patch its visibility here as a build compatibility measure.
+
+    $litBuildGn = Join-Path $SrcDir 'third_party\lit\v3_0\BUILD.gn'
+
+    if (Test-Path -LiteralPath $litBuildGn -PathType Leaf) {
+        $content = Get-Content -LiteralPath $litBuildGn -Raw
+        $original = $content
+
+        $braveLitDeps = @(
+            '//brave/components/brave_account/resources:build_ts',
+            '//brave/browser/resources/brave_education:build_ts',
+            '//brave/browser/resources/settings:build_ts',
+            '//ui/webui/resources:build_ts'
+        )
+
+        foreach ($dep in $braveLitDeps) {
+            if ($content -notmatch [regex]::Escape($dep)) {
+                $content = $content -replace '(?m)(    "//ui/webui/resources/cr_elements:build_ts",\r?\n)', '${1}' + "`n    `"$dep`","
+            }
+        }
+
+        if ($content -ne $original) {
+            Set-Content -LiteralPath $litBuildGn -Value $content -NoNewline
+            Write-Ok 'Patched third_party/lit/v3_0 visibility for Brave targets.'
+        }
+    }
 }
 
 # ============================================================
