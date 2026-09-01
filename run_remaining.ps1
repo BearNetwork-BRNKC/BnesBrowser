@@ -1,4 +1,4 @@
-# ============================================================
+﻿# ============================================================
 # BNES Browser Transactional Safe Build System
 #
 # Purpose:
@@ -2231,24 +2231,60 @@ declare_args() {
         $content = Get-Content -LiteralPath $litBuildGn -Raw
         $original = $content
 
-        $braveLitDeps = @(
-            '//brave/components/brave_account/resources:build_ts',
-            '//brave/browser/resources/brave_education:build_ts',
+$braveLitDeps = @(
+            '//ui/webui/resources:build_ts',
             '//brave/browser/resources/settings:build_ts',
-            '//ui/webui/resources:build_ts'
+            '//brave/browser/resources/brave_education:build_ts',
+            '//brave/components/brave_account/resources:build_ts'
         )
 
+        # -------------------------------------------------------
+        # BNES build-tree self-heal & idempotent patch (build tree only;
+        # never touches BNES canonical source). The previous fragile version:
+        #   * inserted apostrophe-delimited entries ('...') and could fuse
+        #     the closing `]` onto the last entry line, and
+        #   * used a bare-substring idempotency check, so a corrupted
+        #     single-quoted entry made lit look "already patched" and was
+        #     never repaired -> GN error: Strings are delimited by ".
+        # This normalizes single-quoted -> double-quoted, fixes a fused `]`,
+        # and inserts only missing (double-quoted) entries. Idempotent.
+        # -------------------------------------------------------
+        $nl = if ($content.Contains("`r`n")) { "`r`n" } else { "`n" }
+        $apos = [string][char]39
+
+        # 1) Normalize apostrophe-delimited entries to double-quoted.
         foreach ($dep in $braveLitDeps) {
-            if ($content -notmatch [regex]::Escape($dep)) {
-                $pattern = '(?m)(    "//ui/webui/resources/cr_elements:build_ts",\r?\n)'
-                $replacement = '${1}' + "`n    '" + $dep + "',"
-                $content = [regex]::Replace($content, $pattern, $replacement)
+            $esc = [regex]::Escape($dep)
+            $pattern = '(?m)^[ \t]*' + $apos + $esc + $apos + ',\r?\n'
+            $replacement = '    "' + $dep + '",' + $nl
+            $content = [regex]::Replace($content, $pattern, $replacement)
+        }
+
+        # 2) Fix a closing `]` fused onto the last visibility entry.
+        $content = [regex]::Replace(
+            $content,
+            '(?m)(^[ \t]*"[^"]*:build_ts",)[ \t]*\][ \t]*\r?\n',
+            { param($m) $m.Groups[1].Value + $nl + '  ]' + $nl }
+        )
+
+        # 3) Insert still-missing Brave deps (double-quoted) after the
+        #    cr_elements anchor line.
+        $anchor = '    "//ui/webui/resources/cr_elements:build_ts",'
+        foreach ($dep in $braveLitDeps) {
+            $dq = '    "' + $dep + '",'
+            if (-not $content.Contains($dq)) {
+                $content = [regex]::Replace(
+                    $content,
+                    '(?m)(' + [regex]::Escape($anchor) + '\r?\n)',
+                    { param($m) $m.Groups[1].Value + $nl + $dq + $nl }
+                )
             }
         }
 
         if ($content -ne $original) {
-            Set-Content -LiteralPath $litBuildGn -Value $content -NoNewline
-            Write-Ok 'Patched third_party/lit/v3_0 visibility for Brave targets.'
+            $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+            [System.IO.File]::WriteAllText($litBuildGn, $content, $utf8NoBom)
+            Write-Ok 'Hardened/patched lit/v3_0 visibility for Brave targets (idempotent).'
         }
     }
 }
