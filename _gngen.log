@@ -1,0 +1,10 @@
+ERROR Unresolved dependencies.
+//brave/browser/resources/brave_new_tab_page_refresh:resources(//build/toolchain/win:win_clang_x64)
+  needs //components/omnibox/browser:mojo_bindings_js(//build/toolchain/win:win_clang_x64)
+//brave/build/storybook:storybook_deps(//build/toolchain/win:win_clang_x64)
+  needs //components/omnibox/composebox:mojo_bindings_js(//build/toolchain/win:win_clang_x64)
+//brave/build/win:signed_delta_installer(//build/toolchain/win:win_clang_x64)
+  needs //chrome/installer/mini_installer:delta_installer_unsigned(//build/toolchain/win:win_clang_x64)
+//brave/components/brave_new_tab_ui:brave_new_tab_ui(//build/toolchain/win:win_clang_x64)
+  needs //components/omnibox/browser:mojo_bindings_js(//build/toolchain/win:win_clang_x64)
+

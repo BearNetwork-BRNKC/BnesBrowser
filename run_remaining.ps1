@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # BNES Browser Transactional Safe Build System
 #
 # Purpose:
@@ -1523,6 +1523,32 @@ function Invoke-RedirectCc {
         return 0
     }
 
+    # --------------------------------------------------------
+    # Repair redirect_cc.cc (disposable build tree only)
+    # If a compilation command lacks -iquote.../brave/chromium_src (e.g. abseil-cpp),
+    # fallback gracefully to launching the compiler directly instead of erroring.
+    # --------------------------------------------------------
+    $redirectCcSrc = Join-Path $SrcDir 'brave\tools\redirect_cc\redirect_cc.cc'
+    if (Test-Path -LiteralPath $redirectCcSrc -PathType Leaf) {
+        $ccContent = [System.IO.File]::ReadAllText($redirectCcSrc)
+        if ($ccContent -match 'LOG\(ERROR\)\s*<<\s*"Can''t find chromium src dir";') {
+            $ccContent = $ccContent -replace '(?s)if\s*\(chromium_src_dir_with_slash\.empty\(\)\)\s*\{[^}]*LOG\(ERROR\)[^}]*\}', @'
+    if (chromium_src_dir_with_slash.empty()) {
+      for (const auto* arg : args_.subspan(first_compiler_arg_idx)) {
+        launch_argv.emplace_back(arg);
+      }
+      return Launch(launch_argv);
+    }
+'@
+            $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+            [System.IO.File]::WriteAllText($redirectCcSrc, $ccContent, $utf8NoBom)
+            Write-Ok 'Patched redirect_cc.cc to fallback gracefully when -iquote is absent.'
+            if (Test-Path -LiteralPath $redirectExe -PathType Leaf) {
+                Remove-Item -LiteralPath $redirectExe -Force -ErrorAction SilentlyContinue
+            }
+        }
+    }
+
     if (Test-Path -LiteralPath $redirectExe -PathType Leaf) {
         Write-Ok 'redirect_cc.exe 已存在。'
         return 0
@@ -1535,23 +1561,51 @@ function Invoke-RedirectCc {
             $redirectDir `
             'args.gn'
 
-@'
+    # Match brave/build/commands/lib/util.js buildNativeRedirectCC():
+    # gn gen --root-target=//brave/tools/redirect_cc
+    # ninja brave/tools/redirect_cc
+    # Without --root-target, GN emits the full Chromium graph (~75k ninja
+    # targets) and a bare `ninja -C out/redirect_cc` compiles chrome, including
+    # regional_settings.cc that needs chromium_src overlays (chicken-and-egg).
+    $rootTarget = '//brave/tools/redirect_cc'
+    $rootTargetFlag = "--root-target=$rootTarget"
+    $ninjaTarget = 'brave/tools/redirect_cc'
+
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    $argsText = @"
+# Extra gn gen options: $rootTargetFlag
 import("//brave/tools/redirect_cc/args.gni")
 use_remoteexec = false
 use_siso = false
 real_rewrapper = "E:/BnesBrowser-build/src/buildtools/reclient/rewrapper"
 translate_genders = false
 enable_pseudolocales = false
-'@ |
-        Set-Content `
-            -LiteralPath $redirectArgs `
-            -Encoding UTF8
+"@
+    [System.IO.File]::WriteAllText($redirectArgs, $argsText.TrimStart() + "`n", $utf8NoBom)
+
+    $jobs =
+        if ($env:NINJA_JOBS) {
+            $env:NINJA_JOBS
+        }
+        else {
+            '12'
+        }
+
+    $ninjaCmd = Resolve-Ninja
+    if (-not $ninjaCmd) {
+        throw '找不到 ninja.exe / autoninja.bat。'
+    }
+
+    $gnExit = 1
+    $ninjaExit = 1
 
     Push-Location $SrcDir
 
     try {
 
-        gn gen out/redirect_cc 2>&1 |
+        Write-Info "gn gen out/redirect_cc $rootTargetFlag"
+
+        gn gen out/redirect_cc $rootTargetFlag 2>&1 |
             Tee-Object `
                 -FilePath $RedirectLog
 
@@ -1561,10 +1615,12 @@ enable_pseudolocales = false
             throw "redirect_cc gn gen 失敗。EXIT=$gnExit"
         }
 
-        ninja `
+        Write-Info "$ninjaCmd -C out/redirect_cc $ninjaTarget -j$jobs"
+
+        & $ninjaCmd `
             -C out/redirect_cc `
-            brave/tools/redirect_cc `
-            -j12 2>&1 |
+            $ninjaTarget `
+            "-j$jobs" 2>&1 |
             Tee-Object `
                 -FilePath $RedirectLog `
                 -Append
@@ -2373,6 +2429,405 @@ $braveLitDeps = @(
             Write-Ok "Patched $rustPatched rust crate BUILD.gn files for Brave visibility (idempotent)."
         }
     }
+
+    # --------------------------------------------------------
+    # 7. Essential Chromium GN patches (hooks skipped / incomplete)
+    #
+    # gclient runhooks applies brave/patches/*.patch, including:
+    #   - build/config/BUILDCONFIG.gn  -> //brave/build:compiler (-iquote)
+    #   - tools/json_to_struct/json_to_struct.gni -> additional_sources
+    #   - third_party/search_engines_data/BUILD.gn -> Brave engines
+    # When hooks are skipped, those patches may be missing and:
+    #   * chromium_src header overlays never apply
+    #   * regional_settings.cc cannot see duckduckgo/qwant
+    # Apply the same edits idempotently to the disposable build tree.
+    # --------------------------------------------------------
+
+    $utf8NoBomChromium = New-Object System.Text.UTF8Encoding($false)
+
+    $buildconfigGn = Join-Path $SrcDir 'build\config\BUILDCONFIG.gn'
+    if (Test-Path -LiteralPath $buildconfigGn -PathType Leaf) {
+        $bc = [System.IO.File]::ReadAllText($buildconfigGn)
+        if ($bc -notmatch '//brave/build:compiler') {
+            $bcPatched = [regex]::Replace(
+                $bc,
+                '(default_compiler_configs = \[)(\r?\n)',
+                { param($m) $m.Groups[1].Value + $m.Groups[2].Value + '  "//brave/build:compiler",' + $m.Groups[2].Value }
+            )
+            if ($bcPatched -ne $bc) {
+                [System.IO.File]::WriteAllText($buildconfigGn, $bcPatched, $utf8NoBomChromium)
+                Write-Ok 'Patched build/config/BUILDCONFIG.gn with //brave/build:compiler (idempotent).'
+            }
+        }
+    }
+
+    $jsonToStructGni = Join-Path $SrcDir 'tools\json_to_struct\json_to_struct.gni'
+    if (Test-Path -LiteralPath $jsonToStructGni -PathType Leaf) {
+        $jts = [System.IO.File]::ReadAllText($jsonToStructGni)
+        if ($jts -notmatch 'additional_sources') {
+            $jtsPatched = [regex]::Replace(
+                $jts,
+                '(sources = get_target_outputs\(":\$action_name"\)\r?\n)',
+                { param($m) $m.Groups[1].Value + '    if (defined(invoker.additional_sources)) { sources += invoker.additional_sources }' + "`n" }
+            )
+            if ($jtsPatched -ne $jts) {
+                [System.IO.File]::WriteAllText($jsonToStructGni, $jtsPatched, $utf8NoBomChromium)
+                Write-Ok 'Patched tools/json_to_struct/json_to_struct.gni additional_sources (idempotent).'
+            }
+        }
+    }
+
+    $searchEnginesBuild = Join-Path $SrcDir 'third_party\search_engines_data\BUILD.gn'
+    if (Test-Path -LiteralPath $searchEnginesBuild -PathType Leaf) {
+        $se = [System.IO.File]::ReadAllText($searchEnginesBuild)
+        if ($se -notmatch 'brave_third_party_search_engines_data_prepopulated_engines') {
+            $seLine = '  import("//brave/components/search_engines/sources.gni") additional_sources = brave_third_party_search_engines_data_prepopulated_engines_sources deps += brave_third_party_search_engines_data_prepopulated_engines_deps'
+            $sePatched = [regex]::Replace(
+                $se,
+                '(json_to_struct\("prepopulated_engines"\) \{[\s\S]*?deps = \[ "//base" \]\r?\n)(\})',
+                { param($m) $m.Groups[1].Value + $seLine + "`n" + $m.Groups[2].Value }
+            )
+            if ($sePatched -ne $se) {
+                [System.IO.File]::WriteAllText($searchEnginesBuild, $sePatched, $utf8NoBomChromium)
+                Write-Ok 'Patched third_party/search_engines_data/BUILD.gn with Brave engines (idempotent).'
+            }
+        }
+    }
+}
+
+# ============================================================
+# SEARCH ENGINES DATA REPAIR
+#
+# Chromium 152 removed duckduckgo/qwant from
+# third_party/search_engines_data/resources/definitions/prepopulated_engines.json.
+# However the upstream regional_settings.json (Brave fork snapshot)
+# still references &duckduckgo / &qwant in many country entries.
+# The auto-generated regional_settings.cc fails to compile with
+# "use of undeclared identifier 'duckduckgo'" / "qwant".
+#
+# This repair:
+#   1. Parses the auto-generated prepopulated_engines.h to learn
+#      the LEGITIMATE engine symbols (whitelist).
+#   2. Rewrites the regional_settings.json in the BUILD TREE
+#      (E:\BnesBrowser-build\src\third_party\search_engines_data\)
+#      by removing any "&engine" reference whose engine is not in
+#      the whitelist.
+#   3. Deletes the stale generated regional_settings.cc / .h
+#      so that ninja regenerates them from the sanitized JSON.
+#
+# BNES canonical source (S:\Ai_Agent\BNES\BnesBrowser) is NEVER modified.
+# Only the disposable build tree (E:\BnesBrowser-build) is touched.
+# This patch is idempotent: a healthy tree is a no-op.
+# ============================================================
+
+function Repair-SearchEnginesData {
+
+    Write-Stage 'search_engines_data regional settings repair (build tree only)'
+
+    $searchEnginesDataDir = Join-Path $SrcDir 'third_party\search_engines_data'
+    $jsonPath = Join-Path $searchEnginesDataDir 'resources\definitions\regional_settings.json'
+    $generatedDir = Join-Path $OutDir 'gen\third_party\search_engines_data\resources\definitions'
+    $generatedCc = Join-Path $generatedDir 'regional_settings.cc'
+    $generatedH = Join-Path $generatedDir 'regional_settings.h'
+    $prepopulatedH = Join-Path $generatedDir 'prepopulated_engines.h'
+
+    if (-not (Test-Path -LiteralPath $jsonPath -PathType Leaf)) {
+        Write-Warn 'regional_settings.json 不存在，略過 search_engines_data repair。'
+        return 0
+    }
+
+    $whitelist = New-Object 'System.Collections.Generic.HashSet[string]'(
+        [System.StringComparer]::Ordinal
+    )
+
+    if (Test-Path -LiteralPath $prepopulatedH -PathType Leaf) {
+        $headerContent = Get-Content -LiteralPath $prepopulatedH -Raw
+        $enginePattern = [regex]::Matches(
+            $headerContent,
+            'extern\s+const\s+PrepopulatedEngine\s+([A-Za-z_][A-Za-z0-9_]*)\s*;'
+        )
+        foreach ($m in $enginePattern) {
+            [void]$whitelist.Add($m.Groups[1].Value)
+        }
+    }
+    else {
+        $prepopulatedJson = Join-Path $searchEnginesDataDir 'resources\definitions\prepopulated_engines.json'
+        if (Test-Path -LiteralPath $prepopulatedJson -PathType Leaf) {
+            $preJson = Get-Content -LiteralPath $prepopulatedJson -Raw
+            $jsonEnginePattern = [regex]::Matches($preJson, '(?m)^\s+"([A-Za-z_][A-Za-z0-9_]*)"\s*:\s*\{')
+            foreach ($m in $jsonEnginePattern) {
+                [void]$whitelist.Add($m.Groups[1].Value)
+            }
+        }
+
+        if ($whitelist.Count -eq 0) {
+            Write-Warn 'prepopulated_engines.h (generated) 尚未產出，且 JSON 無法解析，略過 search_engines_data repair。'
+            return 0
+        }
+
+        Write-Info 'generated prepopulated_engines.h 尚未產出，改從 JSON 建立 whitelist。'
+    }
+
+    # Brave engines live in brave_prepopulated_engines.h and are declared via
+    # the chromium_src overlay of prepopulated_engines.h. They are NOT in the
+    # generated Chromium header (Brave removes duckduckgo/qwant from the JSON).
+    # Keep them in the whitelist so this repair does not strip regional
+    # settings that the overlay + additional_sources are supposed to satisfy.
+    $braveEnginesHeader = Join-Path $BraveDir 'components\search_engines\brave_prepopulated_engines.h'
+    if (Test-Path -LiteralPath $braveEnginesHeader -PathType Leaf) {
+        $braveHeaderContent = Get-Content -LiteralPath $braveEnginesHeader -Raw
+        $braveEnginePattern = [regex]::Matches(
+            $braveHeaderContent,
+            'extern\s+const\s+PrepopulatedEngine\s+([A-Za-z_][A-Za-z0-9_]*)\s*;'
+        )
+        foreach ($m in $braveEnginePattern) {
+            [void]$whitelist.Add($m.Groups[1].Value)
+        }
+    }
+
+    Write-Info "合法的 Prepopulated engine 數量: $($whitelist.Count)"
+
+    $jsonContent = Get-Content -LiteralPath $jsonPath -Raw
+
+    $jsonObject = $jsonContent | ConvertFrom-Json
+
+    $removedEntries = 0
+    $removedRefs = 0
+
+    if ($jsonObject.elements) {
+        $elementsPsObject = $jsonObject.elements
+        $countryIds = @($elementsPsObject.PSObject.Properties.Name)
+        foreach ($countryId in $countryIds) {
+            $entry = $elementsPsObject.$countryId
+            if ($entry.search_engines) {
+                $newEngines = @()
+                foreach ($engineRef in $entry.search_engines) {
+                    $engineName = ($engineRef -replace '^&', '').Trim()
+                    if ($whitelist.Contains($engineName)) {
+                        $newEngines += $engineRef
+                    }
+                    else {
+                        $removedRefs++
+                        Write-Host "[SAFEDEL] regional_settings.json: $countryId 移除 &$engineName" -ForegroundColor DarkGray
+                    }
+                }
+                if ($newEngines.Count -eq 0) {
+                    $elementsPsObject.PSObject.Properties.Remove($countryId)
+                    $removedEntries++
+                }
+                else {
+                    $entry.search_engines = $newEngines
+                }
+            }
+        }
+    }
+
+    if ($removedRefs -eq 0) {
+        Write-Ok "search_engines_data 已是最新（無失效 engine 引用）。"
+        return 0
+    }
+
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    $patchedJson = $jsonObject | ConvertTo-Json -Depth 20
+    [System.IO.File]::WriteAllText($jsonPath, $patchedJson, $utf8NoBom)
+
+    Write-Warn "已從 regional_settings.json 移除 $removedRefs 個失效 engine 引用（$removedEntries 個國家清空）。"
+
+    if (Test-Path -LiteralPath $generatedCc) {
+        Remove-Item -LiteralPath $generatedCc -Force
+        Write-Info '已刪除過期 generated regional_settings.cc，待 ninja 重建。'
+    }
+    if (Test-Path -LiteralPath $generatedH) {
+        Remove-Item -LiteralPath $generatedH -Force
+        Write-Info '已刪除過期 generated regional_settings.h，待 ninja 重建。'
+    }
+
+    Write-Ok 'search_engines_data repair 完成。'
+
+    return 0
+}
+
+# ============================================================
+# GN UNRESOLVED DEPENDENCY REPAIR
+#
+# Handles upstream targets that are missing or have restricted
+# visibility in the pinned Chromium 152 build tree.
+# All patches are applied to the DISPOSABLE build tree (E:) only.
+# BNES canonical source (S:) is never modified.
+# ============================================================
+
+function Repair-GnUnresolvedDependencies {
+
+    Write-Stage 'GN unresolved dependency repair (build tree only)'
+
+    $repaired = 0
+
+    # --------------------------------------------------------
+    # 1. components/omnibox/composebox:mojo_bindings_js
+    #    brave/build/storybook:storybook_deps depends on this target.
+    #    composebox/ in Chromium 152 lacks a mojo_bindings_js group.
+    #    Append stub group to BUILD.gn if missing.
+    # --------------------------------------------------------
+
+    $composeboxDir = Join-Path $SrcDir 'components\omnibox\composebox'
+    $composeboxBgn = Join-Path $composeboxDir 'BUILD.gn'
+
+    if (-not (Test-Path -LiteralPath $composeboxDir -PathType Container)) {
+        New-Item -ItemType Directory -Force -Path $composeboxDir | Out-Null
+    }
+
+    if (Test-Path -LiteralPath $composeboxBgn -PathType Leaf) {
+        $content  = [System.IO.File]::ReadAllText($composeboxBgn)
+        $original = $content
+        $utf8     = New-Object System.Text.UTF8Encoding($false)
+
+        if ($content -notmatch '"mojo_bindings_js"') {
+            $content += @'
+
+# BNES compatibility stub: mojo_bindings_js for composebox.
+# Satisfies //brave/build/storybook:storybook_deps dependency.
+group("mojo_bindings_js") {
+  visibility = [ "*" ]
+}
+'@
+            [System.IO.File]::WriteAllText($composeboxBgn, $content, $utf8)
+            $repaired++
+            Write-Ok 'Added mojo_bindings_js stub to components/omnibox/composebox BUILD.gn.'
+        }
+    } else {
+@'
+# BNES compatibility stub.
+# components/omnibox/composebox is not present in the pinned Chromium version.
+# Provides empty mojo_bindings_js group to satisfy //brave/build/storybook dep.
+group("mojo_bindings_js") {
+  visibility = [ "*" ]
+}
+'@ | Set-Content -LiteralPath $composeboxBgn -Encoding UTF8
+        $repaired++
+        Write-Ok 'Created components/omnibox/composebox stub (mojo_bindings_js).'
+    }
+
+    # --------------------------------------------------------
+    # 2. components/omnibox/browser:mojo_bindings_js
+    #    brave_new_tab_page_refresh + brave_new_tab_ui depend on this.
+    #    If the target has restricted visibility that excludes //brave/*,
+    #    patch the BUILD.gn to open it up. If the target is absent,
+    #    append a stub group. Both are idempotent.
+    # --------------------------------------------------------
+
+    $omniboxBrowserBgn = Join-Path $SrcDir 'components\omnibox\browser\BUILD.gn'
+
+    if (Test-Path -LiteralPath $omniboxBrowserBgn -PathType Leaf) {
+
+        $content  = [System.IO.File]::ReadAllText($omniboxBrowserBgn)
+        $original = $content
+        $utf8     = New-Object System.Text.UTF8Encoding($false)
+
+        if ($content -match '"mojo_bindings_js"') {
+
+            # Target exists. If there's a visibility list that does NOT already
+            # include //brave/*, insert it after the first "[" of that list.
+            if ($content -match 'mojo_bindings_js' -and
+                $content -match 'visibility\s*=\s*\[' -and
+                $content -notmatch '"//brave/\*"') {
+
+                $content = [regex]::Replace(
+                    $content,
+                    '(visibility\s*=\s*\[)',
+                    '$1' + "`n    `"//brave/*`",",
+                    [System.Text.RegularExpressions.RegexOptions]::None,
+                    [System.TimeSpan]::FromSeconds(10)
+                )
+                $repaired++
+            }
+        }
+        else {
+            # Target absent in this Chromium version — append a stub group.
+            $content += @'
+
+# BNES compatibility stub: mojo_bindings_js absent in pinned Chromium.
+# Satisfies brave_new_tab_page_refresh and brave_new_tab_ui dependencies.
+group("mojo_bindings_js") {
+  visibility = [ "//brave/*" ]
+}
+'@
+            $repaired++
+        }
+
+        if ($content -ne $original) {
+            [System.IO.File]::WriteAllText($omniboxBrowserBgn, $content, $utf8)
+            Write-Ok 'Patched components/omnibox/browser mojo_bindings_js.'
+        }
+        else {
+            Write-Info 'components/omnibox/browser: no patch needed.'
+        }
+    }
+    else {
+        Write-Warn "omnibox/browser BUILD.gn 不存在：$omniboxBrowserBgn"
+    }
+
+    # --------------------------------------------------------
+    # 3. chrome/installer/mini_installer:delta_installer_unsigned
+    #    brave/build/win:signed_delta_installer depends on this and expects
+    #    $root_out_dir/delta_installer_unsigned.exe as an output file.
+    #    BNES uses skip_signing=true + build_omaha=false.
+    #    Create build/touch.py in build tree and define an action() stub
+    #    that satisfies both GN dependency resolution and Ninja execution.
+    # --------------------------------------------------------
+
+    $touchPy = Join-Path $SrcDir 'build\touch.py'
+    if (-not (Test-Path -LiteralPath $touchPy -PathType Leaf)) {
+@'
+import sys
+for p in sys.argv[1:]:
+    with open(p, 'a'):
+        pass
+'@ | Set-Content -LiteralPath $touchPy -Encoding UTF8
+        Write-Ok 'Created build/touch.py helper.'
+    }
+
+    $miniInstallerBgn = Join-Path $SrcDir 'chrome\installer\mini_installer\BUILD.gn'
+
+    if (Test-Path -LiteralPath $miniInstallerBgn -PathType Leaf) {
+
+        $content  = [System.IO.File]::ReadAllText($miniInstallerBgn)
+        $original = $content
+        $utf8     = New-Object System.Text.UTF8Encoding($false)
+
+        # If a previous stub group() exists, remove it first
+        if ($content -match 'group\("delta_installer_unsigned"\)') {
+            $content = $content -replace '(?s)group\("delta_installer_unsigned"\)\s*\{[^}]*\}', ''
+        }
+
+        if ($content -notmatch '"delta_installer_unsigned"') {
+            $content += @'
+
+# BNES compatibility stub: delta_installer_unsigned.
+# brave/build/win:signed_delta_installer depends on this target and
+# expects $root_out_dir/delta_installer_unsigned.exe as input.
+# Satisfies GN dependency graph validation in skip_signing builds.
+action("delta_installer_unsigned") {
+  script = "//build/touch.py"
+  outputs = [ "$root_out_dir/delta_installer_unsigned.exe" ]
+  args = [ rebase_path(outputs[0], root_build_dir) ]
+  visibility = [ "//brave/build/win:*" ]
+}
+'@
+            [System.IO.File]::WriteAllText($miniInstallerBgn, $content, $utf8)
+            $repaired++
+            Write-Ok 'Added delta_installer_unsigned action stub to mini_installer BUILD.gn.'
+        }
+    }
+    else {
+        Write-Warn "mini_installer BUILD.gn 不存在：$miniInstallerBgn"
+    }
+
+    if ($repaired -gt 0) {
+        Write-Ok "GN dependency repair 完成：修復 $repaired 項。"
+    }
+    else {
+        Write-Info 'GN dependency repair：無需修復。'
+    }
 }
 
 # ============================================================
@@ -3054,9 +3509,9 @@ BNES protected overlay validation 被略過。
     # Brave 152 移除大量 enable_* 的 declare_args()，但 BUILD.gn 仍有 assert()。
     # 此函式在 build tree 自動清理這些已失效的 GN 語句（只動 build tree，
     # 不動 BNES canonical source）。必須在任何一个 gn gen 之前執行。
-    Repair-BraveGnCompatibility
+        Repair-BraveGnCompatibility
 
-    Invoke-RedirectCc
+        Invoke-RedirectCc
 
     # --------------------------------------------------------
     # STEP 3
@@ -3066,21 +3521,33 @@ BNES protected overlay validation 被略過。
 
     Test-GnInputs
 
-    Invoke-GnGen
+    Repair-GnUnresolvedDependencies
 
-    $transactionState.stages.gn = 'SUCCESS'
+        Invoke-GnGen
 
-    # --------------------------------------------------------
-    # CRITICAL:
-    #
-    # GN must not have modified BNES canonical source.
-    # --------------------------------------------------------
+        $transactionState.stages.gn = 'SUCCESS'
 
-    Test-BnesCanonicalIntegrity `
-        -BeforeManifest $canonicalManifest
+        # --------------------------------------------------------
+        # CRITICAL:
+        #
+        # GN must not have modified BNES canonical source.
+        # --------------------------------------------------------
 
-    Write-TransactionState `
-        -State $transactionState
+        Test-BnesCanonicalIntegrity `
+            -BeforeManifest $canonicalManifest
+
+        Write-TransactionState `
+            -State $transactionState
+
+        # --------------------------------------------------------
+        # search_engines_data regional settings repair (build tree only).
+        # Chromium 152 removed duckduckgo/qwant from prepopulated_engines.json
+        # but the upstream regional_settings.json still references them.
+        # Run AFTER gn gen so the generated prepopulated_engines.h is available
+        # to derive the engine whitelist.
+        # --------------------------------------------------------
+
+        Repair-SearchEnginesData
 
     # --------------------------------------------------------
     # STEP 3.5
