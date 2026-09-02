@@ -2288,6 +2288,91 @@ $braveLitDeps = @(
             Write-Ok 'Hardened/patched lit/v3_0 visibility for Brave targets (idempotent).'
         }
     }
+    # --------------------------------------------------------
+    # 5. Patch third_party/polymer/v3_0 visibility for Brave target
+    # --------------------------------------------------------
+    # Same class of upstream omission as lit/v3_0: polymer/v3_0:library's
+    # visibility allowlist does not include //brave/ui/webui/resources:build_ts,
+    # which depends on polymer. Patch the DISPOSABLE build tree only
+    # (idempotent; never touches BNES canonical source).
+
+    $polymerBuildGn = Join-Path $SrcDir 'third_party\polymer\v3_0\BUILD.gn'
+
+    if (Test-Path -LiteralPath $polymerBuildGn -PathType Leaf) {
+        $polymerContent = Get-Content -LiteralPath $polymerBuildGn -Raw
+        $polymerOriginal = $polymerContent
+        $polymerDeps = @('//brave/ui/webui/resources:build_ts')
+
+        $poNl = if ($polymerContent.Contains("`r`n")) { "`r`n" } else { "`n" }
+        $poApos = [string][char]39
+
+        foreach ($dep in $polymerDeps) {
+            $esc = [regex]::Escape($dep)
+            $pattern = '(?m)^[ \t]*' + $poApos + $esc + $poApos + ',\r?\n'
+            $replacement = '    "' + $dep + '",' + $poNl
+            $polymerContent = [regex]::Replace($polymerContent, $pattern, $replacement)
+        }
+
+        $polymerContent = [regex]::Replace(
+            $polymerContent,
+            '(?m)(^[ \t]*"[^"]*:build_ts",)[ \t]*\][ \t]*\r?\n',
+            { param($m) $m.Groups[1].Value + $poNl + '  ]' + $poNl }
+        )
+
+        $poAnchor = '    "//ui/webui/resources/cr_elements:build_ts",'
+        foreach ($dep in $polymerDeps) {
+            $dq = '    "' + $dep + '",'
+            if (-not $polymerContent.Contains($dq)) {
+                $polymerContent = [regex]::Replace(
+                    $polymerContent,
+                    '(?m)(' + [regex]::Escape($poAnchor) + '\r?\n)',
+                    { param($m) $m.Groups[1].Value + $poNl + $dq + $poNl }
+                )
+            }
+        }
+
+        if ($polymerContent -ne $polymerOriginal) {
+            $polymerUtf8NoBom = New-Object System.Text.UTF8Encoding($false)
+            [System.IO.File]::WriteAllText($polymerBuildGn, $polymerContent, $polymerUtf8NoBom)
+            Write-Ok 'Patched third_party/polymer/v3_0 visibility for Brave target (idempotent).'
+        }
+    }
+    # --------------------------------------------------------
+    # 6. Allow Brave vendored rust crates to depend on Chromium crates
+    # --------------------------------------------------------
+    # Chromium generates //third_party/rust/<crate>/<epoch>:lib targets with
+    # `visibility = [ "//third_party/rust/*" ]`, which blocks Brave's mirrors
+    # at //brave/third_party/rust/* from depending on them. Patch the
+    # DISPOSABLE build tree only (idempotent; never touches BNES canonical
+    # source).
+
+    $rustRoot = Join-Path $SrcDir 'third_party\rust'
+
+    if (Test-Path -LiteralPath $rustRoot -PathType Container) {
+        $rustOld = '  visibility = [ "//third_party/rust/*" ]'
+        $rustNew = '  visibility = [ "//third_party/rust/*", "//brave/third_party/rust/*" ]'
+        $rustUtf8NoBom = New-Object System.Text.UTF8Encoding($false)
+        $rustPatched = 0
+
+        Get-ChildItem `
+            -LiteralPath $rustRoot `
+            -Recurse `
+            -Filter 'BUILD.gn' `
+            -ErrorAction SilentlyContinue |
+            ForEach-Object {
+                $rustContent = [System.IO.File]::ReadAllText($_.FullName)
+                if ($rustContent.Contains($rustOld) -and
+                    -not $rustContent.Contains('"//brave/third_party/rust/*"')) {
+                    $rustContent = $rustContent.Replace($rustOld, $rustNew)
+                    [System.IO.File]::WriteAllText($_.FullName, $rustContent, $rustUtf8NoBom)
+                    $rustPatched++
+                }
+            }
+
+        if ($rustPatched -gt 0) {
+            Write-Ok "Patched $rustPatched rust crate BUILD.gn files for Brave visibility (idempotent)."
+        }
+    }
 }
 
 # ============================================================
