@@ -18,6 +18,18 @@ enum class SelfDeleteSupport {
 
 }  // namespace syncer
 
+// rewrite/components/sync_device_info/device_info.h.yaml is supposed to patch
+// these into Chromium. SafeBuild often skips apply_patches, so inject them
+// here. DeepCopyForTesting() is unique; leftover `const;` completes ToValue().
+#define DeepCopyForTesting()     \
+  DeepCopyForTesting() const;    \
+  DeviceInfo(DeviceInfo&&);      \
+  std::string GetOSString() const; \
+  std::string GetDeviceTypeString() const; \
+  base::DictValue ToValue()
+
 #include <components/sync_device_info/device_info.h>  // IWYU pragma: export
+
+#undef DeepCopyForTesting
 
 #endif  // BRAVE_CHROMIUM_SRC_COMPONENTS_SYNC_DEVICE_INFO_DEVICE_INFO_H_

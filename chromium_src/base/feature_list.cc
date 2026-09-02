@@ -123,12 +123,6 @@ std::optional<bool> GetStateIfOverridden(const Feature& feature) {
 
 }  // namespace internal
 
-// BNES: effective compile-time (default) state of a feature, honoring any
-// compile-time default-state override (OVERRIDE_FEATURE_DEFAULT_STATES).
-FeatureState FeatureList::GetCompileTimeFeatureState(const Feature& feature) {
-  return internal::GetDefaultStateOverrideForFeature(feature);
-}
-
 }  // namespace base
 
 #include <base/feature_list.cc>
