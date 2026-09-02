@@ -2233,6 +2233,7 @@ declare_args() {
 
 $braveLitDeps = @(
             '//ui/webui/resources:build_ts',
+            '//brave/ui/webui/resources:build_ts',
             '//brave/browser/resources/settings:build_ts',
             '//brave/browser/resources/brave_education:build_ts',
             '//brave/components/brave_account/resources:build_ts'
