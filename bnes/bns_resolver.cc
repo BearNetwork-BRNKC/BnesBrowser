@@ -3,7 +3,7 @@
 // License, v. 2.0. If the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/bnes/bns_resolver.h"
+#include "BnesBrowser/bnes/bns_resolver.h"
 
 #include <optional>
 #include <string>
@@ -12,8 +12,8 @@
 #include "base/check.h"
 #include "base/containers/span.h"
 #include "base/memory/ref_counted.h"
-#include "brave/bnes/bns_security.h"
-#include "brave/bnes/bns_constants.h"
+#include "BnesBrowser/bnes/bns_security.h"
+#include "BnesBrowser/bnes/bns_constants.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "mojo/public/cpp/system/data_pipe.h"
 #include "net/base/net_errors.h"

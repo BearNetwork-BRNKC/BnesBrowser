@@ -3,7 +3,7 @@
 // License, v. 2.0. If the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/bnes/bns_security.h"
+#include "BnesBrowser/bnes/bns_security.h"
 
 #include <cctype>
 #include <string>

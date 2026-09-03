@@ -3,15 +3,15 @@
 // License, v. 2.0. If the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/bnes/bns_scheme_handler.h"
+#include "BnesBrowser/bnes/bns_scheme_handler.h"
 
 #include <string_view>
 
 #include "base/check.h"
 #include "base/memory/self_deleting.h"
-#include "brave/bnes/bns_resolver.h"
-#include "brave/bnes/bns_security.h"
-#include "brave/bnes/bns_constants.h"
+#include "BnesBrowser/bnes/bns_resolver.h"
+#include "BnesBrowser/bnes/bns_security.h"
+#include "BnesBrowser/bnes/bns_constants.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/resource_request.h"
