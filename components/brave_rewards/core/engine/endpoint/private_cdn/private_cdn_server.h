@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_PRIVATE_CDN_PRIVATE_CDN_SERVER_H_
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_PRIVATE_CDN_PRIVATE_CDN_SERVER_H_
 
-#include "brave/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

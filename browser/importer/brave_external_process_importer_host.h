@@ -12,7 +12,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/importer/brave_password_importer.h"
+#include "BnesBrowser/browser/importer/brave_password_importer.h"
 #include "chrome/browser/importer/external_process_importer_host.h"
 #include "extensions/buildflags/buildflags.h"
 

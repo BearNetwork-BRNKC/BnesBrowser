@@ -4,7 +4,7 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_net_dns_sources = [
-  "//brave/net/dns/secure_dns_counter.cc",
-  "//brave/net/dns/secure_dns_counter.h",
-  "//brave/net/dns/secure_dns_endpoints.h",
+  "//BnesBrowser/net/dns/secure_dns_counter.cc",
+  "//BnesBrowser/net/dns/secure_dns_counter.h",
+  "//BnesBrowser/net/dns/secure_dns_endpoints.h",
 ]

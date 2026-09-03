@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/screenshot_preview_dialog.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_preview_dialog.h"
 
 #include <vector>
 
@@ -12,7 +12,7 @@
 #include "base/run_loop.h"
 #include "base/scoped_observation.h"
 #include "base/test/test_future.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/test/base/in_process_browser_test.h"

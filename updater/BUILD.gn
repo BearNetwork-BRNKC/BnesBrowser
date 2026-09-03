@@ -23,7 +23,7 @@ if (is_win || is_mac || is_linux) {
     deps = [
       "//base",
       "//base/test:test_support",
-      "//brave/components/update_client:test_util",
+      "//BnesBrowser/components/update_client:test_util",
       "//chrome/updater:base",
       "//chrome/updater:constants_test",
       "//components/prefs:test_support",

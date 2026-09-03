@@ -6,7 +6,7 @@
 # TODO(https://github.com/brave/brave-browser/issues/48186): Move to root of
 # component.
 
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
 import("//build/buildflag_header.gni")
 import("buildflags.gni")
 

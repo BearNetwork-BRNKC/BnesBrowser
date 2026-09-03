@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/eth_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_request_helper.h"
 
 #include <array>
 #include <functional>
@@ -15,7 +15,7 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/test/values_test_util.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"

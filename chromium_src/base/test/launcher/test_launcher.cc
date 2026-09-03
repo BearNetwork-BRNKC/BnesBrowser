@@ -5,7 +5,7 @@
 
 #include "base/test/launcher/test_launcher.h"
 
-#include "brave/base/test/launcher/teamcity_reporter.h"
+#include "BnesBrowser/base/test/launcher/teamcity_reporter.h"
 
 #include <base/test/launcher/test_launcher.cc>
 

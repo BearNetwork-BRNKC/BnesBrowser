@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/speedreader/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
 assert(enable_speedreader)
@@ -20,12 +20,12 @@ source_set("speedreader") {
   ]
 
   deps = [
-    "//brave/app:command_ids",
-    "//brave/browser/speedreader",
-    "//brave/browser/ui/speedreader",
-    "//brave/components/constants",
-    "//brave/components/resources:strings",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:command_ids",
+    "//BnesBrowser/browser/speedreader",
+    "//BnesBrowser/browser/ui/speedreader",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/app:command_ids",
     "//chrome/app:generated_resources",
     "//chrome/browser/profiles:profile",

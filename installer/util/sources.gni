@@ -5,8 +5,8 @@
 
 if (is_official_build) {
   brave_installer_util_generate_strings_extractor_datafile =
-      "//brave/installer/util/prebuild/create_installer_string_rc_official.py"
+      "//BnesBrowser/installer/util/prebuild/create_installer_string_rc_official.py"
 } else {
   brave_installer_util_generate_strings_extractor_datafile =
-      "//brave/installer/util/prebuild/create_installer_string_rc.py"
+      "//BnesBrowser/installer/util/prebuild/create_installer_string_rc.py"
 }

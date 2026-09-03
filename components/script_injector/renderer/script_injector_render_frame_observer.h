@@ -8,7 +8,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/script_injector/common/mojom/script_injector.mojom.h"
+#include "BnesBrowser/components/script_injector/common/mojom/script_injector.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "mojo/public/cpp/bindings/associated_receiver.h"

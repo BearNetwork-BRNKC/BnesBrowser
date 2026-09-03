@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/sidebar/sidebar_edit_item_bubble_delegate_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_edit_item_bubble_delegate_view.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/ui/brave_browser.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/views/chrome_layout_provider.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"

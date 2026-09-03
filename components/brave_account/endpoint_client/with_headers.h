@@ -11,8 +11,8 @@
 #include "base/check.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_account/endpoint_client/is_request.h"
-#include "brave/components/brave_account/endpoint_client/is_response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_request.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response.h"
 #include "net/http/http_request_headers.h"
 #include "net/http/http_response_headers.h"
 

@@ -23,7 +23,7 @@ void MaybeOnWidevineRequest(MediaKeySystemAccessInitializer* initializer,
 #include <third_party/blink/renderer/modules/encryptedmedia/navigator_request_media_key_system_access.cc>
 #undef BRAVE_NAVIGATOR_REQUEST_MEDIA_KEY_SYSTEM_ACCESS
 
-#include "brave/components/brave_drm/brave_drm.mojom-blink.h"
+#include "BnesBrowser/components/brave_drm/brave_drm.mojom-blink.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"
 #include "third_party/blink/public/common/associated_interfaces/associated_interface_provider.h"
 #include "third_party/blink/renderer/core/frame/local_frame_client.h"

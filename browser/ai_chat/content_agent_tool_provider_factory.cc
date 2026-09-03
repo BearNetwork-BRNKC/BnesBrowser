@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/content_agent_tool_provider_factory.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_tool_provider_factory.h"
 
 #include <memory>
 
-#include "brave/browser/ai_chat/content_agent_tool_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
 #include "chrome/browser/actor/actor_keyed_service.h"
 #include "chrome/browser/profiles/profile.h"
 

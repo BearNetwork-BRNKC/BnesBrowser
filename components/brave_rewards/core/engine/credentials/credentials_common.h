@@ -13,9 +13,9 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_rewards/core/engine/credentials/credentials.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine_internal.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/credentials/credentials.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine_internal.mojom.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

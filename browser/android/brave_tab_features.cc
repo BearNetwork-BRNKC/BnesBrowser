@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/android/brave_tab_features.h"
+#include "BnesBrowser/browser/android/brave_tab_features.h"
 
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/browser/ai_chat/tab_data_web_contents_observer.h"
-#include "brave/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/browser/ai_chat/tab_data_web_contents_observer.h"
+#include "BnesBrowser/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
 #include "chrome/browser/android/tab_android.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/web_contents.h"

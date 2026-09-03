@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_MISC_METRICS_NAVIGATION_SOURCE_METRICS_H_
 #define BRAVE_COMPONENTS_MISC_METRICS_NAVIGATION_SOURCE_METRICS_H_
 
-#include "brave/components/misc_metrics/page_percentage_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_percentage_metrics.h"
 
 class PrefRegistrySimple;
 class PrefService;

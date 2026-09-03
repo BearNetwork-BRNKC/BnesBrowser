@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_translate_public_headers =
-    [ "//brave/ios/browser/api/translate/translate_script.h" ]
+    [ "//BnesBrowser/ios/browser/api/translate/translate_script.h" ]

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/components/sidebar/browser/pref_names.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/first_run/first_run.h"
 #include "chrome/browser/profiles/incognito_helpers.h"

@@ -4,7 +4,7 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 source_set("content") {
-  visibility = [ "//brave/components/services/brave_wallet/public/cpp" ]
+  visibility = [ "//BnesBrowser/components/services/brave_wallet/public/cpp" ]
 
   sources = [
     "brave_wallet_utils_service_launcher.cc",
@@ -12,8 +12,8 @@ source_set("content") {
   ]
 
   deps = [
-    "//brave/components/resources:strings",
-    "//brave/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
     "//content/public/browser",
     "//mojo/public/cpp/bindings",
   ]

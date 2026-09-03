@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_DOM_EVENTS_REGISTERED_EVENT_LISTENER_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_DOM_EVENTS_REGISTERED_EVENT_LISTENER_H_
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_PAGE_GRAPH)
 #define SetBlockedEventWarningEmitted \

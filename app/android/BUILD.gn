@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 
 if (should_generate_symbols) {
   action("generate_breakpad_symbols") {
@@ -12,7 +12,7 @@ if (should_generate_symbols) {
 
     package_path = rebase_path(brave_android_output)
 
-    script = "//brave/tools/android/generate_breakpad_symbols.py"
+    script = "//BnesBrowser/tools/android/generate_breakpad_symbols.py"
     args = [
       "--symbols-dir=" + rebase_path(symbols_dir),
       "--jobs=16",
@@ -24,7 +24,7 @@ if (should_generate_symbols) {
     ]
 
     deps = [
-      "//brave/build/android:brave",
+      "//BnesBrowser/build/android:brave",
       "//third_party/breakpad:dump_syms",
     ]
   }
@@ -48,9 +48,9 @@ group("create_dist_zips") {
 
 action("create_symbol_archive") {
   script = "//build/gn_run_binary.py"
-  shell_script = "//brave/build/android/pack_symbols.sh"
+  shell_script = "//BnesBrowser/build/android/pack_symbols.sh"
 
-  deps = [ "//brave/build/android:brave" ]
+  deps = [ "//BnesBrowser/build/android:brave" ]
 
   archive_dir_path = "$root_out_dir/dist"
 

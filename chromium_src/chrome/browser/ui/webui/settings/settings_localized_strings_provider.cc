@@ -5,9 +5,9 @@
 
 #include "chrome/browser/ui/webui/settings/settings_localized_strings_provider.h"
 
-#include "brave/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
-#include "brave/components/version_info/version_info.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
+#include "BnesBrowser/components/version_info/version_info.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 
 // Override some chromium strings
 #include "chrome/grit/branded_strings.h"

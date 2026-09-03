@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_fetch_raw_transactions_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_fetch_raw_transactions_task.h"
 
 #include <stdint.h>
 
@@ -17,8 +17,8 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_wallet_service.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 
 namespace brave_wallet {
 

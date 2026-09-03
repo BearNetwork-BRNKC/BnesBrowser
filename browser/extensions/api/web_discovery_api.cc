@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/api/web_discovery_api.h"
+#include "BnesBrowser/browser/extensions/api/web_discovery_api.h"
 
 #include <utility>
 
-#include "brave/browser/brave_search/backup_results_service_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "components/prefs/pref_service.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"
@@ -17,7 +17,7 @@
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY_NATIVE)
 #include "base/feature_list.h"
-#include "brave/components/web_discovery/common/features.h"
+#include "BnesBrowser/components/web_discovery/common/features.h"
 #endif
 
 namespace extensions::api {

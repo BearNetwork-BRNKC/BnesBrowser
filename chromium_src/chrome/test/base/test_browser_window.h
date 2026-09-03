@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_TEST_BROWSER_WINDOW_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_TEST_BROWSER_WINDOW_H_
 
-#include "brave/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
 
 #define BrowserWindow BraveBrowserWindow
 #include <chrome/test/base/test_browser_window.h>  // IWYU pragma: export

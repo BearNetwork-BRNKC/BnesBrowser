@@ -7,7 +7,7 @@
 
 #include <vector>
 
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/download/download_commands.h"
 #include "chrome/grit/generated_resources.h"
 #include "ui/base/l10n/l10n_util.h"

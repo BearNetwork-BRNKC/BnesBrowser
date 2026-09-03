@@ -60,7 +60,7 @@ source_set("prompt_facade") {
     "//url",
   ]
   public_deps = [ "//base" ]
-  assert_no_deps = [ "//brave/ios/browser" ]
+  assert_no_deps = [ "//BnesBrowser/ios/browser" ]
 }
 
 source_set("unittests") {

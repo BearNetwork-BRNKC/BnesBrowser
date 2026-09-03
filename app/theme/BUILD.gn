@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//chrome/common/features.gni")
 
 assert(!is_android)
@@ -26,7 +26,7 @@ brave_grit("brave_theme_resources") {
     "brave_theme_resources_300_percent.pak",
   ]
 
-  output_dir = "$root_gen_dir/brave"
+  output_dir = "$root_gen_dir/BnesBrowser"
 }
 
 brave_grit("brave_unscaled_resources") {
@@ -37,5 +37,5 @@ brave_grit("brave_unscaled_resources") {
     "brave_unscaled_resources.pak",
   ]
 
-  output_dir = "$root_gen_dir/brave"
+  output_dir = "$root_gen_dir/BnesBrowser"
 }

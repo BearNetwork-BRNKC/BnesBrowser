@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/feed_building.h"
+#include "BnesBrowser/components/brave_news/browser/feed_building.h"
 
 #include <algorithm>
 #include <iterator>
@@ -18,13 +18,13 @@
 #include "base/test/values_test_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/combined_feed_parsing.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/pref_names.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
-#include "brave/components/brave_news/common/types.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/combined_feed_parsing.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/common/types.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"

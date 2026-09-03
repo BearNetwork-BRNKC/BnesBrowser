@@ -12,20 +12,20 @@ cargo_crate("lib") {
   crate_name = "bech32"
   epoch = "0.11"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/hrp.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/checksum.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/decode.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/encode.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/gf32.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/hrp.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/iter.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/segwit.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/segwit.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/hrp.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/checksum.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/decode.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/encode.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/gf32.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/hrp.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/iter.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/primitives/segwit.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bech32-v0_11/src/segwit.rs",
   ]
   inputs = []
 

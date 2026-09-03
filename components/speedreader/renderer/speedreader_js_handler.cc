@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/renderer/speedreader_js_handler.h"
+#include "BnesBrowser/components/speedreader/renderer/speedreader_js_handler.h"
 
 #include "base/check.h"
-#include "brave/components/speedreader/common/speedreader.mojom.h"
+#include "BnesBrowser/components/speedreader/common/speedreader.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "gin/converter.h"
 #include "gin/object_template_builder.h"

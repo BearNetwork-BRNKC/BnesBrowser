@@ -3,21 +3,21 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
 
 #include <memory>
 #include <string>
 #include <utility>
 
 #include "base/functional/bind.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/browser/test/wait_for_callback.h"
-#include "brave/components/brave_news/browser/urls.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/test/wait_for_callback.h"
+#include "BnesBrowser/components/brave_news/browser/urls.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "content/public/test/browser_task_environment.h"

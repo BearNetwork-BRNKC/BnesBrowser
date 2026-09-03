@@ -5,6 +5,6 @@
 
 #include "chrome/browser/browsing_data/chrome_browsing_data_remover_delegate_factory.h"
 
-#include "brave/browser/browsing_data/brave_browsing_data_remover_delegate.h"
+#include "BnesBrowser/browser/browsing_data/brave_browsing_data_remover_delegate.h"
 
 #include <chrome/browser/browsing_data/chrome_browsing_data_remover_delegate_factory.cc>

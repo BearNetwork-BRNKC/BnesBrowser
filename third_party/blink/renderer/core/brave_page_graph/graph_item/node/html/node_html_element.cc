@@ -3,26 +3,26 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_element.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_element.h"
 
 #include <algorithm>
 #include <sstream>
 
 #include "base/check_op.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/attribute/edge_attribute_delete.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/attribute/edge_attribute_set.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_document.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener_add.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener_remove.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_create.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_insert.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_remove.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_complete.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_error.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_start.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_actor.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graphml.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/attribute/edge_attribute_delete.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/attribute/edge_attribute_set.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_document.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener_add.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/event_listener/edge_event_listener_remove.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_create.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_insert.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_remove.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_complete.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_error.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_start.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_actor.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graphml.h"
 #include "third_party/blink/renderer/core/dom/dom_node_ids.h"
 #include "third_party/blink/renderer/platform/wtf/text/string_builder_stream.h"
 

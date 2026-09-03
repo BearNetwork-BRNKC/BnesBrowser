@@ -10,8 +10,8 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_rewards/core/engine/database/database_contribution_queue_publishers.h"
-#include "brave/components/brave_rewards/core/engine/database/database_table.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_contribution_queue_publishers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_table.h"
 
 namespace brave_rewards::internal {
 namespace database {

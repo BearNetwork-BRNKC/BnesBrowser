@@ -10,8 +10,8 @@
 
 #include "base/functional/callback.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_vpn/app/v2/agent/test/fake_browser_endpoint.h"
-#include "brave/components/brave_vpn/common/mojom/browser_agent.mojom.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/test/fake_browser_endpoint.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/browser_agent.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"

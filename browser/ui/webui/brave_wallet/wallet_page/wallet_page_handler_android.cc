@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_wallet/wallet_page/wallet_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_page/wallet_page_handler.h"
 
 #include <utility>
 
 #include "base/notreached.h"
-#include "brave/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_ui.h"
 #include "content/public/browser/web_ui_controller.h"

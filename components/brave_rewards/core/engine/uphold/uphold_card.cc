@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/uphold/uphold_card.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold_card.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/uphold_server.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/uphold_server.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 
 namespace brave_rewards::internal::uphold {
 

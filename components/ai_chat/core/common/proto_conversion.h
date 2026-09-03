@@ -6,9 +6,9 @@
 #ifndef BRAVE_COMPONENTS_AI_CHAT_CORE_COMMON_PROTO_CONVERSION_H_
 #define BRAVE_COMPONENTS_AI_CHAT_CORE_COMMON_PROTO_CONVERSION_H_
 
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/proto/store.pb.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/proto/store.pb.h"
 
 namespace ai_chat {
 

@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_AI_CHAT_IOS_BROWSER_AI_CHAT_PRIVATE_H_
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/ai_chat/ios/browser/ai_chat.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/ai_chat.h"
 
 @protocol AIChatDelegate;
 

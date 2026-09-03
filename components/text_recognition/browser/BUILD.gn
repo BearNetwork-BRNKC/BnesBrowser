@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/text_recognition/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/text_recognition/common/buildflags/buildflags.gni")
 
 assert(enable_text_recognition)
 
@@ -27,7 +27,7 @@ component("browser") {
     ]
 
     deps += [
-      "//brave/components/l10n/common",
+      "//BnesBrowser/components/l10n/common",
       "//services/shape_detection:lib",
       "//services/shape_detection/public/mojom",
     ]

@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 
 namespace brave_wallet {
 

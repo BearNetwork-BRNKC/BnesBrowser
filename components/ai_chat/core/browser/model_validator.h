@@ -11,10 +11,10 @@
 #include <cstdint>
 #include <optional>
 
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
-#include "brave/net/base/url_util.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/net/base/url_util.h"
 #include "url/url_constants.h"
 
 class GURL;

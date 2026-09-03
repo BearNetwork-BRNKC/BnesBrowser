@@ -1,4 +1,4 @@
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 
 brave_grit("static_resources") {
@@ -13,7 +13,7 @@ brave_grit("static_resources") {
 repack("resources") {
   public_deps = [ ":static_resources" ]
 
-  sources = [ "$root_gen_dir/brave/components/speedreader/resources/speedreader_static.pak" ]
+  sources = [ "$root_gen_dir/BnesBrowser/components/speedreader/resources/speedreader_static.pak" ]
 
-  output = "$root_gen_dir/brave/components/speedreader/resources/speedreader_resources.pak"
+  output = "$root_gen_dir/BnesBrowser/components/speedreader/resources/speedreader_resources.pak"
 }

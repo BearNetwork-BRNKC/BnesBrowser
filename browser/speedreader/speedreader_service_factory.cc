@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/components/speedreader/common/features.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/incognito_helpers.h"

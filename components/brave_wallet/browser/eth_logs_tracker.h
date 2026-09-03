@@ -15,9 +15,9 @@
 #include "base/observer_list_types.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/text_recognition/browser/text_recognition.h"
+#include "BnesBrowser/components/text_recognition/browser/text_recognition.h"
 
 #include <windows.foundation.collections.h>
 #include <windows.globalization.h>
@@ -24,8 +24,8 @@
 #include "base/threading/scoped_blocking_call.h"
 #include "base/win/core_winrt_util.h"
 #include "base/win/scoped_hstring.h"
-#include "brave/components/l10n/common/locale_util.h"
-#include "brave/components/text_recognition/browser/text_recognizer_win.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/text_recognition/browser/text_recognizer_win.h"
 
 using ABI::Windows::Foundation::Collections::IVectorView;
 using ABI::Windows::Globalization::ILanguage;

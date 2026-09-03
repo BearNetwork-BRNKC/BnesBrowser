@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/containers/extend.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 #include <chrome/browser/ui/accelerator_table.cc>

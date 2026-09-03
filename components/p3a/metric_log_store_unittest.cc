@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/p3a/metric_log_store.h"
+#include "BnesBrowser/components/p3a/metric_log_store.h"
 
 #include <memory>
 #include <string_view>
 
 #include "base/containers/flat_set.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/metric_names.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_names.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

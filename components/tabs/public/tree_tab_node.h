@@ -11,7 +11,7 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/types/pass_key.h"
-#include "brave/components/tabs/public/tree_tab_node_id.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_id.h"
 
 namespace tabs {
 

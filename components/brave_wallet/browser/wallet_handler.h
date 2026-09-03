@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_WALLET_BROWSER_WALLET_HANDLER_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 

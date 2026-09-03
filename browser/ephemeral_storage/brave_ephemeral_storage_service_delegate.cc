@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ephemeral_storage/brave_ephemeral_storage_service_delegate.h"
+#include "BnesBrowser/browser/ephemeral_storage/brave_ephemeral_storage_service_delegate.h"
 
 #include <memory>
 #include <optional>
@@ -18,14 +18,14 @@
 #include "base/logging.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/browser/ephemeral_storage/browsing_history_cleaner.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
-#include "brave/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/browsing_history_cleaner.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
+#include "BnesBrowser/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/browsing_data/chrome_browsing_data_remover_constants.h"
 #include "chrome/browser/profiles/profile.h"
@@ -43,7 +43,7 @@
 #include "url/origin.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #else

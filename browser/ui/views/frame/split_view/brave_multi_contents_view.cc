@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/i18n/rtl.h"
-#include "brave/browser/ui/views/frame/split_view/brave_contents_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_contents_container_view.h"
 #include "chrome/browser/devtools/devtools_ui_controller.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

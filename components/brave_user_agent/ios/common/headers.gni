@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_user_agent_component_public_headers =
-    [ "//brave/components/brave_user_agent/ios/common/brave_user_agent_type.h" ]
+    [ "//BnesBrowser/components/brave_user_agent/ios/common/brave_user_agent_type.h" ]

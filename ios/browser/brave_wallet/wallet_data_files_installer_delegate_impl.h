@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_BRAVE_WALLET_WALLET_DATA_FILES_INSTALLER_DELEGATE_IMPL_H_
 #define BRAVE_IOS_BROWSER_BRAVE_WALLET_WALLET_DATA_FILES_INSTALLER_DELEGATE_IMPL_H_
 
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer_delegate.h"
 
 namespace brave_wallet {
 

@@ -30,7 +30,7 @@ if (!is_android) {
       ":importer",
       "//base",
       "//base/test:test_support",
-      "//brave/common/importer",
+      "//BnesBrowser/common/importer",
       "//chrome/browser",
       "//chrome/browser/password_manager/factories",
       "//chrome/common",
@@ -60,7 +60,7 @@ if (!is_android) {
 
     deps = [
       "//base",
-      "//brave/common/importer",
+      "//BnesBrowser/common/importer",
       "//chrome/browser/importer",
       "//chrome/browser/ui",
       "//chrome/common:constants",

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/media_detector_component_manager.h"
+#include "BnesBrowser/components/playlist/content/browser/media_detector_component_manager.h"
 
 #include <utility>
 
@@ -15,7 +15,7 @@
 #include "base/logging.h"
 #include "base/no_destructor.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/playlist/content/browser/media_detector_component_installer.h"
+#include "BnesBrowser/components/playlist/content/browser/media_detector_component_installer.h"
 #include "components/grit/brave_components_resources.h"
 #include "ui/base/resource/resource_bundle.h"
 #include "url/gurl.h"

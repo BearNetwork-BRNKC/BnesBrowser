@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
 
 #include <memory>
 #include <set>
@@ -15,8 +15,8 @@
 #include "base/files/file_path.h"
 #include "base/strings/string_split.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_observer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_observer.h"
 #include "net/base/features.h"
 #include "url/gurl.h"
 

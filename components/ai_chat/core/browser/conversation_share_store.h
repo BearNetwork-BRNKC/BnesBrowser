@@ -17,7 +17,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
 #include "url/gurl.h"
 
 class PrefService;

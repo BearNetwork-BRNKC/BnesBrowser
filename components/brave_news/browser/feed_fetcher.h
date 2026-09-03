@@ -12,9 +12,9 @@
 
 #include "base/functional/callback_forward.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace brave_news {

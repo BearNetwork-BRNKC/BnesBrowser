@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/credentials/credentials_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/credentials/credentials_util.h"
 
 #include <optional>
 #include <utility>
@@ -12,14 +12,14 @@
 #include "base/check_op.h"
 #include "base/json/json_reader.h"
 #include "base/json/json_writer.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/challenge_bypass_ristretto/batch_dleq_proof.h"
-#include "brave/components/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/challenge_bypass_ristretto/signed_token.h"
-#include "brave/components/challenge_bypass_ristretto/token_preimage.h"
-#include "brave/components/challenge_bypass_ristretto/unblinded_token.h"
-#include "brave/components/challenge_bypass_ristretto/verification_key.h"
-#include "brave/components/challenge_bypass_ristretto/verification_signature.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/batch_dleq_proof.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/signed_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/token_preimage.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/verification_key.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/verification_signature.h"
 
 namespace brave_rewards::internal::credential {
 

@@ -21,7 +21,7 @@
 
 #undef RecordModificationInMetrics
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_converters.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_converters.h"
 
 namespace blink {
 

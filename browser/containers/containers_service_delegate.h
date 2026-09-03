@@ -14,7 +14,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
 #include "chrome/common/buildflags.h"
 #include "components/sessions/core/tab_restore_service_observer.h"
 

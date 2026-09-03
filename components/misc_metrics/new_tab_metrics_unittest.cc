@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/misc_metrics/new_tab_metrics.h"
+#include "BnesBrowser/components/misc_metrics/new_tab_metrics.h"
 
 #include <memory>
 
 #include "base/test/metrics/histogram_tester.h"
 #include "base/test/task_environment.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

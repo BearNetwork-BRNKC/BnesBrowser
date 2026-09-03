@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//testing/test.gni")
 
 assert(enable_brave_rewards)
@@ -18,8 +18,8 @@ source_set("brave_rewards") {
 
   deps = [
     "//base",
-    "//brave/components/brave_rewards/content",
-    "//brave/components/script_injector/common/mojom",
+    "//BnesBrowser/components/brave_rewards/content",
+    "//BnesBrowser/components/script_injector/common/mojom",
     "//chrome/browser/profiles",
     "//components/keyed_service/content",
     "//components/sessions",
@@ -41,12 +41,12 @@ source_set("brave_rewards_impl") {
   deps = [
     ":util",
     "//base",
-    "//brave/components/brave_policy:policy_initialization_waiter",
-    "//brave/components/brave_rewards/content",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core:features",
-    "//brave/components/brave_rewards/resources/creator_detection:creator_detection_generated_grit",
-    "//brave/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/brave_policy:policy_initialization_waiter",
+    "//BnesBrowser/components/brave_rewards/content",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core:features",
+    "//BnesBrowser/components/brave_rewards/resources/creator_detection:creator_detection_generated_grit",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
     "//chrome/browser:browser_process",
     "//chrome/browser/bitmap_fetcher",
     "//chrome/browser/favicon",
@@ -59,7 +59,7 @@ source_set("brave_rewards_impl") {
   ]
 
   if (enable_brave_wallet) {
-    deps += [ "//brave/browser/brave_wallet" ]
+    deps += [ "//BnesBrowser/browser/brave_wallet" ]
   }
 }
 
@@ -70,7 +70,7 @@ source_set("util") {
   ]
 
   deps = [
-    "//brave/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core",
     "//chrome/browser/profiles:profile",
     "//components/prefs",
   ]

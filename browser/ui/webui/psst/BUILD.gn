@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/psst/buildflags/buildflags.gni")
+import("//BnesBrowser/components/psst/buildflags/buildflags.gni")
 
 assert(enable_psst)
 
@@ -16,16 +16,16 @@ static_library("psst") {
   ]
 
   public_deps = [
-    "//brave/browser/psst",
-    "//brave/components/psst/core/common",
-    "//brave/components/psst/core/common:mojom",
+    "//BnesBrowser/browser/psst",
+    "//BnesBrowser/components/psst/core/common",
+    "//BnesBrowser/components/psst/core/common:mojom",
   ]
 
   deps = [
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/components/psst/resources:psst_dialog_generated_resources_grit",
-    "//brave/components/psst/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/components/psst/resources:psst_dialog_generated_resources_grit",
+    "//BnesBrowser/components/psst/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
     "//chrome/browser/ui",
     "//chrome/browser/ui/browser_window",
     "//chrome/browser/ui/tabs",

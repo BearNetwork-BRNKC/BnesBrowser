@@ -12,7 +12,7 @@
 
 #include "base/containers/span.h"
 #include "base/functional/callback_forward.h"
-#include "brave/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
+#include "BnesBrowser/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
 #include "ios/web/public/web_state_user_data.h"
 
 class GURL;

@@ -23,15 +23,15 @@
 #include "base/time/time.h"
 #include "base/timer/wall_clock_timer.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/content/diagnostic_log.h"
-#include "brave/components/brave_rewards/content/rewards_p3a.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_database.mojom.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
-#include "brave/components/brave_rewards/core/remote_worker.h"
-#include "brave/components/brave_rewards/core/rewards_flags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/services/bat_rewards/public/interfaces/rewards_engine_factory.mojom.h"
+#include "BnesBrowser/components/brave_rewards/content/diagnostic_log.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_p3a.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_database.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/remote_worker.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_flags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/services/bat_rewards/public/interfaces/rewards_engine_factory.mojom.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "content/public/browser/storage_partition.h"
@@ -41,7 +41,7 @@
 #include "ui/gfx/image/image.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #endif
 
 namespace base {

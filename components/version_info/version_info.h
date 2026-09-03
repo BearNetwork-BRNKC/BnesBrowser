@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/version_info/version_info_values.h"
+#include "BnesBrowser/components/version_info/version_info_values.h"
 
 namespace version_info {
 

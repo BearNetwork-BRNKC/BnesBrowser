@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/opentabs/sendtab_model_listener_ios.h"
+#include "BnesBrowser/ios/browser/api/opentabs/sendtab_model_listener_ios.h"
 
 #include "base/check.h"
 #include "base/memory/raw_ptr.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/api/opentabs/brave_opentabs_api.h"
-#include "brave/ios/browser/api/opentabs/brave_sendtab_api.h"
-#include "brave/ios/browser/api/opentabs/brave_sendtab_observer.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_opentabs_api.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_sendtab_api.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_sendtab_observer.h"
 #include "components/send_tab_to_self/send_tab_to_self_entry.h"
 #include "components/send_tab_to_self/send_tab_to_self_model.h"
 #include "components/send_tab_to_self/send_tab_to_self_model_observer.h"

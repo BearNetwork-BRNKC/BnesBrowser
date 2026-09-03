@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/new_tab_page_ad_serving.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/new_tab_page_ad_serving.h"
 
 #include <utility>
 
@@ -11,21 +11,21 @@
 #include "base/functional/bind.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/trace_id_helper.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_info.h"
-#include "brave/components/brave_ads/core/internal/creatives/new_tab_page_ads/new_tab_page_ad_builder.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/allocation/ads_allocation_util.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pipelines/new_tab_page_ads/eligible_new_tab_page_ads_base.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pipelines/new_tab_page_ads/eligible_new_tab_page_ads_factory.h"
-#include "brave/components/brave_ads/core/internal/serving/new_tab_page_ad_serving_feature.h"
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/new_tab_page_ads/new_tab_page_ad_permission_rules.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/user_model_builder.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
-#include "brave/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
-#include "brave/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/new_tab_page_ads/new_tab_page_ad_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/allocation/ads_allocation_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pipelines/new_tab_page_ads/eligible_new_tab_page_ads_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pipelines/new_tab_page_ads/eligible_new_tab_page_ads_factory.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/new_tab_page_ad_serving_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/new_tab_page_ads/new_tab_page_ad_permission_rules.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/user_model_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads {
 

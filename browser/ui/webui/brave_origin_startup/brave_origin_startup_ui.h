@@ -6,14 +6,14 @@
 #ifndef BRAVE_BROWSER_UI_WEBUI_BRAVE_ORIGIN_STARTUP_BRAVE_ORIGIN_STARTUP_UI_H_
 #define BRAVE_BROWSER_UI_WEBUI_BRAVE_ORIGIN_STARTUP_BRAVE_ORIGIN_STARTUP_UI_H_
 
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED));
 
 #include <memory>
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_origin/mojom/brave_origin_startup.mojom.h"
+#include "BnesBrowser/components/brave_origin/mojom/brave_origin_startup.mojom.h"
 #include "content/public/browser/webui_config.h"
 #include "content/public/common/url_constants.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

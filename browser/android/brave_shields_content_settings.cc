@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/android/brave_shields_content_settings.h"
+#include "BnesBrowser/browser/android/brave_shields_content_settings.h"
 
 #include <string>
 
 #include "base/android/jni_android.h"
 #include "base/android/jni_string.h"
 #include "base/check.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
 #include "chrome/android/chrome_jni_headers/BraveShieldsContentSettings_jni.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"

@@ -5,8 +5,8 @@
 
 #include "base/android/jni_android.h"
 #include "base/android/jni_string.h"
-#include "brave/brave_domains/android/jni_headers/BraveDomainsUtils_jni.h"
-#include "brave/brave_domains/service_domains.h"
+#include "BnesBrowser/brave_domains/android/jni_headers/BraveDomainsUtils_jni.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
 
 namespace brave_domains {
 namespace android {

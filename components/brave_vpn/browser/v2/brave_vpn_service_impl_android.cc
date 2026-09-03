@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
 
 #include <optional>
 #include <utility>
@@ -12,9 +12,9 @@
 #include "base/functional/bind.h"
 #include "base/notimplemented.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
-#include "brave/components/brave_vpn/browser/v2/api/transport_protocol.h"
-#include "brave/components/brave_vpn/browser/v2/purchased_state_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/transport_protocol.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/purchased_state_manager.h"
 
 namespace brave_vpn::v2 {
 namespace {

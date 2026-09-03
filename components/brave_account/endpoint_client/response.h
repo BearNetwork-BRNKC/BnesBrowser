@@ -14,7 +14,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_account/endpoint_client/is_response_body.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response_body.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_response_headers.h"
 #include "services/network/public/cpp/header_util.h"

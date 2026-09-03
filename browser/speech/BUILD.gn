@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
 assert(enable_local_ai)
 
@@ -15,10 +15,10 @@ static_library("speech") {
 
   deps = [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/browser/local_ai",
-    "//brave/components/local_ai/core",
-    "//brave/components/local_ai/core:speech_recognition_mojom",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/browser/local_ai",
+    "//BnesBrowser/components/local_ai/core",
+    "//BnesBrowser/components/local_ai/core:speech_recognition_mojom",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/profiles:profile_manager",
@@ -39,8 +39,8 @@ source_set("unit_tests") {
     ":speech",
     "//base",
     "//base/test:test_support",
-    "//brave/components/local_ai/core",
-    "//brave/components/local_ai/core:speech_recognition_mojom",
+    "//BnesBrowser/components/local_ai/core",
+    "//BnesBrowser/components/local_ai/core:speech_recognition_mojom",
     "//chrome/browser/profiles:profile",
     "//chrome/test:test_support",
     "//content/test:test_support",

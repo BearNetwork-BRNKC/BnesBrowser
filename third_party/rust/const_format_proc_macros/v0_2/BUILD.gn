@@ -12,32 +12,32 @@ cargo_crate("lib") {
   crate_name = "const_format_proc_macros"
   epoch = "0.2"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/datastructure.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/datastructure/field_map.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/attribute_parsing.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/syntax.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/type_detection.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_args.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_args/parsing.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_macro.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_macro/tests.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/errors.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/parsing.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/tests.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/formatting.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/macros.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/parse_utils.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/respan_to_macro.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/shared_arg_parsing.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/spanned.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/test_utils.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/datastructure.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/datastructure/field_map.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/attribute_parsing.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/syntax.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/derive_debug/type_detection.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_args.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_args/parsing.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_macro.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_macro/tests.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/errors.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/parsing.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/format_str/tests.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/formatting.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/macros.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/parse_utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/respan_to_macro.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/shared_arg_parsing.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/spanned.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/test_utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/const_format_proc_macros-v0_2/src/utils.rs",
   ]
   inputs = []
 
@@ -52,9 +52,9 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/proc_macro2/v1:lib",
-    "//brave/third_party/rust/quote/v1:lib",
-    "//brave/third_party/rust/unicode_xid/v0_2:lib",
+    "//BnesBrowser/third_party/rust/proc_macro2/v1:lib",
+    "//BnesBrowser/third_party/rust/quote/v1:lib",
+    "//BnesBrowser/third_party/rust/unicode_xid/v0_2:lib",
   ]
   features = [ "default" ]
   rustenv = []

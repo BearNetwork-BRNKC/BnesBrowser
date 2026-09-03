@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/traffic_control/buildflags/buildflags.gni")
+import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 
 assert(enable_traffic_control)
 
@@ -15,7 +15,7 @@ component("features") {
     "features.h",
   ]
 
-  public_deps = [ "//brave/components/traffic_control/buildflags" ]
+  public_deps = [ "//BnesBrowser/components/traffic_control/buildflags" ]
   deps = [ "//base" ]
 }
 

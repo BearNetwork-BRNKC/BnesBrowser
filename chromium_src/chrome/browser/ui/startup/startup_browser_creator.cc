@@ -7,18 +7,18 @@
 
 #include "base/command_line.h"
 #include "base/logging.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/brave_switches.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/lifetime/application_lifetime.h"
 #include "chrome/browser/ui/startup/startup_browser_creator_impl.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 #endif
 
 #if BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED)
-#include "brave/browser/ui/views/brave_origin/brave_origin_startup_view.h"
+#include "BnesBrowser/browser/ui/views/brave_origin/brave_origin_startup_view.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/platform_util.h"
 #include "chrome/browser/profiles/profile_manager.h"

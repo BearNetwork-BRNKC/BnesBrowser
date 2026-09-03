@@ -13,7 +13,7 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/memory/ptr_util.h"
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 #include "chrome/browser/ui/views/tabs/dragging/tab_drag_controller.h"
 #include "components/tabs/public/tab_strip_collection.h"
 

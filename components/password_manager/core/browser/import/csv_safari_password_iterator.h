@@ -14,7 +14,7 @@
 
 #include "base/check.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
 
 namespace password_manager {
 

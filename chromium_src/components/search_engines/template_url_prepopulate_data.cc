@@ -7,7 +7,7 @@
 
 #include <vector>
 
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "components/search_engines/search_engines_pref_names.h"
 
 #define GetDataVersion GetDataVersion_ChromiumImpl

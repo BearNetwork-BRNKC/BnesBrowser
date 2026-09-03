@@ -5,7 +5,7 @@
 
 #include <optional>
 
-#include "brave/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
 #include "components/update_client/protocol_serializer.h"
 
 #define BuildUpdateCheckExtraRequestHeaders \

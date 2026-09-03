@@ -8,21 +8,21 @@ static_library("common") {
   # unless no equivalent is available.
   visibility = [
     ":*",
-    "//brave/browser:core",
-    "//brave/browser/ui",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/brave_ads/browser",
-    "//brave/components/brave_ads/core/internal",
-    "//brave/components/brave_ads/core/test:brave_ads_unit_tests",
-    "//brave/components/brave_news/browser",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/p3a",
-    "//brave/components/sidebar/browser",
-    "//brave/components/text_recognition/browser",
-    "//brave/ios/browser/api/ads",
-    "//brave/ios/browser/shared/prefs",
-    "//brave/test:*",
+    "//BnesBrowser/browser:core",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/brave_ads/browser",
+    "//BnesBrowser/components/brave_ads/core/internal",
+    "//BnesBrowser/components/brave_ads/core/test:brave_ads_unit_tests",
+    "//BnesBrowser/components/brave_news/browser",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/sidebar/browser",
+    "//BnesBrowser/components/text_recognition/browser",
+    "//BnesBrowser/ios/browser/api/ads",
+    "//BnesBrowser/ios/browser/shared/prefs",
+    "//BnesBrowser/test:*",
   ]
 
   friend = [
@@ -54,7 +54,7 @@ static_library("common") {
 
   deps = [
     "//base",
-    "//brave/components/l10n/browser",
+    "//BnesBrowser/components/l10n/browser",
     "//components/prefs",
     "//ui/base",
   ]
@@ -70,7 +70,7 @@ static_library("test_support") {
 
   deps = [
     "//base",
-    "//brave/components/l10n/common",
+    "//BnesBrowser/components/l10n/common",
   ]
 }
 
@@ -86,9 +86,9 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/l10n/common",
-    "//brave/components/l10n/common:test_support",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/l10n/common",
+    "//BnesBrowser/components/l10n/common:test_support",
+    "//BnesBrowser/components/resources:strings_grit",
     "//components/prefs:test_support",
     "//testing/gmock",
     "//testing/gtest",

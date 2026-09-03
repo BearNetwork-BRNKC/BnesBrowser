@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/omnibox/browser/commander_provider.h"
+#include "BnesBrowser/components/omnibox/browser/commander_provider.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/strings/strcat.h"
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
-#include "brave/components/omnibox/browser/commander_action.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/commander_action.h"
 #include "components/omnibox/browser/autocomplete_match.h"
 #include "components/omnibox/browser/autocomplete_match_type.h"
 #include "components/omnibox/browser/autocomplete_provider_client.h"

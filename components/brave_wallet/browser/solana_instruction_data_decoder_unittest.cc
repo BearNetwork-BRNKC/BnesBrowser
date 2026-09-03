@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/solana_instruction_data_decoder.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_data_decoder.h"
 
 #include <optional>
 #include <utility>
 #include <vector>
 
 #include "base/containers/extend.h"
-#include "brave/components/brave_wallet/browser/solana_instruction.h"
-#include "brave/components/brave_wallet/browser/solana_instruction_builder.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_builder.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet::solana_ins_data_decoder {

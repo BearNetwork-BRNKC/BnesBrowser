@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_service_factory.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_service_factory.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/check_deref.h"
 #include "base/no_destructor.h"
-#include "brave/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
-#include "brave/components/serp_metrics/serp_metrics_service.h"
+#include "BnesBrowser/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_service.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"

@@ -12,7 +12,7 @@
 
 #include "base/containers/span.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/ios/browser/api/opentabs/brave_sendtab_observer.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_sendtab_observer.h"
 #include "components/send_tab_to_self/send_tab_to_self_entry.h"
 #include "components/send_tab_to_self/send_tab_to_self_model.h"
 #include "components/send_tab_to_self/send_tab_to_self_model_observer.h"

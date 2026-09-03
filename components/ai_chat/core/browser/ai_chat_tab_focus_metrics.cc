@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ai_chat_tab_focus_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_tab_focus_metrics.h"
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_sync/crypto/crypto.h"
+#include "BnesBrowser/components/brave_sync/crypto/crypto.h"
 
 #include <cmath>
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/logging.h"
-#include "brave/third_party/bip39wally-core-native/include/wally_bip39.h"
-#include "brave/vendor/bat-native-tweetnacl/tweetnacl.h"
+#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
+#include "BnesBrowser/vendor/bat-native-tweetnacl/tweetnacl.h"
 #include "crypto/random.h"
 #include "third_party/boringssl/src/include/openssl/curve25519.h"
 #include "third_party/boringssl/src/include/openssl/digest.h"

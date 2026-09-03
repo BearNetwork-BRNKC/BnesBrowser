@@ -10,9 +10,9 @@
 #include <vector>
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_daypart_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_geo_target_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_creative_set_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_daypart_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_geo_target_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_creative_set_info.h"
 
 namespace brave_ads {
 

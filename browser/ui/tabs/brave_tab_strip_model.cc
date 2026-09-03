@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/tabs/brave_tab_strip_model.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_strip_model.h"
 
 #include <algorithm>
 #include <cstdint>
@@ -12,14 +12,14 @@
 #include <vector>
 
 #include "base/containers/span.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/brave_tree_tab_strip_collection_delegate.h"
-#include "brave/browser/ui/tabs/tree_tab_model.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/tabs/public/brave_tab_strip_collection.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tree_tab_strip_collection_delegate.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_model.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/tabs/public/brave_tab_strip_collection.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/tabs/features.h"

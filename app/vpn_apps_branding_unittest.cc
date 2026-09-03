@@ -10,7 +10,7 @@
 
 #include "base/files/file_path.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_vpn/app/v2/shared/app_utils.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/app_utils.h"
 #include "build/build_config.h"
 #include "chrome/common/chrome_paths_internal.h"
 #include "testing/gtest/include/gtest/gtest.h"

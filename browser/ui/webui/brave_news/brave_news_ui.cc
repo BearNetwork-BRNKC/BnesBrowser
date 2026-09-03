@@ -3,17 +3,17 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_news/brave_news_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_news/brave_news_ui.h"
 
 #include <utility>
 
 #include "base/feature_list.h"
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/browser/ui/webui/brave_sanitized_image_source.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_news/browser/resources/grit/brave_news_sidebar_generated_map.h"
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_sanitized_image_source.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/resources/grit/brave_news_sidebar_generated_map.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/theme_source.h"
 #include "components/grit/brave_components_resources.h"

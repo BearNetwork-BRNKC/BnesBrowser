@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/content/browser/ai_page_content_fetcher.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_page_content_fetcher.h"
 
 #include <string>
 #include <utility>
 
 #include "base/functional/callback_helpers.h"
 #include "base/test/test_future.h"
-#include "brave/components/ai_chat/content/browser/annotated_page_content_test_util.h"
+#include "BnesBrowser/components/ai_chat/content/browser/annotated_page_content_test_util.h"
 #include "components/optimization_guide/content/browser/page_content_proto_provider.h"
 #include "content/public/test/test_renderer_host.h"
 #include "testing/gtest/include/gtest/gtest.h"

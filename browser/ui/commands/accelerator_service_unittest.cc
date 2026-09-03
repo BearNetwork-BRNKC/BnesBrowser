@@ -3,28 +3,28 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/commands/accelerator_service.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service.h"
 
 #include <utility>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/commands/common/accelerator_parsing.h"
-#include "brave/components/commands/common/features.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/commands/common/accelerator_parsing.h"
+#include "BnesBrowser/components/commands/common/features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/browser_process.h"
@@ -36,31 +36,31 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/speedreader_pref_names.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif
 
 namespace commands {

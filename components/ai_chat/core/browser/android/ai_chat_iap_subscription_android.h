@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_AI_CHAT_CORE_BROWSER_ANDROID_AI_CHAT_IAP_SUBSCRIPTION_ANDROID_H_
 #define BRAVE_COMPONENTS_AI_CHAT_CORE_BROWSER_ANDROID_AI_CHAT_IAP_SUBSCRIPTION_ANDROID_H_
 
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 
 class PrefService;
 

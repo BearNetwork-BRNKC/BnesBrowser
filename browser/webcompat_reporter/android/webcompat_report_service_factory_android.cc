@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/android/jni_android.h"
-#include "brave/browser/webcompat_reporter/webcompat_reporter_service_factory.h"
+#include "BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_factory.h"
 #include "chrome/android/chrome_jni_headers/WebcompatReporterServiceFactory_jni.h"
 #include "chrome/browser/profiles/profile.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

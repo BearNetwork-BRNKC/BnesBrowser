@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/asset_discovery_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/asset_discovery_task.h"
 
 #include <map>
 #include <optional>
@@ -14,15 +14,15 @@
 #include "base/base64.h"
 #include "base/check.h"
 #include "base/containers/span_reader.h"
-#include "brave/components/brave_wallet/browser/blockchain_registry.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_registry.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "components/prefs/pref_service.h"
 
 namespace brave_wallet {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
 
 #include <memory>
 #include <optional>
@@ -15,15 +15,15 @@
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
 #include "base/values.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/browser/test/fake_skus_service.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/browser/test/fake_skus_service.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
@@ -34,7 +34,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN_V2_APPS)
-#include "brave/components/brave_vpn/browser/v2/test/fake_agent.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/test/fake_agent.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN_V2_APPS)
 
 namespace brave_vpn::v2 {

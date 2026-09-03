@@ -12,8 +12,8 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
-#include "brave/components/ai_chat/core/common/mojom/ollama.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ollama.mojom.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"

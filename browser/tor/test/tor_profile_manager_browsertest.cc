@@ -3,22 +3,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 
 #include "base/path_service.h"
 #include "base/process/launch.h"
 #include "base/test/bind.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/constants/brave_switches.h"
-#include "brave/components/tor/mock_tor_launcher_factory.h"
-#include "brave/components/tor/tor_launcher_observer.h"
-#include "brave/components/tor/tor_profile_service.h"
-#include "brave/components/tor/tor_profile_service_impl.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
+#include "BnesBrowser/components/tor/mock_tor_launcher_factory.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
+#include "BnesBrowser/components/tor/tor_profile_service_impl.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -43,11 +43,11 @@
 #include "services/network/test/test_url_loader_factory.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)

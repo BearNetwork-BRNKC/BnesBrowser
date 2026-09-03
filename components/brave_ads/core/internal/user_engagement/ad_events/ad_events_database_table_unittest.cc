@@ -3,25 +3,25 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
 
 #include "base/test/mock_callback.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_ads/core/internal/ad_units/new_tab_page_ad/test/new_tab_page_ad_test_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/notification_ad/test/notification_ad_test_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/test/creative_set_conversion_test_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_wallpaper_type.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/test/creative_notification_ad_test_util.h"
-#include "brave/components/brave_ads/core/internal/settings/test/settings_test_util.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_builder.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/new_tab_page_ad/test/new_tab_page_ad_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/notification_ad/test/notification_ad_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/test/creative_set_conversion_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_wallpaper_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/test/creative_notification_ad_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/test/settings_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_builder.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

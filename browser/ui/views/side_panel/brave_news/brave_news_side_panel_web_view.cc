@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/side_panel/brave_news/brave_news_side_panel_web_view.h"
+#include "BnesBrowser/browser/ui/views/side_panel/brave_news/brave_news_side_panel_web_view.h"
 
 #include "base/check.h"
-#include "brave/browser/ui/webui/brave_news/brave_news_ui.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/ui/webui/brave_news/brave_news_ui.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/navigator/browser_navigator.h"

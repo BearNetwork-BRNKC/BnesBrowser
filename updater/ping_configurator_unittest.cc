@@ -5,7 +5,7 @@
 
 #include "chrome/updater/ping_configurator.h"
 
-#include "brave/components/update_client/test_util.h"
+#include "BnesBrowser/components/update_client/test_util.h"
 #include "components/update_client/protocol_handler.h"
 #include "components/update_client/protocol_serializer.h"
 #include "testing/gtest/include/gtest/gtest.h"

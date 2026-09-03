@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/prefs/pref_change_registrar.h"

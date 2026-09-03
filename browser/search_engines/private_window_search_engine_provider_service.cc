@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/private_window_search_engine_provider_service.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service.h"
 
 #include "base/check.h"
-#include "brave/browser/search_engines/search_engine_provider_util.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_util.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 #include "components/search_engines/default_search_manager.h"

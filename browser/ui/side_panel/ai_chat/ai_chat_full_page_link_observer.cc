@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/side_panel/ai_chat/ai_chat_full_page_link_observer.h"
+#include "BnesBrowser/browser/ui/side_panel/ai_chat/ai_chat_full_page_link_observer.h"
 
 #include "base/functional/bind.h"
 #include "base/location.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
+#include "BnesBrowser/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
 #include "content/public/browser/web_contents.h"
 
 namespace ai_chat {

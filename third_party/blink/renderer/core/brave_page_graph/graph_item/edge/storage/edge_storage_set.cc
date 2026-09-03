@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/storage/edge_storage_set.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/storage/edge_storage_set.h"
 
 #include "base/check.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_actor.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/storage/node_storage.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graphml.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_actor.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/storage/node_storage.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graphml.h"
 #include "third_party/blink/renderer/platform/wtf/text/strcat.h"
 #include "third_party/blink/renderer/platform/wtf/text/wtf_string.h"
 

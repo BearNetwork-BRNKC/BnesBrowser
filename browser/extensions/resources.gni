@@ -4,6 +4,6 @@
 # you can obtain one at http://mozilla.org/MPL/2.0/.
 
 brave_extensions_resources = [
-  "//brave/browser/extensions/api:generated_api_registration",
-  "//brave/browser/extensions:resources",
+  "//BnesBrowser/browser/extensions/api:generated_api_registration",
+  "//BnesBrowser/browser/extensions:resources",
 ]

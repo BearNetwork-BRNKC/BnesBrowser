@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/task/sequenced_task_runner.h"
-#include "brave/content/public/browser/devtools/adblock_devtools_instumentation.h"
+#include "BnesBrowser/content/public/browser/devtools/adblock_devtools_instumentation.h"
 #include "content/browser/devtools/devtools_agent_host_impl.h"
 #include "content/browser/devtools/protocol/network_handler.h"
 #include "content/browser/devtools/render_frame_devtools_agent_host.h"

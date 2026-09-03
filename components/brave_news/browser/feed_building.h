@@ -10,11 +10,11 @@
 #include <vector>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/publishers_parsing.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_parsing.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_WEBUI_AI_CHAT_AI_CHAT_AGENT_NEW_TAB_PAGE_UI_H_
 #define BRAVE_BROWSER_UI_WEBUI_AI_CHAT_AI_CHAT_AGENT_NEW_TAB_PAGE_UI_H_
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "content/public/browser/web_ui_controller.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_AI_CHAT_AGENT_PROFILE));

@@ -9,7 +9,7 @@
 #include <memory>
 #include <optional>
 
-#include "brave/components/brave_search/renderer/brave_search_default_js_handler.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_default_js_handler.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "third_party/blink/public/web/web_navigation_type.h"

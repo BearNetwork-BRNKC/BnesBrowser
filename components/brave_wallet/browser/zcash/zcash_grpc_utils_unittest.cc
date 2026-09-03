@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_grpc_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_grpc_utils.h"
 
 #include <memory>
 #include <optional>
@@ -14,7 +14,7 @@
 #include "base/functional/callback.h"
 #include "base/strings/strcat.h"
 #include "base/test/bind.h"
-#include "brave/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

@@ -7,7 +7,7 @@
 #define BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_GRAPH_ITEM_GRAPH_ITEM_CONTEXT_H_
 
 #include "base/time/time.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 
 namespace brave_page_graph {
 

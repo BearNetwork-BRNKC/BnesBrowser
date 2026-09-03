@@ -6,8 +6,8 @@
 #ifndef BRAVE_BROWSER_BRAVE_WALLET_WALLET_DATA_FILES_INSTALLER_DELEGATE_IMPL_H_
 #define BRAVE_BROWSER_BRAVE_WALLET_WALLET_DATA_FILES_INSTALLER_DELEGATE_IMPL_H_
 
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer_delegate.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer_delegate.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_WALLET));
 namespace brave_wallet {

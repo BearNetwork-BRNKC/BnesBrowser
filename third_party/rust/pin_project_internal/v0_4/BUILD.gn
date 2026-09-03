@@ -12,15 +12,15 @@ cargo_crate("lib") {
   crate_name = "pin_project_internal"
   epoch = "0.4"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/attribute.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/derive.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pinned_drop.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/project.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/attribute.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/derive.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pin_project/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/pinned_drop.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/project.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/src/utils.rs",
   ]
   inputs = []
 
@@ -34,12 +34,12 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/proc_macro2/v1:lib",
-    "//brave/third_party/rust/quote/v1:lib",
-    "//brave/third_party/rust/syn/v1:lib",
+    "//BnesBrowser/third_party/rust/proc_macro2/v1:lib",
+    "//BnesBrowser/third_party/rust/quote/v1:lib",
+    "//BnesBrowser/third_party/rust/syn/v1:lib",
   ]
-  build_root = "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/build.rs"
-  build_sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/build.rs" ]
+  build_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/build.rs"
+  build_sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/pin-project-internal-v0_4/build.rs" ]
   rustenv = []
   rustflags = []
 

@@ -8,18 +8,18 @@
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/ui/views/frame/brave_browser_frame_view_win.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_win.h"
 #define BrowserFrameViewWin BraveBrowserFrameViewWin
 #endif
 
 // This file is included for all platform by upstream source code and we need
 // to include this first to avoid #define conflicts.
-#include "brave/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
 #include "chrome/browser/ui/views/frame/browser_frame_view_linux.h"
 #define OpaqueBrowserFrameView BraveOpaqueBrowserFrameView
 
 #if BUILDFLAG(IS_LINUX)
-#include "brave/browser/ui/views/frame/brave_browser_frame_view_linux_native.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_linux_native.h"
 #define BrowserFrameViewLinuxNative BraveBrowserFrameViewLinuxNative
 #endif  // BUILDFLAG(IS_LINUX)
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/private_window_search_engine_provider_service_base.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service_base.h"
 
 #include <memory>
 #include <utility>
@@ -12,7 +12,7 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/search_engines/search_engine_provider_util.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_util.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
 #include "components/prefs/pref_service.h"

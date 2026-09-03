@@ -8,7 +8,7 @@
 
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
-#include "brave/net/dns/secure_dns_endpoints.h"
+#include "BnesBrowser/net/dns/secure_dns_endpoints.h"
 #include "net/base/net_export.h"
 
 namespace net {

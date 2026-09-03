@@ -11,7 +11,7 @@ source_set("p3a") {
   ]
   deps = [
     "//base",
-    "//brave/components/p3a",
+    "//BnesBrowser/components/p3a",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/url:constants",
     "//ios/components/webui:url_constants",

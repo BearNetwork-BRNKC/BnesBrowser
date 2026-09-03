@@ -6,8 +6,8 @@
 #include "base/path_service.h"
 #include "base/strings/pattern.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
@@ -29,7 +29,7 @@
 #include "net/dns/mock_host_resolver.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 class BraveSchemeLoadBrowserTest : public InProcessBrowserTest,

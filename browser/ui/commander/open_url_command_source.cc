@@ -8,14 +8,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/browser/ui/commander/open_url_command_source.h"
+#include "BnesBrowser/browser/ui/commander/open_url_command_source.h"
 
 #include <memory>
 #include <utility>
 #include <vector>
 
 #include "base/i18n/case_conversion.h"
-#include "brave/browser/ui/commander/fuzzy_finder.h"
+#include "BnesBrowser/browser/ui/commander/fuzzy_finder.h"
 #include "build/branding_buildflags.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_tabstrip.h"

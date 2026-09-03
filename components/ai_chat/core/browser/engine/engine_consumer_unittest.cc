@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
 
 #include <string>
 #include <vector>
 
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace ai_chat {

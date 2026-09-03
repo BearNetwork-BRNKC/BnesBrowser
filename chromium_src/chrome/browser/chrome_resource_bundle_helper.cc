@@ -6,7 +6,7 @@
 #define LoadLocalState LoadLocalState_ChromiumImpl
 #include <chrome/browser/chrome_resource_bundle_helper.cc>
 #undef LoadLocalState
-#include "brave/common/resource_bundle_helper.h"
+#include "BnesBrowser/common/resource_bundle_helper.h"
 
 std::string LoadLocalState(
     ChromeFeatureListCreator* chrome_feature_list_creator,

@@ -9,8 +9,8 @@
 #include <string>
 
 #include "base/containers/flat_set.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_info.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/token_issuers/payment_token_issuer_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/token_issuers/payment_token_issuer_info.h"
 
 namespace brave_ads::test {
 

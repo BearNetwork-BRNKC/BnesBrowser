@@ -13,11 +13,11 @@
 #include "base/process/launch.h"
 #include "base/process/memory.h"
 #include "base/task/thread_pool/thread_pool_instance.h"
-#include "brave/components/brave_vpn/app/v2/agent/agent_app.h"
-#include "brave/components/brave_vpn/app/v2/agent/single_instance.h"
-#include "brave/components/brave_vpn/app/v2/shared/app_utils.h"
-#include "brave/components/brave_vpn/app/v2/shared/crash_reporter_client.h"
-#include "brave/components/brave_vpn/app/v2/shared/switches.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/agent_app.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/single_instance.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/app_utils.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/crash_reporter_client.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/switches.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_WIN)

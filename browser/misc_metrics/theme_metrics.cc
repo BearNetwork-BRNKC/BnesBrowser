@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/misc_metrics/theme_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/theme_metrics.h"
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/themes/brave_dark_mode_utils.h"
+#include "BnesBrowser/browser/themes/brave_dark_mode_utils.h"
 #include "chrome/browser/themes/theme_service.h"
 
 namespace {

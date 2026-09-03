@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_view.h"
 
 #include <string>
 
@@ -11,13 +11,13 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/views/frame/brave_tab_strip_region_view.h"
-#include "brave/browser/ui/views/workspaces/workspace_row_view.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/browser/workspaces/workspace_metadata.h"
-#include "brave/browser/workspaces/workspace_service.h"
-#include "brave/browser/workspaces/workspace_service_factory.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspace_row_view.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/browser/workspaces/workspace_metadata.h"
+#include "BnesBrowser/browser/workspaces/workspace_service.h"
+#include "BnesBrowser/browser/workspaces/workspace_service_factory.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "chrome/browser/ui/views/tabs/tab_strip_control_button.h"

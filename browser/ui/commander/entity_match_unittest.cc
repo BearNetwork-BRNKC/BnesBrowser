@@ -8,13 +8,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/browser/ui/commander/entity_match.h"
+#include "BnesBrowser/browser/ui/commander/entity_match.h"
 
 #include <algorithm>
 #include <functional>
 
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 #include "chrome/browser/ui/window_metadata/window_metadata_controller.h"
 #include "chrome/test/base/browser_with_test_window_test.h"
 #include "chrome/test/base/test_browser_window.h"

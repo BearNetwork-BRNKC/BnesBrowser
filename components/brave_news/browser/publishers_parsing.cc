@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/publishers_parsing.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_parsing.h"
 
 #include <optional>
 #include <string>
@@ -12,10 +12,10 @@
 
 #include "base/logging.h"
 #include "base/values.h"
-#include "brave/components/brave_news/api/publisher.h"
-#include "brave/components/brave_news/browser/channel_migrator.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/api/publisher.h"
+#include "BnesBrowser/components/brave_news/browser/channel_migrator.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 #include "url/gurl.h"
 

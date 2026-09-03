@@ -12,7 +12,7 @@
 
 #include "base/observer_list_types.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 #include "ui/base/page_transition_types.h"
 #include "url/gurl.h"
 

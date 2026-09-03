@@ -5,9 +5,9 @@
 
 static_library("ollama") {
   visibility = [
-    "//brave/browser:core",
-    "//brave/browser/ui",
-    "//brave/browser/ui/webui/ai_chat",
+    "//BnesBrowser/browser:core",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/browser/ui/webui/ai_chat",
   ]
 
   sources = [
@@ -17,9 +17,9 @@ static_library("ollama") {
 
   deps = [
     "//base",
-    "//brave/browser/ai_chat",
-    "//brave/components/ai_chat/core/browser/ollama",
-    "//brave/components/ai_chat/core/common",
+    "//BnesBrowser/browser/ai_chat",
+    "//BnesBrowser/components/ai_chat/core/browser/ollama",
+    "//BnesBrowser/components/ai_chat/core/common",
     "//chrome/browser/profiles:profile",
     "//components/keyed_service/content",
     "//components/user_prefs",

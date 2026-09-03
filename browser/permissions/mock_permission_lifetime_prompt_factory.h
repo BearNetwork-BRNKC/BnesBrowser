@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/permissions/mock_permission_lifetime_prompt.h"
+#include "BnesBrowser/browser/permissions/mock_permission_lifetime_prompt.h"
 #include "components/permissions/permission_prompt.h"
 #include "components/permissions/permission_request.h"
 #include "components/permissions/permission_request_manager.h"

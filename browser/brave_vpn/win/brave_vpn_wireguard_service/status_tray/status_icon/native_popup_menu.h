@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/scoped_hmenu.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/scoped_hmenu.h"
 
 namespace ui {
 class MenuModel;

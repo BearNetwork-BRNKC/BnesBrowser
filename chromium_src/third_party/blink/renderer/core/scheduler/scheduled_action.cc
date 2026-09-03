@@ -5,8 +5,8 @@
 
 #include "third_party/blink/renderer/core/scheduler/scheduled_action.h"
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
-#include "brave/v8/include/v8-isolate-page-graph-utils.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/v8/include/v8-isolate-page-graph-utils.h"
 #include "third_party/blink/renderer/core/probe/core_probes.h"
 #include "third_party/blink/renderer/core/script/classic_script.h"
 #include "third_party/blink/renderer/platform/loader/fetch/script_fetch_options.h"

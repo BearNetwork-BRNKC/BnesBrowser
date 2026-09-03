@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/content/browser/domain_block_controller_client.h"
+#include "BnesBrowser/components/brave_shields/content/browser/domain_block_controller_client.h"
 
-#include "brave/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
-#include "brave/components/brave_shields/content/browser/domain_block_tab_storage.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/content/browser/domain_block_tab_storage.h"
 #include "components/prefs/pref_service.h"
 #include "components/security_interstitials/content/settings_page_helper.h"
 #include "components/security_interstitials/core/metrics_helper.h"

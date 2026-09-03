@@ -11,7 +11,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/eth_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_transaction.h"
 
 namespace brave_wallet {
 

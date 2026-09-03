@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ml/transformation/hashed_ngrams_transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/hashed_ngrams_transformation.h"
 
 #include <map>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/ml/data/text_data.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
-#include "brave/components/brave_ads/core/internal/ml/transformation/hash_vectorizer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/text_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/hash_vectorizer.h"
 
 namespace brave_ads::ml {
 

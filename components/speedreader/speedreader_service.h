@@ -10,8 +10,8 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/observer_list.h"
-#include "brave/components/speedreader/common/speedreader_toolbar.mojom.h"
-#include "brave/components/speedreader/speedreader_metrics.h"
+#include "BnesBrowser/components/speedreader/common/speedreader_toolbar.mojom.h"
+#include "BnesBrowser/components/speedreader/speedreader_metrics.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/keyed_service/core/keyed_service.h"
 

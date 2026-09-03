@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/asset_discovery_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/asset_discovery_manager.h"
 
 #include <algorithm>
 
@@ -11,17 +11,17 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/test/bind.h"
 #include "base/time/time.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service_observer_base.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
-#include "brave/components/brave_wallet/browser/tx_service.h"
-#include "brave/components/brave_wallet/common/test_utils.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service_observer_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_service.h"
+#include "BnesBrowser/components/brave_wallet/common/test_utils.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/prefs/pref_service.h"

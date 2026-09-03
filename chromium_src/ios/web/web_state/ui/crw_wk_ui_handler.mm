@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/chromium_src/ios/web/web_state/ui/crw_wk_ui_handler.h"
+#include "BnesBrowser/chromium_src/ios/web/web_state/ui/crw_wk_ui_handler.h"
 
 #include <memory>
 #include <string>
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/web/js_messaging/prompt_facade.h"
+#include "BnesBrowser/ios/web/js_messaging/prompt_facade.h"
 #include "ios/web/common/url_scheme_util.h"
 #include "ios/web/public/web_client.h"
 #include "net/base/apple/url_conversions.h"

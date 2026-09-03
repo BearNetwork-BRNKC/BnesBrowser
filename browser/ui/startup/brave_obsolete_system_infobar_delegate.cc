@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/startup/brave_obsolete_system_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/startup/brave_obsolete_system_infobar_delegate.h"
 
 #include <memory>
 
 #include "base/functional/bind.h"
-#include "brave/browser/infobars/brave_confirm_infobar_creator.h"
-#include "brave/browser/ui/browser_dialogs.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/infobars/brave_confirm_infobar_creator.h"
+#include "BnesBrowser/browser/ui/browser_dialogs.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #include "chrome/browser/obsolete_system/obsolete_system.h"

@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_CONTAINERS_CONTAINERS_BOOKMARK_MENU_MODEL_DELEGATE_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 #include "url/gurl.h"
 
 class BrowserWindowInterface;

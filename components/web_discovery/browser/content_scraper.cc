@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/content_scraper.h"
+#include "BnesBrowser/components/web_discovery/browser/content_scraper.h"
 
 #include <algorithm>
 #include <utility>
@@ -13,10 +13,10 @@
 #include "base/strings/string_split.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/web_discovery/browser/document_extractor/lib.rs.h"
-#include "brave/components/web_discovery/browser/patterns.h"
-#include "brave/components/web_discovery/browser/privacy_guard.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/web_discovery/browser/document_extractor/lib.rs.h"
+#include "BnesBrowser/components/web_discovery/browser/patterns.h"
+#include "BnesBrowser/components/web_discovery/browser/privacy_guard.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 namespace web_discovery {

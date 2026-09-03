@@ -8,8 +8,8 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/email_aliases/email_aliases.mojom.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/email_aliases/email_aliases.mojom.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"

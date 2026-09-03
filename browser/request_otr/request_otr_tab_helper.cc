@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/request_otr/request_otr_tab_helper.h"
+#include "BnesBrowser/browser/request_otr/request_otr_tab_helper.h"
 
 #include <utility>
 
@@ -11,7 +11,7 @@
 #include "base/command_line.h"
 #include "base/containers/flat_set.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
 #include "components/prefs/pref_service.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"
@@ -19,7 +19,7 @@
 #include "content/public/browser/web_contents.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/infobars/request_otr_infobar_delegate.h"
+#include "BnesBrowser/browser/infobars/request_otr_infobar_delegate.h"
 #include "components/infobars/content/content_infobar_manager.h"
 #include "components/infobars/core/infobar.h"
 #endif

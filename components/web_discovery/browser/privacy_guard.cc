@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/privacy_guard.h"
+#include "BnesBrowser/components/web_discovery/browser/privacy_guard.h"
 
 #include "base/logging.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
-#include "brave/components/web_discovery/browser/hash_detection.h"
-#include "brave/components/web_discovery/browser/regex_util.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/web_discovery/browser/hash_detection.h"
+#include "BnesBrowser/components/web_discovery/browser/regex_util.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "url/url_constants.h"
 #include "url/url_util.h"
 

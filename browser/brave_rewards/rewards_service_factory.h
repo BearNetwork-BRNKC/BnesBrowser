@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
 #include "chrome/browser/profiles/profile_manager_observer.h"
 #include "components/keyed_service/content/browser_context_keyed_service_factory.h"
 

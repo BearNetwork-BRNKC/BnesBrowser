@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_settings_service_factory.h"
+#include "BnesBrowser/browser/psst/psst_settings_service_factory.h"
 
 #include <memory>
 
 #include "base/check_deref.h"
 #include "base/no_destructor.h"
-#include "brave/components/psst/core/browser/psst_settings_service.h"
+#include "BnesBrowser/components/psst/core/browser/psst_settings_service.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"

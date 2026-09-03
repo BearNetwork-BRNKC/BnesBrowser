@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/renderer_context_menu/brave_spelling_options_submenu_observer.h"
+#include "BnesBrowser/browser/renderer_context_menu/brave_spelling_options_submenu_observer.h"
 
 #include <memory>
 
 #include "base/values.h"
-#include "brave/browser/renderer_context_menu/brave_mock_render_view_context_menu.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/renderer_context_menu/brave_mock_render_view_context_menu.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

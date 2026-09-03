@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
 
 #include <array>
 #include <string>
 #include <utility>
 
 #include "base/base64.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/util/callback_helpers.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/callback_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_util.h"
 
 namespace brave_rewards::internal {
 

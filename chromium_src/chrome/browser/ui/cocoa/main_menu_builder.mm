@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/commander/commander_service.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/dom_distiller/core/dom_distiller_features.h"

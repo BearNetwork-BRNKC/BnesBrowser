@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/scoped_observation.h"
-#include "brave/browser/search_engines/private_window_search_engine_provider_service_base.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service_base.h"
 #include "components/search_engines/template_url_service.h"
 #include "components/search_engines/template_url_service_observer.h"
 

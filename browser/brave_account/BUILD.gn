@@ -13,9 +13,9 @@ static_library("brave_account") {
 
   deps = [
     "//base",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:features",
-    "//brave/components/constants",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/constants",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//content/public/browser",
@@ -34,8 +34,8 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser/brave_account",
-    "//brave/components/brave_account:features",
+    "//BnesBrowser/browser/brave_account",
+    "//BnesBrowser/components/brave_account:features",
     "//chrome/test:test_support",
     "//content/public/browser",
     "//content/test:test_support",

@@ -3,23 +3,23 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/subdivision_targeting_exclusion_rule.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/subdivision_targeting_exclusion_rule.h"
 
 #include <memory>
 #include <string>
 
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/subdivision/subdivision.h"
-#include "brave/components/brave_ads/core/internal/common/subdivision/test/subdivision_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/subdivision/url_request/subdivision_url_request_builder_util.h"
-#include "brave/components/brave_ads/core/internal/common/subdivision/url_request/test/subdivision_url_request_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_info.h"
-#include "brave/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/subdivision/subdivision.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/subdivision/test/subdivision_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/subdivision/url_request/subdivision_url_request_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/subdivision/url_request/test/subdivision_url_request_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #include "net/http/http_status_code.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

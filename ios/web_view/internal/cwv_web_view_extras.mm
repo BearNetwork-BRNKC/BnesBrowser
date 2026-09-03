@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/web_view/public/cwv_web_view_extras.h"
+#include "BnesBrowser/ios/web_view/public/cwv_web_view_extras.h"
 
 #include "base/apple/foundation_util.h"
 #include "base/json/json_writer.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/web_view/internal/cwv_favicon_status_internal.h"
+#include "BnesBrowser/ios/web_view/internal/cwv_favicon_status_internal.h"
 #include "ios/web/common/user_agent.h"
 #include "ios/web/js_messaging/java_script_feature_manager.h"
 #include "ios/web/js_messaging/web_frame_internal.h"

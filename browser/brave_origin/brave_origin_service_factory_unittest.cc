@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_origin/brave_origin_service_factory.h"
+#include "BnesBrowser/browser/brave_origin/brave_origin_service_factory.h"
 
 #include "base/containers/map_util.h"
-#include "brave/browser/policy/brave_simple_policy_map.h"
-#include "brave/components/brave_origin/brave_origin_policy_info.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a/pref_names.h"
+#include "BnesBrowser/browser/policy/brave_simple_policy_map.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_info.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"
 #include "chrome/test/base/testing_profile_manager.h"
@@ -22,11 +22,11 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #endif
 
 namespace brave_origin {

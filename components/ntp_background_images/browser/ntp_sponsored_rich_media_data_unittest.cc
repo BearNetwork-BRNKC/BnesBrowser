@@ -6,7 +6,7 @@
 #include "base/files/file_util.h"
 #include "base/files/scoped_temp_dir.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "ui/gfx/geometry/point.h"

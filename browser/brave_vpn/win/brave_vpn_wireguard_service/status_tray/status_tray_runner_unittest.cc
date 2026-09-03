@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_tray_runner.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_tray_runner.h"
 
 #include <memory>
 
 #include "base/test/bind.h"
 #include "base/test/test_reg_util_win.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/brave_vpn_tray_command_ids.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/resources/resource.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/tray_menu_model.h"
-#include "brave/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/brave_vpn_tray_command_ids.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/resources/resource.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/tray_menu_model.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "ui/menus/simple_menu_model.h"

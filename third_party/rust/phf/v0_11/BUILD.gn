@@ -13,13 +13,13 @@ cargo_crate("lib") {
   epoch = "0.11"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/map.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/ordered_map.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/ordered_set.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/set.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/map.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/ordered_map.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/ordered_set.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/phf-v0_11/src/set.rs",
   ]
   inputs = []
 
@@ -35,8 +35,8 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/phf_macros/v0_11:lib",
-    "//brave/third_party/rust/phf_shared/v0_11:lib",
+    "//BnesBrowser/third_party/rust/phf_macros/v0_11:lib",
+    "//BnesBrowser/third_party/rust/phf_shared/v0_11:lib",
   ]
   features = [
     "default",

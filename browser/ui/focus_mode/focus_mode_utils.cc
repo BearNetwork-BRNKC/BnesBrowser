@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
 
 #include "base/feature_list.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/focus_mode/focus_mode_features.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_perf_predictor/browser/bandwidth_savings_predictor.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/bandwidth_savings_predictor.h"
 
 #include <iostream>
 
 #include "base/containers/map_util.h"
 #include "base/logging.h"
-#include "brave/components/brave_perf_predictor/browser/bandwidth_linreg.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/bandwidth_linreg.h"
 #include "components/page_load_metrics/common/page_load_metrics.mojom.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "third_party/blink/public/mojom/loader/resource_load_info.mojom.h"

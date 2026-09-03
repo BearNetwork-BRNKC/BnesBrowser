@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_COMMON_CHALLENGE_BYPASS_RISTRETTO_TEST_UNBLINDED_TOKEN_TEST_UTIL_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_COMMON_CHALLENGE_BYPASS_RISTRETTO_TEST_UNBLINDED_TOKEN_TEST_UTIL_H_
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
 
 namespace brave_ads::cbr::test {
 

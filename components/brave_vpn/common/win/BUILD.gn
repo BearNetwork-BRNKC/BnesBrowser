@@ -14,9 +14,9 @@ source_set("win") {
     "utils.h",
   ]
   visibility = [
-    "//brave/browser/*",
-    "//brave/browser/brave_vpn/win/brave_vpn_wireguard_service/*",
-    "//brave/components/brave_vpn/*",
+    "//BnesBrowser/browser/*",
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/*",
+    "//BnesBrowser/components/brave_vpn/*",
     "//chrome/browser/*",
   ]
   deps = [ "//base" ]

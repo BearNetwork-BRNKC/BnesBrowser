@@ -10,9 +10,9 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
 
 // TODO(apaymyshev): refactor utility methods to return std::optional instead
 // of bool + out-parameter.

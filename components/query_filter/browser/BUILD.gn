@@ -15,16 +15,16 @@ static_library("browser") {
 
   public_deps = [
     "//base",
-    "//brave/components/query_filter/common:schema",
+    "//BnesBrowser/components/query_filter/common:schema",
     "//components/component_updater",
     "//components/update_client",
     "//url",
   ]
 
   deps = [
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/query_filter/common",
-    "//brave/components/query_filter/common/internal",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/query_filter/common",
+    "//BnesBrowser/components/query_filter/common/internal",
     "//components/url_pattern_index",
     "//net",
     "//third_party/re2",
@@ -44,10 +44,10 @@ source_set("unit_tests") {
     ":browser",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_component_updater/browser:test_support",
-    "//brave/components/query_filter/browser/test_support",
-    "//brave/components/query_filter/common",
-    "//brave/components/query_filter/common/internal:unit_tests",
+    "//BnesBrowser/components/brave_component_updater/browser:test_support",
+    "//BnesBrowser/components/query_filter/browser/test_support",
+    "//BnesBrowser/components/query_filter/common",
+    "//BnesBrowser/components/query_filter/common/internal:unit_tests",
     "//components/component_updater:test_support",
     "//components/update_client",
     "//testing/gmock",

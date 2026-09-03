@@ -9,7 +9,7 @@
 #include <optional>
 #include <utility>
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service_observer.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_observer.h"
 #include "components/keyed_service/core/keyed_service.h"
 
 namespace brave_vpn {

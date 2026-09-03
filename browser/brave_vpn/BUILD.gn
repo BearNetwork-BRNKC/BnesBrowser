@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(enable_brave_vpn)
 
@@ -14,7 +14,7 @@ source_set("brave_vpn") {
   ]
 
   deps = [
-    "//brave/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common",
     "//chrome/browser/profiles:profile",
     "//components/prefs",
     "//components/user_prefs",
@@ -30,8 +30,8 @@ source_set("v1_utils") {
   public_deps = [ "//base" ]
 
   deps = [
-    "//brave/components/brave_vpn/browser/connection:api",
-    "//brave/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/browser/connection:api",
+    "//BnesBrowser/components/brave_vpn/common",
     "//chrome/common:channel_info",
     "//components/prefs",
     "//components/user_prefs",
@@ -40,12 +40,12 @@ source_set("v1_utils") {
 
   if (is_win) {
     deps += [
-      "//brave/browser/brave_vpn/win",
-      "//brave/components/brave_vpn/browser/connection/ikev2/win",
+      "//BnesBrowser/browser/brave_vpn/win",
+      "//BnesBrowser/components/brave_vpn/browser/connection/ikev2/win",
     ]
   }
 
   if (is_mac) {
-    deps += [ "//brave/browser/brave_vpn/mac" ]
+    deps += [ "//BnesBrowser/browser/brave_vpn/mac" ]
   }
 }

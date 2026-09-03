@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/simulation_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/simulation_request_helper.h"
 
 #include <memory>
 #include <optional>
@@ -12,14 +12,14 @@
 
 #include "base/test/gtest_util.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/eip1559_transaction.h"
-#include "brave/components/brave_wallet/browser/eth_transaction.h"
-#include "brave/components/brave_wallet/browser/eth_tx_meta.h"
-#include "brave/components/brave_wallet/browser/json_rpc_requests_helper.h"
-#include "brave/components/brave_wallet/browser/solana_transaction.h"
-#include "brave/components/brave_wallet/browser/solana_tx_meta.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/eip1559_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_requests_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/origin.h"
 

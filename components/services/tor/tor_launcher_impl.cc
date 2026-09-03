@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/tor/tor_launcher_impl.h"
+#include "BnesBrowser/components/services/tor/tor_launcher_impl.h"
 
 #include <utility>
 
@@ -12,7 +12,7 @@
 #include "base/files/file_util.h"
 #include "base/process/launch.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/tor/constants.h"
+#include "BnesBrowser/components/tor/constants.h"
 #include "build/build_config.h"
 
 namespace tor {

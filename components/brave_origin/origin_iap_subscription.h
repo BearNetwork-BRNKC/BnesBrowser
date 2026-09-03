@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ORIGIN_ORIGIN_IAP_SUBSCRIPTION_H_
 #define BRAVE_COMPONENTS_BRAVE_ORIGIN_ORIGIN_IAP_SUBSCRIPTION_H_
 
-#include "brave/components/brave_origin/mojom/brave_origin_settings.mojom.h"
+#include "BnesBrowser/components/brave_origin/mojom/brave_origin_settings.mojom.h"
 
 class PrefService;
 

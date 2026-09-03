@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/extensions/extensions_menu_main_page_view.h"
 
-#include "brave/browser/ui/views/extensions/brave_extensions_menu_entry_view.h"
+#include "BnesBrowser/browser/ui/views/extensions/brave_extensions_menu_entry_view.h"
 
 #define BRAVE_EXTENSION_MENU_MAIN_PAGE_VIEW_CREATE_AND_INSERT_MENU_ITEM        \
   {                                                                            \

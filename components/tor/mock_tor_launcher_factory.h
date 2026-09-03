@@ -10,7 +10,7 @@
 
 #include "base/functional/callback.h"
 #include "base/no_destructor.h"
-#include "brave/components/tor/tor_launcher_factory.h"
+#include "BnesBrowser/components/tor/tor_launcher_factory.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 class MockTorLauncherFactory : public TorLauncherFactory {

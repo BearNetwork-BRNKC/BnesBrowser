@@ -8,7 +8,7 @@
 #include "base/check.h"
 #include "base/check_is_test.h"
 #include "base/check_op.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
 #include "chrome/browser/ui/tabs/features.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_view.h"

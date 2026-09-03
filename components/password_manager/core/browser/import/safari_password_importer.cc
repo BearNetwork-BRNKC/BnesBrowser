@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/password_manager/core/browser/import/safari_password_importer.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/safari_password_importer.h"
 
 #include <map>
 #include <optional>
@@ -24,9 +24,9 @@
 #include "base/task/thread_pool.h"
 #include "base/types/expected.h"
 #include "base/types/expected_macros.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
-#include "brave/components/password_manager/services/csv_password/csv_safari_password_parser_impl.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
+#include "BnesBrowser/components/password_manager/services/csv_password/csv_safari_password_parser_impl.h"
 #include "build/blink_buildflags.h"
 #include "build/build_config.h"
 #include "components/password_manager/core/browser/password_form.h"
@@ -36,7 +36,7 @@
 #include "components/password_manager/core/common/password_manager_constants.h"
 
 #if BUILDFLAG(USE_BLINK)
-#include "brave/components/password_manager/services/csv_password/csv_safari_password_parser_service.h"
+#include "BnesBrowser/components/password_manager/services/csv_password/csv_safari_password_parser_service.h"
 #endif
 
 namespace password_manager {

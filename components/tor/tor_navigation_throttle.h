@@ -8,7 +8,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
 #include "content/public/browser/navigation_throttle.h"
 
 class TorLauncherFactory;

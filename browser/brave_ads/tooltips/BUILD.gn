@@ -19,10 +19,10 @@ source_set("tooltips") {
 
     deps += [
       "//base",
-      "//brave/browser/profiles:util",
-      "//brave/browser/ui/brave_tooltips",
-      "//brave/components/brave_ads/browser",
-      "//brave/components/resources:strings_grit",
+      "//BnesBrowser/browser/profiles:util",
+      "//BnesBrowser/browser/ui/brave_tooltips",
+      "//BnesBrowser/components/brave_ads/browser",
+      "//BnesBrowser/components/resources:strings_grit",
       "//chrome/browser/profiles:profile",
       "//ui/base",
     ]

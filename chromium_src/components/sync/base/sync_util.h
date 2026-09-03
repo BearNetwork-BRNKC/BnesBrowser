@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_COMPONENTS_SYNC_BASE_SYNC_UTIL_H_
 #define BRAVE_CHROMIUM_SRC_COMPONENTS_SYNC_BASE_SYNC_UTIL_H_
 
-#include "brave/components/brave_sync/buildflags.h"
+#include "BnesBrowser/components/brave_sync/buildflags.h"
 
 namespace syncer::internal {
 inline constexpr char kSyncServerUrl[] = BUILDFLAG(BRAVE_SYNC_ENDPOINT);

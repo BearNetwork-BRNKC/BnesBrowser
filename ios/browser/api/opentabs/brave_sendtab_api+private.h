@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/opentabs/brave_sendtab_api.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_sendtab_api.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

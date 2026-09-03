@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_controller.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_controller.h"
 
 #include <memory>
 #include <utility>
@@ -12,8 +12,8 @@
 #include "base/location.h"
 #include "base/memory/ptr_util.h"
 #include "base/task/single_thread_task_runner.h"
-#include "brave/browser/ui/views/workspaces/save_workspace_dialog.h"
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/workspaces/save_workspace_dialog.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_view.h"
 #include "components/constrained_window/constrained_window_views.h"
 #include "ui/views/bubble/bubble_dialog_delegate_view.h"
 #include "ui/views/view.h"

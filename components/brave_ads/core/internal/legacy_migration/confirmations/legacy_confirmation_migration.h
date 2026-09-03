@@ -8,7 +8,7 @@
 
 #include <optional>
 
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 
 namespace brave_ads {
 

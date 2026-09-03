@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
 
 #include <algorithm>
 #include <utility>
@@ -12,12 +12,12 @@
 #include "base/check_op.h"
 #include "base/feature_list.h"
 #include "base/time/time.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/serp_metrics/serp_metrics_feature.h"
-#include "brave/components/serp_metrics/serp_metrics_migration.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_storage.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_feature.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_migration.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_storage.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
 #include "components/prefs/pref_service.h"
 
 namespace serp_metrics {

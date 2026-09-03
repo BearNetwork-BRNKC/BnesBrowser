@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 
 assert(enable_tor)
 
@@ -15,7 +15,7 @@ source_set("tor") {
 
   public_deps = [
     "//base",
-    "//brave/components/tor:common",
+    "//BnesBrowser/components/tor:common",
     "//chrome/browser/profiles:profile",
     "//components/keyed_service/content",
     "//url",
@@ -32,11 +32,11 @@ source_set("impl") {
     ":tor",
     ":util",
     "//base",
-    "//brave/browser:browser_process",
-    "//brave/components/constants",
-    "//brave/components/tor",
-    "//brave/components/tor:common",
-    "//brave/components/tor:pref_names",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/tor",
+    "//BnesBrowser/components/tor:common",
+    "//BnesBrowser/components/tor:pref_names",
     "//chrome/browser:browser_process",
     "//chrome/browser/lifetime",
     "//chrome/browser/profiles:profile",

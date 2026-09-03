@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/content/browser/associated_web_contents_content.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_web_contents_content.h"
 
 #include <cstdint>
 #include <memory>
@@ -22,17 +22,17 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/types/fixed_array.h"
 #include "base/uuid.h"
-#include "brave/components/ai_chat/content/browser/ai_page_content_fetcher.h"
-#include "brave/components/ai_chat/content/browser/content_tool.h"
-#include "brave/components/ai_chat/content/browser/page_content_fetcher.h"
-#include "brave/components/ai_chat/core/browser/associated_content_driver.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
-#include "brave/components/screenshot/content/pdf_utils.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_page_content_fetcher.h"
+#include "BnesBrowser/components/ai_chat/content/browser/content_tool.h"
+#include "BnesBrowser/components/ai_chat/content/browser/page_content_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_driver.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/screenshot/content/pdf_utils.h"
 #include "content/public/browser/browser_accessibility_state.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/navigation_details.h"
@@ -51,7 +51,7 @@
 #include "third_party/blink/public/common/permissions/permission_utils.h"
 
 #if BUILDFLAG(ENABLE_PDF)
-#include "brave/components/ai_chat/content/browser/pdf_text_helper.h"
+#include "BnesBrowser/components/ai_chat/content/browser/pdf_text_helper.h"
 #include "components/pdf/browser/pdf_document_helper.h"
 #endif  // BUILDFLAG(ENABLE_PDF)
 

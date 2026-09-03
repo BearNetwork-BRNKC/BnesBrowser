@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_contents_wrapper.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_contents_wrapper.h"
 #include "chrome/browser/ui/views/side_panel/side_panel_web_ui_view.h"
 #include "url/gurl.h"
 

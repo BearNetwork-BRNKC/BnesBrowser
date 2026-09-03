@@ -13,8 +13,8 @@
 #include "base/time/time.h"
 #include "base/timer/timer.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/get_parameters.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/get_parameters.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine_helper.h"
 
 namespace brave_rewards::internal {
 

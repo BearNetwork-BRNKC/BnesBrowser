@@ -3,22 +3,22 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # you can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/browser/shell_integrations/buildflags/buildflags.gni")
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/containers/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
-import("//brave/components/speedreader/common/buildflags/buildflags.gni")
-import("//brave/components/tor/buildflags/buildflags.gni")
-import("//brave/components/traffic_control/buildflags/buildflags.gni")
+import("//BnesBrowser/browser/shell_integrations/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 
 # Provide our file list to chromium's settings page build Since our components
 # start in a different path, we'll do the first step (move them to the generated
 # preprocessed path via preprocess_if_expr, but let chromium handle the rest of
 # the webui build pipeline.
 brave_settings_preprocess_deps =
-    [ "//brave/browser/resources/settings:preprocess" ]
+    [ "//BnesBrowser/browser/resources/settings:preprocess" ]
 
 # Preprocessor defines passed to build_webui() so that Chromium-patched
 # TypeScript files can use <if expr="..."> with Brave buildflags.
@@ -210,57 +210,57 @@ if (enable_ai_chat) {
 }
 
 brave_settings_ts_definitions =
-    [ "//brave/components/definitions/chrome_brave_theme.d.ts" ]
+    [ "//BnesBrowser/components/definitions/chrome_brave_theme.d.ts" ]
 
 brave_settings_ts_extra_deps =
-    [ "//brave/browser/resources/settings:preprocess" ]
+    [ "//BnesBrowser/browser/resources/settings:preprocess" ]
 
 brave_settings_mojo_files = [
-  "$root_gen_dir/brave/components/brave_account/mojom/brave_account.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/brave_account_row.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/change_password.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/get_service_token.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/login.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/register.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/resend_verification_email.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_account/mojom/reset_password.mojom-webui.ts",
-  "$root_gen_dir/brave/components/brave_origin/mojom/brave_origin_settings.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/brave_account.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/brave_account_row.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/change_password.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/get_service_token.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/login.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/register.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/resend_verification_email.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_account/mojom/reset_password.mojom-webui.ts",
+  "$root_gen_dir/BnesBrowser/components/brave_origin/mojom/brave_origin_settings.mojom-webui.ts",
 
   # Add generated strings as mojo files. Currently, this is the only way to
   # include them in build_webui() target.
-  "$root_gen_dir/brave/grit/brave_generated_resources_webui_strings.ts",
+  "$root_gen_dir/BnesBrowser/grit/brave_generated_resources_webui_strings.ts",
   "$root_gen_dir/components/grit/brave_components_webui_strings.ts",
 ]
 
 brave_settings_mojo_files_deps = [
-  "//brave/components/brave_account/mojom:mojom_ts__generator",
-  "//brave/components/brave_origin/mojom:mojom_ts__generator",
+  "//BnesBrowser/components/brave_account/mojom:mojom_ts__generator",
+  "//BnesBrowser/components/brave_origin/mojom:mojom_ts__generator",
 
   # Add generated strings to the build_webui() via mojo_files_deps.
-  "//brave/app:brave_generated_resources_grit",
-  "//brave/components/resources:strings",
+  "//BnesBrowser/app:brave_generated_resources_grit",
+  "//BnesBrowser/components/resources:strings",
 ]
 
 if (enable_ai_chat) {
   brave_settings_mojo_files += [
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/settings_helper.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/ai_chat.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/bookmarks.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/settings_helper.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/bookmarks.mojom-webui.ts",
 
     # ai_chat.mojom depends on these mojom files, even though they aren't used
     # directly on settings
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/common.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/customization_settings.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/ollama.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/tab_tracker.mojom-webui.ts",
-    "$root_gen_dir/brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/customization_settings.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/ollama.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom-webui.ts",
 
     # Shared with the AI Chat UI; lands at preprocessed/model_icon_map.ts.
-    "//brave/components/ai_chat/resources/common/model_icon_map.ts",
+    "//BnesBrowser/components/ai_chat/resources/common/model_icon_map.ts",
   ]
 
   brave_settings_mojo_files_deps +=
-      [ "//brave/components/ai_chat/core/common/mojom:mojom_ts__generator" ]
+      [ "//BnesBrowser/components/ai_chat/core/common/mojom:mojom_ts__generator" ]
 }
 
 brave_settings_ts_deps = [
@@ -286,8 +286,8 @@ if (enable_containers) {
     "brave_content_page/containers_icon.css",
   ]
   brave_settings_mojo_files_deps +=
-      [ "//brave/components/containers/core/mojom:mojom_ts__generator" ]
-  brave_settings_mojo_files += [ "$root_gen_dir/brave/components/containers/core/mojom/containers.mojom-webui.ts" ]
+      [ "//BnesBrowser/components/containers/core/mojom:mojom_ts__generator" ]
+  brave_settings_mojo_files += [ "$root_gen_dir/BnesBrowser/components/containers/core/mojom/containers.mojom-webui.ts" ]
 }
 
 if (enable_traffic_control) {
@@ -305,8 +305,8 @@ if (enable_traffic_control) {
     "brave_content_page/traffic_control_rule_dialog.css",
   ]
   brave_settings_mojo_files_deps +=
-      [ "//brave/components/traffic_control/core/mojom:mojom_ts__generator" ]
-  brave_settings_mojo_files += [ "$root_gen_dir/brave/components/traffic_control/core/mojom/traffic_control.mojom-webui.ts" ]
+      [ "//BnesBrowser/components/traffic_control/core/mojom:mojom_ts__generator" ]
+  brave_settings_mojo_files += [ "$root_gen_dir/BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom-webui.ts" ]
 }
 
 if (enable_speedreader) {

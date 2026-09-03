@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 
 #include "base/functional/callback_helpers.h"
 #include "base/test/task_environment.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
-#include "brave/components/tabs/public/tree_tab_node_id.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_id.h"
 #include "chrome/browser/ui/tabs/tab_group_desktop.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/split_tabs/split_tab_visual_data.h"

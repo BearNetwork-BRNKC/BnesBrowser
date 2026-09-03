@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "ui/base/page_transition_types.h"
 

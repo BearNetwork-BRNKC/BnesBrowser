@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_block_tracker.h"
 
 #include <memory>
 #include <optional>
@@ -11,7 +11,7 @@
 
 #include "base/containers/map_util.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_rpc.h"
 
 namespace brave_wallet {
 

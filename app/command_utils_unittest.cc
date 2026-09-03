@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/app/command_utils.h"
+#include "BnesBrowser/app/command_utils.h"
 
 #include <algorithm>
 
 #include "base/containers/flat_set.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/commands/common/features.h"
+#include "BnesBrowser/components/commands/common/features.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/ui/accelerator_table.h"
 #include "testing/gmock/include/gmock/gmock.h"

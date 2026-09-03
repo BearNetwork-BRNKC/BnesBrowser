@@ -7,8 +7,8 @@
 
 #include "base/path_service.h"
 #include "base/test/thread_test_helper.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_sanitized_image_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_sanitized_image_source.h"
 
 #include <memory>
 #include <string>
@@ -15,7 +15,7 @@
 #include "base/path_service.h"
 #include "base/test/bind.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/test/base/chrome_test_utils.h"
 #include "chrome/test/base/testing_profile.h"

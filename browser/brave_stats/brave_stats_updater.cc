@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_stats/brave_stats_updater.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater.h"
 
 #include <cstddef>
 #include <memory>
@@ -18,24 +18,24 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/string_util.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/brave_stats/brave_stats_updater_params.h"
-#include "brave/browser/brave_stats/buildflags.h"
-#include "brave/browser/brave_stats/features.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/brave_stats/switches.h"
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
-#include "brave/browser/serp_metrics/serp_metrics_migration.h"
-#include "brave/common/brave_channel_info.h"
-#include "brave/components/brave_referrals/common/pref_names.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/misc_metrics/general_browser_usage.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/serp_metrics/serp_metrics_feature.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater_params.h"
+#include "BnesBrowser/browser/brave_stats/buildflags.h"
+#include "BnesBrowser/browser/brave_stats/features.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/brave_stats/switches.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_migration.h"
+#include "BnesBrowser/common/brave_channel_info.h"
+#include "BnesBrowser/components/brave_referrals/common/pref_names.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/general_browser_usage.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_feature.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/first_run/first_run.h"
 #include "chrome/browser/net/system_network_context_manager.h"
@@ -57,7 +57,7 @@
 #include "services/network/public/mojom/fetch_api.mojom-shared.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 namespace brave_stats {

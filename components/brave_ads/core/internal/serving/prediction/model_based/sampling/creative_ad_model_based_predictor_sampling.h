@@ -13,8 +13,8 @@
 #include "base/notreached.h"
 #include "base/numerics/ranges.h"
 #include "base/rand_util.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor_info.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/sampling/creative_ad_model_based_predictor_sampling_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/sampling/creative_ad_model_based_predictor_sampling_util.h"
 
 namespace brave_ads {
 

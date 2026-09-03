@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_TOOLBAR_BRAVE_APP_MENU_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/misc_metrics/menu_metrics.h"
+#include "BnesBrowser/components/misc_metrics/menu_metrics.h"
 #include "chrome/browser/ui/views/toolbar/app_menu.h"
 
 class BraveAppMenu : public AppMenu {

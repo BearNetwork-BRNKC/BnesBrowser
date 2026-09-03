@@ -18,9 +18,9 @@
 
 #include "base/containers/span.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_WALLET));
 namespace brave_wallet::eth_abi {

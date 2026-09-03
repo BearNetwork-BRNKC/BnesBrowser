@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 import("//build/config/locales.gni")
 
 transpile_web_ui("brave_extension") {
@@ -35,7 +35,7 @@ transpile_web_ui("brave_extension") {
   # TODO(petemill): Use already-packed output from WDP, or use webpack for all
   # of it, not just some of it.
   extra_modules =
-      [ rebase_path("//brave/vendor/web-discovery-project/node_modules",
+      [ rebase_path("//BnesBrowser/vendor/web-discovery-project/node_modules",
                     root_build_dir) ]
 
   public_asset_path = "/out/"
@@ -43,11 +43,11 @@ transpile_web_ui("brave_extension") {
   sync_wasm = true
 
   imports_from = [
-    "//brave/components/brave_extension/extension/brave_extension/",
-    "//brave/vendor/web-discovery-project/modules/parser/",
+    "//BnesBrowser/components/brave_extension/extension/brave_extension/",
+    "//BnesBrowser/vendor/web-discovery-project/modules/parser/",
   ]
   deps =
-      [ "//brave/components/brave_extension:web_discovery_project_resources" ]
+      [ "//BnesBrowser/components/brave_extension:web_discovery_project_resources" ]
 }
 
 if (is_mac) {
@@ -66,7 +66,7 @@ if (is_mac) {
       # Transifex uses the latter. To integrate with Transifex, our code renames
       # "nb" to "no". The following creates a bridge between the two paradigms:
       source_locale = string_replace(locale, "nb", "no")
-      sources = [ "//brave/components/brave_extension/extension/brave_extension/_locales/$source_locale/messages.json" ]
+      sources = [ "//BnesBrowser/components/brave_extension/extension/brave_extension/_locales/$source_locale/messages.json" ]
       outputs = [ "{{bundle_resources_dir}}/brave_extension/_locales/$locale/{{source_file_part}}" ]
     }
   }
@@ -85,7 +85,7 @@ if (is_mac) {
       # Transifex uses the latter. To integrate with Transifex, our code renames
       # "nb" to "no". The following creates a bridge between the two paradigms:
       source_locale = string_replace(locale, "nb", "no")
-      sources = [ "//brave/components/brave_extension/extension/brave_extension/_locales/${source_locale}/messages.json" ]
+      sources = [ "//BnesBrowser/components/brave_extension/extension/brave_extension/_locales/${source_locale}/messages.json" ]
       outputs = [ "$root_out_dir/resources/brave_extension/_locales/${locale}/{{source_file_part}}" ]
     }
   }

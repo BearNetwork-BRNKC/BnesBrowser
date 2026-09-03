@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_FRAME_LOCAL_FRAME_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_FRAME_LOCAL_FRAME_H_
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 
 class SkBitmap;
 

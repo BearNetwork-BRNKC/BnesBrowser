@@ -5,7 +5,7 @@
 
 #include <fuzzer/FuzzedDataProvider.h>
 
-#include "brave/components/brave_news/browser/lib.rs.h"
+#include "BnesBrowser/components/brave_news/browser/lib.rs.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {

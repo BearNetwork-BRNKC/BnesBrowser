@@ -11,7 +11,7 @@
 #include "base/files/file_util.h"
 #include "base/path_service.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/speedreader/rust/ffi/speedreader.h"
+#include "BnesBrowser/components/speedreader/rust/ffi/speedreader.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace speedreader {

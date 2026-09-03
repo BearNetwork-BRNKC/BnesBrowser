@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_SPEEDREADER_SPEEDREADER_METRICS_H_
 
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/time_period_storage/monthly_storage.h"
+#include "BnesBrowser/components/time_period_storage/monthly_storage.h"
 
 class PrefRegistrySimple;
 class PrefService;

@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
 
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gtest/include/gtest/gtest.h"

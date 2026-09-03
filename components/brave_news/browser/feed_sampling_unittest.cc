@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
 
 #include <string>
 #include <tuple>
@@ -12,10 +12,10 @@
 #include "base/containers/fixed_flat_set.h"
 #include "base/containers/flat_set.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_news/browser/feed_fetcher.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/browser/signal_calculator.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/signal_calculator.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_news {

@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/legacy_migration/confirmations/legacy_confirmation_migration_confirmations_json_parser.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/confirmations/legacy_confirmation_migration_confirmations_json_parser.h"
 
 #include "base/test/task_environment.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_constants.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

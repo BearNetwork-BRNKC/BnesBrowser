@@ -11,8 +11,8 @@ source_set("ipfs") {
   ]
   deps = [
     "//base",
-    "//brave/base/apple",
-    "//brave/components/ipfs",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/components/ipfs",
     "//components/user_prefs",
     "//ios/chrome/browser/shared/model/profile",
     "//net",

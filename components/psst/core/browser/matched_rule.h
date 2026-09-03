@@ -9,7 +9,7 @@
 #include <memory>
 #include <string>
 
-#include "brave/components/psst/core/browser/psst_rule.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule.h"
 
 namespace psst {
 

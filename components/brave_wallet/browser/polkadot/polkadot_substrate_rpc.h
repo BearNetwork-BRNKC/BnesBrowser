@@ -10,10 +10,10 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 namespace brave_wallet {

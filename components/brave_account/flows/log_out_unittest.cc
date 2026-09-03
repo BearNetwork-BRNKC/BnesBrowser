@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/log_out.h"
+#include "BnesBrowser/components/brave_account/flows/log_out.h"
 
 #include <string>
 
 #include "base/check_deref.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_account/brave_account_service_test.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_test.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_util.h"
 
 #include <algorithm>
 #include <optional>
@@ -16,14 +16,14 @@
 #include "base/json/json_reader.h"
 #include "base/json/json_writer.h"
 #include "base/notreached.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/initialization_manager.h"
-#include "brave/components/brave_rewards/core/engine/logging/event_log_keys.h"
-#include "brave/components/brave_rewards/core/engine/notifications/notification_keys.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/wallet_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/initialization_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/logging/event_log_keys.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/notifications/notification_keys.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/wallet_provider.h"
 #include "third_party/abseil-cpp/absl/functional/overload.h"
 
 namespace brave_rewards::internal::wallet {

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/brave_extension_functional_test.h"
+#include "BnesBrowser/browser/extensions/brave_extension_functional_test.h"
 
 #include "base/memory/scoped_refptr.h"
 #include "base/path_service.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/extensions/chrome_extension_test_notification_observer.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/test/base/ui_test_utils.h"

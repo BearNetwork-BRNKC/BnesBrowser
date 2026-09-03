@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/workspaces/workspace_service.h"
+#include "BnesBrowser/browser/workspaces/workspace_service.h"
 
 #include <memory>
 #include <string>
@@ -18,8 +18,8 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
-#include "brave/browser/workspaces/workspace_session_utils.h"
-#include "brave/browser/workspaces/workspace_utils.h"
+#include "BnesBrowser/browser/workspaces/workspace_session_utils.h"
+#include "BnesBrowser/browser/workspaces/workspace_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

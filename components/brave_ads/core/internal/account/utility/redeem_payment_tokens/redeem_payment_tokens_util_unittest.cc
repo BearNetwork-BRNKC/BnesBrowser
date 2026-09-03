@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens_util.h"
 
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/functional/callback_helpers.h"
-#include "brave/components/script_injector/renderer/script_injector_render_frame_observer.h"
+#include "BnesBrowser/components/script_injector/renderer/script_injector_render_frame_observer.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace script_injector {

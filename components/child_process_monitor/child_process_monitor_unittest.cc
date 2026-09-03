@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/child_process_monitor/child_process_monitor.h"
+#include "BnesBrowser/components/child_process_monitor/child_process_monitor.h"
 
 #if BUILDFLAG(IS_WIN)
 #include <windows.h>

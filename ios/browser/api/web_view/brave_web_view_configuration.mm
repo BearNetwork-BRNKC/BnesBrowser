@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/web_view/brave_web_view_configuration.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_configuration.h"
 
 #include <WebKit/WebKit.h>
 
@@ -12,10 +12,10 @@
 #include "base/apple/foundation_util.h"
 #include "base/functional/bind.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
-#include "brave/ios/browser/api/web_view/brave_web_view_configuration_provider.h"
-#include "brave/ios/browser/skus/skus_javascript_feature.h"
-#include "brave/ios/browser/ui/web_view/features.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_configuration_provider.h"
+#include "BnesBrowser/ios/browser/skus/skus_javascript_feature.h"
+#include "BnesBrowser/ios/browser/ui/web_view/features.h"
 #include "components/autofill/core/browser/data_manager/personal_data_manager.h"
 #include "components/keyed_service/core/service_access_type.h"
 #include "components/password_manager/core/browser/password_store/password_store_interface.h"

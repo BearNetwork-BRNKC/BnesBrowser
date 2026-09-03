@@ -6,7 +6,7 @@
 #include <memory>
 
 #include "base/test/metrics/histogram_tester.h"
-#include "brave/components/misc_metrics/privacy_hub_metrics.h"
+#include "BnesBrowser/components/misc_metrics/privacy_hub_metrics.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"
 #include "testing/gtest/include/gtest/gtest.h"

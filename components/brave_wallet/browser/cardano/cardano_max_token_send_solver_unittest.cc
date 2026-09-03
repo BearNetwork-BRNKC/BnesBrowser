@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_max_token_send_solver.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_max_token_send_solver.h"
 
 #include <algorithm>
 #include <utility>
@@ -11,14 +11,14 @@
 #include "base/containers/span.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/test/insecure_random_generator.h"
-#include "brave/components/brave_wallet/browser/bip39.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_test_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
 #include "crypto/hash.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

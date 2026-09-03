@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_search/browser/brave_search_default_host.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_default_host.h"
 
 #include <memory>
 #include <string>
@@ -18,12 +18,12 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_search/browser/prefs.h"
-#include "brave/components/brave_search/common/features.h"
-#include "brave/components/brave_search_conversion/features.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/l10n/common/test/scoped_default_locale.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/browser/prefs.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_search_conversion/features.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/l10n/common/test/scoped_default_locale.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/testing_pref_service.h"

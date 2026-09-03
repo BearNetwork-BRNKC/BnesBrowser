@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_reporter_service_factory.h"
+#include "BnesBrowser/browser/psst/psst_reporter_service_factory.h"
 
 #include <memory>
 #include <optional>
@@ -12,10 +12,10 @@
 #include "base/functional/bind.h"
 #include "base/memory/ptr_util.h"
 #include "base/no_destructor.h"
-#include "brave/common/brave_channel_info.h"
-#include "brave/components/psst/core/browser/psst_component_installer.h"
-#include "brave/components/psst/core/browser/psst_report_uploader.h"
-#include "brave/components/psst/core/browser/psst_reporter_service.h"
+#include "BnesBrowser/common/brave_channel_info.h"
+#include "BnesBrowser/components/psst/core/browser/psst_component_installer.h"
+#include "BnesBrowser/components/psst/core/browser/psst_report_uploader.h"
+#include "BnesBrowser/components/psst/core/browser/psst_reporter_service.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"

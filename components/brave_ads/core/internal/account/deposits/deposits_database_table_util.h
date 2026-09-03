@@ -9,9 +9,9 @@
 #include <map>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_info.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_deposit_info.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_deposit_info.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace brave_ads::database::table {
 

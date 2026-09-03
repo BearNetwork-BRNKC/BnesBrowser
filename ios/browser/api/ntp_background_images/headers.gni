@@ -4,7 +4,7 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 ntp_background_images_public_headers = [
-  "//brave/ios/browser/api/ntp_background_images/ntp_background_image.h",
-  "//brave/ios/browser/api/ntp_background_images/ntp_background_images_service_ios.h",
-  "//brave/ios/browser/api/ntp_background_images/ntp_sponsored_image.h",
+  "//BnesBrowser/ios/browser/api/ntp_background_images/ntp_background_image.h",
+  "//BnesBrowser/ios/browser/api/ntp_background_images/ntp_background_images_service_ios.h",
+  "//BnesBrowser/ios/browser/api/ntp_background_images/ntp_sponsored_image.h",
 ]

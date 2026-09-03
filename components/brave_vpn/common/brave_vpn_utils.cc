@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 
 #include <utility>
 
@@ -12,12 +12,12 @@
 #include "base/feature_list.h"
 #include "base/notreached.h"
 #include "base/strings/string_split.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/p3a_utils/feature_usage.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "build/build_config.h"
 #include "components/pref_registry/pref_registry_syncable.h"
 #include "components/prefs/pref_registry_simple.h"

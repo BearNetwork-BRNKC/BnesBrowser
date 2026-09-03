@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/permissions/permission_lifetime_manager_factory.h"
+#include "BnesBrowser/browser/permissions/permission_lifetime_manager_factory.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/no_destructor.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/browser/permissions/permission_origin_lifetime_monitor_impl.h"
-#include "brave/components/permissions/permission_lifetime_manager.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/browser/permissions/permission_origin_lifetime_monitor_impl.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_manager.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/incognito_helpers.h"
 #include "chrome/browser/profiles/profile.h"

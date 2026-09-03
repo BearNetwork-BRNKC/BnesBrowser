@@ -7,7 +7,7 @@
 #define BRAVE_IOS_COMPONENTS_PREFS_PREF_SERVICE_BRIDGE_IMPL_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/ios/components/prefs/pref_service_bridge.h"
+#include "BnesBrowser/ios/components/prefs/pref_service_bridge.h"
 
 class PrefService;
 

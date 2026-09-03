@@ -11,10 +11,10 @@
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 using brave_component_updater::DATFileDataBuffer;

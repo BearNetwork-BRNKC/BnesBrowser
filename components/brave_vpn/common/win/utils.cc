@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/common/win/utils.h"
+#include "BnesBrowser/components/brave_vpn/common/win/utils.h"
 
 #include <wrl/client.h>
 
@@ -12,7 +12,7 @@
 
 #include "base/logging.h"
 #include "base/win/windows_types.h"
-#include "brave/components/brave_vpn/common/win/scoped_sc_handle.h"
+#include "BnesBrowser/components/brave_vpn/common/win/scoped_sc_handle.h"
 
 namespace brave_vpn {
 

@@ -10,11 +10,11 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_wallet/browser/fil_block_tracker.h"
-#include "brave/components/brave_wallet/browser/fil_tx_state_manager.h"
-#include "brave/components/brave_wallet/browser/tx_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

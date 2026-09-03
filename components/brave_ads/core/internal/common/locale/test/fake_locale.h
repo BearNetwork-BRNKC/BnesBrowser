@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/locale/locale.h"
-#include "brave/components/brave_ads/core/public/common/locale/locale_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/locale/locale.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/locale/locale_util.h"
 
 namespace brave_ads::test {
 

@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_service_delegate_base.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_service_delegate_base.h"
 
 namespace webcompat_reporter {
 

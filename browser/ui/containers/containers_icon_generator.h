@@ -8,7 +8,7 @@
 
 #include <string_view>
 
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/gfx/image/image_skia.h"
 

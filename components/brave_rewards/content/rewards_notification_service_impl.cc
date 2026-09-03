@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/content/rewards_notification_service_impl.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service_impl.h"
 
 #include <limits>
 #include <optional>
@@ -18,8 +18,8 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service_observer.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 

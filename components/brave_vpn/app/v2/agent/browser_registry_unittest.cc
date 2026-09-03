@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/app/v2/agent/browser_registry.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/browser_registry.h"
 
 #include <stdint.h>
 
 #include <memory>
 
 #include "base/test/task_environment.h"
-#include "brave/components/brave_vpn/app/v2/agent/browser_host_provider_impl.h"
-#include "brave/components/brave_vpn/app/v2/agent/test/fake_browser.h"
-#include "brave/components/brave_vpn/common/mojom/browser_agent.mojom.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/browser_host_provider_impl.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/test/fake_browser.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/browser_agent.mojom.h"
 #include "components/named_mojo_ipc_server/fake_ipc_server.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"
 #include "testing/gtest/include/gtest/gtest.h"

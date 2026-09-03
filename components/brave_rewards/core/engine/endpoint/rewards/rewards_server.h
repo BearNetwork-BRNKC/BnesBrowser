@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_REWARDS_REWARDS_SERVER_H_
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_REWARDS_REWARDS_SERVER_H_
 
-#include "brave/components/brave_rewards/core/engine/endpoint/rewards/get_prefix_list/get_prefix_list.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/rewards/get_prefix_list/get_prefix_list.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

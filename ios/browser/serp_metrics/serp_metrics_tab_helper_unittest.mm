@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/serp_metrics/serp_metrics_tab_helper.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_tab_helper.h"
 
 #include <memory>
 #include <optional>
@@ -12,14 +12,14 @@
 #include "base/memory/raw_ref.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/values.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/serp_metrics/serp_metric_type.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
-#include "brave/components/serp_metrics/serp_metrics_feature.h"
-#include "brave/components/serp_metrics/test/fake_serp_metrics_time_period_store.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
-#include "brave/ios/browser/brave_stats/brave_stats_prefs.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_feature.h"
+#include "BnesBrowser/components/serp_metrics/test/fake_serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
+#include "BnesBrowser/ios/browser/brave_stats/brave_stats_prefs.h"
 #include "components/prefs/testing_pref_service.h"
 #include "ios/chrome/test/testing_application_context.h"
 #include "ios/web/public/test/fakes/fake_navigation_context.h"

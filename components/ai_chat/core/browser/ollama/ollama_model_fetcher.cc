@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
 
 #include <algorithm>
 #include <set>
@@ -14,10 +14,10 @@
 #include "base/logging.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/model_service.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/ai_chat/core/common/mojom/ollama.mojom.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ollama.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "url/gurl.h"
 

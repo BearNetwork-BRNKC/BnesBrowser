@@ -8,7 +8,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_registry_simple.h"
 

@@ -8,7 +8,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/components/brave_news/renderer/rss_link_reader.h"
+#include "BnesBrowser/components/brave_news/renderer/rss_link_reader.h"
 
 #include <string>
 #include <utility>

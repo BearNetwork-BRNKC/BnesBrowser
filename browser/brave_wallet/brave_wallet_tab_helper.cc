@@ -3,22 +3,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
 
 #include <string>
 #include <utility>
 #include <vector>
 
 #include "base/check.h"
-#include "brave/browser/brave_wallet/brave_wallet_provider_delegate_impl.h"
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
-#include "brave/components/brave_wallet/browser/ethereum_provider_impl.h"
-#include "brave/components/brave_wallet/browser/permission_utils.h"
-#include "brave/components/brave_wallet/browser/solana_provider_impl.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_provider_delegate_impl.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/ethereum_provider_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_provider_impl.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "components/permissions/permission_request.h"
 #include "components/permissions/permission_request_manager.h"
@@ -29,7 +29,7 @@
 #include "url/gurl.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/brave_wallet/wallet_bubble_manager_delegate.h"
+#include "BnesBrowser/browser/ui/brave_wallet/wallet_bubble_manager_delegate.h"
 #include "components/tabs/public/tab_interface.h"
 #endif
 

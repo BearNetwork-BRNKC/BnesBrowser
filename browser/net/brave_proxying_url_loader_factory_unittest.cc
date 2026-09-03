@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_proxying_url_loader_factory.h"
+#include "BnesBrowser/browser/net/brave_proxying_url_loader_factory.h"
 
 #include <memory>
 #include <optional>
@@ -14,7 +14,7 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/test/bind.h"
-#include "brave/browser/net/fake_brave_request_handler.h"
+#include "BnesBrowser/browser/net/fake_brave_request_handler.h"
 #include "chrome/test/base/testing_profile.h"
 #include "content/public/browser/content_browser_client.h"
 #include "content/public/test/browser_task_environment.h"

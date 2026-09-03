@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_system_menu_model_builder.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_system_menu_model_builder.h"
 
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/ui/immersive/immersive_mode_controller.h"
 #include "ui/menus/simple_menu_model.h"

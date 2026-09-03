@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/body_sniffer/body_sniffer_throttle.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_throttle.h"
 
 #include <utility>
 
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "net/http/http_content_disposition.h"

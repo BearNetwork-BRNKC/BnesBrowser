@@ -3,29 +3,29 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
 
 #include <utility>
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
-#include "brave/browser/ntp_background/custom_background_file_manager.h"
-#include "brave/browser/ntp_background/view_counter_service_factory.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/background_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/custom_image_chooser.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_handler.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/sponsored_sites_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/vpn_facade.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
+#include "BnesBrowser/browser/ntp_background/custom_background_file_manager.h"
+#include "BnesBrowser/browser/ntp_background/view_counter_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/background_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/custom_image_chooser.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/sponsored_sites_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/vpn_facade.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
 #include "chrome/browser/autocomplete/chrome_autocomplete_scheme_classifier.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/contextual_search/contextual_search_service_factory.h"
@@ -40,35 +40,35 @@
 #include "content/public/browser/navigation_entry.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ai_chat/tab_tracker_service_factory.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/bookmarks_page_handler.h"
-#include "brave/components/ai_chat/core/browser/history_ui_handler.h"
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/tab_tracker_service_factory.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/bookmarks_page_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/history_ui_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_handler.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_handler.h"
 #endif
 
 namespace {

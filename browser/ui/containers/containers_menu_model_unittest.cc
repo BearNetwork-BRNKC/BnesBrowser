@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 
 #include <vector>
 
 #include "base/strings/utf_string_conversions.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/containers/container_model.h"
-#include "brave/browser/ui/containers/containers_menu_model_test_api.h"
-#include "brave/browser/ui/containers/mock_containers_menu_model_delegate.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model_test_api.h"
+#include "BnesBrowser/browser/ui/containers/mock_containers_menu_model_delegate.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -8,8 +8,8 @@
 #ifndef BRAVE_BROWSER_UI_WEBUI_BRAVE_EDUCATION_BRAVE_EDUCATION_HANDLER_H_
 #define BRAVE_BROWSER_UI_WEBUI_BRAVE_EDUCATION_BRAVE_EDUCATION_HANDLER_H_
 
-#include "brave/browser/ui/webui/brave_education/brave_education.mojom.h"
-#include "brave/components/brave_education/education_urls.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education.mojom.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
 #include "content/public/browser/web_ui_message_handler.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"

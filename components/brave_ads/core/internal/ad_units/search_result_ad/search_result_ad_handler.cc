@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_handler.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_handler.h"
 
 #include <utility>
 
@@ -12,14 +12,14 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 #include "third_party/abseil-cpp/absl/cleanup/cleanup.h"
 
 namespace brave_ads {

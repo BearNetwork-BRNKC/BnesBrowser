@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/de_amp/browser/de_amp_body_handler.h"
+#include "BnesBrowser/components/de_amp/browser/de_amp_body_handler.h"
 
 #include <string>
 #include <string_view>
@@ -16,10 +16,10 @@
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
-#include "brave/components/de_amp/browser/de_amp_util.h"
-#include "brave/components/de_amp/common/features.h"
-#include "brave/components/de_amp/common/pref_names.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/de_amp/browser/de_amp_util.h"
+#include "BnesBrowser/components/de_amp/common/features.h"
+#include "BnesBrowser/components/de_amp/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"

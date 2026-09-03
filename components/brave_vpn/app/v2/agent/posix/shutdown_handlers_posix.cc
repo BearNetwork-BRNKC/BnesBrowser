@@ -8,7 +8,7 @@
 // self-pipe); a dedicated detector thread blocks on the read end and invokes
 // the shutdown callback from a normal thread context.
 
-#include "brave/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
 
 #include <signal.h>
 #include <unistd.h>

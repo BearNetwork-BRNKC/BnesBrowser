@@ -11,7 +11,7 @@
 #include <tuple>
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_vpn/common/wireguard/wireguard_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/wireguard/wireguard_utils.h"
 
 namespace brave_vpn {
 

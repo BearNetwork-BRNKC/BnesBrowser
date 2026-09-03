@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_cross_dom.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_cross_dom.h"
 
 #include <string>
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_dom_root.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_frame_owner.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_dom_root.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_frame_owner.h"
 #include "third_party/blink/renderer/core/dom/dom_node_ids.h"
 
 using ::blink::DOMNodeId;

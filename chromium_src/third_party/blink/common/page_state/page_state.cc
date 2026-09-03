@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/strings/strcat.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #include <third_party/blink/common/page_state/page_state.cc>
 

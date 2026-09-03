@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
 
 #include "base/android/jni_android.h"
 #include "chrome/android/chrome_jni_headers/BraveNewsControllerFactory_jni.h"

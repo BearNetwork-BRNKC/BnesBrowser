@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/public/common/url/url_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/url/url_util.h"
 
 #include <algorithm>
 
@@ -11,7 +11,7 @@
 #include "base/containers/span.h"
 #include "base/strings/pattern.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/internal/common/url/url_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/url_util_internal.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "url/gurl.h"
 #include "url/url_constants.h"

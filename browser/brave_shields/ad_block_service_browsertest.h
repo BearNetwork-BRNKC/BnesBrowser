@@ -13,7 +13,7 @@
 #include "base/files/scoped_temp_dir.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/test/metrics/histogram_tester.h"
-#include "brave/components/brave_shields/content/test/test_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/content/test/test_filters_provider.h"
 #include "chrome/test/base/platform_browser_test.h"
 #include "content/public/test/content_mock_cert_verifier.h"
 

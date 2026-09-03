@@ -9,7 +9,7 @@
 #include "chrome/browser/profiles/profile_keyed_service_factory.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/bookmark/bookmark_prefs_service_factory.h"
+#include "BnesBrowser/browser/ui/bookmark/bookmark_prefs_service_factory.h"
 
 // Adding BookmarkPrefsServiceFactory as dependency because kShowBookmarBar and
 // kAlwaysShowBookmarkBarOnNTP manage bookmark bar state together and need to

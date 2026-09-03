@@ -21,11 +21,11 @@ source_set("page_info") {
   ]
 
   deps = [
-    "//brave/browser/brave_shields",
-    "//brave/browser/ui/page_info",
-    "//brave/components/constants",
-    "//brave/components/resources:strings",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/browser/brave_shields",
+    "//BnesBrowser/browser/ui/page_info",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser/profiles",
     "//chrome/browser/ui/browser_window",
     "//chrome/browser/ui/views/page_info",
@@ -59,8 +59,8 @@ source_set("browser_tests") {
 
   deps = [
     ":page_info",
-    "//brave/browser/ui/page_info",
-    "//brave/components/brave_shields/core/common",
+    "//BnesBrowser/browser/ui/page_info",
+    "//BnesBrowser/components/brave_shields/core/common",
     "//chrome/browser/ui/views/frame",
     "//chrome/browser/ui/views/location_bar",
     "//chrome/browser/ui/views/page_info",

@@ -11,11 +11,11 @@ source_set("brave_account") {
 
   deps = [
     "//base",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account/mojom",
-    "//brave/components/password_strength_meter:mojom",
-    "//brave/ios/browser/brave_account",
-    "//brave/ios/web/webui",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account/mojom",
+    "//BnesBrowser/components/password_strength_meter:mojom",
+    "//BnesBrowser/ios/browser/brave_account",
+    "//BnesBrowser/ios/web/webui",
     "//ios/chrome/browser/shared/model/profile",
     "//ios/web/public",
     "//ios/web/public/webui",

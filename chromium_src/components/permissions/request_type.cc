@@ -5,6 +5,6 @@
 
 #include "components/permissions/request_type.h"
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 #include <components/permissions/request_type.cc>

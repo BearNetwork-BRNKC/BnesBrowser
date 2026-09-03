@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_PUBLIC_PLATFORM_WEB_CONTENT_SETTINGS_CLIENT_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_PUBLIC_PLATFORM_WEB_CONTENT_SETTINGS_CLIENT_H_
 
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 #include "components/content_settings/core/common/content_settings_types.h"
 #include "third_party/blink/public/platform/web_security_origin.h"
 

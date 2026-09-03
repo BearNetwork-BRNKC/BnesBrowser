@@ -13,34 +13,34 @@ cargo_crate("lib") {
   epoch = "0.8"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/bernoulli.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/distribution.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/float.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/integer.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/other.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/slice.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/uniform.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/utils.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/weighted.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/weighted_index.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/prelude.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rng.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/read.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/reseeding.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/mock.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/small.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/std.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/thread.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/xoshiro128plusplus.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/xoshiro256plusplus.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/seq/index.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/seq/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/bernoulli.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/distribution.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/float.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/integer.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/other.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/slice.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/uniform.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/weighted.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/distributions/weighted_index.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/prelude.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rng.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/read.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/adapter/reseeding.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/mock.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/small.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/std.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/thread.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/xoshiro128plusplus.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/rngs/xoshiro256plusplus.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/seq/index.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rand-v0_8/src/seq/mod.rs",
   ]
   inputs = []
 
@@ -56,11 +56,11 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/rand_chacha/v0_3:lib",
-    "//brave/third_party/rust/rand_core/v0_6:lib",
+    "//BnesBrowser/third_party/rust/rand_chacha/v0_3:lib",
+    "//BnesBrowser/third_party/rust/rand_core/v0_6:lib",
   ]
   if (!is_win) {
-    deps += [ "//brave/third_party/rust/libc/v0_2:lib" ]
+    deps += [ "//BnesBrowser/third_party/rust/libc/v0_2:lib" ]
   }
   features = [
     "alloc",

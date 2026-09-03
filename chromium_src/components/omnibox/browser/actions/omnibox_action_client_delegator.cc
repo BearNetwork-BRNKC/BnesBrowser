@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
 #endif  // BUILDFLAG(ENABLE_COMMANDER)
 
 #include <components/omnibox/browser/actions/omnibox_action_client_delegator.cc>

@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_ads/ads_media_reporting_javascript_feature.h"
+#include "BnesBrowser/ios/browser/brave_ads/ads_media_reporting_javascript_feature.h"
 
 #include <optional>
 
-#include "brave/ios/browser/brave_ads/ads_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_ads/ads_tab_helper.h"
 #include "ios/web/public/js_messaging/java_script_feature_util.h"
 #include "ios/web/public/js_messaging/script_message.h"
 #include "ios/web/public/js_messaging/web_frames_manager.h"

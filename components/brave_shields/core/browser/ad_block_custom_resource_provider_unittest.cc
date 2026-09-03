@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_custom_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_custom_resource_provider.h"
 
 #include "base/base64.h"
 #include "base/files/scoped_temp_dir.h"
@@ -12,9 +12,9 @@
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"

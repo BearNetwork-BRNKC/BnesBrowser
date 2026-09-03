@@ -9,9 +9,9 @@
 #include <memory>
 #include <string>
 
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet {
 

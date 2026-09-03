@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/renderer/v8_helper.h"
+#include "BnesBrowser/components/brave_wallet/renderer/v8_helper.h"
 
 #include <string_view>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/safe_builtins/renderer/safe_builtins_helpers.h"
+#include "BnesBrowser/components/safe_builtins/renderer/safe_builtins_helpers.h"
 #include "gin/converter.h"
 #include "third_party/blink/public/web/web_local_frame.h"
 #include "v8/include/v8-function.h"

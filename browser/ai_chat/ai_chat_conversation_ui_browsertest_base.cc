@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
 
 #include <memory>
 #include <optional>
@@ -14,11 +14,11 @@
 #include "base/strings/strcat.h"
 #include "base/test/run_until.h"
 #include "base/test/test_future.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
-#include "brave/components/ai_chat/core/browser/types.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/types.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/test/base/ui_test_utils.h"

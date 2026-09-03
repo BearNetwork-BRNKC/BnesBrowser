@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/no_destructor.h"
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service_observer.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/content/rewards_service_impl.h"
-#include "brave/components/brave_rewards/content/rewards_service_observer.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_impl.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_observer.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "chrome/browser/bitmap_fetcher/bitmap_fetcher_service.h"
 #include "chrome/browser/bitmap_fetcher/bitmap_fetcher_service_factory.h"
 #include "chrome/browser/browser_process.h"
@@ -28,7 +28,7 @@
 #include "content/public/browser/storage_partition.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
 #endif
 
 namespace brave_rewards {

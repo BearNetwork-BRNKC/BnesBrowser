@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_service.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_service.h"
 
 namespace component_updater {
 class ComponentUpdateService;

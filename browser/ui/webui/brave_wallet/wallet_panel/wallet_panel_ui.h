@@ -10,11 +10,11 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_handler.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/browser/wallet_handler.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/ledger_bridge.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_handler.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_handler.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_web_ui_controller.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_webui_config.h"
 #include "content/public/browser/web_ui_message_handler.h"
@@ -23,7 +23,7 @@
 #include "mojo/public/cpp/bindings/receiver.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/mojom/rewards_page.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_page.mojom.h"
 #endif
 
 namespace content {

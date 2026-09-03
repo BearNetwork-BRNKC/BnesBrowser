@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/brave_channel.gni")
-import("//brave/build/version.gni")
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/build/brave_channel.gni")
+import("//BnesBrowser/build/version.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
 import("//build/config/apple/symbols.gni")
 import("//build/util/branding.gni")
 import("//chrome/version.gni")

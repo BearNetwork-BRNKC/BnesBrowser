@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/test/test_future.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/public/ads.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads.h"
 
 // npm run test -- brave_all_unit_tests --filter=BraveAds*
 

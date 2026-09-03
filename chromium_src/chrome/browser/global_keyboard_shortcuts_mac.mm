@@ -6,7 +6,7 @@
 #include "chrome/browser/global_keyboard_shortcuts_mac.h"
 
 #include "base/feature_list.h"
-#include "brave/components/commands/common/features.h"
+#include "BnesBrowser/components/commands/common/features.h"
 
 namespace {
 

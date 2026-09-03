@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/sync/ai_chat_sync_backend.h"
+#include "BnesBrowser/components/ai_chat/core/browser/sync/ai_chat_sync_backend.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/ai_chat/core/browser/sync/ai_chat_sync_bridge.h"
+#include "BnesBrowser/components/ai_chat/core/browser/sync/ai_chat_sync_bridge.h"
 #include "components/sync/model/data_type_local_change_processor.h"
 
 namespace ai_chat {

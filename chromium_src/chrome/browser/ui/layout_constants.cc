@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <optional>
 
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/ui/tabs/features.h"
 #include "components/prefs/pref_service.h"

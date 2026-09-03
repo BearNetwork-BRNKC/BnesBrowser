@@ -9,8 +9,8 @@
 #include <string_view>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 
 namespace brave_ads {
 

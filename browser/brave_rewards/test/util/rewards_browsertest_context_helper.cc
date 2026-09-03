@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_context_helper.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_context_helper.h"
 
 #include <string>
 
 #include "base/logging.h"
 #include "base/test/bind.h"
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_context_util.h"
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_util.h"
-#include "brave/browser/ui/brave_rewards/rewards_panel_coordinator.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_context_util.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_util.h"
+#include "BnesBrowser/browser/ui/brave_rewards/rewards_panel_coordinator.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"

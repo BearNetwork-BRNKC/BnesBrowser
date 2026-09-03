@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/app/brave_core_switches.h"
+#include "BnesBrowser/ios/app/brave_core_switches.h"
 
 #include "base/base_switches.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_component_updater/browser/switches.h"
-#include "brave/components/p3a/switches.h"
-#include "brave/components/variations/switches.h"
+#include "BnesBrowser/components/brave_component_updater/browser/switches.h"
+#include "BnesBrowser/components/p3a/switches.h"
+#include "BnesBrowser/components/variations/switches.h"
 #include "components/component_updater/component_updater_switches.h"
 #include "components/sync/base/command_line_switches.h"
 #include "components/variations/variations_switches.h"

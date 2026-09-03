@@ -6,12 +6,12 @@
 #include <vector>
 
 #include "base/functional/callback_helpers.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/tor/tor_constants.h"
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/tor_constants.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
@@ -31,11 +31,11 @@
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 #endif
 
 class BraveProfileManagerTest : public PlatformBrowserTest {

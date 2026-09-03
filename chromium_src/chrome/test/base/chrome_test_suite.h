@@ -6,11 +6,11 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_CHROME_TEST_SUITE_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_CHROME_TEST_SUITE_H_
 
-#include "brave/components/brave_shields/core/browser/brave_shields_test_utils.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_service_delegate_base.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_delegate_base.h"
 #endif
 
 #define ChromeTestSuite ChromeTestSuite_ChromiumImpl

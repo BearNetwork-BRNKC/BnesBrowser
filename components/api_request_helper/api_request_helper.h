@@ -19,7 +19,7 @@
 #include "base/time/time.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/api_request_helper/sse_parser.h"
+#include "BnesBrowser/components/api_request_helper/sse_parser.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/simple_url_loader.h"
 #include "services/network/public/cpp/simple_url_loader_stream_consumer.h"

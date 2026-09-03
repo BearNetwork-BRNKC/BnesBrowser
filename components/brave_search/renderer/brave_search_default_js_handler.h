@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_search/common/brave_search_default.mojom.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_default.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "mojo/public/cpp/bindings/remote.h"

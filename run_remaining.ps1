@@ -52,7 +52,7 @@
 #
 #   1. BNES canonical source is authoritative.
 #   2. Upstream source is never treated as BNES canonical source.
-#   3. BNES projection is generated into src\brave.
+#   3. BNES projection is generated into src\BnesBrowser.
 #   4. Upstream changes are fingerprinted.
 #   5. Protected BNES overlay paths are validated before build.
 #   6. GN configuration is validated before build.
@@ -90,7 +90,7 @@ $ErrorActionPreference = 'Stop'
 
 $BuildRoot = 'E:\BnesBrowser-build'
 $SrcDir = Join-Path $BuildRoot 'src'
-$BraveDir = Join-Path $SrcDir 'brave'
+$BnesBrowserDir = Join-Path $SrcDir 'BnesBrowser'; $BraveDir = $BnesBrowserDir
 $OutDir = Join-Path $SrcDir 'out\Release_GN'
 $OutName = 'Release_GN'
 $SetupName = 'BnesBrowser_setup.exe'
@@ -426,7 +426,7 @@ function Get-GitState {
 #   S:\Ai_Agent\BNES\BnesBrowser
 #
 # Build projection:
-#   E:\BnesBrowser-build\src\brave
+#   E:\BnesBrowser-build\src\BnesBrowser
 #
 # Upstream must never become canonical BNES source.
 # ============================================================
@@ -504,7 +504,7 @@ $syncIgnore = @(
     # BNES 分叉版修正 (2026-08-27):
     # 以下是 gclient / hooks 下載的真實編譯依賴。它們在 BnesBrowser
     # (canonical) 中只是空 stub（已被 .gitignore 排除，不會 commit），
-    # 只有建構目錄 E:\...\src\brave 有真實內容可供 ninja 編譯。
+    # 只有建構目錄 E:\...\src\BnesBrowser 有真實內容可供 ninja 編譯。
     # 若不加進 syncIgnore，Sync-BnesTree 的 Remove-StaleBnesPaths(SAFEDEL)
     # 會把它們當成「E 有、S 缺」的過期項整個刪除，且 gclient 又因
     # hooks3.log 標記 EXIT=0 而被略過、不會拉回，導致編譯找不到依賴而失敗。
@@ -552,7 +552,7 @@ function Invoke-BnesProtectedOverlayGuard {
     Push-Location $BnesCore
 
     try {
-        if ($Label -like '*src\brave*') {
+        if ($Label -like '*src\BnesBrowser*') {
             & $checker -Root $TreeRoot -Repair
         }
         else {
@@ -967,7 +967,7 @@ function Sync-BnesTree {
                 -SourceRelSet $sourceSet
         }
 
-        Write-Ok "$($directory.Name) → src\brave\$($directory.Name)"
+        Write-Ok "$($directory.Name) → src\BnesBrowser\$($directory.Name)"
     }
 
     foreach (
@@ -1525,7 +1525,7 @@ function Invoke-RedirectCc {
 
     # --------------------------------------------------------
     # Repair redirect_cc.cc (disposable build tree only)
-    # If a compilation command lacks -iquote.../brave/chromium_src (e.g. abseil-cpp),
+    # If a compilation command lacks -iquote.../BnesBrowser/chromium_src (e.g. abseil-cpp),
     # fallback gracefully to launching the compiler directly instead of erroring.
     # --------------------------------------------------------
     $redirectCcSrc = Join-Path $SrcDir 'brave\tools\redirect_cc\redirect_cc.cc'
@@ -3254,7 +3254,7 @@ function Invoke-VerifyOnly {
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
-            -Label 'mapped src\brave'
+            -Label 'mapped src\BnesBrowser'
     }
 
     Test-OwnershipBoundary
@@ -3478,7 +3478,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
-            -Label 'mapped src\brave'
+            -Label 'mapped src\BnesBrowser'
     }
 
     # --------------------------------------------------------
@@ -3604,7 +3604,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
-            -Label 'mapped src\brave FINAL'
+            -Label 'mapped src\BnesBrowser FINAL'
     }
 
     Test-OwnershipBoundary
@@ -3696,7 +3696,7 @@ BNES protected overlay validation 被略過。
 
         Invoke-BnesProtectedOverlayGuard `
             -TreeRoot $BraveDir `
-            -Label 'mapped src\brave POST-BUILD'
+            -Label 'mapped src\BnesBrowser POST-BUILD'
     }
 
     # --------------------------------------------------------

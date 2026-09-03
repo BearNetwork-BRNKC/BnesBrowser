@@ -13,8 +13,8 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
-#include "brave/browser/brave_wallet/brave_wallet_service_delegate_base.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_delegate_base.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace content {
 class BrowserContext;

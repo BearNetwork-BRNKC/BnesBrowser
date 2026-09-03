@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/containers/content/browser/session_utils.h"
+#include "BnesBrowser/components/containers/content/browser/session_utils.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"
 

@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_COMPONENTS_SYNC_PROTOCOL_PROTO_VISITORS_H_
 #define BRAVE_CHROMIUM_SRC_COMPONENTS_SYNC_PROTOCOL_PROTO_VISITORS_H_
 
-#include "brave/components/sync/protocol/ai_chat_specifics.pb.h"
+#include "BnesBrowser/components/sync/protocol/ai_chat_specifics.pb.h"
 
 #define BRAVE_VISIT_DEVICE_INFO_SPECIFICS_BRAVE_FIELDS \
 VISIT(brave_fields);

@@ -6,51 +6,51 @@
 #include "chrome/browser/ui/webui/chrome_untrusted_web_ui_configs.h"
 
 #include "base/feature_list.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "content/public/browser/webui_config_map.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/line_chart/line_chart_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/market/market_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/nft/nft_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/trezor/trezor_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/line_chart/line_chart_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/market/market_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/nft/nft_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/trezor/trezor_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
-#include "brave/browser/ui/webui/ai_chat/chart_display_ui.h"
-#include "brave/browser/ui/webui/ai_chat/code_sandbox_ui.h"
-#include "brave/browser/ui/webui/ai_chat/leo_workspace_ui.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/chart_display_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/code_sandbox_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/leo_workspace_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS) && !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_news/brave_news_ui.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/browser/ui/webui/brave_news/brave_news_ui.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_NEWS) && !BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN)
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/ui/webui/playlist_ui.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/browser/ui/webui/playlist_ui.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
-#include "brave/components/local_ai/core/features.h"
+#include "BnesBrowser/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
+#include "BnesBrowser/components/local_ai/core/features.h"
 #endif
 
 #define RegisterChromeUntrustedWebUIConfigs \

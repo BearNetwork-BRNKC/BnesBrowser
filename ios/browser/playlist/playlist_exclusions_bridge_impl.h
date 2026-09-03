@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_PLAYLIST_PLAYLIST_EXCLUSIONS_BRIDGE_IMPL_H_
 #define BRAVE_IOS_BROWSER_PLAYLIST_PLAYLIST_EXCLUSIONS_BRIDGE_IMPL_H_
 
-#include "brave/ios/browser/playlist/playlist_exclusions_bridge.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_exclusions_bridge.h"
 
 namespace playlist {
 class PlaylistExclusions;

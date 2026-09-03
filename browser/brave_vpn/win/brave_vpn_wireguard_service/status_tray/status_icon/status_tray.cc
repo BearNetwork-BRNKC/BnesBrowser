@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/status_tray.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/status_tray.h"
 
 #include <commctrl.h>
 #include <wrl/client.h>
@@ -14,8 +14,8 @@
 #include "base/files/file_path.h"
 #include "base/win/windows_types.h"
 #include "base/win/wrapped_window_proc.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/status_icon.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/status_icon.h"
 #include "ui/gfx/geometry/point.h"
 #include "ui/gfx/win/hwnd_util.h"
 

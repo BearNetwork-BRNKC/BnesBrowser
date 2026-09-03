@@ -3,16 +3,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/browser/updater/buildflags.gni")
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/browser/updater/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
 group("ui") {
-  deps = [ "//brave/components/brave_vpn/common/buildflags" ]
+  deps = [ "//BnesBrowser/components/brave_vpn/common/buildflags" ]
 
   if (!is_android) {
     deps += [
-      "//brave/browser/ui/tabs:tree_tab_session_manager",
+      "//BnesBrowser/browser/ui/tabs:tree_tab_session_manager",
       "//chrome/browser/ui/tabs:tab_strip",
       "//components/tabs:public",
       "//content/public/browser",
@@ -20,26 +20,26 @@ group("ui") {
   }
 
   if (is_mac) {
-    deps += [ "//brave/browser/updater:buildflags" ]
+    deps += [ "//BnesBrowser/browser/updater:buildflags" ]
   }
 
   if (enable_omaha4) {
-    deps += [ "//brave/browser/updater:features" ]
+    deps += [ "//BnesBrowser/browser/updater:features" ]
   }
 
   if (toolkit_views) {
     deps += [
-      "//brave/browser/ui/darker_theme",
-      "//brave/browser/ui/tabs:tabs_public",
-      "//brave/components/brave_news/common/buildflags",
-      "//brave/components/sidebar/browser",
+      "//BnesBrowser/browser/ui/darker_theme",
+      "//BnesBrowser/browser/ui/tabs:tabs_public",
+      "//BnesBrowser/components/brave_news/common/buildflags",
+      "//BnesBrowser/components/sidebar/browser",
     ]
 
     if (enable_ai_chat) {
       deps += [
-        "//brave/components/ai_chat/content/browser",
-        "//brave/components/ai_chat/core/browser",
-        "//brave/components/ai_chat/core/common",
+        "//BnesBrowser/components/ai_chat/content/browser",
+        "//BnesBrowser/components/ai_chat/core/browser",
+        "//BnesBrowser/components/ai_chat/core/common",
       ]
     }
   }

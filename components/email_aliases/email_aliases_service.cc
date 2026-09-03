@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
 
 #include <utility>
 
@@ -13,15 +13,15 @@
 #include "base/logging.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_account/endpoint_client/client.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/email_aliases/email_aliases.mojom.h"
-#include "brave/components/email_aliases/email_aliases_api.h"
-#include "brave/components/email_aliases/email_aliases_metrics.h"
-#include "brave/components/email_aliases/email_aliases_notes.h"
-#include "brave/components/email_aliases/features.h"
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/client.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/email_aliases/email_aliases.mojom.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_api.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_metrics.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_notes.h"
+#include "BnesBrowser/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

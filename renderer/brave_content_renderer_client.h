@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/brave_search/renderer/brave_search_service_worker_holder.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_service_worker_holder.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "chrome/renderer/chrome_content_renderer_client.h"
 #include "v8/include/v8.h"
 

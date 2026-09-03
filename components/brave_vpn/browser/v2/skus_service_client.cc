@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/skus_service_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/skus_service_client.h"
 
 #include <string>
 #include <utility>
@@ -12,7 +12,7 @@
 #include "base/functional/callback.h"
 #include "base/logging.h"
 #include "base/task/bind_post_task.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "mojo/public/cpp/bindings/callback_helpers.h"
 
 namespace brave_vpn::v2 {

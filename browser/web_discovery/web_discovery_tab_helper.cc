@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/web_discovery/web_discovery_tab_helper.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_tab_helper.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/time/time.h"
-#include "brave/browser/web_discovery/web_discovery_cta_util.h"
-#include "brave/browser/web_discovery/web_discovery_infobar_delegate.h"
-#include "brave/components/constants/url_constants.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_cta_util.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_infobar_delegate.h"
+#include "BnesBrowser/components/constants/url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
 #include "components/infobars/content/content_infobar_manager.h"
@@ -26,9 +26,9 @@ std::unique_ptr<infobars::InfoBar> CreateWebDiscoveryInfoBar(
 #endif
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY_NATIVE)
-#include "brave/browser/web_discovery/web_discovery_service_factory.h"
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
-#include "brave/components/web_discovery/common/features.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_service_factory.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/common/features.h"
 #include "services/service_manager/public/cpp/interface_provider.h"
 #endif
 

@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
 
 #include <string>
 
 #include "base/android/android_info.h"
 #include "base/feature_list.h"
-#include "brave/browser/android/youtube_script_injector/brave_youtube_script_injector_native_helper.h"
-#include "brave/browser/android/youtube_script_injector/features.h"
-#include "brave/components/brave_shields/content/browser/brave_shields_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/content/public/browser/navigation_entry_fullscreen.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/brave_youtube_script_injector_native_helper.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/features.h"
+#include "BnesBrowser/components/brave_shields/content/browser/brave_shields_util.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/content/public/browser/navigation_entry_fullscreen.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/common/chrome_isolated_world_ids.h"
 #include "components/prefs/pref_service.h"

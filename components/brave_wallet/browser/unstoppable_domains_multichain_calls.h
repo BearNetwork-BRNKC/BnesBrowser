@@ -13,7 +13,7 @@
 
 #include "base/containers/flat_map.h"
 #include "base/functional/callback.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet::unstoppable_domains {
 

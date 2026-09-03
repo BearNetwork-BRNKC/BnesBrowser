@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
 
 #include "base/containers/fixed_flat_set.h"
 #include "base/strings/string_number_conversions.h"

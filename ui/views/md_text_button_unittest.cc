@@ -7,7 +7,7 @@
 
 #include <memory>
 
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "ui/native_theme/native_theme.h"
 #include "ui/views/test/views_test_base.h"

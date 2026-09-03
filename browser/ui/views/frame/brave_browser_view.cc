@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
 
 #include <algorithm>
 #include <iterator>
@@ -17,48 +17,48 @@
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/sparkle_buildflags.h"
-#include "brave/browser/translate/brave_translate_utils.h"
-#include "brave/browser/ui/brave_browser.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/commands/accelerator_service.h"
-#include "brave/browser/ui/commands/accelerator_service_factory.h"
-#include "brave/browser/ui/focus_mode/focus_mode_features.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/browser/ui/sidebar/sidebar_web_panel_controller.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/brave_actions/brave_actions_container.h"
-#include "brave/browser/ui/views/brave_help_bubble/brave_help_bubble_host_view.h"
-#include "brave/browser/ui/views/frame/brave_contents_layout_manager.h"
-#include "brave/browser/ui/views/frame/focus_mode_title_bar_view.h"
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
-#include "brave/browser/ui/views/frame/split_view/brave_contents_container_view.h"
-#include "brave/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
-#include "brave/browser/ui/views/frame/tab_strip_placement_coordinator.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
-#include "brave/browser/ui/views/omnibox/brave_omnibox_view_views.h"
-#include "brave/browser/ui/views/side_panel/brave_side_panel_resize_area.h"
-#include "brave/browser/ui/views/sidebar/sidebar_container_view.h"
-#include "brave/browser/ui/views/toolbar/bookmark_button.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
-#include "brave/browser/ui/views/toolbar/screenshot_button.h"
-#include "brave/browser/ui/views/window_closing_confirm_dialog_view.h"
-#include "brave/common/pref_names.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/commands/common/features.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/sidebar/browser/constants.h"
-#include "brave/components/sidebar/common/features.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/translate/brave_translate_utils.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service_factory.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_features.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_web_panel_controller.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_actions_container.h"
+#include "BnesBrowser/browser/ui/views/brave_help_bubble/brave_help_bubble_host_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_contents_layout_manager.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_title_bar_view.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_contents_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
+#include "BnesBrowser/browser/ui/views/frame/tab_strip_placement_coordinator.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_view_views.h"
+#include "BnesBrowser/browser/ui/views/side_panel/brave_side_panel_resize_area.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_container_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/bookmark_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_button.h"
+#include "BnesBrowser/browser/ui/views/window_closing_confirm_dialog_view.h"
+#include "BnesBrowser/common/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commands/common/features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/constants.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/app_mode/app_mode_utils.h"
 #include "chrome/browser/browser_process.h"
@@ -120,31 +120,31 @@
 #include "ui/views/view_utils.h"
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_view.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_view.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/ui/views/toolbar/wallet_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/wallet_button.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/ui/views/toolbar/brave_vpn_button.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_vpn_button.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPARKLE)
-#include "brave/browser/ui/views/update_recommended_message_box_mac.h"
+#include "BnesBrowser/browser/ui/views/update_recommended_message_box_mac.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/browser/ui/views/speedreader/reader_mode_bubble.h"
-#include "brave/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/speedreader/reader_mode_bubble.h"
+#include "BnesBrowser/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/browser/ui/views/wayback_machine_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/wayback_machine_bubble_view.h"
 #endif
 
 namespace {

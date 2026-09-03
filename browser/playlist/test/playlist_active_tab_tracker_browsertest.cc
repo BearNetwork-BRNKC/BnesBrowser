@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/playlist_active_tab_tracker.h"
+#include "BnesBrowser/browser/ui/webui/playlist_active_tab_tracker.h"
 
 #include "base/functional/callback_helpers.h"
 #include "base/run_loop.h"
 #include "base/test/mock_callback.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom-forward.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom-forward.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"

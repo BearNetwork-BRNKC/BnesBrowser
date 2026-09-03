@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/core/css/media_values.h"
 
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/renderer/core/frame/local_dom_window.h"
 #include "third_party/blink/renderer/core/frame/screen.h"
 

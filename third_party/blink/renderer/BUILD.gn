@@ -11,8 +11,8 @@ component("renderer") {
   ]
 
   deps = [
-    "//brave/components/brave_drm:brave_drm_blink",
-    "//brave/components/brave_shields/core/common:mojom",
+    "//BnesBrowser/components/brave_drm:brave_drm_blink",
+    "//BnesBrowser/components/brave_shields/core/common:mojom",
   ]
 
   defines = [ "BLINK_IMPLEMENTATION=1" ]

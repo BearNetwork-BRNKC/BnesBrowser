@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/permissions/permission_lifetime_manager.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_manager.h"
 
 #include <algorithm>
 #include <utility>
@@ -13,7 +13,7 @@
 #include "base/logging.h"
 #include "base/metrics/histogram_functions.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/permissions/permission_lifetime_pref_names.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_pref_names.h"
 #include "components/content_settings/core/browser/content_settings_registry.h"
 #include "components/content_settings/core/browser/content_settings_utils.h"
 #include "components/content_settings/core/browser/website_settings_info.h"

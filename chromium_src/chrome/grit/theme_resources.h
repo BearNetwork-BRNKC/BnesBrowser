@@ -9,7 +9,7 @@
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/grit/brave_theme_resources.h"  // IWYU pragma: export
+#include "BnesBrowser/grit/brave_theme_resources.h"  // IWYU pragma: export
 #endif
 
 #include "../gen/chrome/grit/theme_resources.h"  // IWYU pragma: export

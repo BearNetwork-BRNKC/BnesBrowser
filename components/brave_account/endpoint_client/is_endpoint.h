@@ -8,8 +8,8 @@
 
 #include <concepts>
 
-#include "brave/components/brave_account/endpoint_client/is_request.h"
-#include "brave/components/brave_account/endpoint_client/is_response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_request.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response.h"
 #include "url/gurl.h"
 
 namespace brave_account::endpoint_client {

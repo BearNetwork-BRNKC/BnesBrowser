@@ -3,6 +3,6 @@
 # found in the LICENSE file.
 
 brave_feed_java_sources = [
-  "//brave/android/feed/core/java/src/org/chromium/chrome/browser/feed/BraveFeedSurfaceCoordinator.java",
-  "//brave/android/feed/core/java/src/org/chromium/chrome/browser/feed/BraveFeedSurfaceMediator.java",
+  "//BnesBrowser/android/feed/core/java/src/org/chromium/chrome/browser/feed/BraveFeedSurfaceCoordinator.java",
+  "//BnesBrowser/android/feed/core/java/src/org/chromium/chrome/browser/feed/BraveFeedSurfaceMediator.java",
 ]

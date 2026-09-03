@@ -19,7 +19,7 @@
 #include "base/containers/span.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

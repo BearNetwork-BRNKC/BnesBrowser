@@ -13,17 +13,17 @@ cargo_crate("lib") {
   epoch = "1"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/backport.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/display.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/eval.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/identifier.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/impls.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/parse.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/src/serde.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/backport.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/display.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/eval.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/identifier.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/impls.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/parse.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/src/serde.rs",
   ]
   inputs = []
 
@@ -43,9 +43,9 @@ cargo_crate("lib") {
     "std",
   ]
   build_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/build.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/build.rs"
   build_sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/semver-v1/build.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/semver-v1/build.rs",
   ]
   rustenv = []
   rustflags = []

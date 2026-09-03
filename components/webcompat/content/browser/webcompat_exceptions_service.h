@@ -15,8 +15,8 @@
 #include "base/synchronization/lock.h"
 #include "base/thread_annotations.h"
 #include "base/values.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_observer.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_service.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_observer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_service.h"
 #include "components/content_settings/core/common/content_settings_pattern.h"
 #include "components/content_settings/core/common/content_settings_types.h"
 

@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
 
 namespace speedreader {
 

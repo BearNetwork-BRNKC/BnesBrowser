@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_view.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_view.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"

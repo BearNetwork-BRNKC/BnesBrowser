@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_create_transparent_transaction_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_create_transparent_transaction_task.h"
 
 #include <memory>
 #include <utility>
@@ -15,14 +15,14 @@
 #include "base/test/mock_callback.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_action_context.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_rpc.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_test_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction.h"
-#include "brave/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_action_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

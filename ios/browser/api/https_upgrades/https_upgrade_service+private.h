@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/https_upgrades/https_upgrade_service.h"
+#include "BnesBrowser/ios/browser/api/https_upgrades/https_upgrade_service.h"
 
 class HttpsUpgradeService;
 

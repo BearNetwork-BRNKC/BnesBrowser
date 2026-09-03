@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "chrome/browser/ui/views/frame/browser_frame_view_linux.h"
-#include "brave/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
 
 #define OpaqueBrowserFrameView BraveOpaqueBrowserFrameView
 #include <chrome/browser/ui/views/frame/browser_frame_view_linux.cc>

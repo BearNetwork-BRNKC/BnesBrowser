@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_settings_leo_assistant_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_settings_leo_assistant_handler.h"
 
 #include <algorithm>
 #include <vector>
 
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/model_validator.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/prefs.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_validator.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/prefs.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/web_contents.h"
 

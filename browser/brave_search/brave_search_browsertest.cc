@@ -10,11 +10,11 @@
 #include "base/strings/strcat.h"
 #include "base/test/run_until.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_search/browser/brave_search_fallback_host.h"
-#include "brave/components/brave_search/common/features.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_fallback_host.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/extensions/extension_browsertest.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
@@ -37,7 +37,7 @@
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 using extensions::ExtensionBrowserTest;

@@ -5,10 +5,10 @@
 
 #include <algorithm>
 
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/tabs/brave_tab_group_header.h"
-#include "brave/browser/ui/views/tabs/brave_tab_group_highlight.h"
-#include "brave/browser/ui/views/tabs/brave_tab_group_underline.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_header.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_highlight.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_underline.h"
 #include "chrome/browser/ui/views/tabs/tab_group_style.h"
 #include "ui/views/view_utils.h"
 

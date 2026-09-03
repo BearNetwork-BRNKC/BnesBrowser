@@ -11,7 +11,7 @@
 #include <string_view>
 
 #include "base/scoped_observation.h"
-#include "brave/components/p3a_utils/event_relay.h"
+#include "BnesBrowser/components/p3a_utils/event_relay.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace p3a_utils {

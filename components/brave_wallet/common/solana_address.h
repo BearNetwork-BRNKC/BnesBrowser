@@ -14,7 +14,7 @@
 
 #include "base/containers/span.h"
 #include "base/containers/span_reader.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
 
 namespace brave_wallet {
 

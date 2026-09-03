@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/translate/core/common/brave_translate_features.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_features.h"
 
 #include "base/command_line.h"
-#include "brave/components/translate/core/common/brave_translate_switches.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_switches.h"
 
 namespace translate {
 

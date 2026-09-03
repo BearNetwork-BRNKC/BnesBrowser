@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/webcompat_reporter/browser/webcompat_report_uploader.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_report_uploader.h"
 
 #include <memory>
 #include <optional>
@@ -14,7 +14,7 @@
 #include "base/test/task_environment.h"
 #include "base/test/values_test_util.h"
 #include "base/values.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"
 #include "services/network/test/test_url_loader_factory.h"

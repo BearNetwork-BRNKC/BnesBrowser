@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/pdf_text_extractor.h"
+#include "BnesBrowser/browser/ai_chat/pdf_text_extractor.h"
 
 #include <optional>
 #include <string>
@@ -13,7 +13,7 @@
 #include "base/path_service.h"
 #include "base/test/test_future.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/test/base/in_process_browser_test.h"

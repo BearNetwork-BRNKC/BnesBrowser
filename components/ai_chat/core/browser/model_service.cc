@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
 
 #include <algorithm>
 #include <array>
@@ -32,19 +32,19 @@
 #include "base/strings/string_util.h"
 #include "base/uuid.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer_conversation_api.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer_oai.h"
-#include "brave/components/ai_chat/core/browser/engine/oblivious_http_config_manager.h"
-#include "brave/components/ai_chat/core/browser/model_validator.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer_conversation_api.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer_oai.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oblivious_http_config_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_validator.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/os_crypt/async/browser/os_crypt_async.h"
 #include "components/prefs/pref_registry_simple.h"

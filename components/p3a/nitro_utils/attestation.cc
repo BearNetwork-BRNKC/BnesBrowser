@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/nitro_utils/attestation.h"
+#include "BnesBrowser/components/p3a/nitro_utils/attestation.h"
 
 #include <algorithm>
 #include <cstring>
@@ -22,7 +22,7 @@
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/p3a/nitro_utils/cose.h"
+#include "BnesBrowser/components/p3a/nitro_utils/cose.h"
 #include "components/cbor/reader.h"
 #include "crypto/random.h"
 #include "net/base/url_util.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ntp_background_images/browser/view_counter_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/view_counter_service.h"
 
 #include <memory>
 #include <optional>
@@ -21,27 +21,27 @@
 #include "base/logging.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/ntp_background_images/browser/brave_ntp_custom_background_service.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_data.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
-#include "brave/components/ntp_background_images/common/view_counter_pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/time_period_storage/daily_storage.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/brave_ntp_custom_background_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/time_period_storage/daily_storage.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_pattern.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/ntp_background_images/browser/ntp_p3a_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_p3a_util.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 namespace ntp_background_images {

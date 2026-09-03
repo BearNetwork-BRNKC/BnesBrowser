@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/non_reward/test/non_reward_confirmation_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_builder.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/settings/test/settings_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/non_reward/test/non_reward_confirmation_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/test/settings_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

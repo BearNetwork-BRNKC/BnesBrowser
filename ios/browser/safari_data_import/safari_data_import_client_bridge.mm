@@ -6,7 +6,7 @@
 #import "brave/ios/browser/safari_data_import/safari_data_import_client_bridge.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/safari_data_import/safari_data_import_client_delegate.h"
+#include "BnesBrowser/ios/browser/safari_data_import/safari_data_import_client_delegate.h"
 #include "components/password_manager/core/browser/import/import_results.h"
 
 BraveSafariDataImportClientBridge::BraveSafariDataImportClientBridge() =

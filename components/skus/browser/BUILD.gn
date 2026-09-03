@@ -20,9 +20,9 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/api_request_helper",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//components/keyed_service/core",
     "//components/pref_registry",
     "//components/prefs",
@@ -42,7 +42,7 @@ source_set("test_support") {
   ]
 
   public_deps = [
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/skus/common:mojom",
     "//mojo/public/cpp/bindings",
   ]
 }
@@ -62,9 +62,9 @@ source_set("unit_tests") {
 
   deps = [
     "//base",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//components/prefs:test_support",
     "//components/sync_preferences:test_support",
     "//net:test_support",

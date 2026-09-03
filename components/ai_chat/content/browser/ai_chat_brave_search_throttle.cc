@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/content/browser/ai_chat_brave_search_throttle.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_brave_search_throttle.h"
 
 #include <string>
 #include <type_traits>
@@ -11,11 +11,11 @@
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_tab_helper.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/utils.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/utils.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/permission_controller.h"

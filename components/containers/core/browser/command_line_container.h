@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_CONTAINERS_CORE_BROWSER_COMMAND_LINE_CONTAINER_H_
 #define BRAVE_COMPONENTS_CONTAINERS_CORE_BROWSER_COMMAND_LINE_CONTAINER_H_
 
-#include "brave/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
 
 namespace base {
 class CommandLine;

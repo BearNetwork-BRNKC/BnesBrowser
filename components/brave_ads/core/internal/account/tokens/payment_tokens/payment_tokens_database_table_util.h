@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_ACCOUNT_TOKENS_PAYMENT_TOKENS_PAYMENT_TOKENS_DATABASE_TABLE_UTIL_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_ACCOUNT_TOKENS_PAYMENT_TOKENS_PAYMENT_TOKENS_DATABASE_TABLE_UTIL_H_
 
-#include "brave/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_info.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_info.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace brave_ads::database::table {
 

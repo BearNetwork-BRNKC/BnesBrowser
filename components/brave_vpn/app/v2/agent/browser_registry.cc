@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/app/v2/agent/browser_registry.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/browser_registry.h"
 
 #include <memory>
 #include <utility>
@@ -17,7 +17,7 @@
 #include "base/sequence_checker.h"
 #include "base/strings/strcat.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_vpn/app/v2/agent/browser_host_impl.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/browser_host_impl.h"
 #include "build/build_config.h"
 #include "components/named_mojo_ipc_server/named_mojo_ipc_server.h"
 

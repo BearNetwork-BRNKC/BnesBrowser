@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ntp_background/ntp_background_prefs.h"
+#include "BnesBrowser/browser/ntp_background/ntp_background_prefs.h"
 
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gtest/include/gtest/gtest.h"

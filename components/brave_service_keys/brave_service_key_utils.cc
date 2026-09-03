@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_service_keys/brave_service_key_utils.h"
+#include "BnesBrowser/components/brave_service_keys/brave_service_key_utils.h"
 
 #include <vector>
 
@@ -11,7 +11,7 @@
 #include "base/check.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_service_keys/buildflags.h"
+#include "BnesBrowser/components/brave_service_keys/buildflags.h"
 #include "crypto/hmac.h"
 #include "crypto/sha2.h"
 #include "net/http/http_auth_scheme.h"

@@ -3,33 +3,33 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_is_test.h"
 #include "base/feature_list.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/new_tab/new_tab_shows_options.h"
-#include "brave/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
-#include "brave/browser/ui/webui/brave_sanitized_image_source.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_page_handler.h"
-#include "brave/browser/ui/webui/new_tab_page/top_sites_message_handler.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_new_tab/resources/grit/brave_new_tab_generated_map.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/misc_metrics/new_tab_metrics.h"
-#include "brave/components/ntp_background_images/browser/ntp_custom_images_source.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
-#include "brave/components/ntp_background_images/browser/view_counter_service.h"
-#include "brave/components/ntp_background_images/common/url_constants.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
+#include "BnesBrowser/browser/ui/webui/brave_sanitized_image_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/top_sites_message_handler.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_new_tab/resources/grit/brave_new_tab_generated_map.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/misc_metrics/new_tab_metrics.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_custom_images_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
+#include "BnesBrowser/components/ntp_background_images/browser/view_counter_service.h"
+#include "BnesBrowser/components/ntp_background_images/common/url_constants.h"
 #include "chrome/browser/contextual_search/contextual_search_service_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
@@ -56,15 +56,15 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #endif
 
 using ntp_background_images::NTPCustomImagesSource;

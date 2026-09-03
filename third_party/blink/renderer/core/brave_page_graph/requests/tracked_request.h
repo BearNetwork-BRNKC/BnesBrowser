@@ -8,8 +8,8 @@
 
 #include "base/containers/span.h"
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 #include "third_party/blink/renderer/platform/crypto.h"
 #include "third_party/blink/renderer/platform/loader/fetch/resource.h"
 #include "third_party/blink/renderer/platform/loader/fetch/resource_response.h"

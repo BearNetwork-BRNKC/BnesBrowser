@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_search/brave_search_make_default_javascript_feature.h"
+#include "BnesBrowser/ios/browser/brave_search/brave_search_make_default_javascript_feature.h"
 
 #include <optional>
 #include <string>
@@ -11,7 +11,7 @@
 #include "base/containers/fixed_flat_set.h"
 #include "base/numerics/safe_conversions.h"
 #include "base/values.h"
-#include "brave/ios/browser/brave_search/brave_search_make_default_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_search/brave_search_make_default_tab_helper.h"
 #include "ios/web/public/js_messaging/script_message.h"
 #include "ios/web/public/web_state.h"
 #include "url/gurl.h"

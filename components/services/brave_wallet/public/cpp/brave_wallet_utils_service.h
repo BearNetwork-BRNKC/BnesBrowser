@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_SERVICES_BRAVE_WALLET_PUBLIC_CPP_BRAVE_WALLET_UTILS_SERVICE_H_
 
 #include "base/auto_reset.h"
-#include "brave/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
 #include "mojo/public/cpp/bindings/remote.h"
 
 namespace brave_wallet {

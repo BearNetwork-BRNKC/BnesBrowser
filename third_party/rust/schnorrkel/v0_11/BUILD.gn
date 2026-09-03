@@ -12,22 +12,22 @@ cargo_crate("lib") {
   crate_name = "schnorrkel"
   epoch = "0.11"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/aead.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/batch.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/cert.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/context.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/derive.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/errors.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/keys.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/musig.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/points.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/scalars.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/serdey.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/sign.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/vrf.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/aead.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/batch.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/cert.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/context.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/derive.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/errors.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/keys.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/musig.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/points.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/scalars.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/serdey.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/sign.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/schnorrkel-v0_11/src/vrf.rs",
   ]
   inputs = []
 
@@ -43,16 +43,16 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/arrayref/v0_3:lib",
-    "//brave/third_party/rust/arrayvec/v0_7:lib",
-    "//brave/third_party/rust/curve25519_dalek/v4:lib",
-    "//brave/third_party/rust/getrandom_or_panic/v0_0_3:lib",
-    "//brave/third_party/rust/merlin/v3:lib",
-    "//brave/third_party/rust/rand_core/v0_6:lib",
-    "//brave/third_party/rust/serde_bytes/v0_11:lib",
-    "//brave/third_party/rust/sha2/v0_10:lib",
-    "//brave/third_party/rust/subtle/v2:lib",
-    "//brave/third_party/rust/zeroize/v1:lib",
+    "//BnesBrowser/third_party/rust/arrayref/v0_3:lib",
+    "//BnesBrowser/third_party/rust/arrayvec/v0_7:lib",
+    "//BnesBrowser/third_party/rust/curve25519_dalek/v4:lib",
+    "//BnesBrowser/third_party/rust/getrandom_or_panic/v0_0_3:lib",
+    "//BnesBrowser/third_party/rust/merlin/v3:lib",
+    "//BnesBrowser/third_party/rust/rand_core/v0_6:lib",
+    "//BnesBrowser/third_party/rust/serde_bytes/v0_11:lib",
+    "//BnesBrowser/third_party/rust/sha2/v0_10:lib",
+    "//BnesBrowser/third_party/rust/subtle/v2:lib",
+    "//BnesBrowser/third_party/rust/zeroize/v1:lib",
   ]
   features = [
     "alloc",

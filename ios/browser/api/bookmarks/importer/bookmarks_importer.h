@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
 
 class BookmarksImporter {
  public:

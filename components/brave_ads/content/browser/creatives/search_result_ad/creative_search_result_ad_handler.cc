@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_handler.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_handler.h"
 
 #include <utility>
 
@@ -11,11 +11,11 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/memory/ptr_util.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_mojom_web_page_entities_extractor.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_url_placement_id_extractor.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_mojom_web_page_entities_extractor.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_url_placement_id_extractor.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
 #include "content/public/browser/render_frame_host.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "services/service_manager/public/cpp/interface_provider.h"

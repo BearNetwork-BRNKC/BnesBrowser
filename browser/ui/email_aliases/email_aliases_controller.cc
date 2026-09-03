@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/email_aliases/email_aliases_controller.h"
+#include "BnesBrowser/browser/ui/email_aliases/email_aliases_controller.h"
 
 #include <memory>
 #include <optional>
 
 #include "base/check_is_test.h"
-#include "brave/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
-#include "brave/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/email_aliases/constants.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/email_aliases/constants.h"
 #include "chrome/browser/ui/singleton_tabs.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "chrome/browser/ui/webui/constrained_web_dialog_ui.h"

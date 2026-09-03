@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/swap_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/swap_service.h"
 
 #include <limits>
 #include <optional>
@@ -11,15 +11,15 @@
 
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/to_string.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/json_rpc_response_parser.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/swap_request_helper.h"
-#include "brave/components/brave_wallet/browser/swap_response_parser.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/swap_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/swap_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "net/base/load_flags.h"
 #include "net/base/url_util.h"
 #include "net/http/http_request_headers.h"

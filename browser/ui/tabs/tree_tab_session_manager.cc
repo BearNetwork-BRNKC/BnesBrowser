@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/tabs/tree_tab_session_manager.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_session_manager.h"
 
 #include <map>
 #include <string>
@@ -11,11 +11,11 @@
 #include "base/check.h"
 #include "base/containers/map_util.h"
 #include "base/feature_list.h"
-#include "brave/browser/sessions/brave_session_keys.h"
-#include "brave/browser/ui/tabs/brave_tab_strip_model.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
-#include "brave/components/tabs/public/tree_tab_node_id.h"
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/browser/sessions/brave_session_keys.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_strip_model.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_id.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 #include "chrome/browser/sessions/session_service.h"
 #include "chrome/browser/sessions/session_service_factory.h"
 #include "chrome/browser/ui/tabs/features.h"

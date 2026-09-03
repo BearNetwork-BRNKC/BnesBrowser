@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(enable_brave_ads)
 
@@ -25,13 +25,13 @@ source_set("network") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/mojom",
     "//services/network/public/cpp",
   ]
 
   deps = [
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
     "//components/prefs",
     "//mojo/public/cpp/bindings",
     "//net",
@@ -54,8 +54,8 @@ source_set("unit_tests") {
     ":network",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
     "//components/prefs",
     "//components/prefs:test_support",
     "//net",

@@ -8,7 +8,7 @@
 
 #include <optional>
 
-#include "brave/common/brave_renderer_configuration.mojom.h"
+#include "BnesBrowser/common/brave_renderer_configuration.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "third_party/blink/public/web/web_navigation_type.h"

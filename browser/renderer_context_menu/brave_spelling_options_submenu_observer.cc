@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/renderer_context_menu/brave_spelling_options_submenu_observer.h"
+#include "BnesBrowser/browser/renderer_context_menu/brave_spelling_options_submenu_observer.h"
 
 #include "base/check.h"
 #include "chrome/app/chrome_command_ids.h"

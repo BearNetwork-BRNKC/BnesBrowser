@@ -8,7 +8,7 @@
 
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 
-#include "brave/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
 
 namespace brave_wallet {
 

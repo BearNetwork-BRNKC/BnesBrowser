@@ -10,7 +10,7 @@
 
 #include "base/containers/flat_map.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "testing/gmock/include/gmock/gmock.h"
 

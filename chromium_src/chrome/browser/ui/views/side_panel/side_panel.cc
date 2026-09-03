@@ -6,8 +6,8 @@
 #include "chrome/browser/ui/views/side_panel/side_panel.h"
 
 #include "base/i18n/rtl.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/side_panel/side_panel_utils.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/side_panel/side_panel_utils.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "ui/color/color_provider.h"

@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/containers/core/browser/prefs_registration.h"
 
 #include "base/metrics/field_trial_params.h"
 #include "base/version_info/channel.h"
-#include "brave/components/containers/core/browser/default_containers_list.h"
-#include "brave/components/containers/core/browser/pref_names.h"
-#include "brave/components/containers/core/browser/prefs.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/browser/default_containers_list.h"
+#include "BnesBrowser/components/containers/core/browser/pref_names.h"
+#include "BnesBrowser/components/containers/core/browser/prefs.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "components/pref_registry/pref_registry_syncable.h"
 
 namespace containers {

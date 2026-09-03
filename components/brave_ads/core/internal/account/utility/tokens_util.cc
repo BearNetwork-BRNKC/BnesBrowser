@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/tokens_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/tokens_util.h"
 
 #include <string>
 #include <string_view>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/batch_dleq_proof.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/batch_dleq_proof.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
 
 namespace brave_ads {
 

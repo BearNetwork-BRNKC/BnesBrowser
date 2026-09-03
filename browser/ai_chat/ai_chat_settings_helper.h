@@ -11,12 +11,12 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ai_chat/model_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_credential_manager.h"
-#include "brave/components/ai_chat/core/browser/model_service.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/settings_helper.mojom.h"
+#include "BnesBrowser/browser/ai_chat/model_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_credential_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/settings_helper.mojom.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"
 
 #if BUILDFLAG(IS_ANDROID)

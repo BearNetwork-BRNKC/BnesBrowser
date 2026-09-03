@@ -5,7 +5,7 @@
 
 #include <string>
 
-#include "brave/browser/extensions/api/brave_extensions_api_client.h"
+#include "BnesBrowser/browser/extensions/api/brave_extensions_api_client.h"
 #include "chrome/test/base/chrome_render_view_host_test_harness.h"
 #include "extensions/browser/api/web_request/web_request_info.h"
 #include "testing/gtest/include/gtest/gtest.h"

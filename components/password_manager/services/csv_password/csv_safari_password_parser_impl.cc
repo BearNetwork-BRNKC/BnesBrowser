@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/password_manager/services/csv_password/csv_safari_password_parser_impl.h"
+#include "BnesBrowser/components/password_manager/services/csv_password/csv_safari_password_parser_impl.h"
 
 #include <utility>
 
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
 
 namespace password_manager {
 

@@ -21,15 +21,15 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_shields/core/common:mojom",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/constants",
-    "//brave/components/version_info",
-    "//brave/components/webcompat_reporter/buildflags",
-    "//brave/components/webcompat_reporter/common",
-    "//brave/components/webcompat_reporter/common:mojom",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_shields/core/common:mojom",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/version_info",
+    "//BnesBrowser/components/webcompat_reporter/buildflags",
+    "//BnesBrowser/components/webcompat_reporter/common",
+    "//BnesBrowser/components/webcompat_reporter/common:mojom",
     "//components/component_updater",
     "//components/keyed_service/core",
     "//components/prefs",
@@ -40,9 +40,9 @@ static_library("browser") {
 
   if (!is_ios) {
     deps += [
-      "//brave/common",
-      "//brave/components/brave_referrals/browser",
-      "//brave/components/brave_shields/content/browser",
+      "//BnesBrowser/common",
+      "//BnesBrowser/components/brave_referrals/browser",
+      "//BnesBrowser/components/brave_shields/content/browser",
     ]
   }
 }
@@ -59,10 +59,10 @@ source_set("unittests") {
     ":browser",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/version_info",
-    "//brave/components/webcompat_reporter/common",
-    "//brave/components/webcompat_reporter/common:mojom",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/version_info",
+    "//BnesBrowser/components/webcompat_reporter/common",
+    "//BnesBrowser/components/webcompat_reporter/common:mojom",
     "//components/component_updater:test_support",
     "//components/prefs:test_support",
     "//net",
@@ -72,6 +72,6 @@ source_set("unittests") {
     "//url",
   ]
   if (!is_ios) {
-    deps += [ "//brave/components/brave_shields/content/browser" ]
+    deps += [ "//BnesBrowser/components/brave_shields/content/browser" ]
   }
 }

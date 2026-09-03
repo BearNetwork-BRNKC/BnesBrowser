@@ -9,8 +9,8 @@
 #include <optional>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/email_aliases/email_aliases_metrics.h"
-#include "brave/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_metrics.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
 
 class BrowserView;
 

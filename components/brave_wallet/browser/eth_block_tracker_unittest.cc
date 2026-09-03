@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/eth_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_block_tracker.h"
 
 #include <memory>
 #include <string>
@@ -11,10 +11,10 @@
 #include "base/scoped_observation.h"
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

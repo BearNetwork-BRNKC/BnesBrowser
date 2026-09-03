@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/brave_origin/brave_origin_service_bridge.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_service_bridge.h"
 
 namespace brave_origin {
 class BraveOriginService;

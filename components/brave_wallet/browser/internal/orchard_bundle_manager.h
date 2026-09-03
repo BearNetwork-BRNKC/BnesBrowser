@@ -11,9 +11,9 @@
 #include <optional>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_authorized_bundle.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_unauthorized_bundle.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_authorized_bundle.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_unauthorized_bundle.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet {
 

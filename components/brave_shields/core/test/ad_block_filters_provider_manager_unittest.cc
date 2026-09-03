@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_shields/content/test/test_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/content/test/test_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 class FiltersProviderManagerTestObserver

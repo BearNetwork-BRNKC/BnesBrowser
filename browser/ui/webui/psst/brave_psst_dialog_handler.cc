@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_handler.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_handler.h"
 
 #include <cstddef>
 #include <string>
@@ -11,10 +11,10 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
-#include "brave/browser/psst/psst_ui_delegate_impl.h"
-#include "brave/browser/ui/tabs/public/brave_tab_features.h"
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_ui.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_ui_delegate_impl.h"
+#include "BnesBrowser/browser/ui/tabs/public/brave_tab_features.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_ui.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

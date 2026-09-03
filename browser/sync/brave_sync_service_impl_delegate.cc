@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/sync/brave_sync_service_impl_delegate.h"
+#include "BnesBrowser/browser/sync/brave_sync_service_impl_delegate.h"
 
 #include <algorithm>
 #include <utility>
@@ -12,7 +12,7 @@
 #include "base/functional/callback_helpers.h"
 #include "base/metrics/histogram_functions.h"
 #include "base/task/single_thread_task_runner.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/sync_device_info/device_info_sync_service.h"
 #include "components/sync_device_info/device_info_tracker.h"

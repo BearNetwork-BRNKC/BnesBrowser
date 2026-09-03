@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/node_action.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/build/node_action.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("rust_to_wasm.gni")
 
 # JS / TS imports via `require` or `import` will be added to a list and
@@ -29,30 +29,30 @@ brave_common_web_compile_inputs = [
   rebase_path("../definitions/welcome.d.ts"),
 
   # webpack config changes warrant a re-build of all webpack builds
-  "//brave/build/webpack/webpack.config.ts",
-  "//brave/build/webpack/resolve.ts",
-  "//brave/build/webpack/rules.ts",
-  "//brave/build/webpack/plugins.ts",
-  "//brave/build/webpack/deterministic-output.ts",
-  "//brave/build/webpack/polyfill.ts",
-  "//brave/build/webpack/webpack-ts-transformers.js",
-  "//brave/build/webpack/gen-webpack-grd.ts",
-  "//brave/build/webpack/path-map.ts",
-  "//brave/build/webpack/webpack-plugin-depfile.js",
-  "//brave/build/webpack/xhr-compile-async-wasm-plugin.js",
-  "//brave/build/webpack/plugins/ifdef-loader.ts",
-  "//brave/build/webpack/transpile-web-ui-command.ts",
-  "//brave/build/webpack/verify-webpack-srcs.ts",
-  "//brave/build/webpack/webpack.ts",
+  "//BnesBrowser/build/webpack/webpack.config.ts",
+  "//BnesBrowser/build/webpack/resolve.ts",
+  "//BnesBrowser/build/webpack/rules.ts",
+  "//BnesBrowser/build/webpack/plugins.ts",
+  "//BnesBrowser/build/webpack/deterministic-output.ts",
+  "//BnesBrowser/build/webpack/polyfill.ts",
+  "//BnesBrowser/build/webpack/webpack-ts-transformers.js",
+  "//BnesBrowser/build/webpack/gen-webpack-grd.ts",
+  "//BnesBrowser/build/webpack/path-map.ts",
+  "//BnesBrowser/build/webpack/webpack-plugin-depfile.js",
+  "//BnesBrowser/build/webpack/xhr-compile-async-wasm-plugin.js",
+  "//BnesBrowser/build/webpack/plugins/ifdef-loader.ts",
+  "//BnesBrowser/build/webpack/transpile-web-ui-command.ts",
+  "//BnesBrowser/build/webpack/verify-webpack-srcs.ts",
+  "//BnesBrowser/build/webpack/webpack.ts",
 
   # typescript config changes warrant a re-build of all typescript builds
-  "//brave/tsconfig.json",
-  "//brave/tsconfig-webpack.json",
+  "//BnesBrowser/tsconfig.json",
+  "//BnesBrowser/tsconfig-webpack.json",
 
   # modifying npm dependencies or scripts warrants a re-build of all webpack
   # and typescript builds
-  "$root_gen_dir/brave/components/common/package.json",
-  "//brave/pnpm-lock.yaml",
+  "$root_gen_dir/BnesBrowser/components/common/package.json",
+  "//BnesBrowser/pnpm-lock.yaml",
 ]
 
 # Runs a frontend compiler for the specified entry point(s) and outputs a GRD
@@ -116,7 +116,7 @@ template("transpile_web_ui") {
   }
 
   node_action(target_name) {
-    script = "//brave/build/webpack/transpile-web-ui.ts"
+    script = "//BnesBrowser/build/webpack/transpile-web-ui.ts"
 
     # make sure rebuilds when common files change
     inputs = brave_common_web_compile_inputs
@@ -126,11 +126,11 @@ template("transpile_web_ui") {
     }
 
     deps = [
-      "//brave/components/common:preprocess_package_json",
+      "//BnesBrowser/components/common:preprocess_package_json",
 
       # Ensure chrome://resources/js file and typescript definitions are
       # generated
-      "//brave/build/webpack:generate_tsconfig",
+      "//BnesBrowser/build/webpack:generate_tsconfig",
     ]
 
     if (defined(invoker.deps)) {
@@ -169,7 +169,7 @@ template("transpile_web_ui") {
     if (defined(invoker.output_dir)) {
       gen_output_dir = invoker.output_dir
     } else {
-      gen_output_dir = "$root_gen_dir/brave/web-ui-$resource_name"
+      gen_output_dir = "$root_gen_dir/BnesBrowser/web-ui-$resource_name"
     }
 
     # Output is a GRD that includes all the resources, and a bundle for each
@@ -188,7 +188,7 @@ template("transpile_web_ui") {
     #  - unique name to stamp in GRD file
     #  - depfile summary of input files destination
     args = [
-      "--webpack_context_dir=" + rebase_path("//brave", root_build_dir),
+      "--webpack_context_dir=" + rebase_path("//BnesBrowser", root_build_dir),
       "--root_src_dir=" + rebase_path("//", root_build_dir),
       "--root_gen_dir=" + rebase_path(root_gen_dir, root_build_dir),
       "--output_dir=" + rebase_path(gen_output_dir, root_build_dir),
@@ -216,7 +216,7 @@ template("transpile_web_ui") {
     # support multiple entry points and named bundle JS filename
     foreach(entry_point, invoker.entry_points) {
       args += [ "--entry=" + entry_point[0] + "=./" +
-                rebase_path(entry_point[1], "//brave") ]
+                rebase_path(entry_point[1], "//BnesBrowser") ]
       inputs += [ entry_point[1] ]
     }
 
@@ -261,7 +261,7 @@ template("transpile_web_ui") {
                              "visibility",
                            ])
 
-    import_paths = [ "//brave/components/common/" ]
+    import_paths = [ "//BnesBrowser/components/common/" ]
     if (defined(invoker.imports_from)) {
       import_paths += invoker.imports_from
     }
@@ -294,7 +294,7 @@ template("pack_web_resources") {
     if (defined(invoker.generated_dir)) {
       generated_dir = invoker.generated_dir
     } else {
-      generated_dir = "$root_gen_dir/brave/web-ui-$resource_name"
+      generated_dir = "$root_gen_dir/BnesBrowser/web-ui-$resource_name"
     }
     source = "$generated_dir/$resource_name.grd"
 

@@ -6,11 +6,11 @@
 #include <optional>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/brave_browser_command_controller.h"
-#include "brave/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/brave_browser_command_controller.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/browser/themes/theme_service_factory.h"
 #include "chrome/browser/ui/toolbar/app_menu_icon_controller.h"
@@ -29,9 +29,9 @@
 #include "ui/views/view_utils.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/features.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
 #endif
 
 class BraveAppMenuBrowserTest : public InProcessBrowserTest {

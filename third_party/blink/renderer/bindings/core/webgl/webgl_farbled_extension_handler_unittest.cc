@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
+#include "BnesBrowser/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
 
 #include "base/test/scoped_feature_list.h"
 #include "testing/gtest/include/gtest/gtest.h"

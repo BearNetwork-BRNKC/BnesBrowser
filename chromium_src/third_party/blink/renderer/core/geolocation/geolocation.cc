@@ -12,7 +12,7 @@
 #include "third_party/blink/renderer/core/frame/local_frame_client.h"
 
 #if !BUILDFLAG(IS_ANDROID) && !BUILDFLAG(IS_IOS)
-#include "brave/components/brave_geolocation_permission/common/brave_geolocation_permission.mojom-blink.h"
+#include "BnesBrowser/components/brave_geolocation_permission/common/brave_geolocation_permission.mojom-blink.h"
 #endif
 
 #if !BUILDFLAG(IS_ANDROID) && !BUILDFLAG(IS_IOS)

@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/cosmetic_filters/common/cosmetic_filters.mojom.h"
+#include "BnesBrowser/components/cosmetic_filters/common/cosmetic_filters.mojom.h"
 #include "content/public/browser/render_frame_host_receiver_set.h"
 #include "content/public/browser/web_contents_user_data.h"
 

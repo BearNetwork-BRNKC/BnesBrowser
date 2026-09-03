@@ -11,7 +11,7 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 
 namespace network {
 class SharedURLLoaderFactory;

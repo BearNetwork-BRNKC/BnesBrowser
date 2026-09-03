@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/wallet_bubble_manager_delegate_impl.h"
+#include "BnesBrowser/browser/ui/wallet_bubble_manager_delegate_impl.h"
 
 #include <memory>
 #include <optional>
@@ -13,9 +13,9 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
 #include "chrome/browser/file_select_helper.h"
 #include "chrome/browser/picture_in_picture/picture_in_picture_occlusion_observer.h"
 #include "chrome/browser/picture_in_picture/scoped_picture_in_picture_occlusion_observation.h"

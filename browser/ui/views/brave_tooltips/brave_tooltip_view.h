@@ -7,8 +7,8 @@
 #define BRAVE_BROWSER_UI_VIEWS_BRAVE_TOOLTIPS_BRAVE_TOOLTIP_VIEW_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/brave_tooltips/brave_tooltip.h"
-#include "brave/browser/ui/views/brave_tooltips/brave_tooltip_label_button.h"
+#include "BnesBrowser/browser/ui/brave_tooltips/brave_tooltip.h"
+#include "BnesBrowser/browser/ui/views/brave_tooltips/brave_tooltip_label_button.h"
 #include "ui/base/metadata/metadata_impl_macros.h"
 #include "ui/views/view.h"
 

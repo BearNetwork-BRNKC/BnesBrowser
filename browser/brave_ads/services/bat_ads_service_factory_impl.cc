@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/services/bat_ads_service_factory_impl.h"
+#include "BnesBrowser/browser/brave_ads/services/bat_ads_service_factory_impl.h"
 
 #include <memory>
 #include <utility>
@@ -15,7 +15,7 @@
 #include "base/task/single_thread_task_runner_thread_mode.h"
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
-#include "brave/components/services/bat_ads/bat_ads_service_impl.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_service_impl.h"
 #include "content/public/browser/browser_thread.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"

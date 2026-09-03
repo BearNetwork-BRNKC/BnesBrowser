@@ -8,7 +8,7 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/browser/application_state/application_state_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/application_state_monitor.h"
 #include "chrome/browser/ui/browser_window/public/browser_collection_observer.h"
 
 class BrowserCollection;

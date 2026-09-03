@@ -11,11 +11,11 @@
 
 #include "base/strings/strcat.h"
 #include "base/values.h"
-#include "brave/components/brave_account/endpoint_client/request_types.h"
-#include "brave/components/brave_account/endpoint_client/response.h"
-#include "brave/components/brave_vpn/browser/v2/api/endpoint_constants.h"
-#include "brave/components/brave_vpn/browser/v2/api/error_body.h"
-#include "brave/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_types.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/response.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/endpoint_constants.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/error_body.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
 #include "url/gurl.h"
 #include "url/url_constants.h"
 

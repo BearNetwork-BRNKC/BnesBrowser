@@ -10,8 +10,8 @@
 #include "base/environment.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/common/brave_channel_info_posix.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/common/brave_channel_info_posix.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/version_info/version_info.h"
 

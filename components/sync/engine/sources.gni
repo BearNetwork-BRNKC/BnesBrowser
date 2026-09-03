@@ -4,10 +4,10 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
 brave_components_sync_engine_sources = [
-  "//brave/components/sync/engine/brave_data_type_worker.cc",
-  "//brave/components/sync/engine/brave_data_type_worker.h",
-  "//brave/components/sync/engine/brave_sync_manager_impl.cc",
-  "//brave/components/sync/engine/brave_sync_manager_impl.h",
-  "//brave/components/sync/engine/brave_sync_server_commands.cc",
-  "//brave/components/sync/engine/brave_sync_server_commands.h",
+  "//BnesBrowser/components/sync/engine/brave_data_type_worker.cc",
+  "//BnesBrowser/components/sync/engine/brave_data_type_worker.h",
+  "//BnesBrowser/components/sync/engine/brave_sync_manager_impl.cc",
+  "//BnesBrowser/components/sync/engine/brave_sync_manager_impl.h",
+  "//BnesBrowser/components/sync/engine/brave_sync_server_commands.cc",
+  "//BnesBrowser/components/sync/engine/brave_sync_server_commands.h",
 ]

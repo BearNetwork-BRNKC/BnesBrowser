@@ -10,9 +10,9 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/common/timer/timer.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager_observer.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/timer/timer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 
 namespace base {
 class TimeDelta;

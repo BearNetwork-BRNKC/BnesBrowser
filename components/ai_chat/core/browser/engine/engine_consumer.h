@@ -16,10 +16,10 @@
 #include "base/functional/callback.h"
 #include "base/functional/callback_forward.h"
 #include "base/types/expected.h"
-#include "brave/components/ai_chat/core/browser/associated_content_manager.h"
-#include "brave/components/ai_chat/core/browser/types.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/types.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 
 class PrefService;
 

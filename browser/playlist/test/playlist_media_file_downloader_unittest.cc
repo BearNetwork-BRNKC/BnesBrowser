@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_media_file_downloader.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_media_file_downloader.h"
 
 #include "base/files/scoped_temp_dir.h"
 #include "base/task/single_thread_task_runner.h"
 #include "base/test/bind.h"
 #include "base/test/run_until.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/download/public/common/download_task_runner.h"
 #include "content/public/test/browser_task_environment.h"

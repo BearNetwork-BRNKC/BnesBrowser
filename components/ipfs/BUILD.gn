@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ipfs/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ipfs/buildflags/buildflags.gni")
 
 static_library("ipfs") {
   sources = [
@@ -24,7 +24,7 @@ static_library("ipfs") {
   deps = [
     "buildflags",
     "//base",
-    "//brave/components/filecoin/rs:rust_lib",
+    "//BnesBrowser/components/filecoin/rs:rust_lib",
     "//components/base32",
     "//components/prefs",
     "//net",

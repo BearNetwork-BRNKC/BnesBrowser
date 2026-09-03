@@ -9,10 +9,10 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ai_chat/content_agent_task_provider.h"
-#include "brave/browser/ai_chat/content_agent_tool_provider_factory.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_task_provider.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_tool_provider_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
 #include "chrome/browser/actor/actor_keyed_service.h"
 #include "chrome/browser/actor/actor_task.h"
 #include "components/optimization_guide/content/browser/page_content_proto_provider.h"

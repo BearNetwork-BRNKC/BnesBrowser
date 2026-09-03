@@ -7,8 +7,8 @@
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_DATABASE_DATABASE_INITIALIZE_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_rewards/core/engine/database/database_migration.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_migration.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 transpile_web_ui("rewards_page") {
@@ -12,15 +12,15 @@ transpile_web_ui("rewards_page") {
         rebase_path("rewards_page.tsx"),
       ] ]
   resource_name = "rewards_page"
-  imports_from = [ "//brave/components/brave_rewards/resources/" ]
+  imports_from = [ "//BnesBrowser/components/brave_rewards/resources/" ]
   deps = [
-    "//brave/components/brave_ads/core/mojom:mojom_js",
-    "//brave/components/brave_rewards/core/mojom:webui_js",
+    "//BnesBrowser/components/brave_ads/core/mojom:mojom_js",
+    "//BnesBrowser/components/brave_rewards/core/mojom:webui_js",
   ]
 }
 
 pack_web_resources("rewards_page_generated") {
   resource_name = "rewards_page"
-  output_dir = "$root_gen_dir/brave/components/brave_rewards/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_rewards/resources"
   deps = [ ":rewards_page" ]
 }

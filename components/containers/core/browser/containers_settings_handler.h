@@ -11,7 +11,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "mojo/public/cpp/bindings/remote.h"
 

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/web/de_amp/de_amp_javascript_feature.h"
+#include "BnesBrowser/ios/browser/web/de_amp/de_amp_javascript_feature.h"
 
 #include <optional>
 
@@ -11,7 +11,7 @@
 #include "base/functional/callback.h"
 #include "base/functional/callback_forward.h"
 #include "base/values.h"
-#include "brave/components/de_amp/common/pref_names.h"
+#include "BnesBrowser/components/de_amp/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"

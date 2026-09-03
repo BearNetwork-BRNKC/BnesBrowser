@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/location_bar/brave_search_conversion/promotion_button_controller.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_search_conversion/promotion_button_controller.h"
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_search_conversion/features.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/omnibox/browser/promotion_utils.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search_conversion/features.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_utils.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "chrome/browser/image_fetcher/image_fetcher_service_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_key.h"
@@ -36,7 +36,7 @@
 #include "ui/base/page_transition_types.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/omnibox/browser/leo_provider.h"
+#include "BnesBrowser/components/omnibox/browser/leo_provider.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 namespace {

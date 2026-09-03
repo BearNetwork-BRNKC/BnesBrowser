@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/solana_account_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_account_meta.h"
 
 #include <optional>
 #include <utility>

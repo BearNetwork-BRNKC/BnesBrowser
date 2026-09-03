@@ -13,7 +13,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/values.h"
-#include "brave/browser/workspaces/workspace_metadata.h"
+#include "BnesBrowser/browser/workspaces/workspace_metadata.h"
 #include "components/sessions/core/command_storage_backend.h"
 #include "components/sessions/core/command_storage_manager.h"
 #include "components/sessions/core/session_command.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/browsing_data/brave_clear_browsing_data.h"
+#include "BnesBrowser/browser/browsing_data/brave_clear_browsing_data.h"
 
 #include <vector>
 
@@ -13,7 +13,7 @@
 #include "base/scoped_multi_source_observation.h"
 #include "base/trace_event/trace_event.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/browsing_data/chrome_browsing_data_remover_constants.h"
 #include "chrome/browser/lifetime/browser_shutdown.h"

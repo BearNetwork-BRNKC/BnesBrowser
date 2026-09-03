@@ -8,36 +8,36 @@
 
 #include <memory>
 
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "components/omnibox/browser/searchbox.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/mojom/rewards_page.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_page.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/bookmarks.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/history.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/bookmarks.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/history.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
 #endif
-#include "brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
+#include "BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "ui/webui/mojo_web_ui_controller.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/url_context.h"
+#include "BnesBrowser/browser/net/url_context.h"
 
 #include <memory>
 #include <string>
 
 #include "base/notreached.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/components/brave_shields/content/browser/brave_shields_util.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/components/brave_shields/content/browser/brave_shields_util.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/render_frame_host.h"

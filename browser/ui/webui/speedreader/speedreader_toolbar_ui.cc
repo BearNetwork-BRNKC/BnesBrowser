@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
+#include "BnesBrowser/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
 
 #include <utility>
 
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/speedreader/common/constants.h"
-#include "brave/components/speedreader/common/features.h"
-#include "brave/components/speedreader/resources/panel/grit/brave_speedreader_toolbar_generated_map.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/speedreader/common/constants.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/resources/panel/grit/brave_speedreader_toolbar_generated_map.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/prefs/prefs_tab_helper.h"
@@ -27,7 +27,7 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 SpeedreaderToolbarUI::SpeedreaderToolbarUI(content::WebUI* web_ui)

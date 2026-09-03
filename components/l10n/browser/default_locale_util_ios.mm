@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/l10n/browser/default_locale_util.h"
+#include "BnesBrowser/components/l10n/browser/default_locale_util.h"
 
 #import <Foundation/Foundation.h>
 

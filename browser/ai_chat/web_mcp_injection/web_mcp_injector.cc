@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
+#include "BnesBrowser/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
 
 #include <string>
 
@@ -13,8 +13,8 @@
 #include "base/strings/strcat.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/components/web_mcp/core/browser/web_mcp_injection_rule.h"
-#include "brave/components/web_mcp/core/browser/web_mcp_rule_registry.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_injection_rule.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_rule_registry.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/browser/web_contents.h"
 #include "third_party/blink/public/common/associated_interfaces/associated_interface_provider.h"

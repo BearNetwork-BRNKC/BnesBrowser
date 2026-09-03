@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/browser/utils.h"
+#include "BnesBrowser/components/query_filter/browser/utils.h"
 
 #include <optional>
 #include <string>
@@ -16,9 +16,9 @@
 #include "base/containers/span.h"
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
-#include "brave/components/query_filter/browser/query_filter_data.h"
-#include "brave/components/query_filter/common/features.h"
-#include "brave/components/query_filter/common/internal/schema_utils.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_data.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
+#include "BnesBrowser/components/query_filter/common/internal/schema_utils.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "third_party/re2/src/re2/re2.h"
 

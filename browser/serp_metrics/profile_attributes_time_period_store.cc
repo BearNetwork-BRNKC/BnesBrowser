@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/profile_attributes_time_period_store.h"
+#include "BnesBrowser/browser/serp_metrics/profile_attributes_time_period_store.h"
 
 #include <utility>
 

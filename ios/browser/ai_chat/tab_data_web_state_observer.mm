@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ai_chat/tab_data_web_state_observer.h"
+#include "BnesBrowser/ios/browser/ai_chat/tab_data_web_state_observer.h"
 
 #include "base/check.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
 #include "ios/web/public/navigation/navigation_context.h"
 #include "ios/web/public/navigation/navigation_item.h"
 #include "ios/web/public/navigation/navigation_manager.h"

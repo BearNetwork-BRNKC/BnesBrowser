@@ -12,35 +12,35 @@ cargo_crate("lib") {
   crate_name = "num_bigint"
   epoch = "0.3"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/addition.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/arbitrary.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/bits.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/convert.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/division.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/multiplication.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/power.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/serde.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/shift.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/subtraction.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigrand.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/addition.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/arbitrary.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/bits.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/convert.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/division.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/iter.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/monty.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/multiplication.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/power.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/serde.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/shift.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/subtraction.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/macros.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/addition.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/arbitrary.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/bits.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/convert.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/division.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/multiplication.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/power.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/serde.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/shift.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigint/subtraction.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/bigrand.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/addition.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/arbitrary.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/bits.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/convert.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/division.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/iter.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/monty.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/multiplication.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/power.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/serde.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/shift.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/biguint/subtraction.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/src/macros.rs",
   ]
   inputs = []
 
@@ -55,16 +55,16 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/num_integer/v0_1:lib",
-    "//brave/third_party/rust/num_traits/v0_2:lib",
+    "//BnesBrowser/third_party/rust/num_integer/v0_1:lib",
+    "//BnesBrowser/third_party/rust/num_traits/v0_2:lib",
   ]
-  build_deps = [ "//brave/third_party/rust/autocfg/v1:buildrs_support" ]
+  build_deps = [ "//BnesBrowser/third_party/rust/autocfg/v1:buildrs_support" ]
   features = [
     "default",
     "std",
   ]
-  build_root = "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/build.rs"
-  build_sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/build.rs" ]
+  build_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/build.rs"
+  build_sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/num-bigint-v0_3/build.rs" ]
   rustenv = []
   rustflags = []
   if (target_cpu == "arm64" || target_cpu == "x64") {

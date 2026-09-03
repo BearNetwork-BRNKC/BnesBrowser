@@ -7,7 +7,7 @@ import("//build/rust/rust_static_library.gni")
 
 group("rust") {
   # This should only be used by internal wallet code
-  visibility = [ "//brave/components/brave_wallet/browser/internal:*" ]
+  visibility = [ "//BnesBrowser/components/brave_wallet/browser/internal:*" ]
 
   public_deps = [ ":orchard_headers" ]
 
@@ -16,7 +16,7 @@ group("rust") {
 
 group("test_support") {
   visibility =
-      [ "//brave/components/brave_wallet/browser/internal:test_support" ]
+      [ "//BnesBrowser/components/brave_wallet/browser/internal:test_support" ]
 
   public_deps = [ ":test_support_headers" ]
   deps = [ ":test_support_impl" ]
@@ -25,7 +25,7 @@ group("test_support") {
 source_set("test_support_headers") {
   visibility = [
     ":*",
-    "//brave/components/brave_wallet/browser/internal:test_support",
+    "//BnesBrowser/components/brave_wallet/browser/internal:test_support",
   ]
   sources = [
     "orchard_test_utils.h",
@@ -63,9 +63,9 @@ source_set("orchard_headers") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_wallet/browser/internal/orchard_storage:headers",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/brave_wallet/browser/internal/orchard_storage:headers",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
   ]
 }
 
@@ -93,7 +93,7 @@ source_set("orchard_impl") {
     ":orchard_headers",
     ":rust_lib",
     "//base",
-    "//brave/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common",
     "//build/rust:cxx_cppdeps",
   ]
 }
@@ -104,7 +104,7 @@ source_set("cxx_interfaces") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common",
     "//build/rust:cxx_cppdeps",
   ]
 }
@@ -125,16 +125,16 @@ rust_static_library("rust_lib") {
     "librustzcash:zcash_client_backend",
     "librustzcash:zcash_primitives",
     "librustzcash:zcash_protocol",
-    "//brave/components/brave_wallet/common:rust_lib",
-    "//brave/third_party/rust/byteorder/v1:lib",
-    "//brave/third_party/rust/incrementalmerkletree/v0_8:lib",
-    "//brave/third_party/rust/memuse/v0_2:lib",
-    "//brave/third_party/rust/nonempty/v0_11:lib",
-    "//brave/third_party/rust/orchard/v0_15:lib",
-    "//brave/third_party/rust/pasta_curves/v0_5:lib",
-    "//brave/third_party/rust/rand/v0_8:lib",
-    "//brave/third_party/rust/shardtree/v0_7:lib",
-    "//brave/third_party/rust/zcash_note_encryption/v0_4:lib",
+    "//BnesBrowser/components/brave_wallet/common:rust_lib",
+    "//BnesBrowser/third_party/rust/byteorder/v1:lib",
+    "//BnesBrowser/third_party/rust/incrementalmerkletree/v0_8:lib",
+    "//BnesBrowser/third_party/rust/memuse/v0_2:lib",
+    "//BnesBrowser/third_party/rust/nonempty/v0_11:lib",
+    "//BnesBrowser/third_party/rust/orchard/v0_15:lib",
+    "//BnesBrowser/third_party/rust/pasta_curves/v0_5:lib",
+    "//BnesBrowser/third_party/rust/rand/v0_8:lib",
+    "//BnesBrowser/third_party/rust/shardtree/v0_7:lib",
+    "//BnesBrowser/third_party/rust/zcash_note_encryption/v0_4:lib",
   ]
 
   public_deps = [ ":cxx_interfaces" ]

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service_observer.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_observer.h"
 
 #include <memory>
 
-#include "brave/components/brave_vpn/browser/test/fake_brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/browser/test/fake_brave_vpn_service.h"
 #include "content/public/test/browser_task_environment.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -13,7 +13,7 @@
 #include <vector>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_ads/core/internal/ml/transformation/transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/transformation.h"
 
 namespace brave_ads {
 

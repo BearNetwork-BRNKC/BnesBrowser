@@ -7,7 +7,7 @@
 
 #include "base/strings/string_number_conversions.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #include "chrome/browser/ui/webui/help/version_updater.h"
 #include "chrome/browser/ui/webui/help/version_updater_mac.h"
 #include "testing/gtest/include/gtest/gtest.h"

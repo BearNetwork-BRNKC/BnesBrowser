@@ -3,11 +3,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 import("//printing/buildflags/buildflags.gni")
 
@@ -19,11 +19,11 @@ source_set("internal") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/email_aliases/buildflags",
-    "//brave/components/playlist/core/common/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/email_aliases/buildflags",
+    "//BnesBrowser/components/playlist/core/common/buildflags",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/tab_group_sync:factories",
     "//chrome/browser/ui/browser_window",
@@ -32,33 +32,33 @@ source_set("internal") {
 
   if (enable_ai_chat && toolkit_views) {
     deps += [
-      "//brave/browser/ai_chat",
-      "//brave/browser/ui/views/side_panel/ai_chat",
-      "//brave/components/ai_chat/core/common",
+      "//BnesBrowser/browser/ai_chat",
+      "//BnesBrowser/browser/ui/views/side_panel/ai_chat",
+      "//BnesBrowser/components/ai_chat/core/common",
     ]
   }
 
   if (enable_playlist) {
     deps += [
-      "//brave/components/playlist/core/browser",
-      "//brave/components/playlist/core/common",
+      "//BnesBrowser/components/playlist/core/browser",
+      "//BnesBrowser/components/playlist/core/common",
     ]
   }
 
   if (toolkit_views) {
-    deps += [ "//brave/browser/ui/sidebar" ]
+    deps += [ "//BnesBrowser/browser/ui/sidebar" ]
   }
 
   if (!is_android) {
     deps += [
-      "//brave/browser/ui/focus_mode",
-      "//brave/browser/ui/screenshot",
-      "//brave/browser/ui/tabs:tab_menu",
-      "//brave/browser/ui/tabs:tabs_public",
-      "//brave/browser/ui/tabs:tree_tab_session_manager",
-      "//brave/browser/ui/views/page_info",
-      "//brave/browser/ui/views/toolbar:screenshot",
-      "//brave/browser/ui/views/workspaces",
+      "//BnesBrowser/browser/ui/focus_mode",
+      "//BnesBrowser/browser/ui/screenshot",
+      "//BnesBrowser/browser/ui/tabs:tab_menu",
+      "//BnesBrowser/browser/ui/tabs:tabs_public",
+      "//BnesBrowser/browser/ui/tabs:tree_tab_session_manager",
+      "//BnesBrowser/browser/ui/views/page_info",
+      "//BnesBrowser/browser/ui/views/toolbar:screenshot",
+      "//BnesBrowser/browser/ui/views/workspaces",
       "//chrome/browser/ui/side_panel",
       "//chrome/browser/ui/side_panel:side_panel_views_dependent",
       "//chrome/browser/ui/tabs:features",
@@ -67,24 +67,24 @@ source_set("internal") {
 
   if (enable_print_preview) {
     deps += [
-      "//brave/browser/screenshot",
+      "//BnesBrowser/browser/screenshot",
       "//chrome/browser/ui/webui/print_preview",
     ]
   }
 
   if (enable_brave_rewards) {
-    deps += [ "//brave/browser/brave_rewards" ]
+    deps += [ "//BnesBrowser/browser/brave_rewards" ]
   }
 
   if (enable_brave_vpn) {
-    deps += [ "//brave/browser/ui/brave_vpn" ]
+    deps += [ "//BnesBrowser/browser/ui/brave_vpn" ]
   }
 
   if (enable_email_aliases) {
     deps += [
-      "//brave/browser/email_aliases",
-      "//brave/browser/ui/email_aliases",
-      "//brave/components/email_aliases:features",
+      "//BnesBrowser/browser/email_aliases",
+      "//BnesBrowser/browser/ui/email_aliases",
+      "//BnesBrowser/components/email_aliases:features",
     ]
   }
 }

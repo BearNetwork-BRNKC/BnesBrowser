@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/speedreader/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 import("//extensions/buildflags/buildflags.gni")
 
@@ -22,11 +22,11 @@ source_set("brave_actions") {
   ]
 
   deps = [
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/browser/brave_shields",
-    "//brave/components/brave_origin/buildflags",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/browser/brave_shields",
+    "//BnesBrowser/components/brave_origin/buildflags",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser/ui/extensions",
     "//chrome/browser/ui/tabs:tab_strip",
     "//chrome/browser/ui/views/bubble",
@@ -34,6 +34,6 @@ source_set("brave_actions") {
   ]
 
   if (enable_speedreader) {
-    deps += [ "//brave/browser/ui/speedreader" ]
+    deps += [ "//BnesBrowser/browser/ui/speedreader" ]
   }
 }

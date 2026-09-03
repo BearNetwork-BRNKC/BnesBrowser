@@ -6,7 +6,7 @@
 #ifndef BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_GRAPH_ITEM_NODE_HTML_NODE_HTML_TEXT_H_
 #define BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_GRAPH_ITEM_NODE_HTML_NODE_HTML_TEXT_H_
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html.h"
 #include "third_party/blink/renderer/platform/wtf/casting.h"
 #include "third_party/blink/renderer/platform/wtf/text/wtf_string.h"
 

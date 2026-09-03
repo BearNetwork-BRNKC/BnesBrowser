@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/internal/orchard_sync_state.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_sync_state.h"
 
 #include <utility>
 
 #include "base/files/scoped_temp_dir.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_wallet/browser/internal/orchard_storage/orchard_shard_tree_types.h"
-#include "brave/components/brave_wallet/browser/internal/orchard_test_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_testing_shard_tree.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_storage/orchard_shard_tree_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_testing_shard_tree.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/solana_message.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_message.h"
 
 #include <algorithm>
 #include <bit>
@@ -15,12 +15,12 @@
 #include "base/containers/span_reader.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/solana_compiled_instruction.h"
-#include "brave/components/brave_wallet/browser/solana_instruction_builder.h"
-#include "brave/components/brave_wallet/browser/solana_instruction_data_decoder.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/solana_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_compiled_instruction.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_builder.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_data_decoder.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_utils.h"
 
 namespace brave_wallet {
 

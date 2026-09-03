@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/omnibox/browser/open_here_action.h"
+#include "BnesBrowser/components/omnibox/browser/open_here_action.h"
 
 #include <numeric>
 #include <utility>
@@ -14,7 +14,7 @@
 #include "ui/base/window_open_disposition.h"
 
 #if defined(SUPPORT_PEDALS_VECTOR_ICONS)
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #endif
 
 OpenHereAction::OpenHereAction(GURL url)

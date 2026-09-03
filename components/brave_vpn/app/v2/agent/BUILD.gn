@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 if (is_mac) {
   import("//build/config/mac/rules.gni")
   import("//build/util/branding.gni")
@@ -46,14 +46,14 @@ source_set("core") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_vpn/common/mojom:agent",
+    "//BnesBrowser/components/brave_vpn/common/mojom:agent",
     "//components/named_mojo_ipc_server",
     "//mojo/public/cpp/bindings",
     "//mojo/public/cpp/platform",
   ]
 
   deps = [
-    "//brave/components/brave_vpn/common/v2:common",
+    "//BnesBrowser/components/brave_vpn/common/v2:common",
     "//mojo/core/embedder",
   ]
 }
@@ -74,8 +74,8 @@ executable("agent") {
     ":core",
     "//base",
     "//base:base_static",
-    "//brave/components/brave_vpn/app/v2/shared",
-    "//brave/components/brave_vpn/app/v2/shared:crashrpt",
+    "//BnesBrowser/components/brave_vpn/app/v2/shared",
+    "//BnesBrowser/components/brave_vpn/app/v2/shared:crashrpt",
   ]
 
   if (is_mac) {
@@ -111,8 +111,8 @@ if (is_mac) {
       ":core",
       "//base",
       "//base:base_static",
-      "//brave/components/brave_vpn/app/v2/shared",
-      "//brave/components/brave_vpn/app/v2/shared:crashrpt",
+      "//BnesBrowser/components/brave_vpn/app/v2/shared",
+      "//BnesBrowser/components/brave_vpn/app/v2/shared:crashrpt",
     ]
 
     ldflags = []
@@ -169,7 +169,7 @@ source_set("test_support") {
   public_deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_vpn/common/mojom:agent",
+    "//BnesBrowser/components/brave_vpn/common/mojom:agent",
     "//mojo/public/cpp/bindings",
   ]
 }
@@ -190,7 +190,7 @@ source_set("unit_tests") {
     ":test_support",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_vpn/common/mojom:agent",
+    "//BnesBrowser/components/brave_vpn/common/mojom:agent",
     "//components/named_mojo_ipc_server:test_support",
     "//mojo/public/cpp/bindings",
     "//testing/gtest",

@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/ios/browser/ui/webui/sanitized_image_source.h"
+#include "BnesBrowser/ios/browser/ui/webui/sanitized_image_source.h"
 #include "ios/web/public/webui/url_data_source_ios.h"
 #include "url/gurl.h"
 

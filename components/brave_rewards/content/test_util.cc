@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/content/test_util.h"
+#include "BnesBrowser/components/brave_rewards/content/test_util.h"
 
 #include <utility>
 
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
 #include "chrome/browser/bitmap_fetcher/bitmap_fetcher_service_factory.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/test/base/testing_profile.h"
@@ -16,7 +16,7 @@
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 #endif
 
 namespace brave_rewards {

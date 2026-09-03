@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/ios/browser/api/profile/profile_bridge.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge.h"
 
 class ProfileIOS;
 

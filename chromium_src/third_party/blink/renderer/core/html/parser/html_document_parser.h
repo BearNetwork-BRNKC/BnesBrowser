@@ -8,7 +8,7 @@
 
 #include <type_traits>
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 
 #define AsHTMLParserScriptRunnerHostForTesting                                 \
   NotUsed();                                                                   \

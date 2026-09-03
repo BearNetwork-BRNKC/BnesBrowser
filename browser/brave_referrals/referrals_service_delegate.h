@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_REFERRALS_REFERRALS_SERVICE_DELEGATE_H_
 #define BRAVE_BROWSER_BRAVE_REFERRALS_REFERRALS_SERVICE_DELEGATE_H_
 
-#include "brave/components/brave_referrals/browser/brave_referrals_service.h"
+#include "BnesBrowser/components/brave_referrals/browser/brave_referrals_service.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/browser/profiles/profile_manager_observer.h"
 

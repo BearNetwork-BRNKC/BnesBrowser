@@ -6,14 +6,14 @@
 import("//components/signin/features.gni")
 
 brave_components_signin_internal_identity_manager_sources = [
-  "//brave/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.cc",
-  "//brave/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h",
+  "//BnesBrowser/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.cc",
+  "//BnesBrowser/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h",
 ]
 
 # These upstream sources are only included if dice support is enabled
 if (enable_dice_support) {
   brave_components_signin_internal_identity_manager_sources += [
-    "//brave/components/signin/internal/identity_manager/brave_mutable_profile_oauth2_token_service_delegate.cc",
-    "//brave/components/signin/internal/identity_manager/brave_mutable_profile_oauth2_token_service_delegate.h",
+    "//BnesBrowser/components/signin/internal/identity_manager/brave_mutable_profile_oauth2_token_service_delegate.cc",
+    "//BnesBrowser/components/signin/internal/identity_manager/brave_mutable_profile_oauth2_token_service_delegate.h",
   ]
 }

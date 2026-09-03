@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/initialization_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/initialization_manager.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/engine/contribution/contribution.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
-#include "brave/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
-#include "brave/components/brave_rewards/core/engine/publisher/publisher.h"
-#include "brave/components/brave_rewards/core/engine/uphold/uphold.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/contribution/contribution.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
 
 namespace brave_rewards::internal {
 

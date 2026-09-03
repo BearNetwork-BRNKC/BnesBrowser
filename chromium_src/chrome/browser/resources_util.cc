@@ -7,7 +7,7 @@
 
 #if !BUILDFLAG(IS_ANDROID)
 
-#include "brave/grit/brave_theme_resources_map.h"
+#include "BnesBrowser/grit/brave_theme_resources_map.h"
 
 #define BRAVE_RESOURCES_UTIL                          \
   for (const auto& resource : kBraveThemeResources) { \

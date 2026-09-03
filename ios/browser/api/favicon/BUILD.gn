@@ -13,8 +13,8 @@ source_set("favicon") {
 
   deps = [
     "//base",
-    "//brave/ios/browser/api/web/web_state",
-    "//brave/ios/browser/favicon",
+    "//BnesBrowser/ios/browser/api/web/web_state",
+    "//BnesBrowser/ios/browser/favicon",
     "//components/favicon/core",
     "//components/favicon_base",
     "//components/keyed_service/core",

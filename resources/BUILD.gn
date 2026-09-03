@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//build/config/compute_inputs_for_analyze.gni")
 
 action("brave_resource_ids") {

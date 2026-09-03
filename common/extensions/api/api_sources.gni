@@ -3,13 +3,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/web_discovery/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/web_discovery/buildflags/buildflags.gni")
 
 brave_extensions_api_uncompiled_sources = []
 brave_extensions_api_root_namespace = "extensions::api::%(namespace)s"
 brave_extensions_api_schema_include_rules =
-    "//brave/common/extensions/api:extensions::api::%(namespace)s"
+    "//BnesBrowser/common/extensions/api:extensions::api::%(namespace)s"
 
 schema_sources_ = [ "brave_theme.json" ]
 

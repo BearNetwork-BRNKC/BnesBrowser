@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_web_ui_controller_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_web_ui_controller_factory.h"
 
 #include <memory>
 #include <string>
@@ -12,18 +12,18 @@
 #include "base/feature_list.h"
 #include "base/memory/ptr_util.h"
 #include "base/no_destructor.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/ntp_background/view_counter_service_factory.h"
-#include "brave/browser/ui/webui/skus_internals_ui.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/ntp_background/view_counter_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/skus_internals_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
@@ -35,43 +35,43 @@
 #include "url/gurl.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
-#include "brave/browser/ui/webui/welcome_page/brave_welcome_ui.h"
-#include "brave/components/commands/common/features.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/welcome_page/brave_welcome_ui.h"
+#include "BnesBrowser/components/commands/common/features.h"
 #include "chrome/browser/regional_capabilities/regional_capabilities_service_factory.h"
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/browser/ui/webui/brave_news_internals/brave_news_internals_ui.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_news_internals/brave_news_internals_ui.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_NEWS)
 #endif
 
-#include "brave/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/ui/webui/playlist_ui.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/browser/ui/webui/playlist_ui.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/ui/webui/tor_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/tor_internals_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_AI_CHAT_AGENT_PROFILE)
-#include "brave/browser/ui/webui/ai_chat/ai_chat_agent_new_tab_page_ui.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_agent_new_tab_page_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_ui.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
-#include "brave/browser/ui/webui/brave_rewards_internals_ui.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards_internals_ui.h"
 #endif
 
 using content::WebUI;

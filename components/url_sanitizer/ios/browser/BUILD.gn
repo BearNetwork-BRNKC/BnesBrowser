@@ -11,7 +11,7 @@ source_set("browser") {
   ]
   deps = [
     "//base",
-    "//brave/components/url_sanitizer/core/browser",
+    "//BnesBrowser/components/url_sanitizer/core/browser",
     "//net",
     "//url",
   ]

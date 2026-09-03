@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/sidebar/sidebar_item_add_button.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_item_add_button.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/sidebar/sidebar_add_item_bubble_delegate_view.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_add_item_bubble_delegate_view.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/base/metadata/metadata_impl_macros.h"

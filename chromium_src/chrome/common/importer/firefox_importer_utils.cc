@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/files/file_path.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_ANDROID)

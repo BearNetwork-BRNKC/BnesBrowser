@@ -7,9 +7,9 @@
 
 #include "base/test/run_until.h"
 #include "base/types/expected.h"
-#include "brave/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "chrome/browser/ui/tabs/tab_enums.h"
 #include "content/public/test/browser_test.h"
 

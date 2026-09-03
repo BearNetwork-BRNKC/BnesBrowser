@@ -15,9 +15,9 @@
 #include "base/containers/span.h"
 #include "base/observer_list.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_info.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 
 class GURL;
 

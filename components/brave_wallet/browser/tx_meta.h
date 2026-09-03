@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/time/time.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "url/origin.h"
 
 namespace brave_wallet {

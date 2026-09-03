@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tools/target_util.h"
+#include "BnesBrowser/browser/ai_chat/tools/target_util.h"
 
 #include "base/test/values_test_util.h"
 #include "base/values.h"

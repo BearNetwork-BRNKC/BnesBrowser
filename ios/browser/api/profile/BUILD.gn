@@ -11,7 +11,7 @@ source_set("profile") {
   ]
   deps = [
     "//base",
-    "//brave/ios/components/prefs",
+    "//BnesBrowser/ios/components/prefs",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/profile",
   ]

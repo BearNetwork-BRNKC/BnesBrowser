@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/content/rewards_p3a.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_p3a.h"
 
 #include "base/check_op.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/time_period_storage/monthly_storage.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/time_period_storage/monthly_storage.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif
 
 namespace brave_rewards::p3a {

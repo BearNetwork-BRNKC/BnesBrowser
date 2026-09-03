@@ -13,8 +13,8 @@
 #include "base/functional/callback.h"
 #include "base/observer_list_types.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 #include "url/origin.h"
 
 namespace content {

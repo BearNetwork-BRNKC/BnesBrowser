@@ -10,7 +10,7 @@
 
 #include "base/location.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/timer/timer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/timer/timer.h"
 
 namespace brave_ads {
 

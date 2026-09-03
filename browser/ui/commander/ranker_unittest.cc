@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/commander/ranker.h"
+#include "BnesBrowser/browser/ui/commander/ranker.h"
 
 #include <memory>
 #include <utility>
 #include <vector>
 
-#include "brave/browser/ui/commander/command_source.h"
-#include "brave/components/commander/common/pref_names.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
+#include "BnesBrowser/components/commander/common/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"

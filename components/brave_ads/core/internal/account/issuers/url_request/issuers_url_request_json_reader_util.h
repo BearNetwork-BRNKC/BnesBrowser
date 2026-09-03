@@ -8,7 +8,7 @@
 
 #include <optional>
 
-#include "brave/components/brave_ads/core/internal/account/issuers/token_issuers/token_issuer_value_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/token_issuers/token_issuer_value_util.h"
 
 namespace base {
 class DictValue;

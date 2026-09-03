@@ -3,13 +3,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/ntp_background_images/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ntp_background_images/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 assert(!is_android)
@@ -18,8 +18,8 @@ assert(enable_custom_background)
 mojom("mojom") {
   sources = [ "brave_new_tab_page.mojom" ]
   deps = [
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
   ]
   enabled_features = []
   if (enable_brave_talk) {
@@ -51,14 +51,14 @@ source_set("brave_new_tab_page_refresh") {
 
   deps = [
     ":mojom",
-    "//brave/browser:browser_process",
-    "//brave/browser/brave_stats:first_run_util",
-    "//brave/browser/misc_metrics",
-    "//brave/browser/ntp_background",
-    "//brave/browser/resources/brave_new_tab_page_refresh:generated_resources",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/browser/brave_stats:first_run_util",
+    "//BnesBrowser/browser/misc_metrics",
+    "//BnesBrowser/browser/ntp_background",
+    "//BnesBrowser/browser/resources/brave_new_tab_page_refresh:generated_resources",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
     "//chrome/browser/new_tab_page",
     "//chrome/browser/ui/webui:plural_string_handler",
 
@@ -66,24 +66,24 @@ source_set("brave_new_tab_page_refresh") {
     # types since typescript cannnot yet conditionally import during typecheck.
     # TODO(https://github.com/brave/brave-browser/issues/53190): remove when
     # fixed.
-    "//brave/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
 
     # Unconditional for gn check since the mojom-forward header is included
     # in brave_new_tab_page_ui.h (guarded by ENABLE_BRAVE_NEWS buildflag).
-    "//brave/components/brave_news/common:mojom",
-    "//brave/components/brave_news/common/buildflags",
-    "//brave/components/brave_perf_predictor/common",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core/mojom:webui",
-    "//brave/components/brave_search_conversion",
-    "//brave/components/brave_talk/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/misc_metrics",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/common",
-    "//brave/components/resources:static_resources",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/components/brave_news/common:mojom",
+    "//BnesBrowser/components/brave_news/common/buildflags",
+    "//BnesBrowser/components/brave_perf_predictor/common",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core/mojom:webui",
+    "//BnesBrowser/components/brave_search_conversion",
+    "//BnesBrowser/components/brave_talk/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/components/resources:static_resources",
+    "//BnesBrowser/components/resources:strings",
     "//chrome/app:generated_resources",
     "//chrome/browser:browser_process",
     "//chrome/browser:browser_public_dependencies",
@@ -115,40 +115,40 @@ source_set("brave_new_tab_page_refresh") {
 
   if (enable_brave_rewards) {
     deps += [
-      "//brave/browser/brave_rewards",
-      "//brave/browser/brave_rewards:util",
+      "//BnesBrowser/browser/brave_rewards",
+      "//BnesBrowser/browser/brave_rewards:util",
     ]
   }
 
   if (enable_ai_chat) {
     deps += [
-      "//brave/browser/ai_chat",
-      "//brave/browser/ui/webui/ai_chat",
-      "//brave/components/ai_chat/core/browser",
-      "//brave/components/ai_chat/core/common",
+      "//BnesBrowser/browser/ai_chat",
+      "//BnesBrowser/browser/ui/webui/ai_chat",
+      "//BnesBrowser/components/ai_chat/core/browser",
+      "//BnesBrowser/components/ai_chat/core/common",
     ]
   }
 
   if (enable_brave_ads) {
-    deps += [ "//brave/browser/brave_ads" ]
+    deps += [ "//BnesBrowser/browser/brave_ads" ]
   }
 
   if (enable_brave_vpn) {
     deps += [
-      "//brave/browser/ui/brave_vpn",
-      "//brave/components/brave_vpn/browser",
-      "//brave/components/brave_vpn/common",
+      "//BnesBrowser/browser/ui/brave_vpn",
+      "//BnesBrowser/components/brave_vpn/browser",
+      "//BnesBrowser/components/brave_vpn/common",
     ]
   }
 
   if (enable_brave_talk) {
-    deps += [ "//brave/components/brave_talk" ]
+    deps += [ "//BnesBrowser/components/brave_talk" ]
   }
 
   if (enable_brave_news) {
     deps += [
-      "//brave/browser/brave_news",
-      "//brave/components/brave_news/browser",
+      "//BnesBrowser/browser/brave_news",
+      "//BnesBrowser/components/brave_news/browser",
     ]
   }
 }
@@ -164,12 +164,12 @@ source_set("browser_tests") {
   deps = [
     ":brave_new_tab_page_refresh",
     "//base",
-    "//brave/browser/extensions:test_support",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_news/common/buildflags",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/browser/extensions:test_support",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_news/common/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
     "//chrome/browser/ui",
     "//chrome/common",
     "//chrome/test:test_support",
@@ -186,8 +186,8 @@ source_set("browser_tests") {
     sources += [ "ntp_ai_chat_browsertest.cc" ]
 
     deps += [
-      "//brave/components/ai_chat/core/common",
-      "//brave/components/brave_search_conversion",
+      "//BnesBrowser/components/ai_chat/core/common",
+      "//BnesBrowser/components/brave_search_conversion",
       "//chrome/browser/profiles:profile",
       "//components/prefs",
     ]
@@ -197,11 +197,11 @@ source_set("browser_tests") {
     sources += [ "new_tab_takeover_browsertest.cc" ]
 
     deps += [
-      "//brave/browser/brave_ads",
-      "//brave/components/brave_ads/core",
-      "//brave/components/brave_ads/core/browser/service:test_support",
-      "//brave/components/ntp_background_images/browser",
-      "//brave/components/ntp_background_images/browser:test_support",
+      "//BnesBrowser/browser/brave_ads",
+      "//BnesBrowser/components/brave_ads/core",
+      "//BnesBrowser/components/brave_ads/core/browser/service:test_support",
+      "//BnesBrowser/components/ntp_background_images/browser",
+      "//BnesBrowser/components/ntp_background_images/browser:test_support",
       "//chrome/browser/profiles/keep_alive",
       "//chrome/browser/sessions",
       "//components/keyed_service/content",
@@ -226,13 +226,13 @@ source_set("unit_tests") {
     ":mojom",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/constants",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/browser:test_support",
-    "//brave/components/ntp_background_images/common",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/browser:test_support",
+    "//BnesBrowser/components/ntp_background_images/common",
     "//components/history/core/browser",
     "//components/history/core/test",
     "//components/prefs",
@@ -243,6 +243,6 @@ source_set("unit_tests") {
   ]
 
   if (enable_brave_ads) {
-    deps += [ "//brave/components/brave_ads/core" ]
+    deps += [ "//BnesBrowser/components/brave_ads/core" ]
   }
 }

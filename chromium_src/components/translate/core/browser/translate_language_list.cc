@@ -5,7 +5,7 @@
 
 #include "components/translate/core/browser/translate_language_list.h"
 
-#include "brave/components/translate/core/common/brave_translate_features.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_features.h"
 
 #define TranslateLanguageList TranslateLanguageList_ChromiumImpl
 #include <components/translate/core/browser/translate_language_list.cc>

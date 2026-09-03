@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/core/dom/document.h"
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "third_party/blink/renderer/platform/weborigin/kurl.h"
 
 namespace {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/brave_password_importer.h"
+#include "BnesBrowser/browser/importer/brave_password_importer.h"
 
 #include <cstddef>
 #include <utility>
@@ -16,7 +16,7 @@
 #include "base/logging.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/common/importer/scoped_copy_file.h"
+#include "BnesBrowser/common/importer/scoped_copy_file.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/password_manager/factories/profile_password_store_factory.h"
 #include "components/keyed_service/core/service_access_type.h"

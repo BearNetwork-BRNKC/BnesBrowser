@@ -4,7 +4,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
 
 #include <algorithm>
 #include <utility>
@@ -23,13 +23,13 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_split.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/playlist/content/browser/media_detector_component_manager.h"
-#include "brave/components/playlist/content/browser/playlist_background_web_contentses.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
-#include "brave/components/playlist/content/browser/type_converter.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/playlist/content/browser/media_detector_component_manager.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contentses.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/components/playlist/content/browser/type_converter.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/user_prefs/user_prefs.h"

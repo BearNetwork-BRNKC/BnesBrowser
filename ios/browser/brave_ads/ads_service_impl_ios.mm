@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/brave_ads/ads_service_impl_ios.h"
+#include "BnesBrowser/ios/browser/brave_ads/ads_service_impl_ios.h"
 
 #include <memory>
 #include <optional>
@@ -21,15 +21,15 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_util.h"
-#include "brave/components/brave_ads/core/public/ads.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
-#include "brave/components/brave_ads/core/public/command_line_switches/command_line_switches_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/public/command_line_switches/command_line_switches_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
 #include "components/prefs/pref_service.h"
 #include "sql/database.h"
 #include "ui/base/page_transition_types.h"

@@ -11,13 +11,13 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/ui/tabs/tab_data.h"
 #include "chrome/browser/ui/views/tabs/tab_strip.h"
 #include "components/prefs/pref_member.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 class BraveTabContainer;

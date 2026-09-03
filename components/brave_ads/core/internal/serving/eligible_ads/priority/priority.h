@@ -9,7 +9,7 @@
 #include <cstddef>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/priority/priority_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/priority/priority_util.h"
 
 namespace brave_ads {
 

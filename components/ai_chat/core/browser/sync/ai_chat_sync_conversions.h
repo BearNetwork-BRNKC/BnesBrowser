@@ -13,8 +13,8 @@
 #include <vector>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
 
 namespace sync_pb {
 class AIChatCompressibleString;

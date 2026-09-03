@@ -9,7 +9,7 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_wallpaper_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ad_wallpaper_type.h"
 
 namespace brave_ads {
 

@@ -3,27 +3,27 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/refill_confirmation_tokens.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/refill_confirmation_tokens.h"
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_info.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_util.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_util.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/test/confirmation_tokens_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/test/token_generator_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/test/refill_confirmation_tokens_delegate_mock.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/test/refill_confirmation_tokens_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/get_signed_tokens/get_signed_tokens_url_request_builder_util.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/get_signed_tokens/test/get_signed_tokens_url_request_builder_test_constants.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder_util.h"
-#include "brave/components/brave_ads/core/internal/account/wallet/test/wallet_test_constants.h"
-#include "brave/components/brave_ads/core/internal/account/wallet/test/wallet_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/wallet/wallet_info.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/test/confirmation_tokens_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/test/token_generator_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/test/refill_confirmation_tokens_delegate_mock.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/test/refill_confirmation_tokens_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/get_signed_tokens/get_signed_tokens_url_request_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/get_signed_tokens/test/get_signed_tokens_url_request_builder_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/wallet/test/wallet_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/wallet/test/wallet_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/wallet/wallet_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_constants.h"
 #include "net/http/http_status_code.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

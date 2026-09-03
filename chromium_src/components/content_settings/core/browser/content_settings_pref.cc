@@ -6,7 +6,7 @@
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
 
 #define BRAVE_SET_WEBSITE_SETTING \
   content_settings::IsShieldsContentSettingsType(content_type_) ||

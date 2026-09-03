@@ -10,7 +10,7 @@
 
 #include "base/containers/circular_deque.h"
 #include "base/time/time.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_time_period_storage_daily_value_info.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_time_period_storage_daily_value_info.h"
 
 namespace serp_metrics {
 

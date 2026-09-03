@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_rewards/core/engine/hash_prefix_iterator.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/hash_prefix_iterator.h"
 
 namespace brave_rewards::internal {
 namespace publisher {

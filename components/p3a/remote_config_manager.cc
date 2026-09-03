@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/remote_config_manager.h"
+#include "BnesBrowser/components/p3a/remote_config_manager.h"
 
 #include <string>
 #include <utility>
@@ -18,8 +18,8 @@
 #include "base/logging.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/p3a/metric_config.h"
-#include "brave/components/p3a/metric_config_utils.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/metric_config_utils.h"
 
 constexpr char kMetricsKey[] = "metrics";
 

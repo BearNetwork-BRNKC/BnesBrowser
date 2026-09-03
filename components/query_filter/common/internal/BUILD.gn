@@ -11,12 +11,12 @@ static_library("internal") {
 
   public_deps = [
     "//base",
-    "//brave/components/query_filter/common:schema",
+    "//BnesBrowser/components/query_filter/common:schema",
   ]
 
   deps = [
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/query_filter/common",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/query_filter/common",
     "//components/url_pattern_index",
     "//url",
   ]

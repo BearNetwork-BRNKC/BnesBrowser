@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
 #include "extensions/browser/extension_function.h"
 
 namespace extensions::api {

@@ -16,9 +16,9 @@
 #include "base/test/scoped_run_loop_timeout.h"
 #include "base/test/test_timeouts.h"
 #include "base/time/time.h"
-#include "brave/browser/net/brave_network_audit_allowed_lists.h"
-#include "brave/browser/net/brave_network_audit_test_helper.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/net/brave_network_audit_allowed_lists.h"
+#include "BnesBrowser/browser/net/brave_network_audit_test_helper.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
 #include "chrome/browser/password_manager/factories/profile_password_store_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
@@ -36,13 +36,13 @@
 #include "testing/gmock/include/gmock/gmock.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 namespace brave {

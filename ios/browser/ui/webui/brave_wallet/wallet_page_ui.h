@@ -8,9 +8,9 @@
 
 #include <memory>
 
-#include "brave/components/brave_wallet/browser/wallet_handler.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_handler.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_handler.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_handler.h"
 #include "ios/web/public/webui/web_ui_ios.h"
 #include "ios/web/public/webui/web_ui_ios_controller.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_shields/request_blocking/request_blocking_javascript_feature.h"
+#include "BnesBrowser/ios/browser/brave_shields/request_blocking/request_blocking_javascript_feature.h"
 
 #include <optional>
 
@@ -11,7 +11,7 @@
 #include "base/functional/callback.h"
 #include "base/functional/callback_forward.h"
 #include "base/values.h"
-#include "brave/ios/browser/brave_shields/request_blocking/request_blocking_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_shields/request_blocking/request_blocking_tab_helper.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 #include "ios/web/public/js_messaging/script_message.h"

@@ -11,7 +11,7 @@ source_set("features") {
 
   deps = [
     "//base",
-    "//brave/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
   ]
 }
 
@@ -32,7 +32,7 @@ static_library("core") {
   deps = [
     ":features",
     "//base",
-    "//brave/components/l10n/common",
+    "//BnesBrowser/components/l10n/common",
     "//components/country_codes",
     "//components/prefs",
     "//mojo/public/mojom/base",

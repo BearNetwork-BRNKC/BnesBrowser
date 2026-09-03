@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_GEOLOCATION_BRAVE_GEOLOCATION_PERMISSION_TAB_HELPER_H_
 #define BRAVE_BROWSER_UI_GEOLOCATION_BRAVE_GEOLOCATION_PERMISSION_TAB_HELPER_H_
 
-#include "brave/components/brave_geolocation_permission/common/brave_geolocation_permission.mojom.h"
+#include "BnesBrowser/components/brave_geolocation_permission/common/brave_geolocation_permission.mojom.h"
 #include "content/public/browser/render_frame_host_receiver_set.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "content/public/browser/web_contents_user_data.h"

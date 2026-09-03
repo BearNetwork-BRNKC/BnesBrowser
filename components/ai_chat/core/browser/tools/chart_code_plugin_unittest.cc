@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/tools/chart_code_plugin.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/chart_code_plugin.h"
 
 #include <string_view>
 
 #include "base/strings/string_number_conversions.h"
 #include "base/test/values_test_util.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace ai_chat {

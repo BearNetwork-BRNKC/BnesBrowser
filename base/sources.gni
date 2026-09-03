@@ -4,8 +4,8 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_base_test_support_sources = [
-  "//brave/base/test/launcher/teamcity_reporter.cc",
-  "//brave/base/test/launcher/teamcity_reporter.h",
-  "//brave/base/test/launcher/teamcity_service_messages.cc",
-  "//brave/base/test/launcher/teamcity_service_messages.h",
+  "//BnesBrowser/base/test/launcher/teamcity_reporter.cc",
+  "//BnesBrowser/base/test/launcher/teamcity_reporter.h",
+  "//BnesBrowser/base/test/launcher/teamcity_service_messages.cc",
+  "//BnesBrowser/base/test/launcher/teamcity_service_messages.h",
 ]

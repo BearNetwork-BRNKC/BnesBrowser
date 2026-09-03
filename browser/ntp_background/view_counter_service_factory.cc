@@ -3,20 +3,20 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ntp_background/view_counter_service_factory.h"
+#include "BnesBrowser/browser/ntp_background/view_counter_service_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_source.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_image_source.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_rich_media_source.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_site_image_source.h"
-#include "brave/components/ntp_background_images/browser/view_counter_service.h"
-#include "brave/components/ntp_background_images/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/common/view_counter_pref_registry.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_image_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_rich_media_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_site_image_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/view_counter_service.h"
+#include "BnesBrowser/components/ntp_background_images/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_registry.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
@@ -27,13 +27,13 @@
 #include "content/public/browser/url_data_source.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CUSTOM_BACKGROUND)
-#include "brave/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
+#include "BnesBrowser/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
 #endif
 
 namespace ntp_background_images {

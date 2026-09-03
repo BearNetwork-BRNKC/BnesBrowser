@@ -11,7 +11,7 @@
 #include "base/files/file.h"
 #include "base/memory/raw_ref.h"
 #include "base/no_destructor.h"
-#include "brave/services/passage_embeddings/litert_model_runner.h"
+#include "BnesBrowser/services/passage_embeddings/litert_model_runner.h"
 #include "services/passage_embeddings/passage_embedder_executor.h"
 
 namespace brave_history_embeddings {

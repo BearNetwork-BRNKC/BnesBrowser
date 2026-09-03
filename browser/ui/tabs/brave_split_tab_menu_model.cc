@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/tabs/brave_split_tab_menu_model.h"
+#include "BnesBrowser/browser/ui/tabs/brave_split_tab_menu_model.h"
 
 #include <memory>
 
-#include "brave/browser/ui/split_view/split_view_features.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/split_view/split_view_features.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/ui/tabs/split_tab_util.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "components/grit/brave_components_strings.h"

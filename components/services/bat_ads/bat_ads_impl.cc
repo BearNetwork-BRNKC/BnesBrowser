@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/bat_ads/bat_ads_impl.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_impl.h"
 
 #include <memory>
 #include <optional>
@@ -11,16 +11,16 @@
 
 #include "base/check.h"
 #include "base/types/optional_ref.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_util.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_util.h"
-#include "brave/components/brave_ads/core/public/ads.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
-#include "brave/components/brave_ads/core/public/ads_observer.h"
-#include "brave/components/services/bat_ads/bat_ads_client_mojo_bridge.h"
-#include "brave/components/services/bat_ads/bat_ads_observer.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_observer.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_client_mojo_bridge.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_observer.h"
 #include "mojo/public/cpp/bindings/callback_helpers.h"
 
 namespace bat_ads {

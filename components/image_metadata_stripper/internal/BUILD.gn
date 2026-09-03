@@ -8,7 +8,7 @@ source_set("internal") {
   # BUILD.gn, e.g. future unit tests) may depend on this.
   visibility = [
     ":*",
-    "//brave/components/image_metadata_stripper",
+    "//BnesBrowser/components/image_metadata_stripper",
   ]
 
   sources = [
@@ -24,7 +24,7 @@ if (is_ios) {
     testonly = true
     visibility = [ ":unit_tests" ]
     sources =
-        [ "//brave/test/data/image_metadata_stripper/fbmd_test_image.jpg" ]
+        [ "//BnesBrowser/test/data/image_metadata_stripper/fbmd_test_image.jpg" ]
     outputs = [ "{{bundle_resources_dir}}/" +
                 "{{source_root_relative_dir}}/{{source_file_part}}" ]
   }
@@ -35,7 +35,7 @@ source_set("unit_tests") {
 
   sources = [ "jpeg_iptc_metadata_stripper_unittest.cc" ]
 
-  data = [ "//brave/test/data/image_metadata_stripper/" ]
+  data = [ "//BnesBrowser/test/data/image_metadata_stripper/" ]
 
   deps = [
     ":internal",

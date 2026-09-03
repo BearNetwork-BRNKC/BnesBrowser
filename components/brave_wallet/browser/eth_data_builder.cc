@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/eth_data_builder.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_data_builder.h"
 
 #include <algorithm>
 #include <optional>
@@ -16,13 +16,13 @@
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace brave_wallet {

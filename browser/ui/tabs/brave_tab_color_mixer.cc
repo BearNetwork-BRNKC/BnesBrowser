@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/tabs/brave_tab_color_mixer.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_color_mixer.h"
 
 #include <utility>
 
@@ -12,9 +12,9 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_forward.h"
 #include "base/logging.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/ui/color/brave_ref_color_mixer.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/ui/color/brave_ref_color_mixer.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/themes/theme_properties.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "ui/color/color_id.h"
@@ -26,8 +26,8 @@
 #include "ui/gfx/color_utils.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
-#include "brave/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
 #endif  // defined(TOOLKIT_VIEWS)
 
 namespace tabs {

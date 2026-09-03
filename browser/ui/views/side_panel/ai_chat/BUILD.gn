@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//extensions/buildflags/buildflags.gni")
 
 assert(enable_ai_chat)
@@ -31,11 +31,11 @@ source_set("ai_chat") {
 
   deps = [
     "//base",
-    "//brave/browser/ai_chat",
-    "//brave/browser/ui/webui/ai_chat",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/constants",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/browser/ai_chat",
+    "//BnesBrowser/browser/ui/webui/ai_chat",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:strings_grit",
     "//chrome/browser:file_select_helper",
     "//chrome/browser/profiles",
     "//chrome/browser/tab_list",

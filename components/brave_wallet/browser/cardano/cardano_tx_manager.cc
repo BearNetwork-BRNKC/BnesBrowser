@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_manager.h"
 
 #include <memory>
 #include <optional>
@@ -14,14 +14,14 @@
 #include "base/functional/bind.h"
 #include "base/notimplemented.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_block_tracker.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_meta.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_state_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 

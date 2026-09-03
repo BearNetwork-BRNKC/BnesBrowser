@@ -9,7 +9,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
 

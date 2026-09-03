@@ -10,11 +10,11 @@
 #include <string>
 
 #include "base/observer_list.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager_observer.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_callback.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_item_info.h"
 
 namespace base {
 class Time;

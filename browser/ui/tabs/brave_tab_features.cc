@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/tabs/public/brave_tab_features.h"
+#include "BnesBrowser/browser/ui/tabs/public/brave_tab_features.h"
 
 #include <memory>
 #include <utility>
@@ -11,8 +11,8 @@
 #include "base/check.h"
 #include "base/memory/ptr_util.h"
 #include "base/no_destructor.h"
-#include "brave/browser/ui/side_panel/brave_side_panel_utils.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/side_panel/brave_side_panel_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/page_action/action_ids.h"
 #include "chrome/browser/ui/page_action/page_action_controller.h"
@@ -23,24 +23,24 @@
 #include "components/tabs/public/tab_interface.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/container_tab_tracker.h"
-#include "brave/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/container_tab_tracker.h"
+#include "BnesBrowser/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/browser/ai_chat/tab_data_web_contents_observer.h"
-#include "brave/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/browser/ai_chat/tab_data_web_contents_observer.h"
+#include "BnesBrowser/browser/ai_chat/web_mcp_injection/web_mcp_injector.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/browser/psst/psst_reporter_service_factory.h"
-#include "brave/browser/psst/psst_settings_service_factory.h"
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
-#include "brave/browser/psst/psst_ui_delegate_impl.h"
-#include "brave/browser/psst/psst_ui_desktop_presenter.h"
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/browser/psst/psst_reporter_service_factory.h"
+#include "BnesBrowser/browser/psst/psst_settings_service_factory.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_ui_delegate_impl.h"
+#include "BnesBrowser/browser/psst/psst_ui_desktop_presenter.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "components/variations/service/variations_service.h"
 #endif

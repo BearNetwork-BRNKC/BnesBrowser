@@ -14,8 +14,8 @@
 #include "base/files/file_path.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/p3a/metric_config.h"
-#include "brave/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
 
 namespace p3a {
 

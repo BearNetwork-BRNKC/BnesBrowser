@@ -8,8 +8,8 @@
 
 #include <cstddef>
 
-#include "brave/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
 
 namespace brave_ads {
 

@@ -7,9 +7,9 @@
 
 #include "base/strings/string_util.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_content_browser_client.h"
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/browser/brave_content_browser_client.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/test/base/chrome_test_utils.h"
 #include "chrome/test/base/platform_browser_test.h"

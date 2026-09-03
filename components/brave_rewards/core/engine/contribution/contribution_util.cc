@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/contribution/contribution_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/contribution/contribution_util.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/components/brave_rewards/core/engine/constants.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
 
 namespace brave_rewards::internal::contribution {
 

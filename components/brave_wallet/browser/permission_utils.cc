@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
 
 #include <optional>
 #include <string_view>
@@ -13,7 +13,7 @@
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
 #include "components/permissions/request_type.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 #include "third_party/blink/public/common/permissions/permission_utils.h"

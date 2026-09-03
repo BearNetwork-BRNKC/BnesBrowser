@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/core/svg/svg_use_element.h"
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "third_party/blink/renderer/core/probe/core_probes.h"
 #include "third_party/blink/renderer/platform/graphics/dom_node_id.h"
 #include "third_party/blink/renderer/platform/loader/fetch/fetch_parameters.h"

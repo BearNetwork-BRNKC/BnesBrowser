@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ad_units/creative_ad_cache.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/creative_ad_cache.h"
 
-#include "brave/components/brave_ads/core/internal/tabs/tab_info.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager.h"
 #include "third_party/abseil-cpp/absl/functional/overload.h"
 
 namespace brave_ads {

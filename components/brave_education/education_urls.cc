@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_education/education_urls.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
 
 #include <string_view>
 #include <utility>
 
 #include "base/containers/fixed_flat_map.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 
 namespace brave_education {
 

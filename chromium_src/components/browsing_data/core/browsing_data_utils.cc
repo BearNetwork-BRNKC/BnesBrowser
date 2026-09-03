@@ -10,7 +10,7 @@
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/containers/map_util.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "components/browsing_data/core/pref_names.h"
 
 namespace {

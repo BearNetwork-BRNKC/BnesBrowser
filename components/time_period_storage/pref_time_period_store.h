@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_TIME_PERIOD_STORAGE_PREF_TIME_PERIOD_STORE_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/time_period_storage/time_period_store.h"
+#include "BnesBrowser/components/time_period_storage/time_period_store.h"
 
 class PrefService;
 

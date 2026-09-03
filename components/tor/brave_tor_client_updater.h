@@ -15,7 +15,7 @@
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 #include "build/build_config.h"
 
 class PrefService;

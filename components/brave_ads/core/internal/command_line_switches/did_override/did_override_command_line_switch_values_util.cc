@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/command_line_switches/did_override/did_override_command_line_switch_values_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/command_line_switches/did_override/did_override_command_line_switch_values_util.h"
 
 #include <algorithm>
 

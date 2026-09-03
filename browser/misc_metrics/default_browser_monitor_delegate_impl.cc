@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/default_browser_monitor_delegate_impl.h"
+#include "BnesBrowser/browser/misc_metrics/default_browser_monitor_delegate_impl.h"
 
-#include "brave/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
 #include "chrome/browser/shell_integration.h"
 
 namespace misc_metrics {

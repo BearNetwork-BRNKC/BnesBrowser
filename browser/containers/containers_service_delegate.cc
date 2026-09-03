@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/containers/containers_service_delegate.h"
+#include "BnesBrowser/browser/containers/containers_service_delegate.h"
 
 #include <memory>
 #include <utility>
@@ -18,7 +18,7 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/types/to_address.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/tab_contents/tab_contents_iterator.h"
 #include "chrome/common/buildflags.h"

@@ -11,8 +11,8 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/local_ai/core/background_web_contents.h"
-#include "brave/components/restricted_web_contents_delegate/restricted_web_contents_delegate.h"
+#include "BnesBrowser/components/local_ai/core/background_web_contents.h"
+#include "BnesBrowser/components/restricted_web_contents_delegate/restricted_web_contents_delegate.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "services/network/public/mojom/web_sandbox_flags.mojom-shared.h"
 #include "url/gurl.h"

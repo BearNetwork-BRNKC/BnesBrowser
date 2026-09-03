@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
 
 #include "base/check_deref.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/common/pref_names.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/common/pref_names.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

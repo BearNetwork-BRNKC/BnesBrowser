@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_resource_block.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_resource_block.h"
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/filter/node_filter.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/node_resource.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/shield/node_shield.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/filter/node_filter.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/node_resource.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/shield/node_shield.h"
 
 namespace brave_page_graph {
 

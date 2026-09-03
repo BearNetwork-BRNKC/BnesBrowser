@@ -6,7 +6,7 @@
 #ifndef BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_GRAPH_ITEM_EDGE_BINDING_EDGE_BINDING_H_
 #define BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_GRAPH_ITEM_EDGE_BINDING_EDGE_BINDING_H_
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/graph_edge.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/graph_edge.h"
 #include "third_party/blink/renderer/platform/wtf/casting.h"
 
 namespace brave_page_graph {

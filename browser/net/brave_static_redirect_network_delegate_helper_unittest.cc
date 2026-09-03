@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_static_redirect_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_static_redirect_network_delegate_helper.h"
 
 #include <memory>
 #include <string>
 
-#include "brave/browser/net/url_context.h"
-#include "brave/components/geolocation/brave_geolocation_buildflags.h"
-#include "brave/components/static_redirect_helper/static_redirect_helper.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/geolocation/brave_geolocation_buildflags.h"
+#include "BnesBrowser/components/static_redirect_helper/static_redirect_helper.h"
 #include "components/component_updater/component_updater_url_constants.h"
 #include "net/base/net_errors.h"
 #include "testing/gtest/include/gtest/gtest.h"

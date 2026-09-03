@@ -11,11 +11,11 @@ source_set("browser_tests") {
 
   deps = [
     "//base",
-    "//brave/browser/ui/split_view",
-    "//brave/browser/ui/tabs:tab_model",
-    "//brave/browser/ui/views/frame",
-    "//brave/browser/ui/views/frame/split_view",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/browser/ui/split_view",
+    "//BnesBrowser/browser/ui/tabs:tab_model",
+    "//BnesBrowser/browser/ui/views/frame",
+    "//BnesBrowser/browser/ui/views/frame/split_view",
+    "//BnesBrowser/components/resources:strings_grit",
     "//chrome/browser/ui",
     "//chrome/browser/ui:ui_features",
     "//chrome/browser/ui/browser_window",

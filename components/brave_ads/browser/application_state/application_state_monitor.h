@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/observer_list.h"
-#include "brave/components/brave_ads/browser/application_state/application_state_observer.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/application_state_observer.h"
 
 namespace brave_ads {
 class ApplicationStateObserver;

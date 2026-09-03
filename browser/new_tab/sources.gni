@@ -8,23 +8,23 @@ brave_browser_new_tab_deps = []
 
 if (!is_android) {
   brave_browser_new_tab_sources += [
-    "//brave/browser/new_tab/new_tab_shows_navigation_throttle.cc",
-    "//brave/browser/new_tab/new_tab_shows_navigation_throttle.h",
-    "//brave/browser/new_tab/new_tab_shows_options.cc",
-    "//brave/browser/new_tab/new_tab_shows_options.h",
+    "//BnesBrowser/browser/new_tab/new_tab_shows_navigation_throttle.cc",
+    "//BnesBrowser/browser/new_tab/new_tab_shows_navigation_throttle.h",
+    "//BnesBrowser/browser/new_tab/new_tab_shows_options.cc",
+    "//BnesBrowser/browser/new_tab/new_tab_shows_options.h",
   ]
 
   if (is_win) {
     brave_browser_new_tab_sources += [
-      "//brave/browser/new_tab/background_color_tab_helper.cc",
-      "//brave/browser/new_tab/background_color_tab_helper.h",
+      "//BnesBrowser/browser/new_tab/background_color_tab_helper.cc",
+      "//BnesBrowser/browser/new_tab/background_color_tab_helper.h",
     ]
   }
 
   brave_browser_new_tab_deps += [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/components/constants",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/components/constants",
     "//chrome/common",
     "//components/prefs",
     "//content/public/browser",

@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_appearance_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_appearance_handler.h"
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/new_tab/new_tab_shows_options.h"
-#include "brave/browser/profiles/profile_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search/instant_service.h"

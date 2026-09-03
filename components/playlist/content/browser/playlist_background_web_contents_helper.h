@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_PLAYLIST_CONTENT_BROWSER_PLAYLIST_BACKGROUND_WEB_CONTENTS_HELPER_H_
 #define BRAVE_COMPONENTS_PLAYLIST_CONTENT_BROWSER_PLAYLIST_BACKGROUND_WEB_CONTENTS_HELPER_H_
 
-#include "brave/components/playlist/content/browser/playlist_media_handler.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_media_handler.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "content/public/browser/web_contents_user_data.h"
 

@@ -4,27 +4,27 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 brave_browser_webcompat_reporter_sources = [
-  "//brave/browser/webcompat_reporter/webcompat_reporter_service_delegate.cc",
-  "//brave/browser/webcompat_reporter/webcompat_reporter_service_delegate.h",
-  "//brave/browser/webcompat_reporter/webcompat_reporter_service_factory.cc",
-  "//brave/browser/webcompat_reporter/webcompat_reporter_service_factory.h",
+  "//BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_delegate.cc",
+  "//BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_delegate.h",
+  "//BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_factory.cc",
+  "//BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_factory.h",
 ]
 
 brave_browser_webcompat_reporter_deps = [
   "//base",
-  "//brave/browser:browser_process",
-  "//brave/common",
-  "//brave/components/webcompat_reporter/browser",
-  "//brave/components/webcompat_reporter/common",
-  "//brave/components/webcompat_reporter/common:mojom",
+  "//BnesBrowser/browser:browser_process",
+  "//BnesBrowser/common",
+  "//BnesBrowser/components/webcompat_reporter/browser",
+  "//BnesBrowser/components/webcompat_reporter/common",
+  "//BnesBrowser/components/webcompat_reporter/common:mojom",
   "//components/keyed_service/content",
   "//mojo/public/cpp/bindings",
 ]
 
 if (is_android) {
-  brave_browser_webcompat_reporter_sources += [ "//brave/browser/webcompat_reporter/android/webcompat_report_service_factory_android.cc" ]
+  brave_browser_webcompat_reporter_sources += [ "//BnesBrowser/browser/webcompat_reporter/android/webcompat_report_service_factory_android.cc" ]
   brave_browser_webcompat_reporter_deps += [
-    "//brave/browser/android:android_browser_process",
-    "//brave/build/android:jni_headers",
+    "//BnesBrowser/browser/android:android_browser_process",
+    "//BnesBrowser/build/android:jni_headers",
   ]
 }

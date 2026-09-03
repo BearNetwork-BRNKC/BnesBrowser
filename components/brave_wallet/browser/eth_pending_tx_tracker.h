@@ -15,8 +15,8 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_wallet/browser/eth_tx_state_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

@@ -13,7 +13,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 #include "url/gurl.h"
 
 namespace network {

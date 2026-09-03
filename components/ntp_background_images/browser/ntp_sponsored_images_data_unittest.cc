@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
 
 #include <string_view>
 
@@ -13,7 +13,7 @@
 #include "base/files/file_util.h"
 #include "base/files/scoped_temp_dir.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "ui/gfx/geometry/point.h"

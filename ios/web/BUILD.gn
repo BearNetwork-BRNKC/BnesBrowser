@@ -8,24 +8,24 @@ import("//testing/test.gni")
 test("ios_brave_web_unittests") {
   testonly = true
   deps = [
-    "//brave/ios/web/test:packed_resources",
-    "//brave/ios/web/test:resources",
+    "//BnesBrowser/ios/web/test:packed_resources",
+    "//BnesBrowser/ios/web/test:resources",
     "//ios/web:run_all_unittests",
 
     # Add individual test source_set targets here.
-    "//brave/ios/web/js_messaging:unittests",
-    "//brave/ios/web/webui:ios_web_webui_unittests",
+    "//BnesBrowser/ios/web/js_messaging:unittests",
+    "//BnesBrowser/ios/web/webui:ios_web_webui_unittests",
   ]
 }
 
 test("ios_brave_web_inttests") {
   testonly = true
   deps = [
-    "//brave/ios/web/test:packed_resources",
-    "//brave/ios/web/test:resources",
+    "//BnesBrowser/ios/web/test:packed_resources",
+    "//BnesBrowser/ios/web/test:resources",
     "//ios/web:run_all_unittests",
 
     # Add individual test source_set targets here.
-    "//brave/ios/web/webui:ios_web_webui_inttests",
+    "//BnesBrowser/ios/web/webui:ios_web_webui_inttests",
   ]
 }

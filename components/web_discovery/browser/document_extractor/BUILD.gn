@@ -14,9 +14,9 @@ rust_static_library("document_extractor") {
   edition = "2021"
   sources = [ "lib.rs" ]
 
-  visibility = [ "//brave/components/web_discovery/browser:*" ]
+  visibility = [ "//BnesBrowser/components/web_discovery/browser:*" ]
 
   cxx_bindings = [ "lib.rs" ]
 
-  deps = [ "//brave/third_party/rust/scraper/v0_24:lib" ]
+  deps = [ "//BnesBrowser/third_party/rust/scraper/v0_24:lib" ]
 }

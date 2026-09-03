@@ -10,16 +10,16 @@ cargo_crate("lib") {
   crate_type = "rlib"
   crate_root = "crate/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/futures_retry/v0_5/crate/examples/tcp-client-complex.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/examples/tcp-client.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/examples/tcp-listener-complex.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/examples/tcp-listener.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/src/error_handler.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/src/future.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/src/lib.rs",
-    "//brave/third_party/rust/futures_retry/v0_5/crate/src/stream.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/examples/tcp-client-complex.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/examples/tcp-client.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/examples/tcp-listener-complex.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/examples/tcp-listener.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/src/error_handler.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/src/future.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/src/lib.rs",
+    "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/src/stream.rs",
   ]
-  inputs = [ "//brave/third_party/rust/futures_retry/v0_5/crate/README.md" ]
+  inputs = [ "//BnesBrowser/third_party/rust/futures_retry/v0_5/crate/README.md" ]
 
   # Unit tests skipped. Generate with --with-tests to include them.
   build_native_rust_unit_tests = false
@@ -33,9 +33,9 @@ cargo_crate("lib") {
   executable_configs -= [ "//build/config/compiler:chromium_code" ]
   executable_configs += [ "//build/config/compiler:no_chromium_code" ]
   deps = [
-    "//brave/third_party/rust/futures/v0_3:lib",
-    "//brave/third_party/rust/futures_timer/v3:lib",
-    "//brave/third_party/rust/pin_project/v0_4:lib",
+    "//BnesBrowser/third_party/rust/futures/v0_3:lib",
+    "//BnesBrowser/third_party/rust/futures_timer/v3:lib",
+    "//BnesBrowser/third_party/rust/pin_project/v0_4:lib",
   ]
   rustflags = [
     "--cap-lints=allow",  # Suppress all warnings in crates.io crates

@@ -8,13 +8,13 @@
 
 #include <string>
 
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/uphold_server.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/uphold/post_oauth_uphold.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/engine/uphold/uphold_capabilities.h"
-#include "brave/components/brave_rewards/core/engine/uphold/uphold_card.h"
-#include "brave/components/brave_rewards/core/engine/uphold/uphold_user.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/uphold_server.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/uphold/post_oauth_uphold.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold_capabilities.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold_card.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold_user.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
 
 namespace brave_rewards::internal::uphold {
 

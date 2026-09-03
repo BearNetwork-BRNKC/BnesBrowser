@@ -6,10 +6,10 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_STARTUP_STARTUP_TAB_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_STARTUP_STARTUP_TAB_H_
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
 #endif
 
 #include <chrome/browser/ui/startup/startup_tab.h>  // IWYU pragma: export

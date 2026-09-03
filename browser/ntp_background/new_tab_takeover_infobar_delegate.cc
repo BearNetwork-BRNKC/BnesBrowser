@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
+#include "BnesBrowser/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
 
 #include <memory>
 
 #include "base/check.h"
-#include "brave/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
-#include "brave/components/ntp_background_images/common/url_constants.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
+#include "BnesBrowser/components/ntp_background_images/common/url_constants.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "components/infobars/content/content_infobar_manager.h"
 #include "components/infobars/core/infobar.h"
@@ -25,7 +25,7 @@
 #if BUILDFLAG(IS_ANDROID)
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #else  // BUILDFLAG(IS_ANDROID)
-#include "brave/browser/infobars/brave_confirm_infobar_creator.h"
+#include "BnesBrowser/browser/infobars/brave_confirm_infobar_creator.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 namespace ntp_background_images {

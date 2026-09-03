@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ephemeral_storage/ephemeral_storage_service.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service.h"
 
 #include <memory>
 #include <optional>
@@ -17,9 +17,9 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_pref_names.h"
-#include "brave/components/ephemeral_storage/url_storage_checker.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_pref_names.h"
+#include "BnesBrowser/components/ephemeral_storage/url_storage_checker.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/user_prefs/user_prefs.h"

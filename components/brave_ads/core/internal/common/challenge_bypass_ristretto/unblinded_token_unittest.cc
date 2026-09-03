@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
 
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/challenge_bypass_ristretto_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_preimage_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token_preimage.h"  // IWYU pragma: keep
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_key.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_signature.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/challenge_bypass_ristretto_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_preimage_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token_preimage.h"  // IWYU pragma: keep
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_signature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

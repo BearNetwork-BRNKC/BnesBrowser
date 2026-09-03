@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/dns/brave_vpn_dns_observer_factory_win.h"
+#include "BnesBrowser/browser/brave_vpn/dns/brave_vpn_dns_observer_factory_win.h"
 
 #include <cstddef>
 #include <memory>
@@ -12,10 +12,10 @@
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/browser/brave_vpn/dns/brave_vpn_dns_observer_service_win.h"
-#include "brave/browser/brave_vpn/vpn_utils.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_vpn/dns/brave_vpn_dns_observer_service_win.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 #include "components/pref_registry/pref_registry_syncable.h"

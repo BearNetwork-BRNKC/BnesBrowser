@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/privacy_hub_metrics.h"
+#include "BnesBrowser/components/misc_metrics/privacy_hub_metrics.h"
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

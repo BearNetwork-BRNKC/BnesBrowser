@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_account/endpoint_client/is_endpoint.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_endpoint.h"
 
 namespace base {
 class SequencedTaskRunner;

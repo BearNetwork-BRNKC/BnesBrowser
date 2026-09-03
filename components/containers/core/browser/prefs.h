@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 
 class PrefService;
 

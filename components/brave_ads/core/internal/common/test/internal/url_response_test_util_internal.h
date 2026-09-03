@@ -8,8 +8,8 @@
 
 #include <optional>
 
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace brave_ads::test {
 

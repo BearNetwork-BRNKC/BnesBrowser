@@ -9,9 +9,9 @@
 
 #include "base/path_service.h"
 #include "base/test/run_until.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/email_aliases/features.h"
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/autofill/autofill_uitest_util.h"
 #include "chrome/browser/policy/policy_test_utils.h"

@@ -3,9 +3,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/ntp_background_images/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ntp_background_images/buildflags/buildflags.gni")
 import("//testing/test.gni")
+import("//build/config/ui.gni")
 
 source_set("ntp_background") {
   sources = [
@@ -17,17 +18,17 @@ source_set("ntp_background") {
 
   deps = [
     "//base",
-    "//brave/app:brave_generated_resources_grit_grit",
-    "//brave/browser:browser_process",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_ads/core/browser/service",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/constants",
-    "//brave/components/infobars/core",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/buildflags",
-    "//brave/components/ntp_background_images/common",
-    "//brave/components/p3a",
+    "//BnesBrowser/app:brave_generated_resources_grit_grit",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_ads/core/browser/service",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/infobars/core",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/buildflags",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/components/p3a",
     "//chrome/browser:browser_process",
     "//chrome/browser:browser_public_dependencies",
     "//chrome/browser/content_settings:content_settings_factory",
@@ -47,9 +48,9 @@ source_set("ntp_background") {
 
   if (enable_brave_ads) {
     deps += [
-      "//brave/browser/brave_ads",
-      "//brave/components/brave_ads/browser",
-      "//brave/components/brave_ads/core/public:headers",
+      "//BnesBrowser/browser/brave_ads",
+      "//BnesBrowser/components/brave_ads/browser",
+      "//BnesBrowser/components/brave_ads/core/public:headers",
     ]
   }
 
@@ -82,12 +83,12 @@ source_set("unit_tests") {
   deps = [
     ":ntp_background",
     "//base",
-    "//brave/browser:browser_process",
-    "//brave/components/brave_referrals/browser",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/common",
-    "//brave/components/p3a",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/brave_referrals/browser",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/components/p3a",
     "//chrome/test:test_support",
     "//components/infobars/content",
     "//components/prefs:test_support",
@@ -107,7 +108,7 @@ source_set("unit_tests") {
     ]
 
     deps += [
-      "//brave/components/constants",
+      "//BnesBrowser/components/constants",
       "//chrome/test:test_support",
     ]
   }
@@ -129,9 +130,9 @@ if (enable_custom_background) {
       ":ntp_background",
       "//base",
       "//base/test:test_support",
-      "//brave/components/constants",
-      "//brave/components/ntp_background_images/browser",
-      "//brave/components/ntp_background_images/browser:test_support",
+      "//BnesBrowser/components/constants",
+      "//BnesBrowser/components/ntp_background_images/browser",
+      "//BnesBrowser/components/ntp_background_images/browser:test_support",
       "//chrome/browser/profiles:profile",
       "//chrome/browser/ui",
       "//chrome/test:test_support",
@@ -139,6 +140,6 @@ if (enable_custom_background) {
       "//content/test:test_support",
     ]
 
-    data = [ "//brave/test/data/ntp_background/background.jpg" ]
+    data = [ "//BnesBrowser/test/data/ntp_background/background.jpg" ]
   }
 }

@@ -13,10 +13,10 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/request_builder.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/callback_helpers.h"
-#include "brave/components/brave_rewards/core/engine/util/url_loader.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_builder.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/callback_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/url_loader.h"
 
 namespace brave_rewards::internal::endpoints {
 

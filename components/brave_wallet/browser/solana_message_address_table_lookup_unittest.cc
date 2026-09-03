@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/solana_message_address_table_lookup.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_message_address_table_lookup.h"
 
 #include <stdint.h>
 
@@ -13,8 +13,8 @@
 #include "base/base64.h"
 #include "base/strings/string_util.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/solana_address.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_address.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

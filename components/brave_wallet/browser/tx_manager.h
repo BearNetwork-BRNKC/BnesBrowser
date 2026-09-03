@@ -14,9 +14,9 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_wallet/browser/keyring_service_observer_base.h"
-#include "brave/components/brave_wallet/browser/tx_state_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service_observer_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 
 namespace brave_wallet {

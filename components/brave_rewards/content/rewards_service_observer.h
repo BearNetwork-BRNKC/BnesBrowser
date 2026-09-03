@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "base/observer_list_types.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 
 namespace brave_rewards {
 

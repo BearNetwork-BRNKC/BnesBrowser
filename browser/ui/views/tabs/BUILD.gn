@@ -10,17 +10,17 @@ source_set("browser_tests") {
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
 
   sources = [
-    "//brave/browser/ui/views/tabs/brave_tab_container_browsertest.cc",
-    "//brave/browser/ui/views/tabs/brave_tab_hover_browsertest.cc",
-    "//brave/browser/ui/views/tabs/brave_tab_strip_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/tabs/brave_tab_container_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/tabs/brave_tab_hover_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/tabs/brave_tab_strip_browsertest.cc",
   ]
 
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame/vertical_tabs",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame/vertical_tabs",
     "//chrome:resources",
     "//chrome:strings",
     "//chrome/browser",
@@ -65,12 +65,12 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/focus_mode",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/common",
-    "//brave/components/tabs",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/focus_mode",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/common",
+    "//BnesBrowser/components/tabs",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser/ui",
     "//chrome/browser/ui:layout_constants",
     "//chrome/browser/ui/browser_window",

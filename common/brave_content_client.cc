@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/bnes/bns_constants.h"
-#include "brave/common/brave_content_client.h"
+#include "BnesBrowser/bnes/bns_constants.h"
+#include "BnesBrowser/common/brave_content_client.h"
 
 #include <optional>
 #include <string>

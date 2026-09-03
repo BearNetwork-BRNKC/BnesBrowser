@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_TOOLBAR_SIDE_PANEL_BUTTON_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_button.h"
 #include "components/prefs/pref_member.h"
 #include "ui/base/metadata/metadata_header_macros.h"

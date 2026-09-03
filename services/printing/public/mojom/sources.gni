@@ -4,6 +4,6 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_services_printing_public_mojom_sources =
-    [ "//brave/services/printing/public/mojom/pdf_to_bitmap_converter.mojom" ]
+    [ "//BnesBrowser/services/printing/public/mojom/pdf_to_bitmap_converter.mojom" ]
 
 brave_services_printing_public_mojom_public_deps = [ "//skia/public/mojom" ]

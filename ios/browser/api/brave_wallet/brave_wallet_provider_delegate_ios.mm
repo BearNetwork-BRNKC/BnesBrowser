@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios.h"
 
 #include <optional>
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/foundation_util.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
-#include "brave/ios/browser/api/url/url_origin_ios+private.h"
+#include "BnesBrowser/base/apple/foundation_util.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
+#include "BnesBrowser/ios/browser/api/url/url_origin_ios+private.h"
 #include "net/base/apple/url_conversions.h"
 
 namespace brave_wallet {

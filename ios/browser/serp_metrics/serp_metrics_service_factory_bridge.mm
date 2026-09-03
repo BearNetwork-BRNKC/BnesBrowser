@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/serp_metrics/serp_metrics_service_factory_bridge.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_service_factory_bridge.h"
 
-#include "brave/components/serp_metrics/serp_metrics_service.h"
-#include "brave/ios/browser/serp_metrics/serp_metrics_bridge_impl.h"
-#include "brave/ios/browser/serp_metrics/serp_metrics_service_factory_ios.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_service.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_bridge_impl.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_service_factory_ios.h"
 
 @implementation SerpMetricsServiceFactoryBridge
 

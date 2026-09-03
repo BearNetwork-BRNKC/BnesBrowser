@@ -12,7 +12,7 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
-#include "brave/components/psst/core/common/psst_metadata_schema.h"
+#include "BnesBrowser/components/psst/core/common/psst_metadata_schema.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/prefs/pref_change_registrar.h"

@@ -3,27 +3,27 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/location.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core.h"
-#include "brave/components/brave_ads/core/internal/ads_notifier_manager.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state_holder.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager.h"
-#include "brave/components/brave_ads/core/internal/user_attention/user_activity/user_activity_manager.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_notifier_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state_holder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_attention/user_activity/user_activity_manager.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 
 namespace brave_ads {
 

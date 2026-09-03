@@ -12,7 +12,7 @@
 #include "base/files/file_path.h"
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_service.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_service.h"
 
 namespace https_upgrade_exceptions {
 class HttpsUpgradeExceptionsService;

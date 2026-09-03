@@ -3,17 +3,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 import("//build/config/ios/rules.gni")
 import("//ios/build/config.gni")
 
 config("mojom_header_config") {
   visibility = [
     ":*",
-    "//brave/ios/app",
+    "//BnesBrowser/ios/app",
   ]
   include_dirs =
-      [ "$root_gen_dir/brave/components/webcompat_reporter/common/ios" ]
+      [ "$root_gen_dir/BnesBrowser/components/webcompat_reporter/common/ios" ]
 }
 
 source_set("webcompat_reporter") {
@@ -31,10 +31,10 @@ source_set("webcompat_reporter") {
 
   deps = [
     "//base",
-    "//brave/base/apple",
-    "//brave/components/webcompat_reporter/browser",
-    "//brave/components/webcompat_reporter/common",
-    "//brave/ios/browser/keyed_service",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/components/webcompat_reporter/browser",
+    "//BnesBrowser/components/webcompat_reporter/common",
+    "//BnesBrowser/ios/browser/keyed_service",
     "//components/component_updater",
     "//components/keyed_service/core",
     "//components/pref_registry",
@@ -48,9 +48,9 @@ source_set("webcompat_reporter") {
 }
 
 ios_objc_mojom_wrappers("webcompat_reporter_mojom_wrappers") {
-  mojom_target = "//brave/components/webcompat_reporter/common:mojom"
+  mojom_target = "//BnesBrowser/components/webcompat_reporter/common:mojom"
   sources = [
-    "//brave/components/webcompat_reporter/common/webcompat_reporter.mojom",
+    "//BnesBrowser/components/webcompat_reporter/common/webcompat_reporter.mojom",
   ]
-  output_dir = "$root_gen_dir/brave/components/webcompat_reporter/common/ios"
+  output_dir = "$root_gen_dir/BnesBrowser/components/webcompat_reporter/common/ios"
 }

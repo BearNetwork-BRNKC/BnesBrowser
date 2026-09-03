@@ -5,10 +5,10 @@
 
 #include "chrome/browser/ui/views/frame/layout/browser_view_layout_delegate_impl.h"
 
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_contents_view_util.h"
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_contents_view_util.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/exclusive_access/exclusive_access_manager.h"
 #include "chrome/browser/ui/exclusive_access/fullscreen_controller.h"

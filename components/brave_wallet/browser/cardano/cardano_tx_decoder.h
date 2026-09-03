@@ -12,7 +12,7 @@
 
 #include "base/containers/span.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
 
 namespace brave_wallet {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 
 #include <stddef.h>
 
@@ -18,9 +18,9 @@
 #include "base/containers/span_writer.h"
 #include "base/containers/to_vector.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/common/bech32.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/lib.rs.h"
+#include "BnesBrowser/components/brave_wallet/common/bech32.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/lib.rs.h"
 
 namespace brave_wallet {
 

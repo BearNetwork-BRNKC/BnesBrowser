@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/navigation_throttle_registry.h"
 #include "content/public/browser/web_contents.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 namespace brave {

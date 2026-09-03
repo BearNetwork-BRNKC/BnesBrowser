@@ -12,7 +12,7 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ref.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #include "net/base/network_change_notifier.h"
 
 namespace base {

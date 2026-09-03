@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_location_bar_model_delegate.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_location_bar_model_delegate.h"
 
 #include "base/check.h"
 #include "base/feature_list.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ui/brave_scheme_utils.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ui/brave_scheme_utils.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/tabs/features.h"
 #include "components/prefs/pref_service.h"
@@ -22,9 +22,9 @@
 #include "content/public/common/url_constants.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service_factory.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service_factory.h"
 #endif
 
 BraveLocationBarModelDelegate::BraveLocationBarModelDelegate() = default;

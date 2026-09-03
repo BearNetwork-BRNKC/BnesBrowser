@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/reminders/reminders.h"
+#include "BnesBrowser/components/brave_ads/core/internal/reminders/reminders.h"
 
 #include "base/location.h"
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_util.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_table.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager.h"
-#include "brave/components/brave_ads/core/internal/reminders/reminder/clicked_same_ad_multiple_times_reminder_util.h"
-#include "brave/components/brave_ads/core/internal/reminders/reminders_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/reminders/reminder/clicked_same_ad_multiple_times_reminder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/reminders/reminders_constants.h"
 
 namespace brave_ads {
 

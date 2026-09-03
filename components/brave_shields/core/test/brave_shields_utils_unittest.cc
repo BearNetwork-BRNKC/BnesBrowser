@@ -3,19 +3,19 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/files/scoped_temp_dir.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/profiles/brave_profile_manager.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/common/brave_shield_utils.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/profiles/brave_profile_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"

@@ -7,7 +7,7 @@
 
 #include "base/files/file_util.h"
 #include "base/path_service.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/test/base/android/android_browser_test.h"
 #include "chrome/test/base/chrome_test_utils.h"
 #include "chrome/test/base/testing_browser_process.h"

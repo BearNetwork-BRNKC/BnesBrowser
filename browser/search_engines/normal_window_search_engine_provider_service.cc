@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/normal_window_search_engine_provider_service.h"
+#include "BnesBrowser/browser/search_engines/normal_window_search_engine_provider_service.h"
 
 #include <string>
 
 #include "base/functional/bind.h"
-#include "brave/browser/search_engines/pref_names.h"
-#include "brave/browser/search_engines/search_engine_provider_util.h"
-#include "brave/components/l10n/common/locale_util.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/browser/search_engines/pref_names.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_util.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_prepopulate_data_resolver_factory.h"

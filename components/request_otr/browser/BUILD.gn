@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/request_otr/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/request_otr/common/buildflags/buildflags.gni")
 
 assert(enable_request_otr)
 
@@ -33,14 +33,14 @@ source_set("browser") {
 
   deps += [
     "//base",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/p3a_utils",
-    "//brave/components/request_otr/common",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/time_period_storage",
-    "//brave/extensions:common",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/request_otr/common",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/time_period_storage",
+    "//BnesBrowser/extensions:common",
     "//components/prefs",
     "//components/profile_metrics",
     "//components/security_interstitials/content:security_interstitial_page",
@@ -60,7 +60,7 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/request_otr/browser",
+    "//BnesBrowser/components/request_otr/browser",
     "//components/prefs:test_support",
     "//content/test:test_support",
     "//testing/gtest",

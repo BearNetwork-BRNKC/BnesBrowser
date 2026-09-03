@@ -3,15 +3,15 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/speedreader/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 
 assert(enable_speedreader)
 
 static_library("speedreader") {
   public_deps = [
     "rust/ffi",
-    "//brave/components/speedreader/common",
-    "//brave/components/speedreader/common/buildflags",
+    "//BnesBrowser/components/speedreader/common",
+    "//BnesBrowser/components/speedreader/common/buildflags",
   ]
 
   sources = [
@@ -39,12 +39,12 @@ static_library("speedreader") {
 
   deps = [
     "rust/ffi",
-    "//brave/components/body_sniffer",
-    "//brave/components/p3a_utils",
-    "//brave/components/resources",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/speedreader/common:mojom",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/body_sniffer",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/resources",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/speedreader/common:mojom",
+    "//BnesBrowser/components/time_period_storage",
     "//components/content_settings/core/browser",
     "//components/content_settings/core/common",
     "//components/keyed_service/core",
@@ -75,10 +75,10 @@ source_set("unit_tests") {
     ":speedreader",
     "//base",
     "//base/test:test_support",
-    "//brave/components/constants",
-    "//brave/components/p3a_utils",
-    "//brave/components/speedreader/common",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/speedreader/common",
+    "//BnesBrowser/components/time_period_storage",
     "//components/content_settings/core/browser",
     "//components/prefs",
     "//components/prefs:test_support",
@@ -88,5 +88,5 @@ source_set("unit_tests") {
     "//testing/gtest",
   ]
 
-  data = [ "//brave/test/data/speedreader/rewriter" ]
+  data = [ "//BnesBrowser/test/data/speedreader/rewriter" ]
 }

@@ -17,8 +17,8 @@
 #include "base/time/time.h"
 #include "base/timer/timer.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/skus/common/skus_sdk.mojom-forward.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom-forward.h"
 #include "build/build_config.h"
 
 class PrefService;

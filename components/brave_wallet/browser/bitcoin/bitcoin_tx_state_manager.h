@@ -9,7 +9,7 @@
 #include <memory>
 #include <string>
 
-#include "brave/components/brave_wallet/browser/tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_state_manager.h"
 
 namespace brave_wallet {
 

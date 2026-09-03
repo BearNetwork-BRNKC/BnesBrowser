@@ -5,6 +5,6 @@
 
 #include "chrome/common/extensions/chrome_extensions_client.h"
 
-#include "brave/common/extensions/brave_extensions_api_provider.h"
+#include "BnesBrowser/common/extensions/brave_extensions_api_provider.h"
 
 #include <chrome/common/extensions/chrome_extensions_client.cc>

@@ -10,9 +10,9 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_account/endpoints/login_finalize.h"
-#include "brave/components/brave_account/endpoints/login_init.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/endpoints/login_finalize.h"
+#include "BnesBrowser/components/brave_account/endpoints/login_init.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 
 namespace brave_account {
 

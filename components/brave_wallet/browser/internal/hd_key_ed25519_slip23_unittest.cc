@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/internal/hd_key_ed25519_slip23.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_ed25519_slip23.h"
 
 #include <array>
 #include <string>
@@ -16,9 +16,9 @@
 #include "base/rand_util.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
 #include "crypto/hash.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/boringssl/src/include/openssl/curve25519.h"

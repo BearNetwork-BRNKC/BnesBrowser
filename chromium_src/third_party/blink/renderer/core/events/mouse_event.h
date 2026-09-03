@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_EVENTS_MOUSE_EVENT_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_CORE_EVENTS_MOUSE_EVENT_H_
 
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 
 #define screenX                                               \
   screenX() const {                                           \

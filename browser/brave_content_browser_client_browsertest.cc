@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_content_browser_client.h"
+#include "BnesBrowser/browser/brave_content_browser_client.h"
 
 #include <memory>
 #include <vector>
@@ -12,11 +12,11 @@
 #include "base/strings/strcat.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/test/bind.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/extensions/component_loader.h"
@@ -45,15 +45,15 @@
 #include "url/origin.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/components/tor/tor_navigation_throttle.h"
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/components/tor/tor_navigation_throttle.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
 #include "base/test/scoped_os_info_override_win.h"
 #include "base/win/windows_version.h"
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 #endif
 
 class BraveContentBrowserClientTest : public InProcessBrowserTest {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/brave_component_loader.h"
+#include "BnesBrowser/browser/extensions/brave_component_loader.h"
 
 #include <string>
 #include <utility>
@@ -14,10 +14,10 @@
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
 #include "base/json/json_reader.h"
-#include "brave/components/brave_extension/grit/brave_extension.h"
-#include "brave/components/constants/brave_switches.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_extension/grit/brave_extension.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "chrome/browser/extensions/extension_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
@@ -28,7 +28,7 @@
 #include "ui/base/resource/resource_bundle.h"
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY_NATIVE)
-#include "brave/components/web_discovery/common/features.h"
+#include "BnesBrowser/components/web_discovery/common/features.h"
 #endif
 
 namespace extensions {

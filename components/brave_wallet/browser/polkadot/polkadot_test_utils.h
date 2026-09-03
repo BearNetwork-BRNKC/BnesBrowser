@@ -14,10 +14,10 @@
 
 #include "base/containers/flat_map.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "services/network/test/test_url_loader_factory.h"
 

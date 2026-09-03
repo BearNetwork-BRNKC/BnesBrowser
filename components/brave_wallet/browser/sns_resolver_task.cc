@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/sns_resolver_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/sns_resolver_task.h"
 
 #include <algorithm>
 #include <optional>
@@ -25,18 +25,18 @@
 #include "base/strings/string_view_util.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/json_rpc_requests_helper.h"
-#include "brave/components/brave_wallet/browser/json_rpc_response_parser.h"
-#include "brave/components/brave_wallet/browser/json_rpc_responses.h"
-#include "brave/components/brave_wallet/browser/solana_keyring.h"
-#include "brave/components/brave_wallet/browser/solana_requests.h"
-#include "brave/components/brave_wallet/browser/solana_response_parser.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
-#include "brave/components/brave_wallet/common/solana_address.h"
-#include "brave/components/ipfs/ipfs_utils.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_requests_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_responses.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_requests.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_address.h"
+#include "BnesBrowser/components/ipfs/ipfs_utils.h"
 #include "build/build_config.h"
 #include "crypto/hash.h"
 #include "third_party/abseil-cpp/absl/cleanup/cleanup.h"

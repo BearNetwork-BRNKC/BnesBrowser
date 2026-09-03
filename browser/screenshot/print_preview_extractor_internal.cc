@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/screenshot/print_preview_extractor_internal.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor_internal.h"
 
 #include <memory>
 #include <optional>
@@ -20,8 +20,8 @@
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
 #include "base/unguessable_token.h"
-#include "brave/browser/screenshot/print_preview_extractor.h"
-#include "brave/components/screenshot/core/browser/utils.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor.h"
+#include "BnesBrowser/components/screenshot/core/browser/utils.h"
 #include "chrome/browser/pdf/pdf_pref_names.h"
 #include "chrome/browser/printing/print_preview_data_service.h"
 #include "chrome/browser/printing/print_view_manager.h"

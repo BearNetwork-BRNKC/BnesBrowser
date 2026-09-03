@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/playlist/playlist_exclusions_bridge_impl.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_exclusions_bridge_impl.h"
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/playlist/core/browser/playlist_exclusions.h"
+#include "BnesBrowser/components/playlist/core/browser/playlist_exclusions.h"
 #include "net/base/apple/url_conversions.h"
 #include "url/gurl.h"
 

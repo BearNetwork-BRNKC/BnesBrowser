@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_solana_utils.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_solana_utils.h"
 
 #include <string>
 #include <vector>
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/solana_address.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_address.h"
 
 @implementation NSData (Base58)
 

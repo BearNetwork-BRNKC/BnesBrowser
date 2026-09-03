@@ -3,23 +3,23 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/location.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_info.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/page_land/page_land_info.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_feature.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_util.h"
-#include "brave/components/brave_ads/core/public/ad_units/search_result_ad/search_result_ad_url_util.h"
-#include "brave/components/brave_ads/core/public/common/url/url_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/page_land/page_land_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/search_result_ad/search_result_ad_url_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/url/url_util.h"
 
 namespace brave_ads {
 

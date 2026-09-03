@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_speech_to_text_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_speech_to_text_network_delegate_helper.h"
 
 #include <string>
 
 #include "base/check.h"
 #include "base/i18n/time_formatting.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_service_keys/brave_service_key_utils.h"
-#include "brave/components/speech_to_text/buildflags.h"
-#include "brave/components/speech_to_text/features.h"
+#include "BnesBrowser/components/brave_service_keys/brave_service_key_utils.h"
+#include "BnesBrowser/components/speech_to_text/buildflags.h"
+#include "BnesBrowser/components/speech_to_text/features.h"
 #include "extensions/common/url_pattern.h"
 #include "net/base/url_util.h"
 #include "services/network/public/cpp/resource_request.h"

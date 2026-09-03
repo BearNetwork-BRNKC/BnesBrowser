@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ad_units/ad_handler.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/ad_handler.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_util.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/conversion_user_data.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/page_land_user_data.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/conversions/conversion/conversion_info.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/conversion_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/page_land_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/conversions/conversion/conversion_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/ad_info.h"
 
 namespace brave_ads {
 

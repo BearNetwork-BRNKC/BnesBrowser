@@ -7,10 +7,10 @@
 #define BRAVE_BROWSER_UI_WEBUI_SPEEDREADER_SPEEDREADER_TOOLBAR_DATA_HANDLER_IMPL_H_
 
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/components/speedreader/common/speedreader_toolbar.mojom.h"
-#include "brave/components/speedreader/speedreader_service.h"
-#include "brave/components/speedreader/tts_player.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/components/speedreader/common/speedreader_toolbar.mojom.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/tts_player.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/browser/themes/theme_service_observer.h"
 #include "chrome/browser/ui/browser_tab_strip_tracker.h"

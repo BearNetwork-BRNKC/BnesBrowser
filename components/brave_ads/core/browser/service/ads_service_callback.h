@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace base {
 class DictValue;

@@ -14,8 +14,8 @@
 #include "base/containers/flat_set.h"
 #include "base/functional/callback.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/permissions/permission_expiration_key.h"
-#include "brave/components/permissions/permission_origins.h"
+#include "BnesBrowser/components/permissions/permission_expiration_key.h"
+#include "BnesBrowser/components/permissions/permission_origins.h"
 #include "components/content_settings/core/common/content_settings.h"
 
 namespace user_prefs {

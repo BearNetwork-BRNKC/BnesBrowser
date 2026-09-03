@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 
 #include <utility>
 
@@ -21,13 +21,13 @@
 #include "base/test/task_environment.h"
 #include "base/time/default_clock.h"
 #include "base/time/default_tick_clock.h"
-#include "brave/components/brave_sync/brave_sync_p3a.h"
-#include "brave/components/brave_sync/features.h"
-#include "brave/components/brave_sync/network_time_helper.h"
-#include "brave/components/history/core/browser/sync/brave_history_data_type_controller.h"
-#include "brave/components/history/core/browser/sync/brave_history_delete_directives_data_type_controller.h"
-#include "brave/components/sync/service/sync_service_impl_delegate.h"
-#include "brave/components/sync/test/brave_mock_sync_engine.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_p3a.h"
+#include "BnesBrowser/components/brave_sync/features.h"
+#include "BnesBrowser/components/brave_sync/network_time_helper.h"
+#include "BnesBrowser/components/history/core/browser/sync/brave_history_data_type_controller.h"
+#include "BnesBrowser/components/history/core/browser/sync/brave_history_delete_directives_data_type_controller.h"
+#include "BnesBrowser/components/sync/service/sync_service_impl_delegate.h"
+#include "BnesBrowser/components/sync/test/brave_mock_sync_engine.h"
 #include "build/build_config.h"
 #include "components/network_time/network_time_tracker.h"
 #include "components/os_crypt/async/browser/test_utils.h"

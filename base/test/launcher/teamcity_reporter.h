@@ -14,7 +14,7 @@
 #include <string_view>
 
 #include "base/test/launcher/test_result.h"
-#include "brave/base/test/launcher/teamcity_service_messages.h"
+#include "BnesBrowser/base/test/launcher/teamcity_service_messages.h"
 
 namespace base {
 

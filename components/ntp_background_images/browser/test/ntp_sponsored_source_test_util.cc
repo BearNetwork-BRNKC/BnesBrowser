@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
 
 #include <string>
 

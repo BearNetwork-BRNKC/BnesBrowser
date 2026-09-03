@@ -14,7 +14,7 @@
 #include <vector>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 
 namespace brave_wallet::cardano_rpc {
 

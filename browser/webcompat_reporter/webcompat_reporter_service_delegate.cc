@@ -3,21 +3,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/webcompat_reporter/webcompat_reporter_service_delegate.h"
+#include "BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_delegate.h"
 
 #include <optional>
 
 #include "base/check.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/common/brave_channel_info.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_service_manager.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_locale_utils.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_utils.h"
+#include "BnesBrowser/common/brave_channel_info.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_service_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_locale_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_utils.h"
 #include "components/component_updater/component_updater_service.h"
 #include "components/prefs/pref_service.h"
 

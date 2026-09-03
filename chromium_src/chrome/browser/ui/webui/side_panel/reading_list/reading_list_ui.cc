@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/webui/side_panel/reading_list/reading_list_ui.h"
 
-#include "brave/browser/ui/webui/side_panel/reading_list/brave_reading_list_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/side_panel/reading_list/brave_reading_list_page_handler.h"
 
 #define ReadingListPageHandler BraveReadingListPageHandler
 

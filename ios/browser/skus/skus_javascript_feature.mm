@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/skus/skus_javascript_feature.h"
+#include "BnesBrowser/ios/browser/skus/skus_javascript_feature.h"
 
 #include <optional>
 #include <string>
@@ -16,7 +16,7 @@
 #include "base/json/json_reader.h"
 #include "base/memory/ptr_util.h"
 #include "base/values.h"
-#include "brave/ios/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/ios/browser/skus/skus_service_factory.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/browser_state.h"
 #include "ios/web/public/js_messaging/origin_filter.h"

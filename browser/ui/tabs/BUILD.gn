@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/containers/buildflags/buildflags.gni")
-import("//brave/components/psst/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/psst/buildflags/buildflags.gni")
 
 assert(is_win || is_mac || is_linux || is_chromeos || is_android)
 
@@ -19,18 +19,18 @@ source_set("tabs_public") {
   ]
 
   public_deps = [
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/psst/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/psst/buildflags",
     "//chrome/browser/ui/browser_window",
     "//chrome/browser/ui/tabs:tabs_public",
   ]
 
-  deps = [ "//brave/components/containers/buildflags" ]
+  deps = [ "//BnesBrowser/components/containers/buildflags" ]
 }
 
 if (!is_android) {
   source_set("impl") {
-    visibility = [ "//brave/browser:core" ]
+    visibility = [ "//BnesBrowser/browser:core" ]
 
     sources = [
       "brave_tab_features.cc",
@@ -39,9 +39,9 @@ if (!is_android) {
 
     deps = [
       ":tabs_public",
-      "//brave/browser/ui/focus_mode",
-      "//brave/browser/ui/side_panel",
-      "//brave/browser/ui/views/page_action",
+      "//BnesBrowser/browser/ui/focus_mode",
+      "//BnesBrowser/browser/ui/side_panel",
+      "//BnesBrowser/browser/ui/views/page_action",
       "//chrome/browser/content_settings:content_settings_factory",
       "//chrome/browser/profiles",
       "//chrome/browser/ui:ui_features",
@@ -52,21 +52,21 @@ if (!is_android) {
     ]
 
     if (enable_ai_chat) {
-      deps += [ "//brave/browser/ai_chat" ]
+      deps += [ "//BnesBrowser/browser/ai_chat" ]
     }
 
     if (enable_containers) {
       deps += [
-        "//brave/browser/containers",
-        "//brave/components/containers/core/browser",
-        "//brave/components/containers/core/common:features",
+        "//BnesBrowser/browser/containers",
+        "//BnesBrowser/components/containers/core/browser",
+        "//BnesBrowser/components/containers/core/common:features",
       ]
     }
 
     if (enable_psst) {
       deps += [
-        "//brave/browser/psst",
-        "//brave/components/psst/core/common",
+        "//BnesBrowser/browser/psst",
+        "//BnesBrowser/components/psst/core/common",
       ]
     }
   }
@@ -79,7 +79,7 @@ if (!is_android) {
     ]
 
     deps = [
-      "//brave/components/tabs",
+      "//BnesBrowser/components/tabs",
       "//chrome/browser/ui/tabs:features",
       "//chrome/browser/ui/tabs:tab_strip",
     ]
@@ -98,8 +98,8 @@ if (!is_android) {
 
     deps = [
       "//base",
-      "//brave/browser/ui/tabs:tabs_public",
-      "//brave/components/containers/buildflags",
+      "//BnesBrowser/browser/ui/tabs:tabs_public",
+      "//BnesBrowser/components/containers/buildflags",
       "//chrome/browser/ui/browser_window",
       "//chrome/browser/ui/tabs:tab_menu",
       "//ui/compositor",
@@ -112,10 +112,10 @@ if (!is_android) {
         "containers_tab_menu_model_delegate.h",
       ]
       deps += [
-        "//brave/browser/ui/containers",
-        "//brave/components/containers/content/browser",
-        "//brave/components/containers/core/browser",
-        "//brave/components/containers/core/common",
+        "//BnesBrowser/browser/ui/containers",
+        "//BnesBrowser/components/containers/content/browser",
+        "//BnesBrowser/components/containers/core/browser",
+        "//BnesBrowser/components/containers/core/common",
         "//components/tabs:public",
       ]
     }
@@ -129,9 +129,9 @@ if (!is_android) {
 
     deps = [
       "//base",
-      "//brave/browser/ui/split_view",
-      "//brave/components/resources:strings_grit",
-      "//brave/components/vector_icons",
+      "//BnesBrowser/browser/ui/split_view",
+      "//BnesBrowser/components/resources:strings_grit",
+      "//BnesBrowser/components/vector_icons",
       "//chrome/browser/ui/tabs",
       "//chrome/browser/ui/tabs:tab_model",
       "//chrome/browser/ui/tabs:tab_strip",
@@ -149,7 +149,7 @@ if (!is_android) {
 
     deps = [
       "//base",
-      "//brave/components/tabs",
+      "//BnesBrowser/components/tabs",
       "//components/tabs:public",
     ]
   }
@@ -162,9 +162,9 @@ if (!is_android) {
 
     deps = [
       "//base",
-      "//brave/browser/sessions",
-      "//brave/browser/ui/tabs:tab_strip",
-      "//brave/components/tabs",
+      "//BnesBrowser/browser/sessions",
+      "//BnesBrowser/browser/ui/tabs:tab_strip",
+      "//BnesBrowser/components/tabs",
       "//chrome/browser/sessions",
       "//chrome/browser/ui/tabs:features",
       "//chrome/browser/ui/tabs:tab_strip",
@@ -183,8 +183,8 @@ source_set("browser_tests") {
   sources = [ "brave_tab_menu_browsertest.cc" ]
 
   deps = [
-    "//brave/components/containers/buildflags",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/containers/buildflags",
+    "//BnesBrowser/components/resources:strings_grit",
     "//chrome/browser/ui",
     "//chrome/test:test_support",
     "//content/public/browser",
@@ -197,8 +197,8 @@ source_set("browser_tests") {
 
   if (enable_containers) {
     deps += [
-      "//brave/components/containers/core/browser:test_support",
-      "//brave/components/containers/core/common:features",
+      "//BnesBrowser/components/containers/core/browser:test_support",
+      "//BnesBrowser/components/containers/core/common:features",
     ]
   }
 

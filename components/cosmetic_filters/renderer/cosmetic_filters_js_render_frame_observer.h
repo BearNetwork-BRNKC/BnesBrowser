@@ -11,7 +11,7 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
-#include "brave/components/cosmetic_filters/renderer/cosmetic_filters_js_handler.h"
+#include "BnesBrowser/components/cosmetic_filters/renderer/cosmetic_filters_js_handler.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "content/public/renderer/render_frame_observer_tracker.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/peeking_card.h"
+#include "BnesBrowser/components/brave_news/browser/peeking_card.h"
 
 #include <algorithm>
 #include <iterator>
@@ -16,10 +16,10 @@
 
 #include "base/containers/flat_set.h"
 #include "base/time/time.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/feed_sampling.h"
-#include "brave/components/brave_news/browser/topics_fetcher.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/browser/topics_fetcher.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 
 namespace brave_news {

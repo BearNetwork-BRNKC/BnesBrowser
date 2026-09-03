@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/tabs/ads_tab_helper.h"
+#include "BnesBrowser/browser/brave_ads/tabs/ads_tab_helper.h"
 
 #include <cstdint>
 #include <memory>
@@ -24,11 +24,11 @@
 #include "base/strings/string_util.h"
 #include "base/test/gmock_callback_support.h"
 #include "base/test/test_future.h"
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/components/brave_ads/core/browser/service/test/ads_service_mock.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/test/ads_service_mock.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/keep_alive/profile_keep_alive_types.h"

@@ -13,11 +13,11 @@
 
 #include "base/containers/span.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/unstoppable_domains_dns_resolve.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/browser/unstoppable_domains_dns_resolve.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
 
 namespace brave_wallet {
 

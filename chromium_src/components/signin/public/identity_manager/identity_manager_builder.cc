@@ -12,7 +12,7 @@
 #undef BuildIdentityManagerInitParameters
 #undef BuildIdentityManager
 
-#include "brave/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h"
+#include "BnesBrowser/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h"
 #include "components/signin/public/identity_manager/identity_manager.h"
 
 namespace signin {

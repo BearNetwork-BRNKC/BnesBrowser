@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/renderer/web3_metrics_render_frame_observer.h"
+#include "BnesBrowser/components/misc_metrics/renderer/web3_metrics_render_frame_observer.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/strings/strcat.h"
-#include "brave/components/safe_builtins/renderer/safe_builtins_helpers.h"
+#include "BnesBrowser/components/safe_builtins/renderer/safe_builtins_helpers.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/renderer/render_frame.h"
 #include "gin/function_template.h"

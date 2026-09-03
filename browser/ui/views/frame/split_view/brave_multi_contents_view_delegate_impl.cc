@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/split_view/brave_multi_contents_view_delegate_impl.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_multi_contents_view_delegate_impl.h"
 
 #include "base/types/to_address.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

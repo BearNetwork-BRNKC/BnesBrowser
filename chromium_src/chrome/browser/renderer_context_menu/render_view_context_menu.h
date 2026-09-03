@@ -6,18 +6,18 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_RENDERER_CONTEXT_MENU_RENDER_VIEW_CONTEXT_MENU_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_RENDERER_CONTEXT_MENU_RENDER_VIEW_CONTEXT_MENU_H_
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/text_recognition/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/text_recognition/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/ui/containers/containers_menu_model.h"
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 class RenderViewContextMenu;

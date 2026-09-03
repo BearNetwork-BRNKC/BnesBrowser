@@ -20,8 +20,8 @@ source_set("logins") {
   ]
   deps = [
     ":logins_js",
-    "//brave/ios/browser/api/password",
-    "//brave/ios/browser/ui/web_view:features",
+    "//BnesBrowser/ios/browser/api/password",
+    "//BnesBrowser/ios/browser/ui/web_view:features",
     "//components/keyed_service/core",
     "//components/password_manager/core/browser/password_store:password_store_interface",
     "//ios/chrome/browser/passwords/model",

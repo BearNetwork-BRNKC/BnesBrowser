@@ -20,8 +20,8 @@ source_set("url") {
 
   deps = [
     "//base",
-    "//brave/components/content_settings/core/common",
-    "//brave/extensions:common",
+    "//BnesBrowser/components/content_settings/core/common",
+    "//BnesBrowser/extensions:common",
     "//components/lookalikes/core",
     "//components/lookalikes/core:safety_tips",
     "//components/url_formatter",

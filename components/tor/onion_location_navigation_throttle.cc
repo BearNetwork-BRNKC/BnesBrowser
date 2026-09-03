@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/onion_location_navigation_throttle.h"
+#include "BnesBrowser/components/tor/onion_location_navigation_throttle.h"
 
 #include <string>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/tor/onion_location_tab_helper.h"
+#include "BnesBrowser/components/tor/onion_location_tab_helper.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/web_contents.h"

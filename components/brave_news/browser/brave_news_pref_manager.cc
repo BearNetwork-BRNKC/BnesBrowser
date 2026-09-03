@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
 
 #include <algorithm>
 #include <string>
@@ -13,11 +13,11 @@
 #include "base/containers/flat_map.h"
 #include "base/functional/bind.h"
 #include "base/uuid.h"
-#include "brave/components/brave_news/browser/brave_news_p3a.h"
-#include "brave/components/brave_news/browser/channel_migrator.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/pref_names.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_p3a.h"
+#include "BnesBrowser/components/brave_news/browser/channel_migrator.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

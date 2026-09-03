@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/app/v2/shared/app_utils.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/app_utils.h"
 
 #include "base/apple/bundle_locations.h"
 #include "base/apple/foundation_util.h"

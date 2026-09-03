@@ -5,7 +5,7 @@
 
 #import "brave/ios/browser/brave_account/brave_account_feature_bridge.h"
 
-#include "brave/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/features.h"
 
 BOOL IsBraveAccountEnabled() {
   return brave_account::features::IsBraveAccountEnabled();

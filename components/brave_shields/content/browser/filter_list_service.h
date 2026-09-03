@@ -9,8 +9,8 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_shields/core/common/filter_list.mojom-forward.h"
-#include "brave/components/brave_shields/core/common/filter_list.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/filter_list.mojom-forward.h"
+#include "BnesBrowser/components/brave_shields/core/common/filter_list.mojom.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"

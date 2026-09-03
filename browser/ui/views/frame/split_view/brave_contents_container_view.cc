@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/split_view/brave_contents_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_contents_container_view.h"
 
 #include <memory>
 
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_contents_view_util.h"
-#include "brave/browser/ui/views/frame/split_view/brave_multi_contents_view_mini_toolbar.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_contents_view_util.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_multi_contents_view_mini_toolbar.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/exclusive_access/exclusive_access_manager.h"

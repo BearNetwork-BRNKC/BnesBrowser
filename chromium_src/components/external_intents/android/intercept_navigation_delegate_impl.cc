@@ -7,7 +7,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/strings/escape.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/external_intents/android/jni_headers/InterceptNavigationDelegateImpl_jni.h"
 #include "components/navigation_interception/intercept_navigation_delegate.h"
 #include "components/navigation_interception/intercept_navigation_throttle.h"

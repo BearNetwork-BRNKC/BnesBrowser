@@ -10,10 +10,10 @@
 #include <string>
 
 #include "base/scoped_observation.h"
-#include "brave/components/brave_wallet/browser/tx_manager.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_block_tracker.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
 
 namespace brave_wallet {
 

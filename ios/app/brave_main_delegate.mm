@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/app/brave_main_delegate.h"
+#include "BnesBrowser/ios/app/brave_main_delegate.h"
 
 #include "base/apple/bundle_locations.h"
 #include "base/base_paths.h"
@@ -11,12 +11,12 @@
 #include "base/command_line.h"
 #include "base/files/file_path.h"
 #include "base/path_service.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
-#include "brave/components/brave_component_updater/browser/features.h"
-#include "brave/components/brave_component_updater/browser/switches.h"
-#include "brave/components/brave_sync/buildflags.h"
-#include "brave/components/update_client/buildflags.h"
-#include "brave/components/variations/command_line_utils.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/switches.h"
+#include "BnesBrowser/components/brave_sync/buildflags.h"
+#include "BnesBrowser/components/update_client/buildflags.h"
+#include "BnesBrowser/components/variations/command_line_utils.h"
 #include "components/browser_sync/browser_sync_switches.h"
 #include "components/component_updater/component_updater_switches.h"
 #include "components/sync/base/command_line_switches.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_ad_block_csp_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_ad_block_csp_network_delegate_helper.h"
 
 #include <optional>
 #include <string>
@@ -11,11 +11,11 @@
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/browser/ad_block_service_helper.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_service_helper.h"
 #include "content/public/browser/browser_thread.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_response_headers.h"

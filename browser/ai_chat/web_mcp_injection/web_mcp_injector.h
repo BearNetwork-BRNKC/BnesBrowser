@@ -9,7 +9,7 @@
 #include <memory>
 #include <string_view>
 
-#include "brave/components/script_injector/common/mojom/script_injector.mojom.h"
+#include "BnesBrowser/components/script_injector/common/mojom/script_injector.mojom.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"
 

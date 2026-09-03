@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_ui_desktop_presenter.h"
+#include "BnesBrowser/browser/psst/psst_ui_desktop_presenter.h"
 
-#include "brave/browser/psst/psst_infobar_delegate.h"
-#include "brave/browser/ui/views/page_action/psst_action_controller.h"
-#include "brave/components/psst/core/common/constants.h"
+#include "BnesBrowser/browser/psst/psst_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/views/page_action/psst_action_controller.h"
+#include "BnesBrowser/components/psst/core/common/constants.h"
 #include "chrome/browser/ui/tabs/public/tab_features.h"
 #include "chrome/browser/ui/webui/constrained_web_dialog_ui.h"
 #include "components/infobars/content/content_infobar_manager.h"

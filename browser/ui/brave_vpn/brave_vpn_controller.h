@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_BRAVE_VPN_BRAVE_VPN_CONTROLLER_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 
 class BraveBrowserView;
 class BrowserView;

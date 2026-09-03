@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tab_tracker_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/tab_tracker_service_factory.h"
 
 #include <memory>
 
 #include "base/check.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 
 namespace ai_chat {

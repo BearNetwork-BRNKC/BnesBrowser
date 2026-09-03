@@ -5,11 +5,11 @@
 
 #include <memory>
 
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
-#include "brave/components/brave_vpn/common/brave_vpn_data_types.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_data_types.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "content/public/test/browser_task_environment.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

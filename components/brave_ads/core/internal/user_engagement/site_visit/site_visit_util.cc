@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_util.h"
 
 #include <utility>
 
 #include "base/notreached.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/common/url/url_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/url/url_util.h"
 #include "url/gurl.h"
 
 namespace brave_ads {

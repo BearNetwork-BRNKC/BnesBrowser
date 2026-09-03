@@ -9,10 +9,10 @@
 #include "base/functional/callback.h"
 #include "base/types/expected.h"
 #include "base/types/pass_key.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

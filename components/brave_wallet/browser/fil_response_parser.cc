@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/fil_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_response_parser.h"
 
 #include <memory>
 #include <optional>
@@ -11,8 +11,8 @@
 
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/json_rpc_response_parser.h"
-#include "brave/components/json/json_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_response_parser.h"
+#include "BnesBrowser/components/json/json_helper.h"
 
 namespace brave_wallet {
 

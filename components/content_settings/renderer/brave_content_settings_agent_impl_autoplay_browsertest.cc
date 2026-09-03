@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/content_settings/renderer/brave_content_settings_agent_impl.h"
+#include "BnesBrowser/components/content_settings/renderer/brave_content_settings_agent_impl.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_utils.h"
 #include "components/content_settings/renderer/content_settings_agent_impl.h"

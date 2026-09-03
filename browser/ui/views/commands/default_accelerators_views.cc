@@ -5,7 +5,7 @@
 
 #include <algorithm>
 
-#include "brave/browser/ui/commands/default_accelerators.h"
+#include "BnesBrowser/browser/ui/commands/default_accelerators.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/accelerator_table.h"
 #include "ui/base/accelerators/accelerator.h"

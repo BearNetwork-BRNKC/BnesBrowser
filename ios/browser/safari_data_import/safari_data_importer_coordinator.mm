@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/safari_data_import/safari_data_importer_coordinator.h"
+#include "BnesBrowser/ios/browser/safari_data_import/safari_data_importer_coordinator.h"
 
 #include <memory>
 
 #include "base/apple/foundation_util.h"
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
-#include "brave/ios/browser/safari_data_import/safari_data_import_client_bridge.h"
-#include "brave/ios/browser/safari_data_import/safari_data_importer_bridge_impl.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/ios/browser/safari_data_import/safari_data_import_client_bridge.h"
+#include "BnesBrowser/ios/browser/safari_data_import/safari_data_importer_bridge_impl.h"
 #include "components/application_locale_storage/application_locale_storage.h"
 #include "components/autofill/core/browser/data_manager/personal_data_manager.h"
 #include "components/bookmarks/browser/bookmark_model.h"

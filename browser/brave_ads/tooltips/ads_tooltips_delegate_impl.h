@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/browser/brave_ads/tooltips/ads_tooltips_controller.h"
-#include "brave/components/brave_ads/browser/tooltips/ads_tooltips_delegate.h"
+#include "BnesBrowser/browser/brave_ads/tooltips/ads_tooltips_controller.h"
+#include "BnesBrowser/components/brave_ads/browser/tooltips/ads_tooltips_delegate.h"
 
 namespace brave_ads {
 

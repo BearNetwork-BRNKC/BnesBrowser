@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
 
 #include "base/json/json_writer.h"
 

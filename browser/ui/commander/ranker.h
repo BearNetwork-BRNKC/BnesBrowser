@@ -12,7 +12,7 @@
 #include <vector>
 
 #include "base/time/time.h"
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 #include "components/prefs/pref_service.h"
 
 namespace commander {

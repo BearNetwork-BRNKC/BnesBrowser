@@ -3,14 +3,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(enable_brave_ads)
 
 static_library("lib") {
   visibility = [
-    "//brave/browser/brave_ads/services",
-    "//brave/test:*",
+    "//BnesBrowser/browser/brave_ads/services",
+    "//BnesBrowser/test:*",
     "//chrome/utility:*",
   ]
 
@@ -29,11 +29,11 @@ static_library("lib") {
 
   public_deps = [
     "public/interfaces",
-    "//brave/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/mojom",
   ]
 
   deps = [
-    "//brave/components/brave_ads/core",
+    "//BnesBrowser/components/brave_ads/core",
     "//mojo/public/cpp/bindings",
     "//mojo/public/cpp/system",
     "//net",

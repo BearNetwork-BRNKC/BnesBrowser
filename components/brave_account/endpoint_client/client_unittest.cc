@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/endpoint_client/client.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/client.h"
 
 #include <concepts>
 #include <cstddef>
@@ -25,20 +25,20 @@
 #include "base/threading/thread.h"
 #include "base/types/expected.h"
 #include "base/types/is_instantiation.h"
-#include "brave/components/brave_account/endpoint_client/is_endpoint.h"
-#include "brave/components/brave_account/endpoint_client/is_request.h"
-#include "brave/components/brave_account/endpoint_client/is_response.h"
-#include "brave/components/brave_account/endpoint_client/is_response_body.h"
-#include "brave/components/brave_account/endpoint_client/json_test_endpoint_bodies.h"
-#include "brave/components/brave_account/endpoint_client/maybe_strip_with_headers.h"
-#include "brave/components/brave_account/endpoint_client/protobuf_test_endpoint_bodies.pb.h"
-#include "brave/components/brave_account/endpoint_client/request_handle.h"
-#include "brave/components/brave_account/endpoint_client/request_types.h"
-#include "brave/components/brave_account/endpoint_client/response.h"
-#include "brave/components/brave_account/endpoint_client/retry_options.h"
-#include "brave/components/brave_account/endpoint_client/test_support.h"
-#include "brave/components/brave_account/endpoint_client/url_replacements.h"
-#include "brave/components/brave_account/endpoint_client/with_headers.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_endpoint.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_request.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response_body.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/json_test_endpoint_bodies.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/maybe_strip_with_headers.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/protobuf_test_endpoint_bodies.pb.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_handle.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_types.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/retry_options.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/test_support.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/url_replacements.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/with_headers.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_request_headers.h"
 #include "net/http/http_response_headers.h"

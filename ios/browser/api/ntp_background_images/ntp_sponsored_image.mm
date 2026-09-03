@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/ntp_background_images/ntp_sponsored_image.h"
+#include "BnesBrowser/ios/browser/api/ntp_background_images/ntp_sponsored_image.h"
 
 #include "base/files/file_path.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
-#include "brave/ios/browser/api/ntp_background_images/ntp_sponsored_image+private.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/ios/browser/api/ntp_background_images/ntp_sponsored_image+private.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "This file requires ARC support."

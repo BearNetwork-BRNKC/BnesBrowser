@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_origin/android/brave_origin_settings_launcher_helper.h"
+#include "BnesBrowser/browser/ui/brave_origin/android/brave_origin_settings_launcher_helper.h"
 
 #include "base/android/jni_android.h"
-#include "brave/browser/ui/brave_origin/android/jni_headers/BraveOriginSettingsLauncherHelper_jni.h"
-#include "brave/components/brave_origin/pref_names.h"
+#include "BnesBrowser/browser/ui/brave_origin/android/jni_headers/BraveOriginSettingsLauncherHelper_jni.h"
+#include "BnesBrowser/components/brave_origin/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 

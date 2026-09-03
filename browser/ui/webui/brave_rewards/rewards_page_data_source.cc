@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_data_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_data_source.h"
 
 #include <memory>
 
 #include "base/feature_list.h"
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/components/brave_adaptive_captcha/server_util.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/brave_rewards/resources/grit/brave_rewards_resources.h"
-#include "brave/components/brave_rewards/resources/grit/rewards_page_generated_map.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/server_util.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/resources/grit/brave_rewards_resources.h"
+#include "BnesBrowser/components/brave_rewards/resources/grit/rewards_page_generated_map.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/favicon_source.h"
 #include "chrome/browser/ui/webui/sanitized_image/sanitized_image_source.h"

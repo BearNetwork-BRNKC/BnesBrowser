@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_browser_main_extra_parts_p3a.h"
+#include "BnesBrowser/browser/brave_browser_main_extra_parts_p3a.h"
 
-#include "brave/browser/updater/features.h"
-#include "brave/browser/updater/updater_p3a.h"
+#include "BnesBrowser/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/updater_p3a.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/common/chrome_constants.h"
 

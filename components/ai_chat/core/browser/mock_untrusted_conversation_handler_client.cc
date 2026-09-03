@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/mock_untrusted_conversation_handler_client.h"
+#include "BnesBrowser/components/ai_chat/core/browser/mock_untrusted_conversation_handler_client.h"
 
 #include "base/functional/callback_helpers.h"
 

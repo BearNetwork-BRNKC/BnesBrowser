@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_list_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_list_p3a.h"
 
 #include <memory>
 #include <vector>
@@ -11,9 +11,9 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/test/metrics/histogram_tester.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"

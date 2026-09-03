@@ -2,7 +2,7 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 
 source_set("unit_tests") {
   testonly = true
@@ -23,7 +23,7 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/net/base:unit_tests",
+    "//BnesBrowser/net/base:unit_tests",
     "//net",
     "//net:test_support",
     "//net/http:transport_security_state_unittest_data",

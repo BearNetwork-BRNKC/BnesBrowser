@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/build/mac/config.gni")
-import("//brave/updater/config.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/build/mac/config.gni")
+import("//BnesBrowser/updater/config.gni")
 import("//build/util/branding.gni")
 import("//build/util/process_version.gni")
 import("//chrome/common/features.gni")
@@ -69,7 +69,7 @@ if (is_universal_binary) {
 
   # placeholder script to allow manual copying of binary into output dir
   action("copy_other_arch") {
-    script = "//brave/installer/mac/copy_other_arch_binary.py"
+    script = "//BnesBrowser/installer/mac/copy_other_arch_binary.py"
 
     other_arch_src_path = "$other_root_out_dir/$brave_exe"
 
@@ -129,7 +129,7 @@ action("generate_dsa_sig_for_dmg") {
   deps = [ ":package" ]
 
   if (build_sparkle) {
-    deps += [ "//brave/vendor/sparkle:copy_old_sign_update" ]
+    deps += [ "//BnesBrowser/vendor/sparkle:copy_old_sign_update" ]
   }
 }
 
@@ -167,7 +167,7 @@ action("generate_eddsa_sig_for_dmg") {
   deps = [ ":package" ]
 
   if (build_sparkle) {
-    deps += [ "//brave/vendor/sparkle:build_sparkle_framework" ]
+    deps += [ "//BnesBrowser/vendor/sparkle:build_sparkle_framework" ]
   }
 }
 
@@ -206,7 +206,7 @@ action("build_delta_installer") {
   deps = [ ":package" ]
 
   if (build_sparkle) {
-    deps += [ "//brave/vendor/sparkle:build_sparkle_framework" ]
+    deps += [ "//BnesBrowser/vendor/sparkle:build_sparkle_framework" ]
   }
 }
 
@@ -433,7 +433,7 @@ copy("copy_ds_store") {
 
 copy("copy_helper_entitlements") {
   visibility = [ ":package" ]
-  sources = [ "//brave/app/helper-entitlements.plist" ]
+  sources = [ "//BnesBrowser/app/helper-entitlements.plist" ]
   public_deps = [ "//chrome/installer/mac" ]
   outputs = [ "$packaging_dir/{{source_file_part}}" ]
 }

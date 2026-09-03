@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/device_id/device_id_impl.h"
+#include "BnesBrowser/browser/brave_ads/device_id/device_id_impl.h"
 
 // Note: The order of header includes is important, as we want both pre-Vista
 // and post-Vista data structures to be defined, specifically

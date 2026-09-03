@@ -13,7 +13,7 @@ source_set("https_upgrades") {
   ]
   deps = [
     "//base",
-    "//brave/ios/browser/keyed_service",
+    "//BnesBrowser/ios/browser/keyed_service",
     "//ios/chrome/browser/https_upgrades/model",
     "//ios/chrome/browser/shared/model/application_context",
     "//ios/chrome/browser/shared/model/profile",

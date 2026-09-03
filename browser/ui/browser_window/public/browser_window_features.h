@@ -8,9 +8,9 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
 
 class AIChatSidePanelTabTransferBridge;
 class BraveShieldsUIContentsCache;

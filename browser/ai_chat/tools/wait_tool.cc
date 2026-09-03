@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tools/wait_tool.h"
+#include "BnesBrowser/browser/ai_chat/tools/wait_tool.h"
 
 #include "base/functional/bind.h"
 #include "base/json/json_reader.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_input_properties.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_utils.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_input_properties.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "components/actor/core/task_id.h"
 #include "components/optimization_guide/proto/features/actions_data.pb.h"
 

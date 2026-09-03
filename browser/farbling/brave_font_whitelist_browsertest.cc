@@ -6,9 +6,9 @@
 #include <string_view>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/content_settings/renderer/brave_content_settings_agent_impl.h"
-#include "brave/third_party/blink/renderer/brave_font_whitelist.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/content_settings/renderer/brave_content_settings_agent_impl.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_font_whitelist.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/test/render_view_test.h"
 #include "third_party/blink/public/platform/web_string.h"

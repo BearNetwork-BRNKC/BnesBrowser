@@ -9,9 +9,9 @@
 #include <string>
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_info.h"
-#include "brave/components/brave_vpn/browser/connection/connection_api_impl.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_info.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/connection_api_impl.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 
 namespace brave_vpn {
 

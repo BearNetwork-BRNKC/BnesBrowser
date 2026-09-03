@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/workspaces/workspace_row_view.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspace_row_view.h"
 
 #include <utility>
 
@@ -12,9 +12,9 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/task/single_thread_task_runner.h"
-#include "brave/browser/workspaces/workspace_metadata.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/workspaces/workspace_metadata.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/base/metadata/metadata_header_macros.h"

@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/p3a/rotation_scheduler.h"
+#include "BnesBrowser/components/p3a/rotation_scheduler.h"
 
 #include <memory>
 
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

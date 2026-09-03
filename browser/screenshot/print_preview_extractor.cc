@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/screenshot/print_preview_extractor.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor.h"
 
 #include <memory>
 #include <string>
@@ -12,7 +12,7 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/screenshot/content/pdf_utils.h"
+#include "BnesBrowser/components/screenshot/content/pdf_utils.h"
 #include "printing/buildflags/buildflags.h"
 
 namespace screenshot {

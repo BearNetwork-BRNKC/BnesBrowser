@@ -8,7 +8,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ai_chat/file_text_extractor_base.h"
+#include "BnesBrowser/browser/ai_chat/file_text_extractor_base.h"
 
 namespace ai_chat {
 

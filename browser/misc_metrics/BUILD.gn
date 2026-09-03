@@ -3,22 +3,22 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//extensions/buildflags/buildflags.gni")
 
 source_set("misc_metrics") {
   sources = [
-    "//brave/browser/misc_metrics/media_session_metrics_impl.h",
-    "//brave/browser/misc_metrics/process_misc_metrics.h",
-    "//brave/browser/misc_metrics/profile_misc_metrics_service.h",
-    "//brave/browser/misc_metrics/profile_misc_metrics_service_factory.h",
+    "//BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h",
+    "//BnesBrowser/browser/misc_metrics/process_misc_metrics.h",
+    "//BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h",
+    "//BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h",
   ]
 
   deps = [
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/misc_metrics",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/time_period_storage",
     "//components/keyed_service/content",
     "//components/keyed_service/core",
     "//components/prefs",
@@ -30,36 +30,36 @@ source_set("misc_metrics") {
 
 static_library("misc_metrics_impl") {
   visibility = [
-    "//brave/browser:core",
-    "//brave/browser/misc_metrics/*",
+    "//BnesBrowser/browser:core",
+    "//BnesBrowser/browser/misc_metrics/*",
   ]
 
   sources = [
-    "//brave/browser/misc_metrics/doh_metrics.cc",
-    "//brave/browser/misc_metrics/doh_metrics.h",
-    "//brave/browser/misc_metrics/fingerprint_frequency_metrics.cc",
-    "//brave/browser/misc_metrics/fingerprint_frequency_metrics.h",
-    "//brave/browser/misc_metrics/media_session_metrics_impl.cc",
-    "//brave/browser/misc_metrics/page_metrics_tab_helper.cc",
-    "//brave/browser/misc_metrics/page_metrics_tab_helper.h",
-    "//brave/browser/misc_metrics/process_misc_metrics.cc",
-    "//brave/browser/misc_metrics/uptime_monitor_impl.h",
+    "//BnesBrowser/browser/misc_metrics/doh_metrics.cc",
+    "//BnesBrowser/browser/misc_metrics/doh_metrics.h",
+    "//BnesBrowser/browser/misc_metrics/fingerprint_frequency_metrics.cc",
+    "//BnesBrowser/browser/misc_metrics/fingerprint_frequency_metrics.h",
+    "//BnesBrowser/browser/misc_metrics/media_session_metrics_impl.cc",
+    "//BnesBrowser/browser/misc_metrics/page_metrics_tab_helper.cc",
+    "//BnesBrowser/browser/misc_metrics/page_metrics_tab_helper.h",
+    "//BnesBrowser/browser/misc_metrics/process_misc_metrics.cc",
+    "//BnesBrowser/browser/misc_metrics/uptime_monitor_impl.h",
   ]
 
   deps = [
     "//base",
-    "//brave/browser:browser_process",
-    "//brave/browser/brave_search",
-    "//brave/browser/brave_stats",
-    "//brave/browser/misc_metrics",
-    "//brave/browser/profiles:util",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/constants",
-    "//brave/components/misc_metrics",
-    "//brave/components/p3a_utils",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/script_injector/common/mojom",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/browser/brave_search",
+    "//BnesBrowser/browser/brave_stats",
+    "//BnesBrowser/browser/misc_metrics",
+    "//BnesBrowser/browser/profiles:util",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/script_injector/common/mojom",
+    "//BnesBrowser/components/time_period_storage",
     "//chrome/browser:browser_process",
     "//chrome/browser:shell_integration",
     "//chrome/browser/autofill",
@@ -84,36 +84,36 @@ static_library("misc_metrics_impl") {
   ]
 
   if (enable_ai_chat) {
-    deps += [ "//brave/components/ai_chat/core/browser" ]
+    deps += [ "//BnesBrowser/components/ai_chat/core/browser" ]
   }
 
   if (enable_extensions) {
     sources += [
-      "//brave/browser/misc_metrics/extension_metrics.cc",
-      "//brave/browser/misc_metrics/extension_metrics.h",
+      "//BnesBrowser/browser/misc_metrics/extension_metrics.cc",
+      "//BnesBrowser/browser/misc_metrics/extension_metrics.h",
     ]
 
-    deps += [ "//brave/browser/extensions/manifest_v2" ]
+    deps += [ "//BnesBrowser/browser/extensions/manifest_v2" ]
   }
 
   if (!is_android) {
     sources += [
-      "//brave/browser/misc_metrics/default_browser_monitor_delegate_impl.cc",
-      "//brave/browser/misc_metrics/default_browser_monitor_delegate_impl.h",
-      "//brave/browser/misc_metrics/theme_metrics.cc",
-      "//brave/browser/misc_metrics/theme_metrics.h",
-      "//brave/browser/misc_metrics/vertical_tab_metrics.cc",
-      "//brave/browser/misc_metrics/vertical_tab_metrics.h",
+      "//BnesBrowser/browser/misc_metrics/default_browser_monitor_delegate_impl.cc",
+      "//BnesBrowser/browser/misc_metrics/default_browser_monitor_delegate_impl.h",
+      "//BnesBrowser/browser/misc_metrics/theme_metrics.cc",
+      "//BnesBrowser/browser/misc_metrics/theme_metrics.h",
+      "//BnesBrowser/browser/misc_metrics/vertical_tab_metrics.cc",
+      "//BnesBrowser/browser/misc_metrics/vertical_tab_metrics.h",
     ]
     deps += [
-      "//brave/browser/extensions/manifest_v2",
-      "//brave/browser/themes",
+      "//BnesBrowser/browser/extensions/manifest_v2",
+      "//BnesBrowser/browser/themes",
       "//chrome/browser/themes",
       "//chrome/browser/ui/tabs:tab_strip",
       "//extensions/browser",
     ]
   } else {
-    sources += [ "//brave/browser/misc_metrics/misc_android_metrics.h" ]
+    sources += [ "//BnesBrowser/browser/misc_metrics/misc_android_metrics.h" ]
     deps += [
       "//chrome/browser/flags:flags_android",
       "//chrome/browser/ui/android/tab_model",
@@ -124,8 +124,8 @@ static_library("misc_metrics_impl") {
 if (!is_android) {
   source_set("usage_clock") {
     sources = [
-      "//brave/browser/misc_metrics/usage_clock.cc",
-      "//brave/browser/misc_metrics/usage_clock.h",
+      "//BnesBrowser/browser/misc_metrics/usage_clock.cc",
+      "//BnesBrowser/browser/misc_metrics/usage_clock.h",
     ]
 
     deps = [
@@ -149,12 +149,12 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser",
-    "//brave/browser/misc_metrics",
-    "//brave/browser/misc_metrics:misc_metrics_impl",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/misc_metrics",
-    "//brave/components/p3a_utils:test_support",
+    "//BnesBrowser/browser",
+    "//BnesBrowser/browser/misc_metrics",
+    "//BnesBrowser/browser/misc_metrics:misc_metrics_impl",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/p3a_utils:test_support",
     "//chrome/browser",
     "//chrome/browser/bookmarks",
     "//chrome/browser/content_settings:content_settings_factory",
@@ -180,7 +180,7 @@ source_set("unit_tests") {
 
     deps += [
       ":usage_clock",
-      "//brave/browser/themes",
+      "//BnesBrowser/browser/themes",
       "//chrome/browser/metrics/desktop_session_duration",
       "//chrome/browser/themes",
     ]
@@ -189,7 +189,7 @@ source_set("unit_tests") {
   if (enable_extensions) {
     sources += [ "extension_metrics_unittest.cc" ]
 
-    deps += [ "//brave/browser/extensions/manifest_v2" ]
+    deps += [ "//BnesBrowser/browser/extensions/manifest_v2" ]
   }
 }
 
@@ -210,9 +210,9 @@ source_set("browser_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser/misc_metrics:misc_metrics_impl",
-    "//brave/components/constants",
-    "//brave/components/misc_metrics",
+    "//BnesBrowser/browser/misc_metrics:misc_metrics_impl",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/misc_metrics",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/tab_group_sync:factories",
     "//chrome/test:test_support",
@@ -226,9 +226,9 @@ source_set("browser_tests") {
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/browser/brave_wallet",
-      "//brave/components/brave_wallet/browser",
-      "//brave/components/brave_wallet/browser:test_support",
+      "//BnesBrowser/browser/brave_wallet",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/components/brave_wallet/browser:test_support",
     ]
   }
 

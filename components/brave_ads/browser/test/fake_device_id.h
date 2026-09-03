@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_TEST_FAKE_DEVICE_ID_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_TEST_FAKE_DEVICE_ID_H_
 
-#include "brave/components/brave_ads/browser/device_id/device_id.h"
+#include "BnesBrowser/components/brave_ads/browser/device_id/device_id.h"
 
 namespace brave_ads::test {
 

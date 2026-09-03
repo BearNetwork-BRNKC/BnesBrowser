@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/direct_feed_controller.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_controller.h"
 
 #include <optional>
 #include <string>
@@ -13,8 +13,8 @@
 
 #include "base/functional/bind.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/test/wait_for_callback.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/test/wait_for_callback.h"
 #include "content/public/test/browser_task_environment.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"
 #include "services/network/test/test_url_loader_factory.h"

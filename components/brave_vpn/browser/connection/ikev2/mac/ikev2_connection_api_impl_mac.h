@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_vpn/browser/connection/ikev2/system_vpn_connection_api_impl_base.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/system_vpn_connection_api_impl_base.h"
 
 namespace brave_vpn {
 

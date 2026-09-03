@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_tab_strip_region_view.h"
 
 #include <memory>
 
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/tabs/brave_tab_container.h"
-#include "brave/browser/ui/views/tabs/brave_tab_strip.h"
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_controller.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_container.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_controller.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

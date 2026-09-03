@@ -4,8 +4,8 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/values.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/content_settings/core/browser/content_settings_info.h"
 #include "components/content_settings/core/browser/content_settings_registry.h"

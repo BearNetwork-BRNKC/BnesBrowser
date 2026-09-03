@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/credential_manager.h"
+#include "BnesBrowser/components/web_discovery/browser/credential_manager.h"
 
 #include <utility>
 
@@ -16,10 +16,10 @@
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/web_discovery/browser/background_credential_helper.h"
-#include "brave/components/web_discovery/browser/pref_names.h"
-#include "brave/components/web_discovery/browser/rsa.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/web_discovery/browser/background_credential_helper.h"
+#include "BnesBrowser/components/web_discovery/browser/pref_names.h"
+#include "BnesBrowser/components/web_discovery/browser/rsa.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "net/http/http_status_code.h"

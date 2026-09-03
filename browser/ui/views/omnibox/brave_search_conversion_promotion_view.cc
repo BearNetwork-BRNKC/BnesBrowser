@@ -3,22 +3,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/omnibox/brave_search_conversion_promotion_view.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_search_conversion_promotion_view.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/notreached.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/omnibox/brave_omnibox_popup_view_views.h"
-#include "brave/browser/ui/views/omnibox/brave_omnibox_result_view.h"
-#include "brave/components/brave_search_conversion/p3a.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_popup_view_views.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_result_view.h"
+#include "BnesBrowser/components/brave_search_conversion/p3a.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "cc/paint/paint_flags.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "chrome/browser/ui/omnibox/omnibox_theme.h"

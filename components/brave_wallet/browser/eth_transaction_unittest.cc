@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/eth_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_transaction.h"
 
 #include <array>
 #include <memory>
@@ -15,9 +15,9 @@
 #include "base/strings/string_util.h"
 #include "base/test/values_test_util.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
-#include "brave/components/brave_wallet/common/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/test_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

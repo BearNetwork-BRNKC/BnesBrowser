@@ -9,7 +9,7 @@
 #include <string_view>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_webui_config.h"
 #include "chrome/browser/ui/webui/top_chrome/untrusted_top_chrome_web_ui_controller.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

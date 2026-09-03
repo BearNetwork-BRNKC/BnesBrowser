@@ -18,10 +18,10 @@
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
 #include "base/one_shot_event.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
-#include "brave/components/brave_vpn/browser/connection/connection_api_impl.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/connection_api_impl.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #include "components/prefs/pref_member.h"
 
 namespace network {

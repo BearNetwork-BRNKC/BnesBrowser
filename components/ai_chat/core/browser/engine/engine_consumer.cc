@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
 
 #include <optional>
 #include <string>
@@ -13,7 +13,7 @@
 #include "base/json/json_reader.h"
 #include "base/strings/escape.h"
 #include "base/strings/strcat.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 #include "third_party/re2/src/re2/re2.h"
 

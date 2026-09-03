@@ -5,7 +5,7 @@
 
 # See `//components/policy/BUILD.gn` for more info about how these files
 # are generated. Also see:
-# `//brave/chromium_src/components/policy/resources/policy_templates.py`
+# `//BnesBrowser/chromium_src/components/policy/resources/policy_templates.py`
 # for Brave specific group policy definitions.
 
 if (is_win) {

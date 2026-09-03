@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_info.h"
 
 namespace brave_ads::json::reader {
 

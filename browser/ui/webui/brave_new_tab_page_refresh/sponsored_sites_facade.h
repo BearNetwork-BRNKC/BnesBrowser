@@ -16,8 +16,8 @@
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
 #include "base/task/cancelable_task_tracker.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
 
 class PrefService;
 

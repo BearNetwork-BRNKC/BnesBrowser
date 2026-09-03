@@ -12,7 +12,7 @@
 #include <vector>
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/net/resource_context_data.h"
+#include "BnesBrowser/browser/net/resource_context_data.h"
 #include "build/build_config.h"
 #include "chrome/browser/chrome_content_browser_client.h"
 #include "content/public/browser/browser_thread.h"

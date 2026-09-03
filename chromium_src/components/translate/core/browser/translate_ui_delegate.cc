@@ -5,7 +5,7 @@
 
 #include "components/translate/core/browser/translate_ui_delegate.h"
 
-#include "brave/components/translate/core/common/brave_translate_features.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_features.h"
 
 #define TranslateUIDelegate TranslateUIDelegate_ChromiumImpl
 #include <components/translate/core/browser/translate_ui_delegate.cc>

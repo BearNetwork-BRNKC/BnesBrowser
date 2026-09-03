@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/metrics/metrics_reporting_util.h"
-#include "brave/browser/ui/browser_dialogs.h"
+#include "BnesBrowser/browser/metrics/metrics_reporting_util.h"
+#include "BnesBrowser/browser/ui/browser_dialogs.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/session_crashed_bubble.h"
 

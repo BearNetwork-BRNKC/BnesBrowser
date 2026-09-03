@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
 
 #include <algorithm>
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_deref.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/edge_reveal/edge_hover_detector.h"
-#include "brave/browser/ui/views/frame/tab_strip_placement_coordinator.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/edge_reveal/edge_hover_detector.h"
+#include "BnesBrowser/browser/ui/views/frame/tab_strip_placement_coordinator.h"
 #include "chrome/browser/ui/views/frame/top_container_view.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/base/metadata/metadata_impl_macros.h"

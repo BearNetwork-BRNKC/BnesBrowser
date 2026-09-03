@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/extensions/brave_extensions_menu_main_page_view.h"
+#include "BnesBrowser/browser/ui/views/extensions/brave_extensions_menu_main_page_view.h"
 
 #define BRAVE_EXTENSIONS_MENU_VIEW_PLATFORM_DELEGATE_VIEWS_OPEN_MAIN_PAGE  \
   {                                                                        \

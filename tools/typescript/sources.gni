@@ -6,10 +6,10 @@
 brave_path_mappings = [
   [
     "chrome://resources/brave/*|",
-    "$root_gen_dir/brave/ui/webui/resources/tsc/*",
+    "$root_gen_dir/BnesBrowser/ui/webui/resources/tsc/*",
   ],
   [
     "//resources/brave/*|",
-    "$root_gen_dir/brave/ui/webui/resources/tsc/*",
+    "$root_gen_dir/BnesBrowser/ui/webui/resources/tsc/*",
   ],
 ]

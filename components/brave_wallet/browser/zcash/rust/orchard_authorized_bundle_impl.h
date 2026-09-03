@@ -9,8 +9,8 @@
 #include <vector>
 
 #include "base/types/pass_key.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/lib.rs.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_authorized_bundle.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/lib.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_authorized_bundle.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 namespace brave_wallet::orchard {

@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_text.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_text.h"
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_text_change.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_create.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_delete.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_insert.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_remove.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_element.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graphml.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/edge_text_change.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_create.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_delete.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_insert.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/node/edge_node_remove.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/html/node_html_element.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graphml.h"
 #include "third_party/blink/renderer/core/dom/dom_node_ids.h"
 #include "third_party/blink/renderer/platform/wtf/text/strcat.h"
 #include "third_party/blink/renderer/platform/wtf/text/wtf_string.h"

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/search_engine/search_engine_results_page_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/search_engine/search_engine_results_page_util.h"
 
-#include "brave/components/brave_ads/core/internal/common/search_engine/search_engine_constants.h"
-#include "brave/components/brave_ads/core/internal/common/search_engine/search_engine_info.h"
-#include "brave/components/brave_ads/core/public/common/url/url_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/search_engine/search_engine_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/search_engine/search_engine_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/url/url_util.h"
 #include "net/base/url_util.h"
 #include "third_party/re2/src/re2/re2.h"
 #include "url/gurl.h"

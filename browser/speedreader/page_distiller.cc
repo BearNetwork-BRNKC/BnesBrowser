@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/speedreader/page_distiller.h"
+#include "BnesBrowser/browser/speedreader/page_distiller.h"
 
 #include <string>
 #include <utility>
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/components/speedreader/speedreader_rewriter_service.h"
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/components/speedreader/speedreader_rewriter_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/common/chrome_isolated_world_ids.h"
 #include "content/public/browser/web_contents.h"

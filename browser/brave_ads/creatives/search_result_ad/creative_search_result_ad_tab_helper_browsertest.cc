@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_tab_helper.h"
+#include "BnesBrowser/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_tab_helper.h"
 
 #include <memory>
 #include <optional>
@@ -14,10 +14,10 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
 #include "base/types/optional_util.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/browser/service/test/ads_service_mock.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/test/ads_service_mock.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ssl/cert_verifier_browser_test.h"
 #include "chrome/browser/ui/browser.h"

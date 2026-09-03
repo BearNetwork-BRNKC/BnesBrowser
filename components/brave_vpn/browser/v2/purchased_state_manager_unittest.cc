@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/purchased_state_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/purchased_state_manager.h"
 
 #include <cstdint>
 #include <memory>
@@ -29,20 +29,20 @@
 #include "base/time/time.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_account/endpoint_client/test_support.h"
-#include "brave/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
-#include "brave/components/brave_vpn/browser/v2/credential_store.h"
-#include "brave/components/brave_vpn/browser/v2/credential_store_test_util.h"
-#include "brave/components/brave_vpn/browser/v2/skus_service_client.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/browser/skus_service_impl.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/test_support.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/credential_store.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/credential_store_test_util.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/skus_service_client.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "build/build_config.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_change_registrar.h"

@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/brave_domains/urls.h"
+#include "BnesBrowser/brave_domains/urls.h"
 
 #include <string>
 
 #include "base/strings/strcat.h"
 #include "base/test/scoped_command_line.h"
-#include "brave/brave_domains/buildflags.h"
+#include "BnesBrowser/brave_domains/buildflags.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"
 

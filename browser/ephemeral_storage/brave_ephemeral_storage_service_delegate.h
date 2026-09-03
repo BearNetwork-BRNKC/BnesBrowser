@@ -10,9 +10,9 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/ephemeral_storage/application_state_observer.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_service_delegate.h"
+#include "BnesBrowser/browser/ephemeral_storage/application_state_observer.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service_delegate.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
 #include "content/public/browser/web_contents_delegate.h"
 

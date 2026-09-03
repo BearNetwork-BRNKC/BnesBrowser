@@ -8,7 +8,7 @@
 
 #include <cstdint>
 
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_observer.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads {

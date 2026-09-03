@@ -4,14 +4,14 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_browser_debounce_sources = [
-  "//brave/browser/debounce/debounce_service_factory.cc",
-  "//brave/browser/debounce/debounce_service_factory.h",
+  "//BnesBrowser/browser/debounce/debounce_service_factory.cc",
+  "//BnesBrowser/browser/debounce/debounce_service_factory.h",
 ]
 
 brave_browser_debounce_deps = [
   "//base",
-  "//brave/components/debounce/core/browser",
-  "//brave/components/debounce/core/common",
+  "//BnesBrowser/components/debounce/core/browser",
+  "//BnesBrowser/components/debounce/core/common",
   "//chrome/common",
   "//components/keyed_service/content",
 ]

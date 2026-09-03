@@ -7,7 +7,7 @@
 #define BRAVE_IOS_BROWSER_BRAVE_SHIELDS_COSMETIC_FILTERING_COSMETIC_FILTERING_TAB_HELPER_BRIDGE_H_
 
 #ifdef __cplusplus
-#include "brave/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
+#include "BnesBrowser/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
 #else
 #include "cosmetic_filtering_args.h"
 #endif

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_COMMANDER_SIMPLE_COMMAND_SOURCE_H_
 #define BRAVE_BROWSER_UI_COMMANDER_SIMPLE_COMMAND_SOURCE_H_
 
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 
 namespace commander {
 

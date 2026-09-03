@@ -10,7 +10,7 @@
 #include <string_view>
 
 #include "base/containers/fixed_flat_map.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 
 namespace brave_account {
 

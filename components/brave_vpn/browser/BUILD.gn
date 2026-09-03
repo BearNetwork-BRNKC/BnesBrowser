@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(enable_brave_vpn)
 
@@ -18,13 +18,13 @@ static_library("browser") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/skus/browser",
     "//components/keyed_service/core",
     "//mojo/public/cpp/bindings",
   ]
 
-  deps = [ "//brave/components/brave_vpn/common" ]
+  deps = [ "//BnesBrowser/components/brave_vpn/common" ]
 }
 
 static_library("v1_helper") {
@@ -33,12 +33,12 @@ static_library("v1_helper") {
     "brave_vpn_service_helper.h",
   ]
 
-  public_deps = [ "//brave/components/brave_vpn/common/mojom" ]
+  public_deps = [ "//BnesBrowser/components/brave_vpn/common/mojom" ]
 
   deps = [
     "//base",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/skus/browser",
     "//components/prefs",
   ]
 }
@@ -58,12 +58,12 @@ static_library("v1_utils") {
     "api",
     "connection:api",
     "//base",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/misc_metrics",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common:mojom",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common:mojom",
+    "//BnesBrowser/components/time_period_storage",
     "//build:buildflag_header_h",
     "//components/prefs",
     "//mojo/public/cpp/bindings",
@@ -73,10 +73,10 @@ static_library("v1_utils") {
   deps = [
     "connection",
     "connection:common",
-    "//brave/components/constants",
-    "//brave/components/p3a_utils",
-    "//brave/components/resources:strings",
-    "//brave/components/version_info",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/version_info",
     "//components/pref_registry",
     "//components/version_info",
     "//ui/base",
@@ -94,7 +94,7 @@ source_set("test_support") {
 
   public_deps = [ ":browser" ]
 
-  deps = [ "//brave/components/skus/browser" ]
+  deps = [ "//BnesBrowser/components/skus/browser" ]
 }
 
 source_set("unit_tests") {
@@ -116,12 +116,12 @@ source_set("unit_tests") {
     ":browser",
     ":test_support",
     "//base",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/constants",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//components/prefs:test_support",
     "//components/sync_preferences:test_support",
     "//content/test:test_support",
@@ -136,15 +136,15 @@ source_set("unit_tests") {
       ":v1_utils",
       "api",
       "api:unit_tests",
-      "//brave/components/brave_vpn/browser/connection:api",
-      "//brave/components/brave_vpn/browser/connection:common",
-      "//brave/components/brave_vpn/browser/connection/wireguard/credentials:unit_tests",
+      "//BnesBrowser/components/brave_vpn/browser/connection:api",
+      "//BnesBrowser/components/brave_vpn/browser/connection:common",
+      "//BnesBrowser/components/brave_vpn/browser/connection/wireguard/credentials:unit_tests",
     ]
 
     if (!is_android) {
       deps += [
         "connection:unit_tests",
-        "//brave/components/brave_vpn/browser/connection/ikev2:sim",
+        "//BnesBrowser/components/brave_vpn/browser/connection/ikev2:sim",
       ]
     }
   }

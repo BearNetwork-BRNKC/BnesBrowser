@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/playlist/playlist_bubbles_controller.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_bubbles_controller.h"
 
 #include <vector>
 
 #include "base/check.h"
 #include "base/memory/ptr_util.h"
-#include "brave/browser/ui/views/playlist/playlist_action_icon_view.h"
-#include "brave/browser/ui/views/playlist/playlist_add_bubble_view.h"
-#include "brave/browser/ui/views/playlist/playlist_edit_bubble_view.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_add_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_edit_bubble_view.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
 #include "ui/views/bubble/bubble_dialog_delegate_view.h"
 
 namespace playlist {

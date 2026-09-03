@@ -5,7 +5,7 @@
 
 #include "chrome/browser/browsing_data/counters/site_settings_counter.h"
 
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
 #include "components/content_settings/core/browser/permission_settings_registry.h"
 
 namespace {

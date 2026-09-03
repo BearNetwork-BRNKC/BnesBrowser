@@ -8,7 +8,7 @@
 
 #include <map>
 
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
 #include "components/content_settings/core/common/content_settings.h"
 
 class GURL;

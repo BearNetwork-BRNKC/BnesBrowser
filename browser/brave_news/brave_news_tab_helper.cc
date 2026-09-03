@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_news/brave_news_tab_helper.h"
+#include "BnesBrowser/browser/brave_news/brave_news_tab_helper.h"
 
 #include <algorithm>
 #include <string>
@@ -17,11 +17,11 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/browser/brave_news/rss_links_fetcher.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/browser/brave_news/rss_links_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/browser_thread.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
 
 #include <memory>
 #include <optional>
@@ -15,14 +15,14 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/browser/ui/brave_file_select_utils.h"
-#include "brave/browser/ui/sidebar/sidebar.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/split_view/split_view_link_redirect_utils.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/brave_file_select_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/split_view/split_view_link_redirect_utils.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/lifetime/browser_close_manager.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_commands.h"

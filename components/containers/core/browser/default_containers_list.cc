@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/default_containers_list.h"
+#include "BnesBrowser/components/containers/core/browser/default_containers_list.h"
 
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/color/color_provider.h"

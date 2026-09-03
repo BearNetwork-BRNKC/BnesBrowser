@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/util/random_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/random_util.h"
 
 #include "base/base64url.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 #include "crypto/random.h"
 #include "crypto/sha2.h"
 

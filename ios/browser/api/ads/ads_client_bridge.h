@@ -13,7 +13,7 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #import "brave/components/brave_ads/core/public/ads_client/ads_client.h"
 
 @protocol AdsClientBridge

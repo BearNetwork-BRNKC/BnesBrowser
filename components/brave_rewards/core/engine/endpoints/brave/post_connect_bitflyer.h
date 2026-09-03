@@ -9,7 +9,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
 
 // POST /v3/wallet/bitflyer/{rewards_payment_id}/claim
 //

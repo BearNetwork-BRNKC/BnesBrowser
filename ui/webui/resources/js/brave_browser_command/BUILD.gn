@@ -5,8 +5,8 @@
 
 # based on //ui/webui/resources/js/browser_command/BUILD.gn
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 mojom("mojo_bindings") {
@@ -22,7 +22,7 @@ mojom("mojo_bindings") {
 
   public_deps = []
   if (enable_ai_chat) {
-    public_deps += [ "//brave/components/ai_chat/core/common/mojom" ]
+    public_deps += [ "//BnesBrowser/components/ai_chat/core/common/mojom" ]
   }
 
   # The generated mojo bindings are part of the ui/webui/resources/brave/

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/install_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/install_utils.h"
 
 #include <windows.h>
 #include <winerror.h>
@@ -21,17 +21,17 @@
 #include "base/path_service.h"
 #include "base/win/registry.h"
 #include "base/win/windows_types.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/brave_vpn_tray_command_ids.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/icon_utils.h"
-#include "brave/browser/brave_vpn/win/service_constants.h"
-#include "brave/browser/brave_vpn/win/service_details.h"
-#include "brave/browser/brave_vpn/win/storage_utils.h"
-#include "brave/components/brave_vpn/common/win/scoped_sc_handle.h"
-#include "brave/components/brave_vpn/common/win/utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/brave_vpn_tray_command_ids.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon/icon_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/win/scoped_sc_handle.h"
+#include "BnesBrowser/components/brave_vpn/common/win/utils.h"
 #include "chrome/installer/util/install_service_work_item.h"
 
 namespace brave_vpn {

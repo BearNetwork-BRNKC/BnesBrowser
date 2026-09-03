@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/component_updater/brave_component_updater_configurator.h"
+#include "BnesBrowser/browser/component_updater/brave_component_updater_configurator.h"
 
 #include <stdint.h>
 
@@ -21,7 +21,7 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/version.h"
-#include "brave/components/constants/brave_switches.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
 #include "build/build_config.h"
 #include "chrome/common/chrome_paths.h"
 #include "chrome/common/pref_names.h"

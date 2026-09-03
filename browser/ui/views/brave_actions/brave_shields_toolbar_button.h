@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_controller.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_controller.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_button.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 

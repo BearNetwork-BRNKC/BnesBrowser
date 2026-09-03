@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/sidebar/browser/sidebar_p3a.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_p3a.h"
 
 #include "base/check_is_test.h"
 #include "base/metrics/histogram_functions.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/sidebar/browser/pref_names.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "components/prefs/pref_service.h"
 
 namespace sidebar::p3a {

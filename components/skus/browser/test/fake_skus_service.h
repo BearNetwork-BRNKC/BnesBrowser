@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 

@@ -10,8 +10,8 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/values.h"
-#include "brave/components/skus/common/skus_internals.mojom.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_internals.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "ios/web/public/webui/web_ui_ios.h"
 #include "ios/web/public/webui/web_ui_ios_controller.h"

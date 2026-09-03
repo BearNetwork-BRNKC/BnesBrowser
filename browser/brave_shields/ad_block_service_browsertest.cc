@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_shields/ad_block_service_browsertest.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_service_browsertest.h"
 
 #include <memory>
 #include <optional>
@@ -27,31 +27,31 @@
 #include "base/test/test_future.h"
 #include "base/test/thread_test_helper.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_shields/ad_block_browser_test_helper.h"
-#include "brave/browser/net/brave_ad_block_tp_network_delegate_helper.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
-#include "brave/components/brave_shields/content/browser/ad_block_engine.h"
-#include "brave/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/content/browser/ad_block_subscription_service_manager.h"
-#include "brave/components/brave_shields/content/browser/ad_block_subscription_service_manager_observer.h"
-#include "brave/components/brave_shields/content/test/ad_block_service_test_observer.h"
-#include "brave/components/brave_shields/content/test/test_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_service_manager.h"
-#include "brave/components/brave_shields/core/browser/ad_block_default_resource_provider.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/de_amp/common/pref_names.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_browser_test_helper.h"
+#include "BnesBrowser/browser/net/brave_ad_block_tp_network_delegate_helper.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_engine.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_subscription_service_manager.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_subscription_service_manager_observer.h"
+#include "BnesBrowser/components/brave_shields/content/test/ad_block_service_test_observer.h"
+#include "BnesBrowser/components/brave_shields/content/test/test_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_service_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_default_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/de_amp/common/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -77,24 +77,24 @@
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER) && !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/components/speedreader/speedreader_service.h"  // nogncheck
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"  // nogncheck
 #include "third_party/blink/public/common/web_preferences/web_preferences.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/playlist/playlist_service_factory.h"
-#include "brave/components/playlist/content/browser/playlist_background_web_contentses.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contentses.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_PLAYLIST)
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
 #include "base/functional/bind.h"
 #include "base/run_loop.h"
-#include "brave/browser/brave_tab_helpers.h"
-#include "brave/components/ai_chat/content/browser/associated_url_content.h"
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/browser/brave_tab_helpers.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_url_content.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 constexpr char kAdBlockTestPage[] = "/blocking.html";

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
 
 #include <limits.h>
 
@@ -22,11 +22,11 @@
 #include "base/metrics/histogram_functions_internal_overloads.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/time/time.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/feature_usage.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

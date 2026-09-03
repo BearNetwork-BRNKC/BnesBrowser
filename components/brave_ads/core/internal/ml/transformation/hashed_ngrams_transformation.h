@@ -10,7 +10,7 @@
 #include <memory>
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/ml/transformation/transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/transformation.h"
 
 namespace brave_ads::ml {
 

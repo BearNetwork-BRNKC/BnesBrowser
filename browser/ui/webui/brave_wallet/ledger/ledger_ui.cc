@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
 
 #include <string>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/ledger_bridge/resources/grit/ledger_bridge_generated_map.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/ledger_bridge/resources/grit/ledger_bridge_generated_map.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/browser/web_contents.h"

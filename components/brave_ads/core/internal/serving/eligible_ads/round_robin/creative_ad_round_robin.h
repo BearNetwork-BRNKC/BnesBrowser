@@ -12,7 +12,7 @@
 #include <vector>
 
 #include "base/containers/flat_set.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_feature.h"
 
 namespace brave_ads {
 

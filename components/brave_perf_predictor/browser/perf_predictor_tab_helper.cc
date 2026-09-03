@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
 
 #include "base/logging.h"
-#include "brave/components/brave_perf_predictor/browser/named_third_party_registry_factory.h"
-#include "brave/components/brave_perf_predictor/common/pref_names.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/named_third_party_registry_factory.h"
+#include "BnesBrowser/components/brave_perf_predictor/common/pref_names.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
@@ -19,7 +19,7 @@
 #include "content/public/browser/web_contents_user_data.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/android/brave_shields_content_settings.h"
+#include "BnesBrowser/browser/android/brave_shields_content_settings.h"
 #endif
 
 namespace brave_perf_predictor {

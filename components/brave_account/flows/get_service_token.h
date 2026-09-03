@@ -10,8 +10,8 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_account/endpoints/service_token.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/endpoints/service_token.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 
 namespace brave_account {
 

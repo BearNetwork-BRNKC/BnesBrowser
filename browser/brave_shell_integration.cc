@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_shell_integration.h"
+#include "BnesBrowser/browser/brave_shell_integration.h"
 
 #include "base/notreached.h"
 #include "build/build_config.h"
@@ -13,13 +13,13 @@
 
 #include <utility>
 
-#include "brave/browser/brave_shell_integration_win.h"
-#include "brave/browser/default_protocol_handler_utils_win.h"
+#include "BnesBrowser/browser/brave_shell_integration_win.h"
+#include "BnesBrowser/browser/default_protocol_handler_utils_win.h"
 #include "chrome/installer/util/shell_util.h"
 #endif
 
 #if BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_shell_integration_mac.h"
+#include "BnesBrowser/browser/brave_shell_integration_mac.h"
 #endif
 
 namespace shell_integration {

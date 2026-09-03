@@ -5,15 +5,15 @@
 
 #include "chrome/browser/history_embeddings/history_embeddings_utils.h"
 
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/history_embeddings/core/history_embeddings_features.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/components/local_ai/core/pref_names.h"
+#include "BnesBrowser/components/local_ai/core/pref_names.h"
 #endif
 
 namespace history_embeddings {

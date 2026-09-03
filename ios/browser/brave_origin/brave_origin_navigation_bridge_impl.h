@@ -10,8 +10,8 @@
 
 #include "base/functional/bind.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_origin/brave_origin_service.h"
-#include "brave/ios/browser/brave_origin/brave_origin_navigation_bridge.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_service.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_navigation_bridge.h"
 
 namespace brave_origin {
 

@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/core/loader/resource/svg_document_resource.h"
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "third_party/blink/renderer/platform/loader/fetch/resource.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_PAGE_GRAPH)

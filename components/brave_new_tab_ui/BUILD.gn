@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 transpile_web_ui("brave_new_tab_ui") {
@@ -14,10 +14,10 @@ transpile_web_ui("brave_new_tab_ui") {
       ] ]
   public_deps = [
     ":mojom_js",
-    "//brave/components/brave_news/common:mojom_js",
-    "//brave/components/brave_rewards/core/mojom:mojom_js",
-    "//brave/components/brave_vpn/common/mojom:mojom_js",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/components/brave_news/common:mojom_js",
+    "//BnesBrowser/components/brave_rewards/core/mojom:mojom_js",
+    "//BnesBrowser/components/brave_vpn/common/mojom:mojom_js",
+    "//BnesBrowser/components/resources:strings",
   ]
   if (!is_android && !is_ios) {
     public_deps += [
@@ -27,23 +27,23 @@ transpile_web_ui("brave_new_tab_ui") {
   }
   resource_name = "brave_new_tab"
   imports_from = [
-    "//brave/components/brave_new_tab_ui/",
-    "//brave/components/brave_news/browser/resources/",
-    "//brave/components/brave_rewards/resources/shared/",
+    "//BnesBrowser/components/brave_new_tab_ui/",
+    "//BnesBrowser/components/brave_news/browser/resources/",
+    "//BnesBrowser/components/brave_rewards/resources/shared/",
   ]
 }
 
 pack_web_resources("generated_resources") {
   resource_name = "brave_new_tab"
-  output_dir = "$root_gen_dir/brave/components/brave_new_tab/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_new_tab/resources"
   deps = [ ":brave_new_tab_ui" ]
 }
 
 mojom("mojom") {
   sources = [ "brave_new_tab_page.mojom" ]
   public_deps = [
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/ntp_background_images/browser/mojom",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/ntp_background_images/browser/mojom",
     "//url/mojom:url_mojom_gurl",
   ]
   if (enable_brave_vpn) {

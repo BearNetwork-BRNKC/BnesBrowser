@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_tab_transfer_bridge.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_tab_transfer_bridge.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_movable_side_panel_web_view.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/components/ai_chat/core/common/ai_chat_urls.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_movable_side_panel_web_view.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/ai_chat_urls.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/navigator/browser_navigator.h"
 #include "chrome/browser/ui/navigator/browser_navigator_params.h"

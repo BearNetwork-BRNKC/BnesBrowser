@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_BRAVE_STATS_BRAVE_STATS_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_BRAVE_STATS_BRAVE_STATS_PRIVATE_H_
 
-#include "brave/ios/browser/api/brave_stats/brave_stats.h"
+#include "BnesBrowser/ios/browser/api/brave_stats/brave_stats.h"
 
 class ProfileIOS;
 

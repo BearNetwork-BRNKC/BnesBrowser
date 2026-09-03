@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
 assert(!is_android)
 assert(enable_brave_wallet)
@@ -14,14 +14,14 @@ source_set("ledger") {
     "ledger_ui.h",
   ]
   deps = [
-    "//brave/browser/ui/webui/brave_wallet/wallet_page",
-    "//brave/browser/ui/webui/brave_wallet/wallet_panel",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:common_constants",
-    "//brave/components/brave_wallet/common:mojom",
-    "//brave/components/brave_wallet_ui:resources",
-    "//brave/components/brave_wallet_ui/ledger:ledger_bridge_generated",
-    "//brave/components/resources:static_resources_grit",
+    "//BnesBrowser/browser/ui/webui/brave_wallet/wallet_page",
+    "//BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/components/brave_wallet/common:mojom",
+    "//BnesBrowser/components/brave_wallet_ui:resources",
+    "//BnesBrowser/components/brave_wallet_ui/ledger:ledger_bridge_generated",
+    "//BnesBrowser/components/resources:static_resources_grit",
     "//content/public/browser",
     "//mojo/public/cpp/bindings",
     "//services/network/public/mojom",
@@ -38,10 +38,10 @@ source_set("browser_tests") {
   deps = [
     ":ledger",
     "//base/test:test_support",
-    "//brave/browser/brave_wallet",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:utils",
-    "//brave/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/browser/brave_wallet",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:utils",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
     "//chrome/browser:browser_process",
     "//chrome/browser/hid",
     "//chrome/test:test_support",

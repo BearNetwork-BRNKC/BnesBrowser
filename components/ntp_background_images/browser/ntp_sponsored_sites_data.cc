@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
 
 #include <optional>
 #include <utility>
@@ -11,7 +11,7 @@
 #include "base/files/file_util.h"
 #include "base/logging.h"
 #include "base/values.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 
 namespace ntp_background_images {
 

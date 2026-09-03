@@ -13,9 +13,9 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 class CardanoWalletService;

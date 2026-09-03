@@ -5,7 +5,7 @@
 
 #include "components/component_updater/configurator_impl.h"
 
-#include "brave/components/update_client/test_util.h"
+#include "BnesBrowser/components/update_client/test_util.h"
 #include "components/update_client/command_line_config_policy.h"
 #include "components/update_client/protocol_handler.h"
 #include "components/update_client/protocol_serializer.h"

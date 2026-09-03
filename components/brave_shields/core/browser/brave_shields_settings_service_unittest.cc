@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
 
 #include <array>
 #include <tuple>
 
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_test_utils.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_test_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_types.h"

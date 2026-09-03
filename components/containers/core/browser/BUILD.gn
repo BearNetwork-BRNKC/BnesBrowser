@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 assert(enable_containers)
 
@@ -34,21 +34,21 @@ static_library("browser") {
   ]
 
   friend = [
-    "//brave/browser/containers:browser_tests",
-    "//brave/browser/ui/containers:unit_tests",
+    "//BnesBrowser/browser/containers:browser_tests",
+    "//BnesBrowser/browser/ui/containers:unit_tests",
     ":test_support",
     ":unit_tests",
   ]
 
-  public_deps = [ "//brave/components/containers/core/mojom" ]
+  public_deps = [ "//BnesBrowser/components/containers/core/mojom" ]
 
   deps = [
     "//base",
     "//base/version_info",
-    "//brave/components/containers/core/common",
-    "//brave/components/resources:strings",
-    "//brave/third_party/bip39wally-core-native:bip39wally-core",
-    "//brave/ui/color:nala_color_id",
+    "//BnesBrowser/components/containers/core/common",
+    "//BnesBrowser/components/resources:strings",
+    # "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
+    "//BnesBrowser/ui/color:nala_color_id",
     "//components/keyed_service/core",
     "//components/pref_registry",
     "//components/prefs",
@@ -96,8 +96,8 @@ source_set("unit_tests") {
     ":test_support",
     "//base",
     "//base/test:test_support",
-    "//brave/components/containers/core/common",
-    "//brave/ui/color:nala_color_id",
+    "//BnesBrowser/components/containers/core/common",
+    "//BnesBrowser/ui/color:nala_color_id",
     "//components/sync_preferences:test_support",
     "//mojo/public/cpp/bindings",
     "//testing/gmock",

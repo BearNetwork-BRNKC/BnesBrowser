@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/email_aliases/email_aliases_service_factory.h"
+#include "BnesBrowser/browser/email_aliases/email_aliases_service_factory.h"
 
 #include <memory>
 
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_account/brave_account_service_factory.h"
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/email_aliases/features.h"
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/browser/brave_account/brave_account_service_factory.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"
 #include "chrome/test/base/testing_profile_manager.h"

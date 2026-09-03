@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/siwe_message_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/siwe_message_parser.h"
 
 #include <algorithm>
 #include <optional>
@@ -15,7 +15,7 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_tokenizer.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
 #include "url/gurl.h"
 #include "url/origin.h"
 #include "url/url_constants.h"

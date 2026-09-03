@@ -10,6 +10,6 @@ source_set("common") {
   ]
   deps = [
     "//base",
-    "//brave/components/brave_user_agent/common",
+    "//BnesBrowser/components/brave_user_agent/common",
   ]
 }

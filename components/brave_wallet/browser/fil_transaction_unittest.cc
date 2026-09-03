@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/fil_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_transaction.h"
 
 #include "base/base64.h"
 #include "base/containers/span.h"
@@ -11,10 +11,10 @@
 #include "base/containers/to_vector.h"
 #include "base/strings/string_util.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/lib.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/lib.rs.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

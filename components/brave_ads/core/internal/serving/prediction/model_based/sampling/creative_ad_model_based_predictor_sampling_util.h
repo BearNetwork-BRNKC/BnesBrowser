@@ -8,7 +8,7 @@
 
 #include <numeric>
 
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor_info.h"
 
 namespace brave_ads {
 

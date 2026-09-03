@@ -29,7 +29,7 @@ source_set("unit_tests") {
   sources = [ "global_privacy_control_utils_unittest.cc" ]
 
   deps = [
-    "//brave/components/global_privacy_control",
+    "//BnesBrowser/components/global_privacy_control",
     "//chrome/test:test_support",
     "//components/sync_preferences",
     "//content/test:test_support",

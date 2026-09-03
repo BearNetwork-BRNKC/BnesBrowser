@@ -9,12 +9,12 @@
 #include <string>
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/flows/login.h"
-#include "brave/components/brave_account/flows/register.h"
-#include "brave/components/brave_account/flows/reset_password.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
-#include "brave/components/brave_account/state_base.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/flows/login.h"
+#include "BnesBrowser/components/brave_account/flows/register.h"
+#include "BnesBrowser/components/brave_account/flows/reset_password.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/state_base.h"
 #include "components/os_crypt/async/common/encryptor.h"
 
 namespace network {

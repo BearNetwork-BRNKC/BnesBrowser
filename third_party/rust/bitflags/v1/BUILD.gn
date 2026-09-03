@@ -12,10 +12,10 @@ cargo_crate("lib") {
   crate_name = "bitflags"
   epoch = "1"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/example_generated.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/example_generated.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/bitflags-v1/src/lib.rs",
   ]
   inputs = []
 

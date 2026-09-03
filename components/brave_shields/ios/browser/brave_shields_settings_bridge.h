@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_SHIELDS_IOS_BROWSER_BRAVE_SHIELDS_SETTINGS_BRIDGE_H_
 
 #ifdef __cplusplus
-#include "brave/components/brave_shields/ios/common/shields_settings.mojom.objc.h"
+#include "BnesBrowser/components/brave_shields/ios/common/shields_settings.mojom.objc.h"
 #else
 #import "shields_settings.mojom.objc.h"
 #endif

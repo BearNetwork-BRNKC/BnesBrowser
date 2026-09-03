@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/web_view/brave_web_view_download_manager.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_download_manager.h"
 
-#include "brave/ios/browser/api/web_view/brave_web_view_internal.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_internal.h"
 #include "ios/web/public/thread/web_task_traits.h"
 #include "ios/web/public/thread/web_thread.h"
 #include "ios/web_view/internal/web_view_download_manager.h"

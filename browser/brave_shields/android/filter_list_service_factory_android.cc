@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_shields/filter_list_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/filter_list_service_factory.h"
 
 #include "base/android/jni_android.h"
 #include "chrome/android/chrome_jni_headers/FilterListServiceFactory_jni.h"

@@ -28,7 +28,7 @@ android_library("java") {
 }
 
 android_resources("java_resources") {
-  deps = [ "//brave/android/nala:java_resources" ]
+  deps = [ "//BnesBrowser/android/nala:java_resources" ]
 }
 
 robolectric_library("junit") {

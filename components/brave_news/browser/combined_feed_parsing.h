@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 
 namespace base {
 class Value;

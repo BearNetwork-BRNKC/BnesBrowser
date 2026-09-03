@@ -12,7 +12,7 @@
 #include "base/test/test_reg_util_win.h"
 #include "base/win/registry.h"
 #include "base/win/windows_version.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "chrome/chrome_elf/nt_registry/nt_registry.h"
 #include "chrome/install_static/install_constants.h"
 #include "chrome/install_static/install_details.h"

@@ -7,7 +7,7 @@
 
 #include <string>
 
-#include "brave/components/speedreader/rust/ffi/speedreader.h"
+#include "BnesBrowser/components/speedreader/rust/ffi/speedreader.h"
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
   FuzzedDataProvider data_provider(data, size);

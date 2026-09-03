@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/permissions/contexts/brave_open_ai_chat_permission_context.h"
+#include "BnesBrowser/components/permissions/contexts/brave_open_ai_chat_permission_context.h"
 
 #include <utility>
 
-#include "brave/brave_domains/service_domains.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_types.h"
 #include "components/permissions/permission_request_data.h"

@@ -7,8 +7,8 @@
 #define BRAVE_IOS_BROWSER_UI_WEBUI_ADS_ADS_INTERNALS_UI_H_
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_ads/core/browser/internals/ads_internals_handler.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/browser/internals/ads_internals_handler.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "ios/web/public/webui/web_ui_ios_controller.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "url/gurl.h"

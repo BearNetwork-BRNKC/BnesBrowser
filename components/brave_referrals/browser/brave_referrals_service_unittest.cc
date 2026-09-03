@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_referrals/browser/brave_referrals_service.h"
+#include "BnesBrowser/components/brave_referrals/browser/brave_referrals_service.h"
 
 #include <memory>
 #include <string>
@@ -14,8 +14,8 @@
 #include "base/files/scoped_temp_dir.h"
 #include "base/test/bind.h"
 #include "base/time/time.h"
-#include "brave/components/brave_referrals/common/pref_names.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/brave_referrals/common/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"

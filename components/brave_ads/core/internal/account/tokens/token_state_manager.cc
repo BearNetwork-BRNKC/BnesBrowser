@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_tokens_database_table.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_tokens_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
 
 namespace brave_ads {
 

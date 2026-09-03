@@ -10,14 +10,14 @@
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/sidebar/browser/constants.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/browser/constants.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/common/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/prefs/pref_service.h"
@@ -30,7 +30,7 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #endif
 
 using ::testing::Eq;

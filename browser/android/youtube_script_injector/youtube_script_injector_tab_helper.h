@@ -8,7 +8,7 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/values.h"
-#include "brave/components/script_injector/common/mojom/script_injector.mojom.h"
+#include "BnesBrowser/components/script_injector/common/mojom/script_injector.mojom.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "content/public/browser/web_contents_user_data.h"

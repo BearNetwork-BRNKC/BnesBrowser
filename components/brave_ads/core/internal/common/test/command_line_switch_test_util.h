@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
 
 namespace brave_ads::test {
 

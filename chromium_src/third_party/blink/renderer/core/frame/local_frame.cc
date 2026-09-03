@@ -6,7 +6,7 @@
 #include "third_party/blink/renderer/core/frame/local_frame.h"
 
 #include "base/check.h"
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "skia/ext/skia_utils_base.h"
 #include "third_party/blink/renderer/core/core_probe_sink.h"
 #include "third_party/blink/renderer/core/html/canvas/html_canvas_element.h"
@@ -15,7 +15,7 @@
 #include "third_party/blink/renderer/platform/graphics/graphics_types_3d.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_PAGE_GRAPH)
-#include "brave/third_party/blink/renderer/core/brave_page_graph/page_graph.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/page_graph.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_PAGE_GRAPH)
 
 #define AddInspectorTraceEvents(...)                               \

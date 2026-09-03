@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/sync/ai_chat_sync_conversions.h"
+#include "BnesBrowser/components/ai_chat/core/browser/sync/ai_chat_sync_conversions.h"
 
 #include <algorithm>
 #include <memory>
@@ -25,10 +25,10 @@
 #include "base/strings/string_view_util.h"
 #include "base/system/sys_info.h"
 #include "base/time/time.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-shared.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/sync/protocol/ai_chat_specifics.pb.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-shared.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/sync/protocol/ai_chat_specifics.pb.h"
 #include "components/sync/protocol/entity_data.h"
 #include "components/sync/protocol/entity_specifics.pb.h"
 #include "mojo/public/cpp/bindings/enum_utils.h"

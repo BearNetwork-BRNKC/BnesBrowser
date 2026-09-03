@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/webui/signin/profile_picker_ui.h"
 
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/signin/account_consistency_mode_manager.h"
 #include "chrome/grit/generated_resources.h"
 

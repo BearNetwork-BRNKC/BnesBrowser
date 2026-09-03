@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ai_chat_credential_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_credential_manager.h"
 
 #include <compare>
 #include <optional>
@@ -22,8 +22,8 @@
 #include "base/time/time.h"
 #include "base/value_iterators.h"
 #include "base/values.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/config/android/config.gni")
 import("//third_party/jni_zero/jni_zero.gni")
 
@@ -39,7 +39,7 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/browser/android/preferences:pref_names_java",
+      "//BnesBrowser/browser/android/preferences:pref_names_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/glic/android:java",
       "//chrome/browser/glic/android:jni_headers_java",
@@ -64,7 +64,7 @@ if (is_android) {
     deps = [
       "//base:base_java",
       "//base:base_junit_test_support",
-      "//brave/browser/ui/android/toolbar:java",
+      "//BnesBrowser/browser/ui/android/toolbar:java",
       "//chrome/android:chrome_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/browser_controls/android:java",
@@ -102,7 +102,7 @@ if (is_android) {
       ]
 
       deps = [
-        "//brave/components/brave_wallet/common:mojom_java",
+        "//BnesBrowser/components/brave_wallet/common:mojom_java",
         "//chrome/android/junit:chrome_junit_tests_helper",
       ]
     }
@@ -124,7 +124,7 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/browser/android/preferences:pref_names_java",
+      "//BnesBrowser/browser/android/preferences:pref_names_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
     ]
   }
@@ -147,8 +147,8 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/android/java/org/chromium/chrome/browser/search_engines:java",
-      "//brave/components/browser_ui/settings/android:java",
+      "//BnesBrowser/android/java/org/chromium/chrome/browser/search_engines:java",
+      "//BnesBrowser/components/browser_ui/settings/android:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/safe_browsing/android:java",
     ]
@@ -172,7 +172,7 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/third_party/android_deps:com_google_android_play_app_update_java",
+      "//BnesBrowser/third_party/android_deps:com_google_android_play_app_update_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
     ]
   }
@@ -185,8 +185,8 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/browser/android/preferences:pref_names_java",
-      "//brave/browser/ntp_customization:java",
+      "//BnesBrowser/browser/android/preferences:pref_names_java",
+      "//BnesBrowser/browser/ntp_customization:java",
       "//chrome/android:chrome_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/tab:java",
@@ -248,7 +248,7 @@ if (is_android) {
     sources = [ "src/org/chromium/brave/browser/custom_search_engines/CustomSearchEnginesManagerTest.java" ]
 
     deps = [
-      "//brave/browser/custom_search_engines/android:java",
+      "//BnesBrowser/browser/custom_search_engines/android:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
     ]
   }
@@ -259,7 +259,7 @@ if (is_android) {
     sources = [ "src/org/chromium/brave/browser/quick_search_engines/utils/QuickSearchEnginesUtilTest.java" ]
 
     deps = [
-      "//brave/browser/quick_search_engines/android:java",
+      "//BnesBrowser/browser/quick_search_engines/android:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/regional_capabilities/android:java",
       "//chrome/browser/search_engines/android:java",
@@ -284,8 +284,8 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/browser/url_sanitizer/android:java",
-      "//brave/components/url_sanitizer/core/common/mojom:mojom_java",
+      "//BnesBrowser/browser/url_sanitizer/android:java",
+      "//BnesBrowser/components/url_sanitizer/core/common/mojom:mojom_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
     ]
   }
@@ -296,7 +296,7 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/browser/brave_shields/android:java",
+      "//BnesBrowser/browser/brave_shields/android:java",
       "//chrome/android:chrome_java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/hub:java",
@@ -319,7 +319,7 @@ if (is_android) {
     sources = [ "src/org/chromium/chrome/browser/messages/BraveMessageQueueMediatorTest.java" ]
 
     deps = [
-      "//brave/browser/messages/android:java",
+      "//BnesBrowser/browser/messages/android:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
     ]
   }
@@ -344,7 +344,7 @@ if (is_android) {
     ]
 
     deps = [
-      "//brave/components/browser_ui/media/android:java",
+      "//BnesBrowser/components/browser_ui/media/android:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/fullscreen/android:java",
       "//chrome/browser/tabmodel:java",
@@ -379,7 +379,7 @@ if (is_android) {
 
     deps = [
       "//base:base_java",
-      "//brave/browser/tab_group_sync:java",
+      "//BnesBrowser/browser/tab_group_sync:java",
       "//chrome/android/junit:chrome_junit_tests_helper",
       "//chrome/browser/preferences:java",
       "//chrome/browser/tab:java",

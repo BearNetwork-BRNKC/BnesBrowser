@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_NTP_BACKGROUND_IMAGES_NTP_BACKGROUND_IMAGES_SERVICE_IOS_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_NTP_BACKGROUND_IMAGES_NTP_BACKGROUND_IMAGES_SERVICE_IOS_PRIVATE_H_
 
-#include "brave/ios/browser/api/ntp_background_images/ntp_background_images_service_ios.h"
+#include "BnesBrowser/ios/browser/api/ntp_background_images/ntp_background_images_service_ios.h"
 
 #include <memory>
 

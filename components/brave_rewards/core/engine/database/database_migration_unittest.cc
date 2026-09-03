@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/database/database_migration.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_migration.h"
 
 #include <utility>
 #include <vector>
@@ -13,12 +13,12 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_rewards/core/engine/database/database_util.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/test/rewards_engine_test.h"
-#include "brave/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine_internal.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/rewards_engine_test.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine_internal.mojom.h"
 #include "build/build_config.h"
 #include "sql/statement.h"
 #include "testing/gtest/include/gtest/gtest.h"

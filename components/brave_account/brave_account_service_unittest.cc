@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
 
 #include <string>
 
 #include "base/no_destructor.h"
-#include "brave/components/brave_account/brave_account_service_test.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/mock_brave_account_authentication_observer.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_test.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/mock_brave_account_authentication_observer.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

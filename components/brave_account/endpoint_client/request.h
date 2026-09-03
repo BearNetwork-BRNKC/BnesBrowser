@@ -13,9 +13,9 @@
 #include "base/json/json_writer.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_account/endpoint_client/is_request_body.h"
-#include "brave/components/brave_account/endpoint_client/retry_options.h"
-#include "brave/components/brave_account/endpoint_client/url_replacements.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_request_body.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/retry_options.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/url_replacements.h"
 #include "net/http/http_request_headers.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 

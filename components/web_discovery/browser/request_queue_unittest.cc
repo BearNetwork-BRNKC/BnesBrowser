@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/request_queue.h"
+#include "BnesBrowser/components/web_discovery/browser/request_queue.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/test/task_environment.h"
 #include "base/values.h"
-#include "brave/components/web_discovery/browser/pref_names.h"
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/browser/pref_names.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

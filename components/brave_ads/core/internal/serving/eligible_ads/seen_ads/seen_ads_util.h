@@ -9,7 +9,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
 
 namespace base {
 class Time;

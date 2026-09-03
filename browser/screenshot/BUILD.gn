@@ -16,7 +16,7 @@ static_library("screenshot") {
 
   deps = [
     "//base",
-    "//brave/components/screenshot/content",
+    "//BnesBrowser/components/screenshot/content",
     "//chrome/browser/profiles",
     "//components/printing/common",
     "//components/printing/common:mojo_interfaces",
@@ -28,9 +28,9 @@ static_library("screenshot") {
 
 static_library("screenshot_internal") {
   visibility = [
-    "//brave/browser:core",
-    "//brave/browser/screenshot",
-    "//brave/browser/screenshot:unit_tests",
+    "//BnesBrowser/browser:core",
+    "//BnesBrowser/browser/screenshot",
+    "//BnesBrowser/browser/screenshot:unit_tests",
   ]
   sources = [
     "print_preview_extractor_factory.cc",  # uses extractor internal
@@ -39,8 +39,8 @@ static_library("screenshot_internal") {
   ]
   deps = [
     ":screenshot",
-    "//brave/components/screenshot/core/browser",
-    "//brave/components/text_recognition/common/buildflags",
+    "//BnesBrowser/components/screenshot/core/browser",
+    "//BnesBrowser/components/text_recognition/common/buildflags",
     "//chrome/browser/pdf",
     "//chrome/browser/pdf:pdf_pref_names",
     "//chrome/browser/printing",
@@ -71,7 +71,7 @@ source_set("unit_tests") {
     ":screenshot_internal",
     "//base",
     "//base/test:test_support",
-    "//brave/components/text_recognition/common/buildflags",
+    "//BnesBrowser/components/text_recognition/common/buildflags",
     "//chrome/browser/ui/webui/print_preview",
     "//chrome/services/printing/public/mojom",
     "//chrome/test:test_support",

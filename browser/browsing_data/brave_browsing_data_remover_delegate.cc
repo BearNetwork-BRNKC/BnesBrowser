@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/browsing_data/brave_browsing_data_remover_delegate.h"
+#include "BnesBrowser/browser/browsing_data/brave_browsing_data_remover_delegate.h"
 
 #include <utility>
 #include <vector>
@@ -11,17 +11,17 @@
 #include "base/containers/flat_map.h"
 #include "base/no_destructor.h"
 #include "base/notreached.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/serp_metrics/serp_metrics_service_factory.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
-#include "brave/components/serp_metrics/serp_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_service.h"
 #include "build/build_config.h"
 #include "chrome/browser/browsing_data/chrome_browsing_data_remover_constants.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -33,18 +33,18 @@
 #include "content/public/browser/browsing_data_remover.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/used_container_storage_partitions.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/used_container_storage_partitions.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 #endif
 
 namespace {

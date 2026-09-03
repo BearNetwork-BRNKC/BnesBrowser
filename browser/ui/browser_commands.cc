@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/browser_commands.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
 
 #include <algorithm>
 #include <memory>
@@ -24,28 +24,28 @@
 #include "base/notreached.h"
 #include "base/path_service.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/debounce/debounce_service_factory.h"
-#include "brave/browser/ui/bookmark/brave_bookmark_prefs.h"
-#include "brave/browser/ui/brave_browser.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/brave_tab_strip_model.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
-#include "brave/browser/url_sanitizer/url_sanitizer_service_factory.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/debounce/core/browser/debounce_service.h"
-#include "brave/components/query_filter/browser/utils.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_service.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/debounce/debounce_service_factory.h"
+#include "BnesBrowser/browser/ui/bookmark/brave_bookmark_prefs.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_strip_model.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/url_sanitizer/url_sanitizer_service_factory.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_service.h"
+#include "BnesBrowser/components/query_filter/browser/utils.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_service.h"
 #include "chrome/browser/bookmarks/bookmark_html_writer.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
@@ -91,7 +91,7 @@
 #include "url/origin.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry_id.h"
 #include "chrome/browser/ui/side_panel/side_panel_enums.h"
@@ -99,42 +99,42 @@
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/ui/brave_vpn/brave_vpn_controller.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_vpn/brave_vpn_controller.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN)
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN_V1) && BUILDFLAG(IS_WIN)
-#include "brave/browser/brave_vpn/win/storage_utils.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN_V1) && BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/browser/ui/commander/commander_service.h"
-#include "brave/browser/ui/commander/commander_service_factory.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/browser/ui/commander/commander_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/browser/ui/tabs/public/brave_tab_features.h"
-#include "brave/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/browser/ui/tabs/public/brave_tab_features.h"
+#include "BnesBrowser/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
 #include "components/tabs/public/tab_interface.h"
 #if defined(TOOLKIT_VIEWS)
 #include "chrome/browser/ui/views/frame/browser_view.h"

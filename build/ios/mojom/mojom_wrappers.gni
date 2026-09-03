@@ -49,11 +49,11 @@ template("ios_objc_mojom_wrappers") {
   generate_wrappers_target = "${target_name}_generate_wrappers"
 
   action_foreach(generate_wrappers_target) {
-    script = "//brave/build/ios/mojom/gen_model_wrappers.py"
+    script = "//BnesBrowser/build/ios/mojom/gen_model_wrappers.py"
     inputs = [
-      "//brave/build/ios/mojom/cpp_transformations.h",
-      "//brave/build/ios/mojom/mojom_objc_generator.py",
-      "$root_gen_dir/brave/build/ios/mojom/objc_templates.zip",
+      "//BnesBrowser/build/ios/mojom/cpp_transformations.h",
+      "//BnesBrowser/build/ios/mojom/mojom_objc_generator.py",
+      "$root_gen_dir/BnesBrowser/build/ios/mojom/objc_templates.zip",
     ]
     sources = invoker.sources
     outputs = [
@@ -62,7 +62,7 @@ template("ios_objc_mojom_wrappers") {
       "$mojom_output_dir/{{source_file_part}}.objc.mm",
     ]
     _module_path = rebase_path("$dep_target_gen/{{source_file_part}}-module")
-    bytecode_path = rebase_path("$root_gen_dir/brave/build/ios/mojom")
+    bytecode_path = rebase_path("$root_gen_dir/BnesBrowser/build/ios/mojom")
     args = [
       "--mojom-module=$_module_path",
       "--output-dir=" + rebase_path(mojom_output_dir),
@@ -76,7 +76,7 @@ template("ios_objc_mojom_wrappers") {
       args += [ "--exclude=$_excluded_types" ]
     }
     deps = [
-      "//brave/build/ios/mojom:precompile_templates",
+      "//BnesBrowser/build/ios/mojom:precompile_templates",
       "//mojo/public/cpp/bindings",
       mojom_target,
       mojom_target_parser,
@@ -87,8 +87,8 @@ template("ios_objc_mojom_wrappers") {
 
   config(type_headers_target_name) {
     include_dirs = [
-      "//brave/base/apple",
-      "//brave/ios/browser/api/url",
+      "//BnesBrowser/base/apple",
+      "//BnesBrowser/ios/browser/api/url",
     ]
   }
 
@@ -114,8 +114,8 @@ template("ios_objc_mojom_wrappers") {
     public_deps += [
       ":$generate_wrappers_target",
       "//base",
-      "//brave/base/apple",
-      "//brave/build/ios/mojom:precompile_templates",
+      "//BnesBrowser/base/apple",
+      "//BnesBrowser/build/ios/mojom:precompile_templates",
       "//net",
       mojom_target,
     ]

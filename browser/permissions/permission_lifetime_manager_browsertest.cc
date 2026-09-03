@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/permissions/permission_lifetime_manager.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_manager.h"
 
 #include <memory>
 #include <optional>
@@ -18,13 +18,13 @@
 #include "base/test/scoped_mock_time_message_loop_task_runner.h"
 #include "base/test/test_mock_time_task_runner.h"
 #include "base/time/time.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/browser/permissions/mock_permission_lifetime_prompt_factory.h"
-#include "brave/browser/permissions/permission_lifetime_manager_factory.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_service.h"
-#include "brave/components/permissions/contexts/brave_wallet_permission_context.h"
-#include "brave/components/permissions/permission_lifetime_pref_names.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/browser/permissions/mock_permission_lifetime_prompt_factory.h"
+#include "BnesBrowser/browser/permissions/permission_lifetime_manager_factory.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service.h"
+#include "BnesBrowser/components/permissions/contexts/brave_wallet_permission_context.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_pref_names.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/permissions/permission_manager_factory.h"
 #include "chrome/browser/profiles/profile.h"
@@ -51,7 +51,7 @@
 #include "url/origin.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
 #endif
 
 using testing::_;

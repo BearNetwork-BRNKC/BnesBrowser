@@ -15,8 +15,8 @@
 #include "base/timer/timer.h"
 #include "base/timer/wall_clock_timer.h"
 #include "base/values.h"
-#include "brave/components/misc_metrics/page_percentage_metrics.h"
-#include "brave/components/script_injector/common/mojom/script_injector.mojom.h"
+#include "BnesBrowser/components/misc_metrics/page_percentage_metrics.h"
+#include "BnesBrowser/components/script_injector/common/mojom/script_injector.mojom.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"
 

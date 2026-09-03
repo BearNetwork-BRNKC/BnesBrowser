@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_BRAVE_ORIGIN_BRAVE_ORIGIN_NAVIGATION_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_origin/brave_origin_service.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_service.h"
 
 class Profile;
 

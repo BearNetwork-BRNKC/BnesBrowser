@@ -6,8 +6,8 @@
 #include "chrome/browser/ui/color/tab_strip_color_mixer.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/color/brave_color_mixer.h"
-#include "brave/browser/ui/tabs/brave_tab_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_color_mixer.h"
 #endif
 
 #define AddTabStripColorMixer AddTabStripColorMixer_ChromiumImpl

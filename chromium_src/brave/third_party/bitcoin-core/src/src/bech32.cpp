@@ -5,4 +5,4 @@
 
 #include <utility>
 
-#include <brave/third_party/bitcoin-core/src/src/bech32.cpp>
+#include <BnesBrowser/third_party/bitcoin-core/src/src/bech32.cpp>

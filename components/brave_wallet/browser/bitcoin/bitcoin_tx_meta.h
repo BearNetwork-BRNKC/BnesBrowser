@@ -9,8 +9,8 @@
 #include <memory>
 #include <utility>
 
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
-#include "brave/components/brave_wallet/browser/tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_meta.h"
 
 namespace brave_wallet {
 

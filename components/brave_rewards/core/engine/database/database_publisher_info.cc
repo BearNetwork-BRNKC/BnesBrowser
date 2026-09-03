@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/database/database_publisher_info.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_publisher_info.h"
 
 #include <utility>
 #include <vector>
 
-#include "brave/components/brave_rewards/core/engine/constants.h"
-#include "brave/components/brave_rewards/core/engine/database/database_util.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/publisher/publisher.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace {

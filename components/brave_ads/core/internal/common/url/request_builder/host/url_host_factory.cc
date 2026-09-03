@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/url_host_factory.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/url_host_factory.h"
 
 #include <ostream>  // IWYU pragma: keep
 #include <utility>
 
 #include "base/notreached.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/hosts/anonymous_search_url_host.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/hosts/anonymous_url_host.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/hosts/geo_url_host.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/hosts/non_anonymous_url_host.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/hosts/static_url_host.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/hosts/anonymous_search_url_host.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/hosts/anonymous_url_host.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/hosts/geo_url_host.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/hosts/non_anonymous_url_host.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/hosts/static_url_host.h"
 
 namespace brave_ads {
 

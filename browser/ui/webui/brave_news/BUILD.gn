@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 
 assert(enable_brave_news)
 assert(!is_android)
@@ -15,14 +15,14 @@ source_set("brave_news") {
   ]
 
   deps = [
-    "//brave/browser/brave_news",
-    "//brave/components/brave_news/browser",
-    "//brave/components/brave_news/browser/resources:sidebar_generated_resources",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_news/common:mojom",
-    "//brave/components/constants",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/browser/brave_news",
+    "//BnesBrowser/components/brave_news/browser",
+    "//BnesBrowser/components/brave_news/browser/resources:sidebar_generated_resources",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_news/common:mojom",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings",
     "//chrome/browser/ui/webui:theme_source",
     "//chrome/browser/ui/webui/top_chrome",
     "//content/public/browser",

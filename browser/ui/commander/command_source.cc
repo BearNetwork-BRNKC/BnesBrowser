@@ -8,7 +8,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 
 #include <variant>
 

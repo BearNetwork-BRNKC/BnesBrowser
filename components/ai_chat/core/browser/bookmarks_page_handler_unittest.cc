@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/bookmarks_page_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/bookmarks_page_handler.h"
 
 #include <memory>
 #include <string>
@@ -13,7 +13,7 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/ai_chat/core/common/mojom/bookmarks.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/bookmarks.mojom.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/bookmarks/browser/bookmark_node.h"
 #include "components/bookmarks/test/test_bookmark_client.h"

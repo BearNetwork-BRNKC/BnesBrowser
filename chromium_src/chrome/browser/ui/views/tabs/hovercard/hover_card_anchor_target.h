@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_TABS_HOVERCARD_HOVER_CARD_ANCHOR_TARGET_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_TABS_HOVERCARD_HOVER_CARD_ANCHOR_TARGET_H_
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "ui/base/models/image_model.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)

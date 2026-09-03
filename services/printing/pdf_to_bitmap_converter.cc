@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/services/printing/pdf_to_bitmap_converter.h"
+#include "BnesBrowser/services/printing/pdf_to_bitmap_converter.h"
 
 #include <optional>
 #include <utility>

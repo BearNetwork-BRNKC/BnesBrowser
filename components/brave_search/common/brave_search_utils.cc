@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
 
 #include <vector>
 
 #include "base/feature_list.h"
-#include "brave/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
 #include "url/gurl.h"
 #include "url/origin.h"
 #include "url/url_constants.h"

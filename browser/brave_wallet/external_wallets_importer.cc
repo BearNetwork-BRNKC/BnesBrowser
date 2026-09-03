@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_wallet/external_wallets_importer.h"
+#include "BnesBrowser/browser/brave_wallet/external_wallets_importer.h"
 
 #include <memory>
 #include <optional>
@@ -21,8 +21,8 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/types/fixed_array.h"
-#include "brave/components/brave_wallet/browser/password_encryptor.h"
-#include "brave/third_party/argon2/src/include/argon2.h"
+#include "BnesBrowser/components/brave_wallet/browser/password_encryptor.h"
+#include "BnesBrowser/third_party/argon2/src/include/argon2.h"
 #include "components/value_store/value_store.h"
 #include "extensions/browser/api/storage/backend_task_runner.h"
 #include "extensions/browser/api/storage/storage_frontend.h"

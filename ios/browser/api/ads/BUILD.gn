@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 import("//build/config/ios/rules.gni")
 
 config("external_config") {
@@ -25,14 +25,14 @@ source_set("ads") {
   deps = [
     ":brave_ads_mojom_wrappers",
     "//base",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/l10n/common",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/common",
-    "//brave/ios/browser/api/common",
-    "//brave/ios/browser/brave_ads",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/l10n/common",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/ios/browser/api/common",
+    "//BnesBrowser/ios/browser/brave_ads",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/application_context",
     "//ios/chrome/browser/shared/model/profile",
@@ -49,8 +49,8 @@ source_set("ads") {
 }
 
 ios_objc_mojom_wrappers("brave_ads_mojom_wrappers") {
-  mojom_target = "//brave/components/brave_ads/core/mojom"
-  sources = [ "//brave/components/brave_ads/core/mojom/brave_ads.mojom" ]
+  mojom_target = "//BnesBrowser/components/brave_ads/core/mojom"
+  sources = [ "//BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom" ]
   exclude_types = [
     "DBActionInfo",
     "DBBindColumnInfo",

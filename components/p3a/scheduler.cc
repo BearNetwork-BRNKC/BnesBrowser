@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/scheduler.h"
+#include "BnesBrowser/components/p3a/scheduler.h"
 
 #include "base/check_op.h"
 #include "base/rand_util.h"
-#include "brave/vendor/brave_base/random.h"
+#include "BnesBrowser/vendor/brave_base/random.h"
 
 namespace p3a {
 

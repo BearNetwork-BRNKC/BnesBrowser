@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/buildflag_header.gni")
 import("//build/util/branding.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
@@ -17,7 +17,7 @@ if (is_official_build) {
 }
 
 buildflag_header("brave_services_key") {
-  # Please use //brave/components/constants instead.
+  # Please use //BnesBrowser/components/constants instead.
   visibility = [ ":*" ]
 
   header = "brave_services_key.h"
@@ -38,8 +38,8 @@ source_set("constants") {
 
   public_deps = [
     ":brave_services_key",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/web_discovery/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/web_discovery/buildflags",
     "//extensions/buildflags",
   ]
   deps = [ "//base" ]

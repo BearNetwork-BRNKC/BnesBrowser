@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom-forward.h"
 #include "ios/web/public/webui/web_ui_ios_controller.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 

@@ -3,29 +3,29 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_confirmation_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_confirmation_util.h"
 
 #include <utility>
 
 #include "base/base64url.h"
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/payload/confirmation_payload_json_writer.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_credential_json_writer.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/user_data_builder/confirmation_user_data_builder.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_token_info.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_util.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transaction_info.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/user_data_info.h"
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/payload/confirmation_payload_json_writer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_credential_json_writer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/user_data_builder/confirmation_user_data_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_token_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transaction_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/user_data_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
 
 namespace brave_ads {
 

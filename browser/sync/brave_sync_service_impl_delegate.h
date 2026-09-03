@@ -11,7 +11,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/sync/service/sync_service_impl_delegate.h"
+#include "BnesBrowser/components/sync/service/sync_service_impl_delegate.h"
 #include "components/sync_device_info/device_info_tracker.h"
 
 namespace history {

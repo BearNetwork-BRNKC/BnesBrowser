@@ -12,9 +12,9 @@
 #include <vector>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/browser/solana_account_meta.h"
-#include "brave/components/brave_wallet/browser/solana_instruction_decoded_data.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_account_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_decoded_data.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

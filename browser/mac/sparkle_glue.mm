@@ -20,16 +20,16 @@
 #include "base/system/sys_info.h"
 #include "base/task/thread_pool.h"
 #import "brave/browser/mac/su_updater.h"
-#include "brave/browser/update_util.h"
-#include "brave/browser/updater/buildflags.h"
-#include "brave/common/brave_channel_info.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/brave_switches.h"
+#include "BnesBrowser/browser/update_util.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
+#include "BnesBrowser/common/brave_channel_info.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
 #include "chrome/common/channel_info.h"
 #include "chrome/common/chrome_constants.h"
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #endif
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)

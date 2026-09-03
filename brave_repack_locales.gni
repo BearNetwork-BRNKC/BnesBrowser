@@ -9,6 +9,6 @@ brave_locale_source_patterns = [
 ]
 
 brave_locale_deps = [
-  "//brave/app:brave_generated_resources_grit",
-  "//brave/components/resources:strings",
+  "//BnesBrowser/app:brave_generated_resources_grit",
+  "//BnesBrowser/components/resources:strings",
 ]

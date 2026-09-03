@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_TABS_TAB_WIDTH_CONSTRAINTS_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_TABS_TAB_WIDTH_CONSTRAINTS_H_
 
-#include "brave/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
 #include "chrome/browser/ui/views/tabs/tab_strip_layout_types.h"
 
 #define TransformForPinnednessAndOpenness      \

@@ -15,7 +15,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
 #include "base/timer/timer.h"
-#include "brave/components/restricted_web_contents_delegate/restricted_web_contents_delegate.h"
+#include "BnesBrowser/components/restricted_web_contents_delegate/restricted_web_contents_delegate.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "services/network/public/cpp/web_sandbox_flags.h"
 #include "url/gurl.h"

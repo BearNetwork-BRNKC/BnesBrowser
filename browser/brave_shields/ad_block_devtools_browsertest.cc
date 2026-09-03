@@ -5,7 +5,7 @@
 
 #include "base/strings/strcat.h"
 #include "base/values.h"
-#include "brave/browser/brave_shields/ad_block_service_browsertest.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_service_browsertest.h"
 #include "chrome/browser/interstitials/security_interstitial_page_test_utils.h"
 #include "content/public/test/browser_test.h"
 #include "content/public/test/browser_test_utils.h"

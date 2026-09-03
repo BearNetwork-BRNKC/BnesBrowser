@@ -11,7 +11,7 @@ source_set("qr_code") {
 
   deps = [
     "//base",
-    "//brave/ios/browser/qr_code_generator",
+    "//BnesBrowser/ios/browser/qr_code_generator",
     "//components/qr_code_generator",
     "//components/qr_code_generator:bitmap_generator",
     "//ui/gfx",

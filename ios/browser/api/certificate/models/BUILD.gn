@@ -19,9 +19,9 @@ source_set("models") {
 
   deps = [
     "//base",
-    "//brave/base/apple",
-    "//brave/ios/browser/api/certificate/utils",
-    "//brave/ios/browser/api/common",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/ios/browser/api/certificate/utils",
+    "//BnesBrowser/ios/browser/api/common",
     "//crypto",
     "//net",
     "//third_party/abseil-cpp:absl",

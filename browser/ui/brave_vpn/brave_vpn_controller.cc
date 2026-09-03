@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_vpn/brave_vpn_controller.h"
+#include "BnesBrowser/browser/ui/brave_vpn/brave_vpn_controller.h"
 
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #include "chrome/browser/ui/singleton_tabs.h"
 #include "url/gurl.h"
 

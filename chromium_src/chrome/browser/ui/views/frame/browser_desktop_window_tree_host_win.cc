@@ -10,7 +10,7 @@
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/win/windows_types.h"
-#include "brave/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "skia/ext/skia_utils_win.h"
 

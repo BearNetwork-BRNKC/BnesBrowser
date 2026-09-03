@@ -5,7 +5,7 @@
 
 #include "chrome/browser/offline_pages/background_loader_offliner.h"
 
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
 #include "chrome/browser/content_settings/page_specific_content_settings_delegate.h"
 #include "components/content_settings/browser/page_specific_content_settings.h"
 

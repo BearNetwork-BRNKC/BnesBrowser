@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/brave_search_metrics.h"
+#include "BnesBrowser/components/misc_metrics/brave_search_metrics.h"
 
 #include <memory>
 
 #include "base/strings/string_number_conversions.h"
 #include "base/test/metrics/histogram_tester.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "build/build_config.h"
 #include "components/prefs/testing_pref_service.h"
 #include "components/search_engines/search_engines_test_environment.h"

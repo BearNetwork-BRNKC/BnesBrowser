@@ -14,9 +14,9 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/sequence_checker.h"
-#include "brave/components/ai_chat/core/browser/remote_models_disk_cache.h"
-#include "brave/components/ai_chat/core/browser/remote_models_fetcher.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/browser/remote_models_disk_cache.h"
+#include "BnesBrowser/components/ai_chat/core/browser/remote_models_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
 
 class PrefService;
 

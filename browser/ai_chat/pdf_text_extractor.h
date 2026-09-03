@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_AI_CHAT_PDF_TEXT_EXTRACTOR_H_
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ai_chat/file_text_extractor_base.h"
+#include "BnesBrowser/browser/ai_chat/file_text_extractor_base.h"
 #include "services/network/public/cpp/web_sandbox_flags.h"
 
 namespace content {

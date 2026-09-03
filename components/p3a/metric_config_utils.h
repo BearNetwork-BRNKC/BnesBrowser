@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
 
 namespace p3a {
 

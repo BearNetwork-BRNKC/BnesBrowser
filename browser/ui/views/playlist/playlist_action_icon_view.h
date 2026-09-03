@@ -10,9 +10,9 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/views/playlist/playlist_bubbles_controller.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper_observer.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_bubbles_controller.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper_observer.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "chrome/browser/ui/views/page_action/page_action_icon_view.h"
 #include "components/prefs/pref_member.h"
 #include "ui/base/metadata/metadata_header_macros.h"

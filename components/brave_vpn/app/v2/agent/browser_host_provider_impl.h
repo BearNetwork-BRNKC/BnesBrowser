@@ -10,7 +10,7 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_vpn/common/mojom/browser_agent.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/browser_agent.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 

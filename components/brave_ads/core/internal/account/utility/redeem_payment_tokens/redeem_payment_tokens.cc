@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens.h"
 
 #include <utility>
 
@@ -11,18 +11,18 @@
 #include "base/functional/bind.h"
 #include "base/location.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_util.h"
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens_util.h"
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/url_request_builders/redeem_payment_tokens_url_request_builder.h"
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/user_data/redeem_payment_tokens_user_data_builder.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
-#include "brave/components/brave_ads/core/internal/common/time/time_formatting_util.h"
-#include "brave/components/brave_ads/core/internal/common/url/url_request_string_util.h"
-#include "brave/components/brave_ads/core/internal/common/url/url_response_string_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_token_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/redeem_payment_tokens_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/url_request_builders/redeem_payment_tokens_url_request_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/user_data/redeem_payment_tokens_user_data_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/net/http/http_status_code_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/time/time_formatting_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/url_request_string_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/url_response_string_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 #include "net/http/http_status_code.h"
 
 namespace brave_ads {

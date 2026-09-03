@@ -13,9 +13,9 @@
 
 #include "base/scoped_observation.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"

@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_ACCOUNT_FLOWS_CANCEL_VERIFICATION_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 
 namespace brave_account {
 

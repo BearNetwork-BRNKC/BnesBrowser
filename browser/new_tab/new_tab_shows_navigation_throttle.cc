@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/new_tab/new_tab_shows_navigation_throttle.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_navigation_throttle.h"
 
 #include <string>
 
 #include "base/functional/bind.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/ntp/new_tab_ui.h"
 #include "content/public/browser/browser_context.h"

@@ -7,7 +7,7 @@
 #include <string>
 
 #include "base/feature_list.h"
-#include "brave/browser/ui/tabs/tree_tab_session_manager.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_session_manager.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/tabs/features.h"

@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/ads_service_delegate.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_delegate.h"
 
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/notifications/notification_display_service.h"
@@ -21,7 +21,7 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/notifications/brave_notification_platform_bridge_helper_android.h"
+#include "BnesBrowser/browser/notifications/brave_notification_platform_bridge_helper_android.h"
 #include "chrome/browser/android/service_tab_launcher.h"
 #include "content/public/browser/page_navigator.h"
 #else

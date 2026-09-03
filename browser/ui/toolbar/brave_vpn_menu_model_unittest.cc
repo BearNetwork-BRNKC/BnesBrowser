@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_vpn_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_vpn_menu_model.h"
 
 #include <memory>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "components/prefs/pref_service.h"

@@ -19,8 +19,8 @@ source_set("browser_tests") {
 
   deps = [
     "//base",
-    "//brave/browser",
-    "//brave/common",
+    "//BnesBrowser/browser",
+    "//BnesBrowser/common",
     "//chrome/browser",
     "//chrome/browser/content_settings:content_settings_factory",
     "//chrome/browser/ui",

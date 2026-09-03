@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_relaunch_handler_mac.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_relaunch_handler_mac.h"
 
 #import "brave/browser/mac/sparkle_glue.h"
-#include "brave/browser/updater/buildflags.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #endif
 
 namespace brave_relaunch_handler {

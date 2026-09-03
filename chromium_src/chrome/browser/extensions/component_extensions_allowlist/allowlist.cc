@@ -5,7 +5,7 @@
 
 #include "chrome/browser/extensions/component_extensions_allowlist/allowlist.h"
 
-#include "brave/components/brave_extension/grit/brave_extension.h"
+#include "BnesBrowser/components/brave_extension/grit/brave_extension.h"
 #include "chrome/common/extensions/extension_constants.h"
 #include "components/grit/brave_components_resources.h"
 #include "extensions/common/constants.h"

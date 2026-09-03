@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/oblivious_http_config_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oblivious_http_config_manager.h"
 
 #include <memory>
 #include <optional>
@@ -17,9 +17,9 @@
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/api_request_helper/mock_api_request_helper.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/mock_api_request_helper.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/prefs/testing_pref_service.h"
 #include "net/http/http_status_code.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/bech32.h"
+#include "BnesBrowser/components/brave_wallet/common/bech32.h"
 
 #include <vector>
 
@@ -12,9 +12,9 @@
 #include "base/containers/to_vector.h"
 #include "base/numerics/safe_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/common/lib.rs.h"
-#include "brave/third_party/bitcoin-core/src/src/bech32.h"
-#include "brave/third_party/bitcoin-core/src/src/util/strencodings.h"
+#include "BnesBrowser/components/brave_wallet/common/lib.rs.h"
+#include "BnesBrowser/third_party/bitcoin-core/src/src/bech32.h"
+#include "BnesBrowser/third_party/bitcoin-core/src/src/util/strencodings.h"
 
 namespace brave_wallet::bech32 {
 

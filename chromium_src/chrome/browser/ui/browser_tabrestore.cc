@@ -5,13 +5,13 @@
 
 #include "chrome/browser/ui/browser_tabrestore.h"
 
-#include "brave/browser/ui/tabs/tree_tab_session_manager.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_session_manager.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/tab_restore_utils.h"
+#include "BnesBrowser/components/containers/content/browser/tab_restore_utils.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 namespace {

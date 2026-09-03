@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
-import("//brave/components/psst/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/psst/buildflags/buildflags.gni")
 
 source_set("page_action") {
   # TODO(https://github.com/brave/brave-browser/issues/52829)
@@ -19,12 +19,12 @@ source_set("page_action") {
       "partitioned_storage_page_action_controller.h",
     ]
     deps += [
-      "//brave/browser/containers",
-      "//brave/browser/ui/containers",
-      "//brave/browser/ui/tabs:tab_menu",
-      "//brave/components/containers/content/browser",
-      "//brave/components/containers/core/browser",
-      "//brave/components/containers/core/common:features",
+      "//BnesBrowser/browser/containers",
+      "//BnesBrowser/browser/ui/containers",
+      "//BnesBrowser/browser/ui/tabs:tab_menu",
+      "//BnesBrowser/components/containers/content/browser",
+      "//BnesBrowser/components/containers/core/browser",
+      "//BnesBrowser/components/containers/core/common:features",
       "//chrome/browser/profiles",
       "//chrome/browser/ui/actions",
       "//chrome/browser/ui/browser_window",
@@ -43,10 +43,10 @@ source_set("page_action") {
     ]
 
     deps += [
-      "//brave/app:brave_generated_resources_grit_grit",
-      "//brave/app:command_ids",
-      "//brave/components/psst/core/common",
-      "//brave/components/vector_icons",
+      "//BnesBrowser/app:brave_generated_resources_grit_grit",
+      "//BnesBrowser/app:command_ids",
+      "//BnesBrowser/components/psst/core/common",
+      "//BnesBrowser/components/vector_icons",
       "//chrome/browser/ui/color:mixers",
       "//ui/base",
       "//ui/menus",

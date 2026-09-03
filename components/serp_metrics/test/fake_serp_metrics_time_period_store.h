@@ -10,8 +10,8 @@
 #include <string_view>
 
 #include "base/values.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store_factory.h"
 
 namespace serp_metrics::test {
 

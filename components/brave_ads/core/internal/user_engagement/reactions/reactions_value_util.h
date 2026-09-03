@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_USER_ENGAGEMENT_REACTIONS_REACTIONS_VALUE_UTIL_H_
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
 
 namespace brave_ads {
 

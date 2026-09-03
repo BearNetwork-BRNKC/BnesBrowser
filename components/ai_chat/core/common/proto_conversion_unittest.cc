@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/common/proto_conversion.h"
+#include "BnesBrowser/components/ai_chat/core/common/proto_conversion.h"
 
 #include <utility>
 #include <vector>
 
 #include "base/test/values_test_util.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/test_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/test_utils.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"

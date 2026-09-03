@@ -18,11 +18,11 @@ source_set("brave_account") {
 
   deps = [
     "//base",
-    "//brave/browser/brave_account",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_account/mojom",
-    "//brave/components/constants",
+    "//BnesBrowser/browser/brave_account",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_account/mojom",
+    "//BnesBrowser/components/constants",
     "//chrome/browser/profiles",
     "//content/public/browser",
     "//content/public/common",

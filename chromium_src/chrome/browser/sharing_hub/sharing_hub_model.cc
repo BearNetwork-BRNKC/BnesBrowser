@@ -5,8 +5,8 @@
 
 #include "chrome/browser/sharing_hub/sharing_hub_model.h"
 
-#include "brave/app/brave_command_ids.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/app/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

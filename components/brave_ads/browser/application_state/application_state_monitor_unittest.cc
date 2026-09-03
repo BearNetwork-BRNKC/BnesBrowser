@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/application_state/application_state_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/application_state_monitor.h"
 
 #include <string>
 
-#include "brave/components/brave_ads/browser/application_state/test/test_application_state_observer.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/test/test_application_state_observer.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/browser/query_filter_component_installer.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_component_installer.h"
 
 #include <memory>
 #include <string_view>
@@ -14,10 +14,10 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_component_updater/browser/mock_on_demand_updater.h"
-#include "brave/components/query_filter/browser/query_filter_data.h"
-#include "brave/components/query_filter/common/constants.h"
-#include "brave/components/query_filter/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/mock_on_demand_updater.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_data.h"
+#include "BnesBrowser/components/query_filter/common/constants.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
 #include "components/component_updater/mock_component_updater_service.h"
 #include "components/update_client/update_client.h"
 #include "testing/gmock/include/gmock/gmock.h"

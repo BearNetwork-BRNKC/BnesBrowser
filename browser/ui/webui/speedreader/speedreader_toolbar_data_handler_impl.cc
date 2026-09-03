@@ -3,20 +3,20 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/speedreader/speedreader_toolbar_data_handler_impl.h"
+#include "BnesBrowser/browser/ui/webui/speedreader/speedreader_toolbar_data_handler_impl.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/speedreader/tts_player.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/tts_player.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/themes/theme_service_factory.h"
@@ -30,7 +30,7 @@
 #include "ui/color/color_provider.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 namespace {

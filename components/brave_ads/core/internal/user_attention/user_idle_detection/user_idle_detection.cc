@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_attention/user_idle_detection/user_idle_detection.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_attention/user_idle_detection/user_idle_detection.h"
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 
 namespace brave_ads {
 

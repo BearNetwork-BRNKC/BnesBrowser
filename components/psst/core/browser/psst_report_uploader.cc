@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/psst/core/browser/psst_report_uploader.h"
+#include "BnesBrowser/components/psst/core/browser/psst_report_uploader.h"
 
 #include "base/json/json_writer.h"
 #include "base/logging.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
 #include "net/base/load_flags.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

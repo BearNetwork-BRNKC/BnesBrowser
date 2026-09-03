@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/password/brave_password_api.h"
+#include "BnesBrowser/ios/browser/api/password/brave_password_api.h"
 
 #include "base/functional/bind.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/api/password/brave_password_observer.h"
-#include "brave/ios/browser/api/password/password_store_listener_ios.h"
+#include "BnesBrowser/ios/browser/api/password/brave_password_observer.h"
+#include "BnesBrowser/ios/browser/api/password/password_store_listener_ios.h"
 #include "components/password_manager/core/browser/password_form.h"
 #include "components/password_manager/core/browser/password_form_digest.h"
 #include "components/password_manager/core/browser/password_store/password_form_converters.h"

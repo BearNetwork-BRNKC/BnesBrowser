@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/omnibox/browser/commander_provider.h"
+#include "BnesBrowser/components/omnibox/browser/commander_provider.h"
 
 #include <algorithm>
 #include <memory>
@@ -16,12 +16,12 @@
 #include "base/observer_list.h"
 #include "base/strings/strcat.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
-#include "brave/components/commander/browser/commander_item_model.h"
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/omnibox/browser/brave_fake_autocomplete_provider_client.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/browser/commander_item_model.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/brave_fake_autocomplete_provider_client.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/autocomplete_match.h"
 #include "components/omnibox/browser/test_scheme_classifier.h"

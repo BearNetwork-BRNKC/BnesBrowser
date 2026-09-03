@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 
 #include <algorithm>
 #include <codecvt>
@@ -20,18 +20,18 @@
 #include "base/notreached.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/l10n/common/locale_util.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/sidebar/browser/constants.h"
-#include "brave/components/sidebar/browser/pref_names.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/browser/constants.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
@@ -40,29 +40,29 @@
 #include "ui/base/resource/resource_bundle.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/browser/utils.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/playlist/core/browser/utils.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 namespace sidebar {

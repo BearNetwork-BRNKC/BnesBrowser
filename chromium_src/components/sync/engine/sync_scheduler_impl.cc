@@ -13,7 +13,7 @@
 
 #undef BRAVE_SYNC_SCHEDULER_IMPL_HANDLE_FAILURE
 
-#include "brave/components/sync/engine/brave_sync_server_commands.h"
+#include "BnesBrowser/components/sync/engine/brave_sync_server_commands.h"
 
 #include "base/functional/callback.h"
 #include "components/sync/engine/sync_protocol_error.h"

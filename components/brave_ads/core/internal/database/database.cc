@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/database/database.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database.h"
 
 #include <tuple>
 #include <utility>
@@ -17,11 +17,11 @@
 #include "base/notreached.h"
 #include "base/sequence_checker.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_column_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_row_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_util.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_column_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_row_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 #include "sql/meta_table.h"
 #include "sql/recovery.h"
 #include "sql/sqlite_result_code.h"

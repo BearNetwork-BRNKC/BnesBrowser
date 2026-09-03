@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/time_period_storage/time_period_storage.h"
+#include "BnesBrowser/components/time_period_storage/time_period_storage.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/components/time_period_storage/scoped_timezone_for_testing.h"
+#include "BnesBrowser/components/time_period_storage/scoped_timezone_for_testing.h"
 #include "build/buildflag.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"

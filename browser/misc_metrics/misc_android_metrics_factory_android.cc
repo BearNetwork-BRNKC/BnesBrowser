@@ -4,10 +4,10 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/android/jni_android.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/misc_metrics/misc_android_metrics.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/misc_metrics/misc_android_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
 #include "chrome/android/chrome_jni_headers/MiscAndroidMetricsFactory_jni.h"
 #include "chrome/browser/profiles/profile.h"
 

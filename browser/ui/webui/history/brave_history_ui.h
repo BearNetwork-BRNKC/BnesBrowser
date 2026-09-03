@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/browser/ui/webui/history/brave_history_embeddings.mojom.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_embeddings.mojom.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
 #include "chrome/browser/ui/webui/history/history_ui.h"
 #include "chrome/common/url_constants.h"
 #include "chrome/common/webui_url_constants.h"

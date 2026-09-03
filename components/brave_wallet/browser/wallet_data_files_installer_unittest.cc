@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
 
 #include <optional>
 #include <utility>
@@ -16,16 +16,16 @@
 #include "base/test/scoped_path_override.h"
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/components/brave_component_updater/browser/mock_on_demand_updater.h"
-#include "brave/components/brave_wallet/browser/blockchain_registry.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service_delegate.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
-#include "brave/components/brave_wallet/browser/tx_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_component_updater/browser/mock_on_demand_updater.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_registry.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "components/component_updater/component_updater_paths.h"
 #include "components/component_updater/mock_component_updater_service.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"

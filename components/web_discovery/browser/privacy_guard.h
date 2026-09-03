@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/web_discovery/browser/patterns.h"
+#include "BnesBrowser/components/web_discovery/browser/patterns.h"
 #include "url/gurl.h"
 
 namespace web_discovery {

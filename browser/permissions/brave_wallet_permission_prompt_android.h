@@ -11,8 +11,8 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/permissions/brave_dapp_permission_prompt_dialog_controller_android.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/browser/permissions/brave_dapp_permission_prompt_dialog_controller_android.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "components/permissions/permissions_client.h"
 
 namespace content {

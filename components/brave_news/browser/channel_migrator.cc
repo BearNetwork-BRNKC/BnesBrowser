@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/channel_migrator.h"
+#include "BnesBrowser/components/brave_news/browser/channel_migrator.h"
 
 #include <string_view>
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/containers/map_util.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #include "components/prefs/scoped_user_pref_update.h"
 
 namespace brave_news {

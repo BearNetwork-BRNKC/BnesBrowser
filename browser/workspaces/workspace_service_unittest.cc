@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/workspaces/workspace_service.h"
+#include "BnesBrowser/browser/workspaces/workspace_service.h"
 
 #include <memory>
 #include <vector>
@@ -19,10 +19,10 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
 #include "base/time/time.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/browser/workspaces/workspace_metadata.h"
-#include "brave/browser/workspaces/workspace_service_factory.h"
-#include "brave/browser/workspaces/workspace_utils.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/browser/workspaces/workspace_metadata.h"
+#include "BnesBrowser/browser/workspaces/workspace_service_factory.h"
+#include "BnesBrowser/browser/workspaces/workspace_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile_manager.h"

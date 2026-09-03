@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_keyring.h"
 
 #include "base/check_is_test.h"
 #include "base/containers/map_util.h"
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
-#include "brave/components/brave_wallet/browser/scrypt_utils.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/scrypt_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
 #include "crypto/random.h"
 #include "crypto/secure_util.h"
 

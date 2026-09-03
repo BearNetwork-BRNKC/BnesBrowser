@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/content/browser/ai_chat_throttle.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_throttle.h"
 
 #include <memory>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"
 #include "chrome/test/base/testing_profile_manager.h"

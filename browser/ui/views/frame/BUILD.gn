@@ -18,15 +18,15 @@ source_set("frame") {
 
   public_deps = [
     "//base",
-    "//brave/browser/ui/views/frame/edge_reveal",
+    "//BnesBrowser/browser/ui/views/frame/edge_reveal",
     "//components/tabs:public",
     "//ui/views",
   ]
 
   deps = [
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/sidebar",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/sidebar",
     "//chrome/browser/ui/exclusive_access",
     "//chrome/browser/ui/views/infobars",
     "//ui/compositor",
@@ -42,9 +42,9 @@ source_set("frame_impl") {
 
   deps = [
     ":frame",
-    "//brave/browser/ui/focus_mode",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame/vertical_tabs",
+    "//BnesBrowser/browser/ui/focus_mode",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame/vertical_tabs",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui/browser_window",
     "//chrome/browser/ui/color:mixers",
@@ -92,12 +92,12 @@ source_set("browser_tests") {
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
 
   sources = [
-    "//brave/browser/ui/views/frame/brave_browser_view_browsertest.cc",
-    "//brave/browser/ui/views/frame/brave_horizontal_tab_strip_region_view_browsertest.cc",
-    "//brave/browser/ui/views/frame/focus_mode_mini_toolbar_browsertest.cc",
-    "//brave/browser/ui/views/frame/focus_mode_title_bar_view_browsertest.cc",
-    "//brave/browser/ui/views/frame/focus_mode_top_overlay_browsertest.cc",
-    "//brave/browser/ui/views/frame/tab_strip_placement_coordinator_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/brave_browser_view_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/brave_horizontal_tab_strip_region_view_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/focus_mode_mini_toolbar_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/focus_mode_title_bar_view_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay_browsertest.cc",
+    "//BnesBrowser/browser/ui/views/frame/tab_strip_placement_coordinator_browsertest.cc",
   ]
 
   deps = [
@@ -105,16 +105,16 @@ source_set("browser_tests") {
     ":frame_impl",
     "//base",
     "//base/test:test_support",
-    "//brave/browser/ui",
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/focus_mode",
-    "//brave/browser/ui/sidebar:sidebar_impl",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame/vertical_tabs",
-    "//brave/browser/ui/views/sidebar",
-    "//brave/browser/ui/views/toolbar:screenshot",
-    "//brave/components/brave_origin/buildflags",
-    "//brave/components/constants",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/focus_mode",
+    "//BnesBrowser/browser/ui/sidebar:sidebar_impl",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame/vertical_tabs",
+    "//BnesBrowser/browser/ui/views/sidebar",
+    "//BnesBrowser/browser/ui/views/toolbar:screenshot",
+    "//BnesBrowser/components/brave_origin/buildflags",
+    "//BnesBrowser/components/constants",
     "//chrome/browser",
     "//chrome/browser/infobars",
     "//chrome/browser/profiles:profile",
@@ -136,11 +136,11 @@ source_set("browser_tests") {
   ]
 
   if (is_linux) {
-    sources += [ "//brave/browser/ui/views/frame/brave_browser_frame_view_linux_browsertest.cc" ]
+    sources += [ "//BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_linux_browsertest.cc" ]
 
     deps += [
       "//base/test:test_support",
-      "//brave/browser/ui:brave_tab_prefs",
+      "//BnesBrowser/browser/ui:brave_tab_prefs",
       "//chrome/browser/themes",
       "//chrome/browser/ui:layout_constants",
       "//chrome/browser/ui/tabs:features",
@@ -152,11 +152,11 @@ source_set("browser_tests") {
   }
 
   if (is_win) {
-    sources += [ "//brave/browser/ui/views/frame/brave_browser_frame_view_win_browsertest.cc" ]
+    sources += [ "//BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_win_browsertest.cc" ]
 
     deps += [
       "//base/test:test_support",
-      "//brave/browser/ui:brave_tab_prefs",
+      "//BnesBrowser/browser/ui:brave_tab_prefs",
       "//chrome/browser/ui/tabs:features",
       "//chrome/browser/ui/views/frame",
     ]

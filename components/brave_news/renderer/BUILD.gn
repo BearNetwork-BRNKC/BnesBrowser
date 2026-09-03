@@ -11,7 +11,7 @@ source_set("renderer") {
 
   deps = [
     "//base",
-    "//brave/components/brave_news/common:rss_link_reader_mojom",
+    "//BnesBrowser/components/brave_news/common:rss_link_reader_mojom",
     "//content/public/renderer",
     "//mojo/public/cpp/bindings",
     "//services/service_manager/public/cpp",

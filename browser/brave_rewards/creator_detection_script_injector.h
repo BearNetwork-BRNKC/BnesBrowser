@@ -13,7 +13,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
 #include "base/values.h"
-#include "brave/components/script_injector/common/mojom/script_injector.mojom.h"
+#include "BnesBrowser/components/script_injector/common/mojom/script_injector.mojom.h"
 #include "content/public/browser/global_routing_id.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"
 #include "url/gurl.h"

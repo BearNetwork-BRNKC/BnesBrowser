@@ -5,8 +5,8 @@
 
 #include "chrome/browser/profiles/profile_attributes_storage.h"
 
-#include "brave/browser/profiles/brave_profile_avatar_downloader.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/profiles/brave_profile_avatar_downloader.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/grit/branded_strings.h"
 
 // We want to use our own default profile name "Personal" instead of upstream's

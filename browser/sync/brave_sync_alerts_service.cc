@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/sync/brave_sync_alerts_service.h"
+#include "BnesBrowser/browser/sync/brave_sync_alerts_service.h"
 
 #include "base/check.h"
-#include "brave/browser/infobars/brave_sync_account_deleted_infobar_delegate.h"
-#include "brave/components/brave_sync/brave_sync_prefs.h"
+#include "BnesBrowser/browser/infobars/brave_sync_account_deleted_infobar_delegate.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_prefs.h"
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/infobars/sync_cannot_run_infobar_delegate.h"
+#include "BnesBrowser/browser/infobars/sync_cannot_run_infobar_delegate.h"
 #endif
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/sync/sync_service_factory.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"
@@ -21,7 +21,7 @@
 
 #if BUILDFLAG(IS_ANDROID)
 #include "base/android/jni_android.h"
-#include "brave/build/android/jni_headers/BraveSyncAccountDeletedInformer_jni.h"
+#include "BnesBrowser/build/android/jni_headers/BraveSyncAccountDeletedInformer_jni.h"
 #else
 #include "chrome/browser/ui/browser.h"
 #endif

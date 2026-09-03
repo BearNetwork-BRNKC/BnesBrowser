@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_ui.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_ui.h"
 
 #include <cstddef>
 #include <memory>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_handler.h"
-#include "brave/components/psst/resources/grit/brave_psst_dialog_generated_map.h"
-#include "brave/components/psst/resources/grit/brave_psst_resources.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_handler.h"
+#include "BnesBrowser/components/psst/resources/grit/brave_psst_dialog_generated_map.h"
+#include "BnesBrowser/components/psst/resources/grit/brave_psst_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"

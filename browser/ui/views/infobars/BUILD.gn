@@ -10,8 +10,8 @@ source_set("unit_tests") {
 
   deps = [
     "//base",
-    "//brave/common",
-    "//brave/components/infobars/core",
+    "//BnesBrowser/common",
+    "//BnesBrowser/components/infobars/core",
     "//chrome/browser/ui",
     "//chrome/browser/ui/views:layout_provider",
     "//chrome/test:test_support",

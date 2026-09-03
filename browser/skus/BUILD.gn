@@ -5,15 +5,15 @@
 
 static_library("skus") {
   sources = [
-    "//brave/browser/skus/skus_service_factory.cc",
-    "//brave/browser/skus/skus_service_factory.h",
+    "//BnesBrowser/browser/skus/skus_service_factory.cc",
+    "//BnesBrowser/browser/skus/skus_service_factory.h",
   ]
 
   deps = [
     "//base",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//components/keyed_service/content",
@@ -24,7 +24,7 @@ static_library("skus") {
 
   if (is_android) {
     sources +=
-        [ "//brave/browser/skus/android/skus_service_factory_android.cc" ]
-    deps += [ "//brave/browser/skus/android:jni_headers" ]
+        [ "//BnesBrowser/browser/skus/android/skus_service_factory_android.cc" ]
+    deps += [ "//BnesBrowser/browser/skus/android:jni_headers" ]
   }
 }

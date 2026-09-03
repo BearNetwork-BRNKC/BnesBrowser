@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
 
 #include <algorithm>
 #include <memory>
@@ -26,11 +26,11 @@
 #include "base/test/test_future.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/browser/psst/psst_settings_service_factory.h"
-#include "brave/components/psst/core/browser/pref_names.h"
-#include "brave/components/psst/core/browser/psst_rule_registry.h"
-#include "brave/components/psst/core/common/features.h"
-#include "brave/components/psst/core/common/psst_script_responses.h"
+#include "BnesBrowser/browser/psst/psst_settings_service_factory.h"
+#include "BnesBrowser/components/psst/core/browser/pref_names.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule_registry.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/common/psst_script_responses.h"
 #include "build/build_config.h"
 #include "chrome/test/base/chrome_render_view_host_test_harness.h"
 #include "components/metrics/metrics_state_manager.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
 
 #include "base/bit_cast.h"
 #include "base/check.h"
@@ -17,12 +17,12 @@
 #include "base/numerics/checked_math.h"
 #include "base/strings/strcat.h"  // IWYU pragma: export
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc_responses.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc_responses.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "net/http/http_request_headers.h"
 
 namespace brave_wallet {

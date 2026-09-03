@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/containers_test_utils.h"
+#include "BnesBrowser/components/containers/core/browser/containers_test_utils.h"
 
 #include <utility>
 
-#include "brave/components/containers/core/browser/pref_names.h"
+#include "BnesBrowser/components/containers/core/browser/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

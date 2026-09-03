@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/config/win/visual_studio_version.gni")
 import("//build/util/branding.gni")
 import("//media/cdm/library_cdm/cdm_paths.gni")
@@ -32,9 +32,9 @@ if (should_generate_symbols) {
       "setup.exe",
     ]
 
-    script = "//brave/tools/win/generate_symbols.py"
+    script = "//BnesBrowser/tools/win/generate_symbols.py"
 
-    deps = [ "//brave/build/win:create_signed_installer" ]
+    deps = [ "//BnesBrowser/build/win:create_signed_installer" ]
   }
 } else {
   group("generate_symbols") {

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_component_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_filters_provider.h"
 
 #include <memory>
 #include <string>
@@ -14,11 +14,11 @@
 #include "base/rand_util.h"
 #include "base/task/thread_pool.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_installer.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/bnes_default_list.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_installer.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/bnes_default_list.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
 #include "components/component_updater/component_updater_service.h"
 
 constexpr char kListFile[] = "list.txt";

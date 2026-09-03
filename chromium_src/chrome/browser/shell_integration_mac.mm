@@ -10,7 +10,7 @@
 #include "base/apple/scoped_cftyperef.h"
 #include "base/mac/mac_util.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "build/branding_buildflags.h"
 #include "chrome/common/channel_info.h"
 #include "components/version_info/version_info.h"

@@ -8,9 +8,9 @@
 
 #include <string_view>
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 class Browser;
 class BrowserWindowInterface;

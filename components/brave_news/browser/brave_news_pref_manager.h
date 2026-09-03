@@ -12,7 +12,7 @@
 #include "base/containers/flat_map.h"
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"
 #include "url/gurl.h"

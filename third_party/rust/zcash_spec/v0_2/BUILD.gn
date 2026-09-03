@@ -12,10 +12,10 @@ cargo_crate("lib") {
   crate_name = "zcash_spec"
   epoch = "0.2"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/prf_expand.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/zcash_spec-v0_2/src/prf_expand.rs",
   ]
   inputs = []
 
@@ -30,7 +30,7 @@ cargo_crate("lib") {
 
   allow_unsafe = false
 
-  deps = [ "//brave/third_party/rust/blake2b_simd/v1:lib" ]
+  deps = [ "//BnesBrowser/third_party/rust/blake2b_simd/v1:lib" ]
   rustenv = []
   rustflags = []
 

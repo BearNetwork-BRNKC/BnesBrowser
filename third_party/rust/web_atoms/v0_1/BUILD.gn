@@ -13,11 +13,11 @@ cargo_crate("lib") {
   epoch = "0.1"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/entities.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/entities.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/lib.rs",
   ]
   inputs = []
 
@@ -32,18 +32,18 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/phf/v0_11:lib",
-    "//brave/third_party/rust/string_cache/v0_8:lib",
+    "//BnesBrowser/third_party/rust/phf/v0_11:lib",
+    "//BnesBrowser/third_party/rust/string_cache/v0_8:lib",
   ]
   build_deps = [
-    "//brave/third_party/rust/phf_codegen/v0_11:buildrs_support",
-    "//brave/third_party/rust/string_cache_codegen/v0_5:buildrs_support",
+    "//BnesBrowser/third_party/rust/phf_codegen/v0_11:buildrs_support",
+    "//BnesBrowser/third_party/rust/string_cache_codegen/v0_5:buildrs_support",
   ]
-  build_root = "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs"
-  build_sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs" ]
+  build_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs"
+  build_sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/build.rs" ]
   build_script_inputs = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/entities.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/local_names.txt",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/entities.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/web_atoms-v0_1/local_names.txt",
   ]
   build_script_outputs = [
     "generated.rs",

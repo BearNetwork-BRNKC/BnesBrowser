@@ -3,27 +3,27 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
 #include "base/feature_list.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/themes/brave_theme_service.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/views/brave_actions/brave_actions_container.h"
-#include "brave/browser/ui/views/location_bar/brave_search_conversion/promotion_button_controller.h"
-#include "brave/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
-#include "brave/browser/ui/views/location_bar/brave_shields_page_info_controller.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/themes/brave_theme_service.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_actions_container.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_search_conversion/promotion_button_controller.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_shields_page_info_controller.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/themes/theme_service_factory.h"
 #include "chrome/browser/ui/layout_constants.h"
@@ -53,21 +53,21 @@
 #include "ui/views/view_utils.h"
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/ui/views/playlist/playlist_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_action_icon_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/ui/views/location_bar/onion_location_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/onion_location_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/ui/views/brave_news/brave_news_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_action_icon_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/browser/ui/commander/commander_service_factory.h"
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
-#include "brave/components/commander/common/features.h"
+#include "BnesBrowser/browser/ui/commander/commander_service_factory.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/common/features.h"
 #endif
 
 namespace {

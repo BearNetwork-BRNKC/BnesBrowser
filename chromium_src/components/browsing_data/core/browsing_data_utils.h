@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_COMPONENTS_BROWSING_DATA_CORE_BROWSING_DATA_UTILS_H_
 #define BRAVE_CHROMIUM_SRC_COMPONENTS_BROWSING_DATA_CORE_BROWSING_DATA_UTILS_H_
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 
 #include <components/browsing_data/core/browsing_data_utils.h>  // IWYU pragma: export
 

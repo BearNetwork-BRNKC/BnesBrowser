@@ -4,8 +4,8 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/test/run_until.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_view.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_view.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_toolbar_button.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "chrome/browser/ui/views/interaction/browser_elements_views.h"

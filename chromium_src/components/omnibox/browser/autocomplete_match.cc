@@ -5,8 +5,8 @@
 
 #include "components/omnibox/browser/autocomplete_match.h"
 
-#include "brave/components/omnibox/browser/commander_provider.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/omnibox/browser/commander_provider.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/search_engines/template_url_starter_pack_data.h"
 

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/ntp/new_tab_ui.h"
 #include "chrome/common/pref_names.h"

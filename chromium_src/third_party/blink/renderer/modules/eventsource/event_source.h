@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_MODULES_EVENTSOURCE_EVENT_SOURCE_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_MODULES_EVENTSOURCE_EVENT_SOURCE_H_
 
-#include "brave/third_party/blink/renderer/core/resource_pool_limiter/resource_pool_limiter.h"
+#include "BnesBrowser/third_party/blink/renderer/core/resource_pool_limiter/resource_pool_limiter.h"
 
 // Avoid redefining tokens in these headers:
 #include "third_party/blink/renderer/core/html/closewatcher/close_watcher.h"

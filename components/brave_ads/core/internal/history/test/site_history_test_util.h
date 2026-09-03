@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_HISTORY_TEST_SITE_HISTORY_TEST_UTIL_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_HISTORY_TEST_SITE_HISTORY_TEST_UTIL_H_
 
-#include "brave/components/brave_ads/core/public/history/site_history.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/site_history.h"
 
 namespace brave_ads::test {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
 
 #include <algorithm>
 #include <memory>
@@ -15,27 +15,27 @@
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
 #include "base/i18n/rtl.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
-#include "brave/browser/ui/views/toolbar/bookmark_button.h"
-#include "brave/browser/ui/views/toolbar/side_panel_button.h"
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_controller.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/ui/views/toolbar/bookmark_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/side_panel_button.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_controller.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/defaults.h"
@@ -67,18 +67,18 @@
 #include "ui/views/window/hit_test_utils.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/browser/ui/views/toolbar/ai_chat_button.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/browser/ui/views/toolbar/ai_chat_button.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif
 
-#include "brave/browser/ui/screenshot/features.h"
-#include "brave/browser/ui/views/toolbar/screenshot_button.h"
+#include "BnesBrowser/browser/ui/screenshot/features.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_button.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/ui/views/toolbar/brave_vpn_button.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_vpn_button.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(IS_LINUX)
@@ -86,11 +86,11 @@
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/browser/ui/views/toolbar/wallet_button.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/ui/views/toolbar/wallet_button.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 #endif
 
 namespace {

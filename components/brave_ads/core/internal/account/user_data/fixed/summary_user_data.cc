@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data.h"
 
 #include <string_view>
 #include <utility>
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/ad_type.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/ad_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
 
 namespace brave_ads {
 

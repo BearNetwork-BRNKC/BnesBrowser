@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
@@ -11,7 +11,7 @@
 #include "chrome/browser/history/history_tab_helper.h"
 
 // Include these here to avoid overriding "IsOffTheRecord" in them.
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/keyed_service/content/browser_context_keyed_service_factory.h"
 #include "components/keyed_service/core/keyed_service_factory.h"

@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_infobar_delegate.h"
+#include "BnesBrowser/browser/psst/psst_infobar_delegate.h"
 
 #include <memory>
 
 #include "base/memory/ptr_util.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #include "components/infobars/core/infobar.h"
 #include "ui/base/l10n/l10n_util.h"

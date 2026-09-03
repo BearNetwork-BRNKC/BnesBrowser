@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/private_new_tab_page/brave_private_new_tab_page_handler.h"
 
 #include <utility>
 
@@ -11,8 +11,8 @@
 #include "base/functional/bind.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/brave_private_new_tab_ui/common/pref_names.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/pref_names.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
@@ -25,9 +25,9 @@
 #include "content/public/browser/web_contents.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_launcher_factory.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_launcher_factory.h"
 #include "chrome/browser/browser_process.h"
 #endif
 

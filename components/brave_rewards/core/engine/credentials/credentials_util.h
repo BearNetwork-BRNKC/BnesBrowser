@@ -12,10 +12,10 @@
 
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/core/engine/credentials/credentials_redeem.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/credentials/credentials_redeem.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/token.h"
 
 using challenge_bypass_ristretto::BlindedToken;
 using challenge_bypass_ristretto::Token;

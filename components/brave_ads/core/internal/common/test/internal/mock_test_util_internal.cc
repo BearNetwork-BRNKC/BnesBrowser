@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/internal/mock_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/mock_test_util_internal.h"
 
 #include <optional>
 #include <string>
@@ -13,16 +13,16 @@
 #include "base/files/file.h"
 #include "base/files/file_util.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/common/test/file_path_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/local_state_pref_storage_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/local_state_pref_value_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/profile_pref_storage_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/profile_pref_value_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/file_path_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/local_state_pref_storage_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/local_state_pref_value_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/profile_pref_storage_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/profile_pref_value_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 
 namespace brave_ads::test {
 

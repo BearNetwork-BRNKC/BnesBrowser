@@ -13,9 +13,9 @@
 
 #include "base/containers/flat_map.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_balance.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_create.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_balance.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_create.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

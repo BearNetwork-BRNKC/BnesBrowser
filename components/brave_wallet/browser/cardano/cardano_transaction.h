@@ -15,9 +15,9 @@
 #include "base/gtest_prod_util.h"
 #include "base/numerics/checked_math.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 
 namespace brave_wallet {
 

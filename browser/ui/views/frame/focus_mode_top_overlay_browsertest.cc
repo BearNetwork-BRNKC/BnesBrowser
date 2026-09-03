@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
 
 #include "base/files/file_path.h"
 #include "base/test/run_until.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/focus_mode/focus_mode_features.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
-#include "brave/browser/ui/views/toolbar/bookmark_button.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_features.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/ui/views/toolbar/bookmark_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_commands.h"

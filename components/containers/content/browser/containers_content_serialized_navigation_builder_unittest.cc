@@ -4,9 +4,9 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/containers/content/browser/session_utils.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/session_utils.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "components/sessions/content/content_serialized_navigation_builder.h"
 #include "components/sessions/core/serialized_navigation_entry.h"
 #include "content/public/browser/navigation_entry.h"

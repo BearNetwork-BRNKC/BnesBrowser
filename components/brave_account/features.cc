@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/features.h"
 
-#include "brave/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 namespace brave_account::features {

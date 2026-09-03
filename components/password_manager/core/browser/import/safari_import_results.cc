@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/password_manager/core/browser/import/safari_import_results.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/safari_import_results.h"
 
 namespace password_manager {
 

@@ -10,7 +10,7 @@
 #include <string_view>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
 
 class PrefService;
 

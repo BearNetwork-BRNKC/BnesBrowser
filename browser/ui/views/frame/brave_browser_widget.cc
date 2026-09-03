@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_browser_widget.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_widget.h"
 
-#include "brave/browser/themes/brave_private_window_theme_supplier.h"
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/darker_theme/pref_names.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service_factory.h"
-#include "brave/browser/ui/views/frame/brave_browser_root_view.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/themes/brave_private_window_theme_supplier.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/pref_names.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service_factory.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_root_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/features.h"

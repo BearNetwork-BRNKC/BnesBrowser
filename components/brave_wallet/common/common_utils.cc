@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 
 #include <stddef.h>
 
@@ -19,9 +19,9 @@
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/net/base/url_util.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/net/base/url_util.h"
 
 namespace brave_wallet {
 

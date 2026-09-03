@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_perf_predictor/browser/named_third_party_registry.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/named_third_party_registry.h"
 
 #include <optional>
 #include <string_view>
@@ -18,7 +18,7 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/brave_perf_predictor/browser/bandwidth_linreg_parameters.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/bandwidth_linreg_parameters.h"
 #include "components/grit/brave_components_resources.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "ui/base/resource/resource_bundle.h"

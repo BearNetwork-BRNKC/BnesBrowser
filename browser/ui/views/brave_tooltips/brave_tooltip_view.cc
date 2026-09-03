@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_tooltips/brave_tooltip_view.h"
+#include "BnesBrowser/browser/ui/views/brave_tooltips/brave_tooltip_view.h"
 
 #include <memory>
 #include <string>
 
 #include "base/check.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/ui/brave_tooltips/bounds_util.h"
-#include "brave/browser/ui/views/brave_tooltips/brave_tooltip_popup.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/brave_tooltips/bounds_util.h"
+#include "BnesBrowser/browser/ui/views/brave_tooltips/brave_tooltip_popup.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "ui/accessibility/ax_enums.mojom.h"
 #include "ui/accessibility/ax_node_data.h"
 #include "ui/base/l10n/l10n_util.h"

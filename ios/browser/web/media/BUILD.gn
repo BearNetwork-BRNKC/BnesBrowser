@@ -12,7 +12,7 @@ source_set("media") {
   ]
   deps = [
     ":media_backgrounding_js",
-    "//brave/ios/browser/shared/prefs",
+    "//BnesBrowser/ios/browser/shared/prefs",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/profile",
     "//ios/web/public",

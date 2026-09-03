@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_WEBUI_HELP_VERSION_UPDATER_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_WEBUI_HELP_VERSION_UPDATER_H_
 
-#include "brave/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
 
 #if BUILDFLAG(ENABLE_SPARKLE)
 #define PromoteUpdater                          \

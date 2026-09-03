@@ -13,7 +13,7 @@
 
 #include "base/containers/span.h"
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
 
 namespace brave_wallet {
 

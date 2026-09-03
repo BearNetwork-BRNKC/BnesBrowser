@@ -16,7 +16,7 @@ source_set("safari_data_import") {
   ]
   deps = [
     "//base",
-    "//brave/ios/browser/api/profile",
+    "//BnesBrowser/ios/browser/api/profile",
     "//components/application_locale_storage",
     "//components/autofill/core/browser",
     "//components/bookmarks/browser",

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/temporary_container.h"
+#include "BnesBrowser/components/containers/core/browser/temporary_container.h"
 
 #include <array>
 #include <optional>
@@ -15,10 +15,10 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/uuid.h"
-#include "brave/components/containers/core/mojom/containers.mojom-shared.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
-#include "brave/third_party/bip39wally-core-native/include/wally_bip39.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-shared.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/color/color_provider.h"
 #include "ui/color/color_provider_manager.h"

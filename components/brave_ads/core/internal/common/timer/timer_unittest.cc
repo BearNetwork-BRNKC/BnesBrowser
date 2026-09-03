@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/timer/timer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/timer/timer.h"
 
 #include "base/functional/callback_helpers.h"
 #include "base/location.h"
 #include "base/test/bind.h"
 #include "base/test/gtest_util.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/random/test/scoped_rand_time_delta_with_jitter_for_testing.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/random/test/scoped_rand_time_delta_with_jitter_for_testing.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.xx.xxxx */
 /* at a redacted point in time
  */
-/* Compiler settings for ../../brave/chromium_src/chrome/elevation_service/elevation_service_idl.idl:
+/* Compiler settings for ../../BnesBrowser/chromium_src/chrome/elevation_service/elevation_service_idl.idl:
     Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 8.xx.xxxx 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 

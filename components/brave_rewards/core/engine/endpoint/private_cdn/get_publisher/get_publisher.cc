@@ -2,7 +2,7 @@
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
-#include "brave/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
 
 #include <string_view>
 #include <utility>
@@ -10,13 +10,13 @@
 #include "base/check.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_private_cdn/private_cdn_helper.h"
-#include "brave/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/brotli_util.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
-#include "brave/components/brave_rewards/core/engine/util/time_util.h"
-#include "brave/components/brave_rewards/core/engine/util/url_loader.h"
+#include "BnesBrowser/components/brave_private_cdn/private_cdn_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/brotli_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/time_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/url_loader.h"
 #include "net/base/load_flags.h"
 #include "net/http/http_status_code.h"
 

@@ -4,14 +4,14 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_browser_onboarding_sources = [
-  "//brave/browser/onboarding/onboarding_tab_helper.cc",
-  "//brave/browser/onboarding/onboarding_tab_helper.h",
-  "//brave/browser/onboarding/pref_names.h",
+  "//BnesBrowser/browser/onboarding/onboarding_tab_helper.cc",
+  "//BnesBrowser/browser/onboarding/onboarding_tab_helper.h",
+  "//BnesBrowser/browser/onboarding/pref_names.h",
 ]
 
 brave_browser_onboarding_deps = [
   "//base",
-  "//brave/browser:browser_process",
+  "//BnesBrowser/browser:browser_process",
   "//components/content_settings/core/browser",
   "//components/content_settings/core/common",
   "//components/permissions",

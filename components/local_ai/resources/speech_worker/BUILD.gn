@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
 assert(enable_local_ai)
 
@@ -19,16 +19,16 @@ transpile_web_ui("on_device_speech_recognition_worker_ui") {
   webpack_aliases = [ "browser" ]
   resource_name = "on_device_speech_recognition_worker"
 
-  imports_from = [ "//brave/components/local_ai/resources/speech_worker/" ]
+  imports_from = [ "//BnesBrowser/components/local_ai/resources/speech_worker/" ]
 
   deps = [
-    "//brave/components/local_ai/core:speech_recognition_mojom_js",
+    "//BnesBrowser/components/local_ai/core:speech_recognition_mojom_js",
     "//services/on_device_model/public/mojom:mojom_js",
   ]
 }
 
 pack_web_resources("on_device_speech_recognition_worker_generated") {
   resource_name = "on_device_speech_recognition_worker"
-  output_dir = "$root_gen_dir/brave/components/local_ai/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/local_ai/resources"
   deps = [ ":on_device_speech_recognition_worker_ui" ]
 }

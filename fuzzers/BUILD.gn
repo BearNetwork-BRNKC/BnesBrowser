@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 import("//testing/libfuzzer/fuzzer_test.gni")
 import("//third_party/libprotobuf-mutator/fuzzable_proto_library.gni")
 
@@ -14,7 +14,7 @@ if (enable_brave_news) {
     sources = [ "brave_news/parse_feed_bytes_fuzzer.cc" ]
     deps = [
       "//base",
-      "//brave/components/brave_news/browser:rust_lib",
+      "//BnesBrowser/components/brave_news/browser:rust_lib",
     ]
 
     seed_corpus = "brave_news/corpus/parse_feed_bytes_fuzzer/"
@@ -26,7 +26,7 @@ fuzzer_test("brave_wallet_utils_fuzzer") {
   sources = [ "brave_wallet/brave_wallet_utils_fuzzer.cc" ]
   deps = [
     "//base",
-    "//brave/components/brave_wallet/browser:utils",
+    "//BnesBrowser/components/brave_wallet/browser:utils",
   ]
 }
 
@@ -46,8 +46,8 @@ fuzzer_test("adblock_engine_matches_fuzzer") {
     ":adblock_fuzzer_proto",
     "//base",
     "//base:i18n",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
     "//testing/libfuzzer/proto:url_proto",
     "//testing/libfuzzer/proto:url_proto_converter",
     "//third_party/libprotobuf-mutator",
@@ -58,7 +58,7 @@ fuzzer_test("adblock_engine_useresources_fuzzer") {
   sources = [ "adblock/adblock_engine_useresources_fuzzer.cc" ]
   deps = [
     "//base",
-    "//brave/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
   ]
 
   dict = "//testing/libfuzzer/fuzzers/dicts/json.dict"
@@ -68,7 +68,7 @@ fuzzer_test("speedreader_rewriter_fuzzer") {
   sources = [ "speedreader/rewriter_fuzzer.cc" ]
   deps = [
     "//base",
-    "//brave/components/speedreader/rust/ffi",
+    "//BnesBrowser/components/speedreader/rust/ffi",
   ]
 
   seed_corpus = "speedreader/corpus/rewriter_fuzzer"

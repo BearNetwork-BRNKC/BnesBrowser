@@ -13,10 +13,10 @@
 
 #include "base/observer_list.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service_callback.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service_observer.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service_callback.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service_observer.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 

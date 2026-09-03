@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
 
 #include <algorithm>
 
@@ -19,14 +19,14 @@
 #include "base/threading/thread_restrictions.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/browser/playlist/playlist_service_factory.h"
-#include "brave/browser/playlist/test/mock_playlist_service_observer.h"
-#include "brave/components/playlist/content/browser/media_detector_component_manager.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
-#include "brave/components/playlist/content/browser/type_converter.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/browser/playlist/test/mock_playlist_service_observer.h"
+#include "BnesBrowser/components/playlist/content/browser/media_detector_component_manager.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/type_converter.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/download/public/common/download_task_runner.h"

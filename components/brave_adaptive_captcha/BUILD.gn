@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 
 source_set("brave_adaptive_captcha") {
   sources = [
@@ -28,10 +28,10 @@ source_set("brave_adaptive_captcha") {
 
   deps = [
     "//base",
-    "//brave/components/api_request_helper",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_rewards/core/buildflags:endpoint_buildflags",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags:endpoint_buildflags",
     "//components/keyed_service/core",
     "//components/prefs",
     "//net",
@@ -39,6 +39,6 @@ source_set("brave_adaptive_captcha") {
   ]
 
   if (enable_brave_rewards) {
-    deps += [ "//brave/components/brave_rewards/content" ]
+    deps += [ "//BnesBrowser/components/brave_rewards/content" ]
   }
 }

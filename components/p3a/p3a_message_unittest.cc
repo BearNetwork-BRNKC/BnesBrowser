@@ -3,19 +3,19 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/p3a/p3a_message.h"
+#include "BnesBrowser/components/p3a/p3a_message.h"
 
 #include "base/time/time.h"
-#include "brave/components/p3a/metric_config.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a/uploader.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/uploader.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/prefs/testing_pref_service.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/brave_referrals/common/pref_names.h"
+#include "BnesBrowser/components/brave_referrals/common/pref_names.h"
 #endif  // !BUILDFLAG(IS_IOS)
 
 namespace p3a {

@@ -11,9 +11,9 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/task/cancelable_task_tracker.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/components/brave_shields/core/common/brave_shields_panel.mojom.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 #include "chrome/browser/ui/tabs/tab_strip_model_observer.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver.h"

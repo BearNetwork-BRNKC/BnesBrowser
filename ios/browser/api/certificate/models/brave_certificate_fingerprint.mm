@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/certificate/models/brave_certificate_fingerprint.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_fingerprint.h"
 
 #include "base/containers/span.h"
 #include "base/hash/sha1.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/types/fixed_array.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_enums.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_utils.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_enums.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_utils.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
 #include "crypto/secure_hash.h"
 #include "crypto/sha2.h"
 

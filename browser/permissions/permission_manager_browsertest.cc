@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
 
@@ -13,9 +13,9 @@
 #include "base/memory/raw_ptr.h"
 #include "base/test/test_future.h"
 #include "base/types/zip.h"
-#include "brave/components/brave_wallet/browser/permission_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/permissions/contexts/brave_wallet_permission_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/permissions/contexts/brave_wallet_permission_context.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/permissions/permission_manager_factory.h"
 #include "chrome/browser/profiles/profile.h"

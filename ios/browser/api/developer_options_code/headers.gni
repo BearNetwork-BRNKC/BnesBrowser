@@ -4,5 +4,5 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 developer_options_code_public_headers = [
-  "//brave/ios/browser/api/developer_options_code/developer_options_code.h",
+  "//BnesBrowser/ios/browser/api/developer_options_code/developer_options_code.h",
 ]

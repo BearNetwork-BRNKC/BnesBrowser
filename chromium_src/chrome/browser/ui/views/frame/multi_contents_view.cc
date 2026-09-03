@@ -5,6 +5,6 @@
 
 #include "chrome/browser/ui/views/frame/multi_contents_view.h"
 
-#include "brave/browser/ui/views/frame/split_view/brave_contents_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_contents_container_view.h"
 
 #include <chrome/browser/ui/views/frame/multi_contents_view.cc>

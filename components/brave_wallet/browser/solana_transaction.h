@@ -13,8 +13,8 @@
 #include <vector>
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/solana_message.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_message.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace base {
 class Value;

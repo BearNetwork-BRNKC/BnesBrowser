@@ -13,8 +13,8 @@
 #include <vector>
 
 #include "base/containers/to_vector.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "url/gurl.h"
 

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/debounce/core/browser/debounce_component_installer.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_component_installer.h"
 
 #include <memory>
 #include <utility>
@@ -16,8 +16,8 @@
 #include "base/logging.h"
 #include "base/task/thread_pool.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_service.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_service.h"
 
 using brave_component_updater::LocalDataFilesObserver;
 using brave_component_updater::LocalDataFilesService;

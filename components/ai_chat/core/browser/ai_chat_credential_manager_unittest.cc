@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ai_chat_credential_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_credential_manager.h"
 
 #include <memory>
 #include <optional>
@@ -22,13 +22,13 @@
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/browser/skus_service_impl.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/testing_pref_service.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"

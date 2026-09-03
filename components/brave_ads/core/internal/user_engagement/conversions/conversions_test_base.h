@@ -9,9 +9,9 @@
 #include <memory>
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/conversions/actions/conversion_action_types.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/conversions/test/conversions_observer_mock.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/conversions/actions/conversion_action_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/conversions/test/conversions_observer_mock.h"
 
 namespace brave_ads {
 

@@ -12,7 +12,7 @@
 // body that calls AutofillClientProviderUtils Java class. Our Brave header
 // defines one that calls BraveAutofillClientProviderUtils instead. Including
 // both is safe because they have different function names.
-#include "brave/browser/autofill/android/jni_headers/BraveAutofillClientProviderUtils_jni.h"
+#include "BnesBrowser/browser/autofill/android/jni_headers/BraveAutofillClientProviderUtils_jni.h"
 #include "chrome/browser/autofill/android/jni_headers/AutofillClientProviderUtils_jni.h"
 
 namespace autofill {

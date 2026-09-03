@@ -12,12 +12,12 @@
 
 #include "base/containers/flat_map.h"
 #include "base/functional/callback_forward.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_credential_manager.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
-#include "brave/components/text_recognition/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_credential_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/text_recognition/common/buildflags/buildflags.h"
 #include "third_party/skia/include/core/SkBitmap.h"
 #include "url/gurl.h"
 

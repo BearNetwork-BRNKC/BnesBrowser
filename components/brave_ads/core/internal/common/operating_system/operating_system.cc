@@ -3,21 +3,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system.h"
 
 #include "base/check_is_test.h"
 #include "base/no_destructor.h"
 #include "build/build_config.h"
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_android.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_android.h"
 #elif BUILDFLAG(IS_IOS)
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_ios.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_ios.h"
 #elif BUILDFLAG(IS_LINUX)
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_linux.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_linux.h"
 #elif BUILDFLAG(IS_MAC)
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_mac.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_mac.h"
 #elif BUILDFLAG(IS_WIN)
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_win.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_win.h"
 #endif
 
 namespace brave_ads {

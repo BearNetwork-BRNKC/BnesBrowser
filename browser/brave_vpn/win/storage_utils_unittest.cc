@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
 #include "base/test/test_reg_util_win.h"
 #include "base/win/registry.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
 #include "components/version_info/channel.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

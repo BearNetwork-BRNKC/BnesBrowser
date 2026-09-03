@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/page_action/wayback_machine_state_manager.h"
+#include "BnesBrowser/browser/ui/views/page_action/wayback_machine_state_manager.h"
 
 #include <optional>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/views/page_action/wayback_machine_action_icon_view.h"
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
-#include "brave/components/brave_wayback_machine/wayback_state.h"
+#include "BnesBrowser/browser/ui/views/page_action/wayback_machine_action_icon_view.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
+#include "BnesBrowser/components/brave_wayback_machine/wayback_state.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "ui/views/widget/widget.h"

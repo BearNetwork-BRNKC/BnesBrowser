@@ -3,14 +3,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 import("//build/config/ios/rules.gni")
 import("//ios/build/config.gni")
 
 config("mojom_header_config") {
   visibility = [
     ":*",
-    "//brave/ios/app",
+    "//BnesBrowser/ios/app",
   ]
   include_dirs = [ "$target_gen_dir" ]
 }
@@ -30,14 +30,14 @@ source_set("brave_wallet") {
     ":provider_delegate",
     ":wallet_mojom_wrappers",
     "//base",
-    "//brave/base/apple",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:constants",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/resources:ethereum_provider_generated_resources",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/ios/browser/api/url",
-    "//brave/ios/browser/brave_wallet",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:constants",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/resources:ethereum_provider_generated_resources",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/ios/browser/api/url",
+    "//BnesBrowser/ios/browser/brave_wallet",
     "//ios/chrome/browser/content_settings/model",
     "//ios/chrome/browser/shared/model/paths",
     "//ios/chrome/browser/shared/model/profile",
@@ -48,7 +48,7 @@ source_set("brave_wallet") {
 }
 
 # The provider delegate bridge lives in its own target so it can be shared with
-# `//brave/ios/browser/brave_wallet` (which creates `EthereumProviderImpl`)
+# `//BnesBrowser/ios/browser/brave_wallet` (which creates `EthereumProviderImpl`)
 # without forming a dependency cycle back into `:brave_wallet`.
 source_set("provider_delegate") {
   configs += [ ":mojom_header_config" ]
@@ -60,20 +60,20 @@ source_set("provider_delegate") {
   deps = [
     ":wallet_mojom_wrappers",
     "//base",
-    "//brave/base/apple",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/common",
-    "//brave/ios/browser/api/url",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/ios/browser/api/url",
     "//net",
   ]
   public_configs = [ ":mojom_header_config" ]
 }
 
 ios_objc_mojom_wrappers("wallet_mojom_wrappers") {
-  mojom_target = "//brave/components/brave_wallet/common:mojom"
+  mojom_target = "//BnesBrowser/components/brave_wallet/common:mojom"
   sources = [
-    "//brave/components/brave_wallet/common/brave_wallet.mojom",
-    "//brave/components/brave_wallet/common/meld_integration.mojom",
+    "//BnesBrowser/components/brave_wallet/common/brave_wallet.mojom",
+    "//BnesBrowser/components/brave_wallet/common/meld_integration.mojom",
   ]
   generate_namespace = false
   exclude_types = [

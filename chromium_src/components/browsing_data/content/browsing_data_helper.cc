@@ -5,6 +5,6 @@
 
 #include "components/browsing_data/content/browsing_data_helper.h"
 
-#include "brave/components/content_settings/core/browser/brave_content_settings_browsing_data_utils.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_browsing_data_utils.h"
 
 #include <components/browsing_data/content/browsing_data_helper.cc>

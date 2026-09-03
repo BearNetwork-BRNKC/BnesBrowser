@@ -3,11 +3,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/browser/sources.gni")
-import("//brave/browser/updater/buildflags.gni")
-import("//brave/build/config.gni")
-import("//brave/components/local_ai/buildflags/buildflags.gni")
-import("//brave/ui/webui/custom_profile_image_config.gni")
+import("//BnesBrowser/browser/sources.gni")
+import("//BnesBrowser/browser/updater/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/ui/webui/custom_profile_image_config.gni")
 import("//build/buildflag_header.gni")
 import("//build/config/features.gni")
 import("//chrome/common/features.gni")
@@ -26,26 +26,26 @@ if (enable_sparkle && !build_sparkle) {
 
 source_set("browser_process") {
   visibility = [
-    "//brave/browser/*",
+    "//BnesBrowser/browser/*",
     "//chrome/browser/*",
   ]
 
   sources = [ "brave_browser_process.h" ]
 
   deps = [
-    "//brave/browser/brave_stats:buildflags",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/local_ai/buildflags",
-    "//brave/components/request_otr/common/buildflags",
-    "//brave/components/speedreader/common/buildflags",
-    "//brave/components/tor/buildflags",
+    "//BnesBrowser/browser/brave_stats:buildflags",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/local_ai/buildflags",
+    "//BnesBrowser/components/request_otr/common/buildflags",
+    "//BnesBrowser/components/speedreader/common/buildflags",
+    "//BnesBrowser/components/tor/buildflags",
     "//chrome/browser:browser_process",
     "//extensions/buildflags",
   ]
 
   if (enable_local_ai) {
-    deps += [ "//brave/components/local_ai/core" ]
+    deps += [ "//BnesBrowser/components/local_ai/core" ]
   }
 }
 
@@ -59,19 +59,19 @@ source_set("brave_global_features") {
 }
 
 source_set("brave_global_features_impl") {
-  visibility = [ "//brave/browser:core" ]
+  visibility = [ "//BnesBrowser/browser:core" ]
   sources = [ "brave_global_features.cc" ]
 
   deps = [
     "//base",
-    "//brave/browser:brave_global_features",
-    "//brave/components/extension_malware_blocklist/common",
+    "//BnesBrowser/browser:brave_global_features",
+    "//BnesBrowser/components/extension_malware_blocklist/common",
     "//chrome/browser:global_features",
     "//extensions/buildflags",
   ]
 
   if (enable_extensions) {
-    deps += [ "//brave/components/extension_malware_blocklist/browser" ]
+    deps += [ "//BnesBrowser/components/extension_malware_blocklist/browser" ]
   }
 }
 
@@ -85,12 +85,12 @@ source_set("core") {
 
   sources = brave_chrome_browser_sources
   deps = brave_chrome_browser_deps + [
-           "//brave/browser/ui:custom_profile_image_buildflags",
-           "//brave/browser/ui/window_feature_controller:chromium_impl",
-           "//brave/bnes:scheme_handler",
+           "//BnesBrowser/browser/ui:custom_profile_image_buildflags",
+           "//BnesBrowser/browser/ui/window_feature_controller:chromium_impl",
+           "//BnesBrowser/bnes:scheme_handler",
          ]
   if (enable_brave_custom_profile_image_webui) {
-    deps += [ "//brave/browser/ui/webui/custom_profile_image" ]
+    deps += [ "//BnesBrowser/browser/ui/webui/custom_profile_image" ]
   }
   public_deps = brave_chrome_browser_public_deps +
                 [ "//chrome/browser:browser_public_dependencies" ]
@@ -100,19 +100,19 @@ source_set("core") {
 
 group("browser") {
   visibility = [
-    "//brave:browser_dependencies",
-    "//brave/browser/*",
-    "//brave/components/brave_rewards/core/engine:headers",
-    "//brave/test:*",
+    "//BnesBrowser:browser_dependencies",
+    "//BnesBrowser/browser/*",
+    "//BnesBrowser/components/brave_rewards/core/engine:headers",
+    "//BnesBrowser/test:*",
 
     # these are layering violation and need to be fixed
-    "//brave/components/brave_rewards/content:testutil",
-    "//brave/components/brave_rewards/test:brave_rewards_unit_tests",
+    "//BnesBrowser/components/brave_rewards/content:testutil",
+    "//BnesBrowser/components/brave_rewards/test:brave_rewards_unit_tests",
   ]
 
   if (enable_sparkle) {
     if (build_sparkle) {
-      deps = [ "//brave/vendor/sparkle:sparkle_framework_bundle_data" ]
+      deps = [ "//BnesBrowser/vendor/sparkle:sparkle_framework_bundle_data" ]
     } else {
       deps = [ ":prebuilt_sparkle_framework_bundle_data" ]
     }
@@ -120,7 +120,7 @@ group("browser") {
 
   # Group depending on upstream's counterpart to make it easier to manage
   # dependencies in brave/ (//chrome/browser does not depend on this target
-  # so //brave/browser becomes essentially an alias for //chrome/browser now).
+  # so //BnesBrowser/browser becomes essentially an alias for //chrome/browser now).
   public_deps = [ "//chrome/browser" ]
 }
 
@@ -135,7 +135,7 @@ source_set("unit_tests") {
 
     deps += [
       "//base",
-      "//brave/browser",
+      "//BnesBrowser/browser",
       "//testing/gtest",
     ]
   }

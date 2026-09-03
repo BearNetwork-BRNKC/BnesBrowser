@@ -1,10 +1,10 @@
-import("//brave/components/common/typescript.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 
 pack_web_resources("internals_generated_resources") {
   resource_name = "tor_internals"
-  output_dir = "$root_gen_dir/brave/components/tor/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/tor/resources"
 
   # need webpack and GRD generation first
   deps = [ "internals" ]
@@ -26,9 +26,9 @@ repack("resources") {
   ]
 
   sources = [
-    "$root_gen_dir/brave/components/tor/resources/tor_internals_generated.pak",
-    "$root_gen_dir/brave/components/tor/resources/tor_static.pak",
+    "$root_gen_dir/BnesBrowser/components/tor/resources/tor_internals_generated.pak",
+    "$root_gen_dir/BnesBrowser/components/tor/resources/tor_static.pak",
   ]
 
-  output = "$root_gen_dir/brave/components/tor/resources/tor_resources.pak"
+  output = "$root_gen_dir/BnesBrowser/components/tor/resources/tor_resources.pak"
 }

@@ -5,10 +5,10 @@
 
 #include "chrome/browser/ui/webui/settings/browser_lifetime_handler.h"
 
-#include "brave/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
 
 #if BUILDFLAG(ENABLE_SPARKLE)
-#include "brave/browser/ui/webui/settings/brave_relaunch_handler_mac.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_relaunch_handler_mac.h"
 #endif
 
 #define BrowserLifetimeHandler BrowserLifetimeHandler_ChromiumImpl

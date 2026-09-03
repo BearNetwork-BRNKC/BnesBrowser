@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_stats/brave_stats.h"
+#include "BnesBrowser/ios/browser/api/brave_stats/brave_stats.h"
 
 #include "base/check.h"
 #include "base/memory/raw_ptr.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/brave_stats/browser/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/webcompat_reporter/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/brave_stats/browser/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/webcompat_reporter/buildflags/buildflags.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

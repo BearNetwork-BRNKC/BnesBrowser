@@ -19,7 +19,7 @@
 #include "base/containers/span.h"
 #include "base/gtest_prod_util.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 
 namespace brave_wallet {
 

@@ -10,7 +10,7 @@ mojom("mojom") {
   sources = [ "new_tab_takeover.mojom" ]
 
   public_deps = [
-    "//brave/components/ntp_background_images/browser/mojom",
+    "//BnesBrowser/components/ntp_background_images/browser/mojom",
     "//mojo/public/mojom/base",
   ]
 }

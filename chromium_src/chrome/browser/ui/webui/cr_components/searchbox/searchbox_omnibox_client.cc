@@ -7,9 +7,9 @@
 
 #include <string_view>
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_search/common/features.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/autocomplete_match.h"
 #include "components/search_engines/template_url_service.h"
@@ -17,8 +17,8 @@
 #include "net/base/url_util.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "chrome/browser/browser_process.h"
 #endif
 

@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/ios/browser/ai_chat/ai_chat_utils.h"
 
 #include "base/apple/foundation_util.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/ai_chat_urls.h"
-#include "brave/ios/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/ios/browser/api/profile/profile_bridge.h"
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
-#include "brave/ios/components/prefs/pref_service_bridge_impl.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/ai_chat_urls.h"
+#include "BnesBrowser/ios/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/ios/components/prefs/pref_service_bridge_impl.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "net/base/apple/url_conversions.h"
 

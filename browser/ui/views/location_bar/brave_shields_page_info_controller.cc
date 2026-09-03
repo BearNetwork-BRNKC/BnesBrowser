@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/location_bar/brave_shields_page_info_controller.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_shields_page_info_controller.h"
 
 #include "base/check_deref.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/ui/views/page_info/brave_page_info_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/page_info/brave_page_info_bubble_view.h"
 #include "chrome/browser/ui/browser_element_identifiers.h"
 #include "chrome/browser/ui/user_education/browser_user_education_interface.h"
 #include "chrome/browser/ui/views/location_bar/location_icon_view.h"

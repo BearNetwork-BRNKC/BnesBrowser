@@ -6,13 +6,13 @@
 import("//extensions/buildflags/buildflags.gni")
 
 brave_browser_autocomplete_sources = [
-  "//brave/browser/autocomplete/brave_autocomplete_scheme_classifier.cc",
-  "//brave/browser/autocomplete/brave_autocomplete_scheme_classifier.h",
+  "//BnesBrowser/browser/autocomplete/brave_autocomplete_scheme_classifier.cc",
+  "//BnesBrowser/browser/autocomplete/brave_autocomplete_scheme_classifier.h",
 ]
 
 brave_browser_autocomplete_deps = [
   "//base",
-  "//brave/common",
-  "//brave/components/omnibox/buildflags",
+  "//BnesBrowser/common",
+  "//BnesBrowser/components/omnibox/buildflags",
   "//chrome/browser/profiles:profile",
 ]

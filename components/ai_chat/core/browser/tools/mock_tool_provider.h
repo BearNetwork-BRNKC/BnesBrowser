@@ -13,8 +13,8 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace ai_chat {

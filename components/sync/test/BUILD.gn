@@ -7,8 +7,8 @@ static_library("test_support") {
   testonly = true
 
   sources = [
-    "//brave/components/sync/test/brave_mock_sync_engine.cc",
-    "//brave/components/sync/test/brave_mock_sync_engine.h",
+    "//BnesBrowser/components/sync/test/brave_mock_sync_engine.cc",
+    "//BnesBrowser/components/sync/test/brave_mock_sync_engine.h",
   ]
 
   public_deps = [ "//testing/gmock" ]

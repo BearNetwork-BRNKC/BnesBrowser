@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_shields/ad_block_pref_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_pref_service_factory.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/no_destructor.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_shields/content/browser/ad_block_pref_service.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_pref_service.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/net/proxy_service_factory.h"
 #include "chrome/browser/policy/profile_policy_connector.h"

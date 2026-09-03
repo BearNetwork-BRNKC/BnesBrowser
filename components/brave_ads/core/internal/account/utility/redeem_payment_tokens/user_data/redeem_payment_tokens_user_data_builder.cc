@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/user_data/redeem_payment_tokens_user_data_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/redeem_payment_tokens/user_data/redeem_payment_tokens_user_data_builder.h"
 
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/platform_user_data.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/platform_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/summary_user_data.h"
 
 namespace brave_ads {
 

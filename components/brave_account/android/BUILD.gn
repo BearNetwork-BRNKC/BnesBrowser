@@ -14,7 +14,7 @@ generate_jni("features_jni_headers") {
 
 android_library("features_java") {
   srcjar_deps =
-      [ "//brave/components/brave_account/android:features_jni_headers" ]
+      [ "//BnesBrowser/components/brave_account/android:features_jni_headers" ]
 
   sources = [
     "java/src/org/chromium/components/brave_account/BraveAccountFeatures.java",
@@ -32,13 +32,13 @@ static_library("features") {
 
   deps = [
     "//base",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_account/android:features_jni_headers",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_account/android:features_jni_headers",
   ]
 }
 
 java_cpp_strings("brave_account_constants_srcjar") {
-  sources = [ "//brave/components/brave_account/brave_account_constants.h" ]
+  sources = [ "//BnesBrowser/components/brave_account/brave_account_constants.h" ]
 
   class_name = "org.chromium.components.brave_account.BraveAccountConstants"
 }

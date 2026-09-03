@@ -10,7 +10,7 @@
 #include <memory>
 #include <vector>
 
-#include "brave/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
 
 class PrefService;
 class ProfileAttributesStorage;

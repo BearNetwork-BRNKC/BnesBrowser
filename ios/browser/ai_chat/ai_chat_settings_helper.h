@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #ifdef __cplusplus
-#include "brave/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc.h"
-#include "brave/components/ai_chat/core/common/mojom/ios/settings_helper.mojom.objc.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/settings_helper.mojom.objc.h"
 #else
 #include "ai_chat.mojom.objc.h"          // NOLINT
 #include "settings_helper.mojom.objc.h"  // NOLINT

@@ -10,7 +10,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/commands/accelerator_service.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service.h"
 #include "chrome/browser/profiles/profile_observer.h"
 #include "chrome/browser/ui/browser_window/public/browser_collection_observer.h"
 

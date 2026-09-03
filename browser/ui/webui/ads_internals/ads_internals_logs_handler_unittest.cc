@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
 
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_ads/browser/test/fake_rewards_service.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "components/prefs/testing_pref_service.h"
 #include "components/webui/flags/pref_service_flags_storage.h"
 #include "mojo/public/cpp/bindings/remote.h"

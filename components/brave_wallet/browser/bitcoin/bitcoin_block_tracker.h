@@ -15,7 +15,7 @@
 #include "base/observer_list.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/block_tracker.h"
 
 namespace brave_wallet {
 

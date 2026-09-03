@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/catalog/catalog_url_request_json_reader.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/catalog_url_request_json_reader.h"
 
 #include <utility>
 #include <vector>
@@ -13,20 +13,20 @@
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_campaign_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_daypart_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_geo_target_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_conversion_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_creative_set_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_os_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_segment_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_type_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/notification_ad/catalog_creative_notification_ad_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/catalog_constants.h"
-#include "brave/components/brave_ads/core/internal/catalog/catalog_info.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
-#include "brave/components/brave_ads/core/public/common/url/url_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_campaign_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_daypart_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_geo_target_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_conversion_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_creative_set_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_os_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/catalog_segment_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_type_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/notification_ad/catalog_creative_notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/catalog_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/catalog_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/url/url_util.h"
 #include "url/gurl.h"
 
 namespace brave_ads::json::reader {

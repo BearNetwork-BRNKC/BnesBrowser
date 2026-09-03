@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/general_browser_usage.h"
+#include "BnesBrowser/components/misc_metrics/general_browser_usage.h"
 
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/custom_attributes.h"
-#include "brave/components/time_period_storage/iso_weekly_storage.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/custom_attributes.h"
+#include "BnesBrowser/components/time_period_storage/iso_weekly_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

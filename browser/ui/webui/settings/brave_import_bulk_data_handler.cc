@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_import_bulk_data_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_import_bulk_data_handler.h"
 
 #include <memory>
 #include <optional>
@@ -18,7 +18,7 @@
 #include "base/functional/bind.h"
 #include "base/json/json_reader.h"
 #include "base/rand_util.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page_prefs.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page_prefs.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile_attributes_entry.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"

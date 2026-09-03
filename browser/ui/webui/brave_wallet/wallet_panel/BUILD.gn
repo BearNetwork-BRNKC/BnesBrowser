@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
 assert(enable_brave_wallet)
 assert(!is_android)
@@ -18,23 +18,23 @@ source_set("wallet_panel") {
     "wallet_panel_ui.h",
   ]
   deps = [
-    "//brave/browser/brave_wallet",
-    "//brave/browser/brave_wallet:tab_helper",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:constants",
-    "//brave/components/brave_wallet/browser:permission_utils",
-    "//brave/components/brave_wallet/browser:utils",
-    "//brave/components/brave_wallet/browser:wallet_handler",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:common_constants",
-    "//brave/components/brave_wallet/common:mojom",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/brave_wallet_ui:resources",
-    "//brave/components/brave_wallet_ui/panel:brave_wallet_panel_generated",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/browser/brave_wallet",
+    "//BnesBrowser/browser/brave_wallet:tab_helper",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:constants",
+    "//BnesBrowser/components/brave_wallet/browser:permission_utils",
+    "//BnesBrowser/components/brave_wallet/browser:utils",
+    "//BnesBrowser/components/brave_wallet/browser:wallet_handler",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/components/brave_wallet/common:mojom",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/brave_wallet_ui:resources",
+    "//BnesBrowser/components/brave_wallet_ui/panel:brave_wallet_panel_generated",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
     "//chrome/browser/ui/browser_window",
     "//chrome/browser/ui/side_panel",
     "//chrome/browser/ui/side_panel:side_panel_views_dependent",
@@ -53,14 +53,14 @@ source_set("wallet_panel") {
 
   if (enable_brave_rewards) {
     deps += [
-      "//brave/browser/brave_rewards",
-      "//brave/browser/brave_rewards:util",
-      "//brave/components/brave_rewards/core/mojom:webui",
+      "//BnesBrowser/browser/brave_rewards",
+      "//BnesBrowser/browser/brave_rewards:util",
+      "//BnesBrowser/components/brave_rewards/core/mojom:webui",
     ]
   }
 
   if (enable_brave_ads) {
-    deps += [ "//brave/browser/brave_ads" ]
+    deps += [ "//BnesBrowser/browser/brave_ads" ]
   }
 }
 
@@ -75,13 +75,13 @@ source_set("browser_tests") {
   deps = [
     ":wallet_panel",
     "//base/test:test_support",
-    "//brave/browser/brave_wallet",
-    "//brave/browser/brave_wallet:tab_helper",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:utils",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:common_constants",
-    "//brave/components/brave_wallet/common:mojom",
+    "//BnesBrowser/browser/brave_wallet",
+    "//BnesBrowser/browser/brave_wallet:tab_helper",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:utils",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/components/brave_wallet/common:mojom",
     "//chrome/browser:browser_process",
     "//chrome/test:test_support",
     "//chrome/test:test_support_ui",

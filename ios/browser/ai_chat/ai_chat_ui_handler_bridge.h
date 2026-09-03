@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #ifdef __cplusplus
-#include "brave/components/ai_chat/ios/browser/ai_chat_associated_content_page_fetcher.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/ai_chat_associated_content_page_fetcher.h"
 #else
 #include "ai_chat_associated_content_page_fetcher.h"
 #endif

@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 #include "crypto/kdf.h"
 
 namespace brave_wallet {

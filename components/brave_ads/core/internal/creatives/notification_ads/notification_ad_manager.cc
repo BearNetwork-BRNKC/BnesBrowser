@@ -3,25 +3,25 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
 
 #include <algorithm>
 
 #include "base/check.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_util.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_value_util.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_value_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_ads/core/internal/application_state/browser_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_util.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 namespace brave_ads {

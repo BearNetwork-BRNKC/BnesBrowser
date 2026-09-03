@@ -13,9 +13,9 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/browser/network/http_client_callback.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/http_client_callback.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 #include "services/network/public/cpp/network_context_getter.h"
 #include "url/gurl.h"
 

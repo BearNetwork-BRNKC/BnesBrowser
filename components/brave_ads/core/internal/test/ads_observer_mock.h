@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_TEST_ADS_OBSERVER_MOCK_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_TEST_ADS_OBSERVER_MOCK_H_
 
-#include "brave/components/brave_ads/core/public/ads_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_observer.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads {

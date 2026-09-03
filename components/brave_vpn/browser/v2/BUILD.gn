@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(enable_brave_vpn_v2)
 
@@ -28,11 +28,11 @@ static_library("browser") {
   }
 
   public_deps = [
-    "//brave/components/brave_vpn/browser",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/brave_vpn/browser",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common:mojom",
     "//mojo/public/cpp/bindings",
     "//net",
   ]
@@ -40,8 +40,8 @@ static_library("browser") {
   deps = [
     "api",
     "//base",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/resources:strings",
     "//components/prefs",
     "//services/network/public/cpp",
     "//third_party/icu",
@@ -58,12 +58,12 @@ static_library("browser") {
     ]
 
     public_deps += [
-      "//brave/components/brave_vpn/common/mojom:agent",
+      "//BnesBrowser/components/brave_vpn/common/mojom:agent",
       "//mojo/public/cpp/platform",
     ]
 
     deps += [
-      "//brave/components/brave_vpn/common/v2:common",
+      "//BnesBrowser/components/brave_vpn/common/v2:common",
       "//components/named_mojo_ipc_server",
       "//mojo/public/cpp/system",
     ]
@@ -85,7 +85,7 @@ source_set("test_support") {
     public_deps += [
       ":browser",
       "//base",
-      "//brave/components/brave_vpn/common/mojom",
+      "//BnesBrowser/components/brave_vpn/common/mojom",
       "//mojo/public/cpp/bindings",
       "//mojo/public/cpp/platform",
       "//mojo/public/cpp/system",
@@ -117,13 +117,13 @@ source_set("unit_tests") {
     "//base",
     "//base:i18n",
     "//base/test:test_support",
-    "//brave/components/brave_account/endpoint_client:test_support",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/resources:strings",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/browser:test_support",
-    "//brave/components/skus/common",
+    "//BnesBrowser/components/brave_account/endpoint_client:test_support",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/browser:test_support",
+    "//BnesBrowser/components/skus/common",
     "//components/prefs:test_support",
     "//components/sync_preferences:test_support",
     "//mojo/public/cpp/bindings",

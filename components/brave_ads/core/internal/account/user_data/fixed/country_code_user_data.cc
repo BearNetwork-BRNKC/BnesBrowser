@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/country_code_user_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/country_code_user_data.h"
 
 #include <string>
 #include <string_view>
 
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_util.h"
-#include "brave/components/brave_ads/core/public/common/locale/locale_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/locale/locale_util.h"
 #include "components/variations/pref_names.h"
 
 namespace brave_ads {

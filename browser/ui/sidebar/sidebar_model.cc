@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
 
 #include <algorithm>
 #include <optional>
@@ -12,8 +12,8 @@
 
 #include "base/check.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
 #include "chrome/browser/favicon/favicon_service_factory.h"
 #include "chrome/browser/image_fetcher/image_fetcher_service_factory.h"
 #include "chrome/browser/profiles/profile.h"

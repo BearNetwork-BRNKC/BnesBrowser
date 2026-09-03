@@ -8,7 +8,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/browser/ui/webui/settings/settings_page_ui_handler.h"
 
 class Profile;

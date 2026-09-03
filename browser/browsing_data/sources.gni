@@ -3,24 +3,24 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 import("//extensions/buildflags/buildflags.gni")
 
 brave_browser_browsing_data_sources = [
-  "//brave/browser/browsing_data/brave_browsing_data_remover_delegate.cc",
-  "//brave/browser/browsing_data/brave_browsing_data_remover_delegate.h",
-  "//brave/browser/browsing_data/brave_clear_browsing_data.cc",
-  "//brave/browser/browsing_data/brave_clear_browsing_data.h",
+  "//BnesBrowser/browser/browsing_data/brave_browsing_data_remover_delegate.cc",
+  "//BnesBrowser/browser/browsing_data/brave_browsing_data_remover_delegate.h",
+  "//BnesBrowser/browser/browsing_data/brave_clear_browsing_data.cc",
+  "//BnesBrowser/browser/browsing_data/brave_clear_browsing_data.h",
 ]
 
 brave_browser_browsing_data_deps = [
   "//base",
-  "//brave/components/ai_chat/core/common/buildflags",
-  "//brave/components/brave_news/common/buildflags",
-  "//brave/components/containers/buildflags",
-  "//brave/components/content_settings/core/common",
+  "//BnesBrowser/components/ai_chat/core/common/buildflags",
+  "//BnesBrowser/components/brave_news/common/buildflags",
+  "//BnesBrowser/components/containers/buildflags",
+  "//BnesBrowser/components/content_settings/core/common",
   "//chrome/browser:browser_process",
   "//chrome/browser/browsing_data:constants",
   "//chrome/browser/profiles:profile",
@@ -34,28 +34,28 @@ brave_browser_browsing_data_deps = [
 
 if (enable_ai_chat) {
   brave_browser_browsing_data_deps += [
-    "//brave/browser/ai_chat",
-    "//brave/components/ai_chat/core/browser",
+    "//BnesBrowser/browser/ai_chat",
+    "//BnesBrowser/components/ai_chat/core/browser",
   ]
 }
 
 if (enable_brave_news) {
   brave_browser_browsing_data_deps +=
-      [ "//brave/components/brave_news/browser" ]
+      [ "//BnesBrowser/components/brave_news/browser" ]
 }
 
 if (enable_extensions) {
   brave_browser_browsing_data_deps += [
-    "//brave/common/extensions/api",
+    "//BnesBrowser/common/extensions/api",
     "//extensions/browser",
   ]
 }
 
 if (enable_containers) {
   brave_browser_browsing_data_deps += [
-    "//brave/browser/containers",
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/browser/containers",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/common",
   ]
 }

@@ -11,7 +11,7 @@
 
 #include "base/containers/flat_set.h"
 #include "base/containers/span.h"
-#include "brave/components/query_filter/common/schema.h"
+#include "BnesBrowser/components/query_filter/common/schema.h"
 
 namespace query_filter {
 // Given a set of filter |rules| and a URL |spec|, returns the union of all

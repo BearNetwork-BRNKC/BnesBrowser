@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/omnibox/brave_omnibox_view_views.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_view_views.h"
 
 #include "base/strings/utf_string_conversions.h"
 #include "base/test/test_future.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/url_sanitizer/url_sanitizer_service_factory.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_service.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/url_sanitizer/url_sanitizer_service_factory.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_service.h"
 #include "build/build_config.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"

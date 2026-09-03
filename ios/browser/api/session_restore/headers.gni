@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_session_restore_public_headers =
-    [ "//brave/ios/browser/api/session_restore/synthesized_session_restore.h" ]
+    [ "//BnesBrowser/ios/browser/api/session_restore/synthesized_session_restore.h" ]

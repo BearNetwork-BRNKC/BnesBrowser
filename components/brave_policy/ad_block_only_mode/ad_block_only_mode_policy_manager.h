@@ -10,7 +10,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/observer_list.h"
 #include "base/values.h"
-#include "brave/components/brave_policy/brave_policy_observer.h"
+#include "BnesBrowser/components/brave_policy/brave_policy_observer.h"
 #include "components/prefs/pref_change_registrar.h"
 
 namespace base {

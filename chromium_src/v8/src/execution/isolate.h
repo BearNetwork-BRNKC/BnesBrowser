@@ -8,7 +8,7 @@
 
 #include "v8/include/v8-isolate.h"
 
-#include "brave/v8/include/v8-isolate-page-graph-utils.h"
+#include "BnesBrowser/v8/include/v8-isolate-page-graph-utils.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_PAGE_GRAPH)
 

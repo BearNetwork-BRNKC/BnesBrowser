@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_SHIELDS_CORE_BROWSER_AD_BLOCK_DEFAULT_RESOURCE_PROVIDER_H_
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_shields/core/browser/ad_block_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_resource_provider.h"
 
 namespace component_updater {
 class ComponentUpdateService;

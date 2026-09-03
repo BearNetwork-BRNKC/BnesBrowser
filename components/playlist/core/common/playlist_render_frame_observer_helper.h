@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 
 class GURL;
 

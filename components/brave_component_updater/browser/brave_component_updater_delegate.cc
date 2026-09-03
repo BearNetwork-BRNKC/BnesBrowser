@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_component_updater/browser/brave_component_updater_delegate.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component_updater_delegate.h"
 
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_component_updater/browser/brave_component_installer.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component_installer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
 #include "components/component_updater/component_updater_service.h"
 #include "components/prefs/pref_service.h"
 

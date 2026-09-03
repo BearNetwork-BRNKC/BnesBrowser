@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "third_party/blink/renderer/core/dom/events/event_target.h"
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "third_party/blink/renderer/core/probe/core_probes.h"
 
 #define BRAVE_EVENT_TARGET_ADD_EVENT_LISTENER_INTERNAL             \

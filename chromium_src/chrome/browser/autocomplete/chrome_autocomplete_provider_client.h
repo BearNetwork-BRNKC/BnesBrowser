@@ -6,12 +6,12 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_AUTOCOMPLETE_CHROME_AUTOCOMPLETE_PROVIDER_CLIENT_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_AUTOCOMPLETE_CHROME_AUTOCOMPLETE_PROVIDER_CLIENT_H_
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
 #include "components/omnibox/browser/autocomplete_provider_client.h"
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
 #define GetAutocompleteClassifier       \
   GetAutocompleteClassifier() override; \
   commander::CommanderFrontendDelegate* GetCommanderDelegate

@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_VPN_BROWSER_CONNECTION_WIREGUARD_MAC_WIREGUARD_CONNECTION_API_IMPL_MAC_H_
 #define BRAVE_COMPONENTS_BRAVE_VPN_BROWSER_CONNECTION_WIREGUARD_MAC_WIREGUARD_CONNECTION_API_IMPL_MAC_H_
 
-#include "brave/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
 
 namespace brave_vpn {
 

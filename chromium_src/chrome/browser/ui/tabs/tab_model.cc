@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/tabs/tab_model.h"
 
-#include "brave/browser/ui/tabs/public/brave_tab_features.h"
+#include "BnesBrowser/browser/ui/tabs/public/brave_tab_features.h"
 #include "components/tabs/public/tab_collection.h"
 
 // Add switch case handling for TREE_NODE type in TabModel::UpdateProperties().

@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
 assert(enable_playlist_webui)
 
@@ -21,10 +21,10 @@ transpile_web_ui("playlist_ui") {
     ],
   ]
 
-  imports_from = [ "//brave/components/playlist/content/browser/resources" ]
+  imports_from = [ "//BnesBrowser/components/playlist/content/browser/resources" ]
 
   public_deps = [
-    "//brave/components/playlist/core/common/mojom:mojom_js",
+    "//BnesBrowser/components/playlist/core/common/mojom:mojom_js",
     "//mojo/public/mojom/base",
   ]
 
@@ -34,6 +34,6 @@ transpile_web_ui("playlist_ui") {
 pack_web_resources("generated_resources") {
   resource_name = "playlist"
   output_dir =
-      "$root_gen_dir/brave/components/playlist/content/browser/resources"
+      "$root_gen_dir/BnesBrowser/components/playlist/content/browser/resources"
   deps = [ ":playlist_ui" ]
 }

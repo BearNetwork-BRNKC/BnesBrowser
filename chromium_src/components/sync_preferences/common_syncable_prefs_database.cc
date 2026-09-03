@@ -10,21 +10,21 @@
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/containers/map_util.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/traffic_control/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/traffic_control/buildflags/buildflags.h"
 #include "components/search_engines/search_engines_pref_names.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/browser/pref_names.h"
+#include "BnesBrowser/components/containers/core/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TRAFFIC_CONTROL)
-#include "brave/components/traffic_control/core/browser/pref_names.h"
+#include "BnesBrowser/components/traffic_control/core/browser/pref_names.h"
 #endif
 
 namespace sync_preferences {

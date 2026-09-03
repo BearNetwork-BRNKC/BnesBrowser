@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/renderer_context_menu/brave_mock_render_view_context_menu.h"
+#include "BnesBrowser/browser/renderer_context_menu/brave_mock_render_view_context_menu.h"
 
 #include <iomanip>
 #include <string>

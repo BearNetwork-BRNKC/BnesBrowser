@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/history_embeddings/open_tab_search.h"
+#include "BnesBrowser/browser/history_embeddings/open_tab_search.h"
 
 #include <numeric>
 #include <optional>

@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_PLAYLIST_CONTENT_BROWSER_TYPE_CONVERTER_H_
 
 #include "base/values.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 
 namespace playlist {
 

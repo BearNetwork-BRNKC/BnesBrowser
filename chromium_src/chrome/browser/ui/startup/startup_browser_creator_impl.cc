@@ -5,8 +5,8 @@
 
 #include "chrome/browser/ui/startup/startup_browser_creator_impl.h"
 
-#include "brave/browser/ui/startup/brave_startup_tab_provider_impl.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/startup/brave_startup_tab_provider_impl.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/navigator/browser_navigator_params.h"
@@ -14,7 +14,7 @@
 #include "chrome/browser/ui/startup/startup_tab_provider.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/container_specifier_utils.h"
+#include "BnesBrowser/browser/containers/container_specifier_utils.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 namespace {

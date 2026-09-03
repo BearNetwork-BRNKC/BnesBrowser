@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_dat_cache_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_dat_cache_manager.h"
 
 #include <optional>
 #include <string_view>
@@ -22,7 +22,7 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

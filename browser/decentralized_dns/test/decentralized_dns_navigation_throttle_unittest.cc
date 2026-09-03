@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/decentralized_dns/content/decentralized_dns_navigation_throttle.h"
+#include "BnesBrowser/components/decentralized_dns/content/decentralized_dns_navigation_throttle.h"
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"
@@ -22,7 +22,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 #endif
 
 namespace {

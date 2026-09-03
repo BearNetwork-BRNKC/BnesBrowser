@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_SHIELDS_CORE_BROWSER_BRAVE_SHIELDS_P3A_H_
 #define BRAVE_COMPONENTS_BRAVE_SHIELDS_CORE_BROWSER_BRAVE_SHIELDS_P3A_H_
 
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
 
 class PrefRegistrySimple;
 class PrefService;

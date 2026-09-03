@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/ens_resolver_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/ens_resolver_task.h"
 
 #include <algorithm>
 #include <memory>
@@ -17,17 +17,17 @@
 #include "base/no_destructor.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/eth_data_builder.h"
-#include "brave/components/brave_wallet/browser/eth_requests.h"
-#include "brave/components/brave_wallet/browser/eth_response_parser.h"
-#include "brave/components/brave_wallet/browser/json_rpc_requests_helper.h"
-#include "brave/components/brave_wallet/browser/json_rpc_response_parser.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
-#include "brave/components/brave_wallet/common/eth_request_helper.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_data_builder.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_requests.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_requests_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "third_party/abseil-cpp/absl/cleanup/cleanup.h"
 

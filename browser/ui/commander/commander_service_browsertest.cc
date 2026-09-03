@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
 
 #include <memory>
 #include <string>
@@ -16,9 +16,9 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/browser/ui/commander/commander_service_factory.h"
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
+#include "BnesBrowser/browser/ui/commander/commander_service_factory.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

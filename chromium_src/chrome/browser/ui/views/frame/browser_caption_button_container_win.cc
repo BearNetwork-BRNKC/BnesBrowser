@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/frame/browser_caption_button_container_win.h"
 
-#include "brave/browser/ui/views/frame/brave_browser_frame_view_win.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_win.h"
 #include "chrome/browser/win/titlebar_config.h"
 #include "ui/views/view_utils.h"
 

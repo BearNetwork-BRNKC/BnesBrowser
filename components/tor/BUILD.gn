@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//chrome/common/features.gni")
 
 assert(enable_tor)
@@ -23,7 +23,7 @@ source_set("constants") {
 static_library("tor") {
   public_deps = [
     ":common",
-    "//brave/components/tor/buildflags",
+    "//BnesBrowser/components/tor/buildflags",
   ]
 
   sources = [ "tor_launcher_observer.h" ]
@@ -63,9 +63,9 @@ static_library("tor") {
 
   deps += [
     ":constants",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/resources:strings",
-    "//brave/components/services/tor/public/interfaces",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/services/tor/public/interfaces",
     "//components/pref_registry",
     "//components/prefs",
     "//components/user_prefs",
@@ -113,8 +113,8 @@ source_set("tor_unit_tests") {
 
   deps = [
     "//base/test:test_support",
-    "//brave/components/tor",
-    "//brave/components/tor:common",
+    "//BnesBrowser/components/tor",
+    "//BnesBrowser/components/tor:common",
     "//content/public/browser",
     "//content/test:test_support",
     "//testing/gtest",

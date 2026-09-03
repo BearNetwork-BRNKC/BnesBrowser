@@ -3,23 +3,23 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_handler.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_handler.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_builder.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_info.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposits_database_table.h"
-#include "brave/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_builder.h"
-#include "brave/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/search_result_ads/search_result_ad_permission_rules.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_factory.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_handler_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposits_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/search_result_ads/search_result_ad_permission_rules.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_factory.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/search_result_ads/search_result_ad_event_handler_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads {
 

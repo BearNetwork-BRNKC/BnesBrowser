@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_vpn/common/win/brave_windows_service_watcher.h"
+#include "BnesBrowser/components/brave_vpn/common/win/brave_windows_service_watcher.h"
 
 namespace brave_vpn {
 namespace wireguard {

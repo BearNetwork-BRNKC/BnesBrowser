@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(is_android)
 
@@ -18,10 +18,10 @@ source_set("new_tab_takeover") {
 
   deps = [
     "//base",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/constants",
-    "//brave/components/new_tab_takeover:new_tab_takeover_generated_resources",
-    "//brave/components/ntp_background_images/browser",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/new_tab_takeover:new_tab_takeover_generated_resources",
+    "//BnesBrowser/components/ntp_background_images/browser",
     "//chrome/browser:browser_public_dependencies",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui/android/tab_model",
@@ -32,13 +32,13 @@ source_set("new_tab_takeover") {
   ]
 
   if (enable_brave_ads) {
-    deps += [ "//brave/browser/brave_ads" ]
+    deps += [ "//BnesBrowser/browser/brave_ads" ]
   }
 
   public_deps = [
-    "//brave/browser/ntp_background",
-    "//brave/components/new_tab_takeover/mojom",
-    "//brave/components/ntp_background_images/browser/mojom",
+    "//BnesBrowser/browser/ntp_background",
+    "//BnesBrowser/components/new_tab_takeover/mojom",
+    "//BnesBrowser/components/ntp_background_images/browser/mojom",
     "//mojo/public/cpp/bindings",
   ]
 }

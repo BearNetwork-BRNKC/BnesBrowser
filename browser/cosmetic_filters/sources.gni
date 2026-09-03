@@ -4,13 +4,13 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_browser_cosmetic_filters_sources = [
-  "//brave/browser/cosmetic_filters/cosmetic_filters_tab_helper.cc",
-  "//brave/browser/cosmetic_filters/cosmetic_filters_tab_helper.h",
+  "//BnesBrowser/browser/cosmetic_filters/cosmetic_filters_tab_helper.cc",
+  "//BnesBrowser/browser/cosmetic_filters/cosmetic_filters_tab_helper.h",
 ]
 
 brave_browser_cosmetic_filters_deps = [
   "//base",
-  "//brave/components/cosmetic_filters/common:mojom",
+  "//BnesBrowser/components/cosmetic_filters/common:mojom",
   "//chrome/browser/ui",
   "//chrome/browser/ui/color:color_headers",
   "//third_party/blink/public/common",
@@ -18,12 +18,12 @@ brave_browser_cosmetic_filters_deps = [
 
 if (is_android) {
   brave_browser_cosmetic_filters_sources += [
-    "//brave/browser/android/cosmetic_filters/cosmetic_filters_utils.cc",
-    "//brave/browser/android/cosmetic_filters/cosmetic_filters_utils.h",
+    "//BnesBrowser/browser/android/cosmetic_filters/cosmetic_filters_utils.cc",
+    "//BnesBrowser/browser/android/cosmetic_filters/cosmetic_filters_utils.h",
   ]
 
   brave_browser_cosmetic_filters_deps += [
-    "//brave/build/android:jni_headers",
+    "//BnesBrowser/build/android:jni_headers",
     "//chrome/browser/android:tabs_public",
   ]
 } else {

@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/common/typescript.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 import("//ui/webui/resources/tools/generate_grd.gni")
 
@@ -20,11 +20,11 @@ transpile_web_ui("js_resources") {
         rebase_path("ai_chat_agent_new_tab_page.tsx"),
       ] ]
 
-  imports_from = [ "//brave/browser/resources/ai_chat_agent_new_tab_page/" ]
+  imports_from = [ "//BnesBrowser/browser/resources/ai_chat_agent_new_tab_page/" ]
 
   resource_name = resource_name
 
-  deps = [ "//brave/components/resources:strings" ]
+  deps = [ "//BnesBrowser/components/resources:strings" ]
 }
 
 pack_web_resources("pack_js_resources") {
@@ -61,7 +61,7 @@ repack("ai_chat_agent_new_tab_page") {
     "$target_gen_dir/${resource_name}_generated.pak",
     "$target_gen_dir/${resource_name}_static_resources.pak",
   ]
-  output = "$root_gen_dir/brave/browser/resources/ai_chat_agent_new_tab_page/${resource_name}_all.pak"
+  output = "$root_gen_dir/BnesBrowser/browser/resources/ai_chat_agent_new_tab_page/${resource_name}_all.pak"
   deps = [
     ":pack_js_resources",
     ":pack_static_resources",

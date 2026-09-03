@@ -12,12 +12,12 @@ cargo_crate("lib") {
   crate_name = "impl_trait_for_tuples"
   epoch = "0.2"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/full_automatic.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/semi_automatic.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/full_automatic.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/semi_automatic.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/impl-trait-for-tuples-v0_2/src/utils.rs",
   ]
   inputs = []
 
@@ -32,9 +32,9 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/proc_macro2/v1:lib",
-    "//brave/third_party/rust/quote/v1:lib",
-    "//brave/third_party/rust/syn/v2:lib",
+    "//BnesBrowser/third_party/rust/proc_macro2/v1:lib",
+    "//BnesBrowser/third_party/rust/quote/v1:lib",
+    "//BnesBrowser/third_party/rust/syn/v2:lib",
   ]
   rustenv = []
   rustflags = []

@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/internal/orchard_block_scanner.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_block_scanner.h"
 
 namespace brave_wallet {
 

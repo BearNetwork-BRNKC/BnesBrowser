@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_MISC_METRICS_WEB3_METRICS_H_
 #define BRAVE_COMPONENTS_MISC_METRICS_WEB3_METRICS_H_
 
-#include "brave/components/misc_metrics/common/misc_metrics.mojom.h"
+#include "BnesBrowser/components/misc_metrics/common/misc_metrics.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"
 

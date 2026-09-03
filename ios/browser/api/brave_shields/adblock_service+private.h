@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_BRAVE_SHIELDS_ADBLOCK_SERVICE_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_BRAVE_SHIELDS_ADBLOCK_SERVICE_PRIVATE_H_
 
-#include "brave/ios/browser/api/brave_shields/adblock_service.h"
+#include "BnesBrowser/ios/browser/api/brave_shields/adblock_service.h"
 
 namespace component_updater {
 class ComponentUpdateService;

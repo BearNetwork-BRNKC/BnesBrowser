@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/update_email.h"
+#include "BnesBrowser/components/brave_account/flows/update_email.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/location.h"
-#include "brave/components/brave_account/brave_account_service_constants.h"
-#include "brave/components/brave_account/endpoint_client/with_headers.h"
-#include "brave/components/brave_account/state_base.h"
-#include "brave/components/brave_account/state_internal.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_constants.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/with_headers.h"
+#include "BnesBrowser/components/brave_account/state_base.h"
+#include "BnesBrowser/components/brave_account/state_internal.h"
 
 namespace brave_account {
 

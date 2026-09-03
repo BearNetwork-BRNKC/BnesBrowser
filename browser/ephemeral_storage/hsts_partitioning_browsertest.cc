@@ -7,7 +7,7 @@
 #include "base/strings/pattern.h"
 #include "base/strings/strcat.h"
 #include "base/test/bind.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"

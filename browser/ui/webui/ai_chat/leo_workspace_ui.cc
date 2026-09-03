@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ai_chat/leo_workspace_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/leo_workspace_ui.h"
 
 #include "base/feature_list.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"

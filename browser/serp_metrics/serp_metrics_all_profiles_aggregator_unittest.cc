@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
 
 #include "base/files/file_path.h"
 #include "base/time/time.h"
-#include "brave/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/serp_metrics/serp_metric_type.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"

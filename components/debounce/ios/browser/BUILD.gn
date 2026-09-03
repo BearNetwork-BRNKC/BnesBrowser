@@ -11,7 +11,7 @@ source_set("browser") {
   ]
   deps = [
     "//base",
-    "//brave/components/debounce/core/browser",
+    "//BnesBrowser/components/debounce/core/browser",
     "//net",
     "//url",
   ]

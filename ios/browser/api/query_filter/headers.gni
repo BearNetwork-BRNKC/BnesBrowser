@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_query_filter_public_headers =
-    [ "//brave/ios/browser/api/query_filter/utils.h" ]
+    [ "//BnesBrowser/ios/browser/api/query_filter/utils.h" ]

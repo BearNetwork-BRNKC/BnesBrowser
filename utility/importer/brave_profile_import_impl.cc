@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/utility/importer/brave_profile_import_impl.h"
+#include "BnesBrowser/utility/importer/brave_profile_import_impl.h"
 
 #include <memory>
 #include <utility>
@@ -15,8 +15,8 @@
 #include "base/notreached.h"
 #include "base/task/single_thread_task_runner.h"
 #include "base/threading/thread.h"
-#include "brave/utility/importer/brave_external_process_importer_bridge.h"
-#include "brave/utility/importer/chrome_importer.h"
+#include "BnesBrowser/utility/importer/brave_external_process_importer_bridge.h"
+#include "BnesBrowser/utility/importer/chrome_importer.h"
 #include "build/build_config.h"
 #include "chrome/common/importer/profile_import.mojom.h"
 #include "chrome/utility/importer/external_process_importer_bridge.h"

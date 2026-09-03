@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/search_engine_provider_service_factory.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_service_factory.h"
 
 #include <memory>
 #include <string>
 
 #include "base/no_destructor.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/incognito_helpers.h"
 #include "chrome/browser/profiles/profile.h"
@@ -19,13 +19,13 @@
 #include "components/search_engines/search_engines_pref_names.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/search_engines/normal_window_search_engine_provider_service_android.h"
-#include "brave/browser/search_engines/private_window_search_engine_provider_service_android.h"
+#include "BnesBrowser/browser/search_engines/normal_window_search_engine_provider_service_android.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service_android.h"
 #else
-#include "brave/browser/search_engines/normal_window_search_engine_provider_service.h"
-#include "brave/browser/search_engines/pref_names.h"
-#include "brave/browser/search_engines/private_window_search_engine_provider_service.h"
-#include "brave/browser/search_engines/tor_window_search_engine_provider_service.h"
+#include "BnesBrowser/browser/search_engines/normal_window_search_engine_provider_service.h"
+#include "BnesBrowser/browser/search_engines/pref_names.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service.h"
+#include "BnesBrowser/browser/search_engines/tor_window_search_engine_provider_service.h"
 #endif
 
 // static

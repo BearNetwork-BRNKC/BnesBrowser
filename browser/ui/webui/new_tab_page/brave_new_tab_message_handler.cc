@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
 
 #include <memory>
 #include <optional>
@@ -18,21 +18,21 @@
 #include "base/memory/weak_ptr.h"
 #include "base/threading/thread_restrictions.h"
 #include "base/values.h"
-#include "brave/browser/ntp_background/view_counter_service_factory.h"
-#include "brave/browser/profiles/profile_util.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_perf_predictor/common/pref_names.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
-#include "brave/components/ntp_background_images/browser/view_counter_service.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
-#include "brave/components/p3a/utils.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/browser/ntp_background/view_counter_service_factory.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_perf_predictor/common/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/view_counter_service.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/p3a/utils.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/first_run/first_run.h"
 #include "chrome/browser/profiles/profile.h"
@@ -45,18 +45,18 @@
 #include "content/public/browser/web_ui_data_source.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
-#include "brave/components/brave_ads/core/public/ads_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 using ntp_background_images::ViewCounterServiceFactory;

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_impl.h"
 
 #include <algorithm>
 #include <optional>
@@ -17,15 +17,15 @@
 #include "base/logging.h"
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service_helper.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_region_data_helper.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_region_data_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_service.h"
 #include "components/version_info/version_info.h"

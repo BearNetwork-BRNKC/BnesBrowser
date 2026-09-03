@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/serp_metrics/serp_metrics_bridge_impl.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_bridge_impl.h"
 
 #include "base/check.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/serp_metrics/serp_metric_type.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
 
 @implementation SerpMetricsBridgeImpl {
   // `raw_ref` cannot be used for here because ObjC ivars are zero-initialized

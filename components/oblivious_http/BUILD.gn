@@ -25,7 +25,7 @@ source_set("oblivious_http") {
 
   deps = [
     "//base",
-    "//brave/components/brave_service_keys",
+    "//BnesBrowser/components/brave_service_keys",
   ]
 }
 

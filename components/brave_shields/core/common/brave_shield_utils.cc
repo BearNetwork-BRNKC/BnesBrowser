@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/common/brave_shield_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_utils.h"
 
 #include <map>
 
@@ -12,9 +12,9 @@
 #include "base/no_destructor.h"
 #include "base/notreached.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
-#include "brave/components/webcompat/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
+#include "BnesBrowser/components/webcompat/core/common/features.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_pattern.h"
 #include "url/gurl.h"

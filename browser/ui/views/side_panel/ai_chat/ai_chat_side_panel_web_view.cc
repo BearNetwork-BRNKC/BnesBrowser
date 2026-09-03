@@ -3,17 +3,17 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_web_view.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_web_view.h"
 
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_movable_side_panel_web_view.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/components/ai_chat/core/common/ai_chat_urls.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_movable_side_panel_web_view.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/ai_chat_urls.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_component_service_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_service_manager.h"
 
 #include <memory>
 #include <string>
@@ -25,17 +25,17 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
-#include "brave/components/brave_shields/core/browser/ad_block_list_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_locale_utils.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_list_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_locale_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 #include "components/component_updater/component_updater_service.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"

@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_domains_public_headers =
-    [ "//brave/ios/browser/api/brave_domains/service_domains.h" ]
+    [ "//BnesBrowser/ios/browser/api/brave_domains/service_domains.h" ]

@@ -3,25 +3,25 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/prefs/brave_pref_service_incognito_allowlist.h"
+#include "BnesBrowser/browser/prefs/brave_pref_service_incognito_allowlist.h"
 
 #include <array>
 
 #include "base/containers/span.h"
 #include "base/strings/cstring_view.h"
-#include "brave/browser/ui/bookmark/brave_bookmark_prefs.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/ui/bookmark/brave_bookmark_prefs.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/common/pref_names.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 namespace brave {

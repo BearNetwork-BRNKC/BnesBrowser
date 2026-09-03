@@ -6,12 +6,12 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_UPHOLD_UPHOLD_SERVER_H_
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_UPHOLD_UPHOLD_SERVER_H_
 
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/get_capabilities/get_capabilities.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/get_card/get_card.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/get_cards/get_cards.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/get_me/get_me.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/patch_card/patch_card.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/uphold/post_cards/post_cards.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/get_capabilities/get_capabilities.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/get_card/get_card.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/get_cards/get_cards.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/get_me/get_me.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/patch_card/patch_card.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/uphold/post_cards/post_cards.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

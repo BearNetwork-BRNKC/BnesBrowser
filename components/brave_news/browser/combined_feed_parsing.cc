@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/combined_feed_parsing.h"
+#include "BnesBrowser/components/brave_news/browser/combined_feed_parsing.h"
 
 #include <algorithm>
 #include <iterator>
@@ -18,11 +18,11 @@
 #include "base/time/time.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_news/api/combined_feed.h"
-#include "brave/components/brave_news/browser/channel_migrator.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/api/combined_feed.h"
+#include "BnesBrowser/components/brave_news/browser/channel_migrator.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #include "ui/base/l10n/time_format.h"
 #include "url/gurl.h"
 

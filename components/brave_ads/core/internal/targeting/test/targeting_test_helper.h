@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_TARGETING_TEST_TARGETING_TEST_HELPER_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_TARGETING_TEST_TARGETING_TEST_HELPER_H_
 
-#include "brave/components/brave_ads/core/internal/targeting/behavioral/purchase_intent/test/purchase_intent_test_helper.h"
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/test/text_classification_test_helper.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/behavioral/purchase_intent/test/purchase_intent_test_helper.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/test/text_classification_test_helper.h"
 
 namespace brave_ads {
 

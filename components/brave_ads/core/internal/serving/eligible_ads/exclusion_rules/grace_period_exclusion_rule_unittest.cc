@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/grace_period_exclusion_rule.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/grace_period_exclusion_rule.h"
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_info.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/test/ad_event_builder_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/test/ad_event_builder_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

@@ -5,7 +5,7 @@
 
 #include "chrome/installer/util/google_update_constants.h"
 
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 
 #define kChromeUpgradeCode kChromeUpgradeCode_Unused
 #define kGoogleUpdateUpgradeCode kGoogleUpdateUpgradeCode_Unused

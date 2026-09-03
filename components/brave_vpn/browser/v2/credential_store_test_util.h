@@ -10,7 +10,7 @@
 #include <string_view>
 
 #include "base/time/time.h"
-#include "brave/components/brave_vpn/browser/v2/credential_store.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/credential_store.h"
 #include "testing/gmock/include/gmock/gmock-matchers.h"
 
 namespace brave_vpn::v2::test {

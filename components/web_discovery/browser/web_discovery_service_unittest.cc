@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
 
 #include <memory>
 
 #include "base/files/scoped_temp_dir.h"
 #include "base/memory/weak_ptr.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

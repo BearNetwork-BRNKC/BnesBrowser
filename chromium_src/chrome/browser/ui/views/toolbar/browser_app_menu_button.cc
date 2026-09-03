@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/toolbar/browser_app_menu_button.h"
 
-#include "brave/browser/ui/toolbar/brave_app_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_app_menu_model.h"
 
 #define AppMenuModel BraveAppMenuModel
 #include <chrome/browser/ui/views/toolbar/browser_app_menu_button.cc>

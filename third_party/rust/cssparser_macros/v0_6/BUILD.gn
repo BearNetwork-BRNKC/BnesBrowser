@@ -12,8 +12,8 @@ cargo_crate("lib") {
   crate_name = "cssparser_macros"
   epoch = "0.6"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/cssparser-macros-v0_6/lib.rs"
-  sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/cssparser-macros-v0_6/lib.rs" ]
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/cssparser-macros-v0_6/lib.rs"
+  sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/cssparser-macros-v0_6/lib.rs" ]
   inputs = []
 
   build_native_rust_unit_tests = false
@@ -27,8 +27,8 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/quote/v1:lib",
-    "//brave/third_party/rust/syn/v2:lib",
+    "//BnesBrowser/third_party/rust/quote/v1:lib",
+    "//BnesBrowser/third_party/rust/syn/v2:lib",
   ]
   rustenv = []
   rustflags = []

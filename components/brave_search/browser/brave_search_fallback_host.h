@@ -11,8 +11,8 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/brave_search/common/brave_search_fallback.mojom.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_fallback.mojom.h"
 #include "url/gurl.h"
 
 namespace brave_search {

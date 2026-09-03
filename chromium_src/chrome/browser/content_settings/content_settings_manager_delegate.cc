@@ -6,20 +6,20 @@
 #include <string>
 #include <string_view>
 
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-shared.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-shared.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/web_contents.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
 #include "base/feature_list.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 #include <chrome/browser/content_settings/content_settings_manager_delegate.cc>

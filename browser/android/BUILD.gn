@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(is_android)
 
@@ -21,23 +21,23 @@ source_set("android_browser_process") {
 
   deps = [
     "//base",
-    "//brave/brave_domains/android:jni_headers",
-    "//brave/browser/android/browsing_data",
-    "//brave/browser/android/preferences",
-    "//brave/browser/android/safe_browsing",
-    "//brave/browser/brave_origin/android:jni_headers",
-    "//brave/browser/brave_shields",
-    "//brave/browser/skus/android:jni_headers",
-    "//brave/build/android:jni_headers",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_sync",
-    "//brave/components/brave_sync:crypto",
-    "//brave/components/brave_sync:prefs",
-    "//brave/components/brave_sync:sync_service_impl_helper",
-    "//brave/components/brave_sync:time_limited_codes",
+    "//BnesBrowser/brave_domains/android:jni_headers",
+    "//BnesBrowser/browser/android/browsing_data",
+    "//BnesBrowser/browser/android/preferences",
+    "//BnesBrowser/browser/android/safe_browsing",
+    "//BnesBrowser/browser/brave_origin/android:jni_headers",
+    "//BnesBrowser/browser/brave_shields",
+    "//BnesBrowser/browser/skus/android:jni_headers",
+    "//BnesBrowser/build/android:jni_headers",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_sync",
+    "//BnesBrowser/components/brave_sync:crypto",
+    "//BnesBrowser/components/brave_sync:prefs",
+    "//BnesBrowser/components/brave_sync:sync_service_impl_helper",
+    "//BnesBrowser/components/brave_sync:time_limited_codes",
     "//chrome/android:jni_headers",
     "//chrome/browser:browser_process",
     "//chrome/browser:browser_public_dependencies",
@@ -60,8 +60,8 @@ source_set("android_browser_process") {
 
   if (enable_brave_ads) {
     deps += [
-      "//brave/browser/brave_ads/android:jni_headers",
-      "//brave/components/brave_ads/browser",
+      "//BnesBrowser/browser/brave_ads/android:jni_headers",
+      "//BnesBrowser/components/brave_ads/browser",
     ]
   }
 }
@@ -73,13 +73,13 @@ source_set("tabs_public") {
 }
 
 source_set("tabs_impl") {
-  visibility = [ "//brave/browser:core" ]
+  visibility = [ "//BnesBrowser/browser:core" ]
   sources = [ "brave_tab_features.cc" ]
 
   deps = [
     ":tabs_public",
     "//base",
-    "//brave/browser/ai_chat",
+    "//BnesBrowser/browser/ai_chat",
     "//chrome/browser/profiles:profile",
     "//content/public/browser",
   ]

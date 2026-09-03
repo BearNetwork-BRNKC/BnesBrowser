@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
 
 #include <string_view>
 #include <utility>

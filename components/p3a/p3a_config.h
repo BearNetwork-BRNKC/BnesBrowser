@@ -11,7 +11,7 @@
 
 #include "base/containers/flat_map.h"
 #include "base/time/time.h"
-#include "brave/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
 #include "url/gurl.h"
 
 namespace p3a {

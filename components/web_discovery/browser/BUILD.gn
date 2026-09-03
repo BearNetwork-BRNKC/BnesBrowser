@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/web_discovery/buildflags/buildflags.gni")
+import("//BnesBrowser/components/web_discovery/buildflags/buildflags.gni")
 
 assert(enable_web_discovery_native)
 
@@ -15,9 +15,9 @@ static_library("browser") {
   deps = [
     ":internal",
     "//base",
-    "//brave/components/constants",
-    "//brave/components/web_discovery/common",
-    "//brave/components/web_discovery/common:mojom",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/web_discovery/common",
+    "//BnesBrowser/components/web_discovery/common:mojom",
     "//components/keyed_service/core",
     "//components/prefs",
     "//services/network/public/cpp",
@@ -65,18 +65,18 @@ source_set("internal") {
 
   visibility = [
     ":*",
-    "//brave/browser/web_discovery:browser_tests",
+    "//BnesBrowser/browser/web_discovery:browser_tests",
   ]
 
   deps = [
     "anonymous_credentials",
     "document_extractor",
     "//base",
-    "//brave/brave_domains",
-    "//brave/components/brave_search/browser",
-    "//brave/components/constants",
-    "//brave/components/web_discovery/common",
-    "//brave/components/web_discovery/common:mojom",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/brave_search/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/web_discovery/common",
+    "//BnesBrowser/components/web_discovery/common:mojom",
     "//components/prefs",
     "//crypto",
     "//extensions/buildflags",
@@ -108,9 +108,9 @@ source_set("unit_tests") {
     ":browser",
     ":internal",
     "//base/test:test_support",
-    "//brave/components/brave_search/browser",
-    "//brave/components/constants",
-    "//brave/components/web_discovery/common",
+    "//BnesBrowser/components/brave_search/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/web_discovery/common",
     "//components/prefs:test_support",
     "//crypto",
     "//services/network:test_support",

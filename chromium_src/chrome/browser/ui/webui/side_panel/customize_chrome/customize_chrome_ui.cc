@@ -12,7 +12,7 @@
 #include "ui/webui/webui_util.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
 #endif  // defined(TOOLKIT_VIEWS)
 
 // Add Brave-specific strings to the WebUI data source.

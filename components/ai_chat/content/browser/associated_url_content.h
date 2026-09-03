@@ -12,7 +12,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
 #include "base/timer/timer.h"
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "url/gurl.h"
 

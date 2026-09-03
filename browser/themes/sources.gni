@@ -9,18 +9,18 @@ brave_browser_themes_deps = []
 
 if (!is_android) {
   brave_browser_themes_sources += [
-    "//brave/browser/themes/brave_private_window_theme_supplier.cc",
-    "//brave/browser/themes/brave_private_window_theme_supplier.h",
-    "//brave/browser/themes/brave_theme_service.cc",
-    "//brave/browser/themes/brave_theme_service.h",
+    "//BnesBrowser/browser/themes/brave_private_window_theme_supplier.cc",
+    "//BnesBrowser/browser/themes/brave_private_window_theme_supplier.h",
+    "//BnesBrowser/browser/themes/brave_theme_service.cc",
+    "//BnesBrowser/browser/themes/brave_theme_service.h",
   ]
 
   brave_browser_themes_deps += [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/browser/themes",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/constants",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/browser/themes",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/constants",
     "//chrome/browser:browser_process",
     "//chrome/browser/ui",
     "//chrome/browser/ui/color:color_headers",

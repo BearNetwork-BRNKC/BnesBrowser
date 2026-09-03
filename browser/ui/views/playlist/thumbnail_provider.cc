@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/playlist/thumbnail_provider.h"
+#include "BnesBrowser/browser/ui/views/playlist/thumbnail_provider.h"
 
 #include <algorithm>
 #include <memory>
@@ -18,10 +18,10 @@
 #include "base/no_destructor.h"
 #include "base/task/thread_pool.h"
 #include "base/task/thread_pool/thread_pool_instance.h"
-#include "brave/browser/playlist/playlist_service_factory.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
 #include "net/base/filename_util.h"
 
 namespace {

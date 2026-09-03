@@ -9,9 +9,9 @@
 
 #include "base/check.h"
 #include "base/feature_list.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service_factory.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service_factory.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

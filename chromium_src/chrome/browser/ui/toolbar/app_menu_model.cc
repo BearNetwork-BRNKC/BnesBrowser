@@ -5,9 +5,9 @@
 
 #include "chrome/browser/ui/toolbar/app_menu_model.h"
 
-#include "brave/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
-#include "brave/browser/ui/toolbar/brave_recent_tabs_sub_menu_model.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_recent_tabs_sub_menu_model.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/toolbar/bookmark_sub_menu_model.h"
 #include "chrome/grit/generated_resources.h"
 

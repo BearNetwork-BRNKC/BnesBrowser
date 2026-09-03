@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/skus_service_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/skus_service_client.h"
 
 #include <string>
 
 #include "base/functional/bind.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/skus/browser/test/fake_skus_service.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/browser/test/fake_skus_service.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -10,10 +10,10 @@
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
 #include "base/threading/sequence_bound.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_callback.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager_observer.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_callback.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 
 namespace base {
 class FilePath;

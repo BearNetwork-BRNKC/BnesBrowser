@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
 
 assert(is_brave_origin_branded)
 
@@ -16,20 +16,20 @@ source_set("brave_origin_startup") {
   ]
 
   public_deps = [
-    "//brave/components/brave_origin/buildflags",
-    "//brave/components/brave_origin/mojom",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/brave_origin/buildflags",
+    "//BnesBrowser/components/brave_origin/mojom",
+    "//BnesBrowser/components/skus/common:mojom",
     "//mojo/public/cpp/bindings",
   ]
 
   deps = [
-    "//brave/brave_domains",
-    "//brave/browser/resources/brave_origin_startup:pack_js_resources",
-    "//brave/browser/resources/brave_origin_startup:pack_static_resources",
-    "//brave/browser/skus",
-    "//brave/components/brave_origin:pref_names",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/browser/resources/brave_origin_startup:pack_js_resources",
+    "//BnesBrowser/browser/resources/brave_origin_startup:pack_static_resources",
+    "//BnesBrowser/browser/skus",
+    "//BnesBrowser/components/brave_origin:pref_names",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/skus/browser",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//components/prefs",
@@ -47,9 +47,9 @@ source_set("unit_tests") {
   deps = [
     ":brave_origin_startup",
     "//base/test:test_support",
-    "//brave/components/brave_origin:pref_names",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/skus/browser:test_support",
+    "//BnesBrowser/components/brave_origin:pref_names",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/skus/browser:test_support",
     "//components/prefs:test_support",
     "//content/test:test_support",
     "//testing/gtest",

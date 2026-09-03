@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CONTENT_REWARDS_NOTIFICATION_SERVICE_OBSERVER_H_
 
 #include "base/observer_list_types.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service.h"
 
 namespace brave_rewards {
 

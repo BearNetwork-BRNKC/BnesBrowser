@@ -7,8 +7,8 @@
 
 #include <string>
 
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/speech_to_text/features.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/speech_to_text/features.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "url/gurl.h"
 

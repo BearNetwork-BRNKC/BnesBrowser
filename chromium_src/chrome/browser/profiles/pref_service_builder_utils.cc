@@ -5,7 +5,7 @@
 
 #include "chrome/browser/profiles/pref_service_builder_utils.h"
 
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/common/pref_names.h"
 #include "components/signin/public/base/signin_pref_names.h"

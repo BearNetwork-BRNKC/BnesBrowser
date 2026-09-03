@@ -8,7 +8,7 @@
 
 #include <cstddef>
 
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
 
 namespace brave_ads::test {
 

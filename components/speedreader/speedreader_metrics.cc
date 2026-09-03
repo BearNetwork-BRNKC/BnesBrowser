@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/speedreader_metrics.h"
+#include "BnesBrowser/components/speedreader/speedreader_metrics.h"
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/speedreader/speedreader_pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_names.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings_pattern.h"
 #include "components/content_settings/core/common/content_settings_types.h"

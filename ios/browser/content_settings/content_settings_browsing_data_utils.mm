@@ -9,8 +9,8 @@
 
 #include "base/apple/foundation_util.h"
 #include "base/time/time.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_browsing_data_utils.h"
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_browsing_data_utils.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
 #include "ios/chrome/browser/content_settings/model/host_content_settings_map_factory.h"
 
 void BraveRemoveSiteSettingsData(NSDate* delete_begin,

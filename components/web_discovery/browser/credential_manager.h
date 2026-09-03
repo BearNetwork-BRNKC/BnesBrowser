@@ -14,9 +14,9 @@
 #include "base/memory/raw_ptr.h"
 #include "base/threading/sequence_bound.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/web_discovery/browser/background_credential_helper.h"
-#include "brave/components/web_discovery/browser/credential_signer.h"
-#include "brave/components/web_discovery/browser/server_config_loader.h"
+#include "BnesBrowser/components/web_discovery/browser/background_credential_helper.h"
+#include "BnesBrowser/components/web_discovery/browser/credential_signer.h"
+#include "BnesBrowser/components/web_discovery/browser/server_config_loader.h"
 #include "crypto/keypair.h"
 #include "net/base/backoff_entry.h"
 

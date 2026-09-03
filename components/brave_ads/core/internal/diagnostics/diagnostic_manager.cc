@@ -3,22 +3,22 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/diagnostic_value_util.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/catalog_id_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/catalog_last_updated_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/country_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/device_id_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/language_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/notification_ads_enabled_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/opted_into_new_tab_page_ads_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/opted_into_search_result_ads_diagnostic_entry.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/diagnostic_value_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/catalog_id_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/catalog_last_updated_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/country_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/device_id_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/language_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/notification_ads_enabled_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/opted_into_new_tab_page_ads_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/opted_into_search_result_ads_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
 
 namespace brave_ads {
 

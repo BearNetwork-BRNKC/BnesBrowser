@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/certificate/models/brave_certificate_rdns_sequence.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_rdns_sequence.h"
 
 #include "base/strings/string_view_util.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/foundation_util.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_utils.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
+#include "BnesBrowser/base/apple/foundation_util.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_utils.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
 #include "net/cert/x509_cert_types.h"
 #include "third_party/boringssl/src/pki/input.h"
 

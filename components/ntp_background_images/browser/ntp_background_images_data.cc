@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_background_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_data.h"
 
 #include <optional>
 
 #include "base/check.h"
 #include "base/json/json_reader.h"
 #include "base/logging.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 #include "content/public/common/url_constants.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 

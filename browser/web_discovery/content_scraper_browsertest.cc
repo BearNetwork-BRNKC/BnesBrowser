@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/content_scraper.h"
+#include "BnesBrowser/components/web_discovery/browser/content_scraper.h"
 
 #include <memory>
 #include <vector>
@@ -15,11 +15,11 @@
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/web_discovery/browser/patterns.h"
-#include "brave/components/web_discovery/browser/server_config_loader.h"
-#include "brave/components/web_discovery/common/features.h"
-#include "brave/components/web_discovery/common/web_discovery.mojom.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/web_discovery/browser/patterns.h"
+#include "BnesBrowser/components/web_discovery/browser/server_config_loader.h"
+#include "BnesBrowser/components/web_discovery/common/features.h"
+#include "BnesBrowser/components/web_discovery/common/web_discovery.mojom.h"
 #include "chrome/test/base/chrome_test_utils.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/test/browser_test.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
 
 #include <stddef.h>
 
@@ -13,7 +13,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/values.h"
-#include "brave/browser/brave_local_state_prefs.h"
+#include "BnesBrowser/browser/brave_local_state_prefs.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/prefs/browser_prefs.h"

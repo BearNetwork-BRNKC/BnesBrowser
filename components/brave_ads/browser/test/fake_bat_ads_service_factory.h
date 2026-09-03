@@ -10,7 +10,7 @@
 #include <memory>
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/browser/bat_ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/browser/bat_ads_service_factory.h"
 #include "mojo/public/cpp/bindings/remote.h"
 
 namespace brave_ads::test {

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/common/extensions/brave_extensions_api_provider.h"
+#include "BnesBrowser/common/extensions/brave_extensions_api_provider.h"
 
 #include <string_view>
 
-#include "brave/common/extensions/api/api_features.h"
-#include "brave/common/extensions/api/behavior_features.h"
-#include "brave/common/extensions/api/generated_schemas.h"
-#include "brave/common/extensions/api/grit/brave_api_resources.h"
-#include "brave/common/extensions/api/manifest_features.h"
+#include "BnesBrowser/common/extensions/api/api_features.h"
+#include "BnesBrowser/common/extensions/api/behavior_features.h"
+#include "BnesBrowser/common/extensions/api/generated_schemas.h"
+#include "BnesBrowser/common/extensions/api/grit/brave_api_resources.h"
+#include "BnesBrowser/common/extensions/api/manifest_features.h"
 #include "extensions/common/features/json_feature_provider_source.h"
 #include "extensions/common/permissions/permissions_info.h"
 

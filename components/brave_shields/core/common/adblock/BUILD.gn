@@ -5,13 +5,13 @@
 
 group("adblock") {
   visibility = [
-    "//brave/components/brave_shields/content/browser:*",
-    "//brave/components/brave_shields/content/test:test_support",
-    "//brave/components/brave_shields/content/test:unit_tests",
-    "//brave/components/brave_shields/core/browser:*",
-    "//brave/components/brave_shields/core/common:*",
-    "//brave/fuzzers:*",
-    "//brave/ios/browser/api/brave_shields:*",
+    "//BnesBrowser/components/brave_shields/content/browser:*",
+    "//BnesBrowser/components/brave_shields/content/test:test_support",
+    "//BnesBrowser/components/brave_shields/content/test:unit_tests",
+    "//BnesBrowser/components/brave_shields/core/browser:*",
+    "//BnesBrowser/components/brave_shields/core/common:*",
+    "//BnesBrowser/fuzzers:*",
+    "//BnesBrowser/ios/browser/api/brave_shields:*",
   ]
   deps = [
     "resolver",

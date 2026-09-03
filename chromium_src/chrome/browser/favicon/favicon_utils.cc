@@ -7,13 +7,13 @@
 
 #include <optional>
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "content/public/browser/navigation_entry.h"
 #include "content/public/common/url_constants.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #endif
 
 namespace favicon {

@@ -7,7 +7,7 @@
 #define BRAVE_CHROMIUM_SRC_COMPONENTS_CONTENT_SETTINGS_BROWSER_CONTENT_SETTINGS_MANAGER_IMPL_H_
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 #include "components/content_settings/common/content_settings_manager.mojom.h"
 
 // Extend ContentSettingsManagerImpl::Delegate.

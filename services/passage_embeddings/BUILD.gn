@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
 # Implements the hook the chromium_src passage_embedder_impl.cc override
 # forward-declares.

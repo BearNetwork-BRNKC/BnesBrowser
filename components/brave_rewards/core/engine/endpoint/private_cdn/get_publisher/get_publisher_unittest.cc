@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/private_cdn/get_publisher/get_publisher.h"
 
 #include <string>
 #include <utility>
@@ -11,9 +11,9 @@
 #include "base/check.h"
 #include "base/containers/span.h"
 #include "base/numerics/byte_conversions.h"
-#include "brave/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
-#include "brave/components/brave_rewards/core/engine/test/rewards_engine_test.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/rewards_engine_test.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
 #include "net/http/http_status_code.h"
 
 namespace brave_rewards::internal {

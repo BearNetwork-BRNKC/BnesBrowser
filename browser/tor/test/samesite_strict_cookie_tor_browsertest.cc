@@ -4,12 +4,12 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/strings/string_split.h"
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
-#include "brave/browser/ui/views/location_bar/onion_location_view.h"
-#include "brave/components/tor/onion_location_tab_helper.h"
-#include "brave/components/tor/tor_navigation_throttle.h"
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/onion_location_view.h"
+#include "BnesBrowser/components/tor/onion_location_tab_helper.h"
+#include "BnesBrowser/components/tor/tor_navigation_throttle.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #include "chrome/browser/renderer_context_menu/render_view_context_menu_test_util.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"

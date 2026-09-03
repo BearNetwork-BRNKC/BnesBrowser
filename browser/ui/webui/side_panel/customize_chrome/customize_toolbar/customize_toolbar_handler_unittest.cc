@@ -7,7 +7,7 @@
 
 #include "base/functional/bind.h"
 #include "base/test/mock_callback.h"
-#include "brave/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/brave_action.h"
+#include "BnesBrowser/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/brave_action.h"
 #include "chrome/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/customize_toolbar.mojom.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"

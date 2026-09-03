@@ -9,10 +9,10 @@
 #include <ios/chrome/browser/net/model/ios_chrome_network_delegate.cc>
 #undef IOSChromeNetworkDelegate
 
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/brave_services_key_helper.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/static_redirect_helper/static_redirect_helper.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/brave_services_key_helper.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/static_redirect_helper/static_redirect_helper.h"
 
 namespace {
 

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/util/url_loader.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/url_loader.h"
 
 #include <array>
 #include <utility>
 
 #include "base/check.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_rewards/core/engine/initialization_manager.h"
-#include "brave/components/brave_rewards/core/engine/util/callback_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/initialization_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/callback_helpers.h"
 
 namespace brave_rewards::internal {
 

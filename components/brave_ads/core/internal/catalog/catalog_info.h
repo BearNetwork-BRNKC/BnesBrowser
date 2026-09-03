@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/catalog_campaign_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/catalog_campaign_info.h"
 
 namespace brave_ads {
 

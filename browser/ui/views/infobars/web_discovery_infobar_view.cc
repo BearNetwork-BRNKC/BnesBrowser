@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/infobars/web_discovery_infobar_view.h"
+#include "BnesBrowser/browser/ui/views/infobars/web_discovery_infobar_view.h"
 
 #include <utility>
 
-#include "brave/browser/ui/views/infobars/web_discovery_infobar_content_view.h"
-#include "brave/browser/web_discovery/web_discovery_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/views/infobars/web_discovery_infobar_content_view.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_infobar_delegate.h"
 #include "ui/base/metadata/metadata_impl_macros.h"
 #include "ui/views/widget/widget.h"
 

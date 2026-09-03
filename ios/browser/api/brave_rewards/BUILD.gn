@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/coredata_model.gni")
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/coredata_model.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 import("//build/config/ios/rules.gni")
 
 config("external_config") {
@@ -30,10 +30,10 @@ source_set("brave_rewards") {
   deps = [
     ":rewards_mojom_wrappers",
     "//base",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core/engine",
-    "//brave/ios/browser/api/common",
-    "//brave/ios/components/prefs",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core/engine",
+    "//BnesBrowser/ios/browser/api/common",
+    "//BnesBrowser/ios/components/prefs",
     "//components/os_crypt/async/browser",
     "//components/os_crypt/async/common",
     "//components/prefs",
@@ -51,6 +51,6 @@ source_set("brave_rewards") {
 }
 
 ios_objc_mojom_wrappers("rewards_mojom_wrappers") {
-  mojom_target = "//brave/components/brave_rewards/core/mojom:mojom"
-  sources = [ "//brave/components/brave_rewards/core/mojom/rewards.mojom" ]
+  mojom_target = "//BnesBrowser/components/brave_rewards/core/mojom:mojom"
+  sources = [ "//BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom" ]
 }

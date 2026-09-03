@@ -19,10 +19,10 @@ source_set("browser") {
   ]
   deps = [
     "//base",
-    "//brave/base/apple",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/ios/common:mojom",
+    "//BnesBrowser/base/apple",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/ios/common:mojom",
     "//components/prefs",
     "//ios/web/public",
     "//ios/web/public/thread",

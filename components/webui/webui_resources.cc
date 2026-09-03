@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/webui/webui_resources.h"
+#include "BnesBrowser/components/webui/webui_resources.h"
 
 #include <vector>
 
 #include "base/containers/flat_map.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/grit/brave_components_strings.h"

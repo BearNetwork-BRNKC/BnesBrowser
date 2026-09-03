@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
 
 #include "base/check_deref.h"
-#include "brave/browser/brave_account/brave_account_service_factory.h"
-#include "brave/browser/email_aliases/email_aliases_service_factory.h"
-#include "brave/browser/resources/settings/grit/brave_settings_resources.h"
-#include "brave/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/brave_account/brave_account_service_factory.h"
+#include "BnesBrowser/browser/email_aliases/email_aliases_service_factory.h"
+#include "BnesBrowser/browser/resources/settings/grit/brave_settings_resources.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/theme_source.h"

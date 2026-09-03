@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
 source_set("web") {
   sources = [
@@ -16,43 +16,43 @@ source_set("web") {
   ]
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_talk/buildflags",
-    "//brave/components/brave_user_agent/browser",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/global_privacy_control",
-    "//brave/components/playlist/core/common/buildflags",
-    "//brave/components/query_filter/browser",
-    "//brave/components/query_filter/common",
-    "//brave/ios/browser/ai_chat",
-    "//brave/ios/browser/api/profile",
-    "//brave/ios/browser/api/web_view",
-    "//brave/ios/browser/application_context",
-    "//brave/ios/browser/brave_ads",
-    "//brave/ios/browser/brave_search",
-    "//brave/ios/browser/brave_shields",
-    "//brave/ios/browser/brave_shields/cosmetic_filtering",
-    "//brave/ios/browser/brave_shields/request_blocking",
-    "//brave/ios/browser/component_updater:zxcvbn_data_component_installer",
-    "//brave/ios/browser/global_privacy_control",
-    "//brave/ios/browser/playlist",
-    "//brave/ios/browser/skus",
-    "//brave/ios/browser/ui/web_view:features",
-    "//brave/ios/browser/web/de_amp",
-    "//brave/ios/browser/web/document_fetch",
-    "//brave/ios/browser/web/force_paste",
-    "//brave/ios/browser/web/fullscreen",
-    "//brave/ios/browser/web/logins",
-    "//brave/ios/browser/web/media",
-    "//brave/ios/browser/web/navigator",
-    "//brave/ios/browser/web/night_mode",
-    "//brave/ios/browser/web/page_metadata",
-    "//brave/ios/browser/web/reader_mode",
-    "//brave/ios/browser/youtube",
-    "//brave/ios/web/js_messaging",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_talk/buildflags",
+    "//BnesBrowser/components/brave_user_agent/browser",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/global_privacy_control",
+    "//BnesBrowser/components/playlist/core/common/buildflags",
+    "//BnesBrowser/components/query_filter/browser",
+    "//BnesBrowser/components/query_filter/common",
+    "//BnesBrowser/ios/browser/ai_chat",
+    "//BnesBrowser/ios/browser/api/profile",
+    "//BnesBrowser/ios/browser/api/web_view",
+    "//BnesBrowser/ios/browser/application_context",
+    "//BnesBrowser/ios/browser/brave_ads",
+    "//BnesBrowser/ios/browser/brave_search",
+    "//BnesBrowser/ios/browser/brave_shields",
+    "//BnesBrowser/ios/browser/brave_shields/cosmetic_filtering",
+    "//BnesBrowser/ios/browser/brave_shields/request_blocking",
+    "//BnesBrowser/ios/browser/component_updater:zxcvbn_data_component_installer",
+    "//BnesBrowser/ios/browser/global_privacy_control",
+    "//BnesBrowser/ios/browser/playlist",
+    "//BnesBrowser/ios/browser/skus",
+    "//BnesBrowser/ios/browser/ui/web_view:features",
+    "//BnesBrowser/ios/browser/web/de_amp",
+    "//BnesBrowser/ios/browser/web/document_fetch",
+    "//BnesBrowser/ios/browser/web/force_paste",
+    "//BnesBrowser/ios/browser/web/fullscreen",
+    "//BnesBrowser/ios/browser/web/logins",
+    "//BnesBrowser/ios/browser/web/media",
+    "//BnesBrowser/ios/browser/web/navigator",
+    "//BnesBrowser/ios/browser/web/night_mode",
+    "//BnesBrowser/ios/browser/web/page_metadata",
+    "//BnesBrowser/ios/browser/web/reader_mode",
+    "//BnesBrowser/ios/browser/youtube",
+    "//BnesBrowser/ios/web/js_messaging",
     "//components/component_updater/installer_policies",
     "//components/language/ios/browser",
     "//components/prefs",
@@ -73,18 +73,18 @@ source_set("web") {
     "//ios/web_view/framework:web_view_sources",
   ]
   if (enable_brave_talk) {
-    deps += [ "//brave/ios/browser/brave_talk" ]
+    deps += [ "//BnesBrowser/ios/browser/brave_talk" ]
   }
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/browser",
-      "//brave/ios/browser/brave_wallet",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/ios/browser/brave_wallet",
     ]
   }
   if (enable_playlist) {
     deps += [
-      "//brave/components/playlist/core/browser",
-      "//brave/components/playlist/core/common",
+      "//BnesBrowser/components/playlist/core/browser",
+      "//BnesBrowser/components/playlist/core/common",
     ]
   }
   frameworks = [ "Foundation.framework" ]

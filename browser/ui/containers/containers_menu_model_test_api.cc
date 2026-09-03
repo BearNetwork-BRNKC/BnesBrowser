@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/containers/containers_menu_model_test_api.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model_test_api.h"
 
 #include <utility>
 

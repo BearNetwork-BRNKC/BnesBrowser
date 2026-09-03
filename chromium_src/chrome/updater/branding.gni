@@ -11,7 +11,7 @@
 # So we define our values in a scope here, then use forward_variables_from(...)
 # in upstream's .gni file to apply the changes from this scope.
 
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
 import("//build/config/chrome_build.gni")
 import("//build/util/branding.gni")
 
@@ -37,7 +37,7 @@ brave_updater_branding = {
   keystone_bundle_identifier = "com.brave.Keystone"
   mac_updater_bundle_identifier = "com.brave.BraveUpdater"
   privileged_helper_bundle_name = "BraveUpdaterPrivilegedHelper"
-  updater_app_icon_path = "//brave/app/theme/brave/mac/app.icns"
+  updater_app_icon_path = "//BnesBrowser/app/theme/brave/mac/app.icns"
 
   # Brave Origin uses a separate browser bundle identifier for side-by-side
   # installation with Brave Browser.

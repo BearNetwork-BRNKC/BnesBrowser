@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/config/features.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
@@ -19,8 +19,8 @@ source_set("webui") {
 
   deps = [
     "//base",
-    "//brave/components/constants",
-    "//brave/components/webui",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/webui",
     "//components/resources:components_resources_grit",
     "//ios/chrome/browser/shared/model/profile",
     "//ios/chrome/browser/shared/model/url:constants",
@@ -55,8 +55,8 @@ source_set("ios_web_webui_inttests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/ios/web/test:resources",
-    "//brave/ios/web/webui",
+    "//BnesBrowser/ios/web/test:resources",
+    "//BnesBrowser/ios/web/webui",
     "//ios/components/webui:url_constants",
     "//ios/web/public/test",
     "//ios/web/public/test:test_fixture",

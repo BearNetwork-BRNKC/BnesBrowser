@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
 
 #include <string>
 #include <vector>
@@ -16,16 +16,16 @@
 #include "base/test/run_until.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/psst/psst_settings_service_factory.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_ui.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/psst/core/browser/pref_names.h"
-#include "brave/components/psst/core/browser/psst_rule.h"
-#include "brave/components/psst/core/browser/psst_rule_registry.h"
-#include "brave/components/psst/core/browser/psst_settings_service.h"
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/psst/psst_settings_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_ui.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/core/browser/pref_names.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule_registry.h"
+#include "BnesBrowser/components/psst/core/browser/psst_settings_service.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

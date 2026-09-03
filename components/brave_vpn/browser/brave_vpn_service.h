@@ -11,8 +11,8 @@
 
 #include "base/functional/callback.h"
 #include "base/sequence_checker.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 #include "build/build_config.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

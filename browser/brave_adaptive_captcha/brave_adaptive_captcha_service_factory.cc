@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_adaptive_captcha/brave_adaptive_captcha_service_factory.h"
+#include "BnesBrowser/browser/brave_adaptive_captcha/brave_adaptive_captcha_service_factory.h"
 
 #include <memory>
 #include <string>
@@ -11,18 +11,18 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_delegate.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_delegate.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/storage_partition.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/brave_rewards/rewards_panel_coordinator.h"
+#include "BnesBrowser/browser/ui/brave_rewards/rewards_panel_coordinator.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/profile_browser_collection.h"

@@ -9,7 +9,7 @@
 
 #include "base/feature_list.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/omnibox/browser/open_here_action.h"
+#include "BnesBrowser/components/omnibox/browser/open_here_action.h"
 #include "components/omnibox/common/omnibox_features.h"
 
 #define ConvertOpenTabMatches ConvertOpenTabMatches_Chromium

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/active_campaigns_filter.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/active_campaigns_filter.h"
 
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/test/creative_notification_ad_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/test/creative_notification_ad_test_util.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

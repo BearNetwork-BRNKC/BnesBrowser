@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/common/importer/brave_importer_bridge.h"
-#include "brave/common/importer/profile_import.mojom.h"
+#include "BnesBrowser/common/importer/brave_importer_bridge.h"
+#include "BnesBrowser/common/importer/profile_import.mojom.h"
 #include "chrome/utility/importer/external_process_importer_bridge.h"
 
 class BraveExternalProcessImporterBridge : public ExternalProcessImporterBridge,

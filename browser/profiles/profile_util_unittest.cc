@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/profiles/profile_util.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
 
 #include "base/files/file_path.h"
 #include "base/files/scoped_temp_dir.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"

@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 source_set("brave_account") {
   sources = [
@@ -46,17 +46,17 @@ source_set("brave_account") {
 
   deps = [
     "//base",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_account:internal",
-    "//brave/components/brave_account/endpoint_client",
-    "//brave/components/brave_account/endpoints",
-    "//brave/components/brave_account/mojom",
-    "//brave/components/brave_account/resources",
-    "//brave/components/constants",
-    "//brave/components/password_strength_meter",
-    "//brave/components/password_strength_meter:mojom",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_account:internal",
+    "//BnesBrowser/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/endpoints",
+    "//BnesBrowser/components/brave_account/mojom",
+    "//BnesBrowser/components/brave_account/resources",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/password_strength_meter",
+    "//BnesBrowser/components/password_strength_meter:mojom",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
     "//components/keyed_service/core",
     "//components/os_crypt/async/browser",
     "//components/os_crypt/async/common",
@@ -71,14 +71,14 @@ source_set("brave_account") {
   ]
 
   if (is_android) {
-    deps += [ "//brave/components/brave_account/android:features" ]
+    deps += [ "//BnesBrowser/components/brave_account/android:features" ]
   }
 }
 
 source_set("internal") {
   visibility = [
     ":*",
-    "//brave/components/email_aliases:service",
+    "//BnesBrowser/components/email_aliases:service",
   ]
 
   sources = [
@@ -90,7 +90,7 @@ source_set("internal") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_account/mojom",
+    "//BnesBrowser/components/brave_account/mojom",
     "//components/prefs",
   ]
 }
@@ -103,11 +103,11 @@ source_set("features") {
 
   deps = [
     "//base",
-    "//brave/components/email_aliases/buildflags",
+    "//BnesBrowser/components/email_aliases/buildflags",
   ]
 
   if (enable_email_aliases) {
-    deps += [ "//brave/components/email_aliases:features" ]
+    deps += [ "//BnesBrowser/components/email_aliases:features" ]
   }
 }
 
@@ -122,7 +122,7 @@ source_set("test_support") {
   ]
 
   deps = [
-    "//brave/components/brave_account/mojom",
+    "//BnesBrowser/components/brave_account/mojom",
     "//mojo/public/cpp/bindings",
     "//testing/gmock",
   ]
@@ -150,15 +150,15 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_account:internal",
-    "//brave/components/brave_account:test_support",
-    "//brave/components/brave_account/endpoint_client",
-    "//brave/components/brave_account/endpoint_client:json_test_endpoint_bodies",
-    "//brave/components/brave_account/endpoint_client:test_support",
-    "//brave/components/brave_account/endpoints",
-    "//brave/components/brave_account/mojom",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_account:internal",
+    "//BnesBrowser/components/brave_account:test_support",
+    "//BnesBrowser/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/endpoint_client:json_test_endpoint_bodies",
+    "//BnesBrowser/components/brave_account/endpoint_client:test_support",
+    "//BnesBrowser/components/brave_account/endpoints",
+    "//BnesBrowser/components/brave_account/mojom",
     "//components/os_crypt/async/browser:test_support",
     "//components/os_crypt/async/common",
     "//components/prefs:test_support",
@@ -173,8 +173,8 @@ source_set("unit_tests") {
   if (enable_email_aliases) {
     sources += [ "features_unittest.cc" ]
     deps += [
-      "//brave/components/email_aliases:features",
-      "//brave/components/email_aliases/buildflags",
+      "//BnesBrowser/components/email_aliases:features",
+      "//BnesBrowser/components/email_aliases/buildflags",
     ]
   }
 }

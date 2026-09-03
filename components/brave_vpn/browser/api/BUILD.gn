@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(enable_brave_vpn)
 
@@ -19,10 +19,10 @@ source_set("api") {
 
   deps = [
     "//base",
-    "//brave/components/api_request_helper",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/skus/browser",
     "//components/prefs",
     "//net/traffic_annotation",
     "//services/network/public/cpp",
@@ -43,7 +43,7 @@ source_set("unit_tests") {
     ":api",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common",
     "//testing/gtest",
   ]
 }

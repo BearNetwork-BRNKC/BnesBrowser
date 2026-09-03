@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/renderer/js_solana_provider.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_solana_provider.h"
 
 #include <optional>
 #include <tuple>
@@ -12,14 +12,14 @@
 #include "base/check.h"
 #include "base/no_destructor.h"
 #include "base/notreached.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/brave_wallet_response_helpers.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/solana_utils.h"
-#include "brave/components/brave_wallet/common/web3_provider_constants.h"
-#include "brave/components/brave_wallet/renderer/resource_helper.h"
-#include "brave/components/brave_wallet/renderer/v8_helper.h"
-#include "brave/components/brave_wallet/resources/grit/brave_wallet_script_generated.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_response_helpers.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web3_provider_constants.h"
+#include "BnesBrowser/components/brave_wallet/renderer/resource_helper.h"
+#include "BnesBrowser/components/brave_wallet/renderer/v8_helper.h"
+#include "BnesBrowser/components/brave_wallet/resources/grit/brave_wallet_script_generated.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/grit/brave_components_strings.h"
 #include "content/public/common/isolated_world_ids.h"

@@ -7,13 +7,13 @@
 # is to avoid expensive rebuilds only when the version field is changed.
 action("preprocess_package_json") {
   script = "preprocess_package_json.py"
-  inputs = [ "//brave/package.json" ]
-  outputs = [ "$root_gen_dir/brave/components/common/package.json" ]
+  inputs = [ "//BnesBrowser/package.json" ]
+  outputs = [ "$root_gen_dir/BnesBrowser/components/common/package.json" ]
   args = [
     "--input",
-    rebase_path("//brave/package.json", root_build_dir),
+    rebase_path("//BnesBrowser/package.json", root_build_dir),
     "--output",
-    rebase_path("$root_gen_dir/brave/components/common/package.json",
+    rebase_path("$root_gen_dir/BnesBrowser/components/common/package.json",
                 root_build_dir),
   ]
 }

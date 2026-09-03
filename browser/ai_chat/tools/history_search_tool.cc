@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tools/history_search_tool.h"
+#include "BnesBrowser/browser/ai_chat/tools/history_search_tool.h"
 
 #include <algorithm>
 #include <utility>
@@ -17,9 +17,9 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_input_properties.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_utils.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_input_properties.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "chrome/browser/history_embeddings/history_embeddings_service_factory.h"
 #include "chrome/browser/history_embeddings/history_embeddings_utils.h"
 #include "chrome/browser/profiles/profile.h"

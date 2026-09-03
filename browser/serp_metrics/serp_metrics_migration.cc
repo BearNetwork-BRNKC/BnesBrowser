@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_migration.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_migration.h"
 
 #include <utility>
 
 #include "base/values.h"
-#include "brave/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
 #include "chrome/browser/profiles/profile_attributes_entry.h"
 #include "components/prefs/pref_service.h"
 

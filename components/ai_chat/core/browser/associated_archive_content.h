@@ -9,7 +9,7 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
 #include "url/gurl.h"
 
 namespace ai_chat {

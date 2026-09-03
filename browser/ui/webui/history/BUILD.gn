@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 assert(!is_android)
@@ -26,7 +26,7 @@ source_set("history") {
 
   deps = [
     "//base",
-    "//brave/components/local_ai/buildflags",
+    "//BnesBrowser/components/local_ai/buildflags",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui/webui/page_not_available_for_guest",
     "//chrome/common:constants",
@@ -40,7 +40,7 @@ source_set("history") {
       "brave_history_embeddings_page_handler.h",
     ]
 
-    deps += [ "//brave/components/local_ai/core" ]
+    deps += [ "//BnesBrowser/components/local_ai/core" ]
   }
 }
 

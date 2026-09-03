@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
 
 #include <memory>
 #include <optional>
@@ -18,17 +18,17 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
 #include "base/time/time.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_tab_helper.h"
-#include "brave/components/ai_chat/content/browser/associated_url_content.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_url_content.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 #include "build/build_config.h"
 #include "chrome/browser/favicon/favicon_service_factory.h"
 #include "chrome/browser/history/history_service_factory.h"

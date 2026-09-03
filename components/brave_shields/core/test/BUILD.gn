@@ -16,11 +16,11 @@ source_set("unit_tests") {
     "brave_shields_p3a_unittest.cc",
   ]
   deps = [
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/content/test:test_support",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/content_settings/core/common",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/content/test:test_support",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/content_settings/core/common",
     "//chrome/browser",
     "//chrome/browser/content_settings:content_settings_factory",
     "//chrome/test:test_support",
@@ -30,6 +30,6 @@ source_set("unit_tests") {
 
   if (!is_android) {
     sources += [ "brave_shields_utils_unittest.cc" ]
-    deps += [ "//brave/components/brave_shields/core/browser:test_support" ]
+    deps += [ "//BnesBrowser/components/brave_shields/core/browser:test_support" ]
   }
 }

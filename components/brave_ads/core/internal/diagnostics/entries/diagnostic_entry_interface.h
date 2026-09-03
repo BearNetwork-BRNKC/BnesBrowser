@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/diagnostics/diagnostic_entry_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/diagnostic_entry_types.h"
 
 namespace brave_ads {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_feature_pref_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_feature_pref_util_internal.h"
 
 #include <string_view>
 
@@ -12,7 +12,7 @@
 #include "base/metrics/field_trial_params.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_keyword_path_component_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_keyword_path_component_util.h"
 
 namespace brave_ads {
 

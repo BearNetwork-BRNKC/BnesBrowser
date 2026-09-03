@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
 
 #include <algorithm>
 
@@ -13,11 +13,11 @@
 #include "base/logging.h"
 #include "base/metrics/histogram_functions.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/brave_shields/core/common/brave_shield_utils.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/p3a/utils.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/p3a/utils.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/prefs/pref_registry_simple.h"

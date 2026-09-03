@@ -3,16 +3,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/node_action.gni")
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/build/node_action.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 # Generate a JSON config file with build flags
 generated_file("build_flags_json") {
-  outputs = [ "$root_gen_dir/brave/build_flags.json" ]
+  outputs = [ "$root_gen_dir/BnesBrowser/build_flags.json" ]
 
   contents = {
     enable_ai_chat = enable_ai_chat
@@ -35,20 +35,20 @@ generated_file("build_flags_json") {
 }
 
 node_action("generate_tsconfig") {
-  script = "//brave/build/webpack/generate-ts-config.ts"
+  script = "//BnesBrowser/build/webpack/generate-ts-config.ts"
 
   deps = [
     ":build_flags_json",
-    "//brave/components/common:preprocess_package_json",
+    "//BnesBrowser/components/common:preprocess_package_json",
 
     # Ensure chrome://resources/js file and typescript definitions are
     # generated
     "//ui/webui/resources/js:build_ts",
   ]
   inputs = [
-    "$root_gen_dir/brave/components/common/package.json",
-    "//brave/pnpm-lock.yaml",
-    "//brave/tsconfig-webpack.json",
+    "$root_gen_dir/BnesBrowser/components/common/package.json",
+    "//BnesBrowser/pnpm-lock.yaml",
+    "//BnesBrowser/tsconfig-webpack.json",
     "path-map.ts",
     "ts-config.ts",
   ]
@@ -57,6 +57,6 @@ node_action("generate_tsconfig") {
     "--root-gen-dir=" + rebase_path(root_gen_dir, root_build_dir),
     "--name=tsconfig-webpack.json",
     "--extends-from=" +
-        rebase_path("//brave/tsconfig-webpack.json", root_build_dir),
+        rebase_path("//BnesBrowser/tsconfig-webpack.json", root_build_dir),
   ]
 }

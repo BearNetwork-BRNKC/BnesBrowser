@@ -23,7 +23,7 @@ static_library("serp_metrics") {
 
   public_deps = [
     "//base",
-    "//brave/components/serp_metrics/time_period_storage",
+    "//BnesBrowser/components/serp_metrics/time_period_storage",
     "//components/keyed_service/core",
     "//url",
   ]
@@ -31,7 +31,7 @@ static_library("serp_metrics") {
   deps = [
     ":features",
     ":prefs",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
     "//components/prefs",
     "//components/regional_capabilities",
     "//components/search_engines",
@@ -63,7 +63,7 @@ source_set("test_support") {
 
   deps = [
     "//base",
-    "//brave/components/serp_metrics/time_period_storage",
+    "//BnesBrowser/components/serp_metrics/time_period_storage",
     "//testing/gtest",
   ]
 }
@@ -87,10 +87,10 @@ source_set("unit_tests") {
     ":test_support",
     "//base",
     "//base/test:test_support",
-    "//brave/components/constants",
-    "//brave/components/search_engines",
-    "//brave/components/serp_metrics/time_period_storage:test_support",
-    "//brave/components/serp_metrics/time_period_storage:unit_tests",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/search_engines",
+    "//BnesBrowser/components/serp_metrics/time_period_storage:test_support",
+    "//BnesBrowser/components/serp_metrics/time_period_storage:unit_tests",
     "//components/prefs",
     "//components/prefs:test_support",
     "//components/regional_capabilities",

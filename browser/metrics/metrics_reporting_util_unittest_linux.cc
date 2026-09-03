@@ -4,8 +4,8 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/environment.h"
-#include "brave/browser/metrics/metrics_reporting_util.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/browser/metrics/metrics_reporting_util.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "chrome/common/channel_info.h"
 #include "components/version_info/channel.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_clicked_infobar_delegate.h"
+#include "BnesBrowser/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_clicked_infobar_delegate.h"
 
 #include <memory>
 #include <string_view>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "components/infobars/content/content_infobar_manager.h"
 #include "components/infobars/core/infobar.h"
@@ -24,7 +24,7 @@
 #if BUILDFLAG(IS_ANDROID)
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #else  // BUILDFLAG(IS_ANDROID)
-#include "brave/browser/infobars/brave_confirm_infobar_creator.h"
+#include "BnesBrowser/browser/infobars/brave_confirm_infobar_creator.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 namespace brave_ads {

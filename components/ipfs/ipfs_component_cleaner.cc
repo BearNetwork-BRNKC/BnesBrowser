@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ipfs/ipfs_component_cleaner.h"
+#include "BnesBrowser/components/ipfs/ipfs_component_cleaner.h"
 
 #include "base/files/file_util.h"
 #include "base/path_service.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/ipfs/ipfs_common.h"
+#include "BnesBrowser/components/ipfs/ipfs_common.h"
 #include "build/build_config.h"
 
 namespace ipfs {

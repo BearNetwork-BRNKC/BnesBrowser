@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/browser/request_otr_p3a.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/request_otr/common/pref_names.h"
-#include "brave/components/time_period_storage/monthly_storage.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_p3a.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/request_otr/common/pref_names.h"
+#include "BnesBrowser/components/time_period_storage/monthly_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 
 namespace request_otr::p3a {

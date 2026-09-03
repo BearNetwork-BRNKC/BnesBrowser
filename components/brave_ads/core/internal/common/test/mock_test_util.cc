@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
 
 #include <cstddef>
 #include <optional>
 #include <utility>
 
-#include "brave/components/brave_ads/core/internal/common/test/internal/url_response_test_util_internal.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/history/site_history.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/url_response_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/site_history.h"
 
 namespace brave_ads::test {
 

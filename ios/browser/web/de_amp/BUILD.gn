@@ -15,7 +15,7 @@ source_set("de_amp") {
   deps = [
     ":de_amp_js",
     "//base",
-    "//brave/components/de_amp/common",
+    "//BnesBrowser/components/de_amp/common",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/profile",
     "//ios/web/public",

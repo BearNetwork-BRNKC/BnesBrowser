@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
 assert(enable_brave_wallet)
 
@@ -25,13 +25,13 @@ source_set("renderer") {
 
   deps = [
     "//base",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:common_constants",
-    "//brave/components/brave_wallet/common:mojom",
-    "//brave/components/brave_wallet/resources:ethereum_provider_generated_resources",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/safe_builtins/renderer",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/components/brave_wallet/common:mojom",
+    "//BnesBrowser/components/brave_wallet/resources:ethereum_provider_generated_resources",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/safe_builtins/renderer",
     "//content/public/common",
     "//content/public/renderer",
     "//gin",

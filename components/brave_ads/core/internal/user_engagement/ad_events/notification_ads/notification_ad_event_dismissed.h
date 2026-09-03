@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_USER_ENGAGEMENT_AD_EVENTS_NOTIFICATION_ADS_NOTIFICATION_AD_EVENT_DISMISSED_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_USER_ENGAGEMENT_AD_EVENTS_NOTIFICATION_ADS_NOTIFICATION_AD_EVENT_DISMISSED_H_
 
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_interface.h"
 
 namespace brave_ads {
 

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/policy/handlers/brave_fingerprinting_v2_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_fingerprinting_v2_policy_handler.h"
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/containers/map_util.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/policy/core/browser/configuration_policy_handler.h"
 #include "components/policy/policy_constants.h"

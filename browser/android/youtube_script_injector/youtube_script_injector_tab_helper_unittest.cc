@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
 
 #include "chrome/test/base/chrome_render_view_host_test_harness.h"
 #include "content/public/test/web_contents_tester.h"

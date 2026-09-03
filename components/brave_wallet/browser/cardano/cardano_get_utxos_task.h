@@ -13,8 +13,8 @@
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_schema.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 
 namespace brave_wallet {
 class CardanoWalletService;

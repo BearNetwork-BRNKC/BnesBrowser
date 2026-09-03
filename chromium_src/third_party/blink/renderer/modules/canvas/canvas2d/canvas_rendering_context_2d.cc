@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/modules/canvas/canvas2d/canvas_rendering_context_2d.h"
 
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 
 #define getImageDataInternal getImageDataInternal_Unused
 #include <third_party/blink/renderer/modules/canvas/canvas2d/canvas_rendering_context_2d.cc>

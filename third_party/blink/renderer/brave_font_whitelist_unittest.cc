@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/brave_font_whitelist.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_font_whitelist.h"
 
 #include <array>
 #include <string>

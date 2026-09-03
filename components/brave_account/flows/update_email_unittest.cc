@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/update_email.h"
+#include "BnesBrowser/components/brave_account/flows/update_email.h"
 
 #include <optional>
 #include <string>
@@ -14,12 +14,12 @@
 #include "base/timer/timer.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/brave_account/brave_account_service_constants.h"
-#include "brave/components/brave_account/brave_account_service_test.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/endpoints/auth_validate.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_constants.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_test.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/endpoints/auth_validate.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "net/http/http_status_code.h"
 #include "testing/gtest/include/gtest/gtest.h"

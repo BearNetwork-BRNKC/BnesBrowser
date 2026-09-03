@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/api/device_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/device_endpoints.h"
 
 #include "base/values.h"
-#include "brave/components/brave_vpn/browser/v2/api/transport_protocol.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/transport_protocol.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_vpn::v2::endpoints {

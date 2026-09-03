@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/oblivious_http/oblivious_http_chunk_processor.h"
+#include "BnesBrowser/components/oblivious_http/oblivious_http_chunk_processor.h"
 
 #include "base/check.h"
 #include "base/memory/ptr_util.h"

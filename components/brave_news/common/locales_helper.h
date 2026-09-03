@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/containers/flat_set.h"
-#include "brave/components/brave_news/common/types.h"
+#include "BnesBrowser/components/brave_news/common/types.h"
 
 namespace brave_news {
 

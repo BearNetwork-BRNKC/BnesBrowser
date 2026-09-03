@@ -10,9 +10,9 @@
 
 #include "base/functional/callback.h"
 #include "base/sequence_checker.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider.h"
-#include "brave/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_filters_provider_manager.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 namespace brave_shields {

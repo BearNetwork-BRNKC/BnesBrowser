@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/brave_account/brave_account_service_factory_ios.h"
+#include "BnesBrowser/ios/browser/brave_account/brave_account_service_factory_ios.h"
 
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/features.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/browser_state.h"

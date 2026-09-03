@@ -6,7 +6,7 @@
 #include "chrome/browser/ui/views/tabs/tab_strip_layout_helper.h"
 
 #include "base/check.h"
-#include "brave/browser/ui/views/tabs/brave_tab_strip.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip.h"
 
 #define CalculateTabBounds                                      \
   use_vertical_tabs_&& FillGroupInfo(tab_widths) &&             \

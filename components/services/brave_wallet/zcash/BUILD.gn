@@ -6,7 +6,7 @@
 import("//mojo/public/tools/bindings/mojom.gni")
 
 source_set("zcash_decoder") {
-  visibility = [ "//brave/components/services/brave_wallet/*" ]
+  visibility = [ "//BnesBrowser/components/services/brave_wallet/*" ]
 
   sources = [
     "zcash_decoder.cc",
@@ -15,10 +15,10 @@ source_set("zcash_decoder") {
 
   deps = [
     "//base",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/services/brave_wallet/public/cpp/utils",
-    "//brave/components/services/brave_wallet/public/mojom",
-    "//brave/components/services/brave_wallet/public/proto:zcash_proto",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/services/brave_wallet/public/cpp/utils",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/services/brave_wallet/public/proto:zcash_proto",
   ]
 }
 
@@ -28,11 +28,11 @@ source_set("zcash_decoder_unit_tests") {
 
   deps = [
     "//base/test:test_support",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:test_support",
-    "//brave/components/services/brave_wallet/public/cpp/utils",
-    "//brave/components/services/brave_wallet/public/proto:zcash_proto",
-    "//brave/components/services/brave_wallet/zcash:zcash_decoder",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:test_support",
+    "//BnesBrowser/components/services/brave_wallet/public/cpp/utils",
+    "//BnesBrowser/components/services/brave_wallet/public/proto:zcash_proto",
+    "//BnesBrowser/components/services/brave_wallet/zcash:zcash_decoder",
     "//testing/gtest",
   ]
 }

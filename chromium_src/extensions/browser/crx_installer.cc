@@ -16,7 +16,7 @@
 
 #include <optional>
 
-#include "brave/browser/extensions/bnes_extension_constants.h"
+#include "BnesBrowser/browser/extensions/bnes_extension_constants.h"
 #include "extensions/browser/install/crx_install_error.h"
 #include "extensions/common/extension.h"
 

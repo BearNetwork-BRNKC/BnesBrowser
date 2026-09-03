@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/challenge_bypass_ristretto/verification_key.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/verification_key.h"
 
 #include <utility>
 
-#include "brave/components/challenge_bypass_ristretto/rust/cxx/src/lib.rs.h"
-#include "brave/components/challenge_bypass_ristretto/verification_signature.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/rust/cxx/src/lib.rs.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/verification_signature.h"
 
 namespace challenge_bypass_ristretto {
 

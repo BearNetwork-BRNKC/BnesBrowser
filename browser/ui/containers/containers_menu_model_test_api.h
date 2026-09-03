@@ -8,8 +8,8 @@
 
 #include <vector>
 
-#include "brave/browser/ui/containers/container_model.h"
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 
 namespace containers::test {
 

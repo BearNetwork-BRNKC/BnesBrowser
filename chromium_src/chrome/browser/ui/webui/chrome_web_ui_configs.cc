@@ -5,21 +5,21 @@
 
 #include "chrome/browser/ui/webui/chrome_web_ui_configs.h"
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_education/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
 #include "content/public/browser/webui_config_map.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #define RegisterChromeWebUIConfigs RegisterChromeWebUIConfigs_ChromiumImpl
@@ -28,56 +28,56 @@
 #undef RegisterChromeWebUIConfigs
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
 #endif
 #endif
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
+#include "BnesBrowser/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
 #endif
-#include "brave/browser/ui/webui/brave_settings_ui.h"
-#include "brave/browser/ui/webui/brave_shields/shields_panel_ui.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page_ui.h"
-#include "brave/browser/ui/webui/history/brave_history_ui.h"
-#include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
-#include "brave/browser/ui/webui/webcompat_reporter/webcompat_reporter_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_settings_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_shields/shields_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_ui.h"
+#include "BnesBrowser/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/webcompat_reporter/webcompat_reporter_ui.h"
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
+#include "BnesBrowser/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
 #endif
 
 #else  // !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_account/brave_account_ui_android.h"
-#include "brave/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui_config.h"
+#include "BnesBrowser/browser/ui/webui/brave_account/brave_account_ui_android.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui_config.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
 
-#include "brave/browser/ui/webui/brave_adblock_internals_ui.h"
-#include "brave/browser/ui/webui/brave_adblock_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_adblock_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_adblock_ui.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/ui/webui/ads_internals/ads_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/browser/ui/webui/brave_education/brave_education_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_page_ui.h"
 #endif
 
 #if BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED)
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
-#include "brave/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_ui.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_ui.h"
 #endif
 
 namespace {

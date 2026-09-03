@@ -9,7 +9,7 @@
 #include <cstddef>
 #include <optional>
 
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_token_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_token_info.h"
 
 namespace brave_ads {
 

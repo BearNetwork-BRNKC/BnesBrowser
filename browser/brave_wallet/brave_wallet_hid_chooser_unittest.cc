@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_wallet/brave_wallet_hid_chooser.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_hid_chooser.h"
 
 #include <memory>
 #include <utility>

@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/extensions/updater/features.h"
+#include "BnesBrowser/browser/extensions/updater/features.h"
 
 #include <chrome/browser/extensions/updater/extension_updater_unittest.cc>
 

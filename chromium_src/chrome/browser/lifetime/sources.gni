@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_chrome_browser_lifetime_impl_deps =
-    [ "//brave/browser:sparkle_buildflags" ]
+    [ "//BnesBrowser/browser:sparkle_buildflags" ]

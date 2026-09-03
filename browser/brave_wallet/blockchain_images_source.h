@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_wallet/browser/blockchain_images_source_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_images_source_base.h"
 #include "content/public/browser/url_data_source.h"
 
 class Profile;

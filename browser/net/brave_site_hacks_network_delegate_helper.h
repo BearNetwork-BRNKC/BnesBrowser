@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_NET_BRAVE_SITE_HACKS_NETWORK_DELEGATE_HELPER_H_
 #define BRAVE_BROWSER_NET_BRAVE_SITE_HACKS_NETWORK_DELEGATE_HELPER_H_
 
-#include "brave/browser/net/url_context.h"
+#include "BnesBrowser/browser/net/url_context.h"
 
 namespace net {
 class URLRequest;

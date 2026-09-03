@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/suggestions_controller.h"
+#include "BnesBrowser/components/brave_news/browser/suggestions_controller.h"
 
 #include <memory>
 #include <utility>
@@ -12,11 +12,11 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_news/browser/background_history_querier.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/history/core/browser/url_row.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"

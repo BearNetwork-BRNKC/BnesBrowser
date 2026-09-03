@@ -8,13 +8,13 @@
 
 #include <optional>
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry_id.h"
 #include "chrome/browser/ui/tabs/split_tab_metrics.h"
 #include "chrome/browser/ui/tabs/tab_model.h"
@@ -30,7 +30,7 @@ class ActionItem;
 }
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 #endif
 
 class Browser;

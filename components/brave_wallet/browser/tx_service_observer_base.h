@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_WALLET_BROWSER_TX_SERVICE_OBSERVER_BASE_H_
 #define BRAVE_COMPONENTS_BRAVE_WALLET_BROWSER_TX_SERVICE_OBSERVER_BASE_H_
 
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_WALLET));
 namespace brave_wallet {

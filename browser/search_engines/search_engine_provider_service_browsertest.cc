@@ -8,17 +8,17 @@
 
 #include "base/check.h"
 #include "base/path_service.h"
-#include "brave/browser/profile_resetter/brave_profile_resetter.h"
-#include "brave/browser/profiles/brave_profile_manager.h"
-#include "brave/browser/profiles/profile_util.h"
-#include "brave/browser/search_engines/pref_names.h"
-#include "brave/browser/search_engines/search_engine_provider_service_factory.h"
-#include "brave/browser/search_engines/search_engine_provider_util.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/l10n/common/test/scoped_default_locale.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/browser/profile_resetter/brave_profile_resetter.h"
+#include "BnesBrowser/browser/profiles/brave_profile_manager.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
+#include "BnesBrowser/browser/search_engines/pref_names.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_service_factory.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_util.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/l10n/common/test/scoped_default_locale.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/profile_resetter/brandcoded_default_settings.h"
 #include "chrome/browser/profile_resetter/profile_resetter_test_base.h"
@@ -56,7 +56,7 @@
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 #endif
 
 using SearchEngineProviderServiceTest = InProcessBrowserTest;

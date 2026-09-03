@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/host_os_constants.gni")
-import("//brave/build/rust/rust_host_toolchain.gni")
+import("//BnesBrowser/build/host_os_constants.gni")
+import("//BnesBrowser/build/rust/rust_host_toolchain.gni")
 
 template("rust_to_wasm") {
   assert(defined(invoker.rust_packages),
@@ -17,7 +17,7 @@ template("rust_to_wasm") {
   }
 
   action_foreach(target_name) {
-    deps = [ "//brave/tools/crates:wasm_crates($host_toolchain)" ]
+    deps = [ "//BnesBrowser/tools/crates:wasm_crates($host_toolchain)" ]
     if (defined(invoker.deps)) {
       deps += invoker.deps
     }
@@ -34,7 +34,7 @@ template("rust_to_wasm") {
     }
     inputs += rust_host_inputs
 
-    script = "//brave/build/gn_run_rsp.py"
+    script = "//BnesBrowser/build/gn_run_rsp.py"
     args = [ "{{response_file_name}}" ]
 
     wasm_pack_target = "bundler"

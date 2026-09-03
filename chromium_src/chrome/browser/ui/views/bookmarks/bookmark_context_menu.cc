@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/bookmarks/bookmark_context_menu.h"
 
-#include "brave/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
 
 // Upstream's `BookmarkContextMenu` constructor only descends into the submenu
 // whose command id is `IDC_BOOKMARK_BAR_SUBMENU` which is only created when

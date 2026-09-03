@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
 
 #include <memory>
 #include <string>
@@ -11,10 +11,10 @@
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/brave_vpn/vpn_utils.h"
-#include "brave/components/brave_vpn/resources/panel/grit/brave_vpn_panel_generated_map.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/resources/panel/grit/brave_vpn_panel_generated_map.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"

@@ -7,7 +7,7 @@
 #define BRAVE_IOS_BROWSER_API_BRAVE_SHIELDS_ADBLOCK_FILTER_LIST_CATALOG_ENTRY_PRIVATE_H_
 
 #import <Foundation/Foundation.h>
-#include "brave/ios/browser/api/brave_shields/adblock_filter_list_catalog_entry.h"
+#include "BnesBrowser/ios/browser/api/brave_shields/adblock_filter_list_catalog_entry.h"
 
 namespace brave_shields {
 class FilterListCatalogEntry;

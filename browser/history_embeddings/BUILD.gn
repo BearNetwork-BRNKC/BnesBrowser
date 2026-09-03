@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
 assert(enable_local_ai)
 
@@ -40,7 +40,7 @@ source_set("unit_tests") {
     ":history_embeddings",
     "//base",
     "//base/test:test_support",
-    "//brave/components/local_ai/core",
+    "//BnesBrowser/components/local_ai/core",
     "//components/optimization_guide/core",
     "//components/optimization_guide/proto:optimization_guide_proto",
     "//components/passage_embeddings/core",
@@ -58,8 +58,8 @@ source_set("browser_tests") {
   deps = [
     ":open_tab_search",
     "//base",
-    "//brave/components/constants",
-    "//brave/components/history_embeddings:test_support",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/history_embeddings:test_support",
     "//chrome/browser/history",
     "//chrome/browser/profiles",
     "//chrome/browser/ui",
@@ -99,8 +99,8 @@ source_set("history_embeddings") {
   ]
 
   deps = [
-    "//brave/components/history_embeddings",
-    "//brave/components/local_ai/core",
+    "//BnesBrowser/components/history_embeddings",
+    "//BnesBrowser/components/local_ai/core",
     "//chrome/browser:browser_public_dependencies",
     "//chrome/browser/profiles",
     "//components/history_embeddings/core",

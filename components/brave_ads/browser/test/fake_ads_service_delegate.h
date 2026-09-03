@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
 
 class GURL;
 

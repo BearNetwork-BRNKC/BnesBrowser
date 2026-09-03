@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/startup/brave_startup_tab_provider_impl.h"
+#include "BnesBrowser/browser/ui/startup/brave_startup_tab_provider_impl.h"
 
 #include "base/command_line.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/first_run/first_run.h"
 #include "chrome/browser/ui/startup/startup_tab.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/components/containers/core/browser/command_line_container.h"
-#include "brave/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/components/containers/core/browser/command_line_container.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 StartupTabs BraveStartupTabProviderImpl::GetDistributionFirstRunTabs(

@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_account/brave_account_navigation_throttle.h"
+#include "BnesBrowser/browser/brave_account/brave_account_navigation_throttle.h"
 
 #include "base/check.h"
 #include "base/memory/ptr_util.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/navigation_throttle_registry.h"
 #include "content/public/common/url_constants.h"

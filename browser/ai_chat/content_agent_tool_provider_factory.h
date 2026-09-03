@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider_factory.h"
 
 class Profile;
 

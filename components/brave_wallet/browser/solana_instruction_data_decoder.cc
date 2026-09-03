@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/solana_instruction_data_decoder.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_data_decoder.h"
 
 #include <optional>
 #include <tuple>
@@ -19,10 +19,10 @@
 #include "base/numerics/checked_math.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_view_util.h"
-#include "brave/components/brave_wallet/browser/solana_instruction_builder.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/solana_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction_builder.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_utils.h"
 #include "build/build_config.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 
 transpile_web_ui("internals") {
   output_module = false
@@ -13,5 +13,5 @@ transpile_web_ui("internals") {
       ] ]
 
   resource_name = "tor_internals"
-  imports_from = [ "//brave/components/tor/resources/internals/" ]
+  imports_from = [ "//BnesBrowser/components/tor/resources/internals/" ]
 }

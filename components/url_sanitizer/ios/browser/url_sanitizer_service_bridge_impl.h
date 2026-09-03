@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/url_sanitizer/ios/browser/url_sanitizer_service_bridge.h"
+#include "BnesBrowser/components/url_sanitizer/ios/browser/url_sanitizer_service_bridge.h"
 
 namespace brave {
 class URLSanitizerService;

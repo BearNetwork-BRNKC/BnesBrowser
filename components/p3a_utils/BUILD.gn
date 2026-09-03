@@ -11,7 +11,7 @@ static_library("p3a_utils") {
 
   deps = [
     "//base",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/time_period_storage",
     "//components/prefs",
   ]
 }

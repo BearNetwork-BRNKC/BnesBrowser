@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_info.h"
 
 namespace brave_ads {
 

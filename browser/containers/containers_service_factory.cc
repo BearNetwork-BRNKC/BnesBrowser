@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/browser/containers/containers_service_delegate.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/browser/prefs_registration.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/containers_service_delegate.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"
 #include "chrome/browser/sessions/tab_restore_service_factory.h"

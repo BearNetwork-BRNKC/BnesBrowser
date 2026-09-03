@@ -14,11 +14,11 @@
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/common/timer/timer.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_observer.h"
-#include "brave/components/brave_ads/core/public/ad_units/ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/timer/timer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/site_visit/site_visit_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/ad_info.h"
 
 namespace base {
 class TimeDelta;

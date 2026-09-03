@@ -23,7 +23,7 @@
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_referrals/browser/android_brave_referrer.h"
+#include "BnesBrowser/components/brave_referrals/browser/android_brave_referrer.h"
 #endif
 
 class PrefRegistrySimple;

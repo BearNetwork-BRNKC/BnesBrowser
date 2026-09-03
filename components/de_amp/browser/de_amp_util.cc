@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/de_amp/browser/de_amp_util.h"
+#include "BnesBrowser/components/de_amp/browser/de_amp_util.h"
 
 #include <utility>
 
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/components/de_amp/common/features.h"
-#include "brave/components/de_amp/common/pref_names.h"
+#include "BnesBrowser/components/de_amp/common/features.h"
+#include "BnesBrowser/components/de_amp/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/re2/src/re2/re2.h"
 

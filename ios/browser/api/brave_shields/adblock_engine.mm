@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_shields/adblock_engine.h"
+#include "BnesBrowser/ios/browser/api/brave_shields/adblock_engine.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/foundation_util.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/base/apple/foundation_util.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "This file requires ARC support."

@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/timer/timer.h"
-#include "brave/browser/ui/views/brave_help_bubble/brave_help_bubble_delegate_view.h"
+#include "BnesBrowser/browser/ui/views/brave_help_bubble/brave_help_bubble_delegate_view.h"
 #include "ui/views/interaction/element_tracker_views.h"
 #include "ui/views/view.h"
 #include "ui/views/widget/widget_observer.h"

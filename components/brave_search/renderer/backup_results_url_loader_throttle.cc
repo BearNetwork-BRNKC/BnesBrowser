@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_search/renderer/backup_results_url_loader_throttle.h"
+#include "BnesBrowser/components/brave_search/renderer/backup_results_url_loader_throttle.h"
 
 #include <algorithm>
 #include <string_view>
 
-#include "brave/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
 #include "net/base/net_errors.h"
 #include "services/network/public/cpp/resource_request.h"
 

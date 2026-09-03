@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_news/brave_news_controller_factory.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/browser/brave_news/direct_feed_fetcher_delegate_impl.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/browser/brave_news/direct_feed_fetcher_delegate_impl.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
 #include "build/build_config.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/favicon/favicon_service_factory.h"
@@ -24,7 +24,7 @@
 #include "content/public/browser/browser_context.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/brave_news/brave_news_controller_delegate_impl.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_delegate_impl.h"
 #endif
 
 namespace brave_news {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/local_ai/core/on_device_speech_models_state.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_state.h"
 
 #include "base/files/file_path.h"
 #include "base/no_destructor.h"

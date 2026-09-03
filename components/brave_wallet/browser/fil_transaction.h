@@ -12,8 +12,8 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
 
 namespace brave_wallet {
 

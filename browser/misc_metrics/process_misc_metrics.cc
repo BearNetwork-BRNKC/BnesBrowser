@@ -3,28 +3,28 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/misc_metrics/doh_metrics.h"
-#include "brave/browser/misc_metrics/media_session_metrics_impl.h"
-#include "brave/browser/misc_metrics/uptime_monitor_impl.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/misc_metrics/default_browser_monitor.h"
+#include "BnesBrowser/browser/misc_metrics/doh_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h"
+#include "BnesBrowser/browser/misc_metrics/uptime_monitor_impl.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/default_browser_monitor.h"
 #include "build/buildflag.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/widevine/cdm/buildflags.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/misc_metrics/default_browser_monitor_delegate_impl.h"
-#include "brave/browser/misc_metrics/vertical_tab_metrics.h"
-#include "brave/components/misc_metrics/menu_metrics.h"
-#include "brave/components/misc_metrics/new_tab_metrics.h"
-#include "brave/components/misc_metrics/split_view_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/default_browser_monitor_delegate_impl.h"
+#include "BnesBrowser/browser/misc_metrics/vertical_tab_metrics.h"
+#include "BnesBrowser/components/misc_metrics/menu_metrics.h"
+#include "BnesBrowser/components/misc_metrics/new_tab_metrics.h"
+#include "BnesBrowser/components/misc_metrics/split_view_metrics.h"
 #else
-#include "brave/components/misc_metrics/privacy_hub_metrics.h"
-#include "brave/components/misc_metrics/tab_metrics.h"
+#include "BnesBrowser/components/misc_metrics/privacy_hub_metrics.h"
+#include "BnesBrowser/components/misc_metrics/tab_metrics.h"
 #endif
 
 namespace misc_metrics {

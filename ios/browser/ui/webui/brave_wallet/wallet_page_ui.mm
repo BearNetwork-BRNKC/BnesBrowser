@@ -3,25 +3,25 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_ui.h"
 
 #include <string>
 #include <string_view>
 #include <utility>
 
 #include "base/command_line.h"
-#include "brave/components/brave_wallet/browser/blockchain_registry.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/brave_wallet_page/resources/grit/brave_wallet_page_generated_map.h"
-#include "brave/ios/browser/brave_wallet/blockchain_images_source.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/ios/browser/ui/webui/sanitized_image_source.h"
-#include "brave/ios/web/webui/brave_web_ui_ios_data_source.h"
-#include "brave/ios/web/webui/brave_webui_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_registry.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet_page/resources/grit/brave_wallet_page_generated_map.h"
+#include "BnesBrowser/ios/browser/brave_wallet/blockchain_images_source.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/ios/browser/ui/webui/sanitized_image_source.h"
+#include "BnesBrowser/ios/web/webui/brave_web_ui_ios_data_source.h"
+#include "BnesBrowser/ios/web/webui/brave_webui_utils.h"
 #include "components/grit/brave_components_resources.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/web_state.h"

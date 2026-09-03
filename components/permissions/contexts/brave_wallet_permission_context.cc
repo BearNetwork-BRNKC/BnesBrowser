@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/permissions/contexts/brave_wallet_permission_context.h"
+#include "BnesBrowser/components/permissions/contexts/brave_wallet_permission_context.h"
 
 #include <optional>
 #include <utility>
@@ -12,9 +12,9 @@
 #include "base/check.h"
 #include "base/strings/string_util.h"
 #include "base/types/zip.h"
-#include "brave/components/brave_wallet/browser/permission_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/permissions/permission_lifetime_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_utils.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/content_settings/core/common/content_settings_types.h"

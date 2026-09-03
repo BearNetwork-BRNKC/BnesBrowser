@@ -3,17 +3,17 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_testing_shard_tree.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_testing_shard_tree.h"
 
 #include <memory>
 #include <string>
 #include <utility>
 
 #include "base/check_is_test.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/cxx_orchard_shard_tree_delegate.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/lib.rs.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle_impl.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_shard_tree.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/cxx_orchard_shard_tree_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/lib.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_shard_tree.h"
 
 namespace brave_wallet::orchard {
 

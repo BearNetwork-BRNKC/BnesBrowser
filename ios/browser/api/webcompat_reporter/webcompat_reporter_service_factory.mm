@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/webcompat_reporter/webcompat_reporter_service_factory.h"
+#include "BnesBrowser/ios/browser/api/webcompat_reporter/webcompat_reporter_service_factory.h"
 
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_service.h"
-#include "brave/components/webcompat_reporter/common/pref_names.h"
-#include "brave/ios/browser/api/webcompat_reporter/webcompat_reporter_service_delegate.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_service.h"
+#include "BnesBrowser/components/webcompat_reporter/common/pref_names.h"
+#include "BnesBrowser/ios/browser/api/webcompat_reporter/webcompat_reporter_service_delegate.h"
 #include "components/pref_registry/pref_registry_syncable.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

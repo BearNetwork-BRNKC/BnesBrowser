@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/application_state/browser_version.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_version.h"
 
 namespace brave_ads::test {
 

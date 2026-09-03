@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/omnibox/browser/brave_on_device_head_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_on_device_head_provider.h"
 
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "components/omnibox/browser/autocomplete_provider_client.h"
 #include "components/omnibox/browser/autocomplete_provider_listener.h"
 #include "components/prefs/pref_service.h"

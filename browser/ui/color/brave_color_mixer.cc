@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/color/brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_color_mixer.h"
 
 #include "base/numerics/safe_conversions.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/color/color_palette.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/ui/color/brave_ref_color_mixer.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/color/color_palette.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/ui/color/brave_ref_color_mixer.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/themes/theme_properties.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "chrome/browser/ui/color/chrome_color_provider_utils.h"
@@ -32,13 +32,13 @@
 #include "ui/native_theme/native_theme.h"
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/ui/color/playlist/playlist_color_mixer.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/browser/ui/color/playlist/playlist_color_mixer.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
-#include "brave/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
 #endif  // defined(TOOLKIT_VIEWS)
 
 namespace {

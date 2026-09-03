@@ -27,7 +27,7 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/json",
+    "//BnesBrowser/components/json",
     "//testing/gtest",
   ]
 }

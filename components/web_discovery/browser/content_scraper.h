@@ -13,8 +13,8 @@
 #include "base/containers/flat_map.h"
 #include "base/functional/callback.h"
 #include "base/values.h"
-#include "brave/components/web_discovery/browser/server_config_loader.h"
-#include "brave/components/web_discovery/common/web_discovery.mojom.h"
+#include "BnesBrowser/components/web_discovery/browser/server_config_loader.h"
+#include "BnesBrowser/components/web_discovery/common/web_discovery.mojom.h"
 #include "url/gurl.h"
 
 namespace web_discovery {

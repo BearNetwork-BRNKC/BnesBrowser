@@ -11,7 +11,7 @@
 #include "base/callback_list.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
 #include "chrome/browser/ui/views/frame/browser_frame_view_mac.h"
 
 class BraveWindowFrameGraphic;

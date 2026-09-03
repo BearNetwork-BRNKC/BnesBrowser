@@ -4,8 +4,8 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_web_view_public_headers = [
-  "//brave/ios/browser/api/web_view/autofill/autofill_credit_card_util.h",
-  "//brave/ios/browser/api/web_view/brave_web_frame.h",
-  "//brave/ios/browser/api/web_view/brave_web_view_configuration.h",
-  "//brave/ios/browser/api/web_view/brave_web_view.h",
+  "//BnesBrowser/ios/browser/api/web_view/autofill/autofill_credit_card_util.h",
+  "//BnesBrowser/ios/browser/api/web_view/brave_web_frame.h",
+  "//BnesBrowser/ios/browser/api/web_view/brave_web_view_configuration.h",
+  "//BnesBrowser/ios/browser/api/web_view/brave_web_view.h",
 ]

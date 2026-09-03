@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_sync/brave_sync_p3a.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_p3a.h"
 
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "components/sync/base/user_selectable_type.h"
 
 namespace brave_sync::p3a {

@@ -11,7 +11,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/time/time.h"
-#include "brave/components/misc_metrics/common/misc_metrics.mojom.h"
+#include "BnesBrowser/components/misc_metrics/common/misc_metrics.mojom.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"
 
 class PrefService;

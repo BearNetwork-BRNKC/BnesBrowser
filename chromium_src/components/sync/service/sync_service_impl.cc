@@ -6,9 +6,9 @@
 #include "components/sync/service/sync_service_impl.h"
 
 #include "base/logging.h"
-#include "brave/components/brave_sync/brave_sync_prefs.h"
-#include "brave/components/sync/service/brave_sync_auth_manager.h"
-#include "brave/components/sync/service/brave_sync_stopped_reporter.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_prefs.h"
+#include "BnesBrowser/components/sync/service/brave_sync_auth_manager.h"
+#include "BnesBrowser/components/sync/service/brave_sync_stopped_reporter.h"
 #include "components/prefs/pref_service.h"
 #include "components/sync/base/sync_util.h"
 

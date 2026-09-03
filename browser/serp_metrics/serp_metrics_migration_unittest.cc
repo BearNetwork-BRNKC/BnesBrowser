@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_migration.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_migration.h"
 
 #include <memory>
 #include <utility>
@@ -12,11 +12,11 @@
 #include "base/files/file_path.h"
 #include "base/test/task_environment.h"
 #include "base/time/time.h"
-#include "brave/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_pref_time_period_store_factory.h"
+#include "BnesBrowser/browser/serp_metrics/profile_attributes_time_period_store_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_pref_time_period_store_factory.h"
 #include "chrome/browser/profiles/profile_attributes_entry.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"
 #include "components/prefs/pref_registry_simple.h"

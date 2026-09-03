@@ -11,10 +11,10 @@
 #include <string_view>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_shields/core/common/farbling_prng.h"
-#include "brave/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
-#include "brave/third_party/blink/renderer/brave_farbling_constants.h"
-#include "brave/third_party/blink/renderer/platform/brave_audio_farbling_helper.h"
+#include "BnesBrowser/components/brave_shields/core/common/farbling_prng.h"
+#include "BnesBrowser/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_farbling_constants.h"
+#include "BnesBrowser/third_party/blink/renderer/platform/brave_audio_farbling_helper.h"
 #include "components/content_settings/core/common/content_settings_types.h"
 #include "third_party/blink/public/common/user_agent/user_agent_metadata.h"
 #include "third_party/blink/renderer/core/core_export.h"

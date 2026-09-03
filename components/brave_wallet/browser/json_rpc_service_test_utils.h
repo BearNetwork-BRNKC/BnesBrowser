@@ -9,8 +9,8 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_WALLET));
 namespace brave_wallet {

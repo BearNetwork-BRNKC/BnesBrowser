@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_NET_BRAVE_AD_BLOCK_TP_NETWORK_DELEGATE_HELPER_H_
 #define BRAVE_BROWSER_NET_BRAVE_AD_BLOCK_TP_NETWORK_DELEGATE_HELPER_H_
 
-#include "brave/browser/net/url_context.h"
+#include "BnesBrowser/browser/net/url_context.h"
 
 namespace network {
 class HostResolver;

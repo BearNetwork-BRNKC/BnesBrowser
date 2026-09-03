@@ -12,7 +12,7 @@ source_set("unit_tests") {
 
   deps = [
     "//base",
-    "//brave/components/p3a",
+    "//BnesBrowser/components/p3a",
     "//chrome/browser/ui",
     "//chrome/test:test_support",
     "//components/prefs",

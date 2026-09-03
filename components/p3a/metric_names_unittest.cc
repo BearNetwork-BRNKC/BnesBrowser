@@ -6,7 +6,7 @@
 #include <string>
 
 #include "base/logging.h"
-#include "brave/components/p3a/metric_names.h"
+#include "BnesBrowser/components/p3a/metric_names.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 // npm run test -- brave_unit_tests --filter=P3AMetrics*

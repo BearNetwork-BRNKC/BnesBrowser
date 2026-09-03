@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
 #include "chrome/browser/profiles/profile_keyed_service_factory.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "content/public/browser/browser_context.h"

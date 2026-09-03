@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_table.h"
 
 #include <vector>
 
 #include "base/test/test_future.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_util.h"
-#include "brave/components/brave_ads/core/internal/history/test/ad_history_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_feature.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/test/ad_history_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_feature.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_item_info.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

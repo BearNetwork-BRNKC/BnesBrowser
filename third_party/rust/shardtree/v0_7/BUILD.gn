@@ -12,18 +12,18 @@ cargo_crate("lib") {
   crate_name = "shardtree"
   epoch = "0.7"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/batch.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/legacy.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/prunable.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store/caching.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store/memory.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/testing.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/tree.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/batch.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/legacy.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/prunable.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store/caching.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/store/memory.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/testing.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/shardtree-v0_7/src/tree.rs",
   ]
   inputs = []
 
@@ -38,10 +38,10 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/bitflags/v2:lib",
-    "//brave/third_party/rust/either/v1:lib",
-    "//brave/third_party/rust/incrementalmerkletree/v0_8:lib",
-    "//brave/third_party/rust/tracing/v0_1:lib",
+    "//BnesBrowser/third_party/rust/bitflags/v2:lib",
+    "//BnesBrowser/third_party/rust/either/v1:lib",
+    "//BnesBrowser/third_party/rust/incrementalmerkletree/v0_8:lib",
+    "//BnesBrowser/third_party/rust/tracing/v0_1:lib",
   ]
   features = [ "legacy-api" ]
   rustenv = []

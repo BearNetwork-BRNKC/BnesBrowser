@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 #include "url/origin.h"
 

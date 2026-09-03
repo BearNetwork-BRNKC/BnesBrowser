@@ -5,9 +5,9 @@
 
 # We have to do via sources to avoid circular dependencies.
 brave_browser_bookmarks_android_sources = [
-  "//brave/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkDelegate.java",
-  "//brave/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkModel.java",
-  "//brave/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkUiPrefs.java",
+  "//BnesBrowser/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkDelegate.java",
+  "//BnesBrowser/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkModel.java",
+  "//BnesBrowser/browser/bookmarks/android/java/src/org/chromium/chrome/browser/bookmarks/BraveBookmarkUiPrefs.java",
 ]
 
 # Additional deps for //chrome/browser/bookmarks/android:impl to support

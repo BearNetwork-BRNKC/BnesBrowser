@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
 
 #include <optional>
 #include <vector>
@@ -13,7 +13,7 @@
 #include "base/containers/span_rust.h"
 #include "base/containers/to_vector.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/browser/internal/cardano_tx_decoder.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/cardano_tx_decoder.rs.h"
 
 namespace brave_wallet {
 

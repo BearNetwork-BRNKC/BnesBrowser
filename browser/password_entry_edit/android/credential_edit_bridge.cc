@@ -7,7 +7,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/password_entry_edit/android/credential_edit_bridge.h"
+#include "BnesBrowser/browser/password_entry_edit/android/credential_edit_bridge.h"
 
 #include <jni.h>
 
@@ -27,7 +27,7 @@
 #include "ui/base/l10n/l10n_util.h"
 
 // Must come after all headers that specialize FromJniType() / ToJniType().
-#include "brave/browser/password_entry_edit/android/internal/jni/CredentialEditBridge_jni.h"
+#include "BnesBrowser/browser/password_entry_edit/android/internal/jni/CredentialEditBridge_jni.h"
 
 std::unique_ptr<CredentialEditBridge> CredentialEditBridge::MaybeCreate(
     const password_manager::CredentialUIEntry credential,

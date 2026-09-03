@@ -6,7 +6,7 @@
 #include "chrome/browser/ui/views/frame/browser_root_view.h"
 
 #include "base/feature_list.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
 #include "chrome/browser/defaults.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

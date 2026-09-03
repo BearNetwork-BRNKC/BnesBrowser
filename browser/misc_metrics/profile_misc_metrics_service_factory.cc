@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
 #include "chrome/browser/autofill/personal_data_manager_factory.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -20,7 +20,7 @@
 #include "chrome/browser/themes/theme_service_factory.h"
 #include "extensions/browser/extension_registry_factory.h"
 #else
-#include "brave/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
 #endif
 
 namespace misc_metrics {

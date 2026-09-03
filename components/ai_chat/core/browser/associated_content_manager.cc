@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/associated_content_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_manager.h"
 
 #include <algorithm>
 #include <cstdint>
@@ -22,10 +22,10 @@
 #include "base/memory/weak_ptr.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/ai_chat/core/browser/associated_archive_content.h"
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_archive_content.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
 
 namespace ai_chat {
 

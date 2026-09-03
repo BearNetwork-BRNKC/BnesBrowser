@@ -8,7 +8,7 @@
 
 #include <sstream>  // IWYU pragma: keep
 
-#include "brave/components/brave_ads/core/internal/common/logging_util_internal.h"  // IWYU pragma: keep
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util_internal.h"  // IWYU pragma: keep
 
 namespace brave_ads {
 

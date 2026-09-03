@@ -6,7 +6,7 @@
 source_set("chromium_impl") {
   sources = [ "window_feature_controller.cc" ]
   deps = [
-    "//brave/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
     "//chrome/browser/ui:layout_constants",
   ]
 }

@@ -5,11 +5,11 @@
 
 #include <algorithm>
 
-#include "brave/browser/ui/sidebar/sidebar_browsertest_base.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_browsertest_base.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

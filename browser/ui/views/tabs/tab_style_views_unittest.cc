@@ -8,7 +8,7 @@
 #include <memory>
 #include <vector>
 
-#include "brave/browser/ui/views/tabs/brave_tab.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "chrome/browser/ui/views/tabs/fake_tab_slot_controller.h"
 #include "chrome/test/views/chrome_views_test_base.h"

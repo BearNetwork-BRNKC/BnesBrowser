@@ -3,21 +3,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
 
 #include <string>
 
 #include "base/check.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/l10n/common/locale_util.h"
-#include "brave/components/l10n/common/ofac_sanction_util.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/l10n/common/ofac_sanction_util.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(IS_ANDROID)
 #include "base/feature_list.h"
-#include "brave/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 namespace brave_rewards {

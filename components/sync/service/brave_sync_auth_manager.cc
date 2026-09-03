@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/sync/service/brave_sync_auth_manager.h"
+#include "BnesBrowser/components/sync/service/brave_sync_auth_manager.h"
 
 #include "base/base64.h"
 #include "base/check.h"
 #include "base/logging.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_sync/crypto/crypto.h"
-#include "brave/components/brave_sync/network_time_helper.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/components/brave_sync/crypto/crypto.h"
+#include "BnesBrowser/components/brave_sync/network_time_helper.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 #include "google_apis/gaia/gaia_id.h"
 
 namespace syncer {

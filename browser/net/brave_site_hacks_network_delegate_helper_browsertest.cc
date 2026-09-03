@@ -10,11 +10,11 @@
 #include "base/path_service.h"
 #include "base/test/bind.h"
 #include "base/types/zip.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/query_filter/browser/test_support/query_filter_test_helper.h"
-#include "brave/components/query_filter/common/features.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/query_filter/browser/test_support/query_filter_test_helper.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
@@ -31,9 +31,9 @@
 #include "url/origin.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/components/tor/tor_navigation_throttle.h"
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/components/tor/tor_navigation_throttle.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #endif
 
 class BraveSiteHacksNetworkDelegateBrowserTest : public InProcessBrowserTest {

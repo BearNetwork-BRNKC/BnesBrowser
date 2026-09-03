@@ -12,12 +12,12 @@
 #include <vector>
 
 #include "base/types/expected.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "net/base/completion_once_callback.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 namespace decentralized_dns {

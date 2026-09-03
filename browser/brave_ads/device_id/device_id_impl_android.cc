@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/device_id/device_id_impl.h"
+#include "BnesBrowser/browser/brave_ads/device_id/device_id_impl.h"
 
 #include <utility>
 
 #include "base/android/jni_android.h"
 #include "base/android/jni_string.h"
 #include "base/functional/callback.h"
-#include "brave/browser/brave_ads/android/jni_headers/DeviceIdImplAndroid_jni.h"
+#include "BnesBrowser/browser/brave_ads/android/jni_headers/DeviceIdImplAndroid_jni.h"
 
 namespace brave_ads {
 

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/workspaces/workspace_service_factory.h"
+#include "BnesBrowser/browser/workspaces/workspace_service_factory.h"
 
 #include <memory>
 
-#include "brave/browser/workspaces/features.h"
-#include "brave/browser/workspaces/pref_names.h"
-#include "brave/browser/workspaces/workspace_service.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/browser/workspaces/pref_names.h"
+#include "BnesBrowser/browser/workspaces/workspace_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"
 #include "components/pref_registry/pref_registry_syncable.h"

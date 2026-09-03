@@ -11,7 +11,7 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/local_ai/core/background_web_contents.h"
+#include "BnesBrowser/components/local_ai/core/background_web_contents.h"
 #include "services/network/public/mojom/web_sandbox_flags.mojom-shared.h"
 
 class GURL;

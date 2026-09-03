@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/task/thread_pool/thread_pool_instance.h"
-#include "brave/test/base/brave_testing_profile.cc"
+#include "BnesBrowser/test/base/brave_testing_profile.cc"
 
 // Brave creates additional browser context keyed services during profile
 // initialization that may trigger storage partition creation and background

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/history_ui_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/history_ui_handler.h"
 
 #include <memory>
 #include <string>
@@ -17,7 +17,7 @@
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
 #include "base/time/time.h"
-#include "brave/components/ai_chat/core/common/mojom/history.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/history.mojom.h"
 #include "components/history/core/browser/history_database_params.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/history/core/browser/history_types.h"

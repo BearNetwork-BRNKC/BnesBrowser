@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_shield_sync_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_shield_sync_service.h"
 
 namespace brave_wallet {
 

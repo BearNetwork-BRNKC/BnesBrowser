@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/last_unidle_time_diagnostic_entry.h"
 
-#include "brave/components/brave_ads/core/internal/common/time/time_formatting_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/time/time_formatting_util.h"
 
 namespace brave_ads {
 

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_VIEWS_BRAVE_ORIGIN_BRAVE_ORIGIN_STARTUP_VIEW_H_
 #define BRAVE_BROWSER_UI_VIEWS_BRAVE_ORIGIN_BRAVE_ORIGIN_STARTUP_VIEW_H_
 
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED));
 

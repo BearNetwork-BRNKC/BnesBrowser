@@ -4,7 +4,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/url/url_request_string_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/url_request_string_util.h"
 
 #include <algorithm>
 #include <sstream>
@@ -13,7 +13,7 @@
 
 #include "base/containers/fixed_flat_set.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads {
 

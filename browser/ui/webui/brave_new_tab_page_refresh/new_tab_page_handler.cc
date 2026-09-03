@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_handler.h"
 
 #include <optional>
 #include <utility>
@@ -12,23 +12,23 @@
 #include "base/functional/callback_helpers.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/types/to_address.h"
-#include "brave/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/background_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/custom_image_chooser.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/sponsored_sites_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/vpn_facade.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_perf_predictor/common/pref_names.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/misc_metrics/brave_search_metrics.h"
-#include "brave/components/misc_metrics/navigation_source_metrics.h"
-#include "brave/components/misc_metrics/new_tab_metrics.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/background_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/custom_image_chooser.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/sponsored_sites_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/vpn_facade.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_perf_predictor/common/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/misc_metrics/brave_search_metrics.h"
+#include "BnesBrowser/components/misc_metrics/navigation_source_metrics.h"
+#include "BnesBrowser/components/misc_metrics/new_tab_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "chrome/browser/autocomplete/chrome_autocomplete_scheme_classifier.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
@@ -45,11 +45,11 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 namespace brave_new_tab_page_refresh {

@@ -11,8 +11,8 @@
 #include "base/containers/flat_map.h"
 #include "base/memory/raw_ref.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

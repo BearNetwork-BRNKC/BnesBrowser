@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
 
 #include <optional>
 #include <utility>
@@ -13,9 +13,9 @@
 #include "base/logging.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/switches.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/switches.h"
 #include "url/url_constants.h"
 
 namespace p3a {

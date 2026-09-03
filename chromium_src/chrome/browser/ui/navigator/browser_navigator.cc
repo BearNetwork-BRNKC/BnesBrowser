@@ -5,16 +5,16 @@
 
 #include <string_view>
 
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/tab_contents/tab_util.h"
 #include "chrome/browser/ui/navigator/browser_navigator_params.h"
 #include "content/public/common/url_constants.h"
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "content/public/browser/security_principal.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 

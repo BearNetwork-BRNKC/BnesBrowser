@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_observer_factory_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_observer_factory_win.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/browser/brave_vpn/vpn_utils.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_observer_service_win.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_observer_service_win.h"
 #include "chrome/browser/browser_process.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 #include "content/public/browser/browser_context.h"

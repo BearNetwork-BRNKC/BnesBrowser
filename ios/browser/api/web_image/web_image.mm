@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/web_image/web_image.h"
+#include "BnesBrowser/ios/browser/api/web_image/web_image.h"
 
 #include <memory>
 
 #include "base/check_op.h"
-#include "brave/ios/browser/api/web_image/image_downloader.h"
-#include "brave/ios/browser/svg/svg_image.h"
+#include "BnesBrowser/ios/browser/api/web_image/image_downloader.h"
+#include "BnesBrowser/ios/browser/svg/svg_image.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "net/base/apple/url_conversions.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/sidebar/sidebar_item_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_item_view.h"
 
 #include "base/check.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/ui/views/event_utils.h"
 #include "ui/base/metadata/metadata_impl_macros.h"
 #include "ui/base/resource/resource_bundle.h"

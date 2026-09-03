@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 
 #include "base/time/time.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 
 namespace tor {

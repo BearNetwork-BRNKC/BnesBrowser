@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_COMPONENTS_SEARCH_ENGINES_TEMPLATE_URL_PREPOPULATE_DATA_H_
 #define BRAVE_CHROMIUM_SRC_COMPONENTS_SEARCH_ENGINES_TEMPLATE_URL_PREPOPULATE_DATA_H_
 
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 
 #define GetPrepopulatedFallbackSearch(...)                                   \
   GetPrepopulatedFallbackSearch(BravePrepopulatedEngineID default_engine_id, \

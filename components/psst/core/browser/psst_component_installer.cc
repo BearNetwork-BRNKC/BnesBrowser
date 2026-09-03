@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/psst/core/browser/psst_component_installer.h"
+#include "BnesBrowser/components/psst/core/browser/psst_component_installer.h"
 
 #include <memory>
 #include <string>
@@ -13,9 +13,9 @@
 #include "base/containers/to_vector.h"
 #include "base/functional/bind.h"
 #include "base/path_service.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/psst/core/browser/psst_rule_registry.h"
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule_registry.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #include "components/component_updater/component_installer.h"
 #include "components/component_updater/component_updater_paths.h"
 #include "components/component_updater/component_updater_service.h"

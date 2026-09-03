@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/wallet_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/wallet_button.h"
 
 #include "base/test/run_until.h"
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
 #include "chrome/browser/picture_in_picture/picture_in_picture_occlusion_tracker.h"
 #include "chrome/browser/picture_in_picture/picture_in_picture_window_manager.h"
 #include "chrome/browser/ui/browser.h"

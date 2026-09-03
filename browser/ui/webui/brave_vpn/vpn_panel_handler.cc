@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_handler.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "chrome/browser/ui/browser_window/public/profile_browser_collection.h"

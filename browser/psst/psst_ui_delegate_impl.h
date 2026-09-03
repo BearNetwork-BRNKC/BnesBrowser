@@ -10,13 +10,13 @@
 #include <optional>
 #include <vector>
 
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
-#include "brave/browser/psst/psst_ui_presenter.h"
-#include "brave/components/psst/core/browser/psst_reporter_service.h"
-#include "brave/components/psst/core/browser/psst_settings_service.h"
-#include "brave/components/psst/core/common/psst_script_responses.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom-shared.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_ui_presenter.h"
+#include "BnesBrowser/components/psst/core/browser/psst_reporter_service.h"
+#include "BnesBrowser/components/psst/core/browser/psst_settings_service.h"
+#include "BnesBrowser/components/psst/core/common/psst_script_responses.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom-shared.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 
 class PrefService;

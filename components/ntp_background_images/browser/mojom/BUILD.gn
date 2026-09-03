@@ -10,7 +10,7 @@ mojom("mojom") {
   sources = [ "ntp_background_images.mojom" ]
 
   public_deps = [
-    "//brave/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/mojom",
     "//mojo/public/mojom/base",
   ]
 }

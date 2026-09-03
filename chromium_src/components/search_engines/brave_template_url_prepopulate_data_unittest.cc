@@ -14,7 +14,7 @@
 #include "base/stl_util.h"
 #include "base/test/task_environment.h"
 #include "base/values.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "components/google/core/common/google_switches.h"
 #include "components/prefs/testing_pref_service.h"
 #include "components/regional_capabilities/regional_capabilities_switches.h"

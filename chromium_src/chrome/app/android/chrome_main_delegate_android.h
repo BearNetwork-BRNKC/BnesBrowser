@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_APP_ANDROID_CHROME_MAIN_DELEGATE_ANDROID_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_APP_ANDROID_CHROME_MAIN_DELEGATE_ANDROID_H_
 
-#include "brave/app/brave_main_delegate.h"
+#include "BnesBrowser/app/brave_main_delegate.h"
 
 #include <chrome/app/android/chrome_main_delegate_android.h>  // IWYU pragma: export
 

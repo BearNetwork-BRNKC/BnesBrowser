@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_news/brave_news_controller_delegate_impl.h"
+#include "BnesBrowser/browser/brave_news/brave_news_controller_delegate_impl.h"
 
 #include "base/check_deref.h"
 #include "base/strings/strcat.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

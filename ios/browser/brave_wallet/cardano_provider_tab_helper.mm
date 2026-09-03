@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_wallet/cardano_provider_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_wallet/cardano_provider_tab_helper.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_utils.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/navigation/navigation_context.h"
 #include "ios/web/public/web_state.h"

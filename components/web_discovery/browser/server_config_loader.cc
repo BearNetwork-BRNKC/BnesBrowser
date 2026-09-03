@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/server_config_loader.h"
+#include "BnesBrowser/components/web_discovery/browser/server_config_loader.h"
 
 #include <utility>
 
@@ -21,8 +21,8 @@
 #include "base/task/thread_pool.h"
 #include "base/threading/thread_restrictions.h"
 #include "base/values.h"
-#include "brave/components/web_discovery/browser/pref_names.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/web_discovery/browser/pref_names.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "components/prefs/pref_service.h"
 #include "net/http/http_status_code.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"

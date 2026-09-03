@@ -6,8 +6,8 @@
 #include "components/permissions/permission_context_base.h"
 
 #include "base/check.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/permissions/permission_lifetime_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_manager.h"
 
 #include <components/permissions/permission_context_base.cc>
 

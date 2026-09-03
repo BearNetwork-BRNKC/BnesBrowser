@@ -7,7 +7,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/values.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/grit/theme_resources.h"
 #include "chrome/test/base/testing_browser_process.h"

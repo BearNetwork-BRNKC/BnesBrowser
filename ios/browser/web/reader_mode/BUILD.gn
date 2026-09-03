@@ -25,8 +25,8 @@ source_set("reader_mode") {
 bundle_data("readability_js") {
   visibility = [ ":reader_mode" ]
   sources = [
-    "//brave/node_modules/@mozilla/Readability/Readability-readerable.js",
-    "//brave/node_modules/@mozilla/Readability/Readability.js",
+    "//BnesBrowser/node_modules/@mozilla/Readability/Readability-readerable.js",
+    "//BnesBrowser/node_modules/@mozilla/Readability/Readability.js",
   ]
   outputs = [ "{{bundle_resources_dir}}/{{source_file_part}}" ]
 }

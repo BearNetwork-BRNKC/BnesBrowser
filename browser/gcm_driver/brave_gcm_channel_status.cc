@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/gcm_driver/brave_gcm_channel_status.h"
+#include "BnesBrowser/browser/gcm_driver/brave_gcm_channel_status.h"
 
 #include <memory>
 
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/gcm/gcm_profile_service_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/gcm_driver/gcm_driver_desktop.h"

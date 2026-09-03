@@ -13,12 +13,12 @@
 #include "base/files/file_path.h"
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_observer.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_info.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_observer.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_info.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 
 namespace brave_ads {
 class ResourceComponentObserver;

@@ -10,8 +10,8 @@
 #include <optional>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
-#include "brave/components/brave_ads/core/internal/ml/transformation/ml_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/ml_types.h"
 
 namespace brave_ads {
 

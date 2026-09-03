@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
 #include "ios/chrome/browser/shared/model/profile/profile_keyed_service_factory_ios.h"
 
 class ProfileIOS;

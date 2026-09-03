@@ -12,7 +12,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_search_conversion/types.h"
+#include "BnesBrowser/components/brave_search_conversion/types.h"
 #include "chrome/browser/ui/views/omnibox/omnibox_mouse_enter_exit_handler.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/views/view.h"

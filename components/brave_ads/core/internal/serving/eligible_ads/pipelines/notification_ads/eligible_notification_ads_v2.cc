@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pipelines/notification_ads/eligible_notification_ads_v2.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pipelines/notification_ads/eligible_notification_ads_v2.h"
 
 #include <cstddef>
 #include <optional>
@@ -12,22 +12,22 @@
 #include "base/functional/bind.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/trace_id_helper.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/segments/segment_types.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/active_campaigns_filter.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_feature.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/exclusion_rules_util.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/notification_ads/notification_ad_exclusion_rules.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/priority/priority.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/round_robin/creative_ad_round_robin.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
-#include "brave/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
-#include "brave/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/active_campaigns_filter.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/exclusion_rules_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/notification_ads/notification_ad_exclusion_rules.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/priority/priority.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/round_robin/creative_ad_round_robin.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/creative_ad_model_based_predictor.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads {
 

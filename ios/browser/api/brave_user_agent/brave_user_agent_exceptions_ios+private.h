@@ -6,8 +6,8 @@
 #ifndef BRAVE_IOS_BROWSER_API_BRAVE_USER_AGENT_BRAVE_USER_AGENT_EXCEPTIONS_IOS_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_BRAVE_USER_AGENT_BRAVE_USER_AGENT_EXCEPTIONS_IOS_PRIVATE_H_
 
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
-#include "brave/ios/browser/api/brave_user_agent/brave_user_agent_exceptions_ios.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/ios/browser/api/brave_user_agent/brave_user_agent_exceptions_ios.h"
 
 @interface BraveUserAgentExceptionsIOS (Private)
 - (instancetype)initWithBraveUserAgentExceptions:

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/app/v2/agent/agent_app.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/agent_app.h"
 
 #include <memory>
 #include <utility>
@@ -18,9 +18,9 @@
 #include "base/task/single_thread_task_executor.h"
 #include "base/task/single_thread_task_runner.h"
 #include "base/threading/thread.h"
-#include "brave/components/brave_vpn/app/v2/agent/browser_registry.h"
-#include "brave/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
-#include "brave/components/brave_vpn/common/v2/agent_utils.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/browser_registry.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
+#include "BnesBrowser/components/brave_vpn/common/v2/agent_utils.h"
 #include "mojo/core/embedder/configuration.h"
 #include "mojo/core/embedder/embedder.h"
 #include "mojo/core/embedder/scoped_ipc_support.h"

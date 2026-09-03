@@ -11,8 +11,8 @@
 #include <utility>
 
 #include "base/types/expected.h"
-#include "brave/components/brave_account/endpoints/error_body.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/endpoints/error_body.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 
 namespace brave_account::internal {

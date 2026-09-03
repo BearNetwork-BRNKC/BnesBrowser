@@ -21,7 +21,7 @@ namespace history_embeddings {
 // takes its "filter by score" branch with every row above the
 // threshold. Shared between the production subclass in
 // brave/browser/history_embeddings/ and the test subclass in
-// brave/chromium_src/components/history_embeddings/content/.
+// BnesBrowser/chromium_src/components/history_embeddings/content/.
 inline std::vector<page_content_annotations::BatchAnnotationResult>
 SynthesizePassingVisibilityResults(
     const std::vector<ScoredUrlRow>& scored_url_rows) {

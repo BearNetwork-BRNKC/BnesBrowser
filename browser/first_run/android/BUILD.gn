@@ -14,7 +14,7 @@ android_library("java") {
   deps = [
     ":java_resources",
     "//base:base_java",
-    "//brave/build/android:android_brave_strings_grd",
+    "//BnesBrowser/build/android:android_brave_strings_grd",
     "//third_party/android_deps:com_airbnb_android_lottie_java",
     "//third_party/android_deps:material_design_java",
     "//third_party/androidx:androidx_recyclerview_recyclerview_java",

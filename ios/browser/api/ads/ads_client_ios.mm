@@ -8,7 +8,7 @@
 #include <optional>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #import "brave/ios/browser/api/ads/ads_client_bridge.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)

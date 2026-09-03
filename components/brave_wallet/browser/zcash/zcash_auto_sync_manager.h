@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/timer/timer.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_action_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_action_context.h"
 
 namespace brave_wallet {
 inline constexpr base::TimeDelta kZCashAutoSyncRefreshInterval =

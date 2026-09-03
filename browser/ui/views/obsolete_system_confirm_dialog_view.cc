@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/obsolete_system_confirm_dialog_view.h"
+#include "BnesBrowser/browser/ui/views/obsolete_system_confirm_dialog_view.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/functional/callback.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window.h"

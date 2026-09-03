@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_site_hacks_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_site_hacks_network_delegate_helper.h"
 
 #include <optional>
 #include <string>
@@ -11,12 +11,12 @@
 #include <vector>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/net/features.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/query_filter/browser/test_support/query_filter_test_helper.h"
-#include "brave/components/query_filter/common/features.h"
-#include "brave/components/query_filter/common/pref_names.h"
+#include "BnesBrowser/browser/net/features.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/query_filter/browser/test_support/query_filter_test_helper.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
+#include "BnesBrowser/components/query_filter/common/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "content/public/test/browser_task_environment.h"

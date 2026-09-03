@@ -6,7 +6,7 @@
 #ifndef BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_SCRIPTS_SCRIPT_TRACKER_H_
 #define BRAVE_THIRD_PARTY_BLINK_RENDERER_CORE_BRAVE_PAGE_GRAPH_SCRIPTS_SCRIPT_TRACKER_H_
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 
 namespace v8 {
 class Isolate;

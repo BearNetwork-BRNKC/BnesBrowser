@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/component_updater/resource_component.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component.h"
 
 #include <ostream>
 #include <string_view>
@@ -22,7 +22,7 @@
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_observer.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_observer.h"
 
 namespace brave_ads {
 

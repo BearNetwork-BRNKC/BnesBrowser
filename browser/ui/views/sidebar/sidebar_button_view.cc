@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/sidebar/sidebar_button_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_button_view.h"
 
-#include "brave/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
 #include "chrome/browser/ui/color/chrome_color_provider_utils.h"
 #include "chrome/browser/ui/views/chrome_layout_provider.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_ink_drop_util.h"

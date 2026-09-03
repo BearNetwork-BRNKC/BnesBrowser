@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/decentralized_dns/content/ens_offchain_lookup_opt_in_page.h"
+#include "BnesBrowser/components/decentralized_dns/content/ens_offchain_lookup_opt_in_page.h"
 
 #include <ostream>
 #include <utility>
@@ -13,8 +13,8 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/decentralized_dns/content/ens_offchain_lookup_interstitial_controller_client.h"
-#include "brave/components/decentralized_dns/core/utils.h"
+#include "BnesBrowser/components/decentralized_dns/content/ens_offchain_lookup_interstitial_controller_client.h"
+#include "BnesBrowser/components/decentralized_dns/core/utils.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/security_interstitials/content/security_interstitial_controller_client.h"

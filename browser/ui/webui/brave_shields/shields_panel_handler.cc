@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_shields/shields_panel_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_shields/shields_panel_handler.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_tabstrip.h"

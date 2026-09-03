@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 import("//build/config/ios/rules.gni")
 import("//ios/build/config.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
@@ -28,15 +28,15 @@ test("ios_brave_unit_tests") {
     # Unit tests
     ":legacy_unit_tests",
     ":mojom_objc_generator_unit_tests",
-    "//brave/ios/browser/brave_ads:unit_tests",
-    "//brave/ios/browser/brave_shields:unit_tests",
-    "//brave/ios/browser/brave_shields/cosmetic_filtering:unit_tests",
-    "//brave/ios/browser/brave_shields/request_blocking:unit_tests",
-    "//brave/ios/browser/serp_metrics:unit_tests",
-    "//brave/ios/browser/ui/webui/ai_chat:unit_tests",
+    "//BnesBrowser/ios/browser/brave_ads:unit_tests",
+    "//BnesBrowser/ios/browser/brave_shields:unit_tests",
+    "//BnesBrowser/ios/browser/brave_shields/cosmetic_filtering:unit_tests",
+    "//BnesBrowser/ios/browser/brave_shields/request_blocking:unit_tests",
+    "//BnesBrowser/ios/browser/serp_metrics:unit_tests",
+    "//BnesBrowser/ios/browser/ui/webui/ai_chat:unit_tests",
 
     # This is required until we can sort out overridden deps symbols
-    "//brave/ios/browser",
+    "//BnesBrowser/ios/browser",
   ]
 
   assert_no_deps = ios_assert_no_deps
@@ -55,7 +55,7 @@ source_set("legacy_unit_tests") {
 
   deps = [
     "//base",
-    "//brave/ios/browser/api/net",
+    "//BnesBrowser/ios/browser/api/net",
     "//net",
     "//net/http:generate_transport_security_state",
     "//testing/gtest",

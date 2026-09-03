@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
+#include "BnesBrowser/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
 
 #include <memory>
 
-#include "brave/browser/speech/on_device_speech_recognition_controller.h"
-#include "brave/components/local_ai/core/on_device_speech_recognition.mojom.h"
-#include "brave/components/local_ai/core/url_constants.h"
-#include "brave/components/local_ai/resources/grit/on_device_speech_recognition_worker_generated.h"
-#include "brave/components/local_ai/resources/grit/on_device_speech_recognition_worker_generated_map.h"
+#include "BnesBrowser/browser/speech/on_device_speech_recognition_controller.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_recognition.mojom.h"
+#include "BnesBrowser/components/local_ai/core/url_constants.h"
+#include "BnesBrowser/components/local_ai/resources/grit/on_device_speech_recognition_worker_generated.h"
+#include "BnesBrowser/components/local_ai/resources/grit/on_device_speech_recognition_worker_generated_map.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_ui.h"

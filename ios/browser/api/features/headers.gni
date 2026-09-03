@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_features_public_headers =
-    [ "//brave/ios/browser/api/features/features.h" ]
+    [ "//BnesBrowser/ios/browser/api/features/features.h" ]

@@ -20,14 +20,14 @@ rust_static_library("anonymous_credentials") {
     "util.rs",
   ]
 
-  visibility = [ "//brave/components/web_discovery/browser:*" ]
+  visibility = [ "//BnesBrowser/components/web_discovery/browser:*" ]
 
   cxx_bindings = [ "lib.rs" ]
 
   deps = [
-    "//brave/third_party/rust/brave_miracl/v0_2:lib",
-    "//brave/third_party/rust/lazy_static/v1:lib",
-    "//brave/third_party/rust/rand/v0_8:lib",
-    "//brave/third_party/rust/thiserror/v1:lib",
+    "//BnesBrowser/third_party/rust/brave_miracl/v0_2:lib",
+    "//BnesBrowser/third_party/rust/lazy_static/v1:lib",
+    "//BnesBrowser/third_party/rust/rand/v0_8:lib",
+    "//BnesBrowser/third_party/rust/thiserror/v1:lib",
   ]
 }

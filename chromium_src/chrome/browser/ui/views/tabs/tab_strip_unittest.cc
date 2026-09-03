@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/tabs/tab_strip.h"
 
-#include "brave/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
 
 #define TabHoverCardController BraveTabHoverCardController
 #include <chrome/browser/ui/views/tabs/tab_strip_unittest.cc>

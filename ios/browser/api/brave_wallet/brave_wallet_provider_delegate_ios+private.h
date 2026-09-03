@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/brave_wallet_provider_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_provider_delegate.h"
 
 @protocol BraveWalletProviderDelegate;
 

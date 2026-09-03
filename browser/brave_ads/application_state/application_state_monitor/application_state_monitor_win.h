@@ -8,7 +8,7 @@
 
 #include "base/callback_list.h"
 #include "base/win/windows_types.h"
-#include "brave/components/brave_ads/browser/application_state/application_state_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/application_state_monitor.h"
 
 namespace brave_ads {
 

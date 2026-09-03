@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ACCOUNT_ENDPOINT_CLIENT_IS_REQUEST_H_
 #define BRAVE_COMPONENTS_BRAVE_ACCOUNT_ENDPOINT_CLIENT_IS_REQUEST_H_
 
-#include "brave/components/brave_account/endpoint_client/is_request_body.h"
-#include "brave/components/brave_account/endpoint_client/request.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_request_body.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request.h"
 
 namespace brave_account::endpoint_client::detail {
 

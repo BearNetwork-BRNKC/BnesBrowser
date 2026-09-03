@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/json_keystore_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_keystore_parser.h"
 
 #include <array>
 #include <optional>
@@ -13,7 +13,7 @@
 #include "base/numerics/safe_math.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 #include "crypto/aes_ctr.h"
 #include "crypto/kdf.h"
 

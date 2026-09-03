@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ai_chat/chart_display_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/chart_display_ui.h"
 
 #include <string>
 
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/common/webui_url_constants.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/common/webui_url_constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/user_prefs/user_prefs.h"

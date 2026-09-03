@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/wallet_provider/solana/solana_wallet_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/solana/solana_wallet_provider.h"
 
 #include <cmath>
 #include <utility>
@@ -13,15 +13,15 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/logging/event_log_keys.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/util/signer.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_util.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/logging/event_log_keys.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/signer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
 #include "net/base/url_util.h"
 
 namespace brave_rewards::internal {

@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "chrome/common/webui_url_constants.h"
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #endif
 
 #include <chrome/common/webui_url_constants.cc>

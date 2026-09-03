@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/command_line_container.h"
+#include "BnesBrowser/components/containers/core/browser/command_line_container.h"
 
 #include <memory>
 #include <string>
@@ -11,14 +11,14 @@
 
 #include "base/command_line.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/containers/core/browser/container_specifier.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/browser/containers_test_utils.h"
-#include "brave/components/containers/core/browser/prefs.h"
-#include "brave/components/containers/core/browser/prefs_registration.h"
-#include "brave/components/containers/core/browser/temporary_container.h"
-#include "brave/components/containers/core/common/features.h"
-#include "brave/components/containers/core/common/switches.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/browser/containers_test_utils.h"
+#include "BnesBrowser/components/containers/core/browser/prefs.h"
+#include "BnesBrowser/components/containers/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/containers/core/browser/temporary_container.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/common/switches.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -13,12 +13,12 @@ source_set("lib") {
 
   deps = [
     "//base",
-    "//brave/components/password_manager/core/browser/import:csv",
+    "//BnesBrowser/components/password_manager/core/browser/import:csv",
     "//mojo/public/cpp/bindings",
   ]
 
   public_deps = [
-    "//brave/components/password_manager/services/csv_password/public/mojom",
+    "//BnesBrowser/components/password_manager/services/csv_password/public/mojom",
   ]
 
   configs += [ "//build/config/compiler:wexit_time_destructors" ]
@@ -37,7 +37,7 @@ if (use_blink) {
     ]
 
     public_deps = [
-      "//brave/components/password_manager/services/csv_password/public/mojom",
+      "//BnesBrowser/components/password_manager/services/csv_password/public/mojom",
       "//mojo/public/cpp/bindings",
     ]
 

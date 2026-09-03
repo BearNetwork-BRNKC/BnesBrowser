@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_background_web_contents_helper.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contents_helper.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/logging.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/render_frame_host.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"

@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/traffic_control/traffic_control_service_factory.h"
+#include "BnesBrowser/browser/traffic_control/traffic_control_service_factory.h"
 
 #include <memory>
 
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/components/traffic_control/core/browser/prefs_registration.h"
-#include "brave/components/traffic_control/core/browser/traffic_control_service.h"
-#include "brave/components/traffic_control/core/common/features.h"
+#include "BnesBrowser/components/traffic_control/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/traffic_control/core/browser/traffic_control_service.h"
+#include "BnesBrowser/components/traffic_control/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"
 

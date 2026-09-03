@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/list_action_modifiers.h"
+#include "BnesBrowser/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/list_action_modifiers.h"
 
 #include <utility>
 #include <vector>
@@ -11,14 +11,14 @@
 #include "base/check_is_test.h"
 #include "base/containers/fixed_flat_set.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/ui/screenshot/features.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/brave_action.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/screenshot/features.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/webui/side_panel/customize_chrome/customize_toolbar/brave_action.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/sharing_hub/sharing_hub_features.h"
 #include "chrome/browser/ui/webui/util/image_util.h"
@@ -34,23 +34,23 @@
 #include "ui/gfx/image/image_skia.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN)
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 namespace customize_chrome {

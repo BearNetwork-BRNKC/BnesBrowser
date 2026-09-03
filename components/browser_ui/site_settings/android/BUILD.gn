@@ -34,7 +34,7 @@ android_library("java") {
 android_resources("java_resources") {
   sources = [ "java/res/xml/brave_site_settings_preferences.xml" ]
   deps = [
-    "//brave/build/android:android_brave_strings_grd",
+    "//BnesBrowser/build/android:android_brave_strings_grd",
     "//components/browser_ui/site_settings/android:java_resources",
   ]
 }

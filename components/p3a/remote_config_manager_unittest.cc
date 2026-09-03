@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/remote_config_manager.h"
+#include "BnesBrowser/components/p3a/remote_config_manager.h"
 
 #include <memory>
 #include <string_view>
@@ -13,8 +13,8 @@
 #include "base/files/scoped_temp_dir.h"
 #include "base/path_service.h"
 #include "base/test/task_environment.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/p3a/metric_config.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace p3a {

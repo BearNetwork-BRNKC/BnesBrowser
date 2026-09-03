@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/chromium_src/components/browsing_data/core/pref_names.h"
+#include "BnesBrowser/chromium_src/components/browsing_data/core/pref_names.h"
 
 #include "components/pref_registry/pref_registry_syncable.h"
 

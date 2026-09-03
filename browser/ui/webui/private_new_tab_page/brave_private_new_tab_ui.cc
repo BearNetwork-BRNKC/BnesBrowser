@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
 
 #include <utility>
 
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_page_handler.h"
-#include "brave/components/brave_private_new_tab/resources/page/grit/brave_private_new_tab_generated_map.h"
-#include "brave/components/brave_private_new_tab_ui/common/constants.h"
-#include "brave/components/brave_private_new_tab_ui/common/pref_names.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/browser/ui/webui/private_new_tab_page/brave_private_new_tab_page_handler.h"
+#include "BnesBrowser/components/brave_private_new_tab/resources/page/grit/brave_private_new_tab_generated_map.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/constants.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/prefs/pref_service.h"

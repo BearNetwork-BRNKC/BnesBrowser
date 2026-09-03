@@ -7,7 +7,7 @@ brave_entitlements_templates = []
 
 if (is_official_build) {
   brave_entitlements_templates += [
-    "//brave/app/app-entitlements-brave.plist",
+    "//BnesBrowser/app/app-entitlements-brave.plist",
     "//chrome/app/app-entitlements-chrome.plist",
   ]
 }

@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_p3a.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_p3a.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/location.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/feature_usage.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 
 namespace playlist {

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_education/brave_education_server_checker.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_server_checker.h"
 
 #include <memory>
 #include <optional>
 
 #include "base/test/test_future.h"
-#include "brave/components/brave_education/education_urls.h"
-#include "brave/components/brave_education/features.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
+#include "BnesBrowser/components/brave_education/features.h"
 #include "components/language/core/browser/language_prefs.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "content/public/test/browser_task_environment.h"

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
 
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"

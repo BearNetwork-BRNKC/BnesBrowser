@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_AI_CHAT_CORE_BROWSER_HISTORY_UI_HANDLER_H_
 
 #include "base/task/cancelable_task_tracker.h"
-#include "brave/components/ai_chat/core/common/mojom/history.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/history.mojom.h"
 #include "components/history/core/browser/history_types.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 

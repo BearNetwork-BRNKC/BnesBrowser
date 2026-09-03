@@ -3,32 +3,32 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_migration.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_migration.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/location.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposits_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_tokens_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transactions_database_table.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_table_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/campaigns_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_ads_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/dayparts_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/geo_targets_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ads_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ads_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/segments_database_table.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_table.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposits_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/confirmation_tokens/confirmation_tokens_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/payment_tokens/payment_tokens_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transactions_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_table_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/campaigns_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ads_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/dayparts_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/geo_targets_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/new_tab_page_ads/creative_new_tab_page_ads_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ads_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/segments_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads::database {
 

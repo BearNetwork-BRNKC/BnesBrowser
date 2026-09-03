@@ -11,7 +11,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_NEWS_RENDERER_RSS_LINK_READER_H_
 #define BRAVE_COMPONENTS_BRAVE_NEWS_RENDERER_RSS_LINK_READER_H_
 
-#include "brave/components/brave_news/common/rss_link_reader.mojom.h"
+#include "BnesBrowser/components/brave_news/common/rss_link_reader.mojom.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver.h"

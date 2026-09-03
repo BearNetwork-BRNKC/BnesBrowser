@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/startup/brave_obsolete_system_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/startup/brave_obsolete_system_infobar_delegate.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/session_crashed_bubble.h"
 #include "chrome/browser/ui/startup/google_api_keys_infobar_delegate.h"

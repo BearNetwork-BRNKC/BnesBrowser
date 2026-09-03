@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet {
 

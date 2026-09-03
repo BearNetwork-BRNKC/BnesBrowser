@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/local_ai/background_web_contents_factory.h"
+#include "BnesBrowser/browser/local_ai/background_web_contents_factory.h"
 
 #include <memory>
 #include <optional>
 
 #include "base/memory/weak_ptr.h"
 #include "base/test/test_future.h"
-#include "brave/components/local_ai/core/background_web_contents.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/local_ai/core/background_web_contents.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/test/base/testing_browser_process.h"

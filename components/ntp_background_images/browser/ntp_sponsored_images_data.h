@@ -12,7 +12,7 @@
 
 #include "base/files/file_path.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #include "ui/gfx/geometry/point.h"
 #include "url/gurl.h"
 

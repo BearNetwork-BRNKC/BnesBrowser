@@ -17,9 +17,9 @@
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
 #include "base/values.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_observer.h"
-#include "brave/components/debounce/core/browser/debounce_rule.h"
-#include "brave/components/debounce/core/browser/debounce_service.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_observer.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_rule.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_service.h"
 
 namespace debounce {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
+#include "BnesBrowser/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
 
 #include <algorithm>
 #include <map>
@@ -11,7 +11,7 @@
 #include "base/check.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/no_destructor.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
 
 namespace ephemeral_storage {
 

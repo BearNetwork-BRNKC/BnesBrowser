@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
 assert(enable_playlist)
 
@@ -19,9 +19,9 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/playlist/core/common",
-    "//brave/components/playlist/core/common/buildflags",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/playlist/core/common",
+    "//BnesBrowser/components/playlist/core/common/buildflags",
     "//components/component_updater",
     "//components/prefs",
     "//net",
@@ -40,8 +40,8 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/playlist/core/browser",
-    "//brave/components/playlist/core/common",
+    "//BnesBrowser/components/playlist/core/browser",
+    "//BnesBrowser/components/playlist/core/common",
     "//components/prefs",
     "//components/prefs:test_support",
     "//testing/gtest",

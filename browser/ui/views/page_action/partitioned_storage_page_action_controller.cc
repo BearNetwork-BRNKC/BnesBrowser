@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
+#include "BnesBrowser/browser/ui/views/page_action/partitioned_storage_page_action_controller.h"
 
 #include <memory>
 #include <optional>
@@ -13,14 +13,14 @@
 #include "base/check_deref.h"
 #include "base/functional/bind.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/browser/ui/containers/container_model.h"
-#include "brave/browser/ui/containers/containers_icon_generator.h"
-#include "brave/browser/ui/containers/containers_menu_model.h"
-#include "brave/browser/ui/tabs/containers_tab_menu_model_delegate.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_icon_generator.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/tabs/containers_tab_menu_model_delegate.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/actions/chrome_action_id.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

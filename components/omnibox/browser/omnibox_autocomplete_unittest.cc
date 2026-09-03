@@ -5,7 +5,7 @@
 
 #include <memory>
 
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/pref_store.h"
 #include "components/prefs/testing_pref_service.h"

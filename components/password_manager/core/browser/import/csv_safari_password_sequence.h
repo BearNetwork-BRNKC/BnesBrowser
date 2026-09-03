@@ -9,8 +9,8 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password_iterator.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password_iterator.h"
 
 namespace password_manager {
 

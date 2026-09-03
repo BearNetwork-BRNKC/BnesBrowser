@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/internal/hd_key.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key.h"
 
 #include <array>
 #include <optional>
@@ -15,14 +15,14 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/browser/bip39.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_test_utils.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
-#include "brave/components/brave_wallet/common/bitcoin_utils.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/bitcoin_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/test_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

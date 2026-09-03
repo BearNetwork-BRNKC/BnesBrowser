@@ -3,24 +3,24 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_tx_manager.h"
 
 #include <ranges>
 #include <utility>
 
 #include "base/notimplemented.h"
-#include "brave/components/brave_wallet/browser/account_resolver_delegate.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_tracker.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_transaction_status_task.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_tx_meta.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_tx_state_manager.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
-#include "brave/components/brave_wallet/browser/tx_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/account_resolver_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_transaction_status_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 

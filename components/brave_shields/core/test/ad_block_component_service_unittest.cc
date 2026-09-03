@@ -5,7 +5,7 @@
 
 #include <algorithm>
 
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 TEST(AdBlockComponentServiceTest, UserModelLanguages) {

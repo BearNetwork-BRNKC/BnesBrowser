@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/upgrade_when_idle/upgrade_when_idle.h"
+#include "BnesBrowser/browser/upgrade_when_idle/upgrade_when_idle.h"
 
 #include <initializer_list>
 #include <memory>
@@ -15,7 +15,7 @@
 #include "base/test/mock_callback.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "chrome/browser/first_run/scoped_relaunch_chrome_browser_override.h"
 #include "chrome/browser/first_run/upgrade_util.h"
 #include "chrome/browser/profiles/profile_manager.h"

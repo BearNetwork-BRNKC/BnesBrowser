@@ -3,23 +3,23 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 
 assert(enable_ai_chat)
 
 node_action("shared_conversation_lib") {
-  script = "//brave/node_modules/webpack/bin/webpack.js"
+  script = "//BnesBrowser/node_modules/webpack/bin/webpack.js"
 
   depfile = "$target_gen_dir/$target_name.d"
   output_dir = "$root_gen_dir/ai-chat-shared-conversation-lib"
   render_conversation_js = "$output_dir/render_conversation.js"
 
   deps = [
-    "//brave/components/ai_chat/core/common/mojom:mojom_js",
-    "//brave/components/common:preprocess_package_json",
-    "//brave/components/resources:strings",
-    "//brave/ui/webui/resources:icons_copy",
+    "//BnesBrowser/components/ai_chat/core/common/mojom:mojom_js",
+    "//BnesBrowser/components/common:preprocess_package_json",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/ui/webui/resources:icons_copy",
     "//mojo/public/js:bindings",
     "//mojo/public/js:resources",
   ]

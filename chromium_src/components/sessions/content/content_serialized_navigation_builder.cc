@@ -5,11 +5,11 @@
 
 #include "components/sessions/content/content_serialized_navigation_builder.h"
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/session_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/session_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "components/sessions/core/serialized_navigation_entry.h"
 #include "content/public/browser/navigation_entry.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)

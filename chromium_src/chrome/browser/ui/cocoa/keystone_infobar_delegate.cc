@@ -5,10 +5,10 @@
 
 #include "chrome/browser/ui/cocoa/keystone_infobar_delegate.h"
 
-#include "brave/browser/updater/buildflags.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #define ShowUpdaterPromotionInfoBar ShowUpdaterPromotionInfoBar_ChromiumImpl
 #endif
 

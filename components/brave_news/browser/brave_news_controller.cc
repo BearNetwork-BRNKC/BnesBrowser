@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 
 #include <memory>
 #include <optional>
@@ -31,20 +31,20 @@
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_news/browser/background_history_querier.h"
-#include "brave/components/brave_news/browser/brave_news_engine.h"
-#include "brave/components/brave_news/browser/brave_news_p3a.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/direct_feed_controller.h"
-#include "brave/components/brave_news/browser/network.h"
-#include "brave/components/brave_news/browser/publishers_parsing.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/locales_helper.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
-#include "brave/components/brave_news/common/types.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/brave_private_cdn/private_cdn_helper.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_engine.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_p3a.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_controller.h"
+#include "BnesBrowser/components/brave_news/browser/network.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_parsing.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/locales_helper.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/common/types.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/brave_private_cdn/private_cdn_helper.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/prefs/scoped_user_pref_update.h"

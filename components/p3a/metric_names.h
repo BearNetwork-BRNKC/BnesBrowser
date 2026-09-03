@@ -9,7 +9,7 @@
 #include <string_view>
 
 #include "base/containers/fixed_flat_map.h"
-#include "brave/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
 
 namespace p3a {
 

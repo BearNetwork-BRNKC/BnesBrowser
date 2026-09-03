@@ -8,9 +8,9 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/playlist/core/browser/playlist_exclusions.h"
-#include "brave/components/playlist/core/common/constants.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/browser/playlist_exclusions.h"
+#include "BnesBrowser/components/playlist/core/common/constants.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"
 

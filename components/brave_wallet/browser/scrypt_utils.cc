@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/scrypt_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/scrypt_utils.h"
 
 #include "base/check.h"
 #include "base/containers/span.h"
 #include "base/containers/span_writer.h"
 #include "base/containers/to_vector.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/vendor/bat-native-tweetnacl/tweetnacl.h"
+#include "BnesBrowser/vendor/bat-native-tweetnacl/tweetnacl.h"
 #include "crypto/secure_util.h"
 
 namespace brave_wallet {

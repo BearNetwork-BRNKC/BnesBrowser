@@ -10,12 +10,12 @@
 #include <string>
 
 #include "base/containers/flat_set.h"
-#include "brave/components/brave_ads/core/internal/account/account.h"
-#include "brave/components/brave_ads/core/internal/ad_units/ad_handler.h"
-#include "brave/components/brave_ads/core/internal/reminders/reminders.h"
-#include "brave/components/brave_ads/core/internal/studies/studies.h"
-#include "brave/components/brave_ads/core/internal/user_attention/user_idle_detection/user_idle_detection.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/account.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/ad_handler.h"
+#include "BnesBrowser/components/brave_ads/core/internal/reminders/reminders.h"
+#include "BnesBrowser/components/brave_ads/core/internal/studies/studies.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_attention/user_idle_detection/user_idle_detection.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
 
 namespace brave_ads {
 

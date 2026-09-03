@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/app/v2/agent/agent_app.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/agent_app.h"
 
 #include <string>
 
@@ -27,7 +27,7 @@
 #include "base/threading/platform_thread.h"
 #include "base/threading/thread.h"
 #include "base/time/time.h"
-#include "brave/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/agent/shutdown_handlers.h"
 #include "build/build_config.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "testing/multiprocess_func_list.h"

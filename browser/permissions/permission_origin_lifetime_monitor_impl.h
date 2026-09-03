@@ -12,8 +12,8 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_service_observer.h"
-#include "brave/components/permissions/permission_origin_lifetime_monitor.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service_observer.h"
+#include "BnesBrowser/components/permissions/permission_origin_lifetime_monitor.h"
 
 namespace content {
 class BrowserContext;

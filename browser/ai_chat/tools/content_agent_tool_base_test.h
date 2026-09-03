@@ -10,8 +10,8 @@
 #include <string>
 
 #include "base/location.h"
-#include "brave/browser/ai_chat/tools/mock_content_agent_task_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/browser/ai_chat/tools/mock_content_agent_task_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
 #include "chrome/browser/actor/tools/tool_request.h"
 #include "components/optimization_guide/proto/features/actions_data.pb.h"
 #include "content/public/test/browser_task_environment.h"

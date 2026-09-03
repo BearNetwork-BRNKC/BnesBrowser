@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/direct_feed_controller.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_controller.h"
 
 #include <algorithm>
 #include <iterator>
@@ -17,9 +17,9 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback.h"
 #include "base/logging.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_news/browser/html_parsing.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/html_parsing.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "url/gurl.h"
 
 namespace brave_news {

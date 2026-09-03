@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/commands/browser/accelerator_pref_manager.h"
+#include "BnesBrowser/components/commands/browser/accelerator_pref_manager.h"
 
 #include <string>
 
@@ -13,7 +13,7 @@
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/commands/common/accelerator_parsing.h"
+#include "BnesBrowser/components/commands/common/accelerator_parsing.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "ui/base/accelerators/accelerator.h"

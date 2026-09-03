@@ -10,7 +10,7 @@
 
 #include <memory>
 
-#include "brave/ios/browser/safari_data_import/safari_data_importer_bridge.h"
+#include "BnesBrowser/ios/browser/safari_data_import/safari_data_importer_bridge.h"
 
 namespace user_data_importer {
 class SafariDataImporter;

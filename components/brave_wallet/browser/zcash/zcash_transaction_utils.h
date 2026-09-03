@@ -13,9 +13,9 @@
 
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet {
 

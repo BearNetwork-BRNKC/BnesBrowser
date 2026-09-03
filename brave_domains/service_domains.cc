@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/brave_domains/service_domains.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
 
 #include <string>
 
@@ -14,7 +14,7 @@
 #include "base/logging.h"
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
-#include "brave/brave_domains/buildflags.h"
+#include "BnesBrowser/brave_domains/buildflags.h"
 
 namespace brave_domains {
 

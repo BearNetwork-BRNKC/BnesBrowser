@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/cancel_verification.h"
+#include "BnesBrowser/components/brave_account/flows/cancel_verification.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_account/endpoint_client/with_headers.h"
-#include "brave/components/brave_account/endpoints/verify_delete.h"
-#include "brave/components/brave_account/state_base.h"
-#include "brave/components/brave_account/state_internal.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/with_headers.h"
+#include "BnesBrowser/components/brave_account/endpoints/verify_delete.h"
+#include "BnesBrowser/components/brave_account/state_base.h"
+#include "BnesBrowser/components/brave_account/state_internal.h"
 
 namespace brave_account {
 

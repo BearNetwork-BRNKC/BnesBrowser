@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/entries/diagnostic_entry_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/entries/diagnostic_entry_interface.h"
 
 namespace brave_ads {
 

@@ -10,6 +10,6 @@ source_set("wireguard") {
   ]
   deps = [
     "//base",
-    "//brave/components/brave_vpn/common/win",
+    "//BnesBrowser/components/brave_vpn/common/win",
   ]
 }

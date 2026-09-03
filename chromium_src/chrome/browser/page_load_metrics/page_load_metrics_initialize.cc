@@ -8,7 +8,7 @@
 #include <chrome/browser/page_load_metrics/page_load_metrics_initialize.cc>
 #undef InitializePageLoadMetricsForWebContents
 
-#include "brave/components/brave_perf_predictor/browser/perf_predictor_page_metrics_observer.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/perf_predictor_page_metrics_observer.h"
 
 namespace {
 

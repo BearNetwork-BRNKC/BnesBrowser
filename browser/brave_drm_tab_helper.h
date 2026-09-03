@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_BRAVE_DRM_TAB_HELPER_H_
 
 #include "base/scoped_observation.h"
-#include "brave/components/brave_drm/brave_drm.mojom.h"
+#include "BnesBrowser/components/brave_drm/brave_drm.mojom.h"
 #include "components/component_updater/component_updater_service.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/browser/render_frame_host_receiver_set.h"

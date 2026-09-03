@@ -8,9 +8,9 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/supports_user_data.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/rewards_log_stream.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_log_stream.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
 
 namespace brave_rewards::internal {
 

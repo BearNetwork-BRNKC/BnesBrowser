@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_components_content_settings_common_mojom_deps =
-    [ "//brave/components/brave_shields/core/common:mojom" ]
+    [ "//BnesBrowser/components/brave_shields/core/common:mojom" ]

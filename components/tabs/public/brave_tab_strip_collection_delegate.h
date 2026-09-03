@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_TABS_PUBLIC_BRAVE_TAB_STRIP_COLLECTION_DELEGATE_H_
 
 #include "base/types/pass_key.h"
-#include "brave/components/tabs/public/brave_tab_strip_collection.h"
+#include "BnesBrowser/components/tabs/public/brave_tab_strip_collection.h"
 #include "components/split_tabs/split_tab_id.h"
 
 namespace split_tabs {

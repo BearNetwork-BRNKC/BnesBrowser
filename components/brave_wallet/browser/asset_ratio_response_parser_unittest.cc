@@ -8,9 +8,9 @@
 #include <vector>
 
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/asset_ratio_response_parser.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/asset_ratio_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 using base::test::ParseJson;

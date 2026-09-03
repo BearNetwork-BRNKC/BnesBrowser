@@ -5,7 +5,7 @@
 
 // based on //chrome/browser/ui/webui/whats_new/whats_new_handler.cc
 
-#include "brave/browser/ui/webui/brave_education/brave_education_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_handler.h"
 
 #include <utility>
 

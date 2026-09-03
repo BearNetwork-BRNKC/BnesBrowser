@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/history_embeddings/open_tab_search.h"
+#include "BnesBrowser/browser/history_embeddings/open_tab_search.h"
 
 #include <cstdint>
 #include <string>
@@ -16,8 +16,8 @@
 #include "base/task/cancelable_task_tracker.h"
 #include "base/test/test_future.h"
 #include "base/time/time.h"
-#include "brave/components/constants/brave_paths.h"
-#include "brave/components/history_embeddings/test/fake_history_embeddings_search.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
+#include "BnesBrowser/components/history_embeddings/test/fake_history_embeddings_search.h"
 #include "chrome/browser/history/history_service_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

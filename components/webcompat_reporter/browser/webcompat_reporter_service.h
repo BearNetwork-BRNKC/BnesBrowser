@@ -13,8 +13,8 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/webcompat_reporter/browser/webcompat_report_uploader.h"
-#include "brave/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_report_uploader.h"
+#include "BnesBrowser/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"

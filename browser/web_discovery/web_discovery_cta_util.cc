@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/web_discovery/web_discovery_cta_util.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_cta_util.h"
 
 #include "base/check.h"
 #include "base/check_is_test.h"
@@ -11,9 +11,9 @@
 #include "base/no_destructor.h"
 #include "base/time/clock.h"
 #include "base/values.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/search_engines/template_url.h"

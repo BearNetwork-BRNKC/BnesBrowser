@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/l10n/common/ofac_sanction_util.h"
+#include "BnesBrowser/components/l10n/common/ofac_sanction_util.h"
 
 #include <string>
 
 #include "base/strings/string_util.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"

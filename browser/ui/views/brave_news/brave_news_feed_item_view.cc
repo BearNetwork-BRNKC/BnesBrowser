@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/brave_news/brave_news_feed_item_view.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_feed_item_view.h"
 
 #include <memory>
 #include <vector>
 
 #include "base/check.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "components/grit/brave_components_strings.h"
 #include "content/public/browser/browser_thread.h"
 #include "third_party/skia/include/core/SkColor.h"

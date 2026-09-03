@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/constellation_log_store.h"
+#include "BnesBrowser/components/p3a/constellation_log_store.h"
 
 #include <memory>
 #include <optional>
@@ -16,9 +16,9 @@
 #include "base/notreached.h"
 #include "base/rand_util.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/p3a/metric_log_store.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a/uploader.h"
+#include "BnesBrowser/components/p3a/metric_log_store.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/uploader.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

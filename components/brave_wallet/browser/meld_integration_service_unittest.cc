@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/meld_integration_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/meld_integration_service.h"
 
 #include <algorithm>
 #include <cstddef>
@@ -21,9 +21,9 @@
 #include "base/test/mock_callback.h"
 #include "base/test/task_environment.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/meld_integration.mojom-forward.h"
-#include "brave/components/brave_wallet/common/meld_integration.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/meld_integration.mojom-forward.h"
+#include "BnesBrowser/components/brave_wallet/common/meld_integration.mojom.h"
 #include "components/grit/brave_components_strings.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/resource_request.h"

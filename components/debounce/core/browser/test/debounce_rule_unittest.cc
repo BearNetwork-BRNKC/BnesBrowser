@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/debounce/core/browser/debounce_rule.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_rule.h"
 
 #include "base/json/json_reader.h"
 #include "components/prefs/pref_registry_simple.h"

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_NEWS_DIRECT_FEED_FETCHER_DELEGATE_IMPL_H_
 #define BRAVE_BROWSER_BRAVE_NEWS_DIRECT_FEED_FETCHER_DELEGATE_IMPL_H_
 
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
 #include "url/gurl.h"
 
 namespace https_upgrade_exceptions {

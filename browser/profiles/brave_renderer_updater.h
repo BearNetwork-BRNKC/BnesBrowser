@@ -9,9 +9,9 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/common/brave_renderer_configuration.mojom-forward.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/common/brave_renderer_configuration.mojom-forward.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_member.h"

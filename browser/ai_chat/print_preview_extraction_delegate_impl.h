@@ -9,8 +9,8 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/screenshot/print_preview_extractor.h"
-#include "brave/components/ai_chat/content/browser/associated_web_contents_content.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_web_contents_content.h"
 #include "printing/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_PRINT_PREVIEW));

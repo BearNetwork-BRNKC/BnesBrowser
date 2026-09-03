@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/content/browser/ad_block_subscription_download_manager.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_subscription_download_manager.h"
 
 #include <memory>
 #include <utility>
@@ -12,7 +12,7 @@
 #include "base/functional/bind.h"
 #include "base/metrics/histogram_functions.h"
 #include "base/uuid.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
 #include "build/build_config.h"
 #include "components/download/public/background_service/background_download_service.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"

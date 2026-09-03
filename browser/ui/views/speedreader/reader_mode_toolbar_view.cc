@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

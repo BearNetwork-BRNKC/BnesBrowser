@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//build/config/features.gni")
 import("//extensions/buildflags/buildflags.gni")
 import("//tools/grit/repack.gni")
@@ -13,21 +13,21 @@ assert(enable_extensions)
 
 pack_web_resources("generated_resources") {
   resource_name = "brave_extension"
-  output_dir = "$root_gen_dir/brave/components/brave_extension"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_extension"
 
   # need wepack and GRD generation first
   deps = [ "extension/brave_extension" ]
 }
 
 action("web_discovery_project_resources") {
-  script = "//brave/script/web_discovery_project.py"
+  script = "//BnesBrowser/script/web_discovery_project.py"
 
-  gen_build_dir = "$root_gen_dir/brave/web-discovery-project"
+  gen_build_dir = "$root_gen_dir/BnesBrowser/web-discovery-project"
 
   args = [
     "--build",
     "--output_path",
-    rebase_path(gen_build_dir, "//brave/vendor/web-discovery-project"),
+    rebase_path(gen_build_dir, "//BnesBrowser/vendor/web-discovery-project"),
   ]
 
   inputs = [
@@ -36,8 +36,8 @@ action("web_discovery_project_resources") {
     # TODO(petemill): Have WDP use webpack (or another way) to spit out
     # a depfile which automatically lists all the input files used to generate
     # the WDP build.
-    "//brave/vendor/web-discovery-project/.git/HEAD",
-    "//brave/vendor/web-discovery-project/package.json",
+    "//BnesBrowser/vendor/web-discovery-project/.git/HEAD",
+    "//BnesBrowser/vendor/web-discovery-project/package.json",
   ]
 
   outputs = [
@@ -74,9 +74,9 @@ repack("resources") {
   ]
 
   sources = [
-    "$root_gen_dir/brave/components/brave_extension/brave_extension_generated.pak",
-    "$root_gen_dir/brave/components/brave_extension/brave_extension_static.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_extension/brave_extension_generated.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_extension/brave_extension_static.pak",
   ]
 
-  output = "$root_gen_dir/brave/components/brave_extension/brave_extension_resources.pak"
+  output = "$root_gen_dir/BnesBrowser/components/brave_extension/brave_extension_resources.pak"
 }

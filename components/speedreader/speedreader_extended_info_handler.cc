@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/speedreader_extended_info_handler.h"
+#include "BnesBrowser/components/speedreader/speedreader_extended_info_handler.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/check.h"
 #include "base/supports_user_data.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #include "components/sessions/content/content_serialized_navigation_driver.h"
 #include "content/public/browser/navigation_entry.h"
 

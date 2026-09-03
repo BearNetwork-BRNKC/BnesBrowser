@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_background_web_contentses.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contentses.h"
 
 #include <utility>
 
@@ -13,8 +13,8 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/no_destructor.h"
-#include "brave/components/playlist/content/browser/playlist_background_web_contents_helper.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contents_helper.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #include "content/public/browser/navigation_controller.h"
 #include "content/public/browser/web_contents.h"
 #include "net/base/schemeful_site.h"

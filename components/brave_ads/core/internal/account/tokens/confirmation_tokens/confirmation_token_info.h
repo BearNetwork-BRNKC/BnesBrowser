@@ -9,8 +9,8 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
 
 namespace brave_ads {
 

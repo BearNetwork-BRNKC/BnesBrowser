@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/tab_strip_placement_coordinator.h"
+#include "BnesBrowser/browser/ui/views/frame/tab_strip_placement_coordinator.h"
 
 #include "base/check_deref.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
 #include "ui/views/view.h"
 
 TabStripPlacementCoordinator::TabStripPlacementCoordinator(

@@ -7,6 +7,6 @@
 
 #include <optional>
 
-#include "brave/browser/widevine/widevine_utils.h"
+#include "BnesBrowser/browser/widevine/widevine_utils.h"
 
 #include <chrome/browser/component_updater/widevine_cdm_component_installer.cc>

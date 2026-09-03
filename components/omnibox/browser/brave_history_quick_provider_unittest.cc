@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/omnibox/browser/brave_history_quick_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_history_quick_provider.h"
 
 #include <stddef.h>
 
@@ -18,7 +18,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/run_loop.h"
 #include "base/test/task_environment.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/bookmarks/test/bookmark_test_helpers.h"
 #include "components/bookmarks/test/test_bookmark_client.h"

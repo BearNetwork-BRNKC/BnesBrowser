@@ -22,7 +22,7 @@
 #include "base/memory/ref_counted.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "mojo/public/cpp/bindings/equals_traits.h"
 #include "testing/gmock/include/gmock/gmock.h"
 

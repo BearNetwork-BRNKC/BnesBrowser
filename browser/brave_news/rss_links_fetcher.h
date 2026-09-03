@@ -14,7 +14,7 @@
 #include <vector>
 
 #include "base/functional/callback_forward.h"
-#include "brave/components/brave_news/common/rss_link_reader.mojom.h"
+#include "BnesBrowser/components/brave_news/common/rss_link_reader.mojom.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "url/gurl.h"
 

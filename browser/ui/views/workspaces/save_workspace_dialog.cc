@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/workspaces/save_workspace_dialog.h"
+#include "BnesBrowser/browser/ui/views/workspaces/save_workspace_dialog.h"
 
 #include <memory>
 #include <string>
@@ -11,9 +11,9 @@
 
 #include "base/functional/bind.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/workspaces/workspace_service.h"
-#include "brave/browser/workspaces/workspace_service_factory.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/workspaces/workspace_service.h"
+#include "BnesBrowser/browser/workspaces/workspace_service_factory.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/base/metadata/metadata_impl_macros.h"
 #include "ui/base/mojom/dialog_button.mojom.h"

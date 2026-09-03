@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/web_view/autofill/brave_autofill_controller.h"
+#include "BnesBrowser/ios/browser/api/web_view/autofill/brave_autofill_controller.h"
 
 #import <Foundation/Foundation.h>
 
@@ -12,7 +12,7 @@
 #include "base/functional/callback_forward.h"
 #include "base/notimplemented.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/api/web_view/autofill/brave_web_view_autofill_client.h"
+#include "BnesBrowser/ios/browser/api/web_view/autofill/brave_web_view_autofill_client.h"
 #include "components/autofill/core/browser/foundations/autofill_client.h"
 #include "components/autofill/core/browser/ui/payments/card_unmask_prompt_options.h"
 #include "components/autofill/ios/browser/autofill_agent.h"

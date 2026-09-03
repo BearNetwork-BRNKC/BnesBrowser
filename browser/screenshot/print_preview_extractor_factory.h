@@ -11,7 +11,7 @@
 #include "base/containers/flat_map.h"
 #include "base/functional/callback_forward.h"
 #include "base/unguessable_token.h"
-#include "brave/browser/screenshot/print_preview_extractor.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor.h"
 #include "printing/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_PRINT_PREVIEW));

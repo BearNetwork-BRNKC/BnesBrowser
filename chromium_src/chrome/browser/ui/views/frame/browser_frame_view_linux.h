@@ -9,7 +9,7 @@
 #include "chrome/browser/ui/views/frame/opaque_browser_frame_view.h"
 
 // Make BrowserFrameViewLinux extends our BraveOpaqueBrowserFrameView
-#include "brave/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
 #define OpaqueBrowserFrameView BraveOpaqueBrowserFrameView
 
 #include <chrome/browser/ui/views/frame/browser_frame_view_linux.h>  // IWYU pragma: export

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
 
 #include <memory>
 #include <string>
@@ -11,18 +11,18 @@
 
 #include "base/check.h"
 #include "base/no_destructor.h"
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/browser/ai_chat/browser_tool_provider_factory.h"
-#include "brave/browser/ai_chat/model_service_factory.h"
-#include "brave/browser/ai_chat/tab_tracker_service_factory.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/skus/skus_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_credential_manager.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/browser/ai_chat/browser_tool_provider_factory.h"
+#include "BnesBrowser/browser/ai_chat/model_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/tab_tracker_service_factory.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_credential_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/common/channel_info.h"
@@ -32,7 +32,7 @@
 #include "content/public/browser/storage_partition.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_AI_CHAT_AGENT_PROFILE)
-#include "brave/browser/ai_chat/content_agent_tool_provider_factory.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_tool_provider_factory.h"
 #include "chrome/browser/actor/actor_keyed_service_factory.h"
 #endif
 

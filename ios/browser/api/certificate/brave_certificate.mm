@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/certificate/brave_certificate.h"
+#include "BnesBrowser/ios/browser/api/certificate/brave_certificate.h"
 
 #include "base/apple/foundation_util.h"
 #include "base/logging.h"
@@ -11,14 +11,14 @@
 #include "base/strings/string_view_util.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_enums.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_fingerprint.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_model+private.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_public_key_info.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_rdns_sequence.h"
-#include "brave/ios/browser/api/certificate/models/brave_certificate_signature.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_utils.h"
-#include "brave/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_enums.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_fingerprint.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_model+private.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_public_key_info.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_rdns_sequence.h"
+#include "BnesBrowser/ios/browser/api/certificate/models/brave_certificate_signature.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_utils.h"
+#include "BnesBrowser/ios/browser/api/certificate/utils/brave_certificate_x509_utils.h"
 #include "net/base/net_export.h"
 #include "net/cert/x509_cert_types.h"
 #include "net/cert/x509_certificate.h"

@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//extensions/buildflags/buildflags.gni")
 
@@ -22,10 +22,10 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser/tor",
-    "//brave/components/constants",
-    "//brave/components/tor",
-    "//brave/components/tor:test_support",
+    "//BnesBrowser/browser/tor",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/tor",
+    "//BnesBrowser/components/tor:test_support",
     "//chrome/browser/devtools",
     "//chrome/common",
     "//chrome/test:test_support",
@@ -53,18 +53,18 @@ source_set("browser_tests") {
 
   deps = [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/browser",
-    "//brave/browser/tor",
-    "//brave/common",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/constants",
-    "//brave/components/tor",
-    "//brave/components/tor:pref_names",
-    "//brave/components/tor:test_support",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/browser",
+    "//BnesBrowser/browser/tor",
+    "//BnesBrowser/common",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/tor",
+    "//BnesBrowser/components/tor:pref_names",
+    "//BnesBrowser/components/tor:test_support",
     "//chrome/browser",
     "//chrome/browser:browser_process",
     "//chrome/browser/content_settings:content_settings_factory",
@@ -83,13 +83,13 @@ source_set("browser_tests") {
   ]
 
   if (enable_brave_rewards) {
-    deps += [ "//brave/browser/brave_rewards" ]
+    deps += [ "//BnesBrowser/browser/brave_rewards" ]
   }
 
   if (enable_brave_ads) {
     deps += [
-      "//brave/browser/brave_ads",
-      "//brave/components/brave_ads/browser",
+      "//BnesBrowser/browser/brave_ads",
+      "//BnesBrowser/components/brave_ads/browser",
     ]
   }
 
@@ -101,7 +101,7 @@ source_set("browser_tests") {
   }
 
   if (toolkit_views) {
-    deps += [ "//brave/browser/ui/views/location_bar" ]
+    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
   }
 
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]

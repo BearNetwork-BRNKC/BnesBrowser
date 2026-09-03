@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/config/android/rules.gni")
 
 source_set("preferences") {
@@ -12,15 +12,15 @@ source_set("preferences") {
 
   deps = [
     "//base",
-    "//brave/build/android:jni_headers",
-    "//brave/components/brave_adaptive_captcha",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_perf_predictor/common",
-    "//brave/components/brave_referrals/common",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_sync:prefs",
-    "//brave/components/constants",
+    "//BnesBrowser/build/android:jni_headers",
+    "//BnesBrowser/components/brave_adaptive_captcha",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_perf_predictor/common",
+    "//BnesBrowser/components/brave_referrals/common",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_sync:prefs",
+    "//BnesBrowser/components/constants",
     "//chrome/browser:browser_process",
     "//chrome/browser:browser_public_dependencies",
     "//chrome/browser/content_settings:content_settings_factory",
@@ -37,37 +37,37 @@ source_set("preferences") {
 
 java_cpp_strings("java_pref_names_srcjar") {
   sources = [
-    "//brave/components/ai_chat/core/common/pref_names.h",
-    "//brave/components/brave_account/pref_names.h",
-    "//brave/components/brave_adaptive_captcha/pref_names.h",
-    "//brave/components/brave_news/common/pref_names.h",
-    "//brave/components/brave_origin/pref_names.h",
-    "//brave/components/brave_rewards/core/pref_names.h",
-    "//brave/components/brave_shields/core/common/pref_names.h",
-    "//brave/components/brave_vpn/common/pref_names.h",
-    "//brave/components/brave_wallet/browser/pref_names.h",
-    "//brave/components/constants/pref_names.h",
-    "//brave/components/de_amp/common/pref_names.cc",
-    "//brave/components/de_amp/common/pref_names.h",
-    "//brave/components/debounce/core/common/pref_names.h",
-    "//brave/components/ntp_background_images/common/pref_names.h",
-    "//brave/components/omnibox/browser/brave_omnibox_prefs.cc",
-    "//brave/components/omnibox/browser/brave_omnibox_prefs.h",
-    "//brave/components/p3a/pref_names.h",
-    "//brave/components/request_otr/common/pref_names.h",
+    "//BnesBrowser/components/ai_chat/core/common/pref_names.h",
+    "//BnesBrowser/components/brave_account/pref_names.h",
+    "//BnesBrowser/components/brave_adaptive_captcha/pref_names.h",
+    "//BnesBrowser/components/brave_news/common/pref_names.h",
+    "//BnesBrowser/components/brave_origin/pref_names.h",
+    "//BnesBrowser/components/brave_rewards/core/pref_names.h",
+    "//BnesBrowser/components/brave_shields/core/common/pref_names.h",
+    "//BnesBrowser/components/brave_vpn/common/pref_names.h",
+    "//BnesBrowser/components/brave_wallet/browser/pref_names.h",
+    "//BnesBrowser/components/constants/pref_names.h",
+    "//BnesBrowser/components/de_amp/common/pref_names.cc",
+    "//BnesBrowser/components/de_amp/common/pref_names.h",
+    "//BnesBrowser/components/debounce/core/common/pref_names.h",
+    "//BnesBrowser/components/ntp_background_images/common/pref_names.h",
+    "//BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.cc",
+    "//BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h",
+    "//BnesBrowser/components/p3a/pref_names.h",
+    "//BnesBrowser/components/request_otr/common/pref_names.h",
     "//components/translate/core/browser/translate_pref_names.h",
   ]
 
   if (enable_brave_ads) {
-    sources += [ "//brave/components/brave_ads/core/public/prefs/pref_names.h" ]
+    sources += [ "//BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h" ]
   }
 
   if (enable_brave_wallet) {
-    sources += [ "//brave/components/decentralized_dns/core/pref_names.h" ]
+    sources += [ "//BnesBrowser/components/decentralized_dns/core/pref_names.h" ]
   }
 
   template =
-      "//brave/browser/preferences/android/java_templates/BravePref.java.tmpl"
+      "//BnesBrowser/browser/preferences/android/java_templates/BravePref.java.tmpl"
 }
 
 android_library("pref_names_java") {

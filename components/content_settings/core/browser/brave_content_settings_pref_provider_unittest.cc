@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
 
 #include <memory>
 #include <optional>
@@ -15,12 +15,12 @@
 #include "base/memory/raw_ptr.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/content_settings/core/browser/content_settings_pref.h"
 #include "components/content_settings/core/browser/content_settings_registry.h"

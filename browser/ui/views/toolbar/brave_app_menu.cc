@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/toolbar/brave_app_menu.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_app_menu.h"
 
 #include <memory>
 
@@ -15,19 +15,19 @@
 #include "base/logging.h"
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/toolbar/brave_app_menu_model.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/misc_metrics/menu_metrics.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_app_menu_model.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/misc_metrics/menu_metrics.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/toolbar/app_menu_model.h"
@@ -47,12 +47,12 @@
 #include "ui/views/view.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/ui/views/toolbar/brave_vpn_status_label.h"
-#include "brave/browser/ui/views/toolbar/brave_vpn_toggle_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_vpn_status_label.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_vpn_toggle_button.h"
 #endif
 
 using views::MenuItemView;

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_tab_helpers.h"
+#include "BnesBrowser/browser/brave_tab_helpers.h"
 
 #include <memory>
 #include <utility>
@@ -14,26 +14,26 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/unguessable_token.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
-#include "brave/browser/misc_metrics/page_metrics_tab_helper.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/serp_metrics/serp_metrics_tab_helper.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/serp_metrics/serp_metrics_feature.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
+#include "BnesBrowser/browser/misc_metrics/page_metrics_tab_helper.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_tab_helper.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_feature.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -50,85 +50,85 @@
 #include "third_party/widevine/cdm/buildflags.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_tab_helper.h"
-#include "brave/browser/brave_ads/tabs/ads_tab_helper.h"
+#include "BnesBrowser/browser/brave_ads/creatives/search_result_ad/creative_search_result_ad_tab_helper.h"
+#include "BnesBrowser/browser/brave_ads/tabs/ads_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_tab_helper.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/playlist/playlist_service_factory.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
-#include "brave/components/playlist/core/browser/utils.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/components/playlist/core/browser/utils.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/youtube_script_injector_tab_helper.h"
 #endif
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
 #include "chrome/browser/ui/thumbnails/thumbnail_tab_helper.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/new_tab/background_color_tab_helper.h"
+#include "BnesBrowser/browser/new_tab/background_color_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PRINT_PREVIEW)
-#include "brave/browser/screenshot/print_preview_extractor_factory.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor_factory.h"
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/print_preview_extraction_delegate_impl.h"
+#include "BnesBrowser/browser/ai_chat/print_preview_extraction_delegate_impl.h"
 #include "chrome/browser/ui/webui/print_preview/print_preview_ui.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 #endif  // BUILDFLAG(ENABLE_PRINT_PREVIEW)
 
 #if BUILDFLAG(ENABLE_WIDEVINE)
-#include "brave/browser/brave_drm_tab_helper.h"
+#include "BnesBrowser/browser/brave_drm_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/tor/onion_location_tab_helper.h"
-#include "brave/components/tor/tor_tab_helper.h"
+#include "BnesBrowser/components/tor/onion_location_tab_helper.h"
+#include "BnesBrowser/components/tor/tor_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY)
-#include "brave/browser/web_discovery/web_discovery_tab_helper.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
-#include "brave/browser/request_otr/request_otr_tab_helper.h"
-#include "brave/components/request_otr/common/features.h"
+#include "BnesBrowser/browser/request_otr/request_otr_tab_helper.h"
+#include "BnesBrowser/components/request_otr/common/features.h"
 #endif
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/onboarding/onboarding_tab_helper.h"
-#include "brave/browser/ui/sidebar/sidebar_tab_helper.h"
+#include "BnesBrowser/browser/onboarding/onboarding_tab_helper.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/brave_news/brave_news_tab_helper.h"
+#include "BnesBrowser/browser/brave_news/brave_news_tab_helper.h"
 #endif
 
 namespace brave {

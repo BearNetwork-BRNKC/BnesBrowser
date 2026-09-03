@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/playlist/test/playlist_unittest_base.h"
+#include "BnesBrowser/browser/playlist/test/playlist_unittest_base.h"
 
 #include <utility>
 
-#include "brave/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"

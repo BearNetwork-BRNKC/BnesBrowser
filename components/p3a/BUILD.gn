@@ -60,17 +60,17 @@ static_library("p3a") {
     "utils.h",
   ]
 
-  public_deps = [ "//brave/components/p3a_utils" ]
+  public_deps = [ "//BnesBrowser/components/p3a_utils" ]
 
   deps = [
     "constellation/rs/cxx:rust_lib",
     "//base",
-    "//brave/brave_domains",
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/brave_origin/buildflags",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/version_info",
-    "//brave/vendor/brave_base",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/brave_origin/buildflags",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/version_info",
+    "//BnesBrowser/vendor/brave_base",
     "//components/cbor",
     "//components/component_updater",
     "//components/country_codes",
@@ -86,8 +86,8 @@ static_library("p3a") {
     deps += [ "//ios/web/public/thread" ]
   } else {
     deps += [
-      "//brave/components/brave_referrals/common",
-      "//brave/components/misc_metrics:default_browser_monitor",
+      "//BnesBrowser/components/brave_referrals/common",
+      "//BnesBrowser/components/misc_metrics:default_browser_monitor",
       "//content/public/browser",
       "//content/public/common",
     ]
@@ -117,10 +117,10 @@ source_set("unit_tests") {
   deps = [
     "constellation/rs/cxx:rust_lib",
     "//base/test:test_support",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/constants",
-    "//brave/components/p3a",
-    "//brave/components/p3a_utils",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/p3a_utils",
     "//components/cbor",
     "//components/prefs:test_support",
     "//net",
@@ -130,7 +130,7 @@ source_set("unit_tests") {
   ]
   if (!is_ios) {
     deps += [
-      "//brave/components/brave_referrals/common",
+      "//BnesBrowser/components/brave_referrals/common",
       "//content/test:test_support",
     ]
   }

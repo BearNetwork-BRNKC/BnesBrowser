@@ -4,5 +4,5 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_brave_user_agent_exceptions_ios_public_headers = [
-  "//brave/ios/browser/api/brave_user_agent/brave_user_agent_exceptions_ios.h",
+  "//BnesBrowser/ios/browser/api/brave_user_agent/brave_user_agent_exceptions_ios.h",
 ]

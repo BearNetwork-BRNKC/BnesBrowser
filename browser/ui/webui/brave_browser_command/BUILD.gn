@@ -3,11 +3,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//chrome/common/features.gni")
 
@@ -19,13 +19,13 @@ source_set("brave_browser_command") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/brave_education",
-    "//brave/components/brave_rewards/core/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/constants",
-    "//brave/ui/webui/resources/js/brave_browser_command:mojo_bindings",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/brave_education",
+    "//BnesBrowser/components/brave_rewards/core/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/ui/webui/resources/js/brave_browser_command:mojo_bindings",
     "//chrome/browser/profiles:profile",
     "//mojo/public/cpp/bindings",
     "//ui/base:types",
@@ -34,20 +34,20 @@ source_set("brave_browser_command") {
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/browser/brave_wallet",
-      "//brave/components/brave_wallet/common:common_constants",
+      "//BnesBrowser/browser/brave_wallet",
+      "//BnesBrowser/components/brave_wallet/common:common_constants",
     ]
   }
 
   if (enable_ai_chat) {
-    deps += [ "//brave/browser/ai_chat" ]
+    deps += [ "//BnesBrowser/browser/ai_chat" ]
   }
 
   if (enable_brave_rewards) {
-    deps += [ "//brave/browser/brave_rewards" ]
+    deps += [ "//BnesBrowser/browser/brave_rewards" ]
   }
 
   if (enable_brave_vpn) {
-    deps += [ "//brave/browser/brave_vpn" ]
+    deps += [ "//BnesBrowser/browser/brave_vpn" ]
   }
 }

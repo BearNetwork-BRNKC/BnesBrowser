@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_handler.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_handler.h"
 
 #include <memory>
 #include <string_view>
@@ -11,13 +11,13 @@
 
 #include "base/check.h"
 #include "base/test/mock_callback.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_constants.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_mojom_web_page_entities_extractor.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_test_constants.h"
-#include "brave/components/brave_ads/content/browser/creatives/search_result_ad/test/creative_search_result_ad_mojom_web_page_entities_test_util.h"
-#include "brave/components/brave_ads/core/browser/service/test/ads_service_mock.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_constants.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_mojom_web_page_entities_extractor.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/creative_search_result_ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/content/browser/creatives/search_result_ad/test/creative_search_result_ad_mojom_web_page_entities_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/test/ads_service_mock.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/blink/public/mojom/document_metadata/document_metadata.mojom.h"

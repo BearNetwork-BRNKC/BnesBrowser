@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/services/network/public/cpp/system_request_handler.h"
+#include "BnesBrowser/services/network/public/cpp/system_request_handler.h"
 
 // ReconnectableURLLoaderFactory is only used for requests made outside of a
 // renderer context so while this is attached to the profile, it calls

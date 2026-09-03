@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//testing/test.gni")
 
 static_library("api_request_helper") {
@@ -28,8 +28,8 @@ static_library("api_request_helper") {
 source_set("unit_tests") {
   testonly = true
   sources = [
-    "//brave/components/api_request_helper/api_request_helper_unittest.cc",
-    "//brave/components/api_request_helper/sse_parser_unittest.cc",
+    "//BnesBrowser/components/api_request_helper/api_request_helper_unittest.cc",
+    "//BnesBrowser/components/api_request_helper/sse_parser_unittest.cc",
   ]
   deps = [
     ":api_request_helper",
@@ -50,7 +50,7 @@ source_set("test_support") {
 
   deps = [
     "//base",
-    "//brave/components/api_request_helper",
+    "//BnesBrowser/components/api_request_helper",
     "//net/traffic_annotation",
     "//services/network/public/cpp",
     "//testing/gmock",

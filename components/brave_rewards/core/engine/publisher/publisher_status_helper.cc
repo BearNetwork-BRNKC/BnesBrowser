@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/publisher/publisher_status_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher_status_helper.h"
 
 #include <algorithm>
 #include <map>
@@ -13,9 +13,9 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/time/time.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/publisher/publisher.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 
 namespace brave_rewards::internal {
 

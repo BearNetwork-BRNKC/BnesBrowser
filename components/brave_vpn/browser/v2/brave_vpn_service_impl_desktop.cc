@@ -11,11 +11,11 @@
 #include "base/functional/bind.h"
 #include "base/notimplemented.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
-#include "brave/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
-#include "brave/components/brave_vpn/browser/v2/purchased_state_manager.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/purchased_state_manager.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #include "third_party/icu/source/i18n/unicode/timezone.h"
 
 namespace brave_vpn::v2 {

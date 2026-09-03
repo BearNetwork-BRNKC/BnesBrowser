@@ -56,7 +56,7 @@ build_webui("build") {
 
   webui_context_type = "trusted"
 
-  use_brave_grit = true
+  # use_brave_grit = true
   grit_output_dir = target_gen_dir
 
   ts_definitions = [ "//tools/typescript/definitions/chrome_send.d.ts" ]
@@ -68,20 +68,20 @@ build_webui("build") {
   ]
 
   mojo_files = [
-    "$root_gen_dir/brave/components/brave_account/mojom/brave_account.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/change_password.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/get_service_token.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/login.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/register.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/resend_verification_email.mojom-webui.ts",
-    "$root_gen_dir/brave/components/brave_account/mojom/reset_password.mojom-webui.ts",
-    "$root_gen_dir/brave/components/password_strength_meter/password_strength_meter.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/brave_account.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/change_password.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/get_service_token.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/login.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/register.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/resend_verification_email.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/brave_account/mojom/reset_password.mojom-webui.ts",
+    "$root_gen_dir/BnesBrowser/components/password_strength_meter/password_strength_meter.mojom-webui.ts",
     "$root_gen_dir/components/grit/brave_components_webui_strings.ts",
   ]
 
   mojo_files_deps = [
-    "//brave/components/brave_account/mojom:mojom_ts__generator",
-    "//brave/components/password_strength_meter:mojom_ts__generator",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/brave_account/mojom:mojom_ts__generator",
+    "//BnesBrowser/components/password_strength_meter:mojom_ts__generator",
+    "//BnesBrowser/components/resources:strings_grit",
   ]
 }

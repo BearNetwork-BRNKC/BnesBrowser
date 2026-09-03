@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
 
 #include <string>
 #include <utility>
@@ -11,17 +11,17 @@
 #include "base/check.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/browser/brave_wallet/blockchain_images_source.h"
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/browser/blockchain_registry.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/brave_wallet_panel/resources/grit/brave_wallet_panel_generated_map.h"
+#include "BnesBrowser/browser/brave_wallet/blockchain_images_source.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_registry.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet_panel/resources/grit/brave_wallet_panel_generated_map.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
@@ -44,13 +44,13 @@
 #include "ui/webui/webui_util.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_handler.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_handler.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_REWARDS)
 
 WalletPanelUI::WalletPanelUI(content::WebUI* web_ui)

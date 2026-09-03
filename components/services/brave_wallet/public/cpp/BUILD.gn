@@ -6,7 +6,7 @@
 source_set("cpp") {
   visibility = [
     ":unit_tests",
-    "//brave/components/brave_wallet/browser:*",
+    "//BnesBrowser/components/brave_wallet/browser:*",
     "//chrome/utility:*",
   ]
 
@@ -18,14 +18,14 @@ source_set("cpp") {
   ]
 
   deps = [
-    "//brave/components/services/brave_wallet:lib",
-    "//brave/components/services/brave_wallet/public/mojom",
-    "//brave/components/services/brave_wallet/zcash:zcash_decoder",
+    "//BnesBrowser/components/services/brave_wallet:lib",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/services/brave_wallet/zcash:zcash_decoder",
     "//mojo/public/cpp/bindings",
   ]
 
   if (!is_ios) {
-    deps += [ "//brave/components/services/brave_wallet/content" ]
+    deps += [ "//BnesBrowser/components/services/brave_wallet/content" ]
   }
 }
 
@@ -36,9 +36,9 @@ source_set("unit_tests") {
   deps = [
     ":cpp",
     "//base/test:test_support",
-    "//brave/components/services/brave_wallet/public/cpp/utils",
-    "//brave/components/services/brave_wallet/public/mojom",
-    "//brave/components/services/brave_wallet/public/proto:zcash_proto",
+    "//BnesBrowser/components/services/brave_wallet/public/cpp/utils",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/services/brave_wallet/public/proto:zcash_proto",
     "//testing/gtest",
   ]
 }

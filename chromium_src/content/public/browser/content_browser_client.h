@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CONTENT_PUBLIC_BROWSER_CONTENT_BROWSER_CLIENT_H_
 #define BRAVE_CHROMIUM_SRC_CONTENT_PUBLIC_BROWSER_CONTENT_BROWSER_CLIENT_H_
 
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 #include "third_party/blink/public/mojom/loader/referrer.mojom.h"
 
 namespace content {

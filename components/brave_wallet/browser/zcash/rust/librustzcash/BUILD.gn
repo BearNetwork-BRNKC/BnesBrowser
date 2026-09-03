@@ -8,8 +8,8 @@ import("//build/rust/rust_static_library.gni")
 rust_static_library("zcash_protocol") {
   visibility = [
     ":zcash_primitives",
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib",
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
   ]
   crate_name = "zcash_protocol"
   edition = "2021"
@@ -28,8 +28,8 @@ rust_static_library("zcash_protocol") {
   ]
   deps = [
     ":zcash_encoding",
-    "//brave/third_party/rust/corez/v0_1:lib",
-    "//brave/third_party/rust/memuse/v0_2:lib",
+    "//BnesBrowser/third_party/rust/corez/v0_1:lib",
+    "//BnesBrowser/third_party/rust/memuse/v0_2:lib",
   ]
 }
 
@@ -44,17 +44,17 @@ rust_static_library("zcash_encoding") {
   sources = [ "src/components/zcash_encoding/src/lib.rs" ]
   allow_unsafe = true
   deps = [
-    "//brave/third_party/rust/corez/v0_1:lib",
-    "//brave/third_party/rust/hex/v0_4:lib",
-    "//brave/third_party/rust/nonempty/v0_11:lib",
+    "//BnesBrowser/third_party/rust/corez/v0_1:lib",
+    "//BnesBrowser/third_party/rust/hex/v0_4:lib",
+    "//BnesBrowser/third_party/rust/nonempty/v0_11:lib",
   ]
 }
 
 rust_static_library("zcash_primitives") {
   visibility = [
     ":zcash_client_backend",
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib",
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
   ]
   crate_name = "zcash_primitives"
   crate_root = "src/zcash_primitives/src/lib.rs"
@@ -77,19 +77,19 @@ rust_static_library("zcash_primitives") {
   deps = [
     ":zcash_encoding",
     ":zcash_protocol",
-    "//brave/third_party/rust/blake2b_simd/v1:lib",
-    "//brave/third_party/rust/corez/v0_1:lib",
-    "//brave/third_party/rust/incrementalmerkletree/v0_8:lib",
-    "//brave/third_party/rust/memuse/v0_2:lib",
-    "//brave/third_party/rust/nonempty/v0_11:lib",
-    "//brave/third_party/rust/orchard/v0_15:lib",
+    "//BnesBrowser/third_party/rust/blake2b_simd/v1:lib",
+    "//BnesBrowser/third_party/rust/corez/v0_1:lib",
+    "//BnesBrowser/third_party/rust/incrementalmerkletree/v0_8:lib",
+    "//BnesBrowser/third_party/rust/memuse/v0_2:lib",
+    "//BnesBrowser/third_party/rust/nonempty/v0_11:lib",
+    "//BnesBrowser/third_party/rust/orchard/v0_15:lib",
   ]
 }
 
 rust_static_library("zcash_client_backend") {
   visibility = [
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib",
-    "//brave/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:rust_lib_cxx_generated",
   ]
   crate_name = "zcash_client_backend"
   crate_root = "src/zcash_client_backend/src/lib.rs"
@@ -101,7 +101,7 @@ rust_static_library("zcash_client_backend") {
   deps = [
     ":zcash_encoding",
     ":zcash_primitives",
-    "//brave/third_party/rust/byteorder/v1:lib",
-    "//brave/third_party/rust/shardtree/v0_7:lib",
+    "//BnesBrowser/third_party/rust/byteorder/v1:lib",
+    "//BnesBrowser/third_party/rust/shardtree/v0_7:lib",
   ]
 }

@@ -33,7 +33,7 @@ source_set("unit_tests") {
   sources = [ "brave_search_utils_unittest.cc" ]
 
   deps = [
-    "//brave/components/brave_search/common",
+    "//BnesBrowser/components/brave_search/common",
     "//testing/gtest",
     "//url",
   ]

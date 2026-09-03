@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/version.gni")
+import("//BnesBrowser/build/version.gni")
 import("//build/util/process_version.gni")
 
 static_library("version_info") {
@@ -46,7 +46,7 @@ if (!is_ios) {
 
     deps = [
       "//base",
-      "//brave/components/version_info",
+      "//BnesBrowser/components/version_info",
       "//chrome/common:non_code_constants",
       "//components/version_info",
       "//testing/gtest",

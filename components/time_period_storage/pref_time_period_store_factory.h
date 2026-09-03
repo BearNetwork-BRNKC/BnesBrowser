@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/time_period_storage/time_period_store_factory.h"
+#include "BnesBrowser/components/time_period_storage/time_period_store_factory.h"
 
 class PrefService;
 class TimePeriodStore;

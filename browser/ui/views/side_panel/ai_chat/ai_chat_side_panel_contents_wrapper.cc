@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_contents_wrapper.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_contents_wrapper.h"
 
 #include <utility>
 
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
 
 AIChatSidePanelContentsWrapper::AIChatSidePanelContentsWrapper(
     const GURL& webui_url,

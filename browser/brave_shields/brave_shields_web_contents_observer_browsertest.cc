@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
 
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
 #include "base/path_service.h"
 #include "base/values.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_shields/ad_block_browser_test_helper.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_browser_test_helper.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_custom_filters_provider.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

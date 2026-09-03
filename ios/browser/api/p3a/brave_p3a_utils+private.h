@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_P3A_BRAVE_P3A_UTILS_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_P3A_BRAVE_P3A_UTILS_PRIVATE_H_
 
-#include "brave/ios/browser/api/p3a/brave_p3a_utils.h"
+#include "BnesBrowser/ios/browser/api/p3a/brave_p3a_utils.h"
 
 class PrefService;
 

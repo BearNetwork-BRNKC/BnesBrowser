@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_mobile_subscription/renderer/android/subscription_render_frame_observer.h"
+#include "BnesBrowser/components/brave_mobile_subscription/renderer/android/subscription_render_frame_observer.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/features.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/features.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "content/public/common/isolated_world_ids.h"
 #include "content/public/test/content_mock_cert_verifier.h"
 #include "content/public/test/render_view_test.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 namespace brave_subscription {

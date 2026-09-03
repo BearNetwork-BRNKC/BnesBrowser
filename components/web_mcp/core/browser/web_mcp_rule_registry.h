@@ -11,7 +11,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/no_destructor.h"
 #include "base/sequence_checker.h"
-#include "brave/components/web_mcp/core/browser/web_mcp_injection_rule.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_injection_rule.h"
 
 namespace base {
 class FilePath;

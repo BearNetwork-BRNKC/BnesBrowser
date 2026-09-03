@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 
 // POST https://gate3.wallet.brave.com/api/oauth/bitflyer/{environment}/token
 //

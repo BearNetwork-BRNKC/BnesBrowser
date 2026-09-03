@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/speedreader/renderer/speedreader_render_frame_observer.h"
+#include "BnesBrowser/components/speedreader/renderer/speedreader_render_frame_observer.h"
 
-#include "brave/components/speedreader/renderer/speedreader_js_handler.h"
+#include "BnesBrowser/components/speedreader/renderer/speedreader_js_handler.h"
 #include "content/public/renderer/render_frame.h"
 
 namespace speedreader {

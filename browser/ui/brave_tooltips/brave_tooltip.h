@@ -11,8 +11,8 @@
 
 #include "base/check.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/brave_tooltips/brave_tooltip_attributes.h"
-#include "brave/browser/ui/brave_tooltips/brave_tooltip_delegate.h"
+#include "BnesBrowser/browser/ui/brave_tooltips/brave_tooltip_attributes.h"
+#include "BnesBrowser/browser/ui/brave_tooltips/brave_tooltip_delegate.h"
 
 namespace brave_tooltips {
 

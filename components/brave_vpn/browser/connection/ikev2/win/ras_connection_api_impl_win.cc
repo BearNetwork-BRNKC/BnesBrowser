@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/connection/ikev2/win/ras_connection_api_impl_win.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/win/ras_connection_api_impl_win.h"
 
 #include <windows.h>
 
@@ -17,9 +17,9 @@
 #include "base/logging.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/browser/connection/ikev2/win/ras_utils.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/win/ras_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
 
 // Most of Windows implementations are based on Brian Clifton
 // (brian@clifton.me)'s work (https://github.com/bsclifton/winvpntool).

@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/tor_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/tor_internals_ui.h"
 
 #include <utility>
 
 #include "base/check_op.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/tor/resources/grit/tor_internals_generated_map.h"
-#include "brave/components/tor/resources/grit/tor_resources.h"
-#include "brave/components/tor/tor_launcher_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/tor/resources/grit/tor_internals_generated_map.h"
+#include "BnesBrowser/components/tor/resources/grit/tor_resources.h"
+#include "BnesBrowser/components/tor/tor_launcher_factory.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/web_ui.h"
 

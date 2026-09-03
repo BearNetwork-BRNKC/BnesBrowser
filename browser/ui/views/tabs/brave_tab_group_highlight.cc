@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/brave_tab_group_highlight.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_highlight.h"
 
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "chrome/browser/ui/tabs/features.h"
 #include "chrome/browser/ui/views/tabs/tab_group_views.h"

@@ -16,7 +16,7 @@
 #include "base/scoped_observation.h"
 #include "base/timer/timer.h"
 #include "base/types/pass_key.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
 #include "chrome/browser/ui/views/frame/horizontal_tab_strip_region_view.h"
 #include "components/prefs/pref_member.h"
 #include "ui/base/metadata/metadata_header_macros.h"

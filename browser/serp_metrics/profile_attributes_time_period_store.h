@@ -11,7 +11,7 @@
 
 #include "base/files/file_path.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
 
 class ProfileAttributesStorage;
 

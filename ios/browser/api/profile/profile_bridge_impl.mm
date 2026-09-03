@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/components/prefs/pref_service_bridge_impl.h"
+#include "BnesBrowser/ios/components/prefs/pref_service_bridge_impl.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 

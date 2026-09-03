@@ -10,8 +10,8 @@ generated_types("generated_bitcoin_rpc_responses") {
   root_namespace = "brave_wallet::%(namespace)s"
   deps = [ "//base" ]
   visibility = [
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:test_support",
-    "//brave/components/brave_wallet/browser:unit_tests",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:test_support",
+    "//BnesBrowser/components/brave_wallet/browser:unit_tests",
   ]
 }

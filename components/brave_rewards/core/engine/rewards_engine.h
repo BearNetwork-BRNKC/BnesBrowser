@@ -15,9 +15,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
 #include "base/supports_user_data.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/engine/rewards_log_stream.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_log_stream.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
 #include "mojo/public/cpp/bindings/associated_remote.h"
 #include "mojo/public/cpp/bindings/pending_associated_remote.h"
 

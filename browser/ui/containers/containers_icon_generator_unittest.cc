@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/containers/containers_icon_generator.h"
+#include "BnesBrowser/browser/ui/containers/containers_icon_generator.h"
 
 #include <unordered_map>
 #include <utility>
 
-#include "brave/components/containers/core/mojom/containers.mojom.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "ui/gfx/image/image_skia_rep.h"
 #include "ui/gfx/skia_util.h"

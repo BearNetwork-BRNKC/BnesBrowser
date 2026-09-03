@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ollama/ollama_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_service.h"
 
 #include <memory>
 #include <string>
@@ -11,7 +11,7 @@
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/ai_chat/core/common/mojom/ollama.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ollama.mojom.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

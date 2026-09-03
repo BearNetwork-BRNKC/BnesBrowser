@@ -3,10 +3,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
@@ -18,15 +18,15 @@ source_set("webui") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_ads/buildflags",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/webui",
-    "//brave/ios/browser/ui/webui/brave_account",
-    "//brave/ios/browser/ui/webui/skus",
-    "//brave/ios/web/webui",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_ads/buildflags",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/webui",
+    "//BnesBrowser/ios/browser/ui/webui/brave_account",
+    "//BnesBrowser/ios/browser/ui/webui/skus",
+    "//BnesBrowser/ios/web/webui",
     "//components/prefs",
     "//components/resources:components_resources_grit",
     "//ios/chrome/browser/shared/model/profile",
@@ -41,23 +41,23 @@ source_set("webui") {
 
   if (enable_ai_chat) {
     deps += [
-      "//brave/components/ai_chat/core/browser",
-      "//brave/components/ai_chat/core/common",
-      "//brave/ios/browser/ui/webui/ai_chat",
+      "//BnesBrowser/components/ai_chat/core/browser",
+      "//BnesBrowser/components/ai_chat/core/common",
+      "//BnesBrowser/ios/browser/ui/webui/ai_chat",
     ]
   }
 
   if (enable_brave_ads) {
-    deps += [ "//brave/ios/browser/ui/webui/ads" ]
+    deps += [ "//BnesBrowser/ios/browser/ui/webui/ads" ]
   }
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/browser",
-      "//brave/components/brave_wallet/common",
-      "//brave/components/brave_wallet/common:common_constants",
-      "//brave/ios/browser/brave_wallet",
-      "//brave/ios/browser/ui/webui/brave_wallet",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/components/brave_wallet/common",
+      "//BnesBrowser/components/brave_wallet/common:common_constants",
+      "//BnesBrowser/ios/browser/brave_wallet",
+      "//BnesBrowser/ios/browser/ui/webui/brave_wallet",
     ]
   }
 }
@@ -73,9 +73,9 @@ source_set("data_sources") {
   ]
 
   deps = [
-    "//brave/brave_domains",
-    "//brave/components/brave_private_cdn",
-    "//brave/ios/browser/favicon",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/brave_private_cdn",
+    "//BnesBrowser/ios/browser/favicon",
     "//components/favicon/core",
     "//components/favicon_base",
     "//components/history/core/browser",

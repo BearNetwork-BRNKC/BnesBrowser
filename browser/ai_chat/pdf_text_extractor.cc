@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/pdf_text_extractor.h"
+#include "BnesBrowser/browser/ai_chat/pdf_text_extractor.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/logging.h"
-#include "brave/components/ai_chat/content/browser/pdf_text_helper.h"
+#include "BnesBrowser/components/ai_chat/content/browser/pdf_text_helper.h"
 #include "components/pdf/browser/pdf_document_helper.h"
 #include "content/public/browser/web_contents.h"
 

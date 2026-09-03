@@ -11,7 +11,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
 #include "url/gurl.h"
 
 namespace speedreader {

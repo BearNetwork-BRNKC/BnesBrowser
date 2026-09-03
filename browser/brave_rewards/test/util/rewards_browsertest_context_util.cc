@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_context_util.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_context_util.h"
 
 #include "content/public/test/browser_test_utils.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"

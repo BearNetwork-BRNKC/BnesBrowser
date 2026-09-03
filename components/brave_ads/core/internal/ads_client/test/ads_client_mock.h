@@ -9,9 +9,9 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_callback.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_callback.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads {

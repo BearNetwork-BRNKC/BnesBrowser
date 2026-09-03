@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_VPN_WIN_BRAVE_VPN_SERVICE_DELEGATE_WIN_H_
 #define BRAVE_BROWSER_BRAVE_VPN_WIN_BRAVE_VPN_SERVICE_DELEGATE_WIN_H_
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service_delegate.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_delegate.h"
 
 namespace brave_vpn {
 

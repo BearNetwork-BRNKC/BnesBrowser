@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
 
 #include <string>
 #include <tuple>
@@ -17,15 +17,15 @@
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_account/endpoint_client/test_support.h"
-#include "brave/components/brave_account/endpoint_client/url_replacements.h"
-#include "brave/components/brave_vpn/browser/v2/api/device_endpoints.h"
-#include "brave/components/brave_vpn/browser/v2/api/error_body.h"
-#include "brave/components/brave_vpn/browser/v2/api/purchase_endpoints.h"
-#include "brave/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
-#include "brave/components/brave_vpn/browser/v2/api/region_endpoints.h"
-#include "brave/components/brave_vpn/browser/v2/api/support_endpoints.h"
-#include "brave/components/brave_vpn/browser/v2/api/transport_protocol.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/test_support.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/url_replacements.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/device_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/error_body.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/purchase_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/region_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/support_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/transport_protocol.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

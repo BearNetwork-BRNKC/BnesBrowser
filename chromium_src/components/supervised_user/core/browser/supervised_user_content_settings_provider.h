@@ -9,7 +9,7 @@
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/content_settings/core/browser/brave_global_value_map.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_global_value_map.h"
 
 #define GlobalValueMap BraveGlobalValueMap
 #endif

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
 
 #include <optional>
 #include <utility>
@@ -16,9 +16,9 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/task/single_thread_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_vpn/browser/connection/connection_api_impl.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/connection_api_impl.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

@@ -11,9 +11,9 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/ai_chat/content/browser/associated_web_contents_content.h"
-#include "brave/components/ai_chat/core/browser/associated_content_driver.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_web_contents_content.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_driver.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
 #include "components/optimization_guide/content/browser/page_content_proto_provider.h"
 
 namespace content {

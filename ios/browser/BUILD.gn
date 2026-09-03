@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
 import("//build/config/ios/rules.gni")
 import("//ios/build/config.gni")
 
@@ -44,27 +44,27 @@ group("browser") {
     "api/web_image",
     "api/web_view",
     "brave_wallet",
-    "//brave/browser/sync",
-    "//brave/components/brave_policy",
-    "//brave/components/constants",
-    "//brave/ios/browser/ai_chat",
-    "//brave/ios/browser/application_context",
-    "//brave/ios/browser/brave_news",
-    "//brave/ios/browser/brave_origin",
-    "//brave/ios/browser/brave_vpn",
-    "//brave/ios/browser/brave_wallet",
-    "//brave/ios/browser/global_privacy_control",
-    "//brave/ios/browser/playlist",
-    "//brave/ios/browser/policy",
-    "//brave/ios/browser/profile/model",
-    "//brave/ios/browser/safari_data_import",
-    "//brave/ios/browser/shared/prefs",
-    "//brave/ios/browser/ui/webui",
-    "//brave/ios/browser/web",
-    "//brave/ios/components/prefs",
+    "//BnesBrowser/browser/sync",
+    "//BnesBrowser/components/brave_policy",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/ios/browser/ai_chat",
+    "//BnesBrowser/ios/browser/application_context",
+    "//BnesBrowser/ios/browser/brave_news",
+    "//BnesBrowser/ios/browser/brave_origin",
+    "//BnesBrowser/ios/browser/brave_vpn",
+    "//BnesBrowser/ios/browser/brave_wallet",
+    "//BnesBrowser/ios/browser/global_privacy_control",
+    "//BnesBrowser/ios/browser/playlist",
+    "//BnesBrowser/ios/browser/policy",
+    "//BnesBrowser/ios/browser/profile/model",
+    "//BnesBrowser/ios/browser/safari_data_import",
+    "//BnesBrowser/ios/browser/shared/prefs",
+    "//BnesBrowser/ios/browser/ui/webui",
+    "//BnesBrowser/ios/browser/web",
+    "//BnesBrowser/ios/components/prefs",
     "//ios/chrome/browser/shared/model/prefs",
   ]
   if (enable_brave_talk) {
-    deps += [ "//brave/ios/browser/brave_talk" ]
+    deps += [ "//BnesBrowser/ios/browser/brave_talk" ]
   }
 }

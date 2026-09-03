@@ -5,10 +5,10 @@
 
 #include "chrome/browser/history_embeddings/history_embeddings_service_factory.h"
 
-#include "brave/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/history_embeddings/brave_history_embeddings_service.h"
+#include "BnesBrowser/browser/history_embeddings/brave_history_embeddings_service.h"
 #endif
 
 #include <chrome/browser/history_embeddings/history_embeddings_service_factory.cc>

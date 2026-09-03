@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/themes/brave_theme_service.h"
+#include "BnesBrowser/browser/themes/brave_theme_service.h"
 
 #include "base/check_is_test.h"
-#include "brave/browser/themes/brave_dark_mode_utils.h"
-#include "brave/browser/themes/pref_names.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/themes/brave_dark_mode_utils.h"
+#include "BnesBrowser/browser/themes/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/darker_theme/pref_names.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/pref_names.h"
 #endif  // defined(TOOLKIT_VIEWS)
 
 BraveThemeService::BraveThemeService(Profile* profile,

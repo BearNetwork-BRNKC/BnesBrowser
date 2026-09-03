@@ -11,7 +11,7 @@
 #include "base/component_export.h"
 #include "base/functional/callback.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 
 namespace base {
 class SequencedTaskRunner;

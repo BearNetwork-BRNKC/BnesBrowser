@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "ios/chrome/browser/shared/model/profile/profile_keyed_service_factory_ios.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 

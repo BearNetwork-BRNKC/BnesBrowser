@@ -3,20 +3,20 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_actions/brave_actions_container.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_actions_container.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_view.h"
-#include "brave/browser/ui/views/rounded_separator.h"
-#include "brave/browser/ui/webui/brave_shields/shields_panel_ui.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_view.h"
+#include "BnesBrowser/browser/ui/views/rounded_separator.h"
+#include "BnesBrowser/browser/ui/webui/brave_shields/shields_panel_ui.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/layout_constants.h"
@@ -26,9 +26,9 @@
 #include "ui/views/view.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/browser/ui/views/brave_actions/brave_rewards_action_view.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_rewards_action_view.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif
 
 BraveActionsContainer::BraveActionsContainer(

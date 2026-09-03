@@ -4,10 +4,10 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/strings/string_util.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_browsertest.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_browsertest.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"

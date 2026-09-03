@@ -8,8 +8,8 @@
 
 #include <cstddef>
 
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
-#include "brave/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 class PrefService;

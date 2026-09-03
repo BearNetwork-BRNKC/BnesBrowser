@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/omnibox/omnibox_controller.h"

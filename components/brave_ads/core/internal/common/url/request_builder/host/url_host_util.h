@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/url_host_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/url_host_types.h"
 
 namespace brave_ads {
 

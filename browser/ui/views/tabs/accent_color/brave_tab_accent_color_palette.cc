@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/tabs/accent_color/brave_tab_accent_color_palette.h"
+#include "BnesBrowser/browser/ui/views/tabs/accent_color/brave_tab_accent_color_palette.h"
 
 #include <algorithm>
 #include <array>
 #include <utility>
 
 #include "base/containers/fixed_flat_map.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/color/color_id.h"
 #include "ui/gfx/color_palette.h"

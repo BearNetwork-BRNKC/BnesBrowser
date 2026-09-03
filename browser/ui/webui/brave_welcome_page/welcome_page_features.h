@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/containers/flat_set.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.h"
 
 class Profile;
 

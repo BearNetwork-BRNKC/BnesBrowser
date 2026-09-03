@@ -10,7 +10,7 @@
 #include <string_view>
 #include <vector>
 
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "ui/base/models/image_model.h"
 
 namespace containers {

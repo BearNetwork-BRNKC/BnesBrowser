@@ -34,8 +34,8 @@ android_library("java") {
 
   deps = [
     "//base:base_java",
-    "//brave/browser/password_entry_edit/android:java",
-    "//brave/build/android:android_brave_strings_grd",
+    "//BnesBrowser/browser/password_entry_edit/android:java",
+    "//BnesBrowser/build/android:android_brave_strings_grd",
     "//build/android:build_java",
     "//chrome/browser/feedback/android:factory_java",
     "//chrome/browser/feedback/android:java",

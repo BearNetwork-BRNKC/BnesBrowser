@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tools/history_search_tool.h"
+#include "BnesBrowser/browser/ai_chat/tools/history_search_tool.h"
 
 #include <memory>
 #include <optional>
@@ -22,15 +22,15 @@
 #include "base/test/values_test_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
-#include "brave/browser/ai_chat/browser_tool_provider.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/browser/engine/mock_engine_consumer.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/history_embeddings/test/fake_history_embeddings_search.h"
-#include "brave/components/local_ai/core/pref_names.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
+#include "BnesBrowser/browser/ai_chat/browser_tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/mock_engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/history_embeddings/test/fake_history_embeddings_search.h"
+#include "BnesBrowser/components/local_ai/core/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "components/history/core/browser/url_row.h"

@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/page_info/brave_page_info_tab_switcher.h"
+#include "BnesBrowser/browser/ui/views/page_info/brave_page_info_tab_switcher.h"
 
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/base/metadata/metadata_impl_macros.h"

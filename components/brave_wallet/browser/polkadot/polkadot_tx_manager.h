@@ -11,13 +11,13 @@
 #include <string>
 
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_tracker.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_transaction_status_task.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_tx_meta.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
-#include "brave/components/brave_wallet/browser/tx_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_transaction_status_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace brave_wallet {

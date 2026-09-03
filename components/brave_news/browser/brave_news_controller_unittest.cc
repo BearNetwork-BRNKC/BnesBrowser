@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 
 #include <memory>
 #include <string>
@@ -16,14 +16,14 @@
 #include "base/memory/weak_ptr.h"
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_news/browser/test/wait_for_callback.h"
-#include "brave/components/brave_news/browser/urls.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/brave_news/common/pref_names.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/l10n/common/test/scoped_default_locale.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/test/wait_for_callback.h"
+#include "BnesBrowser/components/brave_news/browser/urls.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/l10n/common/test/scoped_default_locale.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/history/core/test/history_service_test_util.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"

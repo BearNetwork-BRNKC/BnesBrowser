@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_browser_frame_view_mac.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_mac.h"
 
 #import <AppKit/AppKit.h>
 
@@ -13,13 +13,13 @@
 #include "base/check_deref.h"
 #include "base/functional/bind.h"
 #include "base/memory/raw_ref.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
-#include "brave/browser/ui/views/frame/brave_window_frame_graphic.h"
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_window_frame_graphic.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

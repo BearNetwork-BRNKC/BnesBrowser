@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/settings/brave_clear_browsing_data_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_clear_browsing_data_handler.h"
 
 #include <memory>
 #include <string>
@@ -12,9 +12,9 @@
 #include "base/test/bind.h"
 #include "base/test/gmock_callback_support.h"
 #include "base/values.h"
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/components/brave_ads/core/browser/service/test/ads_service_mock.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/test/ads_service_mock.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "content/public/browser/browser_context.h"

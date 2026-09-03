@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/command_line.h"
-#include "brave/browser/ui/webui/brave_web_ui_controller_factory.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/browser/ui/webui/brave_web_ui_controller_factory.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

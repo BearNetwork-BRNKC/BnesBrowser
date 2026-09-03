@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/playlist_ui.h"
+#include "BnesBrowser/browser/ui/webui/playlist_ui.h"
 
 #include <memory>
 #include <utility>
@@ -11,16 +11,16 @@
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/strings/strcat.h"
-#include "brave/browser/playlist/playlist_service_factory.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/browser/ui/playlist/playlist_dialogs.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/browser/ui/webui/playlist_active_tab_tracker.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/content/browser/resources/grit/playlist_generated_map.h"
-#include "brave/components/playlist/core/browser/utils.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/browser/ui/playlist/playlist_dialogs.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/browser/ui/webui/playlist_active_tab_tracker.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/resources/grit/playlist_generated_map.h"
+#include "BnesBrowser/components/playlist/core/browser/utils.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/webui/theme_source.h"

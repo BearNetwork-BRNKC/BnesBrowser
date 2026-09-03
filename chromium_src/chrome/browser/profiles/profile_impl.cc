@@ -5,7 +5,7 @@
 
 #include "chrome/browser/profiles/profile_impl.h"
 
-#include "brave/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
 #include "build/build_config.h"
 
 #define ShouldRestoreOldSessionCookies \

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
 
 #include <optional>
 #include <set>
@@ -14,21 +14,21 @@
 #include "base/check_is_test.h"
 #include "base/containers/span.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_auto_sync_manager.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_create_orchard_to_transparent_transaction_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_create_transparent_transaction_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_discover_next_unused_zcash_address_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_get_transparent_utxos_context.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_get_zcash_chain_tip_status_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_resolve_balance_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_resolve_transaction_status_task.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_serializer.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_tx_meta.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_auto_sync_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_create_orchard_to_transparent_transaction_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_create_transparent_transaction_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_discover_next_unused_zcash_address_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_get_transparent_utxos_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_get_zcash_chain_tip_status_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_resolve_balance_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_resolve_transaction_status_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 namespace brave_wallet {

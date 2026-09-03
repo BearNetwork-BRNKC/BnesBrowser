@@ -3,25 +3,25 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ntp_background_images/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ntp_background_images/buildflags/buildflags.gni")
 
 brave_browser_ntp_background_images_sources = [
-  "//brave/browser/ntp_background_images/view_counter_service_factory.cc",
-  "//brave/browser/ntp_background_images/view_counter_service_factory.h",
+  "//BnesBrowser/browser/ntp_background_images/view_counter_service_factory.cc",
+  "//BnesBrowser/browser/ntp_background_images/view_counter_service_factory.h",
 ]
 
 brave_browser_ntp_background_images_deps = [
   "//base",
-  "//brave/browser:browser_process",
-  "//brave/browser/profiles:util",
-  "//brave/components/brave_ads/browser",
-  "//brave/components/brave_stats/browser",
-  "//brave/components/constants",
-  "//brave/components/ntp_background_images/browser",
-  "//brave/components/ntp_background_images/buildflags",
-  "//brave/components/ntp_background_images/common",
-  "//brave/components/p3a",
-  "//brave/components/p3a_utils",
+  "//BnesBrowser/browser:browser_process",
+  "//BnesBrowser/browser/profiles:util",
+  "//BnesBrowser/components/brave_ads/browser",
+  "//BnesBrowser/components/brave_stats/browser",
+  "//BnesBrowser/components/constants",
+  "//BnesBrowser/components/ntp_background_images/browser",
+  "//BnesBrowser/components/ntp_background_images/buildflags",
+  "//BnesBrowser/components/ntp_background_images/common",
+  "//BnesBrowser/components/p3a",
+  "//BnesBrowser/components/p3a_utils",
   "//chrome/browser:browser_process",
   "//chrome/browser/profiles:profile",
   "//chrome/common",
@@ -33,17 +33,17 @@ brave_browser_ntp_background_images_deps = [
 
 if (enable_custom_background) {
   brave_browser_ntp_background_images_deps +=
-      [ "//brave/browser/ntp_background_images:ntp_custom_background_images" ]
+      [ "//BnesBrowser/browser/ntp_background_images:ntp_custom_background_images" ]
 }
 
 if (is_android) {
   brave_browser_ntp_background_images_sources += [
-    "//brave/browser/ntp_background_images/android/ntp_background_images_bridge.cc",
-    "//brave/browser/ntp_background_images/android/ntp_background_images_bridge.h",
+    "//BnesBrowser/browser/ntp_background_images/android/ntp_background_images_bridge.cc",
+    "//BnesBrowser/browser/ntp_background_images/android/ntp_background_images_bridge.h",
   ]
 
   brave_browser_ntp_background_images_deps += [
-    "//brave/build/android:jni_headers",
+    "//BnesBrowser/build/android:jni_headers",
     "//components/keyed_service/content",
     "//components/keyed_service/core",
   ]

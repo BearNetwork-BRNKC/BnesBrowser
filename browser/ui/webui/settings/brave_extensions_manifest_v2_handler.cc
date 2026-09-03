@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/settings/brave_extensions_manifest_v2_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_extensions_manifest_v2_handler.h"
 
 #include <algorithm>
 #include <memory>
@@ -12,8 +12,8 @@
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/browser/extensions/manifest_v2/brave_extensions_manifest_v2_installer.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/extensions/manifest_v2/brave_extensions_manifest_v2_installer.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/extensions/webstore_install_with_prompt.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/web_contents.h"

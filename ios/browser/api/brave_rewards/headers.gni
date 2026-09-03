@@ -4,11 +4,11 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 rewards_public_headers = [
-  "//brave/ios/browser/api/brave_rewards/brave_rewards_api.h",
-  "//brave/ios/browser/api/brave_rewards/rewards_notification.h",
-  "//brave/ios/browser/api/brave_rewards/rewards_observer.h",
-  "$root_gen_dir/brave/ios/browser/api/brave_rewards/rewards.mojom.objc.h",
+  "//BnesBrowser/ios/browser/api/brave_rewards/brave_rewards_api.h",
+  "//BnesBrowser/ios/browser/api/brave_rewards/rewards_notification.h",
+  "//BnesBrowser/ios/browser/api/brave_rewards/rewards_observer.h",
+  "$root_gen_dir/BnesBrowser/ios/browser/api/brave_rewards/rewards.mojom.objc.h",
 ]
 
 rewards_public_deps =
-    [ "//brave/ios/browser/api/brave_rewards:rewards_mojom_wrappers" ]
+    [ "//BnesBrowser/ios/browser/api/brave_rewards:rewards_mojom_wrappers" ]

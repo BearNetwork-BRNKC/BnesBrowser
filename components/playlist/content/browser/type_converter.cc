@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/type_converter.h"
+#include "BnesBrowser/components/playlist/content/browser/type_converter.h"
 
 #include <limits>
 #include <string>
@@ -11,7 +11,7 @@
 
 #include "base/check.h"
 #include "base/json/values_util.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
 
 static_assert(
     std::numeric_limits<

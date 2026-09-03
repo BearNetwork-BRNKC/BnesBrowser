@@ -11,12 +11,12 @@
 #include <optional>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_shield_sync_service.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_shield_sync_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
 
 namespace brave_wallet {
 

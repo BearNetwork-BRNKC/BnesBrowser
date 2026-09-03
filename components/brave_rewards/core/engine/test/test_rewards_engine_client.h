@@ -16,9 +16,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/core/engine/rewards_database.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_database.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 
 namespace brave_rewards::internal {

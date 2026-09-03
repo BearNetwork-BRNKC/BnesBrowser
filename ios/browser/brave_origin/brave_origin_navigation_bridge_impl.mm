@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_origin/brave_origin_navigation_bridge_impl.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_navigation_bridge_impl.h"
 
-#include "brave/ios/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/ios/browser/skus/skus_service_factory.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 
 namespace brave_origin {

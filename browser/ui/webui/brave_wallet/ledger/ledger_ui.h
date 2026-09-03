@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/brave_wallet/common/ledger_bridge.mojom-forward.h"
-#include "brave/components/brave_wallet/common/ledger_bridge.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom-forward.h"
+#include "BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.h"
 #include "content/public/browser/web_ui.h"
 #include "content/public/browser/webui_config.h"
 #include "content/public/common/url_constants.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/local_ai/core/on_device_speech_models_component_installer.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_component_installer.h"
 
 #include <cstdint>
 #include <iterator>
@@ -19,9 +19,9 @@
 #include "base/path_service.h"
 #include "base/values.h"
 #include "base/version.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/local_ai/core/features.h"
-#include "brave/components/local_ai/core/on_device_speech_models_state.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/local_ai/core/features.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_state.h"
 #include "components/component_updater/component_installer.h"
 #include "components/component_updater/component_updater_paths.h"
 #include "components/component_updater/component_updater_service.h"

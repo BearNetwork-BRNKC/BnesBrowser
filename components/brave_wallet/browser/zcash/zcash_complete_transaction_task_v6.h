@@ -14,11 +14,11 @@
 #include <variant>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/internal/orchard_bundle_manager.h"
-#include "brave/components/brave_wallet/browser/internal/orchard_storage/orchard_storage.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_action_context.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_bundle_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_storage/orchard_storage.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_action_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 namespace brave_wallet {
 

@@ -15,7 +15,7 @@
 #include "base/files/file_path.h"
 #include "base/memory/raw_ptr.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/web_discovery/browser/patterns.h"
+#include "BnesBrowser/components/web_discovery/browser/patterns.h"
 #include "net/base/backoff_entry.h"
 #include "url/gurl.h"
 

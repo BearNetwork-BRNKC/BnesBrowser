@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
 
 // Prompting the user for download location shouldn't be a factor in determining
 // the download's danger level.

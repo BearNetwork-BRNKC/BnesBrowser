@@ -5,8 +5,8 @@
 
 #include "base/check.h"
 #include "base/path_service.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

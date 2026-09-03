@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/sync/engine/brave_data_type_worker.h"
+#include "BnesBrowser/components/sync/engine/brave_data_type_worker.h"
 
 #define DataTypeWorker BraveDataTypeWorker
 #include <components/sync/engine/data_type_registry.cc>

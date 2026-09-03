@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/psst/core/browser/psst_reporter_service.h"
+#include "BnesBrowser/components/psst/core/browser/psst_reporter_service.h"
 
 #include <utility>
 
 #include "base/task/sequenced_task_runner.h"
 #include "base/values.h"
-#include "brave/components/psst/core/browser/psst_report_uploader.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/psst/core/browser/psst_report_uploader.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 
 namespace psst {
 

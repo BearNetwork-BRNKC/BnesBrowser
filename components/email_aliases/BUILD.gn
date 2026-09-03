@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 import("//tools/json_schema_compiler/json_schema_api.gni")
 
@@ -62,16 +62,16 @@ static_library("service") {
     ":mojom",
     ":pref_names",
     "//base",
-    "//brave/brave_domains",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:internal",
-    "//brave/components/brave_account/endpoint_client",
-    "//brave/components/brave_account/mojom",
-    "//brave/components/constants",
-    "//brave/components/email_aliases:features",
-    "//brave/components/p3a_utils",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:internal",
+    "//BnesBrowser/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/mojom",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/email_aliases:features",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/time_period_storage",
     "//components/keyed_service/core",
     "//components/pref_registry",
     "//components/prefs",
@@ -109,11 +109,11 @@ source_set("unit_tests") {
     ":service",
     ":test_utils",
     "//base/test:test_support",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:features",
-    "//brave/components/brave_account:test_support",
-    "//brave/components/constants",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/brave_account:test_support",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:strings_grit",
     "//components/os_crypt/async/browser:test_support",
     "//components/prefs:test_support",
     "//services/network:test_support",

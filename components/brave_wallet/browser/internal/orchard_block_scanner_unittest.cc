@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/internal/orchard_block_scanner.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_block_scanner.h"
 
 #include <algorithm>
 #include <array>
@@ -13,14 +13,14 @@
 
 #include "base/check.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_wallet/browser/bip39.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_zip32.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_test_utils.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_zip32.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

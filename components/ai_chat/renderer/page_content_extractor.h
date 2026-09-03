@@ -12,7 +12,7 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "content/public/renderer/render_frame_observer_tracker.h"

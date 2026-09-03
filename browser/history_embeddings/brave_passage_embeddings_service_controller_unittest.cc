@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/history_embeddings/brave_passage_embeddings_service_controller.h"
+#include "BnesBrowser/browser/history_embeddings/brave_passage_embeddings_service_controller.h"
 
 #include <optional>
 #include <string_view>
@@ -16,7 +16,7 @@
 #include "base/task/thread_pool/thread_pool_instance.h"
 #include "base/test/bind.h"
 #include "base/test/run_until.h"
-#include "brave/components/local_ai/core/local_models_updater.h"
+#include "BnesBrowser/components/local_ai/core/local_models_updater.h"
 #include "components/optimization_guide/core/optimization_guide_proto_util.h"
 #include "components/optimization_guide/proto/models.pb.h"
 #include "components/optimization_guide/proto/passage_embeddings_model_metadata.pb.h"

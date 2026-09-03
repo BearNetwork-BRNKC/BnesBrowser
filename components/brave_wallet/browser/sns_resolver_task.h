@@ -16,8 +16,8 @@
 #include "base/check.h"
 #include "base/memory/weak_ptr.h"
 #include "base/notreached.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/common/solana_address.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_address.h"
 
 namespace brave_wallet {
 

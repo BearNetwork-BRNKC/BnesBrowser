@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar.h"
 
 #include <stddef.h>
 
@@ -14,8 +14,8 @@
 #include "base/files/file_path.h"
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

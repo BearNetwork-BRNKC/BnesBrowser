@@ -23,12 +23,12 @@ if (enable_ffmpeg_hevc_support) {
   brave_third_party_ffmpeg_c_sources += [
     # Byte-swap DSP (renamed to avoid duplicate object name with
     # x86/bswapdsp.asm)
-    "//brave/third_party/ffmpeg/libavcodec/libavcodec_bswapdsp.c",
+    "//BnesBrowser/third_party/ffmpeg/libavcodec/libavcodec_bswapdsp.c",
 
     # HEVC core decoder
-    "//brave/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_cabac.c",
-    "//brave/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_parse.c",
-    "//brave/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_parser.c",
+    "//BnesBrowser/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_cabac.c",
+    "//BnesBrowser/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_parse.c",
+    "//BnesBrowser/third_party/ffmpeg/libavcodec/hevc/libavcodec_hevc_parser.c",
     "libavcodec/hevc/data.c",
     "libavcodec/hevc/dsp.c",
     "libavcodec/hevc/filter.c",

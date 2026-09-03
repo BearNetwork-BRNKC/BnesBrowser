@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/brave_wallet/browser/internal/orchard_storage/orchard_shard_tree_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_storage/orchard_shard_tree_types.h"
 
 namespace brave_wallet::orchard {
 

@@ -3,12 +3,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_education/buildflags.gni")
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/psst/buildflags/buildflags.gni")
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_education/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/psst/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//build/config/locales.gni")
 import("//chrome/common/features.gni")
 import("//extensions/buildflags/buildflags.gni")
@@ -38,15 +38,15 @@ template("brave_repack_percent") {
 
     # All sources should also have deps for completeness.
     sources = [
-      "$root_gen_dir/brave/brave_theme_resources_${percent}_percent.pak",
-      "$root_gen_dir/brave/browser/resources/bookmark_icon/bookmark_icon_resources_${percent}_percent.pak",
+      "$root_gen_dir/BnesBrowser/brave_theme_resources_${percent}_percent.pak",
+      "$root_gen_dir/BnesBrowser/browser/resources/bookmark_icon/bookmark_icon_resources_${percent}_percent.pak",
       "$root_gen_dir/components/brave_components_resources_${percent}_percent.pak",
     ]
 
     deps = [
-      "//brave/app/theme:brave_theme_resources",
-      "//brave/browser/resources/bookmark_icon:bookmark_icon_resources",
-      "//brave/components/resources:scaled_resources",
+      "//BnesBrowser/app/theme:brave_theme_resources",
+      "//BnesBrowser/browser/resources/bookmark_icon:bookmark_icon_resources",
+      "//BnesBrowser/components/resources:scaled_resources",
     ]
 
     if (defined(invoker.deps)) {
@@ -70,69 +70,69 @@ template("brave_extra_paks") {
 
     if (!is_android) {
       sources += [
-        "$root_gen_dir/brave/brave_generated_resources.pak",
-        "$root_gen_dir/brave/brave_unscaled_resources.pak",
-        "$root_gen_dir/brave/browser/resources/brave_new_tab_page_refresh/brave_new_tab_page_refresh_generated.pak",
-        "$root_gen_dir/brave/browser/resources/brave_welcome_page/brave_welcome_page_generated.pak",
-        "$root_gen_dir/brave/browser/resources/settings/brave_settings_resources.pak",
+        "$root_gen_dir/BnesBrowser/brave_generated_resources.pak",
+        "$root_gen_dir/BnesBrowser/brave_unscaled_resources.pak",
+        "$root_gen_dir/BnesBrowser/browser/resources/brave_new_tab_page_refresh/brave_new_tab_page_refresh_generated.pak",
+        "$root_gen_dir/BnesBrowser/browser/resources/brave_welcome_page/brave_welcome_page_generated.pak",
+        "$root_gen_dir/BnesBrowser/browser/resources/settings/brave_settings_resources.pak",
       ]
       if (enable_brave_education) {
-        sources += [ "$root_gen_dir/brave/brave_education_resources.pak" ]
+        sources += [ "$root_gen_dir/BnesBrowser/brave_education_resources.pak" ]
       }
     }
 
-    deps = [ "//brave/components/resources" ]
+    deps = [ "//BnesBrowser/components/resources" ]
 
     if (!is_android) {
       deps += [
-        "//brave/app:brave_generated_resources_grit",
-        "//brave/app/theme:brave_unscaled_resources",
-        "//brave/browser/resources/brave_new_tab_page_refresh:generated_resources",
-        "//brave/browser/resources/brave_welcome_page:generated_resources",
-        "//brave/browser/resources/settings:resources",
-        "//brave/components/resources:strings",
+        "//BnesBrowser/app:brave_generated_resources_grit",
+        "//BnesBrowser/app/theme:brave_unscaled_resources",
+        "//BnesBrowser/browser/resources/brave_new_tab_page_refresh:generated_resources",
+        "//BnesBrowser/browser/resources/brave_welcome_page:generated_resources",
+        "//BnesBrowser/browser/resources/settings:resources",
+        "//BnesBrowser/components/resources:strings",
       ]
       if (enable_brave_education) {
-        deps += [ "//brave/browser/resources/brave_education:resources_grit" ]
+        deps += [ "//BnesBrowser/browser/resources/brave_education:resources_grit" ]
       }
     }
 
     if (enable_brave_ai_chat_agent_profile) {
-      sources += [ "$root_gen_dir/brave/browser/resources/ai_chat_agent_new_tab_page/ai_chat_agent_new_tab_page_all.pak" ]
+      sources += [ "$root_gen_dir/BnesBrowser/browser/resources/ai_chat_agent_new_tab_page/ai_chat_agent_new_tab_page_all.pak" ]
 
-      deps += [ "//brave/browser/resources/ai_chat_agent_new_tab_page" ]
+      deps += [ "//BnesBrowser/browser/resources/ai_chat_agent_new_tab_page" ]
     }
 
     if (enable_brave_rewards) {
-      sources += [ "$root_gen_dir/brave/components/brave_rewards/resources/brave_rewards_resources.pak" ]
+      sources += [ "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/brave_rewards_resources.pak" ]
 
-      deps += [ "//brave/components/brave_rewards/resources" ]
+      deps += [ "//BnesBrowser/components/brave_rewards/resources" ]
     }
 
     if (is_brave_origin_branded) {
-      sources += [ "$root_gen_dir/brave/browser/resources/brave_origin_startup/brave_origin_startup_all.pak" ]
+      sources += [ "$root_gen_dir/BnesBrowser/browser/resources/brave_origin_startup/brave_origin_startup_all.pak" ]
 
-      deps += [ "//brave/browser/resources/brave_origin_startup" ]
+      deps += [ "//BnesBrowser/browser/resources/brave_origin_startup" ]
     }
 
     if (enable_tor) {
       sources +=
-          [ "$root_gen_dir/brave/components/tor/resources/tor_resources.pak" ]
+          [ "$root_gen_dir/BnesBrowser/components/tor/resources/tor_resources.pak" ]
 
-      deps += [ "//brave/components/tor/resources" ]
+      deps += [ "//BnesBrowser/components/tor/resources" ]
     }
 
     if (enable_psst) {
-      sources += [ "$root_gen_dir/brave/components/psst/resources/brave_psst_resources.pak" ]
-      deps += [ "//brave/components/psst/resources" ]
+      sources += [ "$root_gen_dir/BnesBrowser/components/psst/resources/brave_psst_resources.pak" ]
+      deps += [ "//BnesBrowser/components/psst/resources" ]
     }
 
     if (enable_extensions) {
-      sources += [ "$root_gen_dir/brave/components/brave_extension/brave_extension_resources.pak" ]
+      sources += [ "$root_gen_dir/BnesBrowser/components/brave_extension/brave_extension_resources.pak" ]
 
       deps += [
-        "//brave/common/extensions/api",
-        "//brave/components/brave_extension:resources",
+        "//BnesBrowser/common/extensions/api",
+        "//BnesBrowser/components/brave_extension:resources",
       ]
     }
 

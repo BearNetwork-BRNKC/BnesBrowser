@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/components/web_discovery/common/web_discovery.mojom.h"
+#include "BnesBrowser/components/web_discovery/common/web_discovery.mojom.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "mojo/public/cpp/bindings/receiver.h"

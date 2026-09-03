@@ -12,7 +12,7 @@ android_library("java") {
 
   deps = [
     "//base:base_java",
-    "//brave/components/skus/common:mojom_java",
+    "//BnesBrowser/components/skus/common:mojom_java",
     "//chrome/browser/profiles/android:java",
     "//mojo/public/java:bindings_java",
     "//mojo/public/java:system_java",

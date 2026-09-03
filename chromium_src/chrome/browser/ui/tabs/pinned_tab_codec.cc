@@ -5,10 +5,10 @@
 
 #include "chrome/browser/ui/tabs/pinned_tab_codec.h"
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/container_specifier_utils.h"
+#include "BnesBrowser/browser/containers/container_specifier_utils.h"
 #endif
 
 namespace {

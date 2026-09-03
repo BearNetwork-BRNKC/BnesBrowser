@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_search_conversion/promotion_button_view.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/functional/callback.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "ui/base/cursor/cursor.h"
 #include "ui/base/cursor/mojom/cursor_type.mojom.h"

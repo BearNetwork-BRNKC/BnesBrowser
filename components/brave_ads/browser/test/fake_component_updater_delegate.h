@@ -11,7 +11,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 
 class PrefService;
 

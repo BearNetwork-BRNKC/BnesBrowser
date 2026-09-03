@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_VIEWS_TABS_MOCK_BROWSER_WINDOW_INTERFACE_WITH_VERTICAL_TAB_CONTROLLER_H_
 #define BRAVE_BROWSER_UI_VIEWS_TABS_MOCK_BROWSER_WINDOW_INTERFACE_WITH_VERTICAL_TAB_CONTROLLER_H_
 
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/test/mock_browser_window_interface.h"
 

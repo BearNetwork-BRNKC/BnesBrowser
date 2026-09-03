@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
 
 #include <optional>
 #include <string>
@@ -11,8 +11,8 @@
 
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/browser/ui/views/tabs/brave_tab.h"
-#include "brave/browser/ui/views/tabs/brave_tab_group_header.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_header.h"
 #include "chrome/browser/ui/tabs/tab_types.h"
 #include "chrome/browser/ui/views/tabs/fake_tab_slot_controller.h"
 #include "chrome/browser/ui/views/tabs/tab_layout_state.h"

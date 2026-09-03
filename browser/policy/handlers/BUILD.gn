@@ -19,7 +19,7 @@ static_library("handlers") {
 
   deps = [
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
     "//components/content_settings/core/common",
     "//components/policy/core/browser",
     "//components/policy/core/common:common_constants",
@@ -40,7 +40,7 @@ source_set("unit_tests") {
   deps = [
     ":handlers",
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
     "//components/content_settings/core/common",
     "//components/policy/core/browser",
     "//components/policy/core/common",

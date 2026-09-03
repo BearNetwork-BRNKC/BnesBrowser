@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 
 namespace brave_ads {

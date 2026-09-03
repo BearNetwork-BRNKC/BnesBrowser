@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 assert(enable_containers)
 
@@ -22,9 +22,9 @@ source_set("containers") {
   ]
 
   deps = [
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/common",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui/tab_contents",
     "//chrome/browser/ui/tabs",
@@ -43,13 +43,13 @@ source_set("browser_tests") {
 
   deps = [
     ":containers",
-    "//brave/app:brave_generated_resources_grit_grit",
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/browser:test_support",
-    "//brave/components/containers/core/common:features",
-    "//brave/components/containers/core/common:switches",
-    "//brave/components/containers/core/mojom",
+    "//BnesBrowser/app:brave_generated_resources_grit_grit",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/browser:test_support",
+    "//BnesBrowser/components/containers/core/common:features",
+    "//BnesBrowser/components/containers/core/common:switches",
+    "//BnesBrowser/components/containers/core/mojom",
     "//chrome/browser",
     "//chrome/browser/browsing_data:constants",
     "//chrome/browser/prefs:util",
@@ -81,11 +81,11 @@ source_set("unit_tests") {
 
   deps = [
     ":containers",
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/browser:test_support",
-    "//brave/components/containers/core/common:features",
-    "//brave/components/containers/core/mojom",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/browser:test_support",
+    "//BnesBrowser/components/containers/core/common:features",
+    "//BnesBrowser/components/containers/core/mojom",
     "//chrome/browser",
     "//chrome/test:test_support",
     "//components/permissions",

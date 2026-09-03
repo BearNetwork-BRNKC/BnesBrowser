@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/payload_generator.h"
+#include "BnesBrowser/components/web_discovery/browser/payload_generator.h"
 
 #include <utility>
 
 #include "base/containers/fixed_flat_set.h"
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/web_discovery/browser/privacy_guard.h"
+#include "BnesBrowser/components/web_discovery/browser/privacy_guard.h"
 
 namespace web_discovery {
 

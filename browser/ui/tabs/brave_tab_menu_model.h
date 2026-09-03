@@ -10,14 +10,14 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/ui/tabs/tab_menu_model.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "ui/menus/simple_menu_model.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 class VerticalTabController;

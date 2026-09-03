@@ -12,13 +12,13 @@
 #include <string>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/browser/v2/skus_service_client.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/skus_service_client.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN_V2_APPS)
-#include "brave/components/brave_vpn/browser/v2/agent_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/agent_client.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN_V2_APPS)
 
 namespace network {

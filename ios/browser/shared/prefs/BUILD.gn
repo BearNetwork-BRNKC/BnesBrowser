@@ -3,10 +3,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 source_set("prefs") {
   sources = [
@@ -16,32 +16,32 @@ source_set("prefs") {
     "shared_pref_names_bridge.mm",
   ]
   deps = [
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/brave_account",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_origin",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_sync:prefs",
-    "//brave/components/brave_talk/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/de_amp/common",
-    "//brave/components/debounce/core/browser",
-    "//brave/components/email_aliases/buildflags",
-    "//brave/components/global_privacy_control",
-    "//brave/components/l10n/common",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/ntp_background_images/common",
-    "//brave/components/p3a",
-    "//brave/components/playlist/core/common",
-    "//brave/components/skus/browser",
-    "//brave/ios/browser/brave_stats",
-    "//brave/ios/browser/youtube",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_origin",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_sync:prefs",
+    "//BnesBrowser/components/brave_talk/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/de_amp/common",
+    "//BnesBrowser/components/debounce/core/browser",
+    "//BnesBrowser/components/email_aliases/buildflags",
+    "//BnesBrowser/components/global_privacy_control",
+    "//BnesBrowser/components/l10n/common",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/playlist/core/common",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/ios/browser/brave_stats",
+    "//BnesBrowser/ios/browser/youtube",
     "//components/metrics",
     "//components/omnibox/browser",
     "//components/pref_registry",
@@ -50,19 +50,19 @@ source_set("prefs") {
     "//ios/chrome/common",
   ]
   if (enable_brave_vpn) {
-    deps += [ "//brave/components/brave_vpn/common" ]
+    deps += [ "//BnesBrowser/components/brave_vpn/common" ]
   }
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/browser",
-      "//brave/components/brave_wallet/browser:pref_names",
-      "//brave/components/decentralized_dns/core",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/components/brave_wallet/browser:pref_names",
+      "//BnesBrowser/components/decentralized_dns/core",
     ]
   }
   if (enable_brave_talk) {
-    deps += [ "//brave/components/brave_talk" ]
+    deps += [ "//BnesBrowser/components/brave_talk" ]
   }
   if (enable_email_aliases) {
-    deps += [ "//brave/components/email_aliases:service" ]
+    deps += [ "//BnesBrowser/components/email_aliases:service" ]
   }
 }

@@ -9,7 +9,7 @@
 #include <map>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/targeting/behavioral/purchase_intent/resource/purchase_intent_signal_history_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/behavioral/purchase_intent/resource/purchase_intent_signal_history_info.h"
 
 namespace brave_ads {
 

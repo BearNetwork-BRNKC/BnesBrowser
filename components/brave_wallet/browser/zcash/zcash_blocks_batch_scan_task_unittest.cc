@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_blocks_batch_scan_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_blocks_batch_scan_task.h"
 
 #include <memory>
 #include <optional>
@@ -15,13 +15,13 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_wallet/browser/internal/orchard_test_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_rpc.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_test_utils.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

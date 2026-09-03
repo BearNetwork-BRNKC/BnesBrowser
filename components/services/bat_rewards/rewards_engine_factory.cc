@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/bat_rewards/rewards_engine_factory.h"
+#include "BnesBrowser/components/services/bat_rewards/rewards_engine_factory.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 
 namespace brave_rewards::internal {
 

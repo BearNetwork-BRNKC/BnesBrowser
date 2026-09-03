@@ -3,28 +3,28 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
 
 #include "base/feature_list.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/misc_metrics/fingerprint_frequency_metrics.h"
-#include "brave/browser/misc_metrics/media_session_metrics_impl.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/misc_metrics/profile_new_tab_metrics.h"
-#include "brave/browser/misc_metrics/theme_metrics.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/misc_metrics/autofill_metrics.h"
-#include "brave/components/misc_metrics/features.h"
-#include "brave/components/misc_metrics/language_metrics.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/ntp_background_images/browser/features.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/misc_metrics/fingerprint_frequency_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/profile_new_tab_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/theme_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/autofill_metrics.h"
+#include "BnesBrowser/components/misc_metrics/features.h"
+#include "BnesBrowser/components/misc_metrics/language_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/features.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "chrome/browser/autofill/personal_data_manager_factory.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/browser_process.h"
@@ -39,18 +39,18 @@
 #include "content/public/browser/browser_context.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/misc_metrics/misc_android_metrics.h"
-#include "brave/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/browser/misc_metrics/misc_android_metrics.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
 #else
-#include "brave/browser/misc_metrics/extension_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/extension_metrics.h"
 #include "extensions/browser/extension_registry_factory.h"
 #endif
 

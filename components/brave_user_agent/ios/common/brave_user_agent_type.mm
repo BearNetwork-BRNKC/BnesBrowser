@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
 
 BraveIOSUserAgentType GetDefaultBraveIOSUserAgentType() {
   if (!base::FeatureList::IsEnabled(

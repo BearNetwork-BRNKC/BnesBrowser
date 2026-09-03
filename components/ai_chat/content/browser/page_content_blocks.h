@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
 
 namespace optimization_guide::proto {
 class AnnotatedPageContent;

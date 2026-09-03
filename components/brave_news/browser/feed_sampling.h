@@ -20,7 +20,7 @@
 #include "base/functional/function_ref.h"
 #include "base/rand_util.h"
 #include "base/types/id_type.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 

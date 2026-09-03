@@ -6,12 +6,12 @@
 #ifndef BRAVE_COMPONENTS_SIDEBAR_BROWSER_SIDEBAR_ITEM_H_
 #define BRAVE_COMPONENTS_SIDEBAR_BROWSER_SIDEBAR_ITEM_H_
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "url/gurl.h"
 
 namespace sidebar {

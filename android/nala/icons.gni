@@ -242,7 +242,7 @@ nala_chrome_app_icon_overrides = [
 # the override must itself be a PNG in each density bucket. To keep the Nala
 # vector as the single source of truth, those PNGs are generated from it at
 # build time (see android/nala/BUILD.gn and
-# //brave/build/android/nala_vd_rasterizer).
+# //BnesBrowser/build/android/nala_vd_rasterizer).
 #
 # Each entry lists the density buckets the upstream icon defines; the override
 # must cover every one of them, otherwise the unoverridden upstream PNG still

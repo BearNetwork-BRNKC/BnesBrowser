@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
 
 #include <algorithm>
 #include <memory>
@@ -19,14 +19,14 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/task/bind_post_task.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-shared.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
-#include "brave/components/content_settings/core/common/content_settings_util.h"
-#include "brave/components/google_sign_in_permission/google_sign_in_permission_util.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-shared.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/content_settings/core/common/content_settings_util.h"
+#include "BnesBrowser/components/google_sign_in_permission/google_sign_in_permission_util.h"
 #include "build/build_config.h"
 #include "components/content_settings/core/browser/content_settings_info.h"
 #include "components/content_settings/core/browser/content_settings_pref.h"

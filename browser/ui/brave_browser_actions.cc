@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_browser_actions.h"
+#include "BnesBrowser/browser/ui/brave_browser_actions.h"
 
 #include "base/feature_list.h"
 #include "base/functional/callback_helpers.h"
 #include "base/types/to_address.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/actions/chrome_action_id.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
@@ -28,29 +28,29 @@
 #include "ui/gfx/vector_icon_types.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/browser/utils.h"
+#include "BnesBrowser/components/playlist/core/browser/utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #include "chrome/browser/ui/page_action/page_action_triggers.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
 #endif
 
 namespace {

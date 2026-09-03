@@ -24,8 +24,8 @@ source_set("screenshot") {
 
   deps = [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/components/screenshot/content",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/components/screenshot/content",
     "//chrome/app:generated_resources",
     "//chrome/browser/download",
     "//chrome/browser/image_editor",
@@ -37,7 +37,7 @@ source_set("screenshot") {
   ]
 
   if (enable_print_preview) {
-    deps += [ "//brave/browser/screenshot" ]
+    deps += [ "//BnesBrowser/browser/screenshot" ]
   }
 }
 

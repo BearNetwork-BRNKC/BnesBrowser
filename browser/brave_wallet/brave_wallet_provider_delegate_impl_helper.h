@@ -10,7 +10,7 @@
 
 #include "base/auto_reset.h"
 #include "base/functional/callback.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom-forward.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom-forward.h"
 #include "build/build_config.h"
 #include "url/origin.h"
 

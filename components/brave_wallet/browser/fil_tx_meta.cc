@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/fil_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_tx_meta.h"
 
 #include <string>
 #include <vector>
 
 #include "base/check_op.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/fil_transaction.h"
-#include "brave/components/brave_wallet/browser/tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_meta.h"
 
 namespace brave_wallet {
 

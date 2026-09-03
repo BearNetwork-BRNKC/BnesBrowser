@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_location_bar_model_delegate.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_location_bar_model_delegate.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_location_bar_model_delegate.h"
 #include "chrome/test/base/in_process_browser_test.h"

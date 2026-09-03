@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/youtube/youtube_network_change_observer.h"
+#include "BnesBrowser/ios/browser/youtube/youtube_network_change_observer.h"
 
 #include "base/containers/fixed_flat_set.h"
-#include "brave/ios/browser/youtube/pref_names.h"
-#include "brave/ios/browser/youtube/youtube_quality_javascript_feature.h"
+#include "BnesBrowser/ios/browser/youtube/pref_names.h"
+#include "BnesBrowser/ios/browser/youtube/youtube_quality_javascript_feature.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/web_state.h"

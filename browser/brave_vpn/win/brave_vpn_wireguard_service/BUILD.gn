@@ -4,9 +4,9 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import(
-    "//brave/browser/brave_vpn/win/brave_vpn_wireguard_service/allowlist.gni")
-import("//brave/build/config.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/allowlist.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 import("//build/toolchain/gcc_toolchain.gni")
 import("//build/util/process_version.gni")
 import("//chrome/process_version_rc_template.gni")
@@ -16,8 +16,8 @@ assert(is_win && enable_brave_vpn)
 
 copy("brave_vpn_wireguard_binaries") {
   sources = [
-    "//brave/third_party/brave-vpn-wireguard-nt-dlls/${target_cpu}/wireguard.dll",
-    "//brave/third_party/brave-vpn-wireguard-tunnel-dlls/${target_cpu}/tunnel.dll",
+    "//BnesBrowser/third_party/brave-vpn-wireguard-nt-dlls/${target_cpu}/wireguard.dll",
+    "//BnesBrowser/third_party/brave-vpn-wireguard-tunnel-dlls/${target_cpu}/tunnel.dll",
   ]
   outputs = [ "$root_out_dir/{{source_file_part}}" ]
 }
@@ -53,8 +53,8 @@ executable("brave_vpn_wireguard_service") {
     "status_tray",
     "//base",
     "//base:base_static",
-    "//brave/browser/brave_vpn/win:wireguard_utils",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/browser/brave_vpn/win:wireguard_utils",
+    "//BnesBrowser/components/resources:strings_grit",
     "//build/win:default_exe_manifest",
     "//chrome/common:channel_info",
     "//chrome/install_static:install_static_util",
@@ -78,15 +78,15 @@ source_set("install_utils") {
     "install_utils.cc",
     "install_utils.h",
   ]
-  public_deps = [ "//brave/components/brave_vpn/common/wireguard/win:brave_wireguard_manager_idl" ]
+  public_deps = [ "//BnesBrowser/components/brave_vpn/common/wireguard/win:brave_wireguard_manager_idl" ]
   deps = [
     "//base",
-    "//brave/browser/brave_vpn/win:wireguard_utils",
-    "//brave/browser/brave_vpn/win/brave_vpn_helper:common",
-    "//brave/browser/brave_vpn/win/brave_vpn_wireguard_service/service",
-    "//brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray",
-    "//brave/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon:utils",
-    "//brave/components/brave_vpn/common/win",
+    "//BnesBrowser/browser/brave_vpn/win:wireguard_utils",
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_helper:common",
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/service",
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray",
+    "//BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/status_tray/status_icon:utils",
+    "//BnesBrowser/components/brave_vpn/common/win",
     "//chrome/common:channel_info",
     "//chrome/installer/util:work_item",
   ]

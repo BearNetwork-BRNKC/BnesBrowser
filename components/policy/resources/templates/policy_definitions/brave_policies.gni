@@ -57,7 +57,7 @@ if (current_toolchain == default_toolchain) {
       {
         policies = brave_policies
         copy_from = rebase_path(
-                "//brave/components/policy/resources/templates/policy_definitions",
+                "//BnesBrowser/components/policy/resources/templates/policy_definitions",
                 root_build_dir)
         copy_to = rebase_path(
                 "//components/policy/resources/templates/policy_definitions",

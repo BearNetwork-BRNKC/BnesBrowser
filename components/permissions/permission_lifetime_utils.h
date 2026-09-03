@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "base/time/time.h"
-#include "brave/components/permissions/permission_lifetime_options.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_options.h"
 #include "components/permissions/permission_prompt.h"
 
 namespace permissions {

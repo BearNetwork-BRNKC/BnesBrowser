@@ -14,7 +14,7 @@
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
 #include "base/values.h"
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 
 namespace content {
 class WebContents;

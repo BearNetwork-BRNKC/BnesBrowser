@@ -43,7 +43,7 @@ template("fix_testing_install_name") {
 
     # input is the same as the output so just fake it
     outputs = [ "$root_build_dir/alwaysrununittests/$target_name" ]
-    deps = [ "//brave/test:brave_unit_tests" ]
+    deps = [ "//BnesBrowser/test:brave_unit_tests" ]
   }
 
   fix_testing_install_name_impl(target_name + "_browser_tests") {
@@ -53,7 +53,7 @@ template("fix_testing_install_name") {
 
     # input is the same as the output so just fake it
     outputs = [ "$root_build_dir/alwaysrunbrowsertests/$target_name" ]
-    deps = [ "//brave/test:brave_browser_tests" ]
+    deps = [ "//BnesBrowser/test:brave_browser_tests" ]
   }
 
   fix_testing_install_name_impl(target_name + "_network_audit_tests") {
@@ -63,6 +63,6 @@ template("fix_testing_install_name") {
 
     # input is the same as the output so just fake it
     outputs = [ "$root_build_dir/alwaysrunbrowsertests/$target_name" ]
-    deps = [ "//brave/test:brave_network_audit_tests" ]
+    deps = [ "//BnesBrowser/test:brave_network_audit_tests" ]
   }
 }

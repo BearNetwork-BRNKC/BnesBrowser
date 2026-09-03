@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/engine/test_utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/test_utils.h"
 
 #include <optional>
 #include <utility>
@@ -13,9 +13,9 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/browser/types.h"
-#include "brave/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/types.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace ai_chat {

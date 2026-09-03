@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_drm_tab_helper.h"
+#include "BnesBrowser/browser/brave_drm_tab_helper.h"
 
 #include <memory>
 #include <utility>
 #include <vector>
 
-#include "brave/browser/widevine/widevine_permission_request.h"
-#include "brave/browser/widevine/widevine_utils.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/widevine/constants.h"
+#include "BnesBrowser/browser/widevine/widevine_permission_request.h"
+#include "BnesBrowser/browser/widevine/widevine_utils.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/widevine/constants.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process_impl.h"
 #include "chrome/browser/profiles/profile.h"

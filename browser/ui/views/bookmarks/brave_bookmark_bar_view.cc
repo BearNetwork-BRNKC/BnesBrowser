@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/bookmarks/brave_bookmark_bar_view.h"
+#include "BnesBrowser/browser/ui/views/bookmarks/brave_bookmark_bar_view.h"
 
-#include "brave/browser/ui/bookmark/brave_bookmark_prefs.h"
+#include "BnesBrowser/browser/ui/bookmark/brave_bookmark_prefs.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "components/bookmarks/browser/bookmark_model.h"

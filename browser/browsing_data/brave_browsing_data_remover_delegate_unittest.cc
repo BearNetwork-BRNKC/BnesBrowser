@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/browsing_data/brave_browsing_data_remover_delegate.h"
+#include "BnesBrowser/browser/browsing_data/brave_browsing_data_remover_delegate.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/memory/scoped_refptr.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_utils.h"
-#include "brave/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_utils.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
 #include "chrome/browser/browsing_data/chrome_browsing_data_remover_constants.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
@@ -29,7 +29,7 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #endif
 
 class BraveBrowsingDataRemoverDelegateTest : public testing::Test {

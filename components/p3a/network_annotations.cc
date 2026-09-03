@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/network_annotations.h"
+#include "BnesBrowser/components/p3a/network_annotations.h"
 
 #include <string_view>
 
 #include "base/check_op.h"
-#include "brave/components/p3a/uploader.h"
+#include "BnesBrowser/components/p3a/uploader.h"
 
 namespace p3a {
 

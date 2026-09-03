@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/browser/request_otr_navigation_throttle.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_navigation_throttle.h"
 
 #include <memory>
 #include <utility>
@@ -11,12 +11,12 @@
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/request_otr/browser/request_otr_blocking_page.h"
-#include "brave/components/request_otr/browser/request_otr_controller_client.h"
-#include "brave/components/request_otr/browser/request_otr_service.h"
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
-#include "brave/components/request_otr/common/features.h"
-#include "brave/components/request_otr/common/pref_names.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_blocking_page.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_controller_client.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_service.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/common/features.h"
+#include "BnesBrowser/components/request_otr/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/profile_metrics/browser_profile_type.h"
 #include "components/security_interstitials/content/security_interstitial_tab_helper.h"

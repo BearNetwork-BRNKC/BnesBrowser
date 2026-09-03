@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_ACCOUNT_CONFIRMATIONS_QUEUE_TEST_CONFIRMATION_QUEUE_DELEGATE_MOCK_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_ACCOUNT_CONFIRMATIONS_QUEUE_TEST_CONFIRMATION_QUEUE_DELEGATE_MOCK_H_
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_delegate.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_delegate.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads {

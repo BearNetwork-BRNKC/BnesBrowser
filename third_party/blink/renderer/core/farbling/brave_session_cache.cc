@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 
 #include <algorithm>
 #include <string_view>
@@ -17,9 +17,9 @@
 #include "base/notreached.h"
 #include "base/numerics/byte_conversions.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_user_agent/common/brand_names.h"
-#include "brave/third_party/blink/renderer/brave_farbling_constants.h"
-#include "brave/third_party/blink/renderer/brave_font_whitelist.h"
+#include "BnesBrowser/components/brave_user_agent/common/brand_names.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_farbling_constants.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_font_whitelist.h"
 #include "build/build_config.h"
 #include "crypto/hmac.h"
 #include "third_party/blink/public/common/features.h"

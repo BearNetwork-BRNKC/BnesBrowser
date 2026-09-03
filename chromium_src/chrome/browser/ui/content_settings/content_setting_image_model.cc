@@ -5,8 +5,8 @@
 
 #include "chrome/browser/ui/content_settings/content_setting_image_model.h"
 
-#include "brave/browser/ui/content_settings/brave_content_setting_image_models.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/content_settings/brave_content_setting_image_models.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 
 #define GenerateContentSettingImageModels \
   GenerateContentSettingImageModels_ChromiumImpl

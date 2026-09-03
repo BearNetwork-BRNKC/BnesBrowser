@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator_mock.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator_mock.h"
 
 #include "chrome/browser/profiles/profile_attributes_storage.h"
 #include "components/prefs/pref_service.h"

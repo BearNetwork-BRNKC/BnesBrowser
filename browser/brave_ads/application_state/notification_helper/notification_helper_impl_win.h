@@ -10,7 +10,7 @@
 #include <wrl/event.h>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
 
 namespace brave_ads {
 

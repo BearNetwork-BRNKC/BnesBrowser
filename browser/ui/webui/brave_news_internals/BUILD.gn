@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 
 assert(enable_brave_news)
 
@@ -14,9 +14,9 @@ source_set("brave_news_internals") {
   ]
 
   deps = [
-    "//brave/components/brave_news/browser",
-    "//brave/components/brave_news/browser/resources:generated_resources",
-    "//brave/components/brave_news/common:mojom",
+    "//BnesBrowser/components/brave_news/browser",
+    "//BnesBrowser/components/brave_news/browser/resources:generated_resources",
+    "//BnesBrowser/components/brave_news/common:mojom",
     "//chrome/browser:browser_public_dependencies",
   ]
 }

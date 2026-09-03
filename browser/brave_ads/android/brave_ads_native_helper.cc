@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/android/brave_ads_native_helper.h"
+#include "BnesBrowser/browser/brave_ads/android/brave_ads_native_helper.h"
 
 #include <string>
 
 #include "base/android/jni_string.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/browser/brave_ads/android/jni_headers/BraveAdsNativeHelper_jni.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/android/jni_headers/BraveAdsNativeHelper_jni.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
 #include "chrome/browser/profiles/profile.h"
 
 namespace brave_ads {

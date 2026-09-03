@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/callback_list.h"
-#include "brave/browser/ui/webui/playlist_ui.h"
+#include "BnesBrowser/browser/ui/webui/playlist_ui.h"
 #include "chrome/browser/ui/webui/top_chrome/webui_contents_wrapper.h"
 
 class BrowserView;

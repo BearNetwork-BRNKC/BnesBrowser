@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_search/backup_results_view_manager.h"
+#include "BnesBrowser/browser/brave_search/backup_results_view_manager.h"
 
 #include "base/rand_util.h"
-#include "brave/components/brave_search/browser/prefs.h"
-#include "brave/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_search/browser/prefs.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
 #include "components/prefs/pref_service.h"
 #include "content/public/browser/web_contents.h"
 #include "ui/gfx/geometry/rect.h"
@@ -16,7 +16,7 @@
 #if BUILDFLAG(IS_ANDROID)
 #include "base/android/jni_android.h"
 #include "base/android/scoped_java_ref.h"
-#include "brave/android/java/org/chromium/chrome/browser/brave_search/jni_headers/BackupResultsWindowFactory_jni.h"
+#include "BnesBrowser/android/java/org/chromium/chrome/browser/brave_search/jni_headers/BackupResultsWindowFactory_jni.h"
 #include "ui/android/view_android.h"
 #include "ui/android/window_android.h"
 #elif defined(USE_AURA)

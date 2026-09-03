@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 
 #include <utility>
 
@@ -11,7 +11,7 @@
 #include "base/command_line.h"
 #include "base/notimplemented.h"
 #include "base/notreached.h"
-#include "brave/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"

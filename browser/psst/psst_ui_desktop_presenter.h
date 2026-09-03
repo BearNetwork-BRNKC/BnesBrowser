@@ -8,8 +8,8 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/psst/psst_ui_presenter.h"
-#include "brave/browser/ui/views/page_action/psst_action_controller.h"
+#include "BnesBrowser/browser/psst/psst_ui_presenter.h"
+#include "BnesBrowser/browser/ui/views/page_action/psst_action_controller.h"
 #include "chrome/browser/ui/dialogs/browser_dialogs.h"
 #include "ui/web_dialogs/web_dialog_delegate.h"
 

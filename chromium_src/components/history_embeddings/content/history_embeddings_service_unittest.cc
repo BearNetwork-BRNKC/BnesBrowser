@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "base/test/test_future.h"
-#include "brave/components/history_embeddings/content/brave_history_embeddings_helpers.h"
+#include "BnesBrowser/components/history_embeddings/content/brave_history_embeddings_helpers.h"
 #include "components/page_content_annotations/core/page_content_annotations_common.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

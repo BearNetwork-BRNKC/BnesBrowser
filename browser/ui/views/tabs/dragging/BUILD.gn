@@ -9,13 +9,13 @@ source_set("interactive_ui_tests") {
   testonly = true
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
 
-  sources = [ "//brave/browser/ui/views/tabs/dragging/tab_drag_controller_interactive_uitest.cc" ]
+  sources = [ "//BnesBrowser/browser/ui/views/tabs/dragging/tab_drag_controller_interactive_uitest.cc" ]
 
   deps = [
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/tabs:tab_strip",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/components/tabs",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/tabs:tab_strip",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/components/tabs",
     "//chrome/app:command_ids",
     "//chrome/browser",
     "//chrome/browser/ui",

@@ -4,5 +4,5 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 content_settings_component_public_headers = [
-  "//brave/ios/browser/content_settings/content_settings_browsing_data_utils.h",
+  "//BnesBrowser/ios/browser/content_settings/content_settings_browsing_data_utils.h",
 ]

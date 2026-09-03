@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/default_brave_shields_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/default_brave_shields_handler.h"
 
 #include <utility>
 #include <vector>
@@ -12,13 +12,13 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/values.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/browser/webcompat_reporter/webcompat_reporter_service_factory.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/brave_shields_settings_values.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_service.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/browser/webcompat_reporter/webcompat_reporter_service_factory.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_settings_values.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_service.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"

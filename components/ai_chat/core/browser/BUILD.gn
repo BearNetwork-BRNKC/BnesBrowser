@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/text_recognition/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/text_recognition/common/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//tools/json_schema_compiler/json_schema_api.gni")
 
@@ -131,24 +131,24 @@ static_library("browser") {
 
   deps = [
     ":generated_brave_search_responses",
-    "//brave/brave_domains",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/ai_chat/core/proto",
-    "//brave/components/api_request_helper",
-    "//brave/components/brave_service_keys",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/constants",
-    "//brave/components/l10n/common",
-    "//brave/components/p3a_utils",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/sidebar/common",
-    "//brave/components/skus/common:mojom",
-    "//brave/components/text_recognition/common/buildflags",
-    "//brave/components/time_period_storage",
-    "//brave/net/base:utils",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/proto",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/brave_service_keys",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/l10n/common",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/sidebar/common",
+    "//BnesBrowser/components/skus/common:mojom",
+    "//BnesBrowser/components/text_recognition/common/buildflags",
+    "//BnesBrowser/components/time_period_storage",
+    "//BnesBrowser/net/base:utils",
     "//components/bookmarks/browser",
     "//components/history/core/browser",
     "//components/keyed_service/core",
@@ -174,7 +174,7 @@ static_library("browser") {
   ]
 
   if (enable_text_recognition) {
-    deps += [ "//brave/components/text_recognition/browser" ]
+    deps += [ "//BnesBrowser/components/text_recognition/browser" ]
   }
 }
 
@@ -220,24 +220,24 @@ source_set("unit_tests") {
     "utils_unittest.cc",
   ]
 
-  data = [ "//brave/components/test/data/ai_chat" ]
+  data = [ "//BnesBrowser/components/test/data/ai_chat" ]
 
   deps = [
     ":test_support",
     "//base/test:test_support",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common:test_support",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/ai_chat/core/proto",
-    "//brave/components/api_request_helper",
-    "//brave/components/api_request_helper:test_support",
-    "//brave/components/constants",
-    "//brave/components/l10n/common:test_support",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common:test_support",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/proto",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/api_request_helper:test_support",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/l10n/common:test_support",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//components/bookmarks/browser",
     "//components/bookmarks/browser:test_support",
     "//components/bookmarks/test",
@@ -297,10 +297,10 @@ source_set("test_support") {
   ]
 
   deps = [
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common:test_support",
-    "//brave/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common:test_support",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
     "//services/network/public/cpp",
     "//testing/gmock",
     "//testing/gtest",

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/brave_origin/brave_origin_service_factory.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_service_factory.h"
 
 #include <memory>
 
@@ -12,20 +12,20 @@
 #include "base/functional/callback.h"
 #include "base/no_destructor.h"
 #include "base/notimplemented.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/brave_origin_policy_manager.h"
-#include "brave/components/brave_origin/brave_origin_service.h"
-#include "brave/components/brave_origin/profile_id.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/playlist/core/common/pref_names.h"
-#include "brave/ios/browser/brave_origin/brave_origin_navigation_bridge_impl.h"
-#include "brave/ios/browser/policy/brave_simple_policy_map_ios.h"
-#include "brave/ios/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_manager.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_service.h"
+#include "BnesBrowser/components/brave_origin/profile_id.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_navigation_bridge_impl.h"
+#include "BnesBrowser/ios/browser/policy/brave_simple_policy_map_ios.h"
+#include "BnesBrowser/ios/browser/skus/skus_service_factory.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/user_prefs/user_prefs.h"
 #include "ios/chrome/browser/policy/model/browser_policy_connector_ios.h"
@@ -34,27 +34,27 @@
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #endif
 
 namespace brave_origin {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/sync/brave_sync_worker.h"
+#include "BnesBrowser/ios/browser/api/sync/brave_sync_worker.h"
 
 #include <string>
 #include <utility>
@@ -17,13 +17,13 @@
 #include "base/memory/weak_ptr.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_sync/brave_sync_prefs.h"
-#include "brave/components/brave_sync/crypto/crypto.h"
-#include "brave/components/brave_sync/qr_code_data.h"
-#include "brave/components/brave_sync/qr_code_validator.h"
-#include "brave/components/brave_sync/sync_service_impl_helper.h"
-#include "brave/components/brave_sync/time_limited_words.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_prefs.h"
+#include "BnesBrowser/components/brave_sync/crypto/crypto.h"
+#include "BnesBrowser/components/brave_sync/qr_code_data.h"
+#include "BnesBrowser/components/brave_sync/qr_code_validator.h"
+#include "BnesBrowser/components/brave_sync/sync_service_impl_helper.h"
+#include "BnesBrowser/components/brave_sync/time_limited_words.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 #include "components/sync/engine/sync_protocol_error.h"
 #include "components/sync/service/sync_service.h"
 #include "components/sync/service/sync_service_impl.h"

@@ -6,5 +6,5 @@
 brave_common_importer_deps = []
 
 if (is_android) {
-  brave_common_importer_deps += [ "//brave/app:brave_generated_resources_grit" ]
+  brave_common_importer_deps += [ "//BnesBrowser/app:brave_generated_resources_grit" ]
 }

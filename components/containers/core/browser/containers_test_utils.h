@@ -13,8 +13,8 @@
 #include "base/check.h"
 #include "base/containers/flat_map.h"
 #include "base/containers/flat_set.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "third_party/skia/include/core/SkColor.h"
 

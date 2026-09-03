@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/bookmarks/importer/bookmark_html_reader.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/importer/bookmark_html_reader.h"
 
 #include <stddef.h>
 #include <stdint.h>
@@ -18,8 +18,8 @@
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/ios/browser/api/bookmarks/importer/favicon_reencode.h"
-#include "brave/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/importer/favicon_reencode.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
 #include "components/search_engines/search_terms_data.h"
 #include "components/search_engines/template_url.h"
 #include "net/base/data_url.h"

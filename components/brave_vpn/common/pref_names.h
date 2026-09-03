@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_VPN_COMMON_PREF_NAMES_H_
 #define BRAVE_COMPONENTS_BRAVE_VPN_COMMON_PREF_NAMES_H_
 
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 namespace brave_vpn {

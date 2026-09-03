@@ -13,7 +13,7 @@
 #include "base/containers/map_util.h"
 #include "base/no_destructor.h"
 #include "base/notreached.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "build/build_config.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/base/models/image_model.h"

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_REWARDS_REWARDS_UTIL_H_
 #define BRAVE_BROWSER_BRAVE_REWARDS_REWARDS_UTIL_H_
 
-#include "brave/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
 
 class Profile;
 

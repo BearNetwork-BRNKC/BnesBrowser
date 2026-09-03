@@ -13,29 +13,29 @@ cargo_crate("lib") {
   epoch = "1"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/builder.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/arbitrary_support.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/serde_support.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/slog_support.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/fmt.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/macros.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/md5.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/parser.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/rng.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/sha1.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/timestamp.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v1.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v3.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v4.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v5.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v6.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v7.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v8.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/builder.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/arbitrary_support.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/serde_support.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/external/slog_support.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/fmt.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/macros.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/md5.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/parser.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/rng.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/sha1.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/timestamp.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v1.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v3.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v4.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v5.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v6.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v7.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/uuid-v1/src/v8.rs",
   ]
   inputs = []
 
@@ -49,7 +49,7 @@ cargo_crate("lib") {
 
   allow_unsafe = true
 
-  deps = [ "//brave/third_party/rust/getrandom/v0_2:lib" ]
+  deps = [ "//BnesBrowser/third_party/rust/getrandom/v0_2:lib" ]
   features = [
     "default",
     "getrandom",

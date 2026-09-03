@@ -7,9 +7,9 @@
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_ELIGIBLE_ADS_PIPELINES_NOTIFICATION_ADS_ELIGIBLE_NOTIFICATION_ADS_BASE_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_callback.h"
-#include "brave/components/brave_ads/core/public/ad_units/ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/eligible_ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/ad_info.h"
 
 namespace brave_ads {
 

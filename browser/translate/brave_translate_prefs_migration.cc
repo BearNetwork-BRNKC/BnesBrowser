@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/translate/brave_translate_prefs_migration.h"
+#include "BnesBrowser/browser/translate/brave_translate_prefs_migration.h"
 
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/history/brave_history_ui.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_ui.h"
 
 #include <utility>
 
@@ -12,7 +12,7 @@
 #include "chrome/browser/ui/webui/page_not_available_for_guest/page_not_available_for_guest_ui.h"
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/ui/webui/history/brave_history_embeddings_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_embeddings_page_handler.h"
 #endif
 
 // Matches HistoryUIConfig::CreateWebUIController, which this config replaces.

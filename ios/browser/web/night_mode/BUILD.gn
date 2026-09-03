@@ -21,6 +21,6 @@ source_set("night_mode") {
 # Bundle darkreader.js as-is to avoid rollup warnings from its UMD wrapper.
 bundle_data("darkreader_js") {
   visibility = [ ":night_mode" ]
-  sources = [ "//brave/node_modules/darkreader/darkreader.js" ]
+  sources = [ "//BnesBrowser/node_modules/darkreader/darkreader.js" ]
   outputs = [ "{{bundle_resources_dir}}/{{source_file_part}}" ]
 }

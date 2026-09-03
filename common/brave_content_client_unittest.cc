@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/common/brave_content_client.h"
+#include "BnesBrowser/common/brave_content_client.h"
 
 #include "content/common/url_schemes.h"
 #include "content/public/common/url_constants.h"

@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_FEATURES_H_
 
 #include "base/feature_list.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 namespace brave_rewards::features {

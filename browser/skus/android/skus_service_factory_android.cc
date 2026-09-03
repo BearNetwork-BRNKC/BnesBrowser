@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
 
 #include "base/android/jni_android.h"
-#include "brave/browser/skus/android/jni_headers/SkusServiceFactory_jni.h"
+#include "BnesBrowser/browser/skus/android/jni_headers/SkusServiceFactory_jni.h"
 #include "chrome/browser/profiles/profile.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 

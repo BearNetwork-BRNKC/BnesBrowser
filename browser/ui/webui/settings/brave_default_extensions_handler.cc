@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_default_extensions_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_default_extensions_handler.h"
 
 #include <memory>
 #include <string>
@@ -11,11 +11,11 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/values.h"
-#include "brave/browser/extensions/brave_component_loader.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/decentralized_dns/core/constants.h"
-#include "brave/components/decentralized_dns/core/utils.h"
+#include "BnesBrowser/browser/extensions/brave_component_loader.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/decentralized_dns/core/constants.h"
+#include "BnesBrowser/components/decentralized_dns/core/utils.h"
 #include "chrome/browser/about_flags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/extensions/component_loader.h"
@@ -41,16 +41,16 @@
 #include "ui/shell_dialogs/selected_file_info.h"
 
 #if BUILDFLAG(ENABLE_WIDEVINE)
-#include "brave/browser/widevine/widevine_utils.h"
+#include "BnesBrowser/browser/widevine/widevine_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/browser/tx_service.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_service.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 using decentralized_dns::EnsOffchainResolveMethod;

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
 
 #include <array>
 #include <optional>
@@ -27,12 +27,12 @@
 #include "base/win/security_descriptor.h"
 #include "base/win/sid.h"
 #include "base/win/windows_types.h"
-#include "brave/browser/brave_vpn/win/service_commands.h"
-#include "brave/browser/brave_vpn/win/service_constants.h"
-#include "brave/browser/brave_vpn/win/service_details.h"
-#include "brave/browser/brave_vpn/win/storage_utils.h"
-#include "brave/components/brave_vpn/common/win/scoped_sc_handle.h"
-#include "brave/components/brave_vpn/common/win/utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_commands.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/win/scoped_sc_handle.h"
+#include "BnesBrowser/components/brave_vpn/common/win/utils.h"
 
 namespace brave_vpn {
 

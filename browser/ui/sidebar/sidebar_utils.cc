@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
 
 #include <optional>
 
@@ -12,21 +12,21 @@
 #include "base/command_line.h"
 #include "base/feature_list.h"
 #include "base/notreached.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_web_panel_controller.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/brave_switches.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/sidebar/browser/constants.h"
-#include "brave/components/sidebar/browser/pref_names.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_web_panel_controller.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/browser/constants.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search/search.h"
@@ -46,8 +46,8 @@
 #include "content/public/common/url_constants.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #endif
 
 namespace sidebar {

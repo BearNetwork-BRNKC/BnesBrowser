@@ -13,6 +13,6 @@ repack("repack_unscaled_resources") {
   visibility = [ ":resources" ]
   output = "$target_gen_dir/brave_resources.pak"
   sources = [ "$root_gen_dir/components/brave_components_resources.pak" ]
-  deps = [ "//brave/components/resources" ]
+  deps = [ "//BnesBrowser/components/resources" ]
   copy_data_to_bundle = true
 }

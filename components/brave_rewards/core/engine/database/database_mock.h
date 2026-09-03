@@ -9,8 +9,8 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_rewards::internal {

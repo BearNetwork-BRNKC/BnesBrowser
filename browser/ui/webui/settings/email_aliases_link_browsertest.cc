@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/chrome_pages.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"

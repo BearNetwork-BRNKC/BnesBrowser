@@ -4,8 +4,8 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/containers/fixed_flat_map.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/net/dns/secure_dns_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/net/dns/secure_dns_endpoints.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/net/secure_dns_config.h"
@@ -18,7 +18,7 @@
 #include "net/base/features.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN)
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN) && BUILDFLAG(IS_WIN)

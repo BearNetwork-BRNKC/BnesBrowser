@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_TIME_PERIOD_STORAGE_MONTHLY_STORAGE_H_
 #define BRAVE_COMPONENTS_TIME_PERIOD_STORAGE_MONTHLY_STORAGE_H_
 
-#include "brave/components/time_period_storage/time_period_storage.h"
+#include "BnesBrowser/components/time_period_storage/time_period_storage.h"
 
 class PrefService;
 

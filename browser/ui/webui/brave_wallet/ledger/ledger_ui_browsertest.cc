@@ -5,7 +5,7 @@
 
 #include "base/test/test_future.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
 #include "chrome/browser/hid/hid_chooser_context.h"
 #include "chrome/browser/hid/hid_chooser_context_factory.h"
 #include "chrome/browser/ui/chooser_bubble_testapi.h"

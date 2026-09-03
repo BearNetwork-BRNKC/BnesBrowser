@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
 
 #include <optional>
 #include <string_view>
 
 #include "base/check.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_rewards/core/buildflags/endpoint_buildflags.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/endpoint_buildflags.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 
 namespace brave_rewards::internal {
 

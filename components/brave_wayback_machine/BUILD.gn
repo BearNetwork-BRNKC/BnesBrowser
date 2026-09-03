@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wayback_machine/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.gni")
 import("//testing/test.gni")
 
 assert(enable_brave_wayback_machine)
@@ -25,8 +25,8 @@ static_library("brave_wayback_machine") {
 
   deps = [
     "//base",
-    "//brave/components/api_request_helper",
-    "//brave/components/constants",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/constants",
     "//components/prefs",
     "//components/user_prefs",
     "//content/public/browser",

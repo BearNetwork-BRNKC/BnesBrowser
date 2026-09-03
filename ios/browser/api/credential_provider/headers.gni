@@ -8,7 +8,7 @@ credential_provider_public_headers = [
   # definitions, so are fine to export directly.
   "//ios/chrome/common/credential_provider/credential.h",
   "//ios/chrome/common/credential_provider/credential_store.h",
-  "//brave/ios/browser/api/credential_provider/credential_provider_api.h",
+  "//BnesBrowser/ios/browser/api/credential_provider/credential_provider_api.h",
 ]
 
 credential_provider_public_deps = [ "//ios/chrome/common/credential_provider" ]

@@ -55,11 +55,11 @@ static_library("misc_metrics") {
 
   deps = [
     "//base",
-    "//brave/components/brave_new_tab_ui:mojom",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/p3a_utils",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/brave_new_tab_ui:mojom",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/time_period_storage",
     "//components/autofill/core/browser",
     "//components/bookmarks/browser",
     "//components/browsing_data/core",
@@ -76,7 +76,7 @@ static_library("misc_metrics") {
 
   public_deps = [
     ":default_browser_monitor",
-    "//brave/components/misc_metrics/common:mojom",
+    "//BnesBrowser/components/misc_metrics/common:mojom",
   ]
 }
 
@@ -103,10 +103,10 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/misc_metrics",
-    "//brave/components/p3a_utils",
-    "//brave/components/p3a_utils:test_support",
-    "//brave/components/search_engines",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/p3a_utils:test_support",
+    "//BnesBrowser/components/search_engines",
     "//components/language/core/browser",
     "//components/prefs:test_support",
     "//components/search_engines",

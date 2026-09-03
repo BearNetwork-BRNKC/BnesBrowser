@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
 
 #include <optional>
 #include <string>
@@ -20,15 +20,15 @@
 #include "base/test/test_future.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_account/mock_brave_account_authentication.h"
-#include "brave/components/brave_account/prefs.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/email_aliases/email_aliases_notes.h"
-#include "brave/components/email_aliases/features.h"
-#include "brave/components/email_aliases/test_utils.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/mock_brave_account_authentication.h"
+#include "BnesBrowser/components/brave_account/prefs.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_notes.h"
+#include "BnesBrowser/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/test_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/testing_pref_service.h"
 #include "mojo/public/cpp/bindings/remote.h"

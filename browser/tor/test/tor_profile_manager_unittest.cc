@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
 #include "base/test/bind.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/devtools/devtools_window.h"
 #include "chrome/browser/media/router/media_router_feature.h"
 #include "chrome/common/pref_names.h"

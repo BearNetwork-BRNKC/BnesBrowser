@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 # The mojom target is always built so TypeScript can import types.
@@ -66,13 +66,13 @@ if (enable_brave_news) {
 
     public_deps = [
       ":mojom",
-      "//brave/components/brave_news/common/buildflags",
+      "//BnesBrowser/components/brave_news/common/buildflags",
     ]
 
     deps = [
       "//base",
-      "//brave/components/l10n/common",
-      "//brave/components/p3a_utils",
+      "//BnesBrowser/components/l10n/common",
+      "//BnesBrowser/components/p3a_utils",
       "//components/prefs",
       "//url",
     ]

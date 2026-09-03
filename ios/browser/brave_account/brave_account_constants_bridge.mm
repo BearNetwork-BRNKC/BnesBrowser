@@ -6,7 +6,7 @@
 #import "brave/ios/browser/brave_account/brave_account_constants_bridge.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_account/brave_account_constants.h"
+#include "BnesBrowser/components/brave_account/brave_account_constants.h"
 
 NSString* const BraveAccountInitiatingServiceNameQueryParam =
     base::SysUTF8ToNSString(brave_account::kInitiatingServiceNameQueryParam);

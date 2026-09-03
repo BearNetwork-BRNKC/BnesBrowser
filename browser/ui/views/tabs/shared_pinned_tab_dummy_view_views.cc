@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/shared_pinned_tab_dummy_view_views.h"
+#include "BnesBrowser/browser/ui/views/tabs/shared_pinned_tab_dummy_view_views.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_dummy_view.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_dummy_view.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"
 #include "chrome/browser/ui/thumbnails/thumbnail_tab_helper.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"

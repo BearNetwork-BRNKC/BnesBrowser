@@ -5,11 +5,11 @@
 
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 
-#include "brave/components/content_settings/core/browser/remote_list_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/remote_list_provider.h"
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
 #define PrefProvider BravePrefProvider
 #endif
 

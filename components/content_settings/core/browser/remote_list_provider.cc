@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/content_settings/core/browser/remote_list_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/remote_list_provider.h"
 
 #include <memory>
 #include <vector>
 
 #include "base/check.h"
-#include "brave/components/webcompat/content/browser/webcompat_exceptions_service.h"
+#include "BnesBrowser/components/webcompat/content/browser/webcompat_exceptions_service.h"
 #include "components/content_settings/core/browser/content_settings_rule.h"
 
 namespace content_settings {

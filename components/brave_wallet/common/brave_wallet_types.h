@@ -15,8 +15,8 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "crypto/process_bound_string.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_WALLET));

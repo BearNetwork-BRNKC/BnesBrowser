@@ -10,20 +10,20 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_delegate.h"
-#include "brave/components/brave_adaptive_captcha/get_adaptive_captcha_challenge.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_delegate.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/get_adaptive_captcha_challenge.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/keyed_service/core/keyed_service.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/content/rewards_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_observer.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_adaptive_captcha/android/attest_android.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/android/attest_android.h"
 #endif
 
 namespace network {

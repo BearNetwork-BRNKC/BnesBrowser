@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/star_randomness_meta.h"
+#include "BnesBrowser/components/p3a/star_randomness_meta.h"
 
 #include <optional>
 #include <utility>
@@ -15,11 +15,11 @@
 #include "base/json/values_util.h"
 #include "base/logging.h"
 #include "base/strings/strcat.h"
-#include "brave/components/p3a/features.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/network_annotations.h"
-#include "brave/components/p3a/nitro_utils/attestation.h"
-#include "brave/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/features.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/network_annotations.h"
+#include "BnesBrowser/components/p3a/nitro_utils/attestation.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

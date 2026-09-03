@@ -11,7 +11,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/views/side_panel/brave_side_panel_header.h"
+#include "BnesBrowser/browser/ui/views/side_panel/brave_side_panel_header.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "url/gurl.h"

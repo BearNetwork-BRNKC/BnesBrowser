@@ -13,7 +13,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/unguessable_token.h"
-#include "brave/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
+#include "BnesBrowser/browser/ephemeral_storage/tld_ephemeral_lifetime.h"
 #include "build/build_config.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"

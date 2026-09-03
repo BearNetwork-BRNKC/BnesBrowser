@@ -5,7 +5,7 @@
 
 #include <optional>
 
-#include "brave/components/update_client/buildflags.h"
+#include "BnesBrowser/components/update_client/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/domain_reliability/service_factory.h"
 #include "chrome/common/chrome_switches.h"

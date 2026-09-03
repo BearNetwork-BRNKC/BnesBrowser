@@ -5,7 +5,7 @@
 
 #include <string>
 
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "chrome/common/chrome_constants.h"
 #include "components/version_info/version_info.h"
 #include "testing/gtest/include/gtest/gtest.h"

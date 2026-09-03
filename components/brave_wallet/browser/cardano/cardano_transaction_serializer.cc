@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
 
 #include <array>
 #include <cstdint>
@@ -14,8 +14,8 @@
 #include "base/containers/flat_set.h"
 #include "base/numerics/checked_math.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_tx_decoder.h"
 
 namespace brave_wallet {
 

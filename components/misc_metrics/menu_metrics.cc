@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/menu_metrics.h"
+#include "BnesBrowser/components/misc_metrics/menu_metrics.h"
 
 #include <algorithm>
 
@@ -12,8 +12,8 @@
 #include "base/notreached.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

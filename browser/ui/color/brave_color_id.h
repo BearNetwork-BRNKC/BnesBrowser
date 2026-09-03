@@ -6,9 +6,9 @@
 #ifndef BRAVE_BROWSER_UI_COLOR_BRAVE_COLOR_ID_H_
 #define BRAVE_BROWSER_UI_COLOR_BRAVE_COLOR_ID_H_
 
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 
 // clang-format off

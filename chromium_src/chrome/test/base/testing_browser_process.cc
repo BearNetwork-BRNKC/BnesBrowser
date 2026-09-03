@@ -5,7 +5,7 @@
 
 #include "chrome/test/base/testing_browser_process.h"
 
-#include "brave/test/base/testing_brave_browser_process.h"
+#include "BnesBrowser/test/base/testing_brave_browser_process.h"
 
 // These overrides are used to make sure a TestingBraveBrowserProcess instance
 // has a its life time matching the one for the global instance of

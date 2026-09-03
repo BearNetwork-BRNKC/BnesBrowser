@@ -8,7 +8,7 @@
 
 #include "base/compiler_specific.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/infobars/core/brave_confirm_infobar_delegate.h"
+#include "BnesBrowser/components/infobars/core/brave_confirm_infobar_delegate.h"
 
 class Profile;
 

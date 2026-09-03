@@ -5,7 +5,7 @@
 
 source_set("lib") {
   visibility = [
-    "//brave/components/services/brave_wallet/public/cpp",
+    "//BnesBrowser/components/services/brave_wallet/public/cpp",
     "//chrome/utility:*",
   ]
 
@@ -15,8 +15,8 @@ source_set("lib") {
   ]
 
   deps = [
-    "//brave/components/services/brave_wallet/public/mojom",
-    "//brave/components/services/brave_wallet/zcash:zcash_decoder",
+    "//BnesBrowser/components/services/brave_wallet/public/mojom",
+    "//BnesBrowser/components/services/brave_wallet/zcash:zcash_decoder",
     "//mojo/public/cpp/system",
   ]
 }

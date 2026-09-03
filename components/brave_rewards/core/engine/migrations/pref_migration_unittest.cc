@@ -5,10 +5,10 @@
 
 #include <algorithm>
 
-#include "brave/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
-#include "brave/components/brave_rewards/core/engine/test/rewards_engine_test.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/migrations/pref_migration_manager.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/rewards_engine_test.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_util.h"
 
 namespace brave_rewards::internal {
 

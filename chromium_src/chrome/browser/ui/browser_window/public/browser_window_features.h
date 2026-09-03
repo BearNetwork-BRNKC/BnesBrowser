@@ -43,6 +43,6 @@ using BraveBrowserWindowFeatures = BrowserWindowFeatures;
 #undef Init
 #undef BrowserWindowFeatures
 
-#include "brave/browser/ui/browser_window/public/browser_window_features.h"
+#include "BnesBrowser/browser/ui/browser_window/public/browser_window_features.h"
 
 #endif  // BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_WINDOW_PUBLIC_BROWSER_WINDOW_FEATURES_H_

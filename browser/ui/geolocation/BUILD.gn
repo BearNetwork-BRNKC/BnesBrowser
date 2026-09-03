@@ -12,7 +12,7 @@ source_set("browser_tests") {
   sources = [ "brave_geolocation_browsertest.cc" ]
   deps = [
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
     "//chrome/browser",
     "//chrome/browser/ssl:cert_verifier_test_support",
     "//chrome/browser/ui",

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/ads/ads_internals_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/ads/ads_internals_ui.h"
 
 #include <cstddef>
 #include <string>
@@ -12,12 +12,12 @@
 #include "base/check.h"
 #include "base/containers/span.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_ads/browser/resources/grit/ads_internals_generated_map.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/ios/browser/brave_ads/ads_service_factory_ios.h"
-#include "brave/ios/browser/brave_ads/ads_service_impl_ios.h"
-#include "brave/ios/web/webui/brave_web_ui_ios_data_source.h"
-#include "brave/ios/web/webui/brave_webui_utils.h"
+#include "BnesBrowser/components/brave_ads/browser/resources/grit/ads_internals_generated_map.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/ios/browser/brave_ads/ads_service_factory_ios.h"
+#include "BnesBrowser/ios/browser/brave_ads/ads_service_impl_ios.h"
+#include "BnesBrowser/ios/web/webui/brave_web_ui_ios_data_source.h"
+#include "BnesBrowser/ios/web/webui/brave_webui_utils.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

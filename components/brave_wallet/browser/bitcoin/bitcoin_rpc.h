@@ -15,8 +15,8 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_rpc_responses.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_rpc_responses.h"
 #include "third_party/abseil-cpp/absl/container/node_hash_map.h"
 
 namespace brave_wallet {

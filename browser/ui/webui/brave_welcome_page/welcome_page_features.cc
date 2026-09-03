@@ -3,35 +3,35 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_welcome_page/welcome_page_features.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/welcome_page_features.h"
 
 #include "base/check.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_utils.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 namespace brave_welcome_page {

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/base/apple/base_value_bridge.h"
+#include "BnesBrowser/base/apple/base_value_bridge.h"
 
 #include <optional>
 
 #include "base/json/json_reader.h"
 #include "base/json/json_writer.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/base_value_bridge+private.h"
+#include "BnesBrowser/base/apple/base_value_bridge+private.h"
 
 @interface BaseValueBridge ()
 @property(nonatomic, readwrite) BaseValueBridgeTag tag;

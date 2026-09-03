@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
 
 #include <memory>
 
@@ -14,13 +14,13 @@
 #include "base/no_destructor.h"
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_search_conversion/p3a.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a_utils/custom_attributes.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/p3a.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/custom_attributes.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
@@ -28,7 +28,7 @@
 #include "components/pref_registry/pref_registry_syncable.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif
 
 namespace {

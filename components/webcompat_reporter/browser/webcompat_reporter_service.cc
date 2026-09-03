@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_service.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_service.h"
 
 #include <algorithm>
 #include <memory>
@@ -15,10 +15,10 @@
 
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/version_info/version_info.h"
-#include "brave/components/webcompat_reporter/browser/webcompat_report_uploader.h"
-#include "brave/components/webcompat_reporter/browser/webcompat_reporter_utils.h"
-#include "brave/components/webcompat_reporter/common/pref_names.h"
+#include "BnesBrowser/components/version_info/version_info.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_report_uploader.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/webcompat_reporter_utils.h"
+#include "BnesBrowser/components/webcompat_reporter/common/pref_names.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 

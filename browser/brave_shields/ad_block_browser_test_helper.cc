@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_shields/ad_block_browser_test_helper.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_browser_test_helper.h"
 
 #include <memory>
 #include <utility>
@@ -12,10 +12,10 @@
 #include "base/functional/callback_forward.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/test/thread_test_helper.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/content/test/ad_block_service_test_observer.h"
-#include "brave/components/brave_shields/content/test/ad_block_unit_test_helper.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/content/test/ad_block_service_test_observer.h"
+#include "BnesBrowser/components/brave_shields/content/test/ad_block_unit_test_helper.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 
 namespace brave_shields {

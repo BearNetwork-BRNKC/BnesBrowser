@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/component_updater/brave_component_updater_configurator.h"
+#include "BnesBrowser/browser/component_updater/brave_component_updater_configurator.h"
 #include "chrome/browser/browser_process.h"
 
 #include <chrome/browser/component_updater/chrome_component_updater_configurator.cc>

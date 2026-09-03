@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_wallet_service.h"
 
 #include <stdint.h>
 
@@ -21,18 +21,18 @@
 #include "base/rand_util.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_fetch_raw_transactions_task.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_knapsack_solver.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_max_send_solver.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_serializer.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_task_utils.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
-#include "brave/components/brave_wallet/common/bitcoin_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_fetch_raw_transactions_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_knapsack_solver.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_max_send_solver.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_task_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/common/bitcoin_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/ads_service_impl.h"
+#include "BnesBrowser/components/brave_ads/browser/ads_service_impl.h"
 
 #include <memory>
 #include <utility>
@@ -18,20 +18,20 @@
 #include "base/test/test_future.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/browser/test/fake_ads_service_delegate.h"
-#include "brave/components/brave_ads/browser/test/fake_ads_tooltips_delegate.h"
-#include "brave/components/brave_ads/browser/test/fake_bat_ads_service_factory.h"
-#include "brave/components/brave_ads/browser/test/fake_device_id.h"
-#include "brave/components/brave_ads/browser/test/fake_shutdown_monitor.h"
-#include "brave/components/brave_ads/browser/test/fake_virtual_pref_provider_delegate.h"
-#include "brave/components/brave_ads/browser/test/mock_resource_component.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_registry.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/pref_registry.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_ads_service_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_ads_tooltips_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_bat_ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_device_id.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_shutdown_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_virtual_pref_provider_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/test/mock_resource_component.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_registry.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_registry.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
@@ -41,11 +41,11 @@
 #include "ui/base/idle/idle.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_ads/browser/test/fake_rewards_service.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_rewards_service.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_REWARDS)
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

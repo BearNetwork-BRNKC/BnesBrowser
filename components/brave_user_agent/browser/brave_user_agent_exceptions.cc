@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
 
 #include <memory>
 #include <set>
@@ -15,9 +15,9 @@
 #include "base/files/file_path.h"
 #include "base/strings/string_split.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
-#include "brave/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 
 constexpr char kBraveUserAgentExceptionsFile[] = "brave-checks.txt";

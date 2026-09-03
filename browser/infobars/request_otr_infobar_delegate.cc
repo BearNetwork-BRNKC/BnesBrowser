@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/infobars/request_otr_infobar_delegate.h"
+#include "BnesBrowser/browser/infobars/request_otr_infobar_delegate.h"
 
 #include <memory>
 
 #include "base/check_op.h"
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
 #include "build/build_config.h"
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #include "chrome/grit/generated_resources.h"

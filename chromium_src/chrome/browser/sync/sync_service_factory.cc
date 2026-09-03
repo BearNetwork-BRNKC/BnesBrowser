@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/sync/brave_sync_service_impl_delegate.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/browser/sync/brave_sync_service_impl_delegate.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 #include "chrome/browser/history/history_service_factory.h"
 #include "chrome/browser/sync/device_info_sync_service_factory.h"
 

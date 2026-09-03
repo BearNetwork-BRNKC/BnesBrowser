@@ -10,7 +10,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
 
 class PrefService;
 

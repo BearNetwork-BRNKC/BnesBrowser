@@ -5,4 +5,4 @@
 
 #include <algorithm>
 
-#include <brave/third_party/bitcoin-core/src/src/crypto/sha256.cpp>
+#include <BnesBrowser/third_party/bitcoin-core/src/src/crypto/sha256.cpp>

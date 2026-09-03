@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_wallet/ethereum_provider_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_wallet/ethereum_provider_tab_helper.h"
 
 #include <memory>
 #include <optional>
@@ -20,12 +20,12 @@
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/ethereum_provider_impl.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/ethereum_provider_impl.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_provider_delegate_ios+private.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_utils.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "ios/chrome/browser/content_settings/model/host_content_settings_map_factory.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

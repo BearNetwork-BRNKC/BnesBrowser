@@ -8,7 +8,7 @@
 #include <memory>
 #include <string>
 
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #include "net/base/host_port_pair.h"
 #include "net/base/network_anonymization_key.h"
 #include "net/base/proxy_server.h"

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_system_request_handler.h"
+#include "BnesBrowser/browser/net/brave_system_request_handler.h"
 
 #include <string>
 
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

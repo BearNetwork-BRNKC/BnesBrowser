@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_search/browser/brave_search_default_host.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_default_host.h"
 
 #include <string>
 #include <utility>
 
 #include "base/logging.h"
-#include "brave/components/brave_search/browser/brave_search_fallback_host.h"
-#include "brave/components/brave_search/browser/prefs.h"
-#include "brave/components/brave_search/common/features.h"
-#include "brave/components/brave_search_conversion/types.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/time_period_storage/daily_storage.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_fallback_host.h"
+#include "BnesBrowser/components/brave_search/browser/prefs.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_search_conversion/types.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/time_period_storage/daily_storage.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

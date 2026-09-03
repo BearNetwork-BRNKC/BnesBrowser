@@ -9,7 +9,7 @@
 #include <cstddef>
 #include <vector>
 
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace brave_ads::test {
 

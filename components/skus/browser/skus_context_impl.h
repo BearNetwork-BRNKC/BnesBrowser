@@ -12,8 +12,8 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/sequence_checker.h"
-#include "brave/components/skus/browser/rs/cxx/src/shim.h"
-#include "brave/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/rs/cxx/src/shim.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 

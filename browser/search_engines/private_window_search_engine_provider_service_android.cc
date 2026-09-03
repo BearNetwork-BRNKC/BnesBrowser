@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/search_engines/private_window_search_engine_provider_service_android.h"
+#include "BnesBrowser/browser/search_engines/private_window_search_engine_provider_service_android.h"
 
 #include "base/check.h"
 #include "chrome/browser/profiles/profile.h"

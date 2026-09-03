@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/brave_base_local_data_files_browsertest.h"
+#include "BnesBrowser/browser/extensions/brave_base_local_data_files_browsertest.h"
 
 #include "base/memory/scoped_refptr.h"
 #include "base/path_service.h"
 #include "base/run_loop.h"
 #include "base/task/thread_pool.h"
 #include "base/test/thread_test_helper.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/extensions/extension_browsertest.h"
 #include "content/public/browser/browser_task_traits.h"
 #include "content/public/browser/browser_thread.h"

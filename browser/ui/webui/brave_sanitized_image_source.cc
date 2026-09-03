@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_sanitized_image_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_sanitized_image_source.h"
 
 #include <memory>
 #include <string>
@@ -16,9 +16,9 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/brave_private_cdn/headers.h"
-#include "brave/components/brave_private_cdn/private_cdn_helper.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/brave_private_cdn/headers.h"
+#include "BnesBrowser/components/brave_private_cdn/private_cdn_helper.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/storage_partition.h"

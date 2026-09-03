@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 assert(enable_local_ai)
@@ -69,8 +69,8 @@ static_library("core") {
   ]
 
   deps = [
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/resources:strings_grit",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/resources:strings_grit",
     "//components/component_updater",
     "//components/component_updater:component_updater_paths",
     "//components/history_embeddings/core",
@@ -92,7 +92,7 @@ source_set("unit_tests") {
     ":core",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_component_updater/browser:test_support",
+    "//BnesBrowser/components/brave_component_updater/browser:test_support",
     "//components/component_updater:test_support",
     "//components/history_embeddings/core",
     "//components/prefs:test_support",

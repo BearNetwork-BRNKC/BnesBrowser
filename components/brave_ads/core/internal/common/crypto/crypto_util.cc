@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/crypto/crypto_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/crypto/crypto_util.h"
 
 #include <openssl/digest.h>
 #include <openssl/hkdf.h>
@@ -18,7 +18,7 @@
 #include "base/base64.h"
 #include "base/check.h"
 #include "base/containers/span.h"
-#include "brave/components/brave_ads/core/internal/common/crypto/key_pair_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/crypto/key_pair_info.h"
 #include "crypto/random.h"
 #include "third_party/boringssl/src/include/openssl/curve25519.h"
 #include "tweetnacl.h"  // NOLINT

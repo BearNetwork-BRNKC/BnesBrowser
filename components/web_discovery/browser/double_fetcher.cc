@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/double_fetcher.h"
+#include "BnesBrowser/components/web_discovery/browser/double_fetcher.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_search/browser/backup_results_allowed_urls.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/web_discovery/browser/pref_names.h"
-#include "brave/components/web_discovery/browser/request_queue.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_allowed_urls.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/web_discovery/browser/pref_names.h"
+#include "BnesBrowser/components/web_discovery/browser/request_queue.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "components/prefs/pref_service.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/header_util.h"

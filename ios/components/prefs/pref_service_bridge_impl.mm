@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/components/prefs/pref_service_bridge_impl.h"
+#include "BnesBrowser/ios/components/prefs/pref_service_bridge_impl.h"
 
 #include "base/files/file_path.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/base/apple/base_value_bridge+private.h"
+#include "BnesBrowser/base/apple/base_value_bridge+private.h"
 #include "components/prefs/pref_service.h"
 
 @implementation PrefServiceBridgeImpl

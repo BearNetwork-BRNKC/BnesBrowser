@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ads_internals/ads_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_ui.h"
 
 #include <utility>
 
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/brave_ads/browser/resources/grit/ads_internals_generated_map.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/brave_ads/browser/resources/grit/ads_internals_generated_map.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/prefs/pref_service.h"
@@ -22,8 +22,8 @@
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
 #include "base/feature_list.h"
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/components/brave_rewards/core/features.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
 #include "chrome/browser/browser_process.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_REWARDS)
 

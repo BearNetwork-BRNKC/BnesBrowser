@@ -14,13 +14,13 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/common/timer/timer.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/round_robin/creative_ad_round_robin.h"
-#include "brave/components/brave_ads/core/internal/serving/notification_ad_serving_delegate.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/timer/timer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/creative_notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/round_robin/creative_ad_round_robin.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/notification_ad_serving_delegate.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 
 namespace base {
 class Time;

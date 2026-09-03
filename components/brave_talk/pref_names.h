@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_TALK_PREF_NAMES_H_
 #define BRAVE_COMPONENTS_BRAVE_TALK_PREF_NAMES_H_
 
-#include "brave/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
 
 // Ensure this header is only included when Brave Talk is enabled
 static_assert(BUILDFLAG(ENABLE_BRAVE_TALK),

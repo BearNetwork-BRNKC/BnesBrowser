@@ -13,10 +13,10 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_rewards/core/engine/database/database_server_publisher_info.h"
-#include "brave/components/brave_rewards/core/engine/publisher/publisher_prefix_list_updater.h"
-#include "brave/components/brave_rewards/core/engine/publisher/server_publisher_fetcher.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_server_publisher_info.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher_prefix_list_updater.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/server_publisher_fetcher.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

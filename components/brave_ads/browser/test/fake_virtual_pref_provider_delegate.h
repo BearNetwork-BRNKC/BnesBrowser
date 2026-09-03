@@ -10,7 +10,7 @@
 #include <string_view>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/core/browser/virtual_pref/virtual_pref_provider.h"
+#include "BnesBrowser/components/brave_ads/core/browser/virtual_pref/virtual_pref_provider.h"
 
 namespace brave_ads::test {
 

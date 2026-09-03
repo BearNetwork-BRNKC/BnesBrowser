@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
 #include "build/build_config.h"
 
 namespace brave_vpn {

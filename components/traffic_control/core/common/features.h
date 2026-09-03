@@ -8,7 +8,7 @@
 
 #include "base/component_export.h"
 #include "base/feature.h"
-#include "brave/components/traffic_control/buildflags/buildflags.h"
+#include "BnesBrowser/components/traffic_control/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_TRAFFIC_CONTROL));
 

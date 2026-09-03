@@ -4,10 +4,10 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/dcheck_is_on.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
-#include "brave/components/ntp_background_images/browser/test/ntp_sponsored_rich_media_source_test_base.h"
-#include "brave/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/test/ntp_sponsored_rich_media_source_test_base.h"
+#include "BnesBrowser/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

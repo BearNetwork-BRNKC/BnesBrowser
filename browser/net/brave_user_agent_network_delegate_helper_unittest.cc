@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_user_agent_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_user_agent_network_delegate_helper.h"
 
 #include <optional>
 #include <string>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/net/features.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
-#include "brave/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/browser/net/features.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_request_headers.h"
 #include "testing/gmock/include/gmock/gmock.h"

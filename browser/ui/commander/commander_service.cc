@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
 
 #include <algorithm>
 #include <cstddef>
@@ -23,17 +23,17 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/ui/commander/bookmark_command_source.h"
-#include "brave/browser/ui/commander/command_source.h"
-#include "brave/browser/ui/commander/ranker.h"
-#include "brave/browser/ui/commander/simple_command_source.h"
-#include "brave/browser/ui/commander/tab_command_source.h"
-#include "brave/browser/ui/commander/window_command_source.h"
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
-#include "brave/components/commander/browser/commander_item_model.h"
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/browser/ui/commander/bookmark_command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/ranker.h"
+#include "BnesBrowser/browser/ui/commander/simple_command_source.h"
+#include "BnesBrowser/browser/ui/commander/tab_command_source.h"
+#include "BnesBrowser/browser/ui/commander/window_command_source.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/browser/commander_item_model.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_knapsack_solver.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_knapsack_solver.h"
 
 #include <algorithm>
 #include <optional>
@@ -14,9 +14,9 @@
 #include "base/rand_util.h"
 #include "base/types/expected.h"
 #include "base/types/optional_util.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
 
 namespace brave_wallet {
 

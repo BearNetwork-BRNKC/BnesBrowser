@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/common/post_connect.h"
 
 #include <string>
 #include <tuple>
 #include <utility>
 
-#include "brave/components/brave_rewards/core/engine/endpoints/request_for.h"
-#include "brave/components/brave_rewards/core/engine/test/rewards_engine_test.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_for.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/rewards_engine_test.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
 #include "net/http/http_status_code.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"

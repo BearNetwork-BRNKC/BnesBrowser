@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/pref_registry_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/pref_registry_test_util.h"
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/test/local_state_pref_registry_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/profile_pref_registry_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/local_state_pref_registry_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/profile_pref_registry_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "components/variations/pref_names.h"
 
 namespace brave_ads::test {

@@ -8,7 +8,7 @@
 
 #include "base/functional/bind.h"
 #include "base/test/ios/wait_util.h"
-#include "brave/ios/web/js_messaging/randomized_message_handler_name.h"
+#include "BnesBrowser/ios/web/js_messaging/randomized_message_handler_name.h"
 #include "ios/web/public/js_messaging/content_world.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 #include "ios/web/public/js_messaging/script_message.h"

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/web_mcp/core/browser/web_mcp_component_installer.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_component_installer.h"
 
 #include <array>
 #include <memory>
@@ -14,8 +14,8 @@
 #include "base/check.h"
 #include "base/containers/to_vector.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/web_mcp/core/browser/web_mcp_rule_registry.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_rule_registry.h"
 #include "components/component_updater/component_installer.h"
 #include "components/component_updater/component_updater_service.h"
 #include "crypto/sha2.h"

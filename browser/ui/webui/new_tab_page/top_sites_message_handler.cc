@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/new_tab_page/top_sites_message_handler.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/top_sites_message_handler.h"
 
 #include <map>
 #include <memory>
@@ -14,10 +14,10 @@
 #include "base/i18n/rtl.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/browser/profiles/profile_util.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui_utils.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui_utils.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/new_tab_page/prefs/ntp_pref_names.h"
 #include "chrome/browser/ntp_tiles/chrome_most_visited_sites_factory.h"
 #include "chrome/browser/profiles/profile.h"

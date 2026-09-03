@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
+#include "BnesBrowser/browser/ui/darker_theme/darker_theme_color_transform_factory.h"
 
 #include "base/functional/bind.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "ui/color/color_id.h"
 #include "ui/color/color_mixer.h"
 #include "ui/color/color_transform.h"

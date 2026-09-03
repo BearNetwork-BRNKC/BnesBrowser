@@ -6,7 +6,7 @@
 #include <string_view>
 
 #include "base/logging.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 #include "chrome/browser/signin/identity_manager_factory.h"
 #include "chrome/browser/sync/sync_service_factory.h"
 #include "components/signin/public/identity_manager/identity_manager.h"

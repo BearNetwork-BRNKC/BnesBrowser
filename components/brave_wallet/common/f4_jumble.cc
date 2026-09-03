@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/f4_jumble.h"
+#include "BnesBrowser/components/brave_wallet/common/f4_jumble.h"
 
 #include <stddef.h>
 
@@ -11,7 +11,7 @@
 #include <array>
 
 #include "base/containers/extend.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 
 namespace brave_wallet {
 

@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/web_view/brave_web_view_configuration_provider.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_configuration_provider.h"
 
 #include "base/memory/ptr_util.h"
-#include "brave/ios/browser/api/web_view/brave_web_view_configuration.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_view_configuration.h"
 #include "ios/web/public/browser_state.h"
 #include "ios/web_view/internal/cwv_web_view_configuration_internal.h"
 #include "ios/web_view/public/cwv_web_view_configuration.h"

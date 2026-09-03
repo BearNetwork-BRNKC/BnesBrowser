@@ -7,11 +7,11 @@
 
 #include <string>
 
-#include "brave/browser/resources/bookmark_icon/grit/bookmark_icon_resources.h"
-#include "brave/browser/ui/bookmark/bookmark_helper.h"
-#include "brave/browser/ui/brave_scheme_utils.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/resources/bookmark_icon/grit/bookmark_icon_resources.h"
+#include "BnesBrowser/browser/ui/bookmark/bookmark_helper.h"
+#include "BnesBrowser/browser/ui/brave_scheme_utils.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "components/bookmarks/common/bookmark_pref_names.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/whats_new/whats_new_util.h"
+#include "BnesBrowser/browser/ui/whats_new/whats_new_util.h"
 
 #include <algorithm>
 #include <array>
@@ -17,8 +17,8 @@
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/version.h"
-#include "brave/browser/ui/whats_new/pref_names.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/browser/ui/whats_new/pref_names.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 #include "chrome/browser/profiles/chrome_version_service.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/browser/ui/browser.h"

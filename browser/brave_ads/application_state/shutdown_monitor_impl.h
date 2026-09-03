@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_ADS_APPLICATION_STATE_SHUTDOWN_MONITOR_IMPL_H_
 #define BRAVE_BROWSER_BRAVE_ADS_APPLICATION_STATE_SHUTDOWN_MONITOR_IMPL_H_
 
-#include "brave/components/brave_ads/browser/application_state/shutdown_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/shutdown_monitor.h"
 
 namespace brave_ads {
 

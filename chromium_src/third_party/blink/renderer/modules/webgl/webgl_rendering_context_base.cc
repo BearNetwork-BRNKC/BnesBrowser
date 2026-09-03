@@ -7,8 +7,8 @@
 
 #include <optional>
 
-#include "brave/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/bindings/core/webgl/webgl_farbled_extension_handler.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/public/common/features.h"
 #include "third_party/blink/renderer/bindings/modules/v8/webgl_any.h"
 #include "third_party/blink/renderer/core/dom/document.h"

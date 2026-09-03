@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_browser_frame_view_linux_native.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_frame_view_linux_native.h"
 
 #include <string>
 
 #include "base/check.h"
 #include "base/notreached.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "chrome/browser/ui/views/frame/browser_frame_view_layout_linux_native.h"

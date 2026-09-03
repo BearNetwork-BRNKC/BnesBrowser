@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/toolchain/win/midl.gni")
 import("//build/util/process_version.gni")
 import("//chrome/process_version_rc_template.gni")
@@ -26,9 +26,9 @@ source_set("common") {
 
   deps = [
     "//base",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_vpn/common/win",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/win",
     "//chrome/common:channel_info",
     "//chrome/install_static:install_static_util",
     "//chrome/installer/util:with_no_strings",
@@ -52,8 +52,8 @@ source_set("lib") {
   deps = [
     ":common",
     "//base",
-    "//brave/browser/brave_vpn/win:wireguard_utils",
-    "//brave/components/brave_vpn/browser/connection/ikev2/win:ras_utils",
+    "//BnesBrowser/browser/brave_vpn/win:wireguard_utils",
+    "//BnesBrowser/components/brave_vpn/browser/connection/ikev2/win:ras_utils",
     "//chrome/common:channel_info",
     "//components/version_info:channel",
   ]
@@ -80,7 +80,7 @@ executable("brave_vpn_helper") {
     ":version_resources",
     "//base",
     "//base:base_static",
-    "//brave/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common",
     "//build/win:default_exe_manifest",
     "//chrome/install_static:install_static_util",
     "//components/crash/core/app",
@@ -105,8 +105,8 @@ source_set("unit_tests") {
     ":lib",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_vpn/browser/connection/ikev2/win:ras_utils",
-    "//brave/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/browser/connection/ikev2/win:ras_utils",
+    "//BnesBrowser/components/brave_vpn/common",
     "//testing/gtest",
   ]
 }

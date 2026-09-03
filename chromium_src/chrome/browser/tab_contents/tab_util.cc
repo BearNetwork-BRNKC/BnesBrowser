@@ -5,7 +5,7 @@
 
 #include "chrome/browser/tab_contents/tab_util.h"
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "content/public/browser/site_instance.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)

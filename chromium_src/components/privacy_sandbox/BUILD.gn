@@ -9,7 +9,7 @@ source_set("unit_tests") {
 
   deps = [
     "//base",
-    "//brave/components/privacy_sandbox",
+    "//BnesBrowser/components/privacy_sandbox",
     "//chrome/test:test_support",
     "//components/content_settings/core/browser",
     "//components/content_settings/core/common",

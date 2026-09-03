@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 
 assert(enable_ai_chat)
 
@@ -17,10 +17,10 @@ static_library("renderer") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common:common_impl",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/ai_chat/resources/custom_site_distiller_scripts:generated_resources",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common:common_impl",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/resources/custom_site_distiller_scripts:generated_resources",
     "//content/public/renderer",
     "//gin",
     "//mojo/public/cpp/bindings",
@@ -40,9 +40,9 @@ if (!is_ios) {
 
     deps = [
       "//base/test:test_support",
-      "//brave/components/ai_chat/core/common",
-      "//brave/components/ai_chat/core/common/mojom",
-      "//brave/components/ai_chat/renderer",
+      "//BnesBrowser/components/ai_chat/core/common",
+      "//BnesBrowser/components/ai_chat/core/common/mojom",
+      "//BnesBrowser/components/ai_chat/renderer",
       "//content/public/renderer",
       "//content/test:test_support",
       "//mojo/public/cpp/bindings",

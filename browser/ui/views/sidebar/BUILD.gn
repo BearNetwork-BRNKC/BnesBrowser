@@ -16,10 +16,10 @@ source_set("sidebar") {
 
   public_deps = [
     "//base",
-    "//brave/browser/ui/focus_mode",
-    "//brave/browser/ui/sidebar",
-    "//brave/browser/ui/views/side_panel",
-    "//brave/components/sidebar/browser",
+    "//BnesBrowser/browser/ui/focus_mode",
+    "//BnesBrowser/browser/ui/sidebar",
+    "//BnesBrowser/browser/ui/views/side_panel",
+    "//BnesBrowser/components/sidebar/browser",
     "//chrome/browser/ui/side_panel",
     "//chrome/browser/ui/tabs:tab_strip_model_observer",
     "//chrome/browser/ui/views/side_panel",

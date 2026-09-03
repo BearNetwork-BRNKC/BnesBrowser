@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_metadata_provider.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_metadata_provider.h"
 
 #include <optional>
 #include <string>
@@ -11,12 +11,12 @@
 
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"  // IWYU pragma: keep
 #include "services/network/test/test_url_loader_factory.h"

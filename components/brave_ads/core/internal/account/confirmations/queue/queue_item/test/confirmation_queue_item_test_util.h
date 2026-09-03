@@ -8,7 +8,7 @@
 
 #include <cstddef>
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
 
 namespace brave_ads {
 

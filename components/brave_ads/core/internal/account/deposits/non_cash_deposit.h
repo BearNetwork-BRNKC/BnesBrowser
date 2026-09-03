@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_interface.h"
 
 namespace brave_ads {
 

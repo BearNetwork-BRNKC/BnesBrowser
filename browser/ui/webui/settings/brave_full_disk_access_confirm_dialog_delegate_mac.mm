@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_full_disk_access_confirm_dialog_delegate.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_full_disk_access_confirm_dialog_delegate.h"
 
 #import <AppKit/AppKit.h>
 
 #include "base/functional/bind.h"
 #include "base/values.h"
-#include "brave/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/url_constants.h"
 #include "chrome/browser/importer/external_process_importer_host.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

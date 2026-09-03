@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/email_aliases/email_aliases_notes.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_notes.h"
 
 #include <numeric>
 
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #include "components/pref_registry/pref_registry_syncable.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

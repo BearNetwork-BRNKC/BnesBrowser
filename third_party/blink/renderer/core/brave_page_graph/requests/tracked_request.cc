@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/requests/tracked_request.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/requests/tracked_request.h"
 
 #include "base/check.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_complete.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_error.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_redirect.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_start.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/graph_node.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/node_resource.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_complete.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_error.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_redirect.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/request/edge_request_start.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/graph_node.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/node_resource.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
 #include "third_party/blink/renderer/platform/loader/fetch/resource.h"
 #include "third_party/blink/renderer/platform/wtf/text/base64.h"
 

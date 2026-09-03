@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
+#include "BnesBrowser/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
 #include "ios/chrome/browser/shared/model/profile/profile_keyed_service_factory_ios.h"
 
 class ProfileIOS;

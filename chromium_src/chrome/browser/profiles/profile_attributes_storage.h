@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_PROFILES_PROFILE_ATTRIBUTES_STORAGE_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_PROFILES_PROFILE_ATTRIBUTES_STORAGE_H_
 
-#include "brave/browser/profiles/brave_profile_avatar_downloader.h"
+#include "BnesBrowser/browser/profiles/brave_profile_avatar_downloader.h"
 
 #define ProfileAvatarDownloader BraveProfileAvatarDownloader
 #include <chrome/browser/profiles/profile_attributes_storage.h>  // IWYU pragma: export

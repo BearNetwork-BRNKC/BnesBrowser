@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/brave_wallet/nft_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/nft_ui.h"
 
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/nft_display/resources/grit/nft_display_generated_map.h"
-#include "brave/ios/browser/ui/webui/untrusted_sanitized_image_source.h"
-#include "brave/ios/web/webui/brave_web_ui_ios_data_source.h"
-#include "brave/ios/web/webui/brave_webui_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/nft_display/resources/grit/nft_display_generated_map.h"
+#include "BnesBrowser/ios/browser/ui/webui/untrusted_sanitized_image_source.h"
+#include "BnesBrowser/ios/web/webui/brave_web_ui_ios_data_source.h"
+#include "BnesBrowser/ios/web/webui/brave_webui_utils.h"
 #include "components/grit/brave_components_resources.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/web/public/web_state.h"

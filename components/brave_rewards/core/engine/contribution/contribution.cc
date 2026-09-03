@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/contribution/contribution.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/contribution/contribution.h"
 
 #include <stdint.h>
 
@@ -22,18 +22,18 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
 #include "base/uuid.h"
-#include "brave/components/brave_rewards/core/engine/bitflyer/bitflyer.h"
-#include "brave/components/brave_rewards/core/engine/constants.h"
-#include "brave/components/brave_rewards/core/engine/contribution/contribution_util.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/publisher/publisher_status_helper.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/uphold/uphold.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/util/time_util.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_balance.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/bitflyer/bitflyer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/contribution/contribution_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/publisher_status_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/uphold/uphold.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/time_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_balance.h"
 
 namespace brave_rewards::internal {
 

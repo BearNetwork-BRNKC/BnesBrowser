@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/check.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
 
 #include <third_party/blink/renderer/modules/storage/storage_area.cc>
 

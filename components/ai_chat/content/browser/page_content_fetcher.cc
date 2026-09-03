@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/content/browser/page_content_fetcher.h"
+#include "BnesBrowser/components/ai_chat/content/browser/page_content_fetcher.h"
 
 #include <memory>
 #include <optional>
@@ -21,11 +21,11 @@
 #include "base/strings/escape.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_tab_helper.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
-#include "brave/components/ai_chat/core/common/yt_util.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/text_recognition/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/yt_util.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/text_recognition/common/buildflags/buildflags.h"
 #include "components/viz/common/frame_sinks/copy_output_result.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/render_frame_host.h"
@@ -51,7 +51,7 @@
 #include "url/url_constants.h"
 
 #if BUILDFLAG(ENABLE_TEXT_RECOGNITION)
-#include "brave/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
 #include "content/public/browser/render_widget_host_view.h"
 #endif  // BUILDFLAG(ENABLE_TEXT_RECOGNITION)
 

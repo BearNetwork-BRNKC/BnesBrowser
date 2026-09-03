@@ -5,23 +5,23 @@
 
 // based on //chrome/browser/ui/webui/whats_new/whats_new_ui.cc
 
-#include "brave/browser/ui/webui/brave_education/brave_education_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_page_ui.h"
 
 #include <string>
 #include <utility>
 #include <vector>
 
 #include "base/check.h"
-#include "brave/browser/ui/webui/brave_browser_command/brave_browser_command_handler.h"
-#include "brave/browser/ui/webui/brave_education/brave_education_handler.h"
-#include "brave/browser/ui/webui/brave_education/brave_education_page_delegate_desktop.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_education/education_urls.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/grit/brave_education_resources.h"
-#include "brave/grit/brave_education_resources_map.h"
+#include "BnesBrowser/browser/ui/webui/brave_browser_command/brave_browser_command_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_page_delegate_desktop.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/grit/brave_education_resources.h"
+#include "BnesBrowser/grit/brave_education_resources_map.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/grit/branded_strings.h"
 #include "chrome/grit/generated_resources.h"

@@ -11,7 +11,7 @@
 #ifndef BRAVE_BROWSER_UI_COMMANDER_BOOKMARK_COMMAND_SOURCE_H_
 #define BRAVE_BROWSER_UI_COMMANDER_BOOKMARK_COMMAND_SOURCE_H_
 
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 
 class BrowserWindowInterface;
 

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_wallet/nft/nft_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/nft/nft_ui.h"
 
 #include <string>
 
-#include "brave/browser/ui/webui/untrusted_sanitized_image_source.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/nft_display/resources/grit/nft_display_generated_map.h"
+#include "BnesBrowser/browser/ui/webui/untrusted_sanitized_image_source.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/nft_display/resources/grit/nft_display_generated_map.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/url_data_source.h"

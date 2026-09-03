@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 
 # Deps for third_party/blink/renderer/modules/peerconnection, so blink can read
 # the AI Chat code sandbox WebUI host constant.
@@ -14,17 +14,17 @@ brave_blink_renderer_modules_peerconnection_ai_chat_deps = []
 # leo-workspace page.
 brave_blink_renderer_core_script_tools_ai_chat_deps = []
 
-# //brave/components/ai_chat/core/common:constants is a renderer-safe,
+# //BnesBrowser/components/ai_chat/core/common:constants is a renderer-safe,
 # header-only target, so blink can depend on it without pulling in the rest of
 # the AI Chat common component.
 # Guarded on enable_ai_chat so that, in Brave Origin builds (where AI Chat is
 # disabled), the ai_chat/core/common BUILD.gn is never loaded -- otherwise its
 # headers would become "known" to `gn check`, making the conditional
-# #if BUILDFLAG(ENABLE_AI_CHAT) includes in //brave/browser resolve and get
+# #if BUILDFLAG(ENABLE_AI_CHAT) includes in //BnesBrowser/browser resolve and get
 # flagged as missing-dependency errors.
 if (enable_ai_chat) {
   brave_blink_renderer_modules_peerconnection_ai_chat_deps +=
-      [ "//brave/components/ai_chat/core/common:constants" ]
+      [ "//BnesBrowser/components/ai_chat/core/common:constants" ]
   brave_blink_renderer_core_script_tools_ai_chat_deps +=
-      [ "//brave/components/ai_chat/core/common:constants" ]
+      [ "//BnesBrowser/components/ai_chat/core/common:constants" ]
 }

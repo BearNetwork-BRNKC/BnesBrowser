@@ -11,7 +11,7 @@
 
 #include "base/functional/callback_forward.h"
 #include "base/values.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "content/public/browser/render_frame_host_receiver_set.h"
 #include "content/public/browser/web_contents_user_data.h"
 #include "mojo/public/cpp/bindings/pending_associated_receiver.h"

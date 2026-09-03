@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
 
 #include <string>
 #include <utility>
@@ -21,7 +21,7 @@
 #include "base/task/thread_pool.h"
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/history/core/browser/url_row.h"

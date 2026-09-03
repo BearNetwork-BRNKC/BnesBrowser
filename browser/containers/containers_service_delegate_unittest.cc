@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/containers/containers_service_delegate.h"
+#include "BnesBrowser/browser/containers/containers_service_delegate.h"
 
 #include <algorithm>
 #include <memory>
@@ -14,8 +14,8 @@
 #include "base/functional/bind.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "chrome/common/buildflags.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/sessions/core/mock_tab_restore_service.h"
@@ -29,7 +29,7 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_SESSION_SERVICE)
-#include "brave/components/containers/content/browser/session_utils.h"
+#include "BnesBrowser/components/containers/content/browser/session_utils.h"
 #include "chrome/browser/sessions/session_service.h"
 #include "chrome/browser/sessions/session_service_test_helper.h"
 #include "chrome/browser/ui/browser.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/core/common/playlist_render_frame_observer_helper.h"
+#include "BnesBrowser/components/playlist/core/common/playlist_render_frame_observer_helper.h"
 
 #include <algorithm>
 #include <string>
@@ -13,7 +13,7 @@
 #include "base/json/values_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"
 

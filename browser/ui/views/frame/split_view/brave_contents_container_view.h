@@ -9,13 +9,13 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
 #include "chrome/browser/ui/views/frame/contents_container_view.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/gfx/geometry/rounded_corners_f.h"
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/speedreader/reader_mode_toolbar_view.h"
 #endif
 
 class BraveContentsContainerView :

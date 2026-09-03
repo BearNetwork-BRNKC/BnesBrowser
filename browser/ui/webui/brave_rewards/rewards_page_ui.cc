@@ -3,25 +3,25 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_ui.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/brave_adaptive_captcha/brave_adaptive_captcha_service_factory.h"
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_data_source.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_handler.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_adaptive_captcha/brave_adaptive_captcha_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_data_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_handler.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/android/brave_rewards/rewards_page_helper.h"
+#include "BnesBrowser/browser/ui/android/brave_rewards/rewards_page_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 using brave_adaptive_captcha::BraveAdaptiveCaptchaServiceFactory;

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table.h"
 
 #include <algorithm>
 #include <cstddef>
@@ -19,26 +19,26 @@
 #include "base/location.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmations_feature.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_builder_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_util.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_confirmation_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/ad_type.h"
-#include "brave/components/brave_ads/core/internal/common/algorithm/split_vector_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_column_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_statement_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_table_util.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/time/time_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmations_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/confirmation_queue_database_table_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/queue/queue_item/confirmation_queue_item_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_confirmation_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/ad_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/algorithm/split_vector_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_column_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_statement_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_table_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/time/time_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads::database::table {
 

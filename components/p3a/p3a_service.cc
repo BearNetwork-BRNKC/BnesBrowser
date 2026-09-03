@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
 
 #include <optional>
 #include <string>
@@ -15,14 +15,14 @@
 #include "base/metrics/histogram_samples.h"
 #include "base/metrics/statistics_recorder.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/p3a/component_installer.h"
-#include "brave/components/p3a/message_manager.h"
-#include "brave/components/p3a/metric_config_utils.h"
-#include "brave/components/p3a/metric_names.h"
-#include "brave/components/p3a/p3a_config.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a_utils/event_relay.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/p3a/component_installer.h"
+#include "BnesBrowser/components/p3a/message_manager.h"
+#include "BnesBrowser/components/p3a/metric_config_utils.h"
+#include "BnesBrowser/components/p3a/metric_names.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/event_relay.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"

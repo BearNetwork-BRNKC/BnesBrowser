@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
 
 #include <utility>
 
@@ -12,8 +12,8 @@
 #include "base/logging.h"
 #include "base/memory/ptr_util.h"
 #include "base/no_destructor.h"
-#include "brave/components/request_otr/browser/request_otr_p3a.h"
-#include "brave/components/request_otr/common/features.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_p3a.h"
+#include "BnesBrowser/components/request_otr/common/features.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/web_contents.h"

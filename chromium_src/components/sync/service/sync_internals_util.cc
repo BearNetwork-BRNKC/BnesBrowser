@@ -6,7 +6,7 @@
 #include "components/sync/service/sync_internals_util.h"
 
 #include "base/check_op.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
 
 #define ConstructAboutInformation ConstructAboutInformation_ChromiumImpl
 #include <components/sync/service/sync_internals_util.cc>

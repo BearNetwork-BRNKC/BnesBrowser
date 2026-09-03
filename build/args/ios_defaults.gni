@@ -18,11 +18,11 @@ ios_enable_widget_kit_extension = false
 use_partition_alloc_as_malloc = false
 enable_backup_ref_ptr_support = false
 
-ios_provider_target = "//brave/ios/browser/providers:brave_providers"
+ios_provider_target = "//BnesBrowser/ios/browser/providers:brave_providers"
 
 ios_locales_pack_extra_source_patterns =
     [ "%root_gen_dir%/components/brave_components_strings_" ]
-ios_locales_pack_extra_deps = [ "//brave/components/resources:strings" ]
+ios_locales_pack_extra_deps = [ "//BnesBrowser/components/resources:strings" ]
 
 # Configure unit tests to run outside of chromium infra
 # https://source.chromium.org/chromium/chromium/src/+/main:ios/build/bots/scripts/README.md

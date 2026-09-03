@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 
 #include <algorithm>
 #include <string_view>
@@ -23,7 +23,7 @@
 #include "base/time/time.h"
 #include "base/timer/elapsed_timer.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/api_request_helper/utils.h"
+#include "BnesBrowser/components/api_request_helper/utils.h"
 #include "net/base/load_flags.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/resource_request.h"

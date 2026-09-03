@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/content_settings/brave_content_setting_image_models.h"
+#include "BnesBrowser/browser/ui/content_settings/brave_content_setting_image_models.h"
 
 #include <algorithm>
 
-#include "brave/browser/ui/content_settings/brave_autoplay_blocked_image_model.h"
+#include "BnesBrowser/browser/ui/content_settings/brave_autoplay_blocked_image_model.h"
 #include "third_party/widevine/cdm/buildflags.h"
 
 using ImageType = ContentSettingImageModel::ImageType;

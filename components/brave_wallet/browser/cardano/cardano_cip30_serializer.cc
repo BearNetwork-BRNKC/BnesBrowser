@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_cip30_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_cip30_serializer.h"
 
 #include <cstdint>
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
 #include "components/cbor/reader.h"
 #include "components/cbor/values.h"
 #include "components/cbor/writer.h"

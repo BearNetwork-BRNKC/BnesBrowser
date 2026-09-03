@@ -10,7 +10,7 @@
 
 #include "base/files/file_path.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_wallet/browser/blockchain_images_source_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_images_source_base.h"
 #include "ios/web/public/webui/url_data_source_ios.h"
 
 namespace brave_wallet {

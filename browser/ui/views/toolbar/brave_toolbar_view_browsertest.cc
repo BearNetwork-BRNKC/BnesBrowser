@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
 
 #include "base/check.h"
 #include "base/command_line.h"
@@ -12,22 +12,22 @@
 #include "base/i18n/rtl.h"
 #include "base/memory/raw_ptr.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/tabs/brave_split_tab_menu_model.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
-#include "brave/browser/ui/views/toolbar/bookmark_button.h"
-#include "brave/browser/ui/views/toolbar/screenshot_button.h"
-#include "brave/browser/ui/views/toolbar/side_panel_button.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/tabs/brave_split_tab_menu_model.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/ui/views/toolbar/bookmark_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/side_panel_button.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"
@@ -69,26 +69,26 @@
 #include "ui/views/view.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/ui/views/toolbar/wallet_button.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/browser/ui/views/toolbar/wallet_button.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ui/views/toolbar/ai_chat_button.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/browser/ui/views/toolbar/ai_chat_button.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/ui/views/toolbar/brave_vpn_button.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_vpn_button.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 class BraveToolbarViewTest : public InProcessBrowserTest {

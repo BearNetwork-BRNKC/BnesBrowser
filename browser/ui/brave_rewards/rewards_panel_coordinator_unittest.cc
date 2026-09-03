@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_rewards/rewards_panel_coordinator.h"
+#include "BnesBrowser/browser/ui/brave_rewards/rewards_panel_coordinator.h"
 
 #include <memory>
 #include <string>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/l10n/common/test/scoped_default_locale.h"
+#include "BnesBrowser/components/l10n/common/test/scoped_default_locale.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/test/base/browser_with_test_window_test.h"
 

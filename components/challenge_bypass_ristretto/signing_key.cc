@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/challenge_bypass_ristretto/signing_key.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/signing_key.h"
 
 #include <utility>
 
-#include "brave/components/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/challenge_bypass_ristretto/signed_token.h"
-#include "brave/components/challenge_bypass_ristretto/token_preimage.h"
-#include "brave/components/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/signed_token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/token_preimage.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/unblinded_token.h"
 
 namespace challenge_bypass_ristretto {
 

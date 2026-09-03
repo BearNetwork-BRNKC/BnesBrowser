@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/renderer/page_content_extractor.h"
+#include "BnesBrowser/components/ai_chat/renderer/page_content_extractor.h"
 
 #include <optional>
 #include <ostream>
@@ -20,10 +20,10 @@
 #include "base/time/time.h"
 #include "base/unguessable_token.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
-#include "brave/components/ai_chat/core/common/utils.h"
-#include "brave/components/ai_chat/core/common/yt_util.h"
-#include "brave/components/ai_chat/renderer/page_text_distilling.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/yt_util.h"
+#include "BnesBrowser/components/ai_chat/renderer/page_text_distilling.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "mojo/public/cpp/bindings/callback_helpers.h"

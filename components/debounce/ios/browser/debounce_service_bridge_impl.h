@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/debounce/ios/browser/debounce_service_bridge.h"
+#include "BnesBrowser/components/debounce/ios/browser/debounce_service_bridge.h"
 
 namespace debounce {
 class DebounceService;

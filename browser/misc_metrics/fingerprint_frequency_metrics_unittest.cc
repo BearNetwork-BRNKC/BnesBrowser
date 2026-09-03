@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/fingerprint_frequency_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/fingerprint_frequency_metrics.h"
 
 #include <memory>
 
@@ -11,8 +11,8 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/misc_metrics/features.h"
-#include "brave/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/features.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"

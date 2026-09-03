@@ -6,8 +6,8 @@
 #include "base/environment.h"
 #include "base/files/file_path.h"
 #include "base/nix/xdg_util.h"
-#include "brave/common/brave_channel_info_posix.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/common/brave_channel_info_posix.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "chrome/common/chrome_paths_internal.h"
 
 namespace {

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/qr_code/qr_code_generator.h"
+#include "BnesBrowser/ios/browser/api/qr_code/qr_code_generator.h"
 
 #include "base/strings/sys_string_conversions.h"
 #include "base/types/expected.h"
-#include "brave/ios/browser/qr_code_generator/qrcode_models.h"
+#include "BnesBrowser/ios/browser/qr_code_generator/qrcode_models.h"
 #include "components/qr_code_generator/bitmap_generator.h"
 
 #include "ui/gfx/image/image.h"

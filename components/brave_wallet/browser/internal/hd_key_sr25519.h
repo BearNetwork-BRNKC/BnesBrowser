@@ -11,7 +11,7 @@
 #include <optional>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 namespace brave_wallet {

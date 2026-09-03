@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CONTENT_BROWSER_WORKER_HOST_SHARED_WORKER_HOST_H_
 #define BRAVE_CHROMIUM_SRC_CONTENT_BROWSER_WORKER_HOST_SHARED_WORKER_HOST_H_
 
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 
 #define CreateNetworkFactoryParamsForSubresources                        \
   UnusedFunction();                                                      \

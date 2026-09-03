@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/net/dns/secure_dns_endpoints.h"
+#include "BnesBrowser/net/dns/secure_dns_endpoints.h"
 
 #include <net/base/features.cc>
 

@@ -3,34 +3,34 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/update_observer.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/update_observer.h"
 
 #include <utility>
 #include <vector>
 
-#include "brave/browser/ntp_background/ntp_background_prefs.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_perf_predictor/common/pref_names.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/browser/ntp_background/ntp_background_prefs.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/top_sites_facade.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_perf_predictor/common/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "chrome/browser/new_tab_page/prefs/ntp_pref_names.h"
 #include "chrome/common/pref_names.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 namespace brave_new_tab_page_refresh {

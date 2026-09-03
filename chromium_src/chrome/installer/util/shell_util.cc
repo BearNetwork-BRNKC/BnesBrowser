@@ -6,7 +6,7 @@
 #include <ostream>
 
 #include "base/notreached.h"
-#include "brave/installer/util/brave_shell_util.h"
+#include "BnesBrowser/installer/util/brave_shell_util.h"
 #include "chrome/common/chrome_icon_resources_win.h"
 #include "chrome/install_static/install_util.h"
 #include "components/version_info/channel.h"

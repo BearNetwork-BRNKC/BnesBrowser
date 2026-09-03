@@ -11,8 +11,8 @@ source_set("certificate") {
 
   deps = [
     "//base",
-    "//brave/ios/browser/api/certificate/models",
-    "//brave/ios/browser/api/certificate/utils",
+    "//BnesBrowser/ios/browser/api/certificate/models",
+    "//BnesBrowser/ios/browser/api/certificate/utils",
     "//net",
     "//third_party/abseil-cpp:absl",
     "//third_party/boringssl",

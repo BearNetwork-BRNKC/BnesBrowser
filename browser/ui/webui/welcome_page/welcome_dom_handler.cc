@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/welcome_page/welcome_dom_handler.h"
+#include "BnesBrowser/browser/ui/webui/welcome_page/welcome_dom_handler.h"
 
 #include <algorithm>
 
@@ -14,12 +14,12 @@
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/common/importer/importer_constants.h"
-#include "brave/components/brave_education/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/common/importer/importer_constants.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/metrics/metrics_reporting_state.h"
 #include "chrome/browser/profiles/profile.h"
@@ -35,8 +35,8 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/components/brave_education/education_urls.h"
-#include "brave/components/brave_education/features.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
+#include "BnesBrowser/components/brave_education/features.h"
 #endif
 
 namespace {

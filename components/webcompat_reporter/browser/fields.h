@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_WEBCOMPAT_REPORTER_BROWSER_FIELDS_H_
 #define BRAVE_COMPONENTS_WEBCOMPAT_REPORTER_BROWSER_FIELDS_H_
 
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
 
 namespace webcompat_reporter {
 

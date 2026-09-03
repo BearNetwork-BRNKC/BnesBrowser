@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/ai_chat/image_utils.h"
+#include "BnesBrowser/ios/browser/ui/webui/ai_chat/image_utils.h"
 
 #import <Foundation/Foundation.h>
 
-#include "brave/components/screenshot/core/browser/utils.h"
+#include "BnesBrowser/components/screenshot/core/browser/utils.h"
 #include "skia/ext/skia_utils_ios.h"
 #include "third_party/skia/include/core/SkBitmap.h"
 #include "ui/gfx/codec/png_codec.h"

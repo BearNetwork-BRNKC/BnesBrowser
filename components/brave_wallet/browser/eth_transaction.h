@@ -11,11 +11,11 @@
 #include <vector>
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/internal/secp256k1_signature.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/secp256k1_signature.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 
 namespace base {
 class Value;

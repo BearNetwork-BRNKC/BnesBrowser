@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_search/backup_results_service_factory.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_factory.h"
 
-#include "brave/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile_manager.h"
 #include "content/public/test/browser_task_environment.h"

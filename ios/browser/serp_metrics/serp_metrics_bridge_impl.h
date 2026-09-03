@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_SERP_METRICS_SERP_METRICS_BRIDGE_IMPL_H_
 #define BRAVE_IOS_BROWSER_SERP_METRICS_SERP_METRICS_BRIDGE_IMPL_H_
 
-#include "brave/ios/browser/serp_metrics/serp_metrics_bridge.h"
+#include "BnesBrowser/ios/browser/serp_metrics/serp_metrics_bridge.h"
 
 namespace serp_metrics {
 class SerpMetrics;

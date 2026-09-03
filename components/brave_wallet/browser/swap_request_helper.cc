@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/swap_request_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/swap_request_helper.h"
 
 #include <limits>
 #include <optional>
@@ -13,13 +13,13 @@
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/json_rpc_requests_helper.h"
-#include "brave/components/brave_wallet/browser/solana_keyring.h"
-#include "brave/components/brave_wallet/common/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
-#include "brave/components/json/json_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_requests_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_keyring.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/json/json_helper.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace brave_wallet {

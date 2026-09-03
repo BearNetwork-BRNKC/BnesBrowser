@@ -12,7 +12,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/infobars/core/brave_confirm_infobar_delegate.h"
+#include "BnesBrowser/components/infobars/core/brave_confirm_infobar_delegate.h"
 #include "components/infobars/core/infobar.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/views/controls/button/image_button.h"

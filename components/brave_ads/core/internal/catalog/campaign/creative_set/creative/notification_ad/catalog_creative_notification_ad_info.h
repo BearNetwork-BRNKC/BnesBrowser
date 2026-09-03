@@ -8,8 +8,8 @@
 
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_creative_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/notification_ad/catalog_notification_ad_payload_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_creative_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/notification_ad/catalog_notification_ad_payload_info.h"
 
 namespace brave_ads {
 

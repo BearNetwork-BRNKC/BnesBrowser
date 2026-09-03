@@ -5,7 +5,7 @@
 
 #include "components/omnibox/browser/suggestion_group_util.h"
 
-#include "brave/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
 #include "components/grit/brave_components_strings.h"
 
 #define BuildDefaultGroups BuildDefaultGroups_ChromiumImpl

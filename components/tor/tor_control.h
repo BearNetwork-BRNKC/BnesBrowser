@@ -19,7 +19,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/sequence_checker.h"
-#include "brave/components/tor/tor_control_event.h"
+#include "BnesBrowser/components/tor/tor_control_event.h"
 
 namespace base {
 class SequencedTaskRunner;

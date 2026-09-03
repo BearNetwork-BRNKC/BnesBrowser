@@ -11,7 +11,7 @@
 #include "base/containers/flat_map.h"
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_perf_predictor/browser/named_third_party_registry.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/named_third_party_registry.h"
 #include "url/gurl.h"
 
 namespace page_load_metrics {

@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_vpn/browser/connection/connection_api_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/connection_api_impl.h"
 
 namespace network {
 class SharedURLLoaderFactory;

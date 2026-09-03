@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/omnibox/browser/leo_provider.h"
+#include "BnesBrowser/components/omnibox/browser/leo_provider.h"
 
 #include "base/memory/scoped_refptr.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/omnibox/browser/brave_fake_autocomplete_provider_client.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/brave_fake_autocomplete_provider_client.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/test_scheme_classifier.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -16,7 +16,7 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/commander/command_source.h"
+#include "BnesBrowser/browser/ui/commander/command_source.h"
 #include "components/sessions/core/session_id.h"
 #include "components/tab_groups/tab_group_id.h"
 #include "ui/gfx/range/range.h"

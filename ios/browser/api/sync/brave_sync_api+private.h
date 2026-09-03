@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/sync/brave_sync_api.h"
+#include "BnesBrowser/ios/browser/api/sync/brave_sync_api.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_sync/qr_code_validator.h"
+#include "BnesBrowser/components/brave_sync/qr_code_validator.h"
 
 #include <string>
 #include <string_view>
@@ -15,8 +15,8 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
-#include "brave/components/brave_sync/crypto/crypto.h"
-#include "brave/components/brave_sync/qr_code_data.h"
+#include "BnesBrowser/components/brave_sync/crypto/crypto.h"
+#include "BnesBrowser/components/brave_sync/qr_code_data.h"
 
 namespace brave_sync {
 

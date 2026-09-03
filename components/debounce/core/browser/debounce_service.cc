@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/debounce/core/browser/debounce_service.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_service.h"
 
 #include <memory>
 #include <string>
 #include <vector>
 
 #include "base/containers/flat_set.h"
-#include "brave/components/debounce/core/browser/debounce_component_installer.h"
-#include "brave/components/debounce/core/common/pref_names.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_component_installer.h"
+#include "BnesBrowser/components/debounce/core/common/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "url/gurl.h"
 #include "url/origin.h"

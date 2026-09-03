@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_profile_public_headers =
-    [ "//brave/ios/browser/api/profile/profile_bridge.h" ]
+    [ "//BnesBrowser/ios/browser/api/profile/profile_bridge.h" ]

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ai_chat/ollama/ollama_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/ollama/ollama_service_factory.h"
 
 #include "base/no_destructor.h"
-#include "brave/browser/ai_chat/model_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
-#include "brave/components/ai_chat/core/browser/ollama/ollama_service.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ai_chat/model_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_model_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_selections.h"
 #include "components/user_prefs/user_prefs.h"

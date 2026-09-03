@@ -45,15 +45,15 @@ static_library("browser") {
   ]
   deps = [
     "//base",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_shields/core/common:mojom",
-    "//brave/components/constants",
-    "//brave/components/content_settings/core/common",
-    "//brave/components/https_upgrade_exceptions/browser",
-    "//brave/components/p3a",
-    "//brave/components/p3a_utils",
-    "//brave/components/webcompat/core/common",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_shields/core/common:mojom",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/content_settings/core/common",
+    "//BnesBrowser/components/https_upgrade_exceptions/browser",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/webcompat/core/common",
     "//components/component_updater",
     "//components/content_settings/core/browser",
     "//components/content_settings/core/browser:cookie_settings",
@@ -67,7 +67,7 @@ static_library("browser") {
   ]
   public_deps = [
     "//base",
-    "//brave/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
   ]
 }
 
@@ -84,9 +84,9 @@ source_set("unit_tests") {
     ":browser",
     ":test_support",
     "//base/test:test_support",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_shields/core/common/adblock",
-    "//brave/components/constants",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/constants",
     "//components/content_settings/core/browser",
     "//components/content_settings/core/common",
     "//components/content_settings/core/test:test_support",

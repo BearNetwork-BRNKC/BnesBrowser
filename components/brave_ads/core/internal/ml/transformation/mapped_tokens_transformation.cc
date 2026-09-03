@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ml/transformation/mapped_tokens_transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/mapped_tokens_transformation.h"
 
 #include <cstdint>
 
 #include "base/check.h"
 #include "base/strings/string_split.h"
-#include "brave/components/brave_ads/core/internal/common/resources/flat/text_classification_neural_transformation_generated.h"
-#include "brave/components/brave_ads/core/internal/ml/data/text_data.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/resources/flat/text_classification_neural_transformation_generated.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/text_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
 
 namespace brave_ads::ml {
 

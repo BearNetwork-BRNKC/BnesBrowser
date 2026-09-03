@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/feed_generation_info.h"
+#include "BnesBrowser/components/brave_news/browser/feed_generation_info.h"
 
 #include <algorithm>
 #include <numeric>
@@ -17,13 +17,13 @@
 #include "base/containers/map_util.h"
 #include "base/containers/span.h"
 #include "base/logging.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/feed_sampling.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/browser/signal_calculator.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/signal_calculator.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 
 namespace brave_news {

@@ -12,7 +12,7 @@
 
 #include "base/containers/flat_map.h"
 #include "base/time/time.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 #include "third_party/blink/renderer/platform/wtf/text/wtf_string.h"
 
 namespace brave_page_graph {

@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_NTP_BACKGROUND_IMAGES_NTP_SPONSORED_IMAGE_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_NTP_BACKGROUND_IMAGES_NTP_SPONSORED_IMAGE_PRIVATE_H_
 
-#include "brave/ios/browser/api/ntp_background_images/ntp_sponsored_image.h"
+#include "BnesBrowser/ios/browser/api/ntp_background_images/ntp_sponsored_image.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/wireguard_connection_api_impl_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_connection_api_impl_win.h"
 
 #include <memory>
 #include <string>
@@ -12,10 +12,10 @@
 
 #include "base/logging.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/brave_vpn/win/service_details.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/win/utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/win/utils.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 namespace brave_vpn {

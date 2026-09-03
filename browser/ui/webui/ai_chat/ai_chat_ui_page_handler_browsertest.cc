@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui_page_handler.h"
 
 #include "base/check.h"
 #include "base/files/file_util.h"
@@ -16,15 +16,15 @@
 #include "base/test/scoped_run_loop_timeout.h"
 #include "base/test/test_future.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ai_chat/tab_tracker_service_factory.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/tab_tracker_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/test/base/chrome_test_utils.h"
@@ -35,7 +35,7 @@
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/test/base/ui_test_utils.h"
 #endif
-#include "brave/components/ai_chat/content/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_tab_helper.h"
 #include "content/public/browser/navigation_controller.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/common/url_constants.h"

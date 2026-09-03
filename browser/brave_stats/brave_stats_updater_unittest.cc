@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_stats/brave_stats_updater.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater.h"
 
 #include <cstddef>
 #include <memory>
@@ -18,15 +18,15 @@
 #include "base/test/metrics/histogram_tester.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/time/time.h"
-#include "brave/browser/brave_stats/brave_stats_updater_params.h"
-#include "brave/browser/brave_stats/features.h"
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator_mock.h"
-#include "brave/components/brave_referrals/browser/brave_referrals_service.h"
-#include "brave/components/brave_referrals/common/pref_names.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/misc_metrics/general_browser_usage.h"
-#include "brave/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater_params.h"
+#include "BnesBrowser/browser/brave_stats/features.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator_mock.h"
+#include "BnesBrowser/components/brave_referrals/browser/brave_referrals_service.h"
+#include "BnesBrowser/components/brave_referrals/common/pref_names.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/general_browser_usage.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/browser/profiles/profile_attributes_storage.h"

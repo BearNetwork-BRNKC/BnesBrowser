@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/chromium_src/chrome/browser/profiles/profile.h"
+#include "BnesBrowser/chromium_src/chrome/browser/profiles/profile.h"
 
 #include "base/strings/string_util.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/constants/brave_constants.h"
-#include "brave/components/tor/tor_constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_constants.h"
+#include "BnesBrowser/components/tor/tor_constants.h"
 #include "chrome/browser/policy/profile_policy_connector.h"
 #include "components/search_engines/search_engine_choice/search_engine_choice_utils.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #define BRAVE_ALLOWS_BROWSER_WINDOWS *this == TorID() ||

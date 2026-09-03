@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_TOOLBAR_APP_MENU_MODEL_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_TOOLBAR_APP_MENU_MODEL_H_
 
-#include "brave/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_sub_menu_model.h"
 #include "chrome/browser/ui/toolbar/bookmark_sub_menu_model.h"
 
 #define CreateZoomMenu                                         \

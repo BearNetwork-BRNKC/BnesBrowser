@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
 
 #include <algorithm>
 
@@ -16,8 +16,8 @@
 #include "base/json/json_writer.h"
 #include "base/path_service.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 

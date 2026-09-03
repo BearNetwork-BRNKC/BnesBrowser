@@ -13,9 +13,9 @@ cargo_crate("lib") {
   epoch = "0.11"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/hmac-v0_11/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/hmac-v0_11/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/hmac-v0_11/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/hmac-v0_11/src/lib.rs",
   ]
   inputs = []
 
@@ -31,8 +31,8 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/crypto_mac/v0_11:lib",
-    "//brave/third_party/rust/digest/v0_9:lib",
+    "//BnesBrowser/third_party/rust/crypto_mac/v0_11:lib",
+    "//BnesBrowser/third_party/rust/digest/v0_9:lib",
   ]
   rustenv = []
   rustflags = []

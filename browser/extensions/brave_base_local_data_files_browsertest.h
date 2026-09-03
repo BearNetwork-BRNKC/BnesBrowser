@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_EXTENSIONS_BRAVE_BASE_LOCAL_DATA_FILES_BROWSERTEST_H_
 #define BRAVE_BROWSER_EXTENSIONS_BRAVE_BASE_LOCAL_DATA_FILES_BROWSERTEST_H_
 
-#include "brave/components/brave_component_updater/browser/local_data_files_observer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_observer.h"
 #include "chrome/browser/extensions/extension_browsertest.h"
 #include "extensions/browser/install_verifier.h"
 

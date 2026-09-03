@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/command_line_container.h"
+#include "BnesBrowser/components/containers/core/browser/command_line_container.h"
 
 #include <string>
 #include <utility>
 
 #include "base/check.h"
 #include "base/command_line.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/common/switches.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/common/switches.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 
 namespace containers {
 

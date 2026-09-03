@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/toolbar/side_panel_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/side_panel_button.h"
 
 #include <memory>
 
 #include "base/check_deref.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/side_panel/side_panel_ui.h"
 #include "chrome/common/pref_names.h"
 #include "components/prefs/pref_service.h"

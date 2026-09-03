@@ -11,7 +11,7 @@
 
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
 #include "chrome/browser/ui/webui/help/version_updater.h"
 #include "chrome/updater/update_service.h"
 #include "chrome/updater/updater_scope.h"

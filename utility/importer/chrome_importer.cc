@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/utility/importer/chrome_importer.h"
+#include "BnesBrowser/utility/importer/chrome_importer.h"
 
 #include <memory>
 #include <optional>
@@ -15,9 +15,9 @@
 #include "base/logging.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/common/importer/scoped_copy_file.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/utility/importer/brave_external_process_importer_bridge.h"
+#include "BnesBrowser/common/importer/scoped_copy_file.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/utility/importer/brave_external_process_importer_bridge.h"
 #include "build/build_config.h"
 #include "chrome/common/importer/importer_bridge.h"
 #include "components/prefs/json_pref_store.h"

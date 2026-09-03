@@ -13,11 +13,11 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
-#include "brave/components/brave_news/browser/background_history_querier.h"
-#include "brave/components/brave_news/browser/feed_fetcher.h"
-#include "brave/components/brave_news/browser/feed_v2_builder.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/feed_v2_builder.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace history {

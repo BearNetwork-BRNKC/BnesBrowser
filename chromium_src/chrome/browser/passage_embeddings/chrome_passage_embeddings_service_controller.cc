@@ -5,11 +5,11 @@
 
 #include "chrome/browser/passage_embeddings/chrome_passage_embeddings_service_controller.h"
 
-#include "brave/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
 
-#include "brave/browser/history_embeddings/brave_passage_embeddings_service_controller.h"
+#include "BnesBrowser/browser/history_embeddings/brave_passage_embeddings_service_controller.h"
 #include "components/passage_embeddings/core/passage_embeddings_service_controller.h"
 
 // Replaces upstream's controller, which launches a sandboxed utility process,

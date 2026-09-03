@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/renderer/page_text_distilling.h"
+#include "BnesBrowser/components/ai_chat/renderer/page_text_distilling.h"
 
 #include <algorithm>
 #include <iterator>
@@ -26,7 +26,7 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "content/public/renderer/render_frame.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"

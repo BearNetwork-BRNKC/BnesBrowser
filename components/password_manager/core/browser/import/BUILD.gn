@@ -20,8 +20,8 @@ source_set("importer") {
   ]
 
   deps = [
-    "//brave/components/password_manager/services/csv_password:lib",
-    "//brave/components/password_manager/services/csv_password/public/mojom",
+    "//BnesBrowser/components/password_manager/services/csv_password:lib",
+    "//BnesBrowser/components/password_manager/services/csv_password/public/mojom",
     "//build:blink_buildflags",
     "//components/password_manager/core/browser/ui",
     "//components/password_manager/core/common:constants",
@@ -31,7 +31,7 @@ source_set("importer") {
 
   if (use_blink) {
     deps +=
-        [ "//brave/components/password_manager/services/csv_password:service" ]
+        [ "//BnesBrowser/components/password_manager/services/csv_password:service" ]
   }
 
   configs += [ "//build/config/compiler:wexit_time_destructors" ]

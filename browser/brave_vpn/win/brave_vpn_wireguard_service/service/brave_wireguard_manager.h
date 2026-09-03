@@ -10,7 +10,7 @@
 #include <wrl/module.h>
 
 #include "base/win/windows_types.h"
-#include "brave/components/brave_vpn/common/wireguard/win/brave_wireguard_manager_idl.h"
+#include "BnesBrowser/components/brave_vpn/common/wireguard/win/brave_wireguard_manager_idl.h"
 
 namespace brave_vpn {
 

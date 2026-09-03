@@ -5,7 +5,7 @@
 
 #include "chrome/browser/net/stub_resolver_config_reader.h"
 #include "base/feature_list.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "build/buildflag.h"
 #include "chrome/browser/net/secure_dns_config.h"
 #include "chrome/common/pref_names.h"
@@ -15,7 +15,7 @@
 #include "services/network/public/mojom/network_service.mojom.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
 #endif
 
 #if BUILDFLAG(IS_WIN) && BUILDFLAG(ENABLE_BRAVE_VPN)

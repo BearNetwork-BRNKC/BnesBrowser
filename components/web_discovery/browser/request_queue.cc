@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/request_queue.h"
+#include "BnesBrowser/components/web_discovery/browser/request_queue.h"
 
 #include <utility>
 
 #include "base/json/values_util.h"
 #include "base/rand_util.h"
-#include "brave/components/web_discovery/browser/util.h"
+#include "BnesBrowser/components/web_discovery/browser/util.h"
 #include "components/prefs/scoped_user_pref_update.h"
 
 namespace web_discovery {

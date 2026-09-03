@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
 
 #include "base/check.h"
 #include "base/metrics/histogram_functions.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/time_period_storage/monthly_storage.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/time_period_storage/monthly_storage.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

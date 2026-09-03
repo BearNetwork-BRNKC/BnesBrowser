@@ -5,24 +5,24 @@
 
 #include "chrome/browser/ui/views/side_panel/side_panel_helper.h"
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
+#include "BnesBrowser/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_web_view.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_web_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
 #include "base/feature_list.h"
-#include "brave/browser/ui/views/side_panel/brave_news/brave_news_side_panel_web_view.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/browser/ui/views/side_panel/brave_news/brave_news_side_panel_web_view.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry_id.h"

@@ -16,7 +16,7 @@
 #include <string_view>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
 #include "crypto/hash.h"
 
 namespace brave_wallet {

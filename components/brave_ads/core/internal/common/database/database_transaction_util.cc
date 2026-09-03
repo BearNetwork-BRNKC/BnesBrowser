@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_util.h"
 
 #include <cstdint>
 #include <utility>
@@ -13,11 +13,11 @@
 #include "base/strings/string_util.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/trace_id_helper.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads::database {
 

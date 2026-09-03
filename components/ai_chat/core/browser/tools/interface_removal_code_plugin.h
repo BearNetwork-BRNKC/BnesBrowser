@@ -9,7 +9,7 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/ai_chat/core/browser/tools/code_plugin.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/code_plugin.h"
 
 namespace ai_chat {
 

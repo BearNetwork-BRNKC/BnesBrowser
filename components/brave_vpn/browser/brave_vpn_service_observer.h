@@ -9,7 +9,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #include "build/build_config.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 

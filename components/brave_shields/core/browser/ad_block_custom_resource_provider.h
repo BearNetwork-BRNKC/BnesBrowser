@@ -13,7 +13,7 @@
 #include "base/functional/callback.h"
 #include "base/observer_list.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/core/browser/ad_block_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_resource_provider.h"
 
 namespace value_store {
 class ValueStoreFrontend;

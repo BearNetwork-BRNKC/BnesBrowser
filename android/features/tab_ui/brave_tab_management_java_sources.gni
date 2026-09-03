@@ -4,11 +4,11 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_public_tab_management_java_sources = [
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveIncognitoTabSwitcherPane.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGridContextMenuCoordinator.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGridItemTouchHelperCallback.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGroupsPane.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabSwitcherPaneBase.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabUiFeatureUtilities.java",
-  "//brave/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/pinned_tabs_strip/BravePinnedTabStripItemContextMenuCoordinator.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveIncognitoTabSwitcherPane.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGridContextMenuCoordinator.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGridItemTouchHelperCallback.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabGroupsPane.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabSwitcherPaneBase.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/BraveTabUiFeatureUtilities.java",
+  "//BnesBrowser/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/pinned_tabs_strip/BravePinnedTabStripItemContextMenuCoordinator.java",
 ]

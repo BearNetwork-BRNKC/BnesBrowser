@@ -15,8 +15,8 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/workspaces/pref_names.h"
-#include "brave/browser/workspaces/workspace_metadata.h"
+#include "BnesBrowser/browser/workspaces/pref_names.h"
+#include "BnesBrowser/browser/workspaces/workspace_metadata.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/sessions/core/session_command.h"
 

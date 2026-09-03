@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
 
 #include <string_view>
 #include <utility>
 #include <vector>
 
 #include "base/functional/bind.h"
-#include "brave/browser/ui/containers/containers_icon_generator.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/browser/unknown_container.h"
+#include "BnesBrowser/browser/ui/containers/containers_icon_generator.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/browser/unknown_container.h"
 #include "ui/gfx/geometry/size.h"
 
 namespace containers {

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/new_tab_page_initializer.h"
 
 #include <memory>
 #include <utility>
@@ -11,22 +11,22 @@
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/strings/strcat.h"
-#include "brave/browser/new_tab/new_tab_shows_options.h"
-#include "brave/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
-#include "brave/browser/resources/brave_new_tab_page_refresh/grit/brave_new_tab_page_refresh_generated_map.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/browser/ui/webui/brave_sanitized_image_source.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_search_conversion/pref_names.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/ntp_background_images/browser/features.h"
-#include "brave/components/ntp_background_images/browser/ntp_custom_images_source.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/ntp_background/brave_ntp_custom_background_service_factory.h"
+#include "BnesBrowser/browser/resources/brave_new_tab_page_refresh/grit/brave_new_tab_page_refresh_generated_map.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/browser/ui/webui/brave_sanitized_image_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search_conversion/pref_names.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/features.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_custom_images_source.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/regional_capabilities/regional_capabilities_service_factory.h"
@@ -53,26 +53,26 @@
 #include "ui/webui/webui_util.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 namespace brave_new_tab_page_refresh {

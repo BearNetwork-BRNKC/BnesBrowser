@@ -8,9 +8,9 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
 #include "chrome/browser/ui/tabs/public/tab_features.h"
 
 class Profile;
@@ -32,7 +32,7 @@ class PartitionedStoragePageActionController;
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/browser/ui/views/page_action/psst_action_controller.h"
+#include "BnesBrowser/browser/ui/views/page_action/psst_action_controller.h"
 namespace psst {
 class PsstTabWebContentsObserver;
 }

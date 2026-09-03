@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_NTP_BACKGROUND_IMAGES_BROWSER_NTP_P3A_UTIL_H_
 #define BRAVE_COMPONENTS_NTP_BACKGROUND_IMAGES_BROWSER_NTP_P3A_UTIL_H_
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

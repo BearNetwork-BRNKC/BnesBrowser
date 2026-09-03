@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/api_request_helper/sse_parser.h"
+#include "BnesBrowser/components/api_request_helper/sse_parser.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/api_request_helper/utils.h"
+#include "BnesBrowser/components/api_request_helper/utils.h"
 
 namespace api_request_helper {
 

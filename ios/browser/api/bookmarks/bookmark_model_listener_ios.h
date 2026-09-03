@@ -11,7 +11,7 @@
 #include <set>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/ios/browser/api/bookmarks/brave_bookmarks_observer.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/brave_bookmarks_observer.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/bookmarks/browser/bookmark_model_observer.h"
 

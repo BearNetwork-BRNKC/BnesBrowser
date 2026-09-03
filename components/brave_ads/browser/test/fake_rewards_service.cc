@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/test/fake_rewards_service.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_rewards_service.h"
 
 #include <optional>
 #include <utility>
@@ -11,8 +11,8 @@
 
 #include "base/functional/callback.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 
 namespace brave_ads::test {
 

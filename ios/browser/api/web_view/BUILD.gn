@@ -3,14 +3,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
 config("config") {
   # For our own public headers to be able to import the official public headers
   include_dirs = [
     "//ios/web_view/public",
-    "//brave/ios/web_view/public",
+    "//BnesBrowser/ios/web_view/public",
   ]
 }
 
@@ -31,34 +31,34 @@ source_set("web_view") {
   ]
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/ios/browser",
-    "//brave/components/brave_talk/buildflags",
-    "//brave/components/playlist/core/common/buildflags",
-    "//brave/components/serp_metrics:features",
-    "//brave/ios/browser/ai_chat",
-    "//brave/ios/browser/api/profile",
-    "//brave/ios/browser/api/url",
-    "//brave/ios/browser/api/web_view/autofill",
-    "//brave/ios/browser/api/web_view/passwords",
-    "//brave/ios/browser/brave_ads",
-    "//brave/ios/browser/brave_search",
-    "//brave/ios/browser/brave_shields",
-    "//brave/ios/browser/brave_shields/cosmetic_filtering",
-    "//brave/ios/browser/brave_shields/request_blocking",
-    "//brave/ios/browser/brave_wallet",
-    "//brave/ios/browser/favicon",
-    "//brave/ios/browser/serp_metrics",
-    "//brave/ios/browser/skus",
-    "//brave/ios/browser/ui/web_view:features",
-    "//brave/ios/browser/ui/webui/brave_wallet",
-    "//brave/ios/browser/web/document_fetch",
-    "//brave/ios/browser/web/force_paste",
-    "//brave/ios/browser/web/logins",
-    "//brave/ios/browser/web/page_metadata",
-    "//brave/ios/browser/web/reader_mode",
-    "//brave/ios/browser/youtube",
-    "//brave/ios/web_view",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/ios/browser",
+    "//BnesBrowser/components/brave_talk/buildflags",
+    "//BnesBrowser/components/playlist/core/common/buildflags",
+    "//BnesBrowser/components/serp_metrics:features",
+    "//BnesBrowser/ios/browser/ai_chat",
+    "//BnesBrowser/ios/browser/api/profile",
+    "//BnesBrowser/ios/browser/api/url",
+    "//BnesBrowser/ios/browser/api/web_view/autofill",
+    "//BnesBrowser/ios/browser/api/web_view/passwords",
+    "//BnesBrowser/ios/browser/brave_ads",
+    "//BnesBrowser/ios/browser/brave_search",
+    "//BnesBrowser/ios/browser/brave_shields",
+    "//BnesBrowser/ios/browser/brave_shields/cosmetic_filtering",
+    "//BnesBrowser/ios/browser/brave_shields/request_blocking",
+    "//BnesBrowser/ios/browser/brave_wallet",
+    "//BnesBrowser/ios/browser/favicon",
+    "//BnesBrowser/ios/browser/serp_metrics",
+    "//BnesBrowser/ios/browser/skus",
+    "//BnesBrowser/ios/browser/ui/web_view:features",
+    "//BnesBrowser/ios/browser/ui/webui/brave_wallet",
+    "//BnesBrowser/ios/browser/web/document_fetch",
+    "//BnesBrowser/ios/browser/web/force_paste",
+    "//BnesBrowser/ios/browser/web/logins",
+    "//BnesBrowser/ios/browser/web/page_metadata",
+    "//BnesBrowser/ios/browser/web/reader_mode",
+    "//BnesBrowser/ios/browser/youtube",
+    "//BnesBrowser/ios/web_view",
     "//components/favicon/core",
     "//ios/chrome/browser/affiliations/model",
     "//ios/chrome/browser/autofill/model",
@@ -78,10 +78,10 @@ source_set("web_view") {
     "//net",
   ]
   if (enable_brave_talk) {
-    deps += [ "//brave/ios/browser/brave_talk" ]
+    deps += [ "//BnesBrowser/ios/browser/brave_talk" ]
   }
   if (enable_playlist) {
-    deps += [ "//brave/ios/browser/playlist" ]
+    deps += [ "//BnesBrowser/ios/browser/playlist" ]
   }
   frameworks = [
     "Foundation.framework",

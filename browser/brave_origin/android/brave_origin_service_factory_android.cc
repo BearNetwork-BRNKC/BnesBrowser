@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_origin/brave_origin_service_factory.h"
+#include "BnesBrowser/browser/brave_origin/brave_origin_service_factory.h"
 
 #include "base/android/jni_android.h"
-#include "brave/browser/brave_origin/android/jni_headers/BraveOriginServiceFactory_jni.h"
-#include "brave/components/brave_origin/brave_origin_settings_handler_impl.h"
+#include "BnesBrowser/browser/brave_origin/android/jni_headers/BraveOriginServiceFactory_jni.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_settings_handler_impl.h"
 #include "chrome/browser/profiles/profile.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"
 

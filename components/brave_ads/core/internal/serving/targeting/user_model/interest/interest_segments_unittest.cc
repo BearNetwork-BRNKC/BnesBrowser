@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_segments.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_segments.h"
 
 #include <memory>
 
 #include "base/test/mock_callback.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_ads/core/internal/common/resources/test/language_components_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/segments/segment_types.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_feature.h"
-#include "brave/components/brave_ads/core/internal/targeting/test/targeting_test_helper.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/resources/test/language_components_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/test/targeting_test_helper.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

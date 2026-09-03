@@ -13,8 +13,8 @@ source_set("browser_tests") {
   ]
 
   deps = [
-    "//brave/components/constants",
-    "//brave/components/tabs",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/tabs",
     "//chrome/app:command_ids",
     "//chrome/browser",
     "//chrome/browser/profiles:profile",
@@ -33,8 +33,8 @@ source_set("browser_tests") {
       "tab_data_browsertest.cc",
     ]
     deps += [
-      "//brave/browser/ui/tabs:tab_strip",
-      "//brave/components/resources:scaled_resources",
+      "//BnesBrowser/browser/ui/tabs:tab_strip",
+      "//BnesBrowser/components/resources:scaled_resources",
       "//chrome/browser/ui:ui_features",
       "//chrome/browser/ui/browser_window",
       "//chrome/browser/ui/tabs",
@@ -66,9 +66,9 @@ source_set("unit_tests") {
       "vertical_tab_controller_unittest.cc",
     ]
     deps += [
-      "//brave/browser/ui/focus_mode",
-      "//brave/browser/ui/tabs:tabs_public",
-      "//brave/components/tabs",
+      "//BnesBrowser/browser/ui/focus_mode",
+      "//BnesBrowser/browser/ui/tabs:tabs_public",
+      "//BnesBrowser/components/tabs",
       "//chrome/browser/ui/tabs:test_support",
       "//chrome/test:test_support",
       "//components/tabs:test_support",

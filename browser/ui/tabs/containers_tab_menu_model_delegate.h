@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 #include "components/tabs/public/tab_interface.h"
 
 class BrowserWindowInterface;

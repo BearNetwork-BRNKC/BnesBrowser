@@ -13,8 +13,8 @@
 #include "base/functional/callback_forward.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_request.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_request.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 class PrefService;

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/brave_wallet/brave_wallet_factory_wrappers.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_factory_wrappers.h"
 
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/ios/browser/api/brave_wallet/brave_wallet.mojom.objc+private.h"
-#include "brave/ios/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/ios/browser/keyed_service/keyed_service_factory_wrapper+private.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet.mojom.objc+private.h"
+#include "BnesBrowser/ios/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/ios/browser/keyed_service/keyed_service_factory_wrapper+private.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)

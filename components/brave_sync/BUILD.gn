@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 import("//build/buildflag_header.gni")
 import("//build/config/features.gni")
 import("//tools/grit/grit_rule.gni")
@@ -30,8 +30,8 @@ static_library("crypto") {
 
   deps = [
     "//base",
-    "//brave/third_party/bip39wally-core-native:bip39wally-core",
-    "//brave/vendor/bat-native-tweetnacl:tweetnacl",
+    # "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
+    # "//BnesBrowser/vendor/bat-native-tweetnacl:tweetnacl",
     "//crypto",
     "//third_party/boringssl",
   ]
@@ -70,7 +70,7 @@ source_set("p3a") {
 
   deps = [
     "//base",
-    "//brave/components/p3a_utils",
+    "//BnesBrowser/components/p3a_utils",
     "//components/sync/base",
   ]
 }
@@ -137,12 +137,12 @@ source_set("unit_tests") {
   testonly = true
 
   sources = [
-    "//brave/components/brave_sync/brave_sync_p3a_unittest.cc",
-    "//brave/components/brave_sync/brave_sync_prefs_unittest.cc",
-    "//brave/components/brave_sync/crypto/crypto_unittest.cc",
-    "//brave/components/brave_sync/qr_code_data_unittest.cc",
-    "//brave/components/brave_sync/qr_code_validator_unittest.cc",
-    "//brave/components/brave_sync/time_limited_words_unittest.cc",
+    "//BnesBrowser/components/brave_sync/brave_sync_p3a_unittest.cc",
+    "//BnesBrowser/components/brave_sync/brave_sync_prefs_unittest.cc",
+    "//BnesBrowser/components/brave_sync/crypto/crypto_unittest.cc",
+    "//BnesBrowser/components/brave_sync/qr_code_data_unittest.cc",
+    "//BnesBrowser/components/brave_sync/qr_code_validator_unittest.cc",
+    "//BnesBrowser/components/brave_sync/time_limited_words_unittest.cc",
   ]
 
   deps = [

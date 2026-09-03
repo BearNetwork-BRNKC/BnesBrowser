@@ -24,11 +24,11 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/brave_search/common",
-    "//brave/components/brave_search/common:mojom",
-    "//brave/components/brave_search_conversion",
-    "//brave/components/p3a_utils",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/brave_search/common",
+    "//BnesBrowser/components/brave_search/common:mojom",
+    "//BnesBrowser/components/brave_search_conversion",
+    "//BnesBrowser/components/p3a_utils",
+    "//BnesBrowser/components/time_period_storage",
     "//components/prefs",
     "//components/search_engines",
     "//net",

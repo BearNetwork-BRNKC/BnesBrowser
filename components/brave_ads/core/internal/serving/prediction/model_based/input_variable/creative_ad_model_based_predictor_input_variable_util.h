@@ -9,9 +9,9 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/seen_ads/seen_ads_util.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/last_seen/creative_ad_model_based_predictor_last_seen_input_variable_info.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/weight/segment/creative_ad_model_based_predictor_segment_weight_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/seen_ads/seen_ads_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/last_seen/creative_ad_model_based_predictor_last_seen_input_variable_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/weight/segment/creative_ad_model_based_predictor_segment_weight_info.h"
 
 namespace brave_ads {
 

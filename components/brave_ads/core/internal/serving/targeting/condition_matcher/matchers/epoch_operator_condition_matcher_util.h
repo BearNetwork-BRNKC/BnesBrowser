@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/brave_ads/core/internal/serving/targeting/condition_matcher/matchers/condition_matcher_operator_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/condition_matcher/matchers/condition_matcher_operator_type.h"
 
 // Matches conditions based on when an event occurred relative to now, allowing
 // ads to be targeted based on time-sensitive criteria, all evaluated locally

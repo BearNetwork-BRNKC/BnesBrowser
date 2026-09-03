@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/v6_zcash_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/v6_zcash_serializer.h"
 
 #include <algorithm>
 #include <array>
@@ -12,8 +12,8 @@
 
 #include "base/check.h"
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_serializer.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_serializer_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_serializer_utils.h"
 
 namespace brave_wallet {
 

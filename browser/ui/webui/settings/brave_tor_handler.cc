@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/settings/brave_tor_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_tor_handler.h"
 
 #include <memory>
 #include <optional>
@@ -22,10 +22,10 @@
 #include "base/memory/ref_counted_memory.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/values.h"
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_profile_service.h"
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/image_fetcher/image_decoder_impl.h"
 #include "components/image_fetcher/core/image_decoder.h"

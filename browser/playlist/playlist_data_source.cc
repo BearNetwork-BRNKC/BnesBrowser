@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/playlist/playlist_data_source.h"
+#include "BnesBrowser/browser/playlist/playlist_data_source.h"
 
 #include <algorithm>
 #include <limits>
@@ -26,8 +26,8 @@
 #include "base/strings/escape.h"
 #include "base/strings/string_split.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/playlist/content/browser/mime_util.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/mime_util.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
 #include "components/favicon_base/favicon_url_parser.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/url_data_source.h"

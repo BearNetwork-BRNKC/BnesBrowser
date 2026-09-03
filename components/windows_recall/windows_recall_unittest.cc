@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 
 #include "base/test/scoped_os_info_override_win.h"
 #include "build/build_config.h"

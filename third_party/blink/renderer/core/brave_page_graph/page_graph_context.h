@@ -10,7 +10,7 @@
 #include <type_traits>
 #include <utility>
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/graph_item_context.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/graph_item_context.h"
 
 namespace brave_page_graph {
 

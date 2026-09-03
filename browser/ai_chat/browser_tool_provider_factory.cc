@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/browser_tool_provider_factory.h"
+#include "BnesBrowser/browser/ai_chat/browser_tool_provider_factory.h"
 
 #include <memory>
 
-#include "brave/browser/ai_chat/browser_tool_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_provider.h"
+#include "BnesBrowser/browser/ai_chat/browser_tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_provider.h"
 #include "content/public/browser/browser_context.h"
 
 namespace ai_chat {

@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_dummy_view.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_dummy_view.h"
 #include "chrome/browser/ui/thumbnails/thumbnail_image.h"
 #include "ui/views/metadata/view_factory.h"
 #include "ui/views/view.h"

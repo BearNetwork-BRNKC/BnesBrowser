@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_origin/brave_origin_startup_view.h"
+#include "BnesBrowser/browser/ui/views/brave_origin/brave_origin_startup_view.h"
 
 #include <utility>
 
@@ -16,10 +16,10 @@
 #include "base/strings/strcat.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
-#include "brave/components/brave_origin/pref_names.h"
-#include "brave/components/skus/browser/pref_names.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
+#include "BnesBrowser/components/brave_origin/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/keep_alive/profile_keep_alive_types.h"
 #include "chrome/browser/profiles/keep_alive/scoped_profile_keep_alive.h"
@@ -43,7 +43,7 @@
 #include "url/url_constants.h"
 
 #if BUILDFLAG(IS_LINUX)
-#include "brave/components/brave_origin/switches.h"
+#include "BnesBrowser/components/brave_origin/switches.h"
 #endif
 
 namespace {

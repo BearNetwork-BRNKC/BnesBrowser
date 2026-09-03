@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/color/material_chrome_color_mixer.h"
 
-#include "brave/browser/ui/color/material_brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/material_brave_color_mixer.h"
 
 #define AddMaterialChromeColorMixer AddMaterialChromeColorMixer_ChromiumImpl
 #include <chrome/browser/ui/color/material_chrome_color_mixer.cc>

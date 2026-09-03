@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_rewards_internals_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards_internals_ui.h"
 
 #include <memory>
 #include <string>
@@ -14,14 +14,14 @@
 #include "base/json/json_reader.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/ui/webui/brave_webui_source.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/resources/grit/brave_rewards_resources.h"
-#include "brave/components/brave_rewards/resources/grit/rewards_internals_generated_map.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_webui_source.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/resources/grit/brave_rewards_resources.h"
+#include "BnesBrowser/components/brave_rewards/resources/grit/rewards_internals_generated_map.h"
 #include "chrome/browser/about_flags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/lifetime/application_lifetime.h"

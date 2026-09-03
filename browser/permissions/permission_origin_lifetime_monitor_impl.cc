@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/permissions/permission_origin_lifetime_monitor_impl.h"
+#include "BnesBrowser/browser/permissions/permission_origin_lifetime_monitor_impl.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_service.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service.h"
 #include "components/permissions/request_type.h"
 #include "net/base/url_util.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
 #endif
 
 namespace permissions {

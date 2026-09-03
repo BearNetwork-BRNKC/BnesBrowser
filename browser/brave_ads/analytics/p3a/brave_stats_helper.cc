@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
+#include "BnesBrowser/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
 
 #include "base/files/file_path.h"
 #include "base/functional/bind.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/common/pref_names.h"

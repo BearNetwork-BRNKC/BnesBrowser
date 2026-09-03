@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/ethereum_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/ethereum_keyring.h"
 
 #include <array>
 #include <optional>
@@ -15,10 +15,10 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/browser/eth_transaction.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 
 namespace brave_wallet {
 

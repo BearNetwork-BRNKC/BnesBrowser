@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_settings_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_settings_ui.h"
 
 #include <memory>
 #include <string>
@@ -13,47 +13,47 @@
 #include "base/compiler_specific.h"
 #include "base/feature_list.h"
 #include "base/strings/strcat.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/browser/brave_account/brave_account_service_factory.h"
-#include "brave/browser/brave_origin/brave_origin_service_factory.h"
-#include "brave/browser/resources/settings/grit/brave_settings_resources.h"
-#include "brave/browser/resources/settings/grit/brave_settings_resources_map.h"
-#include "brave/browser/shell_integrations/buildflags/buildflags.h"
-#include "brave/browser/ui/commands/accelerator_service_factory.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/webui/settings/brave_account/brave_account_row_handler.h"
-#include "brave/browser/ui/webui/settings/brave_adblock_handler.h"
-#include "brave/browser/ui/webui/settings/brave_appearance_handler.h"
-#include "brave/browser/ui/webui/settings/brave_default_extensions_handler.h"
-#include "brave/browser/ui/webui/settings/brave_privacy_handler.h"
-#include "brave/browser/ui/webui/settings/brave_sync_handler.h"
-#include "brave/browser/ui/webui/settings/default_brave_shields_handler.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_account/brave_account_service.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_origin/brave_origin_service.h"
-#include "brave/components/brave_origin/brave_origin_settings_handler_impl.h"
-#include "brave/components/brave_origin/brave_origin_utils.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/commands/common/commands.mojom.h"
-#include "brave/components/commands/common/features.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/features.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/version_info/version_info.h"
-#include "brave/ui/webui/brave_color_change_listener/brave_color_change_handler.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/browser/brave_account/brave_account_service_factory.h"
+#include "BnesBrowser/browser/brave_origin/brave_origin_service_factory.h"
+#include "BnesBrowser/browser/resources/settings/grit/brave_settings_resources.h"
+#include "BnesBrowser/browser/resources/settings/grit/brave_settings_resources_map.h"
+#include "BnesBrowser/browser/shell_integrations/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service_factory.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_account/brave_account_row_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_adblock_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_appearance_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_default_extensions_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_privacy_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_sync_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/default_brave_shields_handler.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_account/brave_account_service.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_service.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_settings_handler_impl.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_utils.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/commands/common/commands.mojom.h"
+#include "BnesBrowser/components/commands/common/features.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/features.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/version_info/version_info.h"
+#include "BnesBrowser/ui/webui/brave_color_change_listener/brave_color_change_handler.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/regional_capabilities/regional_capabilities_service_factory.h"
@@ -70,81 +70,81 @@
 #include "net/base/features.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_settings_helper.h"
-#include "brave/browser/ai_chat/ollama/ollama_service_factory.h"
-#include "brave/browser/ui/webui/settings/brave_settings_leo_assistant_handler.h"
-#include "brave/components/ai_chat/core/browser/customization_settings_handler.h"
-#include "brave/components/ai_chat/core/browser/ollama/ollama_service.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_settings_helper.h"
+#include "BnesBrowser/browser/ai_chat/ollama/ollama_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_settings_leo_assistant_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/customization_settings_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ollama/ollama_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_util.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_util.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PIN_SHORTCUT)
-#include "brave/browser/ui/webui/settings/pin_shortcut_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/pin_shortcut_handler.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/common/features.h"
-#include "brave/components/speedreader/speedreader_pref_names.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/brave_vpn/vpn_utils.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/ui/webui/settings/brave_vpn/brave_vpn_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_vpn/brave_vpn_handler.h"
 #endif
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/ui/webui/settings/brave_tor_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_tor_handler.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
-#include "brave/browser/ui/webui/settings/brave_extensions_manifest_v2_handler.h"
-#include "brave/browser/ui/webui/settings/brave_tor_snowflake_extension_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_extensions_manifest_v2_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_tor_snowflake_extension_handler.h"
 #include "extensions/common/extension_features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/browser/containers_settings_handler.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/browser/containers_settings_handler.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 #if BUILDFLAG(ENABLE_TRAFFIC_CONTROL)
-#include "brave/components/traffic_control/core/browser/traffic_control_settings_handler.h"
-#include "brave/components/traffic_control/core/common/features.h"
+#include "BnesBrowser/components/traffic_control/core/browser/traffic_control_settings_handler.h"
+#include "BnesBrowser/components/traffic_control/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/browser/ui/webui/settings/brave_wallet_handler.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/features.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_wallet_handler.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/email_aliases/email_aliases_service_factory.h"
-#include "brave/components/email_aliases/email_aliases.mojom.h"
-#include "brave/components/email_aliases/email_aliases_service.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/browser/email_aliases/email_aliases_service_factory.h"
+#include "BnesBrowser/components/email_aliases/email_aliases.mojom.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #endif
 
 namespace {

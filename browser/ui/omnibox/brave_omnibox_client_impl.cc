@@ -3,24 +3,24 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/omnibox/brave_omnibox_client_impl.h"
+#include "BnesBrowser/browser/ui/omnibox/brave_omnibox_client_impl.h"
 
 #include <string>
 
 #include "base/check.h"
 #include "base/check_is_test.h"
-#include "brave/browser/autocomplete/brave_autocomplete_scheme_classifier.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/search_engines/search_engine_tracker.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_search_conversion/p3a.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
-#include "brave/components/omnibox/browser/promotion_utils.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/browser/autocomplete/brave_autocomplete_scheme_classifier.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_search_conversion/p3a.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_utils.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/omnibox/chrome_omnibox_client.h"
@@ -31,15 +31,15 @@
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/email_aliases/email_aliases_service_factory.h"
-#include "brave/components/email_aliases/constants.h"
-#include "brave/components/email_aliases/email_aliases_metrics.h"
-#include "brave/components/email_aliases/email_aliases_service.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/browser/email_aliases/email_aliases_service_factory.h"
+#include "BnesBrowser/components/email_aliases/constants.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_metrics.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 namespace {

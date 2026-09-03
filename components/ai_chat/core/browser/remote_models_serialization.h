@@ -10,7 +10,7 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom-forward.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom-forward.h"
 
 namespace ai_chat {
 

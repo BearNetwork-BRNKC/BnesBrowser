@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/test/scoped_command_line.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_rich_media_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_rich_media_source.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"
 #include "testing/gtest/include/gtest/gtest.h"

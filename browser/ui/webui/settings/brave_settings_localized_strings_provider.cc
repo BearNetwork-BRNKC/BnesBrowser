@@ -3,40 +3,40 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_settings_localized_strings_provider.h"
 
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/shell_integrations/buildflags/buildflags.h"
-#include "brave/browser/ui/webui/brave_settings_ui.h"
-#include "brave/browser/ui/webui/settings/brave_privacy_handler.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_locale_utils.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/pref_names.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/commands/common/features.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/traffic_control/buildflags/buildflags.h"
-#include "brave/components/version_info/version_info.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/grit/brave_generated_resources_webui_strings.h"
+#include "BnesBrowser/browser/shell_integrations/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/webui/brave_settings_ui.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_privacy_handler.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_locale_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/commands/common/features.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/traffic_control/buildflags/buildflags.h"
+#include "BnesBrowser/components/version_info/version_info.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources_webui_strings.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/media/router/media_router_feature.h"
@@ -57,28 +57,28 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/model_validator.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_validator.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 namespace settings {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_proxying_url_loader_factory.h"
+#include "BnesBrowser/browser/net/brave_proxying_url_loader_factory.h"
 
 #include <memory>
 #include <optional>
@@ -18,11 +18,11 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/net/brave_request_handler.h"
-#include "brave/browser/net/resource_context_data.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/brave_shields/content/browser/adblock_stub_response.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/browser/net/brave_request_handler.h"
+#include "BnesBrowser/browser/net/resource_context_data.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/brave_shields/content/browser/adblock_stub_response.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/browser_task_traits.h"
 #include "content/public/browser/browser_thread.h"

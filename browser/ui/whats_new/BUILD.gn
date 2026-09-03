@@ -12,7 +12,7 @@ source_set("browser_test") {
   sources = [ "whats_new_browsertest.cc" ]
 
   deps = [
-    "//brave/components/l10n/common:test_support",
+    "//BnesBrowser/components/l10n/common:test_support",
     "//chrome/browser",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
@@ -29,7 +29,7 @@ source_set("unit_test") {
 
   deps = [
     "//base",
-    "//brave/components/l10n/common:test_support",
+    "//BnesBrowser/components/l10n/common:test_support",
     "//chrome/browser",
     "//chrome/browser/ui",
     "//chrome/test:test_support",

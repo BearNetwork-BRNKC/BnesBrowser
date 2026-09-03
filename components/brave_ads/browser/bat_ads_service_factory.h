@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_BAT_ADS_SERVICE_FACTORY_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_BAT_ADS_SERVICE_FACTORY_H_
 
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "mojo/public/cpp/bindings/remote.h"
 
 namespace brave_ads {

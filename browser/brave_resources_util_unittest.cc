@@ -5,13 +5,13 @@
 
 #include <stddef.h>
 
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/resources_util.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/common/resource_bundle_helper.h"
+#include "BnesBrowser/common/resource_bundle_helper.h"
 #include "chrome/grit/branded_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 #endif

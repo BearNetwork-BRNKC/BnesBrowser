@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/browser/utils.h"
+#include "BnesBrowser/components/query_filter/browser/utils.h"
 
 #include <optional>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/query_filter/browser/query_filter_data.h"
-#include "brave/components/query_filter/browser/test_support/query_filter_test_helper.h"
-#include "brave/components/query_filter/common/features.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_data.h"
+#include "BnesBrowser/components/query_filter/browser/test_support/query_filter_test_helper.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"
 

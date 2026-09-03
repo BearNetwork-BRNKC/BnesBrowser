@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/page_action/wayback_machine_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/page_action/wayback_machine_action_icon_view.h"
 
 #include <memory>
 #include <optional>
 
 #include "base/notreached.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_utils.h"
-#include "brave/components/brave_wayback_machine/wayback_state.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_utils.h"
+#include "BnesBrowser/components/brave_wayback_machine/wayback_state.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/views/page_action/page_action_icon_loading_indicator_view.h"

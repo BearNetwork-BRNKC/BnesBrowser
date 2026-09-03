@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/config/features.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
@@ -14,11 +14,11 @@ source_set("ads") {
   ]
 
   deps = [
-    "//brave/components/brave_ads/browser/resources:generated_resources",
-    "//brave/components/constants",
-    "//brave/components/resources:static_resources",
-    "//brave/ios/browser/brave_ads",
-    "//brave/ios/web/webui",
+    "//BnesBrowser/components/brave_ads/browser/resources:generated_resources",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:static_resources",
+    "//BnesBrowser/ios/browser/brave_ads",
+    "//BnesBrowser/ios/web/webui",
     "//components/prefs",
     "//components/resources",
     "//ios/chrome/browser/shared/model/profile",
@@ -28,8 +28,8 @@ source_set("ads") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_ads/core",
-    "//brave/components/services/bat_ads/public/interfaces",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/services/bat_ads/public/interfaces",
     "//ios/web/public",
     "//mojo/public/cpp/bindings",
     "//url",

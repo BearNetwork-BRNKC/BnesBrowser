@@ -5,8 +5,8 @@
 
 #include "third_party/blink/renderer/modules/keyboard/navigator_keyboard.h"
 
-#include "brave/third_party/blink/renderer/brave_farbling_constants.h"
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_farbling_constants.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/public/platform/web_content_settings_client.h"
 
 #define keyboard keyboard_ChromiumImpl

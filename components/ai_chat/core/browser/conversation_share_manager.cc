@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/conversation_share_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_share_manager.h"
 
 #include <string>
 #include <utility>
@@ -13,11 +13,11 @@
 #include "base/json/json_writer.h"
 #include "base/strings/strcat.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/brave_service_keys/brave_service_key_utils.h"
-#include "brave/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/brave_service_keys/brave_service_key_utils.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
 #include "net/http/http_request_headers.h"
 #include "net/http/http_status_code.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"

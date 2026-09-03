@@ -13,7 +13,7 @@
 #include "base/no_destructor.h"
 #include "base/scoped_observation.h"
 #include "base/types/optional_ref.h"
-#include "brave/components/local_ai/core/local_models_updater.h"
+#include "BnesBrowser/components/local_ai/core/local_models_updater.h"
 #include "components/optimization_guide/core/delivery/model_info.h"
 #include "components/passage_embeddings/core/passage_embeddings_service_controller.h"
 

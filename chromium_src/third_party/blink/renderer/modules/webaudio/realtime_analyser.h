@@ -9,7 +9,7 @@
 #include <optional>
 #include <utility>
 
-#include "brave/third_party/blink/renderer/platform/brave_audio_farbling_helper.h"
+#include "BnesBrowser/third_party/blink/renderer/platform/brave_audio_farbling_helper.h"
 
 #define analysis_frame_                                 \
   analysis_frame_;                                      \

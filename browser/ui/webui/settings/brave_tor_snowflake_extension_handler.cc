@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/settings/brave_tor_snowflake_extension_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_tor_snowflake_extension_handler.h"
 
 #include <memory>
 #include <string>
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/extensions/webstore_install_with_prompt.h"
 #include "chrome/browser/profiles/profile.h"

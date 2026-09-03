@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/infobars/brave_confirm_infobar.h"
+#include "BnesBrowser/browser/ui/views/infobars/brave_confirm_infobar.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/browser/ui/views/infobars/brave_sync_account_deleted_infobar.h"
-#include "brave/components/infobars/core/brave_confirm_infobar_delegate.h"
+#include "BnesBrowser/browser/ui/views/infobars/brave_sync_account_deleted_infobar.h"
+#include "BnesBrowser/components/infobars/core/brave_confirm_infobar_delegate.h"
 #include "chrome/browser/ui/views/chrome_layout_provider.h"
 #include "chrome/test/views/chrome_views_test_base.h"
 #include "components/infobars/core/confirm_infobar_delegate.h"

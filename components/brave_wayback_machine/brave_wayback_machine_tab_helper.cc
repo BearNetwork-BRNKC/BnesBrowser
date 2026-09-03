@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_tab_helper.h"
 
 #include <utility>
 
@@ -14,9 +14,9 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_wayback_machine/brave_wayback_machine_utils.h"
-#include "brave/components/brave_wayback_machine/pref_names.h"
-#include "brave/components/constants/brave_switches.h"
+#include "BnesBrowser/components/brave_wayback_machine/brave_wayback_machine_utils.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
 #include "components/prefs/pref_service.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"

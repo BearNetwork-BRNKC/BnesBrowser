@@ -6,10 +6,10 @@
 #ifndef BRAVE_BROWSER_AI_CHAT_TOOLS_NAVIGATION_TOOL_H_
 #define BRAVE_BROWSER_AI_CHAT_TOOLS_NAVIGATION_TOOL_H_
 
-#include "brave/browser/ai_chat/content_agent_task_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_task_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 
 namespace ai_chat {
 

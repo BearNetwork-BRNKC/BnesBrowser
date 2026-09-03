@@ -7,10 +7,10 @@
 
 #include "base/android/jni_android.h"
 #include "base/android/jni_string.h"
-#include "brave/browser/brave_shields/android/jni_headers/BraveFirstPartyStorageCleanerUtils_jni.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
+#include "BnesBrowser/browser/brave_shields/android/jni_headers/BraveFirstPartyStorageCleanerUtils_jni.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
 #include "chrome/browser/android/tab_android.h"
 #include "chrome/browser/profiles/profile.h"
 

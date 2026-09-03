@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/browser/request_otr_controller_client.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_controller_client.h"
 
-#include "brave/components/request_otr/browser/request_otr_service.h"
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
-#include "brave/components/request_otr/common/pref_names.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_service.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/components/request_otr/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/security_interstitials/content/settings_page_helper.h"
 #include "components/security_interstitials/core/metrics_helper.h"

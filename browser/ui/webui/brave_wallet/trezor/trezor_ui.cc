@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_wallet/trezor/trezor_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/trezor/trezor_ui.h"
 
 #include <string>
 
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/trezor_bridge/resources/grit/trezor_bridge_generated_map.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/trezor_bridge/resources/grit/trezor_bridge_generated_map.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_ui_data_source.h"

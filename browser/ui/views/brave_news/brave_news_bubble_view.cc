@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/brave_news/brave_news_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_bubble_view.h"
 
 #include <memory>
 #include <vector>
@@ -11,12 +11,12 @@
 #include "base/check.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/brave_news/brave_news_tab_helper.h"
-#include "brave/browser/ui/views/brave_news/brave_news_bubble_controller.h"
-#include "brave/browser/ui/views/brave_news/brave_news_feed_item_view.h"
-#include "brave/browser/ui/views/brave_news/brave_news_feeds_container_view.h"
-#include "brave/components/brave_news/common/pref_names.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/brave_news/brave_news_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_bubble_controller.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_feed_item_view.h"
+#include "BnesBrowser/browser/ui/views/brave_news/brave_news_feeds_container_view.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"

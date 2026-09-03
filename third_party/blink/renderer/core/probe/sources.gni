@@ -4,4 +4,4 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
 brave_third_party_blink_renderer_core_probe_instrumentation_probes_deps =
-    [ "//brave/components/brave_page_graph/common:buildflags" ]
+    [ "//BnesBrowser/components/brave_page_graph/common:buildflags" ]

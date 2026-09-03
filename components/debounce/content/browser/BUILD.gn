@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 
 source_set("browser") {
   sources = [
@@ -13,8 +13,8 @@ source_set("browser") {
 
   deps = [
     "//base",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/debounce/core/browser",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/debounce/core/browser",
     "//components/user_prefs",
     "//content/public/browser",
     "//third_party/re2",

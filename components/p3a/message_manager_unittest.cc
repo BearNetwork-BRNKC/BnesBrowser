@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/p3a/message_manager.h"
+#include "BnesBrowser/components/p3a/message_manager.h"
 
 #include <memory>
 #include <optional>
@@ -19,16 +19,16 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/values_test_util.h"
 #include "base/time/time.h"
-#include "brave/components/p3a/features.h"
-#include "brave/components/p3a/metric_config.h"
-#include "brave/components/p3a/metric_config_utils.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/metric_names.h"
-#include "brave/components/p3a/p3a_config.h"
-#include "brave/components/p3a/p3a_message.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a/star_randomness_test_util.h"
+#include "BnesBrowser/components/p3a/features.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/metric_config_utils.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_names.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/p3a_message.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/star_randomness_test_util.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/browser_task_environment.h"

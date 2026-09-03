@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_response.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_response.h"
 
 #include <utility>
 #include <vector>
@@ -16,11 +16,11 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_network_util.h"
-#include "brave/browser/brave_rewards/test/util/rewards_browsertest_util.h"
-#include "brave/components/brave_rewards/core/engine/publisher/prefix_util.h"
-#include "brave/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
-#include "brave/components/brave_rewards/core/engine/publisher/protos/publisher_prefix_list.pb.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_network_util.h"
+#include "BnesBrowser/browser/brave_rewards/test/util/rewards_browsertest_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/prefix_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/protos/channel_response.pb.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/publisher/protos/publisher_prefix_list.pb.h"
 #include "chrome/test/base/ui_test_utils.h"
 
 namespace {

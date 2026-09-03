@@ -8,7 +8,7 @@
 
 #include "base/run_loop.h"
 #include "base/scoped_observation.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
 
 namespace base {
 class DictValue;

@@ -9,8 +9,8 @@
 #include <string>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_action_context.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_action_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
 
 namespace brave_wallet {
 

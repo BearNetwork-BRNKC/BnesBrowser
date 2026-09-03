@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/time/time_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/time/time_util.h"
 
 #include <string_view>
 
-#include "brave/components/brave_ads/core/internal/common/test/scoped_timezone_for_testing.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/timezone_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/scoped_timezone_for_testing.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/timezone_test_util.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

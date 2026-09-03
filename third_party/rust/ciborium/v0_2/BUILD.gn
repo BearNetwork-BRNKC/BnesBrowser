@@ -12,20 +12,20 @@ cargo_crate("lib") {
   crate_name = "ciborium"
   epoch = "0.2"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/de/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/de/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/ser/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/ser/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/tag.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/canonical.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/de.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/integer.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/ser.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/de/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/de/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/ser/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/ser/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/tag.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/canonical.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/de.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/integer.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/ciborium-v0_2/src/value/ser.rs",
   ]
   inputs = []
 
@@ -40,9 +40,9 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/ciborium_io/v0_2:lib",
-    "//brave/third_party/rust/ciborium_ll/v0_2:lib",
-    "//brave/third_party/rust/serde/v1:lib",
+    "//BnesBrowser/third_party/rust/ciborium_io/v0_2:lib",
+    "//BnesBrowser/third_party/rust/ciborium_ll/v0_2:lib",
+    "//BnesBrowser/third_party/rust/serde/v1:lib",
   ]
   features = [
     "default",

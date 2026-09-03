@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_TABS_TEST_SHARED_PINNED_TAB_SERVICE_BROWSERTEST_H_
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service_factory.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service_factory.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/test/base/in_process_browser_test.h"

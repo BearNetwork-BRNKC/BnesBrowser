@@ -12,10 +12,10 @@
 #include <vector>
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/solana_instruction.h"
-#include "brave/components/brave_wallet/browser/solana_message_address_table_lookup.h"
-#include "brave/components/brave_wallet/browser/solana_message_header.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_instruction.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_message_address_table_lookup.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_message_header.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder.h"
 
 #include <cstddef>
 #include <cstdint>
@@ -17,11 +17,11 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder_util.h"
-#include "brave/components/brave_ads/core/internal/common/crypto/crypto_util.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/url_host_types.h"
-#include "brave/components/brave_ads/core/internal/common/url/request_builder/host/url_host_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/utility/refill_confirmation_tokens/url_requests/request_signed_tokens/request_signed_tokens_url_request_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/crypto/crypto_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/url_host_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/url/request_builder/host/url_host_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #include "url/gurl.h"
 
 namespace brave_ads {

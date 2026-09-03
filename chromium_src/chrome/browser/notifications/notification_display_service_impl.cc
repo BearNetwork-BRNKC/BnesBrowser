@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/notifications/ads_notification_handler.h"  // IWYU pragma: keep
+#include "BnesBrowser/browser/notifications/ads_notification_handler.h"  // IWYU pragma: keep
 
 // CHROMIUM_SRC_INTERNAL_USE
 #define BRAVE_ADD_BRAVE_ADS_NOTIFICATION_HANDLER \
@@ -20,7 +20,7 @@
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET) && !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/brave_wallet/notifications/brave_wallet_notification_handler.h"  // IWYU pragma: keep
+#include "BnesBrowser/browser/brave_wallet/notifications/brave_wallet_notification_handler.h"  // IWYU pragma: keep
 
 // CHROMIUM_SRC_INTERNAL_USE
 #define BRAVE_ADD_BRAVE_WALLET_NOTIFICATION_HANDLER                   \

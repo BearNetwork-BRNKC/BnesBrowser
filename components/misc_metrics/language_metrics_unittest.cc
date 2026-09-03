@@ -6,7 +6,7 @@
 #include <memory>
 
 #include "base/test/metrics/histogram_tester.h"
-#include "brave/components/misc_metrics/language_metrics.h"
+#include "BnesBrowser/components/misc_metrics/language_metrics.h"
 #include "components/language/core/browser/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"

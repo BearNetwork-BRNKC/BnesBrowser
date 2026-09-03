@@ -11,9 +11,9 @@
 #include <vector>
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/user_data_info.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/user_data_info.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
 
 namespace brave_ads {
 

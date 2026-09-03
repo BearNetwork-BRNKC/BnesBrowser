@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
 
 #include "base/containers/span.h"
 #include "base/strings/strcat.h"
-#include "brave/third_party/bip39wally-core-native/include/wally_bip39.h"
+#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
 #include "crypto/kdf.h"
 #include "crypto/process_bound_string.h"
 

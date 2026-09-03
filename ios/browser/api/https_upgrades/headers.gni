@@ -4,6 +4,6 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_https_upgrades_public_headers = [
-  "//brave/ios/browser/api/https_upgrades/https_upgrade_service.h",
-  "//brave/ios/browser/api/https_upgrades/https_upgrade_service_factory.h",
+  "//BnesBrowser/ios/browser/api/https_upgrades/https_upgrade_service.h",
+  "//BnesBrowser/ios/browser/api/https_upgrades/https_upgrade_service_factory.h",
 ]

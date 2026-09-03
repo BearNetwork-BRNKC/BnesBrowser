@@ -11,8 +11,8 @@
 
 #include "base/containers/span_reader.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/solana_address.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/solana_address.h"
 
 namespace brave_wallet {
 

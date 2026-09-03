@@ -5,7 +5,7 @@
 
 assert(is_win)
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 
 template("sign") {
   assert(defined(invoker.sources),
@@ -30,7 +30,7 @@ template("sign") {
                                "outputs",
                                "deps",
                              ])
-      script = "//brave/script/sign_binaries.py"
+      script = "//BnesBrowser/script/sign_binaries.py"
       args = [
         rebase_path(sources[0], root_build_dir),
         "--out_file",

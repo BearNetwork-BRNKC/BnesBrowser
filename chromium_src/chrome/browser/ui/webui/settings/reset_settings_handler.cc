@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/profile_resetter/brave_profile_resetter.h"
+#include "BnesBrowser/browser/profile_resetter/brave_profile_resetter.h"
 
 #define ProfileResetter BraveProfileResetter
 #include <chrome/browser/ui/webui/settings/reset_settings_handler.cc>

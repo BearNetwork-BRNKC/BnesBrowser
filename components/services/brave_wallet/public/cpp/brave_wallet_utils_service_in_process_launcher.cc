@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/brave_wallet/public/cpp/brave_wallet_utils_service_in_process_launcher.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/brave_wallet_utils_service_in_process_launcher.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/components/services/brave_wallet/brave_wallet_utils_service_impl.h"
+#include "BnesBrowser/components/services/brave_wallet/brave_wallet_utils_service_impl.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"
 
 namespace brave_wallet {

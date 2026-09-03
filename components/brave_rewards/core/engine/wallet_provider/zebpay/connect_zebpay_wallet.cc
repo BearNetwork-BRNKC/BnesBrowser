@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/wallet_provider/zebpay/connect_zebpay_wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/zebpay/connect_zebpay_wallet.h"
 
 #include <string>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/post_connect_zebpay.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/request_for.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
-#include "brave/components/brave_rewards/core/engine/util/url_helpers.h"
-#include "brave/components/brave_rewards/core/engine/zebpay/zebpay.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/post_connect_zebpay.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_for.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/url_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/zebpay/zebpay.h"
 
 using brave_rewards::internal::endpoints::PostConnectZebPay;
 using brave_rewards::internal::endpoints::PostOAuthZebPay;

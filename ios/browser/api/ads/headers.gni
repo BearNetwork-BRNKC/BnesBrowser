@@ -4,7 +4,7 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 ads_public_headers = [
-  "//brave/ios/browser/api/ads/brave_ads.h",
-  "$root_gen_dir/brave/ios/browser/api/ads/brave_ads.mojom.objc.h",
+  "//BnesBrowser/ios/browser/api/ads/brave_ads.h",
+  "$root_gen_dir/BnesBrowser/ios/browser/api/ads/brave_ads.mojom.objc.h",
 ]
-ads_public_deps = [ "//brave/ios/browser/api/ads:brave_ads_mojom_wrappers" ]
+ads_public_deps = [ "//BnesBrowser/ios/browser/api/ads:brave_ads_mojom_wrappers" ]

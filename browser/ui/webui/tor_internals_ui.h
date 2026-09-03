@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
 #include "content/public/browser/web_ui_controller.h"
 #include "content/public/browser/web_ui_message_handler.h"
 

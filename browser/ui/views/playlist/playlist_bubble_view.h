@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_PLAYLIST_PLAYLIST_BUBBLE_VIEW_H_
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/views/playlist/playlist_bubbles_controller.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_bubbles_controller.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/views/bubble/bubble_dialog_delegate_view.h"
 

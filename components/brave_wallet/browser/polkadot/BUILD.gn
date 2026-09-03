@@ -10,11 +10,11 @@ generated_types("generated_polkadot_substrate_rpc_responses") {
   root_namespace = "brave_wallet::polkadot_substrate_rpc_responses"
   deps = [
     "//base",
-    "//brave/vendor/bat-native-tweetnacl:tweetnacl",
+    "//BnesBrowser/vendor/bat-native-tweetnacl:tweetnacl",
   ]
   visibility = [
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:test_support",
-    "//brave/components/brave_wallet/browser:unit_tests",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:test_support",
+    "//BnesBrowser/components/brave_wallet/browser:unit_tests",
   ]
 }

@@ -13,7 +13,7 @@ source_set("brave_account") {
 
   deps = [
     "//base",
-    "//brave/browser/ui/webui/brave_account",
-    "//brave/components/brave_account/mojom",
+    "//BnesBrowser/browser/ui/webui/brave_account",
+    "//BnesBrowser/components/brave_account/mojom",
   ]
 }

@@ -12,8 +12,8 @@
 #include "base/containers/flat_map.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine_helper.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 
 namespace brave_rewards::internal {
 

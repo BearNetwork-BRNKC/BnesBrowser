@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_vpn/brave_vpn_fallback_dialog_view.h"
+#include "BnesBrowser/browser/ui/views/brave_vpn/brave_vpn_fallback_dialog_view.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "chrome/browser/about_flags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

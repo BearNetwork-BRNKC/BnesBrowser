@@ -9,15 +9,15 @@
 
 #include "base/auto_reset.h"
 #include "base/feature_list.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
-#include "brave/components/omnibox/browser/brave_search_provider.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/omnibox/browser/brave_search_provider.h"
 #include "chrome/browser/ui/omnibox/omnibox_controller.h"
 #include "components/omnibox/browser/autocomplete_classifier.h"
 #include "components/vector_icons/vector_icons.h"
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
 #endif
 
 namespace {

@@ -8,15 +8,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/browser/ui/commander/window_command_source.h"
+#include "BnesBrowser/browser/ui/commander/window_command_source.h"
 
 #include <memory>
 #include <numeric>
 #include <utility>
 #include <vector>
 
-#include "brave/browser/ui/commander/entity_match.h"
-#include "brave/browser/ui/commander/fuzzy_finder.h"
+#include "BnesBrowser/browser/ui/commander/entity_match.h"
+#include "BnesBrowser/browser/ui/commander/fuzzy_finder.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_commands.h"
 #include "chrome/browser/ui/browser_window.h"

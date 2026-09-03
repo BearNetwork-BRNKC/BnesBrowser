@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/callback_helpers.h"
 #include "base/json/values_util.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/request_for.h"
-#include "brave/components/brave_rewards/core/engine/util/callback_helpers.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/util/time_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_for.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/callback_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/time_util.h"
 
 namespace brave_rewards::internal {
 

@@ -3,17 +3,17 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/tabs/brave_tab.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab.h"
 
 #include <algorithm>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
-#include "brave/browser/ui/views/tabs/mock_browser_window_interface_with_vertical_tab_controller.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
-#include "brave/components/tabs/public/tree_tab_node_id.h"
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
+#include "BnesBrowser/browser/ui/views/tabs/mock_browser_window_interface_with_vertical_tab_controller.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_id.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/layout_constants.h"
 #include "chrome/browser/ui/tabs/features.h"

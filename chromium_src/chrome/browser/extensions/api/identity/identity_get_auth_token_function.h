@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_EXTENSIONS_API_IDENTITY_IDENTITY_GET_AUTH_TOKEN_FUNCTION_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_EXTENSIONS_API_IDENTITY_IDENTITY_GET_AUTH_TOKEN_FUNCTION_H_
 
-#include "brave/browser/extensions/api/identity/brave_web_auth_flow.h"
+#include "BnesBrowser/browser/extensions/api/identity/brave_web_auth_flow.h"
 #include "extensions/browser/extension_function.h"
 
 #define ExtensionFunction ExtensionFunction, public BraveWebAuthFlow

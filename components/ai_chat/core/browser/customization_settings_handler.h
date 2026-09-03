@@ -10,7 +10,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/ai_chat/core/common/mojom/customization_settings.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/customization_settings.mojom.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "mojo/public/cpp/bindings/remote.h"
 

@@ -8,7 +8,7 @@
 
 #include <chrome/browser/browsing_data/chrome_browsing_data_remover_constants.h>  // IWYU pragma: export
 
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 
 namespace chrome_browsing_data_remover {
 constexpr DataType GetBraveDataTypeValue(const int index) {

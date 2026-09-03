@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/compiler_specific.h"
-#include "brave/sandbox/win/src/module_file_name_interception.h"
+#include "BnesBrowser/sandbox/win/src/module_file_name_interception.h"
 
 #include <sandbox/win/src/interceptors_64.cc>
 

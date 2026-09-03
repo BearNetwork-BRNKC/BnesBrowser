@@ -14,9 +14,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/sequence_checker.h"
 #include "base/thread_annotations.h"
-#include "brave/components/brave_news/browser/background_history_querier.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 
 namespace api_request_helper {
 class APIRequestHelper;

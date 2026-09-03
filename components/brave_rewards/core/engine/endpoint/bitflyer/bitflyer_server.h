@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_BITFLYER_BITFLYER_SERVER_H_
 #define BRAVE_COMPONENTS_BRAVE_REWARDS_CORE_ENGINE_ENDPOINT_BITFLYER_BITFLYER_SERVER_H_
 
-#include "brave/components/brave_rewards/core/engine/endpoint/bitflyer/get_balance/get_balance_bitflyer.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/bitflyer/post_oauth/post_oauth_bitflyer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/bitflyer/get_balance/get_balance_bitflyer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/bitflyer/post_oauth/post_oauth_bitflyer.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/content/browser/content_tool.h"
+#include "BnesBrowser/components/ai_chat/content/browser/content_tool.h"
 
 #include <optional>
 #include <string>
@@ -17,8 +17,8 @@
 #include "base/strings/strcat.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_utils.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
 #include "components/grit/brave_components_strings.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/common/url_constants.h"

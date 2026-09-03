@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/widevine/widevine_utils.h"
+#include "BnesBrowser/browser/widevine/widevine_utils.h"
 
 #include <string>
 
-#include "brave/browser/widevine/widevine_permission_request.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/widevine/constants.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/widevine/widevine_permission_request.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/widevine/constants.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/component_updater/widevine_cdm_component_installer.h"

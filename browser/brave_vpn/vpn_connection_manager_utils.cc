@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/vpn_connection_manager_utils.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_connection_manager_utils.h"
 
 #include "base/functional/bind.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/notreached.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #include "build/build_config.h"
 #include "chrome/common/channel_info.h"
 #include "components/prefs/pref_service.h"
@@ -17,13 +17,13 @@
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/brave_vpn/win/vpn_utils_win.h"
-#include "brave/browser/brave_vpn/win/wireguard_connection_api_impl_win.h"
-#include "brave/components/brave_vpn/browser/connection/ikev2/win/ras_connection_api_impl_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/vpn_utils_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_connection_api_impl_win.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/win/ras_connection_api_impl_win.h"
 #endif
 
 #if BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_vpn/mac/vpn_utils_mac.h"
+#include "BnesBrowser/browser/brave_vpn/mac/vpn_utils_mac.h"
 #endif
 
 namespace brave_vpn {

@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/safe_builtins/renderer/safe_builtins_helpers.h"
+#include "BnesBrowser/components/safe_builtins/renderer/safe_builtins_helpers.h"
 
-#include "brave/components/safe_builtins/renderer/safe_builtins.h"
+#include "BnesBrowser/components/safe_builtins/renderer/safe_builtins.h"
 #include "gin/converter.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 #include "third_party/blink/public/web/web_console_message.h"

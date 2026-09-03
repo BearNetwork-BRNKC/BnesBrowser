@@ -15,9 +15,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/timer/wall_clock_timer.h"
 #include "base/values.h"
-#include "brave/components/request_otr/browser/request_otr_component_installer.h"
-#include "brave/components/request_otr/browser/request_otr_rule.h"
-#include "brave/components/request_otr/browser/request_otr_service.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_component_installer.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_rule.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_service.h"
 #include "components/keyed_service/core/keyed_service.h"
 
 class GURL;

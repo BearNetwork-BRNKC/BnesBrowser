@@ -10,6 +10,6 @@ source_set("brave_services_key") {
   ]
   deps = [
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
   ]
 }

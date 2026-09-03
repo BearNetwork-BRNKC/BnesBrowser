@@ -6,11 +6,11 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ACCOUNT_ENDPOINTS_VERIFY_COMPLETE_H_
 #define BRAVE_COMPONENTS_BRAVE_ACCOUNT_ENDPOINTS_VERIFY_COMPLETE_H_
 
-#include "brave/components/brave_account/endpoint_client/brave_endpoint.h"
-#include "brave/components/brave_account/endpoint_client/request_types.h"
-#include "brave/components/brave_account/endpoint_client/response.h"
-#include "brave/components/brave_account/endpoints/error_body.h"
-#include "brave/components/brave_account/endpoints/verify_complete_bodies.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/brave_endpoint.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_types.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/response.h"
+#include "BnesBrowser/components/brave_account/endpoints/error_body.h"
+#include "BnesBrowser/components/brave_account/endpoints/verify_complete_bodies.h"
 
 namespace brave_account::endpoints {
 

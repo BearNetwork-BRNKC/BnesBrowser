@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_feature_pref_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/condition_matcher/prefs/internal/condition_matcher_feature_pref_util_internal.h"
 
 #include "base/feature_list.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 
 // npm run test -- brave_all_unit_tests --filter=BraveAds*
 

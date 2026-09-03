@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_MISC_METRICS_DEFAULT_BROWSER_MONITOR_DELEGATE_IMPL_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/misc_metrics/default_browser_monitor.h"
+#include "BnesBrowser/components/misc_metrics/default_browser_monitor.h"
 
 class PrefService;
 

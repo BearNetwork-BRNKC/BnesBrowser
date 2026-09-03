@@ -13,7 +13,7 @@
 
 #include "base/auto_reset.h"
 #include "base/containers/span.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
 #include "third_party/blink/renderer/bindings/core/v8/native_value_traits_impl.h"
 #include "third_party/blink/renderer/bindings/core/v8/script_promise.h"
 #include "third_party/blink/renderer/bindings/core/v8/script_value.h"

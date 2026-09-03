@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/playlist/playlist_compatibility_javascript_feature.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_compatibility_javascript_feature.h"
 
 #include "base/functional/bind.h"
 #include "base/no_destructor.h"
 #include "base/values.h"
-#include "brave/ios/browser/playlist/playlist_compatibility_flag_data.h"
-#include "brave/ios/web/js_messaging/message_handler_token.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_compatibility_flag_data.h"
+#include "BnesBrowser/ios/web/js_messaging/message_handler_token.h"
 #include "ios/web/public/js_messaging/script_message.h"
 #include "ios/web/public/js_messaging/web_frame.h"
 #include "ios/web/public/js_messaging/web_frames_manager.h"

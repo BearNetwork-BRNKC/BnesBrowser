@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 
 source_set("browser") {
   sources = [
@@ -12,8 +12,8 @@ source_set("browser") {
     "brave_shields_settings_bridge_impl.mm",
   ]
   deps = [
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/ios/common:mojom",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/ios/common:mojom",
     "//components/content_settings/core/browser",
     "//components/prefs",
     "//net",

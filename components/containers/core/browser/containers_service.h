@@ -15,9 +15,9 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
-#include "brave/components/containers/core/browser/container_specifier.h"
-#include "brave/components/containers/core/browser/containers_service_observer.h"
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service_observer.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "components/prefs/pref_change_registrar.h"
 

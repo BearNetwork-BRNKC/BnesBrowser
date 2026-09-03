@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_PASSWORD_STRENGTH_METER_PASSWORD_STRENGTH_METER_H_
 #define BRAVE_COMPONENTS_PASSWORD_STRENGTH_METER_PASSWORD_STRENGTH_METER_H_
 
-#include "brave/components/password_strength_meter/password_strength_meter.mojom.h"
+#include "BnesBrowser/components/password_strength_meter/password_strength_meter.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 
 namespace password_strength_meter {

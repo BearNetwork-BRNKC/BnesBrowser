@@ -33,16 +33,16 @@ source_set("brave_wallet") {
   deps = [
     ":cardano_provider_js",
     ":ethereum_provider_js",
-    "//brave/components/brave_wallet/browser",
-    "//brave/components/brave_wallet/browser:constants",
-    "//brave/components/brave_wallet/browser:pref_names",
-    "//brave/components/brave_wallet/common",
-    "//brave/components/brave_wallet/common:common_constants",
-    "//brave/components/brave_wallet/common:mojom",
-    "//brave/components/brave_wallet/resources:ethereum_provider_generated_resources",
-    "//brave/ios/browser/api/brave_wallet:provider_delegate",
-    "//brave/ios/browser/api/brave_wallet:wallet_mojom_wrappers",
-    "//brave/ios/browser/keyed_service",
+    "//BnesBrowser/components/brave_wallet/browser",
+    "//BnesBrowser/components/brave_wallet/browser:constants",
+    "//BnesBrowser/components/brave_wallet/browser:pref_names",
+    "//BnesBrowser/components/brave_wallet/common",
+    "//BnesBrowser/components/brave_wallet/common:common_constants",
+    "//BnesBrowser/components/brave_wallet/common:mojom",
+    "//BnesBrowser/components/brave_wallet/resources:ethereum_provider_generated_resources",
+    "//BnesBrowser/ios/browser/api/brave_wallet:provider_delegate",
+    "//BnesBrowser/ios/browser/api/brave_wallet:wallet_mojom_wrappers",
+    "//BnesBrowser/ios/browser/keyed_service",
     "//components/content_settings/core/browser",
     "//components/keyed_service/core",
     "//ios/chrome/browser/content_settings/model",
@@ -60,7 +60,7 @@ source_set("brave_wallet") {
   ]
   public_deps = [
     "//base",
-    "//brave/ios/web/js_messaging:message_handler_token",
+    "//BnesBrowser/ios/web/js_messaging:message_handler_token",
     "//components/prefs",
     "//ios/web/public/js_messaging",
   ]
@@ -72,8 +72,8 @@ optimize_ts("ethereum_provider_js") {
   sources = [ "resources/ethereum_provider.ts" ]
 
   deps = [
-    "//brave/ios/web/js_messaging:safe_builtins",
-    "//brave/ios/web/js_messaging:util_scripts",
+    "//BnesBrowser/ios/web/js_messaging:safe_builtins",
+    "//BnesBrowser/ios/web/js_messaging:util_scripts",
   ]
 }
 
@@ -83,7 +83,7 @@ optimize_ts("cardano_provider_js") {
   sources = [ "resources/cardano_provider.ts" ]
 
   deps = [
-    "//brave/ios/web/js_messaging:safe_builtins",
-    "//brave/ios/web/js_messaging:util_scripts",
+    "//BnesBrowser/ios/web/js_messaging:safe_builtins",
+    "//BnesBrowser/ios/web/js_messaging:util_scripts",
   ]
 }

@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/renderer/brave_wallet/brave_wallet_render_frame_observer.h"
+#include "BnesBrowser/renderer/brave_wallet/brave_wallet_render_frame_observer.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
 #include "base/notreached.h"
-#include "brave/components/brave_wallet/renderer/js_cardano_provider.h"
-#include "brave/components/brave_wallet/renderer/js_ethereum_provider.h"
-#include "brave/components/brave_wallet/renderer/js_solana_provider.h"
-#include "brave/components/brave_wallet/renderer/v8_helper.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_cardano_provider.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_ethereum_provider.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_solana_provider.h"
+#include "BnesBrowser/components/brave_wallet/renderer/v8_helper.h"
 #include "content/public/renderer/render_frame.h"
 #include "third_party/blink/public/platform/scheduler/web_agent_group_scheduler.h"
 #include "third_party/blink/public/web/web_local_frame.h"

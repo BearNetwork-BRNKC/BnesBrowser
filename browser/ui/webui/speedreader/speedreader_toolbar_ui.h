@@ -9,8 +9,8 @@
 #include <memory>
 #include <string>
 
-#include "brave/browser/ui/webui/speedreader/speedreader_toolbar_data_handler_impl.h"
-#include "brave/components/speedreader/common/speedreader_toolbar.mojom.h"
+#include "BnesBrowser/browser/ui/webui/speedreader/speedreader_toolbar_data_handler_impl.h"
+#include "BnesBrowser/components/speedreader/common/speedreader_toolbar.mojom.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_web_ui_controller.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_webui_config.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/functional/callback.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/notifications/notification_platform_bridge.h"
@@ -18,21 +18,21 @@
 #include "chrome/common/chrome_features.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl_android.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl_android.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(IS_LINUX)
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl_linux.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl_linux.h"
 #include "chrome/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #endif  // BUILDFLAG(IS_LINUX)
 
 #if BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl_mac.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl_mac.h"
 #endif  // BUILDFLAG(IS_MAC)
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl_win.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl_win.h"
 #include "chrome/browser/notifications/notification_platform_bridge_win.h"
 #endif  // BUILDFLAG(IS_WIN)
 

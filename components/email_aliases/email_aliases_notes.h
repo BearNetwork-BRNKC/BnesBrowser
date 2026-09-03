@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/email_aliases/email_aliases_api.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_api.h"
 
 class PrefRegistrySimple;
 class PrefService;

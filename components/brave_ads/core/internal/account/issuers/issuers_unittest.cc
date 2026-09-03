@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers.h"
 
 #include <memory>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_info.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_util.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/test/issuers_delegate_mock.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/url_request/issuers_url_request_builder_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/test/issuers_delegate_mock.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/url_request/issuers_url_request_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_constants.h"
 #include "net/http/http_status_code.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

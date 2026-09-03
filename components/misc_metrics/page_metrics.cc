@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
 
 #include <array>
 #include <string_view>
@@ -14,12 +14,12 @@
 #include "base/logging.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/time/time.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/custom_attributes.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/custom_attributes.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/browsing_data/core/counters/bookmark_counter.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"

@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/omnibox/browser/promotion_utils.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_utils.h"
 
 #include <algorithm>
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_search_conversion/types.h"
-#include "brave/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/brave_search_conversion/types.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/autocomplete_match.h"
 #include "components/omnibox/browser/autocomplete_result.h"

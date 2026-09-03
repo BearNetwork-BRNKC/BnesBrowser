@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/speedreader/common/features.h"
-#include "brave/components/speedreader/speedreader_pref_migration.h"
-#include "brave/components/speedreader/speedreader_pref_names.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_migration.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_names.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/prefs/pref_service.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"

@@ -3,21 +3,21 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/local_ai/buildflags/buildflags.gni")
-import("//brave/components/text_recognition/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
+import("//BnesBrowser/components/text_recognition/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 import("//extensions/buildflags/buildflags.gni")
 
 brave_chromium_src_chrome_browser_deps = [
   "//base",
-  "//brave/components/ai_chat/core/common/buildflags",
-  "//brave/components/brave_vpn/common/buildflags",
-  "//brave/components/commander/common/buildflags",
-  "//brave/components/local_ai/buildflags",
-  "//brave/components/playlist/core/common/buildflags",
-  "//brave/components/text_recognition/common/buildflags",
+  "//BnesBrowser/components/ai_chat/core/common/buildflags",
+  "//BnesBrowser/components/brave_vpn/common/buildflags",
+  "//BnesBrowser/components/commander/common/buildflags",
+  "//BnesBrowser/components/local_ai/buildflags",
+  "//BnesBrowser/components/playlist/core/common/buildflags",
+  "//BnesBrowser/components/text_recognition/common/buildflags",
   "//chrome/common:channel_info",
   "//components/version_info",
 ]
@@ -28,15 +28,15 @@ if (!is_android) {
 
 if (enable_brave_vpn) {
   brave_chromium_src_chrome_browser_deps +=
-      [ "//brave/components/brave_vpn/common" ]
+      [ "//BnesBrowser/components/brave_vpn/common" ]
 }
 
 if (toolkit_views) {
   brave_chromium_src_chrome_browser_deps +=
-      [ "//brave/components/sidebar/browser" ]
+      [ "//BnesBrowser/components/sidebar/browser" ]
 }
 
 if (enable_extensions) {
   brave_chromium_src_chrome_browser_deps +=
-      [ "//brave/browser/extensions/manifest_v2" ]
+      [ "//BnesBrowser/browser/extensions/manifest_v2" ]
 }

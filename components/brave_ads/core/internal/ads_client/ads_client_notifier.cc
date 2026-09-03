@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier.h"
 
 #include <cstdint>
 #include <memory>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
-#include "brave/components/brave_ads/core/public/common/functional/once_closure_task_queue.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/functional/once_closure_task_queue.h"
 #include "ui/base/page_transition_types.h"
 #include "url/gurl.h"
 

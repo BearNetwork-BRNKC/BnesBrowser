@@ -5,7 +5,7 @@
 
 #include "chrome/browser/privacy_sandbox/privacy_sandbox_settings_factory.h"
 
-#include "brave/components/privacy_sandbox/brave_privacy_sandbox_settings.h"
+#include "BnesBrowser/components/privacy_sandbox/brave_privacy_sandbox_settings.h"
 
 #define BuildServiceInstanceForBrowserContext \
   BuildServiceInstanceForBrowserContext_ChromiumImpl

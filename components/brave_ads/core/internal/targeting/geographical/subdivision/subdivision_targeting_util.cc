@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/geographical/subdivision/subdivision_targeting_util.h"
 
-#include "brave/components/brave_ads/core/public/targeting/geographical/subdivision/supported_subdivisions.h"
+#include "BnesBrowser/components/brave_ads/core/public/targeting/geographical/subdivision/supported_subdivisions.h"
 
 namespace brave_ads {
 

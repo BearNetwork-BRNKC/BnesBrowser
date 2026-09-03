@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/psst/buildflags/buildflags.gni")
+import("//BnesBrowser/components/psst/buildflags/buildflags.gni")
 
 assert(enable_psst)
 
@@ -41,11 +41,11 @@ static_library("browser") {
   ]
 
   deps = [
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/psst/buildflags",
-    "//brave/components/psst/core/common",
-    "//brave/components/version_info",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/psst/buildflags",
+    "//BnesBrowser/components/psst/core/common",
+    "//BnesBrowser/components/version_info",
     "//components/component_updater",
     "//components/content_settings/core/browser",
     "//components/keyed_service/core",
@@ -68,13 +68,13 @@ source_set("unit_tests") {
     "rule_data_reader_unittest.cc",
   ]
 
-  data = [ "//brave/components/test/data/psst" ]
+  data = [ "//BnesBrowser/components/test/data/psst" ]
 
   deps = [
     ":browser",
     "//base/test:test_support",
-    "//brave/components/psst/core/common",
-    "//brave/components/version_info",
+    "//BnesBrowser/components/psst/core/common",
+    "//BnesBrowser/components/version_info",
     "//services/network/public/cpp",
     "//testing/gmock",
     "//testing/gtest",

@@ -10,9 +10,9 @@
 #include <string>
 
 #include "base/containers/span.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 
 template <class T>
 class scoped_refptr;

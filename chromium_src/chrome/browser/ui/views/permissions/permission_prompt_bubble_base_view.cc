@@ -12,16 +12,16 @@
 #include "base/feature_list.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/raw_ref.h"
-#include "brave/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
-#include "brave/browser/ui/geolocation/geolocation_utils.h"
-#include "brave/browser/ui/views/dialog_footnote_utils.h"
-#include "brave/browser/ui/views/infobars/custom_styled_label.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/permissions/permission_lifetime_utils.h"
-#include "brave/components/permissions/permission_widevine_utils.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
+#include "BnesBrowser/browser/ui/geolocation/geolocation_utils.h"
+#include "BnesBrowser/browser/ui/views/dialog_footnote_utils.h"
+#include "BnesBrowser/browser/ui/views/infobars/custom_styled_label.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_utils.h"
+#include "BnesBrowser/components/permissions/permission_widevine_utils.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "chrome/browser/ui/chrome_pages.h"
@@ -55,7 +55,7 @@
 #include "ui/views/window/dialog_delegate.h"
 
 #if BUILDFLAG(ENABLE_WIDEVINE)
-#include "brave/browser/widevine/widevine_permission_request.h"
+#include "BnesBrowser/browser/widevine/widevine_permission_request.h"
 #endif
 
 namespace {

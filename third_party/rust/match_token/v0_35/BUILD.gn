@@ -12,8 +12,8 @@ cargo_crate("lib") {
   crate_name = "match_token"
   epoch = "0.35"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/match_token-v0_35/src/lib.rs"
-  sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/match_token-v0_35/src/lib.rs" ]
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/match_token-v0_35/src/lib.rs"
+  sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/match_token-v0_35/src/lib.rs" ]
   inputs = []
 
   build_native_rust_unit_tests = false
@@ -27,9 +27,9 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/proc_macro2/v1:lib",
-    "//brave/third_party/rust/quote/v1:lib",
-    "//brave/third_party/rust/syn/v2:lib",
+    "//BnesBrowser/third_party/rust/proc_macro2/v1:lib",
+    "//BnesBrowser/third_party/rust/quote/v1:lib",
+    "//BnesBrowser/third_party/rust/syn/v2:lib",
   ]
   rustenv = []
   rustflags = []

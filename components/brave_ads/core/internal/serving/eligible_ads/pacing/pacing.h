@@ -7,8 +7,8 @@
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_ELIGIBLE_ADS_PACING_PACING_H_
 
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing_util.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads {
 

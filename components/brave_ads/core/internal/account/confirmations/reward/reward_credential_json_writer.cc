@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_credential_json_writer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_credential_json_writer.h"
 
 #include "base/check.h"
 #include "base/json/json_writer.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/credential_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/credential_builder.h"
 
 namespace brave_ads::json::writer {
 

@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/brave_ads/browser/component_updater/component_info.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/component_info.h"
 
 namespace brave_ads {
 

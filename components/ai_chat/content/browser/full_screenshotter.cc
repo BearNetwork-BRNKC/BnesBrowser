@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/content/browser/full_screenshotter.h"
+#include "BnesBrowser/components/ai_chat/content/browser/full_screenshotter.h"
 
 #include <algorithm>
 #include <utility>
@@ -15,8 +15,8 @@
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
 #include "base/types/expected.h"
-#include "brave/components/screenshot/content/pdf_utils.h"
-#include "brave/components/screenshot/core/browser/utils.h"
+#include "BnesBrowser/components/screenshot/content/pdf_utils.h"
+#include "BnesBrowser/components/screenshot/core/browser/utils.h"
 #include "components/paint_preview/browser/compositor_utils.h"
 #include "components/paint_preview/browser/paint_preview_base_service.h"
 #include "components/paint_preview/common/recording_map.h"

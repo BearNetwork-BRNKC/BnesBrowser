@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 
 #include <optional>
 #include <string>
@@ -12,14 +12,14 @@
 #include "base/debug/dump_without_crashing.h"
 #include "base/logging.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/common/brave_shield_utils.h"
-#include "brave/components/brave_shields/core/common/brave_shields_panel.mojom-data-view.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/content_settings/core/common/content_settings_util.h"
-#include "brave/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom-data-view.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/content_settings/core/common/content_settings_util.h"
+#include "BnesBrowser/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "components/content_settings/core/common/content_settings.h"

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/common/win/brave_windows_service_watcher.h"
+#include "BnesBrowser/components/brave_vpn/common/win/brave_windows_service_watcher.h"
 
 #include <utility>
 

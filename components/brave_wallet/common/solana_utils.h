@@ -14,7 +14,7 @@
 #include <vector>
 
 #include "base/containers/span_reader.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom-forward.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom-forward.h"
 #include "third_party/abseil-cpp/absl/container/inlined_vector.h"
 
 namespace base {

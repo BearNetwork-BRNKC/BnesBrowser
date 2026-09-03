@@ -6,7 +6,7 @@
 #include "extensions/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
-#include "brave/browser/extensions/brave_extensions_browser_client_impl.h"
+#include "BnesBrowser/browser/extensions/brave_extensions_browser_client_impl.h"
 #define ChromeExtensionsBrowserClient BraveExtensionsBrowserClientImpl
 #endif
 #include <chrome/browser/browser_process_impl.cc>

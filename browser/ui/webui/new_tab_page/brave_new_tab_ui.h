@@ -10,9 +10,9 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "components/omnibox/browser/searchbox.mojom.h"
 #include "components/regional_capabilities/regional_capabilities_service.h"
 #include "content/public/browser/web_ui_controller.h"
@@ -22,11 +22,11 @@
 #include "ui/webui/mojo_web_ui_controller.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"  // nogncheck
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"  // nogncheck
 #endif  // BUILDFLAG(ENABLE_BRAVE_VPN)
 
 namespace brave_ads {

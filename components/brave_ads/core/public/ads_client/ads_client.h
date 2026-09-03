@@ -10,9 +10,9 @@
 #include <string>
 
 #include "base/values.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_callback.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_callback.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_PUBLIC_COMMAND_LINE_SWITCHES_COMMAND_LINE_SWITCHES_UTIL_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_PUBLIC_COMMAND_LINE_SWITCHES_COMMAND_LINE_SWITCHES_UTIL_H_
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_background_images_component_installer.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_component_installer.h"
 
 #include <array>
 #include <cstdint>
@@ -15,8 +15,8 @@
 #include "base/base64.h"
 #include "base/containers/to_vector.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_update_util.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_update_util.h"
 #include "components/component_updater/component_installer.h"
 #include "components/component_updater/component_updater_service.h"
 #include "crypto/sha2.h"

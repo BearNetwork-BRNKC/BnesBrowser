@@ -5,7 +5,7 @@
 
 #include "components/translate/core/common/translate_util.h"
 
-#include "brave/components/translate/core/common/brave_translate_constants.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_constants.h"
 
 #define GetTranslateSecurityOrigin GetTranslateSecurityOrigin_Chromium
 #define IsTFLiteLanguageDetectionEnabled \

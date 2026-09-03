@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/version_info/version_info_ios.h"
+#include "BnesBrowser/ios/browser/api/version_info/version_info_ios.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "components/version_info/version_info.h"
 #include "components/version_info/version_string.h"
 #include "ios/chrome/common/channel_info.h"

@@ -9,11 +9,11 @@
 #import <objc/runtime.h>
 
 #include "base/check.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/ui/browser.h"
@@ -26,12 +26,12 @@
 #include "ui/base/l10n/l10n_util_mac.h"
 
 #if BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED)
-#include "brave/browser/ui/views/brave_origin/brave_origin_startup_view.h"
+#include "BnesBrowser/browser/ui/views/brave_origin/brave_origin_startup_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #endif
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)

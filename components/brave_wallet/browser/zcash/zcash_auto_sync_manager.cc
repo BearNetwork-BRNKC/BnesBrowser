@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_auto_sync_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_auto_sync_manager.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
 
 namespace brave_wallet {
 

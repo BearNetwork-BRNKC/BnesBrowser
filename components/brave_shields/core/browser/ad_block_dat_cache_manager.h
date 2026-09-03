@@ -12,7 +12,7 @@
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
 
 using brave_component_updater::DATFileDataBuffer;
 

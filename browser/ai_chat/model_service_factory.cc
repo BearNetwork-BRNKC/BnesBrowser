@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ai_chat/model_service_factory.h"
+#include "BnesBrowser/browser/ai_chat/model_service_factory.h"
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/no_destructor.h"
-#include "brave/components/ai_chat/core/browser/model_service.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
 #include "components/user_prefs/user_prefs.h"

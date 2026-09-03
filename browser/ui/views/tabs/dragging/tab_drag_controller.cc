@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/dragging/tab_drag_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/dragging/tab_drag_controller.h"
 
 #include <algorithm>
 #include <optional>
@@ -13,12 +13,12 @@
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/feature_list.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
-#include "brave/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip_layout_helper.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/tabs/features.h"

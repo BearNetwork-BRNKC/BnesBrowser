@@ -8,10 +8,10 @@
 #include "base/logging.h"
 #include "base/logging/logging_settings.h"
 #include "base/process/memory.h"
-#include "brave/components/brave_vpn/app/v2/helper/helper_app.h"
-#include "brave/components/brave_vpn/app/v2/shared/app_utils.h"
-#include "brave/components/brave_vpn/app/v2/shared/crash_reporter_client.h"
-#include "brave/components/brave_vpn/app/v2/shared/switches.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/helper/helper_app.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/app_utils.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/crash_reporter_client.h"
+#include "BnesBrowser/components/brave_vpn/app/v2/shared/switches.h"
 #include "build/build_config.h"
 
 #if BUILDFLAG(IS_WIN)

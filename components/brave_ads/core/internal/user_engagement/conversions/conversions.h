@@ -12,11 +12,11 @@
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_table.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_info.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_table.h"
 
 class GURL;
 

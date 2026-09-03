@@ -11,7 +11,7 @@ source_set("accent_color") {
   ]
   deps = [
     "//base",
-    "//brave/ui/color:nala_color_id",
+    "//BnesBrowser/ui/color:nala_color_id",
     "//skia",
     "//ui/color:color_headers",
     "//ui/gfx:color_utils",

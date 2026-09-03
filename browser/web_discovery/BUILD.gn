@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/web_discovery/buildflags/buildflags.gni")
+import("//BnesBrowser/components/web_discovery/buildflags/buildflags.gni")
 
 if (enable_web_discovery_native) {
   static_library("web_discovery") {
@@ -13,9 +13,9 @@ if (enable_web_discovery_native) {
     ]
     deps = [
       "//base",
-      "//brave/browser/brave_search",
-      "//brave/components/web_discovery/browser",
-      "//brave/components/web_discovery/common",
+      "//BnesBrowser/browser/brave_search",
+      "//BnesBrowser/components/web_discovery/browser",
+      "//BnesBrowser/components/web_discovery/common",
       "//chrome/browser:browser_process",
       "//chrome/browser/profiles:profile",
       "//chrome/common:constants",
@@ -34,8 +34,8 @@ source_set("unit_tests") {
     sources = [ "web_discovery_unittest.cc" ]
 
     deps = [
-      "//brave/components/constants",
-      "//brave/components/search_engines",
+      "//BnesBrowser/components/constants",
+      "//BnesBrowser/components/search_engines",
       "//chrome/browser",
       "//chrome/browser/prefs",
       "//chrome/test:test_support",
@@ -58,8 +58,8 @@ source_set("browser_tests") {
 
     deps = [
       "//base/test:test_support",
-      "//brave/components/constants",
-      "//brave/components/search_engines",
+      "//BnesBrowser/components/constants",
+      "//BnesBrowser/components/search_engines",
       "//chrome/browser",
       "//chrome/browser/profiles:profile",
       "//chrome/browser/ui",
@@ -86,10 +86,10 @@ source_set("browser_tests") {
     if (enable_web_discovery_native) {
       sources += [ "content_scraper_browsertest.cc" ]
       deps += [
-        "//brave/components/web_discovery/browser",
-        "//brave/components/web_discovery/browser:internal",
-        "//brave/components/web_discovery/common",
-        "//brave/components/web_discovery/common:mojom",
+        "//BnesBrowser/components/web_discovery/browser",
+        "//BnesBrowser/components/web_discovery/browser:internal",
+        "//BnesBrowser/components/web_discovery/common",
+        "//BnesBrowser/components/web_discovery/common:mojom",
       ]
     }
   }

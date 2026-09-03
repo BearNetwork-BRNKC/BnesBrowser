@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
 
 #include <optional>
 #include <string>
@@ -12,13 +12,13 @@
 #include "base/base64url.h"
 #include "base/check.h"
 #include "base/json/json_reader.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/payload/confirmation_payload_json_writer.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_key.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_signature.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/payload/confirmation_payload_json_writer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/reward/reward_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/verification_signature.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads {
 

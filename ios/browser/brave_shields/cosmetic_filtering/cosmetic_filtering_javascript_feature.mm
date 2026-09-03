@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_javascript_feature.h"
+#include "BnesBrowser/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_javascript_feature.h"
 
 #import <Foundation/Foundation.h>
 
@@ -18,8 +18,8 @@
 #include "base/json/json_reader.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/values.h"
-#include "brave/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
-#include "brave/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_args.h"
+#include "BnesBrowser/ios/browser/brave_shields/cosmetic_filtering/cosmetic_filtering_tab_helper.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 #include "ios/web/public/js_messaging/script_message.h"
 #include "ios/web/public/web_state.h"

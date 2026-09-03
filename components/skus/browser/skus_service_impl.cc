@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/browser/rs/cxx/src/lib.rs.h"
-#include "brave/components/skus/browser/skus_context_impl.h"
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/rs/cxx/src/lib.rs.h"
+#include "BnesBrowser/components/skus/browser/skus_context_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

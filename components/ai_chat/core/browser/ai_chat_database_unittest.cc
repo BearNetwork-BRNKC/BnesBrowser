@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/ai_chat_database.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_database.h"
 
 #include <stdint.h>
 
@@ -24,10 +24,10 @@
 #include "base/test/test_future.h"
 #include "base/time/time.h"
 #include "base/uuid.h"
-#include "brave/components/ai_chat/core/browser/test_utils.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/test_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 #include "components/os_crypt/async/browser/test_utils.h"
 #include "components/sync/model/metadata_batch.h"
 #include "components/sync/protocol/data_type_state.pb.h"

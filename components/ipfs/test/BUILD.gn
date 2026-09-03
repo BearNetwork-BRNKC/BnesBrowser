@@ -3,20 +3,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import("//brave/components/ipfs/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ipfs/buildflags/buildflags.gni")
 import("//testing/test.gni")
 source_set("brave_ipfs_unit_tests") {
   testonly = true
 
-  sources = [ "//brave/components/ipfs/ipfs_utils_unittest.cc" ]
+  sources = [ "//BnesBrowser/components/ipfs/ipfs_utils_unittest.cc" ]
 
   if (deprecate_ipfs) {
-    sources += [ "//brave/components/ipfs/ipfs_component_cleaner_unittest.cc" ]
+    sources += [ "//BnesBrowser/components/ipfs/ipfs_component_cleaner_unittest.cc" ]
   }
 
   deps = [
     "//base/test:test_support",
-    "//brave/components/ipfs",
+    "//BnesBrowser/components/ipfs",
     "//chrome/browser",
     "//chrome/browser/prefs",
     "//chrome/browser/sync",

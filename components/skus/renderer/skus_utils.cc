@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/skus/renderer/skus_utils.h"
+#include "BnesBrowser/components/skus/renderer/skus_utils.h"
 
 #include <algorithm>
 #include <vector>
 
 #include "base/no_destructor.h"
-#include "brave/components/skus/common/skus_utils.h"
+#include "BnesBrowser/components/skus/common/skus_utils.h"
 #include "third_party/blink/public/platform/web_security_origin.h"
 #include "third_party/blink/public/platform/web_url.h"
 

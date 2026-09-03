@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/tools/wait_tool.h"
+#include "BnesBrowser/browser/ai_chat/tools/wait_tool.h"
 
 #include <memory>
 #include <string>
 
 #include "base/json/json_writer.h"
-#include "brave/browser/ai_chat/tools/content_agent_tool_base_test.h"
+#include "BnesBrowser/browser/ai_chat/tools/content_agent_tool_base_test.h"
 #include "chrome/browser/actor/tools/wait_tool_request.h"
 #include "components/optimization_guide/proto/features/actions_data.pb.h"
 #include "testing/gtest/include/gtest/gtest.h"

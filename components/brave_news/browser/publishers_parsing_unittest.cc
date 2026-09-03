@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/publishers_parsing.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_parsing.h"
 
 #include <optional>
 #include <string>
 
 #include "base/containers/flat_map.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_news {

@@ -5,9 +5,9 @@
 
 #include "base/run_loop.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/brave_view_ids.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/browser/ui/views/bookmarks/bookmark_bar_instructions_view.h"
+#include "BnesBrowser/browser/ui/brave_view_ids.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/browser/ui/views/bookmarks/bookmark_bar_instructions_view.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/profiles/profile.h"

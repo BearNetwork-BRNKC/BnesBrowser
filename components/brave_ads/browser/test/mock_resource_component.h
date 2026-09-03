@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/browser/component_updater/resource_component.h"
-#include "brave/components/brave_ads/browser/test/fake_component_updater_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_component_updater_delegate.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads::test {

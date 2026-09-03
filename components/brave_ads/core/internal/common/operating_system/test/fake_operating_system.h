@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system.h"
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
 
 namespace brave_ads {
 

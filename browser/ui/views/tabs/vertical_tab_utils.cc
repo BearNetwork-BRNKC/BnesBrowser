@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/vertical_tab_utils.h"
+#include "BnesBrowser/browser/ui/views/tabs/vertical_tab_utils.h"
 
 #include "base/numerics/safe_conversions.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
 #include "build/build_config.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/ui/browser_command_controller.h"

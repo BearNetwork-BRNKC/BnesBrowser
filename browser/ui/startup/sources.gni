@@ -3,12 +3,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 brave_browser_ui_startup_public_deps =
-    [ "//brave/components/containers/buildflags" ]
+    [ "//BnesBrowser/components/containers/buildflags" ]
 
 if (enable_containers) {
   brave_browser_ui_startup_public_deps +=
-      [ "//brave/components/containers/core/browser" ]
+      [ "//BnesBrowser/components/containers/core/browser" ]
 }

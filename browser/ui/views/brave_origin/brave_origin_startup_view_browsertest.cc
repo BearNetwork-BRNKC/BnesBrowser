@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_origin/brave_origin_startup_view.h"
+#include "BnesBrowser/browser/ui/views/brave_origin/brave_origin_startup_view.h"
 
 #include <optional>
 
@@ -14,8 +14,8 @@
 #include "base/test/bind.h"
 #include "base/test/run_until.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/brave_origin/pref_names.h"
-#include "brave/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/brave_origin/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile_manager.h"

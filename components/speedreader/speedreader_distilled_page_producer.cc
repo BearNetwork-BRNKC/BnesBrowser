@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/speedreader_distilled_page_producer.h"
+#include "BnesBrowser/components/speedreader/speedreader_distilled_page_producer.h"
 
 #include <memory>
 #include <string>
 #include <utility>
 
-#include "brave/components/speedreader/speedreader_delegate.h"
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/components/speedreader/speedreader_delegate.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 #include "services/network/public/mojom/url_response_head.mojom.h"
 
 namespace speedreader {

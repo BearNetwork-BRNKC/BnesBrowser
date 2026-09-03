@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_SIDEBAR_SIDEBAR_WEB_PANEL_CONTROLLER_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
 #include "chrome/browser/ui/tabs/tab_strip_model_observer.h"
 
 class BrowserView;

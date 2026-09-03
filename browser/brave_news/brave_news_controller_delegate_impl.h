@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_BRAVE_NEWS_BRAVE_NEWS_CONTROLLER_DELEGATE_IMPL_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
 
 class Profile;
 

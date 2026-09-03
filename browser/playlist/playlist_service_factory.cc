@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
 
 #include <algorithm>
 #include <memory>
@@ -19,14 +19,14 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/no_destructor.h"
 #include "base/task/thread_pool.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/components/playlist/content/browser/media_detector_component_manager.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/content/browser/type_converter.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/components/playlist/content/browser/media_detector_component_manager.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/type_converter.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"
@@ -42,9 +42,9 @@
 #include "chrome/browser/ui/android/tab_model/tab_model.h"
 #include "chrome/browser/ui/android/tab_model/tab_model_list.h"
 #else
-#include "brave/browser/ui/brave_browser.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"
@@ -53,7 +53,7 @@
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/playlist/playlist_data_source.h"
+#include "BnesBrowser/browser/playlist/playlist_data_source.h"
 #endif
 
 namespace playlist {

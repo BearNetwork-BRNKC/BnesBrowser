@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ipfs/ipfs_utils.h"
+#include "BnesBrowser/components/ipfs/ipfs_utils.h"
 
 #include <optional>
 #include <string>
@@ -14,7 +14,7 @@
 #include "base/logging.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/filecoin/rs/src/lib.rs.h"
+#include "BnesBrowser/components/filecoin/rs/src/lib.rs.h"
 #include "components/base32/base32.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "net/base/url_util.h"

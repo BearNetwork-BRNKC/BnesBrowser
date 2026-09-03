@@ -5,7 +5,7 @@
 
 // Provides the Brave managed pref names referenced by entries that plaster
 // inserts into the managed content-settings arrays below.
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/content_settings/core/common/pref_names.h"
 
 #include <components/content_settings/core/browser/content_settings_policy_provider.cc>

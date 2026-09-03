@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
 
 #include <algorithm>
 #include <optional>
@@ -18,7 +18,7 @@
 #include "base/path_service.h"
 #include "base/strings/escape.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_rewards/core/pref_registry.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_registry.h"
 #include "net/http/http_status_code.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

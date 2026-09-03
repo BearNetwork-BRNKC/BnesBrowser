@@ -11,8 +11,8 @@
 
 #include "base/types/expected.h"
 #include "base/types/expected_macros.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
-#include "brave/components/password_manager/services/csv_password/public/mojom/csv_safari_password_parser.mojom.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/services/csv_password/public/mojom/csv_safari_password_parser.mojom.h"
 #include "mojo/public/cpp/bindings/struct_traits.h"
 
 namespace mojo {

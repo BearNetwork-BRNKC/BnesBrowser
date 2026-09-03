@@ -7,11 +7,11 @@ import("//build/config/android/rules.gni")
 import("//third_party/jni_zero/jni_zero.gni")
 
 android_library("java") {
-  sources = [ "//brave/android/java/org/chromium/chrome/browser/shields/UrlSanitizerServiceFactory.java" ]
+  sources = [ "//BnesBrowser/android/java/org/chromium/chrome/browser/shields/UrlSanitizerServiceFactory.java" ]
 
   deps = [
     "//base:base_java",
-    "//brave/components/url_sanitizer/core/common/mojom:mojom_java",
+    "//BnesBrowser/components/url_sanitizer/core/common/mojom:mojom_java",
     "//chrome/browser/profiles/android:java",
     "//mojo/public/java:bindings_java",
     "//mojo/public/java:system_java",
@@ -23,5 +23,5 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "//brave/android/java/org/chromium/chrome/browser/shields/UrlSanitizerServiceFactory.java" ]
+  sources = [ "//BnesBrowser/android/java/org/chromium/chrome/browser/shields/UrlSanitizerServiceFactory.java" ]
 }

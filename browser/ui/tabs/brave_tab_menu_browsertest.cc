@@ -5,10 +5,10 @@
 
 #include <memory>
 
-#include "brave/browser/ui/tabs/brave_tab_menu_model.h"
-#include "brave/browser/ui/tabs/brave_tab_menu_model_factory.h"
-#include "brave/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_menu_model.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_menu_model_factory.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_commands.h"
@@ -29,8 +29,8 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/browser/containers_test_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/browser/containers_test_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 class BraveTabMenuBrowserTest : public InProcessBrowserTest {

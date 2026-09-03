@@ -4,19 +4,19 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_content_browser_sources =
-    [ "//brave/content/browser/devtools/adblock_devtools_instrumentation.cc" ]
+    [ "//BnesBrowser/content/browser/devtools/adblock_devtools_instrumentation.cc" ]
 
 if (is_android) {
   brave_content_browser_sources += [
-    "//brave/content/browser/screen_orientation/brave_screen_orientation_delegate_android.cc",
-    "//brave/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h",
+    "//BnesBrowser/content/browser/screen_orientation/brave_screen_orientation_delegate_android.cc",
+    "//BnesBrowser/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h",
   ]
 }
 
 brave_content_browser_deps = [
-  "//brave/components/ai_chat/core/common/buildflags",
-  "//brave/components/brave_service_keys",
-  "//brave/components/brave_shields/core/common:mojom",
-  "//brave/components/brave_wallet/common/buildflags",
-  "//brave/components/speech_to_text",
+  "//BnesBrowser/components/ai_chat/core/common/buildflags",
+  "//BnesBrowser/components/brave_service_keys",
+  "//BnesBrowser/components/brave_shields/core/common:mojom",
+  "//BnesBrowser/components/brave_wallet/common/buildflags",
+  "//BnesBrowser/components/speech_to_text",
 ]

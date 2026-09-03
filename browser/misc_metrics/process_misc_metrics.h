@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/misc_metrics/web3_metrics.h"
+#include "BnesBrowser/components/misc_metrics/web3_metrics.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_change_registrar.h"
 

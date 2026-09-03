@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_search/renderer/brave_search_render_frame_observer.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_render_frame_observer.h"
 
 #include <memory>
 #include <optional>
 
-#include "brave/components/brave_search/common/brave_search_utils.h"
-#include "brave/components/brave_search/renderer/brave_search_default_js_handler.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_default_js_handler.h"
 #include "content/public/renderer/render_frame.h"
 #include "net/base/url_util.h"
 #include "third_party/blink/public/web/web_local_frame.h"

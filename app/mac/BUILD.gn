@@ -1,9 +1,9 @@
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//chrome/version.gni")
 
 if (should_generate_symbols) {
   action("generate_breakpad_symbols") {
-    script = "//brave/tools/mac/generate_breakpad_symbols.py"
+    script = "//BnesBrowser/tools/mac/generate_breakpad_symbols.py"
 
     symbols_dir = "$brave_dist_dir/$brave_product_name.breakpad.syms"
     outputs = [ symbols_dir ]

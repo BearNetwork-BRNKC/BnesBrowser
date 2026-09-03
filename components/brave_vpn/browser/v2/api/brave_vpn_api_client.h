@@ -13,11 +13,11 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_account/endpoint_client/response.h"
-#include "brave/components/brave_vpn/browser/v2/api/error_body.h"
-#include "brave/components/brave_vpn/browser/v2/api/purchase_endpoints.h"
-#include "brave/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
-#include "brave/components/brave_vpn/browser/v2/api/transport_protocol.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/response.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/error_body.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/purchase_endpoints.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/raw_json_response_body.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/transport_protocol.h"
 
 namespace network {
 class SharedURLLoaderFactory;

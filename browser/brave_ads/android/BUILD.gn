@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//third_party/jni_zero/jni_zero.gni")
 
 assert(is_android)
@@ -19,10 +19,10 @@ source_set("android") {
   public_deps = [ "//base" ]
 
   deps = [
-    "//brave/browser/brave_ads",
-    "//brave/browser/brave_ads/android:jni_headers",
-    "//brave/components/brave_ads/browser",
-    "//brave/components/brave_ads/core/public:headers",
+    "//BnesBrowser/browser/brave_ads",
+    "//BnesBrowser/browser/brave_ads/android:jni_headers",
+    "//BnesBrowser/components/brave_ads/browser",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
     "//chrome/browser/profiles:profile",
     "//components/prefs",
   ]

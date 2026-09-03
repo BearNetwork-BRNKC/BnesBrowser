@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/web_view/public/cwv_favicon_status.h"
+#include "BnesBrowser/ios/web_view/public/cwv_favicon_status.h"
 
 #include "ios/web/public/favicon/favicon_status.h"
 #include "net/base/apple/url_conversions.h"

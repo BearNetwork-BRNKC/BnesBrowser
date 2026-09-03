@@ -9,7 +9,7 @@
 #include <services/network/network_service.cc>
 #undef UpdateKeyPinsList
 
-#include "brave/net/dns/secure_dns_counter.h"
+#include "BnesBrowser/net/dns/secure_dns_counter.h"
 #include "services/network/public/mojom/network_service.mojom.h"
 
 namespace network {

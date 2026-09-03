@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_processor.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_processor.h"
 
 #include <algorithm>
 
@@ -12,13 +12,13 @@
 #include "base/functional/bind.h"
 #include "base/trace_event/trace_event.h"
 #include "base/trace_event/trace_id_helper.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/search_engine/search_engine_results_page_util.h"
-#include "brave/components/brave_ads/core/internal/common/search_engine/search_engine_util.h"
-#include "brave/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager.h"
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/search_engine/search_engine_results_page_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/search_engine/search_engine_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 #include "url/gurl.h"
 
 namespace brave_ads {

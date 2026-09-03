@@ -7,8 +7,8 @@
 #define BRAVE_IOS_BROWSER_BRAVE_SHIELDS_FARBLING_JAVASCRIPT_FEATURE_H_
 
 #include "base/no_destructor.h"
-#include "brave/ios/web/js_messaging/message_handler_token.h"
-#include "brave/ios/web/js_messaging/randomized_message_handler_name.h"
+#include "BnesBrowser/ios/web/js_messaging/message_handler_token.h"
+#include "BnesBrowser/ios/web/js_messaging/randomized_message_handler_name.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 
 namespace brave_shields {

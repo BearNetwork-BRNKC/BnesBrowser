@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password_sequence.h"
 
 #include <set>
 #include <string>
@@ -16,8 +16,8 @@
 #include "base/containers/flat_set.h"
 #include "base/not_fatal_until.h"
 #include "base/strings/string_util.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password.h"
-#include "brave/components/password_manager/core/browser/import/csv_safari_password_iterator.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/csv_safari_password_iterator.h"
 #include "components/password_manager/core/browser/import/csv_field_parser.h"
 #include "components/password_manager/core/browser/import/csv_password_iterator.h"
 

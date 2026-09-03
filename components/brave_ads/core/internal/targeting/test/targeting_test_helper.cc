@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/targeting/test/targeting_test_helper.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/test/targeting_test_helper.h"
 
 #include "base/check.h"
 #include "base/test/run_until.h"
-#include "brave/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/intent/intent_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/latent_interest/latent_interest_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/intent/intent_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/latent_interest/latent_interest_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/user_model_info.h"
 
 namespace brave_ads::test {
 

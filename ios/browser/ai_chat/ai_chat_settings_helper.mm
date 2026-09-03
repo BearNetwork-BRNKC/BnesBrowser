@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ai_chat/ai_chat_settings_helper.h"
+#include "BnesBrowser/ios/browser/ai_chat/ai_chat_settings_helper.h"
 
 #include <memory>
 #include <string>
@@ -12,18 +12,18 @@
 #include "base/functional/bind.h"
 #include "base/memory/raw_ptr.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/model_service.h"
-#include "brave/components/ai_chat/core/browser/model_validator.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc+private.h"
-#include "brave/components/ai_chat/core/common/mojom/ios/common.mojom.objc+private.h"
-#include "brave/components/ai_chat/core/common/mojom/ios/settings_helper.mojom.objc+private.h"
-#include "brave/components/ai_chat/core/common/prefs.h"
-#include "brave/ios/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/ios/browser/ai_chat/model_service_factory.h"
-#include "brave/ios/browser/api/profile/profile_bridge_impl.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_validator.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc+private.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/common.mojom.objc+private.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/settings_helper.mojom.objc+private.h"
+#include "BnesBrowser/components/ai_chat/core/common/prefs.h"
+#include "BnesBrowser/ios/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/ios/browser/ai_chat/model_service_factory.h"
+#include "BnesBrowser/ios/browser/api/profile/profile_bridge_impl.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

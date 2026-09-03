@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/transactions/transactions.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transactions.h"
 
 #include "base/test/mock_callback.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/test/transactions_test_util.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transaction_info.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transactions_database_table.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transactions_database_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/test/transactions_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transaction_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transactions_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transactions_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

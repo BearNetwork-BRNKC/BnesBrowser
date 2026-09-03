@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
 
 #include <memory>
 #include <optional>
@@ -23,13 +23,13 @@
 #include "base/test/run_until.h"
 #include "base/test/task_environment.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_component_updater/browser/mock_on_demand_updater.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_data.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
-#include "brave/components/ntp_background_images/browser/sponsored_images_component_data.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_component_updater/browser/mock_on_demand_updater.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/sponsored_images_component_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 #include "build/build_config.h"
 #include "components/component_updater/mock_component_updater_service.h"
 #include "components/prefs/testing_pref_service.h"

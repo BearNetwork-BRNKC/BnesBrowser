@@ -3,26 +3,26 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core_util.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_builder_util.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_table.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ads_callback.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_item_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/search_result_ad/search_result_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_builder_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_table.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/reactions/reactions.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/new_tab_page_ad/new_tab_page_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_callback.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_item_info.h"
 
 namespace brave_ads {
 

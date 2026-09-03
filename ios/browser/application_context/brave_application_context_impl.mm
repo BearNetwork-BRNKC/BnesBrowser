@@ -3,28 +3,28 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/application_context/brave_application_context_impl.h"
+#include "BnesBrowser/ios/browser/application_context/brave_application_context_impl.h"
 
 #include <string>
 
 #import "base/command_line.h"
 #import "base/task/sequenced_task_runner.h"
 #include "base/task/single_thread_task_runner.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
-#include "brave/components/brave_component_updater/browser/brave_component_updater_delegate.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_service.h"
-#include "brave/components/brave_sync/network_time_helper.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/debounce/core/browser/debounce_component_installer.h"
-#include "brave/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_component_installer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component_updater_delegate.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_service.h"
+#include "BnesBrowser/components/brave_sync/network_time_helper.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_component_installer.h"
+#include "BnesBrowser/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_component_installer.h"
 #include "components/application_locale_storage/application_locale_storage.h"
 #include "ios/chrome/browser/application_context/model/application_context_impl.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
-#include "brave/ios/browser/brave_wallet/wallet_data_files_installer_delegate_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/ios/browser/brave_wallet/wallet_data_files_installer_delegate_impl.h"
 #endif
 
 BraveApplicationContextImpl::BraveApplicationContextImpl(

@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/public/ad_units/ad_info.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/ad_info.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

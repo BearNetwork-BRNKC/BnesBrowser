@@ -6,7 +6,7 @@
 #include "extensions/common/extension_urls.h"
 
 #include "base/command_line.h"
-#include "brave/components/update_client/buildflags.h"
+#include "BnesBrowser/components/update_client/buildflags.h"
 #include "chrome/test/base/chrome_test_utils.h"
 #include "chrome/test/base/platform_browser_test.h"
 #include "components/component_updater/component_updater_switches.h"

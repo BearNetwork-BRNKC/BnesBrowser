@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/api/brave_theme_api.h"
+#include "BnesBrowser/browser/extensions/api/brave_theme_api.h"
 
 #include <optional>
 
 #include "base/notreached.h"
-#include "brave/common/extensions/api/brave_theme.h"
+#include "BnesBrowser/common/extensions/api/brave_theme.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/browser/themes/theme_service_factory.h"

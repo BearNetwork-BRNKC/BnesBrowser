@@ -9,8 +9,8 @@
 #include <algorithm>
 #include <cstddef>
 
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_info.h"
-#include "brave/components/brave_ads/core/internal/segments/segment_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_constants.h"
 
 namespace brave_ads {
 

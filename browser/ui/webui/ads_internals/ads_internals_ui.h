@@ -7,17 +7,17 @@
 #define BRAVE_BROWSER_UI_WEBUI_ADS_INTERNALS_ADS_INTERNALS_UI_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_ads/core/browser/internals/ads_internals_handler.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/browser/internals/ads_internals_handler.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "content/public/browser/web_ui_controller.h"
 #include "content/public/browser/webui_config.h"
 #include "content/public/common/url_constants.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_REWARDS)
 
 namespace brave_rewards {

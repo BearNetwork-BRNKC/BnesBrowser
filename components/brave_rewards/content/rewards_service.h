@@ -12,9 +12,9 @@
 #include "base/containers/flat_map.h"
 #include "base/functional/callback_forward.h"
 #include "base/observer_list.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_engine.mojom.h"
 #include "build/build_config.h"
 #include "components/keyed_service/core/keyed_service.h"
 

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer_oai.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer_oai.h"
 
 #include <algorithm>
 #include <optional>
@@ -25,14 +25,14 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/components/ai_chat/core/browser/associated_content_manager.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/browser/engine/oai_api_client.h"
-#include "brave/components/ai_chat/core/browser/engine/oai_message_utils.h"
-#include "brave/components/ai_chat/core/browser/engine/oai_parsing.h"
-#include "brave/components/ai_chat/core/browser/engine/oblivious_http_api_client.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_manager.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oai_api_client.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oai_message_utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oai_parsing.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oblivious_http_api_client.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 #include "components/grit/brave_components_strings.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "ui/base/l10n/l10n_util.h"

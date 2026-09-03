@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_news/direct_feed_fetcher_delegate_impl.h"
+#include "BnesBrowser/browser/brave_news/direct_feed_fetcher_delegate_impl.h"
 
 #include "base/check.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 #include "content/public/browser/browser_thread.h"
 
 namespace brave_news {

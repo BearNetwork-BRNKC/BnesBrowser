@@ -7,11 +7,11 @@
 
 #include <cmath>
 
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/tabs/brave_tab.h"
-#include "brave/browser/ui/views/tabs/brave_tab_group_header.h"
-#include "brave/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
-#include "brave/browser/ui/views/tabs/dragging/tab_drag_controller.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_group_header.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/dragging/tab_drag_controller.h"
 #include "chrome/browser/ui/ui_features.h"
 #include "chrome/browser/ui/views/tabs/browser_tab_strip_controller.h"
 #include "chrome/browser/ui/views/tabs/dragging/tab_drag_context.h"

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 
 namespace ntp_background_images {

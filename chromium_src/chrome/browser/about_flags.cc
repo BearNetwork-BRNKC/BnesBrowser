@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/about_flags.cc"
+#include "BnesBrowser/browser/about_flags.cc"
 
 #include "chrome/common/channel_info.h"
 #include "components/autofill/core/browser/studies/autofill_experiments.h"

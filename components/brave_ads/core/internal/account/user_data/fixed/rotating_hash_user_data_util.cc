@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/user_data/fixed/rotating_hash_user_data_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/fixed/rotating_hash_user_data_util.h"
 
 #include <cstdint>
 #include <vector>
@@ -12,9 +12,9 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transaction_info.h"
-#include "brave/components/brave_ads/core/internal/common/crypto/crypto_util.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transaction_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/crypto/crypto_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
 
 namespace brave_ads {
 

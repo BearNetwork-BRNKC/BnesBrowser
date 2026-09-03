@@ -5,7 +5,7 @@
 
 #include <optional>
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 
 #include <chrome/browser/ui/views/tabs/hovercard/hover_card_anchor_target.cc>
 

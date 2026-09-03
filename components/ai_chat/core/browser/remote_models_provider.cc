@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/remote_models_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/remote_models_provider.h"
 
 #include <utility>
 
@@ -11,7 +11,7 @@
 #include "base/functional/callback_helpers.h"
 #include "base/location.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 namespace ai_chat {

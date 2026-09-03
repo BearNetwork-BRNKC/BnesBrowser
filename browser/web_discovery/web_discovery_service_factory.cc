@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/web_discovery/web_discovery_service_factory.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_service_factory.h"
 
 #include "base/path_service.h"
-#include "brave/browser/brave_search/backup_results_service_factory.h"
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
-#include "brave/components/web_discovery/common/features.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_factory.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile_selections.h"
 #include "chrome/common/chrome_paths.h"

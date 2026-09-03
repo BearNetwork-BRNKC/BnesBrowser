@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_browser_process_impl.h"
+#include "BnesBrowser/browser/brave_browser_process_impl.h"
 
 #include <memory>
 #include <string>
@@ -14,39 +14,39 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/path_service.h"
 #include "base/task/thread_pool.h"
-#include "brave/browser/brave_origin/brave_origin_service_factory.h"
-#include "brave/browser/brave_referrals/referrals_service_delegate.h"
-#include "brave/browser/brave_shields/ad_block_subscription_download_manager_getter.h"
-#include "brave/browser/brave_stats/buildflags.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/component_updater/brave_component_updater_configurator.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/net/brave_system_request_handler.h"
-#include "brave/browser/profiles/brave_profile_manager.h"
-#include "brave/common/brave_channel_info.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_component_updater/browser/brave_component_updater_delegate.h"
-#include "brave/components/brave_component_updater/browser/local_data_files_service.h"
-#include "brave/components/brave_origin/brave_origin_policy_manager.h"
-#include "brave/components/brave_policy/ad_block_only_mode/ad_block_only_mode_policy_manager.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/content/browser/ad_block_subscription_service_manager.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/brave_sync/network_time_helper.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/debounce/core/browser/debounce_component_installer.h"
-#include "brave/components/debounce/core/common/features.h"
-#include "brave/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
-#include "brave/components/p3a/histograms_braveizer.h"
-#include "brave/components/p3a/p3a_config.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/webcompat/content/browser/webcompat_exceptions_service.h"
-#include "brave/components/webcompat/core/common/features.h"
-#include "brave/services/network/public/cpp/system_request_handler.h"
+#include "BnesBrowser/browser/brave_origin/brave_origin_service_factory.h"
+#include "BnesBrowser/browser/brave_referrals/referrals_service_delegate.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_subscription_download_manager_getter.h"
+#include "BnesBrowser/browser/brave_stats/buildflags.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/component_updater/brave_component_updater_configurator.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/net/brave_system_request_handler.h"
+#include "BnesBrowser/browser/profiles/brave_profile_manager.h"
+#include "BnesBrowser/common/brave_channel_info.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component_updater_delegate.h"
+#include "BnesBrowser/components/brave_component_updater/browser/local_data_files_service.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_manager.h"
+#include "BnesBrowser/components/brave_policy/ad_block_only_mode/ad_block_only_mode_policy_manager.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_subscription_service_manager.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/brave_sync/network_time_helper.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_component_installer.h"
+#include "BnesBrowser/components/debounce/core/common/features.h"
+#include "BnesBrowser/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/p3a/histograms_braveizer.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/webcompat/content/browser/webcompat_exceptions_service.h"
+#include "BnesBrowser/components/webcompat/core/common/features.h"
+#include "BnesBrowser/services/network/public/cpp/system_request_handler.h"
 #include "build/build_config.h"
 #include "chrome/browser/component_updater/component_updater_utils.h"
 #include "chrome/browser/net/system_network_context_manager.h"
@@ -62,7 +62,7 @@
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_STATS_UPDATER)
-#include "brave/browser/brave_stats/brave_stats_updater.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS_CORE)
@@ -71,64 +71,64 @@
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component.h"
+#include "BnesBrowser/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_AI_CHAT_AGENT_PROFILE)
-#include "brave/browser/ai_chat/ai_chat_agent_profile_manager.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_agent_profile_manager.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/components/tor/brave_tor_client_updater.h"
-#include "brave/components/tor/brave_tor_pluggable_transport_updater.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/components/tor/brave_tor_client_updater.h"
+#include "BnesBrowser/components/tor/brave_tor_pluggable_transport_updater.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/speedreader_rewriter_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_rewriter_service.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
 #include "chrome/browser/flags/android/chrome_feature_list.h"
 #else
-#include "brave/browser/search_engines/search_engine_provider_util.h"
-#include "brave/browser/ui/brave_browser_command_controller.h"
+#include "BnesBrowser/browser/search_engines/search_engine_provider_util.h"
+#include "BnesBrowser/browser/ui/brave_browser_command_controller.h"
 #include "chrome/browser/first_run/first_run.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"
 #endif
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
-#include "brave/components/request_otr/browser/request_otr_component_installer.h"
-#include "brave/components/request_otr/common/features.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_component_installer.h"
+#include "BnesBrowser/components/request_otr/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN_V1)
-#include "brave/browser/brave_vpn/vpn_connection_manager_utils.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/browser/brave_vpn/vpn_connection_manager_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
 #endif
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_ANDROID)
-#include "brave/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
+#include "BnesBrowser/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/wallet_data_files_installer_delegate_impl.h"
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/browser/brave_wallet/wallet_data_files_installer_delegate_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
 #endif
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/components/local_ai/core/local_models_updater.h"
+#include "BnesBrowser/components/local_ai/core/local_models_updater.h"
 #endif
 
 using brave_component_updater::BraveComponent;

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ntp_background/custom_background_file_manager.h"
+#include "BnesBrowser/browser/ntp_background/custom_background_file_manager.h"
 
 #include <utility>
 
@@ -15,8 +15,8 @@
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/browser/ntp_background/constants.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/ntp_background/constants.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/test/base/in_process_browser_test.h"

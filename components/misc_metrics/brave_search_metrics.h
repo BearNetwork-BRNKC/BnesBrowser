@@ -11,7 +11,7 @@
 #include <string_view>
 
 #include "base/time/time.h"
-#include "brave/components/misc_metrics/page_percentage_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_percentage_metrics.h"
 #include "build/build_config.h"
 #include "url/gurl.h"
 

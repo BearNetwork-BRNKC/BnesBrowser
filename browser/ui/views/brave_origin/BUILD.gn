@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_origin/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_origin/buildflags/buildflags.gni")
 
 assert(is_brave_origin_branded)
 
@@ -15,13 +15,13 @@ source_set("brave_origin") {
 
   deps = [
     "//base",
-    "//brave/brave_domains",
-    "//brave/browser/ui/webui/brave_origin_startup",
-    "//brave/components/brave_origin:pref_names",
-    "//brave/components/brave_origin:switches",
-    "//brave/components/brave_origin/buildflags",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/browser/ui/webui/brave_origin_startup",
+    "//BnesBrowser/components/brave_origin:pref_names",
+    "//BnesBrowser/components/brave_origin:switches",
+    "//BnesBrowser/components/brave_origin/buildflags",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/skus/browser",
     "//chrome/app/theme:chrome_unscaled_resources",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/profiles/keep_alive",
@@ -47,8 +47,8 @@ source_set("browser_tests") {
   deps = [
     ":brave_origin",
     "//base",
-    "//brave/components/brave_origin:pref_names",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/components/brave_origin:pref_names",
+    "//BnesBrowser/components/skus/browser",
     "//chrome/browser",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
@@ -74,9 +74,9 @@ source_set("unit_tests") {
     ":brave_origin",
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_origin:pref_names",
-    "//brave/components/brave_origin:switches",
-    "//brave/components/skus/browser",
+    "//BnesBrowser/components/brave_origin:pref_names",
+    "//BnesBrowser/components/brave_origin:switches",
+    "//BnesBrowser/components/skus/browser",
     "//components/prefs:test_support",
     "//testing/gtest",
   ]

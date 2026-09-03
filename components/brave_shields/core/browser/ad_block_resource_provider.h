@@ -9,8 +9,8 @@
 #include "base/functional/callback.h"
 #include "base/observer_list.h"
 #include "base/observer_list_types.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
 
 using brave_component_updater::DATFileDataBuffer;
 

@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/resend_verification_email.h"
+#include "BnesBrowser/components/brave_account/flows/resend_verification_email.h"
 
 #include <utility>
 
 #include "base/check_deref.h"
 #include "base/functional/bind.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_account/brave_account_service_constants.h"
-#include "brave/components/brave_account/endpoint_client/with_headers.h"
-#include "brave/components/brave_account/mojom/resend_verification_email.mojom.h"
-#include "brave/components/brave_account/state_base.h"
-#include "brave/components/brave_account/state_internal.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_constants.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/with_headers.h"
+#include "BnesBrowser/components/brave_account/mojom/resend_verification_email.mojom.h"
+#include "BnesBrowser/components/brave_account/state_base.h"
+#include "BnesBrowser/components/brave_account/state_internal.h"
 #include "net/http/http_status_code.h"
 
 namespace brave_account {

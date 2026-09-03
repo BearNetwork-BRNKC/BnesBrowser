@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/signal_calculator.h"
+#include "BnesBrowser/components/brave_news/browser/signal_calculator.h"
 
 #include <algorithm>
 #include <iterator>
@@ -13,11 +13,11 @@
 
 #include "base/containers/flat_map.h"
 #include "base/containers/map_util.h"
-#include "brave/components/brave_news/browser/background_history_querier.h"
-#include "brave/components/brave_news/browser/feed_fetcher.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/features.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/background_history_querier.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 
 namespace brave_news {
 

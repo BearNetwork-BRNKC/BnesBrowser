@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/text_recognition/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/text_recognition/common/buildflags/buildflags.gni")
 import("//pdf/features.gni")
 
 static_library("browser") {
@@ -42,17 +42,17 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common:common_impl",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/api_request_helper",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/constants",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/screenshot/content",
-    "//brave/components/screenshot/core/browser",
-    "//brave/components/text_recognition/common/buildflags",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common:common_impl",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/screenshot/content",
+    "//BnesBrowser/components/screenshot/core/browser",
+    "//BnesBrowser/components/text_recognition/common/buildflags",
     "//components/favicon/content",
     "//components/favicon/core",
     "//components/keyed_service/content",
@@ -100,12 +100,12 @@ source_set("unit_tests") {
     ":test_support",
     "//base",
     "//base/test:test_support",
-    "//brave/components/ai_chat/content/browser",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/api_request_helper",
-    "//brave/components/screenshot/content",
+    "//BnesBrowser/components/ai_chat/content/browser",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/screenshot/content",
     "//components/favicon/content",
     "//components/favicon/core/test:test_support",
     "//components/optimization_guide/content/browser",

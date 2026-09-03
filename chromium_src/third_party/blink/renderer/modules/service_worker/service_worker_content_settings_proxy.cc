@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/check.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-blink.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-blink.h"
 #include "mojo/public/cpp/bindings/string_traits_wtf.h"
 
 #include <third_party/blink/renderer/modules/service_worker/service_worker_content_settings_proxy.cc>

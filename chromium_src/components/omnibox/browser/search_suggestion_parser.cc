@@ -7,7 +7,7 @@
 
 #include <string>
 
-#include "brave/components/omnibox/browser/brave_search_suggestion_parser.h"
+#include "BnesBrowser/components/omnibox/browser/brave_search_suggestion_parser.h"
 #include "components/omnibox/browser/autocomplete_match_type.h"
 #include "third_party/omnibox_proto/types.pb.h"
 

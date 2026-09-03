@@ -13,9 +13,9 @@
 #include <string_view>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_rpc_blockfrost_api.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_rpc_blockfrost_api.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_wallet_service.h"
 #include "services/network/test/test_url_loader_factory.h"
 
 namespace brave_wallet {

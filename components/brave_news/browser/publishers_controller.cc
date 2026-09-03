@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
 
 #include <algorithm>
 #include <iterator>
@@ -18,16 +18,16 @@
 #include "base/logging.h"
 #include "base/one_shot_event.h"
 #include "base/strings/strcat.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_news/browser/network.h"
-#include "brave/components/brave_news/browser/publishers_parsing.h"
-#include "brave/components/brave_news/browser/urls.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
-#include "brave/components/brave_news/common/brave_news.mojom-shared.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
-#include "brave/components/brave_private_cdn/headers.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_news/browser/network.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_parsing.h"
+#include "BnesBrowser/components/brave_news/browser/urls.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-shared.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_private_cdn/headers.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 #include "url/origin.h"
 
 namespace brave_news {

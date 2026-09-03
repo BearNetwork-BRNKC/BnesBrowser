@@ -15,7 +15,7 @@
 #include "base/containers/flat_set.h"
 #include "base/memory/raw_ref.h"
 #include "base/time/time.h"
-#include "brave/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
 #include "components/metrics/log_store.h"
 
 class PrefService;

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/content/browser/associated_url_content.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_url_content.h"
 
 #include <memory>
 #include <string>
@@ -14,8 +14,8 @@
 #include "base/test/gmock_callback_support.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/ai_chat/content/browser/page_content_fetcher.h"
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/components/ai_chat/content/browser/page_content_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/web_contents.h"

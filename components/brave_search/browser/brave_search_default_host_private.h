@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_SEARCH_BROWSER_BRAVE_SEARCH_DEFAULT_HOST_PRIVATE_H_
 #define BRAVE_COMPONENTS_BRAVE_SEARCH_BROWSER_BRAVE_SEARCH_DEFAULT_HOST_PRIVATE_H_
 
-#include "brave/components/brave_search/common/brave_search_default.mojom.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_default.mojom.h"
 
 class TemplateURLService;
 class PrefService;

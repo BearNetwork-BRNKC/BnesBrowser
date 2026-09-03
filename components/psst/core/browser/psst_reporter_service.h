@@ -10,7 +10,7 @@
 
 #include "base/containers/flat_set.h"
 #include "base/functional/callback.h"
-#include "brave/components/psst/core/common/psst_script_responses.h"
+#include "BnesBrowser/components/psst/core/common/psst_script_responses.h"
 #include "components/keyed_service/core/keyed_service.h"
 
 namespace psst {

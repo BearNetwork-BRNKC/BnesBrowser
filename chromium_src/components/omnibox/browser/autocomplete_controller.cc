@@ -11,18 +11,18 @@
 
 #include "base/check.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
-#include "brave/components/omnibox/browser/brave_bookmark_provider.h"
-#include "brave/components/omnibox/browser/brave_history_quick_provider.h"
-#include "brave/components/omnibox/browser/brave_history_url_provider.h"
-#include "brave/components/omnibox/browser/brave_local_history_zero_suggest_provider.h"
-#include "brave/components/omnibox/browser/brave_on_device_head_provider.h"
-#include "brave/components/omnibox/browser/brave_search_provider.h"
-#include "brave/components/omnibox/browser/brave_shortcuts_provider.h"
-#include "brave/components/omnibox/browser/promotion_provider.h"
-#include "brave/components/omnibox/browser/promotion_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/omnibox/browser/brave_bookmark_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_history_quick_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_history_url_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_local_history_zero_suggest_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_on_device_head_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_search_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_shortcuts_provider.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_provider.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_utils.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/autocomplete_match.h"
 #include "components/omnibox/browser/calculator_provider.h"
@@ -31,16 +31,16 @@
 #include "components/omnibox/browser/history_fuzzy_provider.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/omnibox/browser/leo_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/leo_provider.h"
 #endif  // BUILDFLAG(ENABLE_AI_CHAT)
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/components/commander/common/buildflags/buildflags.h"
-#include "brave/components/commander/common/constants.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/omnibox/browser/commander_provider.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/constants.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/omnibox/browser/commander_provider.h"
 #endif
 
 using brave_search_conversion::IsBraveSearchConversionFeatureEnabled;

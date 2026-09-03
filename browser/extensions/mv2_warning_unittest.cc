@@ -9,7 +9,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/path_service.h"
 #include "base/values.h"
-#include "brave/browser/brave_browser_main_extra_parts.h"
+#include "BnesBrowser/browser/brave_browser_main_extra_parts.h"
 #include "chrome/browser/extensions/extension_service_test_with_install.h"
 #include "extensions/browser/extension_registry.h"
 #include "extensions/common/extension.h"

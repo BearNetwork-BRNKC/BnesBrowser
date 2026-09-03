@@ -8,7 +8,7 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/views/page_info/brave_page_info_view_ids.h"
+#include "BnesBrowser/browser/ui/views/page_info/brave_page_info_view_ids.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/views/view.h"
 

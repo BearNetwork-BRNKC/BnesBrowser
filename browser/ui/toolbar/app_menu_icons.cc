@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/toolbar/app_menu_icons.h"
+#include "BnesBrowser/browser/ui/toolbar/app_menu_icons.h"
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/containers/map_util.h"
 #include "base/no_destructor.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "ui/base/models/image_model.h"
 #include "ui/color/color_id.h"

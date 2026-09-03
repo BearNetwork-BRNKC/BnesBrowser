@@ -8,14 +8,14 @@
 #include <string>
 
 #include "base/containers/fixed_flat_set.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "components/sessions/core/serialized_navigation_entry.h"
 #include "content/public/common/url_constants.h"
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/session_utils.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/content/browser/session_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 #define GetSanitizedPageStateForPickle \

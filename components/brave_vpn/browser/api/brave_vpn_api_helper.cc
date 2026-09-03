@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
 
 #include <algorithm>
 #include <optional>
@@ -15,10 +15,10 @@
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_data_types.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_data_types.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/icu/source/i18n/unicode/timezone.h"
 

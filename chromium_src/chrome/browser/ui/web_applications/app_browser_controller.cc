@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/web_applications/app_browser_controller.h"
 
-#include "brave/browser/ui/brave_scheme_utils.h"
+#include "BnesBrowser/browser/ui/brave_scheme_utils.h"
 
 #define FormatUrlOrigin FormatUrlOrigin_ChromiumImpl
 #include <chrome/browser/ui/web_applications/app_browser_controller.cc>

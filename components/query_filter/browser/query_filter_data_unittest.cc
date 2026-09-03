@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/browser/query_filter_data.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_data.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/query_filter/common/features.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/brave_ads/browser/application_state/application_state_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/application_state_monitor.h"
 
 namespace brave_ads {
 

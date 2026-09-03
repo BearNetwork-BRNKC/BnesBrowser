@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/containers_settings_handler.h"
+#include "BnesBrowser/components/containers/core/browser/containers_settings_handler.h"
 
 #include <algorithm>
 #include <utility>
 
 #include "base/uuid.h"
-#include "brave/components/containers/core/browser/pref_names.h"
-#include "brave/components/containers/core/browser/prefs.h"
+#include "BnesBrowser/components/containers/core/browser/pref_names.h"
+#include "BnesBrowser/components/containers/core/browser/prefs.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/re2/src/re2/re2.h"
 

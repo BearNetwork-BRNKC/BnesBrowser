@@ -10,7 +10,7 @@
 
 #include "base/command_line.h"
 #include "base/strings/string_util.h"
-#include "brave/app_shim/test_launch_url.h"
+#include "BnesBrowser/app_shim/test_launch_url.h"
 #include "url/gurl.h"
 
 namespace {

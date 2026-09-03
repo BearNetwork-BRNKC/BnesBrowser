@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/user_engagement/conversions/conversions_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/conversions/conversions_observer.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace brave_ads {

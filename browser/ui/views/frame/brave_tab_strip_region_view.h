@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/callback_list.h"
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_controller.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_controller.h"
 #include "chrome/browser/ui/views/frame/horizontal_tab_strip_region_view.h"
 #include "components/prefs/pref_member.h"
 #include "ui/base/metadata/metadata_header_macros.h"

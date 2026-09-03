@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_WEBUI_EMAIL_ALIASES_EMAIL_ALIASES_PROMO_UI_H_
 #define BRAVE_BROWSER_UI_WEBUI_EMAIL_ALIASES_EMAIL_ALIASES_PROMO_UI_H_
 
-#include "brave/components/email_aliases/email_aliases.mojom.h"
+#include "BnesBrowser/components/email_aliases/email_aliases.mojom.h"
 #include "chrome/browser/ui/webui/constrained_web_dialog_ui.h"
 #include "content/public/browser/webui_config.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

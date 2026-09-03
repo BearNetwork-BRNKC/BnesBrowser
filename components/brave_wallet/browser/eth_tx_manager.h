@@ -12,15 +12,15 @@
 #include <vector>
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/eip1559_transaction.h"
-#include "brave/components/brave_wallet/browser/eth_block_tracker.h"
-#include "brave/components/brave_wallet/browser/eth_nonce_tracker.h"
-#include "brave/components/brave_wallet/browser/eth_pending_tx_tracker.h"
-#include "brave/components/brave_wallet/browser/eth_transaction.h"
-#include "brave/components/brave_wallet/browser/eth_tx_state_manager.h"
-#include "brave/components/brave_wallet/browser/tx_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/browser/eip1559_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_nonce_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_pending_tx_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
 
 namespace brave_wallet {
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_service_key_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_service_key_network_delegate_helper.h"
 
 #include <string>
 #include <string_view>
@@ -11,18 +11,18 @@
 
 #include "base/containers/fixed_flat_set.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_search/common/buildflags/buildflags.h"
-#include "brave/components/brave_service_keys/brave_service_key_utils.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/network_constants.h"
-#include "brave/components/update_client/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_service_keys/brave_service_key_utils.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/network_constants.h"
+#include "BnesBrowser/components/update_client/buildflags.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_request_headers.h"
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/brave_domains/urls.h"
+#include "BnesBrowser/brave_domains/urls.h"
 #endif
 
 namespace brave {

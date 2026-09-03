@@ -7,7 +7,7 @@ config("config") {
   # For our own public headers to be able to import the official public headers
   include_dirs = [
     "//ios/web_view/public",
-    "//brave/ios/web_view/public",
+    "//BnesBrowser/ios/web_view/public",
   ]
 }
 

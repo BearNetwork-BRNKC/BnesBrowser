@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_wallet/line_chart/line_chart_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/line_chart/line_chart_ui.h"
 
 #include <memory>
 #include <string>
 
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/components/line_chart_display/resources/grit/line_chart_display_generated_map.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/components/line_chart_display/resources/grit/line_chart_display_generated_map.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_ui_data_source.h"

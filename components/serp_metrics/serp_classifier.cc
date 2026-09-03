@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/serp_metrics/serp_classifier.h"
+#include "BnesBrowser/components/serp_metrics/serp_classifier.h"
 
 #include <memory>
 #include <string_view>
 
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
-#include "brave/components/serp_metrics/serp_classifier_utils.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/serp_metrics/serp_classifier_utils.h"
 #include "components/regional_capabilities/regional_capabilities_utils.h"
 #include "components/search_engines/search_terms_data.h"
 #include "components/search_engines/template_url.h"

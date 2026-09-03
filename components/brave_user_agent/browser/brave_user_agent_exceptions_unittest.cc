@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
 
 #include "base/files/file_util.h"
 #include "base/files/scoped_temp_dir.h"
 #include "base/task/current_thread.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
 #include "content/public/test/browser_task_environment.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/search_ads_header_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/search_ads_header_network_delegate_helper.h"
 
 #include <memory>
 #include <optional>
@@ -11,10 +11,10 @@
 #include <utility>
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/net/features.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/l10n/common/test/scoped_default_locale.h"
+#include "BnesBrowser/browser/net/features.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/l10n/common/test/scoped_default_locale.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/prefs/pref_service.h"
@@ -28,7 +28,7 @@
 #include "url/origin.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 using testing::Return;

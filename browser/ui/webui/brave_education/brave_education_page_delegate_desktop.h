@@ -7,8 +7,8 @@
 #define BRAVE_BROWSER_UI_WEBUI_BRAVE_EDUCATION_BRAVE_EDUCATION_PAGE_DELEGATE_DESKTOP_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/browser/ui/webui/brave_browser_command/brave_browser_command_handler.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/webui/brave_browser_command/brave_browser_command_handler.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "ui/base/window_open_disposition.h"
 #include "url/gurl.h"
 

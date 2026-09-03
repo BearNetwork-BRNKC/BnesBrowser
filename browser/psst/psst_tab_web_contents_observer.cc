@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
 
 #include <memory>
 #include <utility>
@@ -15,10 +15,10 @@
 #include "base/time/time.h"
 #include "base/timer/timer.h"
 #include "base/values.h"
-#include "brave/components/psst/core/browser/pref_names.h"
-#include "brave/components/psst/core/browser/psst_rule.h"
-#include "brave/components/psst/core/browser/psst_rule_registry.h"
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/browser/pref_names.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule_registry.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #include "components/prefs/pref_service.h"
 #include "components/variations/service/variations_service.h"
 #include "content/public/browser/browser_context.h"

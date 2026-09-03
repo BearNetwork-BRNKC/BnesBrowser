@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/tabs/public/tree_tab_node_tab_collection.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_tab_collection.h"
 
 #include <algorithm>
 #include <limits>
@@ -18,7 +18,7 @@
 #include "base/functional/bind.h"
 #include "base/logging.h"
 #include "base/types/to_address.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
 #include "components/tabs/public/split_tab_collection.h"
 #include "components/tabs/public/tab_group_tab_collection.h"
 #include "components/tabs/public/tab_interface.h"

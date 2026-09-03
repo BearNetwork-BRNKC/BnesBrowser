@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/common/ai_chat_urls.h"
+#include "BnesBrowser/components/ai_chat/core/common/ai_chat_urls.h"
 
 #include <string_view>
 
 #include "base/strings/strcat.h"
 #include "base/strings/string_util.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "url/gurl.h"
 
 namespace ai_chat {

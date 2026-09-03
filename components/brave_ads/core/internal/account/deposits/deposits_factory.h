@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/brave_ads/core/internal/account/deposits/deposit_interface.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposit_interface.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
 
 namespace brave_ads {
 

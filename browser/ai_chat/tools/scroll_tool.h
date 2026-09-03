@@ -7,8 +7,8 @@
 #define BRAVE_BROWSER_AI_CHAT_TOOLS_SCROLL_TOOL_H_
 
 #include "base/values.h"
-#include "brave/browser/ai_chat/content_agent_task_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/browser/ai_chat/content_agent_task_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
 #include "components/optimization_guide/proto/features/actions_data.pb.h"
 
 namespace ai_chat {

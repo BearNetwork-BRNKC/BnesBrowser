@@ -5,8 +5,8 @@
 
 #include "chrome/test/base/chrome_test_launcher.h"
 
-#include "brave/app/brave_main_delegate.h"
-#include "brave/utility/brave_content_utility_client.h"
+#include "BnesBrowser/app/brave_main_delegate.h"
+#include "BnesBrowser/utility/brave_content_utility_client.h"
 
 #define ChromeContentUtilityClient BraveContentUtilityClient
 #define ChromeMainDelegate BraveMainDelegate

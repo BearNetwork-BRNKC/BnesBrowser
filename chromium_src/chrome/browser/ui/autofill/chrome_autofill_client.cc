@@ -7,8 +7,8 @@
 
 #include "base/check_is_test.h"
 #include "base/memory/ptr_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/autofill/autofill_suggestion_controller_utils.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
@@ -25,8 +25,8 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/ui/email_aliases/email_aliases_controller.h"
-#include "brave/components/email_aliases/pref_names.h"
+#include "BnesBrowser/browser/ui/email_aliases/email_aliases_controller.h"
+#include "BnesBrowser/components/email_aliases/pref_names.h"
 #endif
 
 namespace autofill {

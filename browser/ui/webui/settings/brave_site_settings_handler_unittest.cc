@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_site_settings_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_site_settings_handler.h"
 
 #include <memory>
 #include <string>
 
 #include "base/values.h"
-#include "brave/components/brave_shields/core/common/brave_shield_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_utils.h"
 #include "chrome/browser/ui/webui/settings/site_settings_helper.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"

@@ -5,9 +5,9 @@
 
 #include "chrome/test/base/chrome_unit_test_suite.h"
 
-#include "brave/common/brave_content_client.h"
-#include "brave/common/resource_bundle_helper.h"
-#include "brave/test/base/testing_brave_browser_process.h"
+#include "BnesBrowser/common/brave_content_client.h"
+#include "BnesBrowser/common/resource_bundle_helper.h"
+#include "BnesBrowser/test/base/testing_brave_browser_process.h"
 #include "ui/base/resource/resource_bundle.h"
 
 #define InitSharedInstanceWithLocale(...)    \

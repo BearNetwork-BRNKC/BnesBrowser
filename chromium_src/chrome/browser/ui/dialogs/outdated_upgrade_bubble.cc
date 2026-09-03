@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/version_info/channel.h"
-#include "brave/components/constants/url_constants.h"  // for kDownloadBraveUrl
+#include "BnesBrowser/components/constants/url_constants.h"  // for kDownloadBraveUrl
 #include "chrome/common/channel_info.h"
 #include "content/public/browser/page_navigator.h"
 #include "url/gurl.h"

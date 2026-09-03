@@ -6,9 +6,9 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_TARGETING_USER_MODEL_USER_MODEL_INFO_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_TARGETING_USER_MODEL_USER_MODEL_INFO_H_
 
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/intent/intent_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/user_model/latent_interest/latent_interest_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/intent/intent_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/interest/interest_user_model_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/user_model/latent_interest/latent_interest_user_model_info.h"
 
 namespace brave_ads {
 

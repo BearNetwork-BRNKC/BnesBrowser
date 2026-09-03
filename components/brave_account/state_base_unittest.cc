@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/state_base.h"
+#include "BnesBrowser/components/brave_account/state_base.h"
 
 #include <memory>
 #include <utility>
@@ -15,12 +15,12 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/endpoint_client/json_test_endpoint_bodies.h"
-#include "brave/components/brave_account/endpoint_client/request_types.h"
-#include "brave/components/brave_account/endpoint_client/response.h"
-#include "brave/components/brave_account/endpoint_client/test_support.h"
-#include "brave/components/brave_account/prefs.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/json_test_endpoint_bodies.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_types.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/test_support.h"
+#include "BnesBrowser/components/brave_account/prefs.h"
 #include "components/os_crypt/async/browser/test_utils.h"
 #include "components/os_crypt/async/common/encryptor.h"
 #include "components/prefs/testing_pref_service.h"

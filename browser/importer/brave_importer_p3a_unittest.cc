@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/brave_importer_p3a.h"
+#include "BnesBrowser/browser/importer/brave_importer_p3a.h"
 
 #include "base/test/metrics/histogram_tester.h"
 #include "components/user_data_importer/common/importer_type.h"

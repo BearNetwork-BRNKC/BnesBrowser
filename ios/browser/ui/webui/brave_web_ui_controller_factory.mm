@@ -3,21 +3,21 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/brave_web_ui_controller_factory.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_web_ui_controller_factory.h"
 
 #include <memory>
 
 #include "base/feature_list.h"
 #include "base/memory/ptr_util.h"
 #include "base/no_destructor.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/ios/browser/ui/webui/brave_account/brave_account_ui_ios.h"
-#include "brave/ios/browser/ui/webui/skus/skus_internals_ui.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_account/brave_account_ui_ios.h"
+#include "BnesBrowser/ios/browser/ui/webui/skus/skus_internals_ui.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
@@ -28,25 +28,25 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/ios/browser/ui/webui/ads/ads_internals_ui.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/ios/browser/ui/webui/ads/ads_internals_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/ios/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/ios/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/ios/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/web_ui_constants.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/line_chart_ui.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/market_ui.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/nft_ui.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_ui.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/web_ui_constants.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/line_chart_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/market_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/nft_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_ui.h"
 #endif
 
 using web::WebUIIOS;

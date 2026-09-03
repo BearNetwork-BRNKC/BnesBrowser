@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 
 transpile_web_ui("opaque_ke") {
   resource_name = "opaque_ke"
@@ -16,11 +16,11 @@ transpile_web_ui("opaque_ke") {
       ] ]
 
   inputs = [
-    rebase_path("//brave/third_party/wasm/Cargo.lock"),
+    rebase_path("//BnesBrowser/third_party/wasm/Cargo.lock"),
     rebase_path("src/lib.rs"),
   ]
 
-  imports_from = [ "//brave/components/brave_account/resources/opaque_ke/" ]
+  imports_from = [ "//BnesBrowser/components/brave_account/resources/opaque_ke/" ]
 
   rust_packages = [ rebase_path("Cargo.toml") ]
 

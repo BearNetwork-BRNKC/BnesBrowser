@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/omnibox/browser/search_suggestions/query_check_utils.h"
+#include "BnesBrowser/components/omnibox/browser/search_suggestions/query_check_utils.h"
 
 #include <cmath>
 #include <string>
@@ -15,7 +15,7 @@
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_split.h"
-#include "brave/components/omnibox/browser/search_suggestions/query_check_constants.h"
+#include "BnesBrowser/components/omnibox/browser/search_suggestions/query_check_constants.h"
 #include "third_party/re2/src/re2/re2.h"
 #include "url/gurl.h"
 

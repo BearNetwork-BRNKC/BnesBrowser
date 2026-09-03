@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/brave_external_process_importer_host.h"
+#include "BnesBrowser/browser/importer/brave_external_process_importer_host.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/logging.h"
-#include "brave/browser/importer/brave_importer_p3a.h"
-#include "brave/browser/importer/extensions_import_helpers.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/importer/brave_importer_p3a.h"
+#include "BnesBrowser/browser/importer/extensions_import_helpers.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/importer/importer_lock_dialog.h"
 #include "components/user_data_importer/common/importer_data_types.h"

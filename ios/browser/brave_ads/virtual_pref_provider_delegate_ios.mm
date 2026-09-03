@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/brave_ads/virtual_pref_provider_delegate_ios.h"
+#include "BnesBrowser/ios/browser/brave_ads/virtual_pref_provider_delegate_ios.h"
 
 #include "base/strings/utf_string_conversions.h"
 #include "base/version_info/channel.h"

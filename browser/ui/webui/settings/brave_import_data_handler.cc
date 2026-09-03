@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_import_data_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_import_data_handler.h"
 
 #include <memory>
 #include <string>
@@ -11,7 +11,7 @@
 
 #include "base/check.h"
 #include "base/logging.h"
-#include "brave/browser/importer/brave_external_process_importer_host.h"
+#include "BnesBrowser/browser/importer/brave_external_process_importer_host.h"
 #include "chrome/browser/importer/importer_list.h"
 #include "chrome/browser/importer/profile_writer.h"
 #include "chrome/browser/profiles/profile.h"
@@ -24,7 +24,7 @@
 #include "base/files/file_path.h"
 #include "base/files/file_util.h"
 #include "base/task/thread_pool.h"
-#include "brave/browser/ui/webui/settings/brave_full_disk_access_confirm_dialog_delegate.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_full_disk_access_confirm_dialog_delegate.h"
 #include "chrome/browser/ui/browser_window/public/global_browser_collection.h"
 #include "chrome/browser/ui/tab_modal_confirm_dialog.h"
 #endif  // BUILDFLAG(IS_MAC)

@@ -6,8 +6,8 @@
 #include <utility>
 
 #include "base/notreached.h"
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_page/wallet_page_handler.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_page/wallet_page_handler.h"
 #include "content/public/browser/web_ui.h"
 #include "content/public/browser/web_ui_controller.h"
 

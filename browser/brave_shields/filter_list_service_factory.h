@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/brave_shields/core/common/filter_list.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/filter_list.mojom.h"
 #include "components/keyed_service/content/browser_context_keyed_service_factory.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "content/public/browser/browser_context.h"

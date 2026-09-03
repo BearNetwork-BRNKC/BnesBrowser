@@ -12,13 +12,13 @@
 
 #include "base/containers/span.h"
 #include "base/memory/raw_span.h"
-#include "brave/components/brave_news/browser/feed_fetcher.h"
-#include "brave/components/brave_news/browser/feed_sampling.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/browser/signal_calculator.h"
-#include "brave/components/brave_news/browser/topics_fetcher.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/signal_calculator.h"
+#include "BnesBrowser/components/brave_news/browser/topics_fetcher.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace brave_news {

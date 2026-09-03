@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_handler.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/functional/callback.h"
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/permission_utils.h"
-#include "brave/components/permissions/contexts/brave_wallet_permission_context.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/permissions/contexts/brave_wallet_permission_context.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry_id.h"

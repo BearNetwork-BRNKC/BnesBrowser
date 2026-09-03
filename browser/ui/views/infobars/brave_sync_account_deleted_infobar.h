@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/browser/ui/views/infobars/brave_confirm_infobar.h"
+#include "BnesBrowser/browser/ui/views/infobars/brave_confirm_infobar.h"
 
 // Customized BraveConfirmInfoBar:
 //   "Text _link_                     [ok_button]"

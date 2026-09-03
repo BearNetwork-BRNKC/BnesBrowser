@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_opaque_browser_frame_view.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
-#include "brave/browser/ui/views/frame/brave_window_frame_graphic.h"
-#include "brave/browser/ui/views/frame/focus_mode_top_overlay.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_window_frame_graphic.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_top_overlay.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

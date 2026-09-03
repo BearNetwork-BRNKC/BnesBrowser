@@ -9,9 +9,9 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_vpn/browser/connection/connection_api_impl.h"
-#include "brave/components/brave_vpn/browser/connection/wireguard/credentials/brave_vpn_wireguard_profile_credentials.h"
-#include "brave/components/brave_vpn/common/wireguard/wireguard_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/connection_api_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/wireguard/credentials/brave_vpn_wireguard_profile_credentials.h"
+#include "BnesBrowser/components/brave_vpn/common/wireguard/wireguard_utils.h"
 
 namespace brave_vpn {
 

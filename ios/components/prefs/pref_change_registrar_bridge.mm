@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/components/prefs/pref_change_registrar_bridge.h"
+#include "BnesBrowser/ios/components/prefs/pref_change_registrar_bridge.h"
 
 #include <memory>
 #include <string>
 
 #include "base/apple/foundation_util.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/components/prefs/pref_service_bridge_impl.h"
+#include "BnesBrowser/ios/components/prefs/pref_service_bridge_impl.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"
 

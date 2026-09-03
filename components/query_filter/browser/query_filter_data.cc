@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/browser/query_filter_data.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_data.h"
 
 #include "base/feature_list.h"
 #include "base/json/json_reader.h"
 #include "base/logging.h"
 #include "base/no_destructor.h"
 #include "base/values.h"
-#include "brave/components/query_filter/common/features.h"
+#include "BnesBrowser/components/query_filter/common/features.h"
 
 namespace query_filter {
 

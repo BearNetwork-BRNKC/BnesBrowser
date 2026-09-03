@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/extensions/manifest_v2/brave_extensions_manifest_v2_installer.h"
+#include "BnesBrowser/browser/extensions/manifest_v2/brave_extensions_manifest_v2_installer.h"
 
 #include <string>
 #include <string_view>
@@ -16,9 +16,9 @@
 #include "base/strings/escape.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/brave_services_key_helper.h"
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/brave_services_key_helper.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 #include "chrome/browser/extensions/extension_install_prompt.h"
 #include "chrome/browser/extensions/updater/extension_updater.h"
 #include "chrome/browser/profiles/profile.h"

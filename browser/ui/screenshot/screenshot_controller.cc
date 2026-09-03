@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/screenshot/screenshot_controller.h"
+#include "BnesBrowser/browser/ui/screenshot/screenshot_controller.h"
 
 #include <algorithm>
 #include <utility>
@@ -18,9 +18,9 @@
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/browser/ui/screenshot/devtools_full_page_extractor.h"
-#include "brave/components/screenshot/content/pdf_utils.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/screenshot/devtools_full_page_extractor.h"
+#include "BnesBrowser/components/screenshot/content/pdf_utils.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/download/download_prefs.h"
 #include "chrome/browser/image_editor/screenshot_flow.h"
 #include "components/viz/common/frame_sinks/copy_output_result.h"
@@ -39,7 +39,7 @@
 #include "ui/shell_dialogs/selected_file_info.h"
 
 #if BUILDFLAG(ENABLE_PRINT_PREVIEW)
-#include "brave/browser/screenshot/print_preview_extractor.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor.h"
 #endif
 
 namespace screenshot {

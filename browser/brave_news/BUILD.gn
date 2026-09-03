@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 
 assert(enable_brave_news)
 
@@ -17,10 +17,10 @@ source_set("brave_news") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_news/browser",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_news/common:mojom",
-    "//brave/components/brave_news/common/buildflags",
+    "//BnesBrowser/components/brave_news/browser",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_news/common:mojom",
+    "//BnesBrowser/components/brave_news/common/buildflags",
     "//components/keyed_service/content",
     "//components/keyed_service/core",
     "//content/public/browser",
@@ -30,7 +30,7 @@ source_set("brave_news") {
 }
 
 source_set("impl") {
-  visibility = [ "//brave/browser:core" ]
+  visibility = [ "//BnesBrowser/browser:core" ]
 
   sources = [
     "brave_news_controller_factory.cc",
@@ -47,12 +47,12 @@ source_set("impl") {
   deps = [
     ":brave_news",
     "//base",
-    "//brave/browser:browser_process",
-    "//brave/components/brave_news/browser",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_news/common:rss_link_reader_mojom",
-    "//brave/components/brave_policy:policy_initialization_waiter",
-    "//brave/components/brave_shields/core/browser",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/brave_news/browser",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_news/common:rss_link_reader_mojom",
+    "//BnesBrowser/components/brave_policy:policy_initialization_waiter",
+    "//BnesBrowser/components/brave_shields/core/browser",
     "//chrome/browser/content_settings:content_settings_factory",
     "//chrome/browser/favicon",
     "//chrome/browser/history",
@@ -76,7 +76,7 @@ source_set("impl") {
     # //chrome/browser/ui/browser_window.
     sources += [ "brave_news_controller_delegate_impl.cc" ]
     deps += [
-      "//brave/components/constants",
+      "//BnesBrowser/components/constants",
       "//chrome/browser/ui/browser_window",
       "//chrome/browser/ui/navigator",
       "//chrome/browser/ui/side_panel",
@@ -87,7 +87,7 @@ source_set("impl") {
   if (is_android) {
     # brave_news_controller_factory_android.cc includes the generated
     # BraveNewsControllerFactory_jni.h.
-    deps += [ "//brave/build/android:jni_headers" ]
+    deps += [ "//BnesBrowser/build/android:jni_headers" ]
   }
 }
 
@@ -103,10 +103,10 @@ source_set("browser_tests") {
 
     deps = [
       ":brave_news",
-      "//brave/components/brave_news/browser",
-      "//brave/components/brave_news/common",
-      "//brave/components/brave_news/common:mojom",
-      "//brave/components/constants",
+      "//BnesBrowser/components/brave_news/browser",
+      "//BnesBrowser/components/brave_news/common",
+      "//BnesBrowser/components/brave_news/common:mojom",
+      "//BnesBrowser/components/constants",
       "//chrome/browser",
       "//chrome/browser:browser_process",
       "//chrome/browser/profiles",

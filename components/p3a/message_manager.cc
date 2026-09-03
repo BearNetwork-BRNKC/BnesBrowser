@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/message_manager.h"
+#include "BnesBrowser/components/p3a/message_manager.h"
 
 #include <optional>
 #include <ranges>
@@ -14,16 +14,16 @@
 #include "base/json/values_util.h"
 #include "base/logging.h"
 #include "base/strings/strcat.h"
-#include "brave/components/p3a/constellation_helper.h"
-#include "brave/components/p3a/constellation_log_store.h"
-#include "brave/components/p3a/features.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/metric_names.h"
-#include "brave/components/p3a/p3a_config.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a/rotation_scheduler.h"
-#include "brave/components/p3a/scheduler.h"
-#include "brave/components/p3a/uploader.h"
+#include "BnesBrowser/components/p3a/constellation_helper.h"
+#include "BnesBrowser/components/p3a/constellation_log_store.h"
+#include "BnesBrowser/components/p3a/features.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/metric_names.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/rotation_scheduler.h"
+#include "BnesBrowser/components/p3a/scheduler.h"
+#include "BnesBrowser/components/p3a/uploader.h"
 #include "components/metrics/log_store.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/tokens/test/token_generator_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/test/token_generator_test_util.h"
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/test/fake_token_generator.h"
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/test/fake_token_generator.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_test_util.h"
 
 namespace brave_ads::test {
 

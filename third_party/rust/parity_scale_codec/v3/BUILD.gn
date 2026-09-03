@@ -12,28 +12,28 @@ cargo_crate("lib") {
   crate_name = "parity_scale_codec"
   epoch = "3"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/bit_vec.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/btree_utils.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/codec.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/compact.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/const_encoded_len.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/counted_input.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/decode_all.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/decode_finished.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/depth_limit.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/encode_append.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/encode_like.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/generic_array.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/joiner.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/keyedvec.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/max_encoded_len.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/mem_tracking.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/bit_vec.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/btree_utils.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/codec.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/compact.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/const_encoded_len.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/counted_input.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/decode_all.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/decode_finished.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/depth_limit.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/encode_append.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/encode_like.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/generic_array.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/joiner.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/keyedvec.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/max_encoded_len.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/mem_tracking.rs",
   ]
-  inputs = [ "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/../README.md" ]
+  inputs = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/src/../README.md" ]
 
   build_native_rust_unit_tests = false
   edition = "2021"
@@ -47,24 +47,24 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/arrayvec/v0_7:lib",
-    "//brave/third_party/rust/byte_slice_cast/v1:lib",
-    "//brave/third_party/rust/const_format/v0_2:lib",
-    "//brave/third_party/rust/impl_trait_for_tuples/v0_2:lib",
-    "//brave/third_party/rust/serde/v1:lib",
+    "//BnesBrowser/third_party/rust/arrayvec/v0_7:lib",
+    "//BnesBrowser/third_party/rust/byte_slice_cast/v1:lib",
+    "//BnesBrowser/third_party/rust/const_format/v0_2:lib",
+    "//BnesBrowser/third_party/rust/impl_trait_for_tuples/v0_2:lib",
+    "//BnesBrowser/third_party/rust/serde/v1:lib",
   ]
-  build_deps = [ "//brave/third_party/rust/rustversion/v1:buildrs_support" ]
+  build_deps = [ "//BnesBrowser/third_party/rust/rustversion/v1:buildrs_support" ]
   features = [
     "chain-error",
     "default",
     "serde",
     "std",
   ]
-  build_root = "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/build.rs"
-  build_sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/build.rs" ]
+  build_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/build.rs"
+  build_sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/parity-scale-codec-v3/build.rs" ]
   rustenv = []
   rustflags = []
-  build_deps -= [ "//brave/third_party/rust/rustversion/v1:buildrs_support" ]
+  build_deps -= [ "//BnesBrowser/third_party/rust/rustversion/v1:buildrs_support" ]
 
   #####################################################################
   # Tweaking which GN `config`s apply to this target.

@@ -11,9 +11,9 @@
 #include <vector>
 
 #include "base/types/optional_ref.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
 
 namespace brave_wallet::orchard {
 

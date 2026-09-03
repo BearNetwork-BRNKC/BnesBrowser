@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/password/importer/brave_password_importer.h"
+#include "BnesBrowser/ios/browser/api/password/importer/brave_password_importer.h"
 
 #include "base/apple/foundation_util.h"
 #include "base/base_paths.h"
@@ -13,7 +13,7 @@
 #include "base/strings/sys_string_conversions.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/password_manager/core/browser/import/safari_password_importer.h"
+#include "BnesBrowser/components/password_manager/core/browser/import/safari_password_importer.h"
 #include "components/keyed_service/core/service_access_type.h"
 #include "components/password_manager/core/browser/password_store/password_store_interface.h"
 #include "components/password_manager/core/browser/ui/saved_passwords_presenter.h"

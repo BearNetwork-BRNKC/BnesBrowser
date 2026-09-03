@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_resolve_transaction_status_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_resolve_transaction_status_task.h"
 
 #include <optional>
 #include <utility>
@@ -11,7 +11,7 @@
 
 #include "base/check.h"
 #include "base/time/time.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_tx_meta.h"
 
 namespace brave_wallet {
 

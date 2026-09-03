@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
 
-#include "brave/components/brave_rewards/core/rewards_flags.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_flags.h"
 
 namespace brave_ads::test {
 

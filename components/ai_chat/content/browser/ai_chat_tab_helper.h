@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/ai_chat/content/browser/associated_web_contents_content.h"
+#include "BnesBrowser/components/ai_chat/content/browser/associated_web_contents_content.h"
 #include "content/public/browser/navigation_handle.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_contents_observer.h"

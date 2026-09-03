@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar.h"
 
 #include <ostream>
 #include <string_view>
@@ -12,9 +12,9 @@
 #include "base/files/file_path.h"
 #include "base/logging.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/browser/component_updater/component_info.h"
-#include "brave/components/brave_ads/browser/component_updater/component_util.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/component_info.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/component_util.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component_registrar_delegate.h"
 
 namespace brave_ads {
 

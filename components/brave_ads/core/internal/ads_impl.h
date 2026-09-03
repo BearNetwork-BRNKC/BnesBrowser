@@ -11,12 +11,12 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
-#include "brave/components/brave_ads/core/internal/ads_initializer.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
-#include "brave/components/brave_ads/core/public/ads.h"
-#include "brave/components/brave_ads/core/public/common/functional/once_closure_task_queue.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_generator_interface.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_initializer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-forward.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/functional/once_closure_task_queue.h"
 
 namespace base {
 class Time;

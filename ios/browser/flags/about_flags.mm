@@ -5,22 +5,22 @@
 
 // This file is included into //ios/chrome/browser/flags/about_flags.mm
 
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/brave_component_updater/browser/features.h"
-#include "brave/components/brave_origin/features.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_sync/features.h"
-#include "brave/components/brave_user_agent/common/features.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/de_amp/common/features.h"
-#include "brave/components/debounce/core/common/features.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/ios/browser/api/translate/features.h"
-#include "brave/ios/browser/playlist/features.h"
-#include "brave/ios/browser/ui/quick_view/features.h"
-#include "brave/ios/browser/ui/web_view/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/features.h"
+#include "BnesBrowser/components/brave_origin/features.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_sync/features.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/de_amp/common/features.h"
+#include "BnesBrowser/components/debounce/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/ios/browser/api/translate/features.h"
+#include "BnesBrowser/ios/browser/playlist/features.h"
+#include "BnesBrowser/ios/browser/ui/quick_view/features.h"
+#include "BnesBrowser/ios/browser/ui/web_view/features.h"
 #include "build/build_config.h"
 #include "components/webui/flags/feature_entry.h"
 #include "components/webui/flags/feature_entry_macros.h"
@@ -28,8 +28,8 @@
 #include "net/base/features.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/features.h"
-#include "brave/ios/browser/brave_wallet/features.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
+#include "BnesBrowser/ios/browser/brave_wallet/features.h"
 #endif
 
 #define EXPAND_FEATURE_ENTRIES(...) __VA_ARGS__,

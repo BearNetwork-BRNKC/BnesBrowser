@@ -12,8 +12,8 @@
 #include "base/memory/weak_ptr.h"
 #include "base/process/process.h"
 #include "base/sequence_checker.h"
-#include "brave/components/child_process_monitor/child_process_monitor.h"
-#include "brave/components/services/tor/public/interfaces/tor.mojom.h"
+#include "BnesBrowser/components/child_process_monitor/child_process_monitor.h"
+#include "BnesBrowser/components/services/tor/public/interfaces/tor.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 

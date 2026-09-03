@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_LOCATION_BAR_MODEL_DELEGATE_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_LOCATION_BAR_MODEL_DELEGATE_H_
 
-#include "brave/browser/ui/toolbar/brave_location_bar_model_delegate.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_location_bar_model_delegate.h"
 
 #define ChromeLocationBarModelDelegate BraveLocationBarModelDelegate
 

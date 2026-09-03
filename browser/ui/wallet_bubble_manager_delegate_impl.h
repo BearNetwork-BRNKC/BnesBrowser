@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/brave_wallet/wallet_bubble_manager_delegate.h"
+#include "BnesBrowser/browser/ui/brave_wallet/wallet_bubble_manager_delegate.h"
 #include "url/gurl.h"
 
 namespace views {

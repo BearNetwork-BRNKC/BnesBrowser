@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/web/reader_mode/reader_mode_javascript_feature.h"
+#include "BnesBrowser/ios/browser/web/reader_mode/reader_mode_javascript_feature.h"
 
 #include "base/functional/bind.h"
 #include "base/time/time.h"

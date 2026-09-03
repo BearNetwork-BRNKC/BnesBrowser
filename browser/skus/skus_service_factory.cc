@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/components/skus/browser/skus_service_impl.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"

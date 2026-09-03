@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 
-#include "brave/components/brave_news/common/locales_helper.h"
-#include "brave/components/brave_news/common/p3a_pref_names.h"
-#include "brave/components/p3a_utils/feature_usage.h"
+#include "BnesBrowser/components/brave_news/common/locales_helper.h"
+#include "BnesBrowser/components/brave_news/common/p3a_pref_names.h"
+#include "BnesBrowser/components/p3a_utils/feature_usage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

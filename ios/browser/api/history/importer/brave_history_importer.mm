@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/history/importer/brave_history_importer.h"
+#include "BnesBrowser/ios/browser/api/history/importer/brave_history_importer.h"
 
 #include <vector>
 
@@ -18,7 +18,7 @@
 #include "base/strings/sys_string_conversions.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/ios/browser/api/history/importer/history_json_reader.h"
+#include "BnesBrowser/ios/browser/api/history/importer/history_json_reader.h"
 #include "components/history/core/browser/history_service.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/keyed_service/core/service_access_type.h"

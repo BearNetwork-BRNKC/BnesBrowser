@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/p3a/brave_p3a_utils.h"
+#include "BnesBrowser/ios/browser/api/p3a/brave_p3a_utils.h"
 
 #include "base/callback_list.h"
 #include "base/memory/raw_ptr.h"
@@ -12,9 +12,9 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
 #include "components/prefs/pref_service.h"
 
 P3AMetricLogType const P3AMetricLogTypeSlow =

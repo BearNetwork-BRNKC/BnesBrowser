@@ -7,7 +7,7 @@
 #define BRAVE_SERVICES_PRINTING_PDF_TO_BITMAP_CONVERTER_H_
 
 #include "base/memory/read_only_shared_memory_region.h"
-#include "brave/services/printing/public/mojom/pdf_to_bitmap_converter.mojom.h"
+#include "BnesBrowser/services/printing/public/mojom/pdf_to_bitmap_converter.mojom.h"
 
 namespace printing {
 

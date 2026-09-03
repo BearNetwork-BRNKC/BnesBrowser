@@ -12,21 +12,21 @@ cargo_crate("buildrs_support") {
   crate_name = "rustversion"
   epoch = "1"
   crate_type = "proc-macro"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/attr.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/bound.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/constfn.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/date.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/expand.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/expr.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/iter.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/release.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/time.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/token.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/version.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/attr.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/bound.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/constfn.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/date.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/expand.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/expr.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/iter.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/release.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/time.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/token.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/src/version.rs",
   ]
   inputs = []
 
@@ -41,8 +41,8 @@ cargo_crate("buildrs_support") {
 
   allow_unsafe = false
 
-  build_root = "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/build/build.rs"
-  build_sources = [ "//brave/third_party/rust/chromium_crates_io/vendor/rustversion-v1/build/build.rs" ]
+  build_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/build/build.rs"
+  build_sources = [ "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/rustversion-v1/build/build.rs" ]
   rustenv = []
   rustflags = []
 

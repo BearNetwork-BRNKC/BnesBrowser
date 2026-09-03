@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/post_challenges.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/post_challenges.h"
 
 #include <utility>
 
 #include "base/json/json_reader.h"
 #include "base/json/json_writer.h"
-#include "brave/components/brave_rewards/core/engine/util/callback_helpers.h"
-#include "brave/components/brave_rewards/core/engine/util/environment_config.h"
-#include "brave/components/brave_rewards/core/engine/util/request_signer.h"
-#include "brave/components/brave_rewards/core/engine/util/url_loader.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/callback_helpers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/environment_config.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/request_signer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/url_loader.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet.h"
 #include "net/http/http_status_code.h"
 
 namespace brave_rewards::internal::endpoints {

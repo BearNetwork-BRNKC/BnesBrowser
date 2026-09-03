@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/local_state_pref_registry_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/local_state_pref_registry_test_util.h"
 
 #include <utility>
 
@@ -11,8 +11,8 @@
 #include "base/json/values_util.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/local_state_pref_storage_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/pref_value_test_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/local_state_pref_storage_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/pref_value_test_info.h"
 
 namespace brave_ads::test {
 

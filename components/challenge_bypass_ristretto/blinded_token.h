@@ -12,7 +12,7 @@
 #include "base/memory/ref_counted.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/types/expected.h"
-#include "brave/components/challenge_bypass_ristretto/rust/cxx/src/lib.rs.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/rust/cxx/src/lib.rs.h"
 
 namespace challenge_bypass_ristretto {
 

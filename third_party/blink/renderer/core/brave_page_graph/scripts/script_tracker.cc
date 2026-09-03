@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/scripts/script_tracker.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/scripts/script_tracker.h"
 
 #include <utility>
 
@@ -11,9 +11,9 @@
 #include "base/debug/alias.h"
 #include "base/no_destructor.h"
 #include "base/notreached.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_script_local.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_script_local.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/page_graph_context.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 #include "third_party/blink/renderer/platform/wtf/hash_map.h"
 
 namespace brave_page_graph {

@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/files/file_path.h"
-#include "brave/components/brave_origin/profile_id.h"
-#include "brave/components/brave_policy/brave_profile_policy_provider.h"
+#include "BnesBrowser/components/brave_origin/profile_id.h"
+#include "BnesBrowser/components/brave_policy/brave_profile_policy_provider.h"
 #include "components/policy/core/common/configuration_policy_provider.h"
 
 namespace brave_policy {

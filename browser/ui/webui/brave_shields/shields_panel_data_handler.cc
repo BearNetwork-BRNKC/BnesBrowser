@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_shields/shields_panel_data_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_shields/shields_panel_data_handler.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/ui/webui/webcompat_reporter/webcompat_reporter_dialog.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/ui/webui/webcompat_reporter/webcompat_reporter_dialog.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_web_ui_controller.h"
 #include "components/favicon/core/favicon_service.h"

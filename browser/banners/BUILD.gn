@@ -12,7 +12,7 @@ if (!is_android) {
     sources = [ "app_banner_manager_desktop_browsertest.cc" ]
 
     deps = [
-      "//brave/components/constants",
+      "//BnesBrowser/components/constants",
       "//chrome/browser",
       "//chrome/browser/banners:test_support",
       "//chrome/test:test_support",

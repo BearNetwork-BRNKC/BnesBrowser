@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_WEBUI_SETTINGS_BRAVE_CLEAR_BROWSING_DATA_HANDLER_H_
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 #include "chrome/browser/ui/webui/settings/settings_clear_browsing_data_handler.h"
 #include "components/prefs/pref_change_registrar.h"
 

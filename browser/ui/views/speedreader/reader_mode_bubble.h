@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_SPEEDREADER_READER_MODE_BUBBLE_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/speedreader/speedreader_bubble_view.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_bubble_view.h"
 #include "chrome/browser/ui/views/location_bar/location_bar_bubble_delegate_view.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 

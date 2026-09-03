@@ -9,7 +9,7 @@
 #include <memory>
 #include <string>
 
-#include "brave/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom-forward.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom-forward.h"
 #include "chrome/common/webui_url_constants.h"
 #include "content/public/browser/web_ui_controller.h"
 #include "content/public/browser/webui_config.h"

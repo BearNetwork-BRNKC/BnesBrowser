@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/browser/brave_news/brave_news_tab_helper.h"
+#include "BnesBrowser/browser/brave_news/brave_news_tab_helper.h"
 #include "ui/views/controls/label.h"
 #include "ui/views/view.h"
 

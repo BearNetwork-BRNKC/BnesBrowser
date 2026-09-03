@@ -11,8 +11,8 @@
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_account/endpoint_client/request_handle.h"
-#include "brave/components/brave_account/endpoints/auth_validate.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/request_handle.h"
+#include "BnesBrowser/components/brave_account/endpoints/auth_validate.h"
 
 namespace brave_account {
 

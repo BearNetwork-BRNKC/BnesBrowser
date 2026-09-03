@@ -9,7 +9,7 @@
 
 #include "base/check.h"
 #include "base/check_is_test.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 #define BRAVE_PERMISSION_REQUEST_MANAGER_GET_REQUESTING_ORIGIN \
   if (!ShouldBeGrouppedInRequests(request.get()))
@@ -26,7 +26,7 @@
 #include "url/origin.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/permission_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/permission_utils.h"
 #endif
 
 namespace permissions {

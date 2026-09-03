@@ -15,7 +15,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
 #include "components/history_embeddings/core/history_embeddings_search.h"
 
 class Profile;

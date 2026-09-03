@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/local_ai/core/on_device_speech_models_component_installer.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_component_installer.h"
 
 #include <memory>
 
@@ -18,9 +18,9 @@
 #include "base/threading/thread_restrictions.h"
 #include "base/values.h"
 #include "base/version.h"
-#include "brave/components/brave_component_updater/browser/mock_on_demand_updater.h"
-#include "brave/components/local_ai/core/features.h"
-#include "brave/components/local_ai/core/on_device_speech_models_state.h"
+#include "BnesBrowser/components/brave_component_updater/browser/mock_on_demand_updater.h"
+#include "BnesBrowser/components/local_ai/core/features.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_state.h"
 #include "components/component_updater/component_updater_paths.h"
 #include "components/component_updater/mock_component_updater_service.h"
 #include "testing/gmock/include/gmock/gmock.h"

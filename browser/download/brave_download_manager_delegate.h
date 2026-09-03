@@ -9,7 +9,7 @@
 #include <stdint.h>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/image_metadata_stripper/image_metadata_stripper.h"
+#include "BnesBrowser/components/image_metadata_stripper/image_metadata_stripper.h"
 #include "chrome/browser/download/chrome_download_manager_delegate.h"
 
 class Profile;

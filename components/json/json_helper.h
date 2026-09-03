@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/json/json_export.h"
+#include "BnesBrowser/components/json/json_export.h"
 
 namespace json {
 

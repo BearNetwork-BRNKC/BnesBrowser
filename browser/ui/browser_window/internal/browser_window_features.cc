@@ -11,24 +11,24 @@
 #include "base/memory/ptr_util.h"
 #include "base/notreached.h"
 #include "base/unguessable_token.h"
-#include "brave/browser/ui/brave_browser_window.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/screenshot/screenshot_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/tabs/tree_tab_session_manager.h"
-#include "brave/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
-#include "brave/browser/ui/views/page_info/brave_shields_ui_contents_cache.h"
-#include "brave/browser/ui/views/toolbar/screenshot_preview_dialog.h"
-#include "brave/browser/ui/views/workspaces/workspaces_bubble_controller.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/brave_browser_window.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/screenshot/screenshot_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_session_manager.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_non_client_hit_test_helper.h"
+#include "BnesBrowser/browser/ui/views/page_info/brave_shields_ui_contents_cache.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_preview_dialog.h"
+#include "BnesBrowser/browser/ui/views/workspaces/workspaces_bubble_controller.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/tab_group_sync/tab_group_sync_service_factory.h"
 #include "chrome/browser/ui/browser.h"
@@ -39,16 +39,16 @@
 #include "ui/gfx/native_ui_types.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/ui/brave_rewards/rewards_panel_coordinator.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_rewards/rewards_panel_coordinator.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/ui/brave_vpn/brave_vpn_controller.h"
+#include "BnesBrowser/browser/ui/brave_vpn/brave_vpn_controller.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PRINT_PREVIEW)
-#include "brave/browser/screenshot/print_preview_extractor_factory.h"
+#include "BnesBrowser/browser/screenshot/print_preview_extractor_factory.h"
 #include "chrome/browser/ui/webui/print_preview/print_preview_ui.h"
 #endif
 
@@ -64,20 +64,20 @@ class BraveVPNController {};
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/email_aliases/email_aliases_service_factory.h"
-#include "brave/browser/ui/email_aliases/email_aliases_controller.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/browser/email_aliases/email_aliases_service_factory.h"
+#include "BnesBrowser/browser/ui/email_aliases/email_aliases_controller.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
-#include "brave/components/playlist/core/browser/utils.h"
+#include "BnesBrowser/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
+#include "BnesBrowser/components/playlist/core/browser/utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_tab_transfer_bridge.h"
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/views/side_panel/ai_chat/ai_chat_side_panel_tab_transfer_bridge.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 BrowserWindowFeatures::BrowserWindowFeatures() = default;

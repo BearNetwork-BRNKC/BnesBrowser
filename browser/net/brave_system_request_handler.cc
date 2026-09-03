@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_system_request_handler.h"
+#include "BnesBrowser/browser/net/brave_system_request_handler.h"
 
-#include "brave/browser/net/brave_block_safebrowsing_urls.h"
-#include "brave/browser/net/brave_common_static_redirect_network_delegate_helper.h"
-#include "brave/browser/net/brave_speech_to_text_network_delegate_helper.h"
-#include "brave/browser/net/brave_static_redirect_network_delegate_helper.h"
-#include "brave/components/constants/brave_services_key.h"
-#include "brave/components/constants/brave_services_key_helper.h"
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/browser/net/brave_block_safebrowsing_urls.h"
+#include "BnesBrowser/browser/net/brave_common_static_redirect_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_speech_to_text_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_static_redirect_network_delegate_helper.h"
+#include "BnesBrowser/components/constants/brave_services_key.h"
+#include "BnesBrowser/components/constants/brave_services_key_helper.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 #include "extensions/common/url_pattern.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "url/gurl.h"

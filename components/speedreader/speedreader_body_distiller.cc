@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/speedreader_body_distiller.h"
+#include "BnesBrowser/components/speedreader/speedreader_body_distiller.h"
 
 #include <memory>
 #include <string>
@@ -16,10 +16,10 @@
 #include "base/functional/bind.h"
 #include "base/memory/weak_ptr.h"
 #include "base/strings/string_util.h"
-#include "brave/components/speedreader/speedreader_delegate.h"
-#include "brave/components/speedreader/speedreader_rewriter_service.h"
-#include "brave/components/speedreader/speedreader_service.h"
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/components/speedreader/speedreader_delegate.h"
+#include "BnesBrowser/components/speedreader/speedreader_rewriter_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 #include "services/network/public/mojom/url_response_head.mojom.h"
 
 namespace speedreader {

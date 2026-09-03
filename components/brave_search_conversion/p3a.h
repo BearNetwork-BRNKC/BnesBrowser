@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_SEARCH_CONVERSION_P3A_H_
 #define BRAVE_COMPONENTS_BRAVE_SEARCH_CONVERSION_P3A_H_
 
-#include "brave/components/brave_search_conversion/types.h"
+#include "BnesBrowser/components/brave_search_conversion/types.h"
 
 class PrefRegistrySimple;
 class PrefService;

@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/ios/browser/ai_chat_tab_helper.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/ai_chat_tab_helper.h"
 
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/ai_chat/core/browser/associated_content_driver.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/ios/browser/ai_chat_associated_content_page_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_driver.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/ai_chat_associated_content_page_fetcher.h"
 #include "ios/web/public/browser_state.h"
 #include "ios/web/public/navigation/navigation_context.h"
 #include "ios/web/public/navigation/navigation_item.h"

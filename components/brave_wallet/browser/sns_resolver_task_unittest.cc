@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/sns_resolver_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/sns_resolver_task.h"
 
 #include <string>
 #include <utility>
 
 #include "base/test/gtest_util.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

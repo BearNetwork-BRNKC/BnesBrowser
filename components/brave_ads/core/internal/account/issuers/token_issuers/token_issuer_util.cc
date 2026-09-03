@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/issuers/token_issuers/token_issuer_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/token_issuers/token_issuer_util.h"
 
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_info.h"
-#include "brave/components/brave_ads/core/internal/account/issuers/issuers_util.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/issuers_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
 
 namespace brave_ads {
 

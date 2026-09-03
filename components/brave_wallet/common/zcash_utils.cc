@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 #include <algorithm>
 #include <array>
@@ -19,14 +19,14 @@
 #include "base/numerics/safe_conversions.h"
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/common/bech32.h"
-#include "brave/components/brave_wallet/common/btc_like_serializer_stream.h"
-#include "brave/components/brave_wallet/common/encoding_utils.h"
-#include "brave/components/brave_wallet/common/f4_jumble.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
-#include "brave/components/brave_wallet/common/value_conversion_utils.h"
-#include "brave/third_party/bitcoin-core/src/src/base58.h"
+#include "BnesBrowser/components/brave_wallet/common/bech32.h"
+#include "BnesBrowser/components/brave_wallet/common/btc_like_serializer_stream.h"
+#include "BnesBrowser/components/brave_wallet/common/encoding_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/f4_jumble.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/value_conversion_utils.h"
+#include "BnesBrowser/third_party/bitcoin-core/src/src/base58.h"
 
 namespace brave_wallet {
 

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_ORIGIN_BRAVE_ORIGIN_SERVICE_FACTORY_H_
 #define BRAVE_BROWSER_BRAVE_ORIGIN_BRAVE_ORIGIN_SERVICE_FACTORY_H_
 
-#include "brave/components/brave_origin/brave_origin_policy_info.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_info.h"
 #include "chrome/browser/profiles/profile_keyed_service_factory.h"
 
 namespace base {

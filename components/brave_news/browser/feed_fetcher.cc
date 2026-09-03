@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
 
 #include <algorithm>
 #include <cstddef>
@@ -25,18 +25,18 @@
 #include "base/memory/weak_ptr.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_news/browser/combined_feed_parsing.h"
-#include "brave/components/brave_news/browser/direct_feed_fetcher.h"
-#include "brave/components/brave_news/browser/feed_controller.h"
-#include "brave/components/brave_news/browser/network.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/browser/urls.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
-#include "brave/components/brave_news/common/brave_news.mojom-shared.h"
-#include "brave/components/brave_news/common/locales_helper.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
-#include "brave/components/brave_private_cdn/headers.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_news/browser/combined_feed_parsing.h"
+#include "BnesBrowser/components/brave_news/browser/direct_feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/feed_controller.h"
+#include "BnesBrowser/components/brave_news/browser/network.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/browser/urls.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-shared.h"
+#include "BnesBrowser/components/brave_news/common/locales_helper.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_private_cdn/headers.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 namespace brave_news {

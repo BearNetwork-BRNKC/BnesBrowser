@@ -6,11 +6,11 @@
 #include <memory>
 
 #include "base/test/simple_test_clock.h"
-#include "brave/browser/brave_local_state_prefs.h"
-#include "brave/browser/web_discovery/web_discovery_cta_util.h"
-#include "brave/browser/web_discovery/web_discovery_tab_helper.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/browser/brave_local_state_prefs.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_cta_util.h"
+#include "BnesBrowser/browser/web_discovery/web_discovery_tab_helper.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 #include "chrome/browser/prefs/browser_prefs.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_test_util.h"

@@ -12,11 +12,11 @@ cargo_crate("lib") {
   crate_name = "unicode_xid"
   epoch = "0.2"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/tables.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/tests.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/tables.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/unicode-xid-v0_2/src/tests.rs",
   ]
   inputs = []
 

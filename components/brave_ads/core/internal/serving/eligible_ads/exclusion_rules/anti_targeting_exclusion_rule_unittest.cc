@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/anti_targeting_exclusion_rule.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/exclusion_rules/anti_targeting_exclusion_rule.h"
 
 #include <memory>
 #include <string_view>
 
 #include "base/test/run_until.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/resources/test/country_components_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_info.h"
-#include "brave/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/resources/test/country_components_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/behavioral/anti_targeting/resource/anti_targeting_resource.h"
 #include "url/gurl.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

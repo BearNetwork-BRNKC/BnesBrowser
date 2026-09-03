@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/color/material_side_panel_color_mixer.h"
 
-#include "brave/browser/ui/color/brave_material_side_panel_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_material_side_panel_color_mixer.h"
 
 #define AddMaterialSidePanelColorMixer \
   AddMaterialSidePanelColorMixer_ChromiumImpl

@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_TAB_CONTENTS_TAB_UTIL_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_TAB_CONTENTS_TAB_UTIL_H_
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "content/public/browser/storage_partition_config.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)

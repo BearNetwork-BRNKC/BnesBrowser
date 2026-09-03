@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/url_sanitizer/url_sanitizer_service_factory.h"
+#include "BnesBrowser/ios/browser/url_sanitizer/url_sanitizer_service_factory.h"
 
 #include "base/no_destructor.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_component_installer.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_service.h"
-#include "brave/components/url_sanitizer/ios/browser/url_sanitizer_service_bridge_impl.h"
-#include "brave/ios/browser/application_context/brave_application_context_impl.h"
-#include "brave/ios/browser/keyed_service/keyed_service_factory_wrapper+private.h"
-#include "brave/ios/browser/url_sanitizer/url_sanitizer_service_factory+private.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_component_installer.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_service.h"
+#include "BnesBrowser/components/url_sanitizer/ios/browser/url_sanitizer_service_bridge_impl.h"
+#include "BnesBrowser/ios/browser/application_context/brave_application_context_impl.h"
+#include "BnesBrowser/ios/browser/keyed_service/keyed_service_factory_wrapper+private.h"
+#include "BnesBrowser/ios/browser/url_sanitizer/url_sanitizer_service_factory+private.h"
 #include "components/keyed_service/core/keyed_service.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"

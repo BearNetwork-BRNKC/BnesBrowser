@@ -5,8 +5,8 @@
 
 #include <cstddef>
 
-#include "brave/components/ntp_background_images/browser/test/ntp_sponsored_rich_media_source_test_base.h"
-#include "brave/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/test/ntp_sponsored_rich_media_source_test_base.h"
+#include "BnesBrowser/components/ntp_background_images/browser/test/ntp_sponsored_source_test_util.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "url/gurl.h"

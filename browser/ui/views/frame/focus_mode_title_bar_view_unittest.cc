@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/focus_mode_title_bar_view.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_title_bar_view.h"
 
 #include <memory>
 #include <string>

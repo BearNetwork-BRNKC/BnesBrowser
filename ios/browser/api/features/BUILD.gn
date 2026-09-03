@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
 source_set("features") {
   sources = [
@@ -13,37 +13,37 @@ source_set("features") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/brave_component_updater/browser:public",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_origin:features",
-    "//brave/components/brave_rewards/core:features",
-    "//brave/components/brave_search/common",
-    "//brave/components/brave_search_conversion",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_sync:features",
-    "//brave/components/brave_user_agent/common",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/de_amp/common",
-    "//brave/components/debounce/core/common",
-    "//brave/components/ntp_background_images/browser",
-    "//brave/components/p3a",
-    "//brave/components/playlist/core/common",
-    "//brave/components/serp_metrics:features",
-    "//brave/components/skus/common",
-    "//brave/ios/browser/api/translate:features",
-    "//brave/ios/browser/playlist:features",
-    "//brave/ios/browser/ui/commerce:features",
-    "//brave/ios/browser/ui/quick_view:features",
-    "//brave/ios/browser/ui/web_view:features",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/brave_component_updater/browser:public",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_origin:features",
+    "//BnesBrowser/components/brave_rewards/core:features",
+    "//BnesBrowser/components/brave_search/common",
+    "//BnesBrowser/components/brave_search_conversion",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_sync:features",
+    "//BnesBrowser/components/brave_user_agent/common",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/de_amp/common",
+    "//BnesBrowser/components/debounce/core/common",
+    "//BnesBrowser/components/ntp_background_images/browser",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/playlist/core/common",
+    "//BnesBrowser/components/serp_metrics:features",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/ios/browser/api/translate:features",
+    "//BnesBrowser/ios/browser/playlist:features",
+    "//BnesBrowser/ios/browser/ui/commerce:features",
+    "//BnesBrowser/ios/browser/ui/quick_view:features",
+    "//BnesBrowser/ios/browser/ui/web_view:features",
     "//build:blink_buildflags",
     "//net",
   ]
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/common",
-      "//brave/ios/browser/brave_wallet",
+      "//BnesBrowser/components/brave_wallet/common",
+      "//BnesBrowser/ios/browser/brave_wallet",
     ]
   }
 

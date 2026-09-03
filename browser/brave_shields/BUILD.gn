@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 import("//testing/test.gni")
 
 source_set("brave_shields") {
@@ -18,9 +18,9 @@ source_set("brave_shields") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/core/common:mojom",
-    "//brave/components/ephemeral_storage",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/core/common:mojom",
+    "//BnesBrowser/components/ephemeral_storage",
     "//chrome/browser/profiles:profile",
     "//components/content_settings/core/browser",
     "//components/content_settings/core/common",
@@ -48,12 +48,12 @@ source_set("brave_shields_impl") {
 
   deps = [
     "//base:i18n",
-    "//brave/browser:browser_process",
-    "//brave/components/brave_perf_predictor/browser",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_user_agent/browser",
-    "//brave/components/constants",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/brave_perf_predictor/browser",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_user_agent/browser",
+    "//BnesBrowser/components/constants",
     "//chrome/browser:browser_process",
     "//chrome/browser/content_settings:content_settings_factory",
     "//chrome/browser/download",
@@ -71,12 +71,12 @@ source_set("brave_shields_impl") {
     "//net:net_features",
   ]
 
-  deps += [ "//brave/components/containers/buildflags" ]
+  deps += [ "//BnesBrowser/components/containers/buildflags" ]
 
   if (enable_containers) {
     deps += [
-      "//brave/components/containers/content/browser",
-      "//brave/components/containers/core/common",
+      "//BnesBrowser/components/containers/content/browser",
+      "//BnesBrowser/components/containers/core/common",
     ]
   }
 
@@ -88,9 +88,9 @@ source_set("brave_shields_impl") {
     ]
 
     deps += [
-      "//brave/browser/android:android_browser_process",
-      "//brave/browser/brave_shields/android:jni_headers",
-      "//brave/build/android:jni_headers",
+      "//BnesBrowser/browser/android:android_browser_process",
+      "//BnesBrowser/browser/brave_shields/android:jni_headers",
+      "//BnesBrowser/build/android:jni_headers",
       "//chrome/browser/android:tabs_public",
     ]
   }
@@ -107,13 +107,13 @@ source_set("test_support") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/browser:browser_process",
-    "//brave/components/brave_shields/content/browser",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/brave_shields/content/browser",
     "//components/keyed_service/content",
     "//content/public/browser",
   ]
 
-  public_deps = [ "//brave/components/brave_shields/content/test:test_support" ]
+  public_deps = [ "//BnesBrowser/components/brave_shields/content/test:test_support" ]
 }
 
 source_set("unit_tests") {
@@ -123,9 +123,9 @@ source_set("unit_tests") {
 
   deps = [
     ":brave_shields_impl",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
     "//chrome/test:test_support",
     "//testing/gtest",
   ]

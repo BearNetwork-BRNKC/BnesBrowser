@@ -10,7 +10,7 @@
 #include "base/files/file_path.h"
 #include "base/files/file_util.h"
 #include "base/files/scoped_temp_dir.h"
-#include "brave/components/brave_referrals/browser/file_extended_attribute.h"
+#include "BnesBrowser/components/brave_referrals/browser/file_extended_attribute.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace {

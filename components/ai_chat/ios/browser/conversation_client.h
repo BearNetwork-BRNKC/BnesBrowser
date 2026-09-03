@@ -10,8 +10,8 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 
 @protocol AIChatDelegate;

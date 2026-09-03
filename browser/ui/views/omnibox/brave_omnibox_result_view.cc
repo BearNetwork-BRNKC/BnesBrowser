@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/omnibox/brave_omnibox_result_view.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_result_view.h"
 
 #include <memory>
 
 #include "base/check.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/omnibox/brave_omnibox_popup_view_views.h"
-#include "brave/browser/ui/views/omnibox/brave_search_conversion_promotion_view.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/omnibox/browser/promotion_utils.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_popup_view_views.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_search_conversion_promotion_view.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/omnibox/browser/promotion_utils.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/ui/omnibox/omnibox_controller.h"
 #include "chrome/browser/ui/omnibox/omnibox_edit_model.h"
@@ -42,7 +42,7 @@
 #include "ui/views/view_class_properties.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/omnibox/browser/leo_provider.h"
+#include "BnesBrowser/components/omnibox/browser/leo_provider.h"
 #endif
 
 BraveOmniboxResultView::~BraveOmniboxResultView() = default;

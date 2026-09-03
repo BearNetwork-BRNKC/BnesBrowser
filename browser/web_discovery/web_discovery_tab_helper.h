@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_WEB_DISCOVERY_WEB_DISCOVERY_TAB_HELPER_H_
 
 #include "base/gtest_prod_util.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "content/public/browser/web_contents_user_data.h"
 

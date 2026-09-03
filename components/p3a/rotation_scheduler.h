@@ -14,8 +14,8 @@
 #include "base/memory/raw_ref.h"
 #include "base/time/time.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
 
 class PrefService;
 class PrefRegistrySimple;

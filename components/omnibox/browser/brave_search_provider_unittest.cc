@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/omnibox/browser/brave_search_provider.h"
+#include "BnesBrowser/components/omnibox/browser/brave_search_provider.h"
 
 #include <stddef.h>
 
@@ -21,8 +21,8 @@
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
-#include "brave/components/omnibox/buildflags/buildflags.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/buildflags/buildflags.h"
 #include "chrome/browser/autocomplete/autocomplete_classifier_factory.h"
 #include "chrome/browser/autocomplete/chrome_autocomplete_provider_client.h"
 #include "chrome/browser/autocomplete/document_suggestions_service_factory.h"
@@ -46,7 +46,7 @@
 #include "third_party/metrics_proto/omnibox_event.pb.h"
 
 #if BUILDFLAG(ENABLE_STRICT_QUERY_CHECK_FOR_SEARCH_SUGGESTIONS)
-#include "brave/components/omnibox/browser/search_suggestions/query_check_utils.h"
+#include "BnesBrowser/components/omnibox/browser/search_suggestions/query_check_utils.h"
 #endif
 
 #if !BUILDFLAG(IS_IOS) && !BUILDFLAG(IS_ANDROID)

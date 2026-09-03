@@ -12,9 +12,9 @@
 
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_rewards/core/engine/database/database_server_publisher_info.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/private_cdn/private_cdn_server.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_server_publisher_info.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/private_cdn/private_cdn_server.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

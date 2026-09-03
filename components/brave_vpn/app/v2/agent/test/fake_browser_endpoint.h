@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_VPN_APP_V2_AGENT_TEST_FAKE_BROWSER_ENDPOINT_H_
 #define BRAVE_COMPONENTS_BRAVE_VPN_APP_V2_AGENT_TEST_FAKE_BROWSER_ENDPOINT_H_
 
-#include "brave/components/brave_vpn/common/mojom/browser_agent.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/browser_agent.mojom.h"
 
 namespace brave_vpn::v2 {
 

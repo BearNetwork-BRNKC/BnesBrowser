@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/screenshot_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_button.h"
 
 #include "base/functional/bind.h"
 #include "base/task/single_thread_task_runner.h"
-#include "brave/browser/ui/views/toolbar/screenshot_bubble_view.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_bubble_view.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "components/tabs/public/tab_interface.h"

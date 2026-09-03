@@ -12,8 +12,8 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/values.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/web_discovery/browser/request_queue.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/web_discovery/browser/request_queue.h"
 #include "url/gurl.h"
 
 class PrefService;

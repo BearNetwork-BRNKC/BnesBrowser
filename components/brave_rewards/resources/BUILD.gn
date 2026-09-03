@@ -3,16 +3,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/common/typescript.gni")
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 
 assert(enable_brave_rewards)
 
 pack_web_resources("internals_generated_resources") {
   resource_name = "rewards_internals"
-  output_dir = "$root_gen_dir/brave/components/brave_rewards/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_rewards/resources"
 
   # need webpack and GRD generation first
   deps = [ "rewards_internals" ]
@@ -36,11 +36,11 @@ repack("resources") {
   ]
 
   sources = [
-    "$root_gen_dir/brave/components/brave_rewards/resources/brave_rewards_static.pak",
-    "$root_gen_dir/brave/components/brave_rewards/resources/creator_detection_generated.pak",
-    "$root_gen_dir/brave/components/brave_rewards/resources/rewards_internals_generated.pak",
-    "$root_gen_dir/brave/components/brave_rewards/resources/rewards_page_generated.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/brave_rewards_static.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/creator_detection_generated.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/rewards_internals_generated.pak",
+    "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/rewards_page_generated.pak",
   ]
 
-  output = "$root_gen_dir/brave/components/brave_rewards/resources/brave_rewards_resources.pak"
+  output = "$root_gen_dir/BnesBrowser/components/brave_rewards/resources/brave_rewards_resources.pak"
 }

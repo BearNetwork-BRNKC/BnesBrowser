@@ -7,7 +7,7 @@
 
 #include "base/test/gtest_util.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/json_rpc_requests_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_requests_helper.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 using base::test::ParseJson;

@@ -20,10 +20,10 @@ source_set("endpoints") {
     "verify_resend.h",
   ]
 
-  deps = [ "//brave/components/brave_account/endpoint_client" ]
+  deps = [ "//BnesBrowser/components/brave_account/endpoint_client" ]
 
   public_deps =
-      [ "//brave/components/brave_account/endpoints:generated_api_types" ]
+      [ "//BnesBrowser/components/brave_account/endpoints:generated_api_types" ]
 }
 
 generated_types("generated_api_types") {
@@ -68,8 +68,8 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_account/endpoint_client",
-    "//brave/components/brave_account/endpoints",
+    "//BnesBrowser/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/endpoints",
     "//net",
     "//services/network:test_support",
     "//services/network/public/cpp",

@@ -7,8 +7,8 @@
 
 #include "base/check.h"
 #include "base/i18n/icu_util.h"
-#include "brave/third_party/rust/url/v2/crate/parse.h"
-#include "brave/third_party/rust/url/v2/crate/src/lib.rs.h"
+#include "BnesBrowser/third_party/rust/url/v2/crate/parse.h"
+#include "BnesBrowser/third_party/rust/url/v2/crate/src/lib.rs.h"
 #include "url/gurl.h"
 
 namespace parse {

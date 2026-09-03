@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_handler.h"
 
 #include <string_view>
 #include <utility>
@@ -15,28 +15,28 @@
 #include "base/functional/callback.h"
 #include "base/functional/callback_helpers.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_rewards/content/rewards_p3a.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/content/rewards_service_observer.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/rewards_util.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_p3a.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/ads_util.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_feature.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_ads/core/public/targeting/geographical/subdivision/supported_subdivisions.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_feature.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/targeting/geographical/subdivision/supported_subdivisions.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 namespace brave_rewards {

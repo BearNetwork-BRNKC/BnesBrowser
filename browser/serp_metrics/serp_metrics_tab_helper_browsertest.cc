@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/serp_metrics/serp_metrics_tab_helper.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_tab_helper.h"
 
 #include <memory>
 #include <optional>
@@ -18,13 +18,13 @@
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
-#include "brave/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
-#include "brave/browser/serp_metrics/serp_metrics_service_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/serp_metrics/serp_metric_type.h"
-#include "brave/components/serp_metrics/serp_metrics.h"
-#include "brave/components/serp_metrics/serp_metrics_feature.h"
-#include "brave/components/serp_metrics/serp_metrics_service.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_all_profiles_aggregator.h"
+#include "BnesBrowser/browser/serp_metrics/serp_metrics_service_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/serp_metrics/serp_metric_type.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_feature.h"
+#include "BnesBrowser/components/serp_metrics/serp_metrics_service.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

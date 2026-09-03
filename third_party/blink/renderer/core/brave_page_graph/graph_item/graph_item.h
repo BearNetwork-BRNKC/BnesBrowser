@@ -10,7 +10,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/time/time.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 
 namespace brave_page_graph {
 

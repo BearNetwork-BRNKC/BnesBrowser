@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_type_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/campaign/creative_set/creative/catalog_type_info.h"
 
 namespace brave_ads {
 

@@ -3,25 +3,25 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ads_impl.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_impl.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/trace_event/trace_event.h"
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core_util.h"
-#include "brave/components/brave_ads/core/internal/ads_internals/ads_internals_util.h"
-#include "brave/components/brave_ads/core/internal/ads_notifier_manager.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
-#include "brave/components/brave_ads/core/internal/database/database_maintenance.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_manager.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_internals/ads_internals_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_notifier_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_maintenance.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/diagnostics/diagnostic_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads {
 

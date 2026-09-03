@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
 
 #include <utility>
 
 #include "base/no_destructor.h"
-#include "brave/components/services/brave_wallet/public/cpp/brave_wallet_utils_service_in_process_launcher.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/brave_wallet_utils_service_in_process_launcher.h"
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/services/brave_wallet/content/brave_wallet_utils_service_launcher.h"
+#include "BnesBrowser/components/services/brave_wallet/content/brave_wallet_utils_service_launcher.h"
 #endif
 
 namespace {

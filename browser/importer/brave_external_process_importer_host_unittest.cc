@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/brave_external_process_importer_host.h"
+#include "BnesBrowser/browser/importer/brave_external_process_importer_host.h"
 
 #include <map>
 #include <memory>
@@ -20,9 +20,9 @@
 #include "base/test/metrics/histogram_tester.h"
 #include "base/test/test_future.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/browser/importer/extensions_import_helpers.h"
-#include "brave/common/importer/importer_constants.h"
-#include "brave/components/constants/brave_paths.h"
+#include "BnesBrowser/browser/importer/extensions_import_helpers.h"
+#include "BnesBrowser/common/importer/importer_constants.h"
+#include "BnesBrowser/components/constants/brave_paths.h"
 #include "build/build_config.h"
 #include "chrome/browser/extensions/test_extension_system.h"
 #include "chrome/browser/importer/importer_progress_observer.h"

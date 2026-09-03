@@ -4,10 +4,10 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager_observer.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

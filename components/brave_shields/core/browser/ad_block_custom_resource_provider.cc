@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_custom_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_custom_resource_provider.h"
 
 #include <algorithm>
 #include <string>
@@ -16,10 +16,10 @@
 #include "base/json/json_writer.h"
 #include "base/strings/string_util.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/brave_shields/core/browser/ad_block_resource_provider.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "components/value_store/value_store_factory_impl.h"
 #include "components/value_store/value_store_frontend.h"
 #include "components/value_store/value_store_task_runner.h"

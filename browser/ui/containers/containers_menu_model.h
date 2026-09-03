@@ -11,8 +11,8 @@
 
 #include "base/containers/flat_set.h"
 #include "base/memory/raw_ref.h"
-#include "brave/browser/ui/containers/container_model.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "ui/menus/simple_menu_model.h"
 
 class BrowserWindowInterface;

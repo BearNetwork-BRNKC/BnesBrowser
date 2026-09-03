@@ -13,9 +13,9 @@
 #include <vector>
 
 #include "base/check.h"
-#include "brave/browser/ui/views/playlist/selectable_list_view.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper_observer.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/browser/ui/views/playlist/selectable_list_view.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper_observer.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "components/constrained_window/constrained_window_views.h"
 #include "ui/base/metadata/metadata_header_macros.h"

@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/webcompat_reporter/browser/fields.h"
+#include "BnesBrowser/components/webcompat_reporter/browser/fields.h"
 
 #include "base/notreached.h"
-#include "brave/components/brave_shields/core/common/brave_shields_panel.mojom-shared.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom-shared.h"
 
 namespace webcompat_reporter {
 

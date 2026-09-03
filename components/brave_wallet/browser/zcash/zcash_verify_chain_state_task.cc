@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_verify_chain_state_task.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_verify_chain_state_task.h"
 
 #include <string>
 #include <utility>
 #include <vector>
 
 #include "base/check.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_wallet_service.h"
 
 namespace brave_wallet {
 

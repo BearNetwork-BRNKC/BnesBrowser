@@ -10,14 +10,14 @@
 #include "base/functional/callback.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/version.h"
-#include "brave/browser/mac/keystone_glue.h"
-#include "brave/browser/updater/buildflags.h"
+#include "BnesBrowser/browser/mac/keystone_glue.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
 #include "chrome/browser/updater/browser_updater_client_util.h"
 #include "chrome/common/chrome_features.h"
 #include "components/version_info/version_info.h"
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #endif
 
 namespace {

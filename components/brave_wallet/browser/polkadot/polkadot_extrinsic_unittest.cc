@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
 
 #include "base/containers/to_vector.h"
 #include "base/rand_util.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/bip39.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_sr25519.h"
-#include "brave/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_keyring.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_sr25519.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

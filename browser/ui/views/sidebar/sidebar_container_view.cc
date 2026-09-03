@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/sidebar/sidebar_container_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_container_view.h"
 
 #include <algorithm>
 #include <limits>
@@ -16,20 +16,20 @@
 #include "base/logging.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/brave_browser.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
-#include "brave/browser/ui/focus_mode/focus_mode_utils.h"
-#include "brave/browser/ui/sidebar/sidebar_controller.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/brave_contents_view_util.h"
-#include "brave/browser/ui/views/frame/layout/brave_browser_view_tabbed_layout_impl.h"
-#include "brave/browser/ui/views/sidebar/sidebar_control_view.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_controller.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_contents_view_util.h"
+#include "BnesBrowser/browser/ui/views/frame/layout/brave_browser_view_tabbed_layout_impl.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_control_view.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"
@@ -59,7 +59,7 @@
 #include "ui/views/widget/widget.h"
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
+#include "BnesBrowser/browser/ui/views/side_panel/playlist/playlist_side_panel_coordinator.h"
 #endif
 
 namespace {

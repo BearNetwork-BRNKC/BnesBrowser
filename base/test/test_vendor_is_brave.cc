@@ -5,7 +5,7 @@
 
 namespace base::test {
 
-// This is implemented in //brave/chromium_src/base/check_is_test.cc
+// This is implemented in //BnesBrowser/chromium_src/base/check_is_test.cc
 void SetTestVendorIsBraveForTesting();
 
 static const struct CallSetTestVendorIsBraveForTesting {

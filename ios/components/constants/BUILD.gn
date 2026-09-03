@@ -10,6 +10,6 @@ source_set("constants") {
   ]
   deps = [
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
   ]
 }

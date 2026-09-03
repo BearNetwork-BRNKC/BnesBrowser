@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_transaction.h"
 
 #include <memory>
 #include <string>
@@ -11,9 +11,9 @@
 
 #include "base/strings/string_number_conversions.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_rpc_responses.h"
-#include "brave/components/brave_wallet/browser/bitcoin/bitcoin_serializer.h"
-#include "brave/components/json/json_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_rpc_responses.h"
+#include "BnesBrowser/components/brave_wallet/browser/bitcoin/bitcoin_serializer.h"
+#include "BnesBrowser/components/json/json_helper.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/importer/imported_bookmark_entry.h"
 
 ImportedBookmarkEntry::ImportedBookmarkEntry()
     : in_toolbar(false),

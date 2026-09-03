@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/blockchain_images_source_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_images_source_base.h"
 
 #include <optional>
 #include <utility>
@@ -14,7 +14,7 @@
 #include "base/memory/ref_counted_memory.h"
 #include "base/strings/string_util.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
 
 namespace brave_wallet {
 

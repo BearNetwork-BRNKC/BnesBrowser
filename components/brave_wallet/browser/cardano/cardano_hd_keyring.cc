@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_hd_keyring.h"
 
 #include <array>
 #include <cstdint>
@@ -14,10 +14,10 @@
 #include "base/check.h"
 #include "base/containers/span.h"
 #include "base/numerics/safe_conversions.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/brave_wallet/common/hash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hash_utils.h"
 
 namespace brave_wallet {
 

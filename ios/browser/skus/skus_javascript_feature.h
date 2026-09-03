@@ -12,7 +12,7 @@
 #include "base/functional/callback_forward.h"
 #include "base/memory/raw_ptr.h"
 #include "base/supports_user_data.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 #include "mojo/public/cpp/bindings/remote.h"
 

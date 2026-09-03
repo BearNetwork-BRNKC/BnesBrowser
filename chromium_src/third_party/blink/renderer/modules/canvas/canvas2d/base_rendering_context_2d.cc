@@ -7,7 +7,7 @@
 
 #include "base/compiler_specific.h"
 #include "base/notreached.h"
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/renderer/platform/graphics/image_data_buffer.h"
 #include "ui/gfx/skia_span_util.h"
 

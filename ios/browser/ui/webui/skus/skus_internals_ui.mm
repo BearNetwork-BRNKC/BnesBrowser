@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/skus/skus_internals_ui.h"
+#include "BnesBrowser/ios/browser/ui/webui/skus/skus_internals_ui.h"
 
 #include <memory>
 #include <string_view>
@@ -16,11 +16,11 @@
 #include "base/notimplemented.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/browser/resources/grit/skus_internals_generated_map.h"
-#include "brave/ios/browser/skus/skus_service_factory.h"
-#include "brave/ios/web/webui/brave_webui_utils.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/resources/grit/skus_internals_generated_map.h"
+#include "BnesBrowser/ios/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/ios/web/webui/brave_webui_utils.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/prefs/pref_service.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"

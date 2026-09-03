@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
 
 #include "base/strings/strcat.h"  // IWYU pragma: export
-#include "brave/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet {

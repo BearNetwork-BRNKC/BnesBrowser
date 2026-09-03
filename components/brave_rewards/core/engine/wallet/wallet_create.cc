@@ -3,24 +3,24 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/wallet/wallet_create.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet_create.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/engine/contribution/contribution.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/patch_wallets.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/post_wallets.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/request_for.h"
-#include "brave/components/brave_rewards/core/engine/logging/event_log_keys.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/rewards_prefs.h"
-#include "brave/components/brave_rewards/core/engine/util/signer.h"
-#include "brave/components/brave_rewards/core/engine/util/time_util.h"
-#include "brave/components/brave_rewards/core/engine/wallet/wallet.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/contribution/contribution.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/patch_wallets.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/post_wallets.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_for.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/logging/event_log_keys.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/rewards_prefs.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/signer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/time_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet/wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/linkage_checker.h"
 
 namespace brave_rewards::internal {
 

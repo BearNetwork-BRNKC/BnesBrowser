@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 source_set("unit_tests") {
   if (!is_android) {
@@ -20,8 +20,8 @@ source_set("unit_tests") {
 
     deps = [
       "//base/test:test_support",
-      "//brave/components/brave_shields/core/common",
-      "//brave/components/resources:strings_grit",
+      "//BnesBrowser/components/brave_shields/core/common",
+      "//BnesBrowser/components/resources:strings_grit",
       "//chrome/browser",
       "//chrome/browser/regional_capabilities",
       "//chrome/browser/search_engines",
@@ -43,8 +43,8 @@ source_set("unit_tests") {
       sources += [ "brave_clear_browsing_data_handler_unittest.cc" ]
 
       deps += [
-        "//brave/browser/brave_ads",
-        "//brave/components/brave_ads/core/browser/service:test_support",
+        "//BnesBrowser/browser/brave_ads",
+        "//BnesBrowser/components/brave_ads/core/browser/service:test_support",
         "//testing/gmock",
       ]
     }
@@ -53,13 +53,13 @@ source_set("unit_tests") {
       sources += [ "brave_wallet_handler_unittest.cc" ]
 
       deps += [
-        "//brave/browser/brave_wallet",
-        "//brave/components/brave_wallet/browser",
-        "//brave/components/brave_wallet/browser:constants",
-        "//brave/components/brave_wallet/browser:pref_names",
-        "//brave/components/brave_wallet/browser:test_support",
-        "//brave/components/brave_wallet/browser:utils",
-        "//brave/components/brave_wallet/common:test_support",
+        "//BnesBrowser/browser/brave_wallet",
+        "//BnesBrowser/components/brave_wallet/browser",
+        "//BnesBrowser/components/brave_wallet/browser:constants",
+        "//BnesBrowser/components/brave_wallet/browser:pref_names",
+        "//BnesBrowser/components/brave_wallet/browser:test_support",
+        "//BnesBrowser/components/brave_wallet/browser:utils",
+        "//BnesBrowser/components/brave_wallet/common:test_support",
         "//components/user_prefs",
       ]
     }
@@ -85,8 +85,8 @@ source_set("browser_tests") {
     if (enable_email_aliases) {
       sources += [ "email_aliases_link_browsertest.cc" ]
       deps += [
-        "//brave/components/brave_account:features",
-        "//brave/components/email_aliases:features",
+        "//BnesBrowser/components/brave_account:features",
+        "//BnesBrowser/components/email_aliases:features",
         "//chrome/browser/ui:chrome_pages",
       ]
     }

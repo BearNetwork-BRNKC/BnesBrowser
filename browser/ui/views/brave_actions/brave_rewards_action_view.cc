@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/brave_actions/brave_rewards_action_view.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_rewards_action_view.h"
 
 #include <memory>
 #include <string>
@@ -11,18 +11,18 @@
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
-#include "brave/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
-#include "brave/components/brave_rewards/content/rewards_p3a.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_web_ui_utils.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_p3a.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

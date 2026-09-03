@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/renderer/js_cardano_provider.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_cardano_provider.h"
 
 #include <utility>
 
 #include "base/base64.h"
-#include "brave/components/brave_wallet/renderer/js_cardano_wallet_api.h"
-#include "brave/components/brave_wallet/renderer/resource_helper.h"
-#include "brave/components/brave_wallet/renderer/v8_helper.h"
+#include "BnesBrowser/components/brave_wallet/renderer/js_cardano_wallet_api.h"
+#include "BnesBrowser/components/brave_wallet/renderer/resource_helper.h"
+#include "BnesBrowser/components/brave_wallet/renderer/v8_helper.h"
 #include "components/grit/brave_components_resources.h"
 #include "content/public/common/isolated_world_ids.h"
 #include "gin/converter.h"

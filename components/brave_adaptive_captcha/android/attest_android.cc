@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_adaptive_captcha/android/attest_android.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/android/attest_android.h"
 
 #include <string>
 #include <utility>
@@ -13,7 +13,7 @@
 #include "base/logging.h"
 #include "base/strings/strcat.h"
 #include "base/values.h"
-#include "brave/components/brave_adaptive_captcha/server_util.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/server_util.h"
 #include "net/http/http_status_code.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

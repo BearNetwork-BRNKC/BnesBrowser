@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
 
 #include <algorithm>
 #include <utility>
@@ -12,11 +12,11 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/logging.h"
-#include "brave/components/playlist/content/browser/playlist_constants.h"
-#include "brave/components/playlist/content/browser/playlist_media_handler.h"
-#include "brave/components/playlist/content/browser/playlist_service.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper_observer.h"
-#include "brave/components/playlist/core/common/pref_names.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_constants.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_media_handler.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_service.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper_observer.h"
+#include "BnesBrowser/components/playlist/core/common/pref_names.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/browser_context.h"

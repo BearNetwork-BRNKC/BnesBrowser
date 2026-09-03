@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/skus/renderer/skus_render_frame_observer.h"
+#include "BnesBrowser/components/skus/renderer/skus_render_frame_observer.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "content/public/test/render_view_test.h"
 #include "url/gurl.h"
 

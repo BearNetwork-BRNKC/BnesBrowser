@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/no_destructor.h"
-#include "brave/ios/web/js_messaging/message_handler_token.h"
+#include "BnesBrowser/ios/web/js_messaging/message_handler_token.h"
 #include "ios/web/public/js_messaging/java_script_feature.h"
 
 namespace web {

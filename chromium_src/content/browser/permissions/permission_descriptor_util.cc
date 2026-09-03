@@ -5,7 +5,7 @@
 
 #include "content/public/browser/permission_descriptor_util.h"
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
 // CHROMIUM_SRC_INTERNAL_USE

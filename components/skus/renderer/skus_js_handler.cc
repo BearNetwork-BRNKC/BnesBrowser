@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/skus/renderer/skus_js_handler.h"
+#include "BnesBrowser/components/skus/renderer/skus_js_handler.h"
 
 #include <optional>
 #include <tuple>
@@ -31,7 +31,7 @@
 #include "v8/include/v8-cppgc.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #endif
 
 namespace skus {

@@ -26,11 +26,11 @@ component("common") {
 
   deps = [
     "//base",
-    "//brave/brave_domains",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/ai_chat/core/proto",
-    "//brave/components/constants",
+    "//BnesBrowser/brave_domains",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/proto",
+    "//BnesBrowser/components/constants",
     "//components/prefs",
     "//url",
   ]
@@ -38,7 +38,7 @@ component("common") {
 
 # Renderer-safe header-only target exposing constants (e.g. the code sandbox
 # WebUI host) so that blink renderer code can depend on the constants without
-# pulling in the rest of //brave/components/ai_chat/core/common.
+# pulling in the rest of //BnesBrowser/components/ai_chat/core/common.
 source_set("constants") {
   sources = [ "constants.h" ]
 
@@ -51,8 +51,8 @@ source_set("constants") {
 source_set("common_impl") {
   visibility = [
     ":unit_tests",
-    "//brave/components/ai_chat/content/browser",
-    "//brave/components/ai_chat/renderer",
+    "//BnesBrowser/components/ai_chat/content/browser",
+    "//BnesBrowser/components/ai_chat/renderer",
   ]
   sources = [
     "yt_util.cc",
@@ -76,7 +76,7 @@ source_set("test_support") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
     "//crypto",
     "//testing/gmock",
     "//testing/gtest",
@@ -97,9 +97,9 @@ source_set("unit_tests") {
     ":common_impl",
     ":test_support",
     "//base/test:test_support",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common/mojom",
-    "//brave/components/ai_chat/core/proto",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/proto",
     "//components/prefs:test_support",
     "//services/data_decoder/public/cpp",
     "//services/data_decoder/public/cpp:test_support",

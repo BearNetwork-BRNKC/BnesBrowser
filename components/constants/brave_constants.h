@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_CONSTANTS_BRAVE_CONSTANTS_H_
 
 #include "base/files/file_path.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 
 namespace brave {
 

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
 
 #include <optional>
 #include <string>
@@ -18,25 +18,25 @@
 #include "base/strings/escape.h"
 #include "base/strings/strcat.h"
 #include "base/task/cancelable_task_tracker.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/browser/ui/webui/untrusted_sanitized_image_source.h"
-#include "brave/common/webui_url_constants.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/ai_chat_urls.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/components/ai_chat/core/common/prefs.h"
-#include "brave/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/side_panel/ai_chat/ai_chat_side_panel_utils.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/browser/ui/webui/untrusted_sanitized_image_source.h"
+#include "BnesBrowser/common/webui_url_constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/ai_chat_urls.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/common/prefs.h"
+#include "BnesBrowser/components/ai_chat/resources/grit/ai_chat_ui_generated_map.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/favicon_source.h"
 #include "components/favicon_base/favicon_url_parser.h"
@@ -59,7 +59,7 @@
 #include "url/url_constants.h"
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/history_embeddings/open_tab_search.h"
+#include "BnesBrowser/browser/history_embeddings/open_tab_search.h"
 #include "chrome/browser/history/history_service_factory.h"
 #include "chrome/browser/history_embeddings/history_embeddings_service_factory.h"
 #include "chrome/browser/history_embeddings/history_embeddings_utils.h"
@@ -69,7 +69,7 @@
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/android/ai_chat/brave_leo_settings_launcher_helper.h"
+#include "BnesBrowser/browser/ui/android/ai_chat/brave_leo_settings_launcher_helper.h"
 #else
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

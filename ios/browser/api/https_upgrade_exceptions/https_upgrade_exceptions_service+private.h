@@ -6,7 +6,7 @@
 #ifndef BRAVE_IOS_BROWSER_API_HTTPS_UPGRADE_EXCEPTIONS_HTTPS_UPGRADE_EXCEPTIONS_SERVICE_PRIVATE_H_
 #define BRAVE_IOS_BROWSER_API_HTTPS_UPGRADE_EXCEPTIONS_HTTPS_UPGRADE_EXCEPTIONS_SERVICE_PRIVATE_H_
 
-#include "brave/ios/browser/api/https_upgrade_exceptions/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/ios/browser/api/https_upgrade_exceptions/https_upgrade_exceptions_service.h"
 
 @interface HTTPSUpgradeExceptionsService (Private)
 @end

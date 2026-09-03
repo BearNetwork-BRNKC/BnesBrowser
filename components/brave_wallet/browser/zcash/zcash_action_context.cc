@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_action_context.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_action_context.h"
 
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 
 namespace brave_wallet {
 

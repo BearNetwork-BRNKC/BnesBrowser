@@ -12,7 +12,7 @@
 #include "base/callback_list.h"
 #include "base/containers/span.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/tabs/public/brave_tab_strip_collection.h"
+#include "BnesBrowser/components/tabs/public/brave_tab_strip_collection.h"
 #include "chrome/browser/ui/tabs/tab_enums.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/browser/ui/tabs/tab_strip_model_observer.h"

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_BRAVE_ADS_APPLICATION_STATE_NOTIFICATION_HELPER_NOTIFICATION_HELPER_IMPL_LINUX_H_
 #define BRAVE_BROWSER_BRAVE_ADS_APPLICATION_STATE_NOTIFICATION_HELPER_NOTIFICATION_HELPER_IMPL_LINUX_H_
 
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl.h"
 
 namespace brave_ads {
 

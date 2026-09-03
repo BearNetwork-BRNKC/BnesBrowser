@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/brave_vpn_service_impl.h"
 
 #include <memory>
 #include <optional>
@@ -18,11 +18,11 @@
 #include "base/notimplemented.h"
 #include "base/sequence_checker.h"
 #include "base/types/to_address.h"
-#include "brave/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
-#include "brave/components/brave_vpn/browser/v2/purchased_state_manager.h"
-#include "brave/components/brave_vpn/browser/v2/skus_service_client.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/api/brave_vpn_api_client.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/purchased_state_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/skus_service_client.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 
 namespace brave_vpn::v2 {

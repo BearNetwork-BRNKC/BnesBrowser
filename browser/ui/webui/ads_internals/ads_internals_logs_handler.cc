@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_logs_handler.h"
 
 #include <string>
 #include <utility>
 
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_rewards/content/rewards_service.h"
-#include "brave/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
 #include "chrome/browser/about_flags.h"
 #include "chrome/browser/lifetime/application_lifetime.h"
 #include "components/prefs/pref_service.h"

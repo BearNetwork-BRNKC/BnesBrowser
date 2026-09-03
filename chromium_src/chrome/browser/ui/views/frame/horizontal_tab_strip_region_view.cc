@@ -5,11 +5,11 @@
 
 #include "chrome/browser/ui/views/frame/horizontal_tab_strip_region_view.h"
 
-#include "brave/browser/ui/views/frame/brave_tab_strip_region_view.h"
-#include "brave/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
-#include "brave/browser/ui/views/tabs/brave_new_tab_button.h"
-#include "brave/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
-#include "brave/browser/ui/views/tabs/brave_tab_strip.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_new_tab_button.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip.h"
 #include "chrome/browser/ui/tabs/features.h"
 
 // Defined in brave_tab_strip_region_view.cc.

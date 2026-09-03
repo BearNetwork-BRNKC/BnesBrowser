@@ -5,7 +5,7 @@
 
 #include "chrome/browser/media/router/discovery/dial/dial_service_impl.h"
 
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "components/version_info/version_info.h"
 
 namespace version_info {

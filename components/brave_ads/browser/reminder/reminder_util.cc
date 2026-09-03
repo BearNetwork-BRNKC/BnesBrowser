@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/reminder/reminder_util.h"
+#include "BnesBrowser/components/brave_ads/browser/reminder/reminder_util.h"
 
 #include <string_view>
 
 #include "base/check.h"
 #include "base/notreached.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "url/gurl.h"

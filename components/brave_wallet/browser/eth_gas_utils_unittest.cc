@@ -7,8 +7,8 @@
 #include <utility>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/eth_gas_utils.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_gas_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_wallet::eth {

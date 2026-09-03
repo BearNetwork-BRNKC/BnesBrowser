@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 assert(enable_containers)
 
@@ -22,11 +22,11 @@ component("browser") {
     "storage_partition_utils.h",
   ]
 
-  public_deps = [ "//brave/components/containers/buildflags" ]
+  public_deps = [ "//BnesBrowser/components/containers/buildflags" ]
 
   deps = [
     "//base",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/core/common",
     "//content/public/browser",
     "//url",
   ]
@@ -42,12 +42,12 @@ component("tab_restore") {
     "tab_restore_utils.h",
   ]
 
-  public_deps = [ "//brave/components/containers/buildflags" ]
+  public_deps = [ "//BnesBrowser/components/containers/buildflags" ]
 
   deps = [
     ":browser",
     "//base",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/core/common",
     "//components/sessions",
     "//content/public/browser",
   ]
@@ -68,7 +68,7 @@ source_set("unit_tests") {
     ":tab_restore",
     "//base",
     "//base/test:test_support",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/core/common",
     "//components/sessions",
     "//content/public/browser",
     "//content/test:test_support",

@@ -7,10 +7,10 @@
 #include <vector>
 
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

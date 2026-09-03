@@ -4,14 +4,14 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 brave_browser_playlist_sources = [
-  "//brave/browser/playlist/playlist_service_factory.cc",
-  "//brave/browser/playlist/playlist_service_factory.h",
+  "//BnesBrowser/browser/playlist/playlist_service_factory.cc",
+  "//BnesBrowser/browser/playlist/playlist_service_factory.h",
 ]
 
 brave_browser_playlist_deps = [
   "//base",
-  "//brave/components/playlist/content/browser",
-  "//brave/components/playlist/core/browser",
+  "//BnesBrowser/components/playlist/content/browser",
+  "//BnesBrowser/components/playlist/core/browser",
   "//chrome/browser:browser_process",
   "//chrome/browser/profiles:profile",
   "//chrome/browser/ui/side_panel",
@@ -24,15 +24,15 @@ brave_browser_playlist_deps = [
 
 if (is_android) {
   brave_browser_playlist_sources +=
-      [ "//brave/browser/playlist/android/playlist_service_factory_android.cc" ]
+      [ "//BnesBrowser/browser/playlist/android/playlist_service_factory_android.cc" ]
 
   brave_browser_playlist_deps += [
-    "//brave/build/android:jni_headers",
+    "//BnesBrowser/build/android:jni_headers",
     "//mojo/public/cpp/bindings",
   ]
 } else {
   brave_browser_playlist_sources += [
-    "//brave/browser/playlist/playlist_data_source.cc",
-    "//brave/browser/playlist/playlist_data_source.h",
+    "//BnesBrowser/browser/playlist/playlist_data_source.cc",
+    "//BnesBrowser/browser/playlist/playlist_data_source.h",
   ]
 }

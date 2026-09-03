@@ -14,7 +14,7 @@
 #include <fuzzer/FuzzedDataProvider.h>
 
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/ui/commander/fuzzy_finder.h"
+#include "BnesBrowser/browser/ui/commander/fuzzy_finder.h"
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
   FuzzedDataProvider provider(data, size);

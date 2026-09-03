@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/internal/hd_key_sr25519.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_sr25519.h"
 
 #include <utility>
 
 #include "base/check_is_test.h"
 #include "base/containers/span_rust.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/brave_wallet/browser/internal/sr25519.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/sr25519.rs.h"
 #include "crypto/secure_util.h"
 
 namespace brave_wallet {

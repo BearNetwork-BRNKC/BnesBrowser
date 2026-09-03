@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/web/page_metadata/page_metadata_javascript_feature.h"
+#include "BnesBrowser/ios/browser/web/page_metadata/page_metadata_javascript_feature.h"
 
 #include "base/time/time.h"
 #include "base/values.h"

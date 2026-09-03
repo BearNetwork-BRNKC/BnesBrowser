@@ -7,8 +7,8 @@
 #define BRAVE_COMPONENTS_MISC_METRICS_NEW_TAB_METRICS_H_
 
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "mojo/public/cpp/bindings/receiver_set.h"
 
 class PrefRegistrySimple;

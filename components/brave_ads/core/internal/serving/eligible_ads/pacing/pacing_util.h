@@ -8,8 +8,8 @@
 
 #include <ios>
 
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing_random_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/eligible_ads/pacing/pacing_random_util.h"
 
 namespace brave_ads {
 

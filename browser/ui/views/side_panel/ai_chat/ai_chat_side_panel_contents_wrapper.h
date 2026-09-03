@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_SIDE_PANEL_AI_CHAT_AI_CHAT_SIDE_PANEL_CONTENTS_WRAPPER_H_
 
 #include "base/functional/callback.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
 #include "chrome/browser/ui/webui/top_chrome/webui_contents_wrapper.h"
 #include "url/gurl.h"
 

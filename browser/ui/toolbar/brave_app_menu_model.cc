@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_app_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_app_menu_model.h"
 
 #include <memory>
 #include <optional>
@@ -13,10 +13,10 @@
 #include "base/check_op.h"
 #include "base/memory/raw_ptr.h"
 #include "base/notreached.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/toolbar/app_menu_icons.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/commander/common/buildflags/buildflags.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/toolbar/app_menu_icons.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/commander/common/buildflags/buildflags.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
@@ -31,16 +31,16 @@
 #include "ui/base/ui_base_features.h"
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/sidebar/sidebar_utils.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/ui/toolbar/brave_vpn_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_vpn_menu_model.h"
 #endif
 
 #if BUILDFLAG(ENABLE_COMMANDER)
-#include "brave/browser/ui/commander/commander_service.h"
+#include "BnesBrowser/browser/ui/commander/commander_service.h"
 #endif
 
 namespace {

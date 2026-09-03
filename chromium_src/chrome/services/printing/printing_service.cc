@@ -6,7 +6,7 @@
 #include <chrome/services/printing/printing_service.cc>
 
 #if BUILDFLAG(ENABLE_PRINT_PREVIEW)
-#include "brave/services/printing/pdf_to_bitmap_converter.h"
+#include "BnesBrowser/services/printing/pdf_to_bitmap_converter.h"
 #endif
 
 namespace printing {

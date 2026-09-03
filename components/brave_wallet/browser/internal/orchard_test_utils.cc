@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/internal/orchard_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/orchard_test_utils.h"
 
 #include <utility>
 
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_test_utils.h"
 
 namespace brave_wallet {
 

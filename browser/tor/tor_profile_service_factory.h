@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "components/keyed_service/content/browser_context_keyed_service_factory.h"
 
 namespace base {

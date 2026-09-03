@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_services_key_public_headers =
-    [ "//brave/ios/browser/api/brave_services_key/brave_services_key.h" ]
+    [ "//BnesBrowser/ios/browser/api/brave_services_key/brave_services_key.h" ]

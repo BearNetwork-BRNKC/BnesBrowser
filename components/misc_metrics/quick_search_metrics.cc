@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/quick_search_metrics.h"
+#include "BnesBrowser/components/misc_metrics/quick_search_metrics.h"
 
 #include <optional>
 #include <utility>
@@ -13,8 +13,8 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "components/search_engines/template_url.h"

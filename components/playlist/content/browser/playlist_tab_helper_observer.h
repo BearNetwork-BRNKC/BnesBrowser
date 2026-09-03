@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "base/observer_list_types.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 
 namespace playlist {
 

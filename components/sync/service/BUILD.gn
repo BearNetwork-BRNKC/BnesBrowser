@@ -12,20 +12,20 @@ source_set("unit_tests") {
   ]
 
   sources = [
-    "//brave/components/sync/service/brave_sync_auth_manager_unittest.cc",
-    "//brave/components/sync/service/brave_sync_service_impl_unittest.cc",
-    "//brave/components/sync/service/brave_sync_user_settings_impl_unittest.cc",
+    "//BnesBrowser/components/sync/service/brave_sync_auth_manager_unittest.cc",
+    "//BnesBrowser/components/sync/service/brave_sync_service_impl_unittest.cc",
+    "//BnesBrowser/components/sync/service/brave_sync_user_settings_impl_unittest.cc",
   ]
 
   deps = [
     "//base/test:test_support",
-    "//brave/components/brave_sync:crypto",
-    "//brave/components/brave_sync:features",
-    "//brave/components/brave_sync:network_time_helper",
-    "//brave/components/brave_sync:p3a",
-    "//brave/components/brave_sync:prefs",
-    "//brave/components/constants",
-    "//brave/components/sync/test:test_support",
+    "//BnesBrowser/components/brave_sync:crypto",
+    "//BnesBrowser/components/brave_sync:features",
+    "//BnesBrowser/components/brave_sync:network_time_helper",
+    "//BnesBrowser/components/brave_sync:p3a",
+    "//BnesBrowser/components/brave_sync:prefs",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/sync/test:test_support",
     "//components/history/core/browser",
     "//components/network_time",
     "//components/os_crypt/async/browser:test_support",

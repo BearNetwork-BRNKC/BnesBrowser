@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/components/local_ai/core/on_device_speech_recognition.mojom-forward.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_recognition.mojom-forward.h"
 #include "content/public/browser/webui_config.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "ui/webui/mojo_web_ui_controller.h"

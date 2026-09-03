@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
 
 #include <utility>
 
-#include "brave/browser/resources/brave_origin_startup/grit/brave_origin_startup_generated_map.h"
-#include "brave/browser/resources/brave_origin_startup/grit/brave_origin_startup_static_resources.h"
-#include "brave/browser/resources/brave_origin_startup/grit/brave_origin_startup_static_resources_map.h"
-#include "brave/browser/skus/skus_service_factory.h"
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_handler.h"
+#include "BnesBrowser/browser/resources/brave_origin_startup/grit/brave_origin_startup_generated_map.h"
+#include "BnesBrowser/browser/resources/brave_origin_startup/grit/brave_origin_startup_static_resources.h"
+#include "BnesBrowser/browser/resources/brave_origin_startup/grit/brave_origin_startup_static_resources_map.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_handler.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

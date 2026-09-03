@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
 
 #include <optional>
 #include <utility>
@@ -13,7 +13,7 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/notreached.h"
-#include "brave/components/body_sniffer/body_sniffer_throttle.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_throttle.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"
 #include "net/http/http_request_headers.h"
 #include "net/url_request/redirect_info.h"

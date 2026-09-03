@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
 
 #include <algorithm>
 #include <optional>
@@ -17,7 +17,7 @@
 #include "base/numerics/safe_conversions.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_locale_utils.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_locale_utils.h"
 
 namespace {
 

@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/browser/extensions/bnes_extension_constants.h"
+#include "BnesBrowser/browser/extensions/bnes_extension_constants.h"
 #include "extensions/browser/management_policy.h"
 
 namespace extensions {

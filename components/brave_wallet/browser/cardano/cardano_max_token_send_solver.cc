@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_max_token_send_solver.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_max_token_send_solver.h"
 
 #include <algorithm>
 #include <utility>
@@ -11,9 +11,9 @@
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction_serializer.h"
 
 namespace brave_wallet {
 

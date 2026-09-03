@@ -12,7 +12,7 @@
 
 #include "base/run_loop.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 #include "ui/base/page_transition_types.h"
 
 class GURL;

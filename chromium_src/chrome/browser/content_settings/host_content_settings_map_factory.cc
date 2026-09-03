@@ -5,7 +5,7 @@
 
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 
-#include "brave/components/content_settings/core/browser/remote_list_provider.h"
+#include "BnesBrowser/components/content_settings/core/browser/remote_list_provider.h"
 #include "build/buildflag.h"
 #include "chrome/browser/supervised_user/family_link_settings_service_factory.h"
 #include "components/keyed_service/content/browser_context_keyed_service_factory.h"

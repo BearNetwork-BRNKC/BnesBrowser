@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_handler_bridge_holder.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_handler_bridge_holder.h"
 
 namespace brave_wallet {
 

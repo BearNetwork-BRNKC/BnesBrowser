@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/brave_player/brave_player_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/brave_player/brave_player_action_icon_view.h"
 
 #include <memory>
 #include <string>
@@ -11,12 +11,12 @@
 #include "base/check.h"
 #include "base/notreached.h"
 #include "base/strings/strcat.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/components/brave_player/common/buildflags/buildflags.h"
-#include "brave/components/brave_player/common/url_constants.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/components/brave_player/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_player/common/url_constants.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "content/public/browser/web_contents.h"
 #include "net/base/url_util.h"

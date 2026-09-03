@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/request_otr/browser/request_otr_blocking_page.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_blocking_page.h"
 
 #include <ostream>
 #include <utility>
@@ -12,8 +12,8 @@
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/request_otr/browser/request_otr_controller_client.h"
-#include "brave/components/request_otr/browser/request_otr_p3a.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_controller_client.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_p3a.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/security_interstitials/content/security_interstitial_controller_client.h"

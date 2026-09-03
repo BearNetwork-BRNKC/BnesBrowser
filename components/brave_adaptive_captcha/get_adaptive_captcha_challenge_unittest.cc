@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_adaptive_captcha/get_adaptive_captcha_challenge.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/get_adaptive_captcha_challenge.h"
 
 #include <memory>
 #include <string>
 
 #include "base/run_loop.h"
 #include "base/test/task_environment.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_adaptive_captcha/server_util.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/server_util.h"
 #include "net/http/http_status_code.h"
 #include "net/traffic_annotation/network_traffic_annotation_test_helper.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"

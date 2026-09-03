@@ -5,7 +5,7 @@
 
 #define _USE_MATH_DEFINES  // Microsoft, please define M_LN2 in <cmath>.
 
-#include "brave/vendor/brave_base/random.h"
+#include "BnesBrowser/vendor/brave_base/random.h"
 
 #include <math.h>
 

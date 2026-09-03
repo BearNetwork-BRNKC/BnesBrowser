@@ -10,7 +10,7 @@
 
 #include "base/callback_list.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/focus_mode/focus_mode_controller.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_controller.h"
 #include "chrome/browser/ui/views/frame/opaque_browser_frame_view.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 

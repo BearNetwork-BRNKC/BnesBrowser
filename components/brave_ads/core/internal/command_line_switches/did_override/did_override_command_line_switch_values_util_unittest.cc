@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/command_line_switches/did_override/did_override_command_line_switch_values_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/command_line_switches/did_override/did_override_command_line_switch_values_util.h"
 
 #include <string>
 #include <vector>
 
 #include "base/strings/string_util.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 #include "components/variations/variations_switches.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*

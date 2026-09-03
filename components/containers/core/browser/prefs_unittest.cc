@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/core/browser/prefs.h"
+#include "BnesBrowser/components/containers/core/browser/prefs.h"
 
 #include <utility>
 
 #include "base/test/scoped_feature_list.h"
 #include "base/values.h"
-#include "brave/components/containers/core/browser/default_containers_list.h"
-#include "brave/components/containers/core/browser/pref_names.h"
-#include "brave/components/containers/core/browser/prefs_registration.h"
-#include "brave/components/containers/core/common/features.h"
-#include "brave/components/containers/core/mojom/containers.mojom-data-view.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/browser/default_containers_list.h"
+#include "BnesBrowser/components/containers/core/browser/pref_names.h"
+#include "BnesBrowser/components/containers/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-data-view.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

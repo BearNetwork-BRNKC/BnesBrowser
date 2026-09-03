@@ -14,7 +14,7 @@ source_set("global_privacy_control") {
   ]
   deps = [
     ":gpc_js",
-    "//brave/components/global_privacy_control",
+    "//BnesBrowser/components/global_privacy_control",
     "//ios/chrome/browser/shared/model/profile",
     "//ios/web/public",
     "//ios/web/web_state/ui:wk_web_view_configuration_provider",

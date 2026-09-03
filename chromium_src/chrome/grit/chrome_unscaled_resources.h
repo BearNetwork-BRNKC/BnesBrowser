@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_GRIT_CHROME_UNSCALED_RESOURCES_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_GRIT_CHROME_UNSCALED_RESOURCES_H_
 
-#include "brave/grit/brave_unscaled_resources.h"  // IWYU pragma: export
+#include "BnesBrowser/grit/brave_unscaled_resources.h"  // IWYU pragma: export
 
 #include "../gen/chrome/grit/chrome_unscaled_resources.h"  // IWYU pragma: export
 

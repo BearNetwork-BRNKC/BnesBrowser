@@ -13,12 +13,12 @@ cargo_crate("lib") {
   epoch = "3"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/constants.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/strobe.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/transcript.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/constants.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/strobe.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/merlin-v3/src/transcript.rs",
   ]
   inputs = []
 
@@ -34,10 +34,10 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/byteorder/v1:lib",
-    "//brave/third_party/rust/keccak/v0_1:lib",
-    "//brave/third_party/rust/rand_core/v0_6:lib",
-    "//brave/third_party/rust/zeroize/v1:lib",
+    "//BnesBrowser/third_party/rust/byteorder/v1:lib",
+    "//BnesBrowser/third_party/rust/keccak/v0_1:lib",
+    "//BnesBrowser/third_party/rust/rand_core/v0_6:lib",
+    "//BnesBrowser/third_party/rust/zeroize/v1:lib",
   ]
   rustenv = []
   rustflags = []

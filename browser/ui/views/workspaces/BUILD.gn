@@ -26,14 +26,14 @@ source_set("workspaces") {
 
   public_deps = [
     "//base",
-    "//brave/browser/workspaces",
+    "//BnesBrowser/browser/workspaces",
     "//ui/menus",
     "//ui/views",
   ]
 
   deps = [
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/components/vector_icons",
     "//components/constrained_window",
     "//ui/base",
   ]
@@ -49,9 +49,9 @@ source_set("browser_tests") {
     ":workspaces",
     "//base",
     "//base/test:test_support",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/browser/ui/views/frame",
-    "//brave/browser/workspaces",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/browser/ui/views/frame",
+    "//BnesBrowser/browser/workspaces",
     "//chrome/browser",
     "//chrome/browser/ui",
     "//chrome/test:test_support",

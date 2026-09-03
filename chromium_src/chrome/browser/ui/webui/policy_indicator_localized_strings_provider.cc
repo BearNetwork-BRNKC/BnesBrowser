@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/webui/policy_indicator_localized_strings_provider.h"
 
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/grit/generated_resources.h"
 
 // CHROMIUM_SRC_INTERNAL_USE

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/mock_browser_window_interface_with_vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/mock_browser_window_interface_with_vertical_tab_controller.h"
 
 #include <memory>
 
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "testing/gmock/include/gmock/gmock.h"
 

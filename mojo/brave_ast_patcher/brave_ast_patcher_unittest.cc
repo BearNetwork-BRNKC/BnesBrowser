@@ -5,7 +5,7 @@
 
 #include <string>
 
-#include "brave/mojo/brave_ast_patcher/test_module.mojom.h"
+#include "BnesBrowser/mojo/brave_ast_patcher/test_module.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 // This file contains patched mojom usage to ensure that all new definitions,

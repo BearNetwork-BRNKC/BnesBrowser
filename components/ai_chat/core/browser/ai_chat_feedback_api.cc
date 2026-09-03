@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/ai_chat_feedback_api.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_feedback_api.h"
 
 #include <string_view>
 #include <utility>
@@ -16,9 +16,9 @@
 #include "base/strings/strcat.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 #include "mojo/public/cpp/bindings/struct_ptr.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

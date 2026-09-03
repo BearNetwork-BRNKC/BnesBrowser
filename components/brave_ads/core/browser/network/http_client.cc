@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/browser/network/http_client.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/http_client.h"
 
 #include <cstddef>
 #include <utility>
@@ -15,11 +15,11 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/notreached.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_ads/core/browser/network/http_client_util.h"
-#include "brave/components/brave_ads/core/browser/network/oblivious_http_client_impl.h"
-#include "brave/components/brave_ads/core/browser/network/oblivious_http_feature.h"
-#include "brave/components/brave_ads/core/browser/network/oblivious_http_key_config.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/http_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/oblivious_http_client_impl.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/oblivious_http_feature.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/oblivious_http_key_config.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 #include "components/prefs/pref_service.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"

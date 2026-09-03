@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_BRAVE_ADS_DEVICE_ID_DEVICE_ID_IMPL_H_
 
 #include "base/containers/span.h"
-#include "brave/components/brave_ads/browser/device_id/device_id.h"
+#include "BnesBrowser/components/brave_ads/browser/device_id/device_id.h"
 
 namespace brave_ads {
 

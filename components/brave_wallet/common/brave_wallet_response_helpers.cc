@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/brave_wallet_response_helpers.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_response_helpers.h"
 
 #include <string_view>
 #include <utility>
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

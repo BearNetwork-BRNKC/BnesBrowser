@@ -30,7 +30,7 @@ source_set("endpoint_client") {
 
   deps = [
     "//base",
-    "//brave/brave_domains",
+    "//BnesBrowser/brave_domains",
     "//net",
     "//services/network/public/cpp",
     "//third_party/protobuf:protobuf_lite",
@@ -45,7 +45,7 @@ source_set("test_support") {
 
   deps = [
     "//base",
-    "//brave/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/endpoint_client",
     "//net",
     "//services/network:test_support",
     "//services/network/public/cpp",
@@ -69,10 +69,10 @@ source_set("unit_tests") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_account/endpoint_client",
-    "//brave/components/brave_account/endpoint_client:json_test_endpoint_bodies",
-    "//brave/components/brave_account/endpoint_client:protobuf_test_endpoint_bodies",
-    "//brave/components/brave_account/endpoint_client:test_support",
+    "//BnesBrowser/components/brave_account/endpoint_client",
+    "//BnesBrowser/components/brave_account/endpoint_client:json_test_endpoint_bodies",
+    "//BnesBrowser/components/brave_account/endpoint_client:protobuf_test_endpoint_bodies",
+    "//BnesBrowser/components/brave_account/endpoint_client:test_support",
     "//net",
     "//services/network:test_support",
     "//services/network/public/cpp",

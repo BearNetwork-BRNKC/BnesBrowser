@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/p3a/p3a_message.h"
+#include "BnesBrowser/components/p3a/p3a_message.h"
 
 #include <algorithm>
 #include <array>
@@ -20,18 +20,18 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/strings/to_string.h"
-#include "brave/components/brave_stats/browser/brave_stats_updater_util.h"
-#include "brave/components/p3a/metric_config.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/p3a/region.h"
-#include "brave/components/p3a/uploader.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/brave_stats/browser/brave_stats_updater_util.h"
+#include "BnesBrowser/components/p3a/metric_config.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/p3a/region.h"
+#include "BnesBrowser/components/p3a/uploader.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "components/country_codes/country_codes.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/brave_referrals/common/pref_names.h"
+#include "BnesBrowser/components/brave_referrals/common/pref_names.h"
 #endif  // !BUILDFLAG(IS_IOS)
 
 namespace p3a {

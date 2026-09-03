@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/associated_content_driver.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_driver.h"
 
 #include <memory>
 #include <ostream>
@@ -19,12 +19,12 @@
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
 #include "base/strings/strcat.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/ai_chat/core/browser/associated_content_delegate.h"
-#include "brave/components/ai_chat/core/browser/brave_search_responses.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/constants.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_delegate.h"
+#include "BnesBrowser/components/ai_chat/core/browser/brave_search_responses.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/constants.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 #include "net/base/url_util.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

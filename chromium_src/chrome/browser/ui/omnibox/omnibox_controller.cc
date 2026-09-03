@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/omnibox/omnibox_controller.h"
 
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
 #include "components/prefs/pref_service.h"
 
 namespace {

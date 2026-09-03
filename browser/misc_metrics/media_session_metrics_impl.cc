@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/media_session_metrics_impl.h"
+#include "BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h"
 
 #include <array>
 #include <utility>
@@ -11,10 +11,10 @@
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/time/time.h"
-#include "brave/components/misc_metrics/pref_names.h"
-#include "brave/components/misc_metrics/uptime_monitor.h"
-#include "brave/components/p3a_utils/bucket.h"
-#include "brave/components/p3a_utils/custom_attributes.h"
+#include "BnesBrowser/components/misc_metrics/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/uptime_monitor.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/p3a_utils/custom_attributes.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 #include "content/public/browser/media_session.h"

@@ -11,7 +11,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_transaction.h"
 
 namespace brave_wallet {
 

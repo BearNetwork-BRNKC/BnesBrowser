@@ -5,7 +5,7 @@
 
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_CHROME_TEST_LAUNCHER_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_CHROME_TEST_LAUNCHER_H_
-#include "brave/app/brave_main_delegate.h"
+#include "BnesBrowser/app/brave_main_delegate.h"
 
 #define ChromeMainDelegate BraveMainDelegate
 #include <chrome/test/base/chrome_test_launcher.h>  // IWYU pragma: export

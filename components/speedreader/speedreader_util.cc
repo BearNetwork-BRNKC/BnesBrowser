@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 
 #include <memory>
 #include <utility>
@@ -14,9 +14,9 @@
 #include "base/notreached.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/speedreader/rust/ffi/speedreader.h"
-#include "brave/components/speedreader/speedreader_rewriter_service.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/rust/ffi/speedreader.h"
+#include "BnesBrowser/components/speedreader/speedreader_rewriter_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #include "url/gurl.h"
 
 namespace speedreader {

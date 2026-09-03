@@ -4,18 +4,18 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/feature_list.h"
-#include "brave/browser/metrics/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/global_privacy_control/pref_names.h"
-#include "brave/components/ntp_background_images/buildflags/buildflags.h"
-#include "brave/components/query_filter/common/pref_names.h"
+#include "BnesBrowser/browser/metrics/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/global_privacy_control/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/buildflags/buildflags.h"
+#include "BnesBrowser/components/query_filter/common/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/new_tab_page/prefs/ntp_pref_names.h"
@@ -39,17 +39,17 @@
 #include "content/public/test/browser_test.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #endif
 
 #if !BUILDFLAG(IS_ANDROID)
@@ -58,7 +58,7 @@
 #endif
 
 #if BUILDFLAG(ENABLE_CUSTOM_BACKGROUND)
-#include "brave/browser/ntp_background/ntp_background_prefs.h"
+#include "BnesBrowser/browser/ntp_background/ntp_background_prefs.h"
 #endif
 
 using BraveProfilePrefsBrowserTest = PlatformBrowserTest;

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 if (is_mac) {
   import("//build/config/mac/rules.gni")
   import("//build/util/branding.gni")
@@ -40,11 +40,11 @@ executable("helper") {
     ":core",
     "//base",
     "//base:base_static",
-    "//brave/components/brave_vpn/app/v2/shared",
-    "//brave/components/brave_vpn/app/v2/shared:crashrpt",
+    "//BnesBrowser/components/brave_vpn/app/v2/shared",
+    "//BnesBrowser/components/brave_vpn/app/v2/shared:crashrpt",
   ]
 
-  data_deps = [ "//brave/third_party/boringtun" ]
+  data_deps = [ "//BnesBrowser/third_party/boringtun" ]
 
   if (is_mac) {
     deps += [ "//base/allocator:early_zone_registration_apple" ]
@@ -76,8 +76,8 @@ if (is_mac) {
       ":core",
       "//base",
       "//base:base_static",
-      "//brave/components/brave_vpn/app/v2/shared",
-      "//brave/components/brave_vpn/app/v2/shared:crashrpt",
+      "//BnesBrowser/components/brave_vpn/app/v2/shared",
+      "//BnesBrowser/components/brave_vpn/app/v2/shared:crashrpt",
     ]
 
     ldflags = []
@@ -94,7 +94,7 @@ if (is_mac) {
   bundle_data("boringtun_bundle_data") {
     sources = [ "$root_out_dir/libboringtun.dylib" ]
     outputs = [ "{{bundle_contents_dir}}/Frameworks/{{source_file_part}}" ]
-    public_deps = [ "//brave/third_party/boringtun" ]
+    public_deps = [ "//BnesBrowser/third_party/boringtun" ]
   }
 
   # Drops the assembled app into the browser framework's Helpers directory.

@@ -9,7 +9,7 @@
 #include <optional>
 
 #include "base/values.h"
-#include "brave/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
 
 namespace content {
 class BrowserContext;

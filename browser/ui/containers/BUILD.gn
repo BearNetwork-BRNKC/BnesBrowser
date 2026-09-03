@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 assert(enable_containers,
        "Containers feature must be enabled to build this target.")
@@ -20,13 +20,13 @@ source_set("containers") {
 
   deps = [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/app:command_ids",
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/common",
-    "//brave/components/containers/core/mojom",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/app:command_ids",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/common",
+    "//BnesBrowser/components/containers/core/mojom",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/app:generated_resources",
     "//chrome/browser/ui/browser_window",
     "//ui/base",
@@ -64,12 +64,12 @@ source_set("unit_tests") {
     "//base",
     "//base/allocator/partition_allocator/src/partition_alloc:test_support",
     "//base/test:test_support",
-    "//brave/app:command_ids",
-    "//brave/components/containers/core/browser",
-    "//brave/components/containers/core/browser:test_support",
-    "//brave/components/containers/core/common",
-    "//brave/components/containers/core/mojom",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:command_ids",
+    "//BnesBrowser/components/containers/core/browser",
+    "//BnesBrowser/components/containers/core/browser:test_support",
+    "//BnesBrowser/components/containers/core/common",
+    "//BnesBrowser/components/containers/core/mojom",
+    "//BnesBrowser/components/vector_icons",
     "//components/sync_preferences:test_support",
     "//testing/gmock",
     "//testing/gtest",

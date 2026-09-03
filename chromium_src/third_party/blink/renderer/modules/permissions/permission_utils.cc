@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/modules/permissions/permission_utils.h"
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "third_party/blink/renderer/core/workers/worker_global_scope.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)

@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_THEMES_THEME_SERVICE_AURA_LINUX_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_THEMES_THEME_SERVICE_AURA_LINUX_H_
 
-#include "brave/browser/themes/brave_theme_service.h"
+#include "BnesBrowser/browser/themes/brave_theme_service.h"
 
 #undef ThemeService
 #define ThemeService BraveThemeService

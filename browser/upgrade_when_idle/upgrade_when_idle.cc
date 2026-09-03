@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/upgrade_when_idle/upgrade_when_idle.h"
+#include "BnesBrowser/browser/upgrade_when_idle/upgrade_when_idle.h"
 
 #include <utility>
 
 #include "base/check_is_test.h"
 #include "base/command_line.h"
 #include "base/time/time.h"
-#include "brave/browser/browsing_data/brave_clear_browsing_data.h"
+#include "BnesBrowser/browser/browsing_data/brave_clear_browsing_data.h"
 #include "chrome/browser/first_run/upgrade_util.h"
 #include "chrome/browser/lifetime/application_lifetime.h"
 #include "chrome/browser/profiles/profile_manager.h"

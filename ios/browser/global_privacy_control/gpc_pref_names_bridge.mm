@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/global_privacy_control/gpc_pref_names_bridge.h"
+#include "BnesBrowser/ios/browser/global_privacy_control/gpc_pref_names_bridge.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/global_privacy_control/pref_names.h"
+#include "BnesBrowser/components/global_privacy_control/pref_names.h"
 
 NSString* const kGlobalPrivacyControlEnabled = base::SysUTF8ToNSString(
     global_privacy_control::kGlobalPrivacyControlEnabled);

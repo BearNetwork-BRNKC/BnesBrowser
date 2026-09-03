@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_handler.h"
 
 #include <utility>
 
 #include "base/json/json_reader.h"
 #include "base/logging.h"
 #include "base/strings/string_util.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/components/brave_origin/pref_names.h"
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/components/brave_origin/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/prefs/pref_service.h"
 #include "ui/base/l10n/l10n_util.h"

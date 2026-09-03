@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/brave_tab_strip.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_strip.h"
 
 #include <memory>
 #include <optional>
@@ -14,20 +14,20 @@
 #include "base/check_is_test.h"
 #include "base/check_op.h"
 #include "base/feature_list.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/tabs/public/vertical_tab_controller.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service.h"
-#include "brave/browser/ui/tabs/shared_pinned_tab_service_factory.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
-#include "brave/browser/ui/views/tabs/accent_color/brave_tab_accent_color_palette.h"
-#include "brave/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
-#include "brave/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
-#include "brave/browser/ui/views/tabs/brave_tab.h"
-#include "brave/browser/ui/views/tabs/brave_tab_container.h"
-#include "brave/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/tabs/public/vertical_tab_controller.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service.h"
+#include "BnesBrowser/browser/ui/tabs/shared_pinned_tab_service_factory.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_container_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/tabs/accent_color/brave_tab_accent_color_palette.h"
+#include "BnesBrowser/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_browser_tab_strip_controller.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_container.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_tab_hover_card_controller.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/themes/theme_service.h"
@@ -57,12 +57,12 @@
 #include "ui/views/view_utils.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/browser/ui/containers/container_model.h"
-#include "brave/browser/ui/containers/containers_icon_generator.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/browser/temporary_container.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/browser/ui/containers/container_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_icon_generator.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/browser/temporary_container.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 BraveTabStrip::BraveTabStrip(

@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_origin/brave_origin_service_bridge_impl.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_service_bridge_impl.h"
 
 #include <optional>
 
 #include "base/memory/raw_ptr.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_origin/brave_origin_service.h"
-#include "brave/ios/browser/brave_origin/brave_origin_service_bridge.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_service.h"
+#include "BnesBrowser/ios/browser/brave_origin/brave_origin_service_bridge.h"
 
 @interface BraveOriginServiceBridgeImpl () {
   raw_ptr<brave_origin::BraveOriginService> _service;

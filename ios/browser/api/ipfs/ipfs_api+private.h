@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/ipfs/ipfs_api.h"
+#include "BnesBrowser/ios/browser/api/ipfs/ipfs_api.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

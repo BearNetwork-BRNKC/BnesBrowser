@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/text_recognition_dialog_view.h"
+#include "BnesBrowser/browser/ui/views/text_recognition_dialog_view.h"
 
 #include <memory>
 #include <optional>
@@ -17,9 +17,9 @@
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/views/text_recognition_dialog_tracker.h"
-#include "brave/components/text_recognition/browser/text_recognition.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/views/text_recognition_dialog_tracker.h"
+#include "BnesBrowser/components/text_recognition/browser/text_recognition.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "components/constrained_window/constrained_window_views.h"
 #include "ui/base/clipboard/scoped_clipboard_writer.h"

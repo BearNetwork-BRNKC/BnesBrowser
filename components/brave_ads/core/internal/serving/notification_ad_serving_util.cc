@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/notification_ad_serving_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/notification_ad_serving_util.h"
 
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_util.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_util.h"
-#include "brave/components/brave_ads/core/internal/serving/notification_ad_serving_feature.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/notification_ad_serving_feature.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 
 namespace brave_ads {
 

@@ -45,7 +45,7 @@ constexpr char kBraveSyncedTabsUrl[] = "brave://history/syncedTabs";
 #undef GetAllForeignSessions
 #undef BRAVE_RECENT_TABS_SUB_MENU_MODEL_BUILD_TABS_FROM_OTHER_DEVICES
 
-#include "brave/browser/ui/toolbar/brave_recent_tabs_sub_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_recent_tabs_sub_menu_model.h"
 
 // Methods of BraveRecentTabsSubMenuModel are implemented below instead of
 // brave_recent_tabs_sub_menu_model.cc to have the access to functions in

@@ -7,7 +7,7 @@
 # does not include Chromium providers we don't need.
 group("brave_providers") {
   deps = [
-    "//brave/ios/browser/providers/lottie:chromium_lottie_animation",
+    "//BnesBrowser/ios/browser/providers/lottie:chromium_lottie_animation",
 
     # The individual API implementations.
     "//ios/chrome/browser/providers/add_to_calendar:chromium_add_to_calendar",

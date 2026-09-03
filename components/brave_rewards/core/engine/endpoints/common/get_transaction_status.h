@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/brave_rewards/core/engine/endpoints/request_builder.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/request_builder.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

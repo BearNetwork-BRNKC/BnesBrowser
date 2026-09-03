@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/settings/brave_vpn/brave_vpn_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_vpn/brave_vpn_handler.h"
 
 #include <memory>
 
@@ -13,20 +13,20 @@
 #include "base/path_service.h"
 #include "base/process/launch.h"
 #include "base/task/thread_pool.h"
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/brave_vpn/win/service_constants.h"
-#include "brave/browser/brave_vpn/win/service_details.h"
-#include "brave/browser/brave_vpn/win/storage_utils.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/browser/brave_vpn/win/storage_utils.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/storage_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
 #endif
 
 BraveVpnHandler::BraveVpnHandler(Profile* profile) : profile_(profile) {

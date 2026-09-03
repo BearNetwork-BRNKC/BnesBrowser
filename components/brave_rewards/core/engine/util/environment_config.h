@@ -9,8 +9,8 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/brave_rewards/core/engine/rewards_engine_helper.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 #include "url/gurl.h"
 
 namespace brave_rewards::internal {

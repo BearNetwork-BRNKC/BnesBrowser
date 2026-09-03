@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper_test_util.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper_test_util.h"
 
 #include <utility>
 
-#include "brave/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_provider_delegate_impl_helper.h"
 
 namespace brave_wallet {
 

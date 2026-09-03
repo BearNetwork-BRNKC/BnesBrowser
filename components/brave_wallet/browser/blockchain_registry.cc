@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/blockchain_registry.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_registry.h"
 
 #include <algorithm>
 #include <optional>
@@ -15,9 +15,9 @@
 #include "base/files/file_util.h"
 #include "base/no_destructor.h"
 #include "base/strings/string_util.h"
-#include "brave/components/brave_wallet/browser/network_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/json/json_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/network_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/json/json_helper.h"
 #include "net/base/url_util.h"
 
 namespace brave_wallet {

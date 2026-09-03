@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
+#include "BnesBrowser/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
 
 #include <optional>
 
 #include "base/check.h"
 #include "base/functional/bind.h"
 #include "base/logging.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/day_zero_browser_ui_expt/pref_names.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a/pref_names.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/day_zero_browser_ui_expt/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"
@@ -26,7 +26,7 @@
 
 #include "base/android/jni_android.h"
 #include "base/android/jni_string.h"
-#include "brave/build/android/jni_headers/DayZeroHelper_jni.h"
+#include "BnesBrowser/build/android/jni_headers/DayZeroHelper_jni.h"
 #endif  // #BUILDFLAG(IS_ANDROID)
 
 // static

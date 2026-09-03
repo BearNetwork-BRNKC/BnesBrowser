@@ -6,7 +6,7 @@
 #include "components/search_engines/search_engine_utils.h"
 
 #include "base/compiler_specific.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 
 #define GetEngineType GetEngineType_ChromiumImpl
 #include <components/search_engines/search_engine_utils.cc>

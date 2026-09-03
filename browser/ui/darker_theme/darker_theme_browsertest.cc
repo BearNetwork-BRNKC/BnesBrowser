@@ -4,11 +4,11 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/color/color_palette.h"
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/darker_theme/pref_names.h"
-#include "brave/browser/ui/views/frame/brave_browser_widget.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/color/color_palette.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/pref_names.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_widget.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/browser/themes/theme_service_factory.h"

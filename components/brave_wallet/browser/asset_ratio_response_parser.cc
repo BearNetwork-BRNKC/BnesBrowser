@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/asset_ratio_response_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/asset_ratio_response_parser.h"
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
@@ -11,10 +11,10 @@
 #include "base/strings/stringprintf.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/api/asset_ratio.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/api/asset_ratio.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace brave_wallet {

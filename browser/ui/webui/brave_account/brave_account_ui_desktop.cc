@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
+#include "BnesBrowser/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
 
 #include <memory>
 #include <utility>
@@ -12,9 +12,9 @@
 #include "base/check_deref.h"
 #include "base/functional/bind.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_account/brave_account_constants.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/brave_account/brave_account_constants.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/web_contents.h"
 #include "content/public/browser/web_contents_user_data.h"

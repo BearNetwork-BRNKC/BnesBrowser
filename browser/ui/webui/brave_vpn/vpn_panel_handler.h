@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_WEBUI_BRAVE_VPN_VPN_PANEL_HANDLER_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_web_ui_controller.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

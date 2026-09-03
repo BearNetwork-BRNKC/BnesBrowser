@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_policy/ad_block_only_mode/ad_block_only_mode_policy_manager.h"
+#include "BnesBrowser/components/brave_policy/ad_block_only_mode/ad_block_only_mode_policy_manager.h"
 
 #include "base/feature_list.h"
 #include "base/no_destructor.h"
-#include "brave/components/brave_policy/ad_block_only_mode/buildflags/buildflags.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_policy/ad_block_only_mode/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 #include "components/content_settings/core/common/content_settings.h"
 #include "components/policy/policy_constants.h"
 #include "components/prefs/pref_service.h"

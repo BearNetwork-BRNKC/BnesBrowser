@@ -9,10 +9,10 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/psst/psst_ui_desktop_presenter.h"
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_handler.h"
-#include "brave/components/psst/core/common/constants.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom-shared.h"
+#include "BnesBrowser/browser/psst/psst_ui_desktop_presenter.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_handler.h"
+#include "BnesBrowser/components/psst/core/common/constants.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom-shared.h"
 #include "chrome/browser/ui/webui/top_chrome/top_chrome_web_ui_controller.h"
 #include "content/public/browser/web_ui_controller.h"
 #include "content/public/browser/web_ui_message_handler.h"

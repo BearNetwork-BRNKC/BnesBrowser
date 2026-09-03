@@ -14,4 +14,4 @@ filtered_resource_id_file_path =
     rebase_path(filtered_resource_id_file, root_build_dir)
 
 brave_tools_gritsettings_deps =
-    [ "//brave/tools/gritsettings:filter_resource_ids" ]
+    [ "//BnesBrowser/tools/gritsettings:filter_resource_ids" ]

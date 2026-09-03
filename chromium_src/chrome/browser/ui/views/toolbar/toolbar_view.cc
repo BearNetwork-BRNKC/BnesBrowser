@@ -6,13 +6,13 @@
 // BraveAvatarToolbarButton and BraveBrowserAppMenuButton are substituted into
 // ToolbarView::Init() in place of their upstream base classes via plaster, see
 // brave/rewrite/chrome/browser/ui/views/toolbar/toolbar_view.cc.yaml
-#include "brave/browser/ui/views/profiles/brave_avatar_toolbar_button.h"
-#include "brave/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
+#include "BnesBrowser/browser/ui/views/profiles/brave_avatar_toolbar_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_browser_app_menu_button.h"
 #include "chrome/browser/ui/views/location_bar/location_bar_view.h"
 #include "extensions/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
-#include "brave/browser/ui/views/location_bar/brave_location_bar_view.h"
+#include "BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)

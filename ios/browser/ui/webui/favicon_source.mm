@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/favicon_source.h"
+#include "BnesBrowser/ios/browser/ui/webui/favicon_source.h"
 
 #include <cmath>
 
@@ -13,8 +13,8 @@
 #include "base/metrics/histogram_functions.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/favicon/brave_ios_favicon_loader.h"
-#include "brave/ios/browser/favicon/brave_ios_favicon_loader_factory.h"
+#include "BnesBrowser/ios/browser/favicon/brave_ios_favicon_loader.h"
+#include "BnesBrowser/ios/browser/favicon/brave_ios_favicon_loader_factory.h"
 #include "components/favicon/core/fallback_url_util.h"
 #include "components/favicon_base/favicon_url_parser.h"
 #include "components/history/core/browser/top_sites.h"

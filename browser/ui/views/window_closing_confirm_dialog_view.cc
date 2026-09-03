@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/window_closing_confirm_dialog_view.h"
+#include "BnesBrowser/browser/ui/views/window_closing_confirm_dialog_view.h"
 
 #include <memory>
 #include <utility>
@@ -12,8 +12,8 @@
 #include "base/functional/callback.h"
 #include "base/no_destructor.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

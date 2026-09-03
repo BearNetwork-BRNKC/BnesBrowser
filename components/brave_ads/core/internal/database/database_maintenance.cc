@@ -3,23 +3,23 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/database/database_maintenance.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_maintenance.h"
 
 #include "base/functional/bind.h"
 #include "base/location.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/account/deposits/deposits_database_util.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transactions_database_util.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/time/time_formatting_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_util.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/history/ad_history_database_util.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_path_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_util.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/deposits/deposits_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transactions_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/time/time_formatting_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/creative_set_conversion_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/history/ad_history_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_path_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_events_database_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 
 namespace brave_ads::database {
 

@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/url/url_utils.h"
+#include "BnesBrowser/ios/browser/api/url/url_utils.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/content_settings/core/common/content_settings_util.h"
+#include "BnesBrowser/components/content_settings/core/common/content_settings_util.h"
 #import "net/base/apple/url_conversions.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "net/base/url_util.h"

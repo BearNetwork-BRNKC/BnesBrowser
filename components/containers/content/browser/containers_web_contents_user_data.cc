@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/containers/content/browser/containers_web_contents_user_data.h"
+#include "BnesBrowser/components/containers/content/browser/containers_web_contents_user_data.h"
 
 #include <utility>
 
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
 #include "content/public/browser/security_principal.h"
 #include "content/public/browser/site_instance.h"
 #include "content/public/browser/web_contents.h"

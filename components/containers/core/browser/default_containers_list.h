@@ -9,7 +9,7 @@
 #include <array>
 #include <vector>
 
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 
 namespace containers {
 

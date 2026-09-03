@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
+#include "BnesBrowser/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
 
 #include <string_view>
 #include <utility>
@@ -11,9 +11,9 @@
 #include "base/check.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/web_contents.h"
 #include "third_party/blink/public/common/associated_interfaces/associated_interface_provider.h"
@@ -21,10 +21,10 @@
 
 #if !BUILDFLAG(IS_ANDROID)
 #include "base/feature_list.h"
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ui/brave_pages.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ui/brave_pages.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"  // nogncheck
 #include "chrome/browser/ui/color/chrome_color_id.h"
@@ -32,7 +32,7 @@
 #include "components/tabs/public/tab_interface.h"
 #include "ui/color/color_provider.h"
 #else
-#include "brave/browser/android/cosmetic_filters/cosmetic_filters_utils.h"
+#include "BnesBrowser/browser/android/cosmetic_filters/cosmetic_filters_utils.h"
 #include "chrome/browser/flags/android/chrome_session_state.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
 

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/screenshot_preview_dialog.h"
+#include "BnesBrowser/browser/ui/views/toolbar/screenshot_preview_dialog.h"
 
 #include <memory>
 #include <utility>
@@ -11,7 +11,7 @@
 
 #include "base/containers/span.h"
 #include "base/functional/callback.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/platform_util.h"
 #include "third_party/skia/include/core/SkBitmap.h"
 #include "ui/base/l10n/l10n_util.h"

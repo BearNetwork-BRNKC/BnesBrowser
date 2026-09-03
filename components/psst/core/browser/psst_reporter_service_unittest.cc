@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/psst/core/browser/psst_reporter_service.h"
+#include "BnesBrowser/components/psst/core/browser/psst_reporter_service.h"
 
 #include <memory>
 #include <optional>
@@ -15,10 +15,10 @@
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/psst/core/browser/psst_component_installer.h"
-#include "brave/components/psst/core/browser/psst_report_uploader.h"
-#include "brave/components/psst/core/common/psst_script_responses.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/psst/core/browser/psst_component_installer.h"
+#include "BnesBrowser/components/psst/core/browser/psst_report_uploader.h"
+#include "BnesBrowser/components/psst/core/common/psst_script_responses.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 # The target provides the AdsService interface and related types without
 # depending on Brave Ads implementation targets, allowing it to be used even
@@ -18,8 +18,8 @@ source_set("service") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/services/bat_ads/public/interfaces",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/services/bat_ads/public/interfaces",
     "//components/keyed_service/core",
     "//mojo/public/cpp/bindings",
   ]
@@ -30,7 +30,7 @@ source_set("test_support") {
 
   public_deps = [
     ":service",
-    "//brave/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/mojom",
     "//testing/gmock",
   ]
 

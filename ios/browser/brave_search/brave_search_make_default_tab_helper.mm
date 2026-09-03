@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_search/brave_search_make_default_tab_helper.h"
+#include "BnesBrowser/ios/browser/brave_search/brave_search_make_default_tab_helper.h"
 
-#include "brave/ios/browser/brave_search/brave_search_make_default_tab_helper_bridge.h"
+#include "BnesBrowser/ios/browser/brave_search/brave_search_make_default_tab_helper_bridge.h"
 
 BraveSearchMakeDefaultTabHelper::BraveSearchMakeDefaultTabHelper(
     web::WebState* web_state) {}

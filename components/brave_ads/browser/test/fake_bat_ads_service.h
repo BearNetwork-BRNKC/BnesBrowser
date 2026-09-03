@@ -7,9 +7,9 @@
 #define BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_TEST_FAKE_BAT_ADS_SERVICE_H_
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_ads/browser/test/fake_bat_ads.h"
-#include "brave/components/brave_ads/browser/test/fake_bat_ads_client_notifier.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_bat_ads.h"
+#include "BnesBrowser/components/brave_ads/browser/test/fake_bat_ads_client_notifier.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "mojo/public/cpp/bindings/pending_associated_receiver.h"
 #include "mojo/public/cpp/bindings/pending_associated_remote.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"

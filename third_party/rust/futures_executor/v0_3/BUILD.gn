@@ -12,13 +12,13 @@ cargo_crate("lib") {
   crate_name = "futures_executor"
   epoch = "0.3"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/enter.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/local_pool.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/thread_pool.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/unpark_mutex.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/enter.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/local_pool.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/thread_pool.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/futures-executor-v0_3/src/unpark_mutex.rs",
   ]
   inputs = []
 
@@ -33,9 +33,9 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/futures_core/v0_3:lib",
-    "//brave/third_party/rust/futures_task/v0_3:lib",
-    "//brave/third_party/rust/futures_util/v0_3:lib",
+    "//BnesBrowser/third_party/rust/futures_core/v0_3:lib",
+    "//BnesBrowser/third_party/rust/futures_task/v0_3:lib",
+    "//BnesBrowser/third_party/rust/futures_util/v0_3:lib",
   ]
   features = [ "std" ]
   rustenv = []

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_search/renderer/brave_search_service_worker_holder.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_service_worker_holder.h"
 
 #include <algorithm>
 #include <memory>
@@ -13,8 +13,8 @@
 #include "base/auto_reset.h"
 #include "base/check.h"
 #include "base/threading/thread_checker.h"
-#include "brave/components/brave_search/common/brave_search_utils.h"
-#include "brave/components/brave_search/renderer/brave_search_fallback_js_handler.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_search/renderer/brave_search_fallback_js_handler.h"
 #include "content/public/renderer/worker_thread.h"
 #include "url/gurl.h"
 

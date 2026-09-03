@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
 
 #include <cstddef>
 
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/pref_registry.h"
-#include "brave/components/ntp_background_images/common/infobar_constants.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
-#include "brave/components/ntp_background_images/common/view_counter_pref_registry.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_registry.h"
+#include "BnesBrowser/components/ntp_background_images/common/infobar_constants.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_registry.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

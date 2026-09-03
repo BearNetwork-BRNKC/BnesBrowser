@@ -185,7 +185,7 @@ template("ios_swift_framework_bundle") {
     forward_variables_from(invoker, [ "testonly" ])
     visibility = [ ":$_bundle_data_target" ]
 
-    script = "//brave/build/ios/stage_swiftmodule.py"
+    script = "//BnesBrowser/build/ios/stage_swiftmodule.py"
     deps = [ ":$_swift_target" ]
 
     _names = [

@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/youtube/youtube_pref_names_bridge.h"
+#include "BnesBrowser/ios/browser/youtube/youtube_pref_names_bridge.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/youtube/pref_names.h"
+#include "BnesBrowser/ios/browser/youtube/pref_names.h"
 
 NSString* const kYouTubeAutoQualityMode =
     base::SysUTF8ToNSString(youtube::prefs::kAutoQualityMode);

@@ -15,8 +15,8 @@
 #include "base/observer_list.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/block_tracker.h"
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/block_tracker.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
 
 namespace brave_wallet {
 

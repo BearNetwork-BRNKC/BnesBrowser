@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/account/confirmations/non_reward/non_reward_confirmation_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/non_reward/non_reward_confirmation_util.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/user_data_builder/confirmation_user_data_builder.h"
-#include "brave/components/brave_ads/core/internal/account/transactions/transaction_info.h"
-#include "brave/components/brave_ads/core/internal/account/user_data/user_data_info.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/user_data_builder/confirmation_user_data_builder.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/transactions/transaction_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/user_data/user_data_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
 
 namespace brave_ads {
 

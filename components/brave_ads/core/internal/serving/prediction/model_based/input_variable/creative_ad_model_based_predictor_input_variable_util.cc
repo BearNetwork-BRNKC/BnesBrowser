@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/creative_ad_model_based_predictor_input_variable_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/creative_ad_model_based_predictor_input_variable_util.h"
 
 #include <algorithm>
 
-#include "brave/components/brave_ads/core/internal/segments/segment_constants.h"
-#include "brave/components/brave_ads/core/internal/segments/segment_types.h"
-#include "brave/components/brave_ads/core/internal/segments/segment_util.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/segment/creative_ad_model_based_predictor_segment_input_variables_info.h"
-#include "brave/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/segment/creative_ad_model_based_predictor_untargeted_segment_input_variable_info.h"
-#include "brave/components/brave_ads/core/internal/serving/targeting/segments/top_user_model_segments.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/segment/creative_ad_model_based_predictor_segment_input_variables_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/prediction/model_based/input_variable/segment/creative_ad_model_based_predictor_untargeted_segment_input_variable_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/targeting/segments/top_user_model_segments.h"
 
 namespace brave_ads {
 

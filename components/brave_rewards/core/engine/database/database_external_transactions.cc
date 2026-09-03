@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/database/database_external_transactions.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_external_transactions.h"
 
 #include <utility>
 
 #include "base/check_op.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_rewards/core/engine/database/database_util.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace brave_rewards::internal::database {

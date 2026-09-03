@@ -3,23 +3,23 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui_config.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui_config.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_rich_media_ad_event_handler.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/web_ui.h"
 #include "content/public/common/url_constants.h"
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 NewTabTakeoverUIConfig::NewTabTakeoverUIConfig()

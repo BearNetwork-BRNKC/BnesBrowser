@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//third_party/protobuf/proto_library.gni")
 
 assert(enable_brave_rewards)
@@ -15,12 +15,12 @@ if (is_android) {
 source_set("headers") {
   visibility = [
     ":*",
-    "//brave/browser:core",
-    "//brave/browser/extensions",
-    "//brave/browser/ui",
-    "//brave/components/brave_rewards/content",
-    "//brave/components/brave_rewards/content:testutil",
-    "//brave/vendor/brave-ios:rewards_db",
+    "//BnesBrowser/browser:core",
+    "//BnesBrowser/browser/extensions",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/components/brave_rewards/content",
+    "//BnesBrowser/components/brave_rewards/content:testutil",
+    "//BnesBrowser/vendor/brave-ios:rewards_db",
   ]
 
   sources = [
@@ -33,8 +33,8 @@ source_set("headers") {
   deps = [ "//sql" ]
 
   public_deps = [
-    "//brave/components/brave_rewards/core/mojom",
-    "//brave/components/brave_rewards/core/mojom:engine",
+    "//BnesBrowser/components/brave_rewards/core/mojom",
+    "//BnesBrowser/components/brave_rewards/core/mojom:engine",
   ]
 }
 
@@ -332,16 +332,16 @@ static_library("engine") {
   deps = [
     ":publishers_proto",
     "//base",
-    "//brave/components/brave_private_cdn",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_rewards/core:features",
-    "//brave/components/brave_rewards/core/buildflags:endpoint_buildflags",
-    "//brave/components/brave_rewards/core/mojom:engine",
-    "//brave/components/challenge_bypass_ristretto",
-    "//brave/components/constants",
-    "//brave/third_party/bip39wally-core-native:bip39wally-core",
-    "//brave/vendor/bat-native-tweetnacl:tweetnacl",
-    "//brave/vendor/brave_base",
+    "//BnesBrowser/components/brave_private_cdn",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_rewards/core:features",
+    "//BnesBrowser/components/brave_rewards/core/buildflags:endpoint_buildflags",
+    "//BnesBrowser/components/brave_rewards/core/mojom:engine",
+    "//BnesBrowser/components/challenge_bypass_ristretto",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
+    "//BnesBrowser/vendor/bat-native-tweetnacl:tweetnacl",
+    "//BnesBrowser/vendor/brave_base",
     "//crypto",
     "//net",
     "//sql",

@@ -12,14 +12,14 @@ cargo_crate("lib") {
   crate_name = "markup5ever"
   epoch = "0.35"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/interface/mod.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/interface/tree_builder.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/serialize.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/util/buffer_queue.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/util/smallcharset.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/interface/mod.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/interface/tree_builder.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/serialize.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/util/buffer_queue.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/markup5ever-v0_35/util/smallcharset.rs",
   ]
   inputs = []
 
@@ -34,9 +34,9 @@ cargo_crate("lib") {
   allow_unsafe = true
 
   deps = [
-    "//brave/third_party/rust/log/v0_4:lib",
-    "//brave/third_party/rust/tendril/v0_4:lib",
-    "//brave/third_party/rust/web_atoms/v0_1:lib",
+    "//BnesBrowser/third_party/rust/log/v0_4:lib",
+    "//BnesBrowser/third_party/rust/tendril/v0_4:lib",
+    "//BnesBrowser/third_party/rust/web_atoms/v0_1:lib",
   ]
   rustenv = []
   rustflags = []

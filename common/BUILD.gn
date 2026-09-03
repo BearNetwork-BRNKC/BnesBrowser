@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/buildflag_header.gni")
 import("//build/util/branding.gni")
 import("//extensions/buildflags/buildflags.gni")
@@ -12,13 +12,13 @@ import("//mojo/public/tools/bindings/mojom.gni")
 
 brave_common_visibility_targets = [
   ":*",
-  "//brave:browser_dependencies",
-  "//brave:child_dependencies",
-  "//brave/browser/*",
-  "//brave/ios/browser/*",
-  "//brave/renderer/*",
-  "//brave/test/*",
-  "//brave/utility/*",
+  "//BnesBrowser:browser_dependencies",
+  "//BnesBrowser:child_dependencies",
+  "//BnesBrowser/browser/*",
+  "//BnesBrowser/ios/browser/*",
+  "//BnesBrowser/renderer/*",
+  "//BnesBrowser/test/*",
+  "//BnesBrowser/utility/*",
   "//chrome/common/*",
   "//chrome/browser/*",
   "//chrome/renderer/*",
@@ -39,7 +39,7 @@ source_set("channel_info") {
       "//components/version_info",
     ]
 
-    configs += [ "//brave/build/linux:linux_channel_names" ]
+    configs += [ "//BnesBrowser/build/linux:linux_channel_names" ]
   }
 }
 

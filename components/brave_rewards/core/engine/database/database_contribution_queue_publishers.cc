@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/database/database_contribution_queue_publishers.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_contribution_queue_publishers.h"
 
 #include <utility>
 
-#include "brave/components/brave_rewards/core/engine/database/database_util.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/util/time_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_util.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/util/time_util.h"
 #include "third_party/abseil-cpp/absl/strings/str_format.h"
 
 namespace brave_rewards::internal::database {

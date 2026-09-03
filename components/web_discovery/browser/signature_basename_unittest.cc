@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/signature_basename.h"
+#include "BnesBrowser/components/web_discovery/browser/signature_basename.h"
 
 #include <memory>
 #include <string>
@@ -12,8 +12,8 @@
 #include "base/json/json_writer.h"
 #include "base/test/task_environment.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/web_discovery/browser/server_config_loader.h"
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/browser/server_config_loader.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
 #include "components/prefs/testing_pref_service.h"
 #include "crypto/sha2.h"
 #include "testing/gtest/include/gtest/gtest.h"

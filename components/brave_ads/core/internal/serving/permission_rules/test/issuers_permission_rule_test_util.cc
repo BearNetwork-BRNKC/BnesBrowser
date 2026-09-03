@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/test/issuers_permission_rule_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/test/issuers_permission_rule_test_util.h"
 
-#include "brave/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/issuers/test/issuers_test_util.h"
 
 namespace brave_ads::test {
 

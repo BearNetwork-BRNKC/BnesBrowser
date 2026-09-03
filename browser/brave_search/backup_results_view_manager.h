@@ -14,7 +14,7 @@
 #if BUILDFLAG(IS_ANDROID)
 #include "base/memory/raw_ptr.h"
 #elif BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_search/backup_results_window_mac.h"
+#include "BnesBrowser/browser/brave_search/backup_results_window_mac.h"
 #elif defined(USE_AURA)
 #include "ui/aura/window_delegate.h"
 #endif

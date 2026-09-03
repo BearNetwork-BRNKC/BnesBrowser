@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/side_panel/brave_side_panel_header_controller.h"
+#include "BnesBrowser/browser/ui/views/side_panel/brave_side_panel_header_controller.h"
 
 #include <memory>
 
@@ -11,7 +11,7 @@
 #include "base/functional/callback.h"
 #include "base/functional/callback_helpers.h"
 #include "base/test/mock_callback.h"
-#include "brave/common/pref_names.h"
+#include "BnesBrowser/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/test/mock_browser_window_interface.h"
 #include "chrome/browser/ui/side_panel/side_panel_entry.h"

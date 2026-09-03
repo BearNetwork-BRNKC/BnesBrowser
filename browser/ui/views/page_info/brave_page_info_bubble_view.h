@@ -8,8 +8,8 @@
 
 #include <utility>
 
-#include "brave/browser/brave_shields/brave_shields_tab_helper.h"
-#include "brave/browser/ui/views/page_info/brave_page_info_tab_switcher.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_tab_helper.h"
+#include "BnesBrowser/browser/ui/views/page_info/brave_page_info_tab_switcher.h"
 #include "chrome/browser/ui/views/page_info/page_info_bubble_view.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 

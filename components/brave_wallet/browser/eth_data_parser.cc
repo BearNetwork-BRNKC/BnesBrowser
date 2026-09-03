@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/eth_data_parser.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_data_parser.h"
 
 #include <optional>
 #include <tuple>
@@ -11,12 +11,12 @@
 
 #include "base/check_op.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/eth_abi_decoder.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
-#include "brave/components/brave_wallet/common/fil_address.h"
-#include "brave/components/brave_wallet/common/hex_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/eth_abi_decoder.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/fil_address.h"
+#include "BnesBrowser/components/brave_wallet/common/hex_utils.h"
 
 namespace brave_wallet {
 

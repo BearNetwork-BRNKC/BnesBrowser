@@ -12,7 +12,7 @@
 #include <optional>
 
 #include "base/containers/span.h"
-#include "brave/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/polkadot_extrinsic.rs.h"
 
 namespace brave_wallet {
 

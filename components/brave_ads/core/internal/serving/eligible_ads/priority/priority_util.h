@@ -8,8 +8,8 @@
 
 #include <cstddef>
 
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/creative_ad_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/creative_ad_util.h"
 
 namespace brave_ads {
 

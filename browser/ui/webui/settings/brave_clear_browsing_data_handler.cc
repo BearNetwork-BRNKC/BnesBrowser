@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/settings/brave_clear_browsing_data_handler.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_clear_browsing_data_handler.h"
 
 #include <utility>
 
@@ -11,13 +11,13 @@
 #include "base/check_op.h"
 #include "base/functional/bind.h"
 #include "base/values.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service.h"
 #endif
 
 namespace settings {

@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_search/browser/brave_search_fallback_host.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_fallback_host.h"
 
 #include <utility>
 
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
 #include "net/base/url_util.h"
 
 namespace {

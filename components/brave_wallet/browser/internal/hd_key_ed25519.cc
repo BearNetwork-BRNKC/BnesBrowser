@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/internal/hd_key_ed25519.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_ed25519.h"
 
 #include <array>
 #include <memory>
@@ -13,7 +13,7 @@
 #include "base/containers/span.h"
 #include "base/containers/span_writer.h"
 #include "base/containers/to_vector.h"
-#include "brave/third_party/bitcoin-core/src/src/base58.h"
+#include "BnesBrowser/third_party/bitcoin-core/src/src/base58.h"
 #include "crypto/hmac.h"
 #include "third_party/boringssl/src/include/openssl/curve25519.h"
 

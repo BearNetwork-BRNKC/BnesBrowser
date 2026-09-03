@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/buildflag_header.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 import("//testing/test.gni")
@@ -17,7 +17,7 @@ preprocess_folder = "preprocessed"
 preprocess_mojo_manifest = "preprocessed_mojo_manifest.json"
 
 static_library("common") {
-  include_dirs = [ "//brave/third_party/ethash/src/include" ]
+  include_dirs = [ "//BnesBrowser/third_party/ethash/src/include" ]
 
   sources = [
     "bech32.cc",
@@ -71,11 +71,11 @@ static_library("common") {
     ":generated_eth_requests",
     ":generated_json_rpc_requests",
     ":rust_lib",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/net/base:utils",
-    "//brave/third_party/argon2",
-    "//brave/third_party/bitcoin-core",
-    "//brave/third_party/ethash",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/net/base:utils",
+    "//BnesBrowser/third_party/argon2",
+    "//BnesBrowser/third_party/bitcoin-core",
+    "//BnesBrowser/third_party/ethash",
     "//components/base32",
     "//components/prefs",
     "//net",
@@ -115,7 +115,7 @@ generated_types("generated_eth_requests") {
 }
 
 preprocess_if_expr("preprocess_mojo") {
-  deps = [ "//brave/components/brave_wallet/common:mojom_js" ]
+  deps = [ "//BnesBrowser/components/brave_wallet/common:mojom_js" ]
   in_folder = "$target_gen_dir"
   out_folder = "$target_gen_dir/$preprocess_folder"
   out_manifest = "$target_gen_dir/$preprocess_mojo_manifest"
@@ -189,12 +189,12 @@ source_set("test_support") {
 
 rust_static_library("rust_lib") {
   visibility = [
-    "//brave/browser/brave_wallet:unit_tests",
-    "//brave/components/brave_wallet/browser:hd_keyring",
-    "//brave/components/brave_wallet/browser:transaction",
-    "//brave/components/brave_wallet/browser:unit_tests",
-    "//brave/components/brave_wallet/browser/zcash/rust:*",
-    "//brave/components/brave_wallet/common",
+    "//BnesBrowser/browser/brave_wallet:unit_tests",
+    "//BnesBrowser/components/brave_wallet/browser:hd_keyring",
+    "//BnesBrowser/components/brave_wallet/browser:transaction",
+    "//BnesBrowser/components/brave_wallet/browser:unit_tests",
+    "//BnesBrowser/components/brave_wallet/browser/zcash/rust:*",
+    "//BnesBrowser/components/brave_wallet/common",
   ]
   crate_name = "brave_wallet"
   crate_root = "lib.rs"
@@ -203,10 +203,10 @@ rust_static_library("rust_lib") {
   cxx_bindings = [ "lib.rs" ]
 
   deps = [
-    "//brave/third_party/rust/bech32/v0_9:lib",
-    "//brave/third_party/rust/bls_signatures/v0_15:lib",
-    "//brave/third_party/rust/ciborium/v0_2:lib",
-    "//brave/third_party/rust/curve25519_dalek/v4:lib",
+    "//BnesBrowser/third_party/rust/bech32/v0_9:lib",
+    "//BnesBrowser/third_party/rust/bls_signatures/v0_15:lib",
+    "//BnesBrowser/third_party/rust/ciborium/v0_2:lib",
+    "//BnesBrowser/third_party/rust/curve25519_dalek/v4:lib",
     "//third_party/rust/crc32fast/v1:lib",
   ]
 }

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/tor_control.h"
+#include "BnesBrowser/components/tor/tor_control.h"
 
 #include <string>
 #include <utility>
@@ -21,7 +21,7 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/strings/string_view_util.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "net/base/io_buffer.h"
 #include "net/base/net_errors.h"
 #include "net/socket/tcp_client_socket.h"

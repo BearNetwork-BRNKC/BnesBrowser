@@ -12,7 +12,7 @@
 #include "base/component_export.h"
 #include "base/files/file_path.h"
 #include "base/observer_list.h"
-#include "brave/components/brave_component_updater/browser/brave_component.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_component.h"
 
 namespace brave_component_updater {
 

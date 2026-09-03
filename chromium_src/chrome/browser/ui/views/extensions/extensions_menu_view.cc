@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/views/extensions/extensions_menu_view.h"
 
-#include "brave/browser/ui/views/extensions/brave_extension_menu_item_view.h"
+#include "BnesBrowser/browser/ui/views/extensions/brave_extension_menu_item_view.h"
 #include "chrome/browser/ui/views/extensions/extensions_menu_item_view.h"
 
 // Replace creation of ExtensionMenuItemView with our sub-classed

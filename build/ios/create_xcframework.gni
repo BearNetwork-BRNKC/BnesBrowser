@@ -30,7 +30,7 @@ template("ios_create_xcframework") {
                              "deps",
                              "public_deps",
                            ])
-    script = "//brave/build/ios/create_xcframework.py"
+    script = "//BnesBrowser/build/ios/create_xcframework.py"
     args = [
       "--framework_dir",
       rebase_path(_ios_create_xcframework_input),

@@ -8,7 +8,7 @@
 
 #include <string_view>
 
-#include "brave/components/decentralized_dns/core/constants.h"
+#include "BnesBrowser/components/decentralized_dns/core/constants.h"
 
 class GURL;
 class PrefService;

@@ -4,8 +4,8 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/darker_theme/pref_names.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/pref_names.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/browser/themes/theme_service_factory.h"
 #include "chrome/browser/themes/theme_service_observer.h"

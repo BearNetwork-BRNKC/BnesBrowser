@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 
 assert(enable_brave_news)
 
@@ -15,12 +15,12 @@ transpile_web_ui("brave_news_internals") {
         rebase_path("internals.tsx"),
       ] ]
 
-  imports_from = [ "//brave/components/brave_news/browser/resources/" ]
+  imports_from = [ "//BnesBrowser/components/brave_news/browser/resources/" ]
 
   deps = [
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_news/common:mojom",
-    "//brave/components/brave_news/common:mojom_js",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_news/common:mojom",
+    "//BnesBrowser/components/brave_news/common:mojom_js",
   ]
 
   resource_name = "brave_news_internals"
@@ -29,7 +29,7 @@ transpile_web_ui("brave_news_internals") {
 pack_web_resources("generated_resources") {
   resource_name = "brave_news_internals"
 
-  output_dir = "$root_gen_dir/brave/components/brave_news/browser/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_news/browser/resources"
   deps = [ ":brave_news_internals" ]
 }
 
@@ -39,12 +39,12 @@ transpile_web_ui("brave_news_sidebar") {
         rebase_path("sidebar.tsx"),
       ] ]
 
-  imports_from = [ "//brave/components/brave_news/browser/resources/" ]
+  imports_from = [ "//BnesBrowser/components/brave_news/browser/resources/" ]
 
   deps = [
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_news/common:mojom",
-    "//brave/components/brave_news/common:mojom_js",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_news/common:mojom",
+    "//BnesBrowser/components/brave_news/common:mojom_js",
   ]
 
   resource_name = "brave_news_sidebar"
@@ -53,6 +53,6 @@ transpile_web_ui("brave_news_sidebar") {
 pack_web_resources("sidebar_generated_resources") {
   resource_name = "brave_news_sidebar"
 
-  output_dir = "$root_gen_dir/brave/components/brave_news/browser/resources"
+  output_dir = "$root_gen_dir/BnesBrowser/components/brave_news/browser/resources"
   deps = [ ":brave_news_sidebar" ]
 }

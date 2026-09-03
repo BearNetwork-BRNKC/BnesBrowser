@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_shields/farbling_args.h"
+#include "BnesBrowser/ios/browser/brave_shields/farbling_args.h"
 
 #include "base/test/scoped_feature_list.h"
 #include "base/token.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "testing/platform_test.h"
 

@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ml/transformation/hashed_ngrams_transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/hashed_ngrams_transformation.h"
 
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/ml/data/text_data.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/text_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

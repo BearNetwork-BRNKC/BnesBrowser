@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
 
 #include <algorithm>
 #include <memory>
@@ -20,15 +20,15 @@
 #include "base/path_service.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/ntp_background_images/browser/features.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_component_installer.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_data.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_update_util.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
-#include "brave/components/ntp_background_images/browser/sponsored_images_component_data.h"
-#include "brave/components/ntp_background_images/browser/switches.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/features.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_component_installer.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_update_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_sites_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/sponsored_images_component_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/switches.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 #include "components/component_updater/component_updater_service.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"

@@ -5,7 +5,7 @@
 
 #include "base/android/apk_info.h"
 #include "base/android/jni_string.h"
-#include "brave/components/version_info/version_info.h"
+#include "BnesBrowser/components/version_info/version_info.h"
 #include "chrome/android/chrome_jni_headers/AboutSettingsBridge_jni.h"
 
 #define JNI_AboutSettingsBridge_GetApplicationVersion \

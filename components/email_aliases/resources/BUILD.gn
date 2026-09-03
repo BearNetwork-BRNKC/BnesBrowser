@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/common/typescript.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 assert(enable_email_aliases)
 
@@ -27,15 +27,15 @@ transpile_web_ui("email_aliases_ui") {
   ]
 
   imports_from = [
-    "//brave/browser/resources/settings/email_aliases_page/",
-    "//brave/components/email_aliases/resources/",
+    "//BnesBrowser/browser/resources/settings/email_aliases_page/",
+    "//BnesBrowser/components/email_aliases/resources/",
   ]
 
   resource_name = "email_aliases"
 
   deps = [
-    "//brave/components/brave_account/mojom:mojom_js",
-    "//brave/components/email_aliases:mojom_js",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/components/brave_account/mojom:mojom_js",
+    "//BnesBrowser/components/email_aliases:mojom_js",
+    "//BnesBrowser/components/resources:strings",
   ]
 }

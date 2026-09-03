@@ -38,8 +38,8 @@ source_set("side_panel_impl") {
   deps = [
     ":side_panel",
     "//base",
-    "//brave/app:brave_generated_resources_grit_grit",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit_grit",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/app:generated_resources",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui/browser_window",

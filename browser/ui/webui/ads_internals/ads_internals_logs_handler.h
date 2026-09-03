@@ -11,8 +11,8 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_REWARDS));

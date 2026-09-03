@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/v2/credential_summary.h"
+#include "BnesBrowser/components/brave_vpn/browser/v2/credential_summary.h"
 
 #include <optional>
 #include <string_view>
@@ -11,7 +11,7 @@
 #include "base/json/json_reader.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
 
 namespace brave_vpn::v2 {
 

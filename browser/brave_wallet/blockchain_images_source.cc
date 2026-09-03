@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_wallet/blockchain_images_source.h"
+#include "BnesBrowser/browser/brave_wallet/blockchain_images_source.h"
 
 #include <utility>
 
 #include "base/files/file_path.h"
-#include "brave/components/brave_wallet/browser/blockchain_images_source_base.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/blockchain_images_source_base.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/browser_thread.h"
 

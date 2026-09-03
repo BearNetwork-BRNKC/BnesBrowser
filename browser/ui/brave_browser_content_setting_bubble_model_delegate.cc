@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_browser_content_setting_bubble_model_delegate.h"
+#include "BnesBrowser/browser/ui/brave_browser_content_setting_bubble_model_delegate.h"
 
 #include "base/check_deref.h"
-#include "brave/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/url_constants.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_tabstrip.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

@@ -11,7 +11,7 @@
 #include <array>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
 
 namespace brave_wallet {
 

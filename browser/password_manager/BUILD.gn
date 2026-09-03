@@ -11,7 +11,7 @@ if (!is_android) {
     sources = [ "password_manager_browsertest.cc" ]
 
     deps = [
-      "//brave/browser",
+      "//BnesBrowser/browser",
       "//chrome/browser",
       "//chrome/browser/password_manager/factories",
       "//chrome/browser/ui",

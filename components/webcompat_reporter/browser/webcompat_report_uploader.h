@@ -13,7 +13,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/sequence_checker.h"
 #include "base/values.h"
-#include "brave/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
+#include "BnesBrowser/components/webcompat_reporter/common/webcompat_reporter.mojom.h"
 #include "url/gurl.h"
 
 namespace network {

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/dns/brave_vpn_dns_observer_service_win.h"
+#include "BnesBrowser/browser/brave_vpn/dns/brave_vpn_dns_observer_service_win.h"
 
 #include <unordered_map>
 
@@ -11,11 +11,11 @@
 #include "base/run_loop.h"
 #include "base/test/bind.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_profile_prefs.h"
-#include "brave/browser/brave_vpn/dns/brave_vpn_dns_observer_factory_win.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/browser/brave_profile_prefs.h"
+#include "BnesBrowser/browser/brave_vpn/dns/brave_vpn_dns_observer_factory_win.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "chrome/browser/net/secure_dns_config.h"
 #include "chrome/browser/net/secure_dns_util.h"
 #include "chrome/browser/net/stub_resolver_config_reader.h"

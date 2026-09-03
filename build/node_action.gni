@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/node_bin.gni")
+import("//BnesBrowser/build/node_bin.gni")
 
 # Runs a Node.js script as a GN action during the build. Use ONLY for build
 # steps that require Node.js (e.g. webpack, typescript, etc.). In other cases
@@ -11,16 +11,16 @@ import("//brave/build/node_bin.gni")
 #
 # The script is executed with the Chromium-bundled //third_party/node binary.
 #
-# Scripts should live under //brave/build. This directory follows the erasable
+# Scripts should live under //BnesBrowser/build. This directory follows the erasable
 # TypeScript syntax and is type-checked as Node.js code (no web-specific types
 # or features) for direct Node.js execution.
 #
 # Usage example:
 #
-#     import("//brave/build/node_action.gni")
+#     import("//BnesBrowser/build/node_action.gni")
 #
 #     node_action("generate_tsconfig") {
-#       script = "//brave/build/commands/scripts/genTsConfig.js"
+#       script = "//BnesBrowser/build/commands/scripts/genTsConfig.js"
 #       args = [ "--root-gen-dir=" + rebase_path(root_gen_dir) ]
 #       deps = [ ":build_flags_json" ]
 #       outputs = [ "$root_gen_dir/tsconfig-webpack.json" ]
@@ -30,7 +30,7 @@ template("node_action") {
   _node_script = invoker.script
 
   action(target_name) {
-    script = "//brave/build/gn_run_rsp.py"
+    script = "//BnesBrowser/build/gn_run_rsp.py"
     args = [ "{{response_file_name}}" ]
 
     inputs = [

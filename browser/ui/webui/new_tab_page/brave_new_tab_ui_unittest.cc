@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui_utils.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui_utils.h"
 #include "components/history/core/browser/top_sites_impl.h"
 #include "components/ntp_tiles/constants.h"
 #include "testing/gtest/include/gtest/gtest.h"

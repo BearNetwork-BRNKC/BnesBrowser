@@ -5,7 +5,7 @@
 
 #include "third_party/blink/renderer/modules/eventsource/event_source.h"
 
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/public/common/features.h"
 #include "third_party/blink/public/common/scheme_registry.h"
 #include "third_party/blink/public/platform/web_content_settings_client.h"

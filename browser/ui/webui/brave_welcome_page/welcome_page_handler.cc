@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/webui/brave_welcome_page/welcome_page_handler.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/welcome_page_handler.h"
 
 #include <algorithm>
 #include <utility>
@@ -12,12 +12,12 @@
 #include "base/check_deref.h"
 #include "base/functional/bind.h"
 #include "base/metrics/histogram_macros.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/webui/brave_welcome_page/welcome_page_features.h"
-#include "brave/components/brave_education/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a/pref_names.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/welcome_page_features.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "chrome/browser/metrics/metrics_reporting_state.h"
 #include "chrome/browser/themes/theme_service.h"
 #include "chrome/common/webui_url_constants.h"
@@ -25,8 +25,8 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/browser/ui/webui/brave_education/brave_education_server_checker.h"
-#include "brave/components/brave_education/education_urls.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_server_checker.h"
+#include "BnesBrowser/components/brave_education/education_urls.h"
 #endif
 
 namespace brave_welcome_page {

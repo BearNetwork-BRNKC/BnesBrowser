@@ -8,10 +8,10 @@
 
 #include <string>
 
-#include "brave/components/brave_news/browser/feed_fetcher.h"
-#include "brave/components/brave_news/browser/feed_sampling.h"
-#include "brave/components/brave_news/browser/topics_fetcher.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/feed_fetcher.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/browser/topics_fetcher.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 
 namespace brave_news {

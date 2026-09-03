@@ -9,8 +9,8 @@
 #include <memory>
 #include <string>
 
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/skus/browser/rs/cxx/src/lib.rs.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/skus/browser/rs/cxx/src/lib.rs.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 

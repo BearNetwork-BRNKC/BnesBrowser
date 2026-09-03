@@ -13,8 +13,8 @@ source_set("browsertests") {
   sources = [ "identity_apitest.cc" ]
   deps = [
     "//base",
-    "//brave/browser/extensions",
-    "//brave/components/constants",
+    "//BnesBrowser/browser/extensions",
+    "//BnesBrowser/components/constants",
     "//chrome/test:test_support",
     "//content/test:test_support",
     "//extensions:test_support",

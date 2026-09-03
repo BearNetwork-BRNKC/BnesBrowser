@@ -10,7 +10,7 @@
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
 
 class PrefService;
 

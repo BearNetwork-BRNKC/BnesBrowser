@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/speedreader/rust/ffi/speedreader_ffi.h"
+#include "BnesBrowser/components/speedreader/rust/ffi/speedreader_ffi.h"
 
 #if defined(SPEEDREADER_SHARED_LIBRARY)
 #if defined(WIN32)

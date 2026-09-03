@@ -5,8 +5,8 @@
 
 #include <string_view>
 
-#include "brave/components/oblivious_http/oblivious_http_chunk_processor.h"
-#include "brave/components/oblivious_http/utils.h"
+#include "BnesBrowser/components/oblivious_http/oblivious_http_chunk_processor.h"
+#include "BnesBrowser/components/oblivious_http/utils.h"
 #include "net/base/net_errors.h"
 #include "url/gurl.h"
 

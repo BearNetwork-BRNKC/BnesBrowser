@@ -22,8 +22,8 @@ source_set("brave_ads") {
   deps = [
     ":ads_media_reporting_js",
     "//base/version_info",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_rewards/core",
     "//components/pref_registry",
     "//components/prefs",
     "//components/search_engines",
@@ -37,8 +37,8 @@ source_set("brave_ads") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_ads/core/mojom",
     "//components/keyed_service/core",
     "//ios/web/public/js_messaging",
   ]
@@ -60,9 +60,9 @@ source_set("unit_tests") {
   deps = [
     ":brave_ads",
     "//base/test:test_support",
-    "//brave/components/brave_ads/core/browser/service:test_support",
-    "//brave/components/brave_ads/core/public:headers",
-    "//brave/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_ads/core/browser/service:test_support",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_rewards/core",
     "//ios/chrome/browser/shared/model/profile/test",
     "//ios/chrome/test:test_support",
     "//ios/web/public/test",

@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom-forward.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom-forward.h"
 #include "content/public/browser/webui_config.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"

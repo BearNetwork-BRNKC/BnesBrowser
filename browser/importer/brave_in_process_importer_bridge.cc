@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/brave_in_process_importer_bridge.h"
+#include "BnesBrowser/browser/importer/brave_in_process_importer_bridge.h"
 
 #include "chrome/browser/importer/profile_writer.h"
 

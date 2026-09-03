@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/brave_vpn_service_impl.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_impl.h"
 
 #include <memory>
 #include <optional>
@@ -19,23 +19,23 @@
 #include "base/strings/string_util.h"
 #include "base/test/scoped_feature_list.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_request.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service_helper.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service_observer.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_info.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_region_data_helper.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/skus/browser/pref_names.h"
-#include "brave/components/skus/browser/skus_context_impl.h"
-#include "brave/components/skus/browser/skus_service_impl.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_request.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_observer.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_info.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_region_data_helper.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/skus/browser/pref_names.h"
+#include "BnesBrowser/components/skus/browser/skus_context_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_service_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
@@ -48,7 +48,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_vpn/browser/connection/ikev2/connection_api_impl_sim.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/connection_api_impl_sim.h"
 #endif
 
 namespace brave_vpn {

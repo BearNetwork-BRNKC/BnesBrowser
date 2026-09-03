@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(enable_brave_vpn)
 
@@ -17,11 +17,11 @@ source_set("api") {
 
   deps = [
     "//base",
-    "//brave/components/brave_vpn/browser/api",
-    "//brave/components/brave_vpn/browser/connection:common",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/brave_vpn/browser/api",
+    "//BnesBrowser/components/brave_vpn/browser/connection:common",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
     "//components/prefs",
     "//components/version_info:channel",
     "//net",
@@ -54,12 +54,12 @@ source_set("common") {
     "brave_vpn_region_data_manager.h",
   ]
   deps = [
-    "//brave/components/api_request_helper",
-    "//brave/components/brave_vpn/browser/api",
-    "//brave/components/brave_vpn/common",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/skus/browser",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/api_request_helper",
+    "//BnesBrowser/components/brave_vpn/browser/api",
+    "//BnesBrowser/components/brave_vpn/common",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/skus/browser",
+    "//BnesBrowser/components/skus/common:mojom",
     "//build:buildflag_header_h",
     "//components/prefs",
     "//services/network/public/cpp",

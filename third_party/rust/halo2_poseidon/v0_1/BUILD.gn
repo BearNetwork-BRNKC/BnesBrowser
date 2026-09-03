@@ -12,15 +12,15 @@ cargo_crate("lib") {
   crate_name = "halo2_poseidon"
   epoch = "0.1"
   crate_type = "rlib"
-  crate_root = "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/lib.rs"
+  crate_root = "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/fp.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/fq.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/grain.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/lib.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/mds.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/p128pow5t3.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/test_vectors.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/fp.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/fq.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/grain.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/mds.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/p128pow5t3.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/halo2_poseidon-v0_1/src/test_vectors.rs",
   ]
   inputs = []
 
@@ -35,10 +35,10 @@ cargo_crate("lib") {
   allow_unsafe = false
 
   deps = [
-    "//brave/third_party/rust/bitvec/v1:lib",
-    "//brave/third_party/rust/ff/v0_13:lib",
-    "//brave/third_party/rust/group/v0_13:lib",
-    "//brave/third_party/rust/pasta_curves/v0_5:lib",
+    "//BnesBrowser/third_party/rust/bitvec/v1:lib",
+    "//BnesBrowser/third_party/rust/ff/v0_13:lib",
+    "//BnesBrowser/third_party/rust/group/v0_13:lib",
+    "//BnesBrowser/third_party/rust/pasta_curves/v0_5:lib",
   ]
   rustenv = []
   rustflags = []

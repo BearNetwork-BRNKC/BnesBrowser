@@ -14,7 +14,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_multi_source_observation.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
 #include "ui/base/clipboard/clipboard.h"
 #include "ui/views/animation/bounds_animator.h"
 #include "ui/views/animation/bounds_animator_observer.h"

@@ -8,8 +8,8 @@
 
 #include <memory>
 
-#include "brave/components/brave_wallet/browser/tx_state_manager.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

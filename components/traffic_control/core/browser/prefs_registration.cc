@@ -3,9 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/traffic_control/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/traffic_control/core/browser/prefs_registration.h"
 
-#include "brave/components/traffic_control/core/browser/pref_names.h"
+#include "BnesBrowser/components/traffic_control/core/browser/pref_names.h"
 #include "components/pref_registry/pref_registry_syncable.h"
 
 namespace traffic_control {

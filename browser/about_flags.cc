@@ -7,39 +7,39 @@
 
 #include <initializer_list>
 
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/net/features.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/browser/ui/custom_profile_image_buildflags.h"
-#include "brave/browser/updater/buildflags.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_component_updater/browser/features.h"
-#include "brave/components/brave_education/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/features.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_sync/features.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/de_amp/common/features.h"
-#include "brave/components/debounce/core/common/features.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/extension_malware_blocklist/common/features.h"
-#include "brave/components/google_sign_in_permission/features.h"
-#include "brave/components/image_metadata_stripper/common/features.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/features.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/traffic_control/buildflags/buildflags.h"
-#include "brave/components/v8/buildflags/buildflags.h"
-#include "brave/components/webcompat/core/common/features.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/net/features.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/browser/ui/custom_profile_image_buildflags.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_component_updater/browser/features.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/features.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_sync/features.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/de_amp/common/features.h"
+#include "BnesBrowser/components/debounce/core/common/features.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/extension_malware_blocklist/common/features.h"
+#include "BnesBrowser/components/google_sign_in_permission/features.h"
+#include "BnesBrowser/components/image_metadata_stripper/common/features.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/features.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/traffic_control/buildflags/buildflags.h"
+#include "BnesBrowser/components/v8/buildflags/buildflags.h"
+#include "BnesBrowser/components/webcompat/core/common/features.h"
 #include "build/build_config.h"
 #include "chrome/browser/buildflags.h"
 #include "chrome/browser/ui/tabs/features.h"
@@ -59,46 +59,46 @@
 #include "third_party/blink/public/common/features.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CUSTOM_PROFILE_IMAGE)
-#include "brave/browser/ui/webui/custom_profile_image/features.h"
+#include "BnesBrowser/browser/ui/webui/custom_profile_image/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
-#include "brave/components/request_otr/common/features.h"
+#include "BnesBrowser/components/request_otr/common/features.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/browser/android/safe_browsing/features.h"
-#include "brave/browser/android/youtube_script_injector/features.h"
+#include "BnesBrowser/browser/android/safe_browsing/features.h"
+#include "BnesBrowser/browser/android/youtube_script_injector/features.h"
 #include "chrome/browser/flags/android/chrome_feature_list.h"
 #else
-#include "brave/browser/ui/tabs/public/switches.h"
-#include "brave/browser/workspaces/features.h"
-#include "brave/components/commander/common/features.h"
-#include "brave/components/commands/common/features.h"
+#include "BnesBrowser/browser/ui/tabs/public/switches.h"
+#include "BnesBrowser/browser/workspaces/features.h"
+#include "BnesBrowser/components/commander/common/features.h"
+#include "BnesBrowser/components/commands/common/features.h"
 #endif
 
 #if BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_browser_main_parts_mac.h"
+#include "BnesBrowser/browser/brave_browser_main_parts_mac.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
@@ -106,44 +106,44 @@
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
-#include "brave/browser/extensions/updater/features.h"
+#include "BnesBrowser/browser/extensions/updater/features.h"
 #include "extensions/common/extension_features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/components/brave_education/features.h"
+#include "BnesBrowser/components/brave_education/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TRAFFIC_CONTROL)
-#include "brave/components/traffic_control/core/common/features.h"
+#include "BnesBrowser/components/traffic_control/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/common/features.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/common/features.h"
+#include "BnesBrowser/components/brave_wallet/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/focus_mode/focus_mode_features.h"
-#include "brave/browser/ui/page_info/features.h"
-#include "brave/browser/ui/screenshot/features.h"
-#include "brave/components/sidebar/common/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/focus_mode/focus_mode_features.h"
+#include "BnesBrowser/browser/ui/page_info/features.h"
+#include "BnesBrowser/browser/ui/screenshot/features.h"
+#include "BnesBrowser/components/sidebar/common/features.h"
 #endif
 
 #define EXPAND_FEATURE_ENTRIES(...) __VA_ARGS__,

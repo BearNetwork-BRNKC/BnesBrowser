@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_wallet/token_registry_utils.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/token_registry_utils.h"
 
 #include <optional>
 
@@ -11,8 +11,8 @@
 #include "base/path_service.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/version.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_constants.h"
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_constants.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
 #include "ios/chrome/browser/shared/model/paths/paths.h"
 
 @implementation BraveWalletTokenRegistryUtils

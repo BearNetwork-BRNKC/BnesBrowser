@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/brave_actions/brave_shields_action_controller.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_shields_action_controller.h"
 
 #include <string>
 #include <utility>
@@ -11,14 +11,14 @@
 #include "base/check_deref.h"
 #include "base/memory/weak_ptr.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "chrome/browser/ui/layout_constants.h"
@@ -44,7 +44,7 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
 #endif
 
 namespace {

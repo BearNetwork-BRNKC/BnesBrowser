@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
 
 #include <guiddef.h>
 
@@ -11,7 +11,7 @@
 
 #include "base/notreached.h"
 #include "base/path_service.h"
-#include "brave/browser/brave_vpn/win/service_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_constants.h"
 #include "build/build_config.h"
 #include "chrome/common/channel_info.h"
 #include "components/version_info/channel.h"

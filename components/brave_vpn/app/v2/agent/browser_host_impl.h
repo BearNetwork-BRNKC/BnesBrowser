@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_VPN_APP_V2_AGENT_BROWSER_HOST_IMPL_H_
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_vpn/common/mojom/browser_agent.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/browser_agent.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"

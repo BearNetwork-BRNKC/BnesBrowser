@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_preimage_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/token_preimage_test_util.h"
 
 #include "base/no_destructor.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/challenge_bypass_ristretto_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token_preimage.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/test/challenge_bypass_ristretto_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token_preimage.h"
 
 namespace brave_ads::cbr::test {
 

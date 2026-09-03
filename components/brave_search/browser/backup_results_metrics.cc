@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_search/browser/backup_results_metrics.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_metrics.h"
 
 #include "base/functional/bind.h"
 #include "base/time/time.h"
-#include "brave/components/brave_search/browser/prefs.h"
-#include "brave/components/p3a_utils/bucket.h"
+#include "BnesBrowser/components/brave_search/browser/prefs.h"
+#include "BnesBrowser/components/p3a_utils/bucket.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

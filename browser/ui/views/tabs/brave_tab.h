@@ -12,14 +12,14 @@
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/ui/views/tabs/tab.h"
 #include "ui/gfx/geometry/point.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/core/browser/containers_service_observer.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service_observer.h"
 #include "chrome/browser/ui/exclusive_access/fullscreen_controller.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 

@@ -13,7 +13,7 @@ source_set("unit_tests") {
 
     deps = [
       "//base/test:test_support",
-      "//brave/components/resources:strings_grit",
+      "//BnesBrowser/components/resources:strings_grit",
       "//chrome/browser",
       "//chrome/browser/ui/startup",
       "//chrome/browser/ui/startup:test_support_ui",

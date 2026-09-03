@@ -11,7 +11,7 @@
 #include <utility>
 
 #include "base/types/expected.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
 
 namespace brave_ads::cbr {
 

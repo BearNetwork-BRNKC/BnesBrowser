@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/internal/tag_parser_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/tag_parser_test_util_internal.h"
 
 #include <optional>
 #include <string_view>
@@ -17,7 +17,7 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
 #include "third_party/re2/src/re2/re2.h"
 
 namespace brave_ads::test {

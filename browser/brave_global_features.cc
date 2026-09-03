@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_global_features.h"
+#include "BnesBrowser/browser/brave_global_features.h"
 
 #include <memory>
 
@@ -12,8 +12,8 @@
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
 #include "base/feature_list.h"
-#include "brave/components/extension_malware_blocklist/browser/extension_malware_blocklist.h"
-#include "brave/components/extension_malware_blocklist/common/features.h"
+#include "BnesBrowser/components/extension_malware_blocklist/browser/extension_malware_blocklist.h"
+#include "BnesBrowser/components/extension_malware_blocklist/common/features.h"
 #endif  // BUILDFLAG(ENABLE_EXTENSIONS)
 
 BraveGlobalFeatures::BraveGlobalFeatures() {

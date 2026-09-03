@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/wireguard/wireguard_connection_api_impl_base.h"
 
 #include "base/check.h"
 #include "base/logging.h"
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_request.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service_helper.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
-#include "brave/components/brave_vpn/common/wireguard/wireguard_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_request.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_region_data_manager.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/common/wireguard/wireguard_utils.h"
 #include "components/prefs/pref_service.h"
 
 namespace brave_vpn {

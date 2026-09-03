@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/importer/extensions_import_helpers.h"
+#include "BnesBrowser/browser/importer/extensions_import_helpers.h"
 
 #include <algorithm>
 #include <memory>
@@ -16,7 +16,7 @@
 #include "base/files/file_enumerator.h"
 #include "base/files/file_util.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/common/importer/chrome_importer_utils.h"
+#include "BnesBrowser/common/importer/chrome_importer_utils.h"
 #include "chrome/browser/extensions/webstore_install_with_prompt.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/value_store/value_store.h"

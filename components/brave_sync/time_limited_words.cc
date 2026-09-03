@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_sync/time_limited_words.h"
+#include "BnesBrowser/components/brave_sync/time_limited_words.h"
 
 #include <cmath>
 #include <string>
@@ -20,9 +20,9 @@
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_sync/crypto/crypto.h"
-#include "brave/third_party/bip39wally-core-native/include/wally_bip39.h"
-#include "brave/third_party/bip39wally-core-native/src/wordlist.h"
+#include "BnesBrowser/components/brave_sync/crypto/crypto.h"
+#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
+#include "BnesBrowser/third_party/bip39wally-core-native/src/wordlist.h"
 
 namespace brave_sync {
 

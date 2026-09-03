@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_ADS_BROWSER_TEST_FAKE_SHUTDOWN_MONITOR_H_
 
 #include "base/callback_list.h"
-#include "brave/components/brave_ads/browser/application_state/shutdown_monitor.h"
+#include "BnesBrowser/components/brave_ads/browser/application_state/shutdown_monitor.h"
 
 namespace brave_ads::test {
 

@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_account/mojom/brave_account_row.mojom.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account_row.mojom.h"
 
 namespace content {
 class WebUI;

@@ -18,15 +18,15 @@ source_set("vertical_tabs") {
     sources += [ "vertical_tab_strip_region_view_mac.mm" ]
   }
 
-  public_deps = [ "//brave/browser/ui/focus_mode" ]
+  public_deps = [ "//BnesBrowser/browser/ui/focus_mode" ]
 
   deps = [
     "//base",
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame",
-    "//brave/components/constants",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/app:command_ids",
     "//chrome/browser/profiles",
     "//chrome/browser/themes",
@@ -55,9 +55,9 @@ source_set("browser_tests") {
 
   deps = [
     ":vertical_tabs",
-    "//brave/browser/ui/tabs:tab_menu",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame",
+    "//BnesBrowser/browser/ui/tabs:tab_menu",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame",
     "//chrome/browser",
     "//chrome/browser/tab_group_sync:factories",
     "//chrome/browser/ui",
@@ -94,8 +94,8 @@ source_set("interactive_ui_tests") {
 
   deps = [
     ":vertical_tabs",
-    "//brave/browser/ui/tabs:tabs_public",
-    "//brave/browser/ui/views/frame",
+    "//BnesBrowser/browser/ui/tabs:tabs_public",
+    "//BnesBrowser/browser/ui/views/frame",
     "//chrome/browser",
     "//chrome/browser/ui",
     "//chrome/browser/ui/exclusive_access",

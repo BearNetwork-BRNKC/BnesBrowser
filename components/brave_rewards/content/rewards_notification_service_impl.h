@@ -10,9 +10,9 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_rewards/content/rewards_notification_service.h"
-#include "brave/components/brave_rewards/content/rewards_service_observer.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 #include "extensions/buildflags/buildflags.h"
 
 class PrefService;

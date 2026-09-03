@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom-forward.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom-forward.h"
 
 namespace traffic_control {
 

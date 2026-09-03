@@ -7,8 +7,8 @@
 #define BRAVE_COMPONENTS_BRAVE_WALLET_BROWSER_ZCASH_RUST_CXX_ORCHARD_SHARD_TREE_DELEGATE_H_
 
 #include "base/memory/raw_ref.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 
 namespace brave_wallet {

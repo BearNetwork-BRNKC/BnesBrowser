@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 class MockContainersMenuModelDelegate

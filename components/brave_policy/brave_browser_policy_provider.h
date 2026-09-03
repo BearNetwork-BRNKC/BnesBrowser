@@ -9,9 +9,9 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_origin/brave_origin_policy_info.h"
-#include "brave/components/brave_origin/brave_origin_policy_manager.h"
-#include "brave/components/brave_policy/brave_policy_observer.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_info.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_manager.h"
+#include "BnesBrowser/components/brave_policy/brave_policy_observer.h"
 #include "components/policy/core/common/configuration_policy_provider.h"
 
 namespace brave_policy {

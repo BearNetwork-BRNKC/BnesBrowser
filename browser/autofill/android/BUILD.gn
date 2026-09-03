@@ -25,9 +25,9 @@ android_library("options_java") {
 
   deps = [
     ":options_java_resources",
-    "//brave/browser/android/preferences:pref_names_java",
-    "//brave/browser/ui/android/theme:dynamic_colors_java",
-    "//brave/components/browser_ui/settings/android:java",
+    "//BnesBrowser/browser/android/preferences:pref_names_java",
+    "//BnesBrowser/browser/ui/android/theme:dynamic_colors_java",
+    "//BnesBrowser/components/browser_ui/settings/android:java",
     "//build/android:build_java",
     "//chrome/browser/autofill/android:java",
     "//chrome/browser/profiles/android:java",
@@ -50,7 +50,7 @@ generate_jni("jni_headers") {
 
 android_resources("options_java_resources") {
   deps = [
-    "//brave/android/nala:java_resources",
-    "//brave/build/android:android_brave_strings_grd",
+    "//BnesBrowser/android/nala:java_resources",
+    "//BnesBrowser/build/android:android_brave_strings_grd",
   ]
 }

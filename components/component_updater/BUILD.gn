@@ -8,7 +8,7 @@ source_set("unit_tests") {
   sources = [ "configurator_impl_unittest.cc" ]
   deps = [
     "//base",
-    "//brave/components/update_client:test_util",
+    "//BnesBrowser/components/update_client:test_util",
     "//components/component_updater",
     "//components/update_client",
     "//testing/gtest",

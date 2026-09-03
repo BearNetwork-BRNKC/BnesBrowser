@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/l10n/common/default_locale.h"
+#include "BnesBrowser/components/l10n/common/default_locale.h"
 
 #include "base/no_destructor.h"
-#include "brave/components/l10n/browser/default_locale_util.h"
+#include "BnesBrowser/components/l10n/browser/default_locale_util.h"
 
 namespace brave_l10n {
 

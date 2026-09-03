@@ -4,10 +4,10 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_browser_sync_sources = [
-  "//brave/browser/sync/brave_sync_alerts_service.cc",
-  "//brave/browser/sync/brave_sync_alerts_service.h",
-  "//brave/browser/sync/brave_sync_alerts_service_factory.cc",
-  "//brave/browser/sync/brave_sync_alerts_service_factory.h",
+  "//BnesBrowser/browser/sync/brave_sync_alerts_service.cc",
+  "//BnesBrowser/browser/sync/brave_sync_alerts_service.h",
+  "//BnesBrowser/browser/sync/brave_sync_alerts_service_factory.cc",
+  "//BnesBrowser/browser/sync/brave_sync_alerts_service_factory.h",
 ]
 
 brave_browser_sync_deps = []

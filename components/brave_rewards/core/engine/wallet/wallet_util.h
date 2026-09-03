@@ -10,7 +10,7 @@
 #include <string>
 #include <variant>
 
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

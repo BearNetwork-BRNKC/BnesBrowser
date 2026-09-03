@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/values.h"
-#include "brave/components/body_sniffer/body_sniffer_url_loader.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_url_loader.h"
 #include "content/public/browser/web_contents.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "url/gurl.h"

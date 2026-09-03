@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/eip2930_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/eip2930_transaction.h"
 
 namespace brave_wallet {
 

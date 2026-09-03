@@ -42,6 +42,6 @@ using DraggingTabsSessionBrave = DraggingTabsSession;
 #undef MoveAttached
 #undef DraggingTabsSession
 
-#include "brave/browser/ui/views/tabs/dragging/dragging_tabs_session.h"
+#include "BnesBrowser/browser/ui/views/tabs/dragging/dragging_tabs_session.h"
 
 #endif  // BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_TABS_DRAGGING_DRAGGING_TABS_SESSION_H_

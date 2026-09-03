@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
 
 #include <utility>
 
@@ -15,15 +15,15 @@
 #include "base/notreached.h"
 #include "base/task/task_traits.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/database/database.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_creation.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_migration.h"
-#include "brave/components/brave_ads/core/internal/legacy_migration/database/database_raze.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_creation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_migration.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/database/database_raze.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 namespace brave_ads {
 

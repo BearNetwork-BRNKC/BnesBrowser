@@ -11,7 +11,7 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 
 class PrefRegistrySimple;
 class PrefService;

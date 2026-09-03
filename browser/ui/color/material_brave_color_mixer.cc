@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/color/material_brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/material_brave_color_mixer.h"
 
 #include "base/check.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

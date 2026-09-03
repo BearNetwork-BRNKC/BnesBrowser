@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
 
 #include <memory>
 #include <vector>
 
 #include "base/check_is_test.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/bookmark/brave_bookmark_prefs.h"
-#include "brave/browser/ui/browser_commands.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/bookmark/brave_bookmark_prefs.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/profiles/profile.h"
@@ -24,9 +24,9 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif
 
 BraveBookmarkContextMenuController::BraveBookmarkContextMenuController(

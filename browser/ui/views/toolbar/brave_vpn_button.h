@@ -11,7 +11,7 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_vpn/browser/brave_vpn_service_observer.h"
+#include "BnesBrowser/components/brave_vpn/browser/brave_vpn_service_observer.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_button.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 #include "ui/views/controls/button/menu_button_controller.h"

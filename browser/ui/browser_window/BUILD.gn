@@ -12,9 +12,9 @@ source_set("browser_window") {
 
   public_deps = [
     "//base",
-    "//brave/components/ai_chat/core/common/buildflags",
-    "//brave/components/playlist/core/common/buildflags",
+    "//BnesBrowser/components/ai_chat/core/common/buildflags",
+    "//BnesBrowser/components/playlist/core/common/buildflags",
   ]
 
-  deps = [ "//brave/components/email_aliases/buildflags" ]
+  deps = [ "//BnesBrowser/components/email_aliases/buildflags" ]
 }

@@ -28,7 +28,7 @@
 #include "base/task/thread_pool.h"
 #include "base/version.h"
 #import "brave/browser/mac/keystone_registration.h"
-#include "brave/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
 #include "build/branding_buildflags.h"
 #include "build/build_config.h"
 #include "chrome/common/channel_info.h"
@@ -40,7 +40,7 @@
 #include "ui/base/l10n/l10n_util_mac.h"
 
 #if BUILDFLAG(ENABLE_SPARKLE)
-#include "brave/browser/mac/sparkle_glue.h"
+#include "BnesBrowser/browser/mac/sparkle_glue.h"
 #endif
 
 namespace ksr = keystone_registration;

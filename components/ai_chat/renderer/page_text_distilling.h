@@ -13,7 +13,7 @@
 
 #include "base/containers/fixed_flat_map.h"
 #include "base/functional/callback_forward.h"
-#include "brave/components/ai_chat/resources/custom_site_distiller_scripts/grit/custom_site_distiller_scripts_generated.h"
+#include "BnesBrowser/components/ai_chat/resources/custom_site_distiller_scripts/grit/custom_site_distiller_scripts_generated.h"
 
 namespace content {
 class RenderFrame;

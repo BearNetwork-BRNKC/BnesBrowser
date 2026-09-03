@@ -20,7 +20,7 @@ component("browser") {
     "//ui/base",
   ]
 
-  public_deps = [ "//brave/components/commands/common" ]
+  public_deps = [ "//BnesBrowser/components/commands/common" ]
 }
 
 source_set("unit_tests") {

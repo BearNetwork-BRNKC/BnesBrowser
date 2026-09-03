@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_block_decoder.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_block_decoder.h"
 
 #include <algorithm>
 #include <memory>
@@ -13,9 +13,9 @@
 #include "base/logging.h"
 #include "base/memory/ptr_util.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/lib.rs.h"
-#include "brave/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle_impl.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/lib.rs.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/rust/orchard_decoded_blocks_bundle_impl.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet::orchard {
 

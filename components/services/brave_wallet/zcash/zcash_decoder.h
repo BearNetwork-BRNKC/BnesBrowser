@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_SERVICES_BRAVE_WALLET_ZCASH_ZCASH_DECODER_H_
 #define BRAVE_COMPONENTS_SERVICES_BRAVE_WALLET_ZCASH_ZCASH_DECODER_H_
 
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
 
 #include <string>
 #include <vector>

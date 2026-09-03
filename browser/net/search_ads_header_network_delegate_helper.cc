@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/search_ads_header_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/search_ads_header_network_delegate_helper.h"
 
 #include "base/check.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 #include "net/base/net_errors.h"

@@ -4,7 +4,7 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_third_party_android_deps_visibility = [
-  "//brave/third_party/android_deps:*",
+  "//BnesBrowser/third_party/android_deps:*",
   "//chrome/android:base_module_java__assetres",
   "//chrome/android:base_module_java__header",
   "//chrome/android:base_module_java__errorprone",

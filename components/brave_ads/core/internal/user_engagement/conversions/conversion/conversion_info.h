@@ -9,8 +9,8 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/user_engagement/conversions/actions/conversion_action_types.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/conversions/actions/conversion_action_types.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom-shared.h"
 
 namespace brave_ads {
 

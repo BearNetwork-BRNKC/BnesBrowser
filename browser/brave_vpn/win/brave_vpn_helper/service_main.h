@@ -10,8 +10,8 @@
 
 #include "base/functional/callback.h"
 #include "base/no_destructor.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_dns_delegate.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/vpn_dns_handler.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_dns_delegate.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/vpn_dns_handler.h"
 
 namespace base {
 class CommandLine;

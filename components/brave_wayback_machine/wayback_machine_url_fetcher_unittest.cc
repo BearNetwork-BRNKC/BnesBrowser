@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wayback_machine/wayback_machine_url_fetcher.h"
+#include "BnesBrowser/components/brave_wayback_machine/wayback_machine_url_fetcher.h"
 
 #include <utility>
 
@@ -11,7 +11,7 @@
 #include "base/strings/strcat.h"
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_wayback_machine/url_constants.h"
+#include "BnesBrowser/components/brave_wayback_machine/url_constants.h"
 #include "services/network/public/cpp/weak_wrapper_shared_url_loader_factory.h"
 #include "services/network/test/test_url_loader_factory.h"
 #include "testing/gtest/include/gtest/gtest.h"

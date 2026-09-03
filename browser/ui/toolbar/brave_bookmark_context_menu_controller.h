@@ -10,13 +10,13 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/toolbar/bookmark_bar_sub_menu_model.h"
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/browser/ui/toolbar/bookmark_bar_sub_menu_model.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/ui/bookmarks/bookmark_context_menu_controller.h"
 #include "ui/gfx/native_ui_types.h"
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/browser/ui/containers/containers_bookmark_menu_model_delegate.h"
+#include "BnesBrowser/browser/ui/containers/containers_bookmark_menu_model_delegate.h"
 #endif
 
 class Browser;

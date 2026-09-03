@@ -11,7 +11,7 @@
 #include <utility>
 #include <vector>
 
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace base {
 class Value;

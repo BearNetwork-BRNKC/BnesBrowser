@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/webui/playlist_active_tab_tracker.h"
+#include "BnesBrowser/browser/ui/webui/playlist_active_tab_tracker.h"
 
 #include <vector>
 
 #include "base/check.h"
-#include "brave/browser/ui/playlist/playlist_browser_finder.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/browser/ui/playlist/playlist_browser_finder.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 

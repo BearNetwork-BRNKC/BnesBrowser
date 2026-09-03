@@ -5,7 +5,7 @@
 
 #include "ui/base/clipboard/clipboard.h"
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h"
+#include "BnesBrowser/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h"
 #endif
 
 #define OnPreShutdownForCurrentThread() \

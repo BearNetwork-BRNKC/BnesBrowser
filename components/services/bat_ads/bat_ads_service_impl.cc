@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/bat_ads/bat_ads_service_impl.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_service_impl.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/check.h"
 #include "base/files/file_path.h"
-#include "brave/components/services/bat_ads/bat_ads_impl.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/services/bat_ads/bat_ads_impl.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "mojo/public/cpp/bindings/sync_call_restrictions.h"
 
 namespace bat_ads {

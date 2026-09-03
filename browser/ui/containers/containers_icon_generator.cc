@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/containers/containers_icon_generator.h"
+#include "BnesBrowser/browser/ui/containers/containers_icon_generator.h"
 
 #include <memory>
 #include <utility>
 
 #include "base/hash/hash.h"
 #include "base/notreached.h"
-#include "brave/components/containers/core/browser/temporary_container.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/containers/core/browser/temporary_container.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "ui/gfx/canvas.h"
 #include "ui/gfx/geometry/rect_f.h"
 #include "ui/gfx/image/canvas_image_source.h"

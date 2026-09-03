@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/brave_shields/farbling_args.h"
+#include "BnesBrowser/ios/browser/brave_shields/farbling_args.h"
 
 #include <cstdint>
 #include <string>
@@ -14,8 +14,8 @@
 #include "base/feature_list.h"
 #include "base/strings/string_util.h"
 #include "base/token.h"
-#include "brave/components/brave_shields/core/common/farbling_prng.h"
-#include "brave/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/farbling_prng.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
 
 namespace brave_shields {
 

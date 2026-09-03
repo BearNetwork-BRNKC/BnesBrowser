@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_system_request_handler.h"
+#include "BnesBrowser/browser/net/brave_system_request_handler.h"
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/constants/network_constants.h"
+#include "BnesBrowser/components/constants/network_constants.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/net/system_network_context_manager.h"

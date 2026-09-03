@@ -10,7 +10,7 @@
 #include <string>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_perf_predictor/browser/bandwidth_linreg_parameters.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/bandwidth_linreg_parameters.h"
 
 namespace brave_perf_predictor {
 

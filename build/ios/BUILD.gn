@@ -1,5 +1,5 @@
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 
 group("brave") {
-  deps = [ "//brave/ios:brave_ios" ]
+  deps = [ "//BnesBrowser/ios:brave_ios" ]
 }

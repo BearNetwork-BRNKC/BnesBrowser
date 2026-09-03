@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/playlist/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
 assert(enable_playlist)
 
@@ -15,10 +15,10 @@ static_library("renderer") {
     "playlist_render_frame_observer.h",
   ]
 
-  public_deps = [ "//brave/components/playlist/core/common" ]
+  public_deps = [ "//BnesBrowser/components/playlist/core/common" ]
 
   deps = [
-    "//brave/gin:converter_specializations",
+    "//BnesBrowser/gin:converter_specializations",
     "//content/public/renderer",
     "//gin",
     "//mojo/public/cpp/bindings",

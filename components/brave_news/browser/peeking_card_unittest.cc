@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/peeking_card.h"
+#include "BnesBrowser/components/brave_news/browser/peeking_card.h"
 
 #include <tuple>
 #include <utility>
@@ -11,9 +11,9 @@
 
 #include "base/containers/flat_map.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_news/browser/feed_sampling.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/feed_sampling.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace brave_news {

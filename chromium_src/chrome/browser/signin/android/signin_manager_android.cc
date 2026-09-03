@@ -11,7 +11,7 @@
 #include "components/signin/public/identity_manager/identity_manager.h"
 
 // Must come after all headers that specialize FromJniType() / ToJniType().
-#include "brave/browser/signin/services/android/jni_headers/BraveSigninManager_jni.h"
+#include "BnesBrowser/browser/signin/services/android/jni_headers/BraveSigninManager_jni.h"
 #include "chrome/browser/signin/services/android/jni_headers/SigninManagerImpl_jni.h"
 
 namespace {

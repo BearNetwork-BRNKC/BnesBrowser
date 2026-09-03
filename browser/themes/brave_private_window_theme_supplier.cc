@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/themes/brave_private_window_theme_supplier.h"
+#include "BnesBrowser/browser/themes/brave_private_window_theme_supplier.h"
 
-#include "brave/browser/ui/color/brave_color_mixer.h"
-#include "brave/browser/ui/tabs/brave_tab_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_color_mixer.h"
 #include "ui/color/color_provider_key.h"
 
 BravePrivateWindowThemeSupplier::BravePrivateWindowThemeSupplier(

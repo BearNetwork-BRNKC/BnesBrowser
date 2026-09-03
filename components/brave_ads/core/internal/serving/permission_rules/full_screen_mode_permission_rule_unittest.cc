@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/full_screen_mode_permission_rule.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/full_screen_mode_permission_rule.h"
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/permission_rule_feature.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/permission_rule_feature.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

@@ -8,9 +8,9 @@
 
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
-#include "brave/components/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/blinded_token.h"
 
 namespace brave_ads::cbr {
 

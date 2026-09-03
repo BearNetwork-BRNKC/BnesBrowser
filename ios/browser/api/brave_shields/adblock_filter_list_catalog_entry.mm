@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/brave_shields/adblock_filter_list_catalog_entry.h"
+#include "BnesBrowser/ios/browser/api/brave_shields/adblock_filter_list_catalog_entry.h"
 
 #include "base/apple/foundation_util.h"
 #include "base/hash/hash.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/foundation_util.h"
-#include "brave/components/brave_shields/core/browser/filter_list_catalog_entry.h"
+#include "BnesBrowser/base/apple/foundation_util.h"
+#include "BnesBrowser/components/brave_shields/core/browser/filter_list_catalog_entry.h"
 
 @interface AdblockFilterListCatalogEntry ()
 @property(nonatomic, copy) NSString* uuid;

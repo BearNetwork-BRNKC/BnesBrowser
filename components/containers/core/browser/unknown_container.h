@@ -8,7 +8,7 @@
 
 #include <string_view>
 
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 #include "third_party/skia/include/core/SkColor.h"
 
 namespace containers {

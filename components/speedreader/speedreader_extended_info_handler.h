@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 #include "components/sessions/content/extended_info_handler.h"
 
 namespace content {

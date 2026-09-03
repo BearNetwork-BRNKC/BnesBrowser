@@ -10,7 +10,7 @@
 
 #include "base/functional/callback.h"
 #include "base/memory/scoped_refptr.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 
 // Issues the Android Rewards attestation / captcha-solve requests against the
 // Brave grant endpoint via APIRequestHelper.

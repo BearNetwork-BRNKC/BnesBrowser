@@ -8,7 +8,7 @@
 #include <string>
 #include <string_view>
 
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 #include "chrome/common/webui_url_constants.h"
 #include "content/public/common/url_constants.h"
 #include "url/gurl.h"

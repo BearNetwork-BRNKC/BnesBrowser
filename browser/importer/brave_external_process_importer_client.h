@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/common/importer/profile_import.mojom.h"
+#include "BnesBrowser/common/importer/profile_import.mojom.h"
 #include "chrome/browser/importer/external_process_importer_client.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 #include "mojo/public/cpp/bindings/remote.h"

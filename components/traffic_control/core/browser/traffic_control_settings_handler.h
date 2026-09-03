@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "mojo/public/cpp/bindings/remote.h"
 

@@ -8,7 +8,7 @@
 
 #include "base/gtest_prod_util.h"
 #include "base/memory/raw_ref.h"
-#include "brave/browser/ui/views/page_action/wayback_machine_state_manager.h"
+#include "BnesBrowser/browser/ui/views/page_action/wayback_machine_state_manager.h"
 #include "chrome/browser/ui/views/page_action/page_action_icon_view.h"
 
 class Browser;

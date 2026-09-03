@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/tabs/tab_strip_model_observer.h"
 
-#include "brave/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
 
 #include <chrome/browser/ui/tabs/tab_strip_model_observer.cc>
 

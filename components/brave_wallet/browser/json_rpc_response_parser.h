@@ -13,9 +13,9 @@
 #include "base/check.h"
 #include "base/json/json_reader.h"
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/json_rpc_responses.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_responses.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 

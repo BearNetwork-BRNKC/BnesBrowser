@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/speech/on_device_speech_recognition_controller.h"
+#include "BnesBrowser/browser/speech/on_device_speech_recognition_controller.h"
 
 #include <optional>
 #include <utility>
@@ -16,11 +16,11 @@
 #include "base/no_destructor.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/browser/local_ai/background_web_contents_factory.h"
-#include "brave/components/local_ai/core/on_device_speech_models_state.h"
-#include "brave/components/local_ai/core/url_constants.h"
-#include "brave/components/local_ai/core/utils.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/local_ai/background_web_contents_factory.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_state.h"
+#include "BnesBrowser/components/local_ai/core/url_constants.h"
+#include "BnesBrowser/components/local_ai/core/utils.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"

@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_VIEWS_PROFILES_BRAVE_INCOGNITO_MENU_VIEW_H_
 #define BRAVE_BROWSER_UI_VIEWS_PROFILES_BRAVE_INCOGNITO_MENU_VIEW_H_
 
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/ui/views/profiles/incognito_menu_view.h"
 
 class BraveIncognitoMenuView : public IncognitoMenuView {

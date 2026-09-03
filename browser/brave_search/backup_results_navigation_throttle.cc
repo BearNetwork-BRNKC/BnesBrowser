@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_search/backup_results_navigation_throttle.h"
+#include "BnesBrowser/browser/brave_search/backup_results_navigation_throttle.h"
 
-#include "brave/browser/brave_search/backup_results_service_factory.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_factory.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "content/public/browser/browser_context.h"
 #include "content/public/browser/navigation_handle.h"

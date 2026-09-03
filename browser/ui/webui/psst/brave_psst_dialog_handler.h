@@ -10,10 +10,10 @@
 #include <vector>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/psst/psst_tab_web_contents_observer.h"
-#include "brave/browser/psst/psst_ui_delegate_impl.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom-shared.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom.h"
+#include "BnesBrowser/browser/psst/psst_tab_web_contents_observer.h"
+#include "BnesBrowser/browser/psst/psst_ui_delegate_impl.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom-shared.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom.h"
 #include "chrome/browser/ui/tabs/tab_strip_model_observer.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 #include "mojo/public/cpp/bindings/remote.h"

@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(enable_brave_ads)
 
@@ -17,20 +17,20 @@ source_set("search_result_ad") {
 
   public_deps = [
     "//base",
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/infobars/core",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/infobars/core",
     "//components/infobars/core",
     "//content/public/browser",
   ]
 
   deps = [
-    "//brave/app:brave_generated_resources_grit_grit",
-    "//brave/browser/brave_ads",
-    "//brave/components/brave_ads/browser",
-    "//brave/components/brave_ads/content/browser",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_search/common",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit_grit",
+    "//BnesBrowser/browser/brave_ads",
+    "//BnesBrowser/components/brave_ads/browser",
+    "//BnesBrowser/components/brave_ads/content/browser",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_search/common",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser:browser_public_dependencies",
     "//chrome/browser/infobars",
     "//chrome/browser/profiles:profile",
@@ -51,10 +51,10 @@ source_set("browser_tests") {
 
   deps = [
     ":search_result_ad",
-    "//brave/components/brave_ads/browser",
-    "//brave/components/brave_ads/core/browser/service:test_support",
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_ads/browser",
+    "//BnesBrowser/components/brave_ads/core/browser/service:test_support",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
     "//chrome/browser/ssl:cert_verifier_test_support",
     "//chrome/browser/ui",
     "//net:test_support",

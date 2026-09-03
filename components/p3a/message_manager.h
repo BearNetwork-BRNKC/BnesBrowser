@@ -16,9 +16,9 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/raw_ref.h"
 #include "base/timer/timer.h"
-#include "brave/components/p3a/metric_log_store.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/p3a_message.h"
+#include "BnesBrowser/components/p3a/metric_log_store.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/p3a_message.h"
 
 class PrefService;
 

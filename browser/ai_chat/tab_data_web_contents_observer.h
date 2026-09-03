@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_AI_CHAT_TAB_DATA_WEB_CONTENTS_OBSERVER_H_
 #define BRAVE_BROWSER_AI_CHAT_TAB_DATA_WEB_CONTENTS_OBSERVER_H_
 
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
 #include "content/public/browser/web_contents_observer.h"
 
 namespace content {

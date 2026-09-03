@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/core/browser/ad_block_default_resource_provider.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_default_resource_provider.h"
 
 #include <string>
 #include <utility>
 
 #include "base/files/file_path.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_shields/core/browser/ad_block_component_installer.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_shields/core/browser/ad_block_component_installer.h"
 
 namespace {
 

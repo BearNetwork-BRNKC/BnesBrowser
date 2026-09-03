@@ -13,8 +13,8 @@
 #include "base/containers/flat_map.h"
 #include "base/containers/span.h"
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
 
 namespace brave_wallet {
 

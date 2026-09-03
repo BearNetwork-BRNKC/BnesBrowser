@@ -16,7 +16,7 @@
 #include "base/memory/ref_counted_memory.h"
 #include "base/memory/weak_ptr.h"
 #include "base/strings/strcat.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 #include "url/gurl.h"
 #include "url/url_util.h"
 

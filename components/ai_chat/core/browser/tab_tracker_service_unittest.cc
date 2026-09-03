@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/tab_tracker_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tab_tracker_service.h"
 
 #include <memory>
 #include <utility>
@@ -11,7 +11,7 @@
 
 #include "base/task/current_thread.h"
 #include "base/test/task_environment.h"
-#include "brave/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
 #include "mojo/public/cpp/bindings/self_owned_receiver.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

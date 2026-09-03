@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/tor_profile_service_impl.h"
+#include "BnesBrowser/components/tor/tor_profile_service_impl.h"
 
 #include <memory>
 #include <optional>
@@ -17,11 +17,11 @@
 #include "base/json/json_reader.h"
 #include "base/logging.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/tor/brave_tor_pluggable_transport_updater.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_constants.h"
-#include "brave/components/tor/tor_utils.h"
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/components/tor/brave_tor_pluggable_transport_updater.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_constants.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "components/prefs/pref_service.h"
 #include "content/public/browser/browser_context.h"

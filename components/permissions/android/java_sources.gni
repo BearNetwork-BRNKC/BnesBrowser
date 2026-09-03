@@ -4,8 +4,8 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_components_permissions_java_sources = [
-  "//brave/components/permissions/android/java/src/org/chromium/components/permissions/BravePermissionDialogDelegate.java",
-  "//brave/components/permissions/android/java/src/org/chromium/components/permissions/BravePermissionDialogModel.java",
+  "//BnesBrowser/components/permissions/android/java/src/org/chromium/components/permissions/BravePermissionDialogDelegate.java",
+  "//BnesBrowser/components/permissions/android/java/src/org/chromium/components/permissions/BravePermissionDialogModel.java",
 ]
 brave_components_permissions_java_deps = [
   "//chrome/android:chrome_app_java_resources",

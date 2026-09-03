@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/traffic_control/core/browser/traffic_control_settings_handler.h"
+#include "BnesBrowser/components/traffic_control/core/browser/traffic_control_settings_handler.h"
 
 #include <memory>
 #include <optional>
@@ -15,9 +15,9 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/traffic_control/core/browser/prefs_registration.h"
-#include "brave/components/traffic_control/core/common/features.h"
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom.h"
+#include "BnesBrowser/components/traffic_control/core/browser/prefs_registration.h"
+#include "BnesBrowser/components/traffic_control/core/common/features.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "mojo/public/cpp/bindings/receiver.h"
 #include "testing/gtest/include/gtest/gtest.h"

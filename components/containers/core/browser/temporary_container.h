@@ -9,7 +9,7 @@
 #include <optional>
 #include <string_view>
 
-#include "brave/components/containers/core/mojom/containers.mojom-forward.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom-forward.h"
 
 namespace containers {
 

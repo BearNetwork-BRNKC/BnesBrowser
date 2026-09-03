@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/brave_wallet/brave_wallet_api.h"
+#include "BnesBrowser/ios/browser/api/brave_wallet/brave_wallet_api.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

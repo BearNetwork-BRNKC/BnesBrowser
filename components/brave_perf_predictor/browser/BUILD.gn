@@ -24,10 +24,10 @@ static_library("browser") {
 
   deps = [
     "//base",
-    "//brave/components/brave_perf_predictor/common",
-    "//brave/components/resources",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/time_period_storage",
+    "//BnesBrowser/components/brave_perf_predictor/common",
+    "//BnesBrowser/components/resources",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/time_period_storage",
     "//components/keyed_service/content",
     "//components/page_load_metrics/browser",
     "//components/page_load_metrics/common",
@@ -46,6 +46,6 @@ static_library("browser") {
   if (is_android) {
     # for #include "brave/browser/android/brave_shields_content_settings.h"
     # in perf_predictor_tab_helper.cc
-    deps += [ "//brave/browser/android:android_browser_process" ]
+    deps += [ "//BnesBrowser/browser/android:android_browser_process" ]
   }
 }

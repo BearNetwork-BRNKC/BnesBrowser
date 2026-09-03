@@ -50,7 +50,7 @@
 // BNES_GUARD wallet-crx-allow
 // BNES: 放行 BNES PQC 錢包擴充功能（跳過 Web Store 安裝驗證）。
 // 唯一的 ID 真相來源是 bnes_extension_constants.h 的 kBnesWalletExtensionId。
-#include "brave/browser/extensions/bnes_extension_constants.h"
+#include "BnesBrowser/browser/extensions/bnes_extension_constants.h"
 
 // `VerifyStatus::ENFORCE` is only defaulted for google chrome.
 #if defined(OFFICIAL_BUILD)

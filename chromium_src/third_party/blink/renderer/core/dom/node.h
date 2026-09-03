@@ -8,7 +8,7 @@
 
 #include <type_traits>
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 #include "third_party/blink/renderer/bindings/core/v8/active_script_wrappable.h"
 
 #define MarkAncestorsWithChildNeedsStyleInvalidation             \

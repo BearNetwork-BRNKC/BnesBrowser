@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_omnibox_public_headers =
-    [ "//brave/ios/browser/api/omnibox/autocomplete_classifier.h" ]
+    [ "//BnesBrowser/ios/browser/api/omnibox/autocomplete_classifier.h" ]

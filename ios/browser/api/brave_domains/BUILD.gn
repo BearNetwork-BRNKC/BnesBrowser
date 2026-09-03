@@ -11,6 +11,6 @@ source_set("brave_domains") {
 
   deps = [
     "//base",
-    "//brave/brave_domains",
+    "//BnesBrowser/brave_domains",
   ]
 }

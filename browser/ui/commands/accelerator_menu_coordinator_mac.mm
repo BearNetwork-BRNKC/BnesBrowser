@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/commands/accelerator_menu_coordinator_mac.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_menu_coordinator_mac.h"
 
 #import <Cocoa/Cocoa.h>
 
@@ -15,10 +15,10 @@
 #include "base/containers/flat_map.h"
 #include "base/containers/flat_set.h"
 #include "base/containers/map_util.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/commands/accelerator_service_factory.h"
-#include "brave/browser/ui/views/commands/default_accelerators_mac.h"
-#include "brave/components/commands/common/accelerator_parsing.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service_factory.h"
+#include "BnesBrowser/browser/ui/views/commands/default_accelerators_mac.h"
+#include "BnesBrowser/components/commands/common/accelerator_parsing.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

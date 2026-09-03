@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/common/importer/brave_importer_bridge.h"
+#include "BnesBrowser/common/importer/brave_importer_bridge.h"
 #include "chrome/browser/importer/in_process_importer_bridge.h"
 
 class BraveInProcessImporterBridge : public InProcessImporterBridge,

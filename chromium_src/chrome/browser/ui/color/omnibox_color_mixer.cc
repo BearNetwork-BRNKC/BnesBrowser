@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/color/omnibox_color_mixer.h"
 
-#include "brave/browser/ui/color/brave_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_color_mixer.h"
 
 #define AddOmniboxColorMixer AddOmniboxColorMixer_ChromiumImpl
 #include <chrome/browser/ui/color/omnibox_color_mixer.cc>

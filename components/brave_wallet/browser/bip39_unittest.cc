@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/bip39.h"
+#include "BnesBrowser/components/brave_wallet/browser/bip39.h"
 
 #include <optional>
 
@@ -12,7 +12,7 @@
 #include "base/strings/string_split.h"
 #include "base/strings/string_util.h"
 #include "base/test/values_test_util.h"
-#include "brave/components/brave_wallet/browser/test_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/test_utils.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 using base::test::ParseJsonDict;

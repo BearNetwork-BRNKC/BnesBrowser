@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/webui/whats_new/whats_new_fetcher.h"
 
-#include "brave/browser/ui/whats_new/whats_new_util.h"
+#include "BnesBrowser/browser/ui/whats_new/whats_new_util.h"
 
 #define StartWhatsNewFetch StartWhatsNewFetch_UnUsed
 #include <chrome/browser/ui/webui/whats_new/whats_new_fetcher.cc>

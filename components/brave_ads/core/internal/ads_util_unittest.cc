@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
 
 #include "base/test/scoped_command_line.h"
-#include "brave/components/brave_ads/core/internal/common/locale/test/fake_locale.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/rewards_flags.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/locale/test/fake_locale.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_flags.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"

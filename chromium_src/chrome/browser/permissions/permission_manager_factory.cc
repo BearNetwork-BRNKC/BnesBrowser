@@ -5,17 +5,17 @@
 
 #include "chrome/browser/permissions/permission_manager_factory.h"
 
-#include "brave/browser/geolocation/brave_geolocation_permission_context_delegate.h"
-#include "brave/browser/permissions/permission_lifetime_manager_factory.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/permissions/contexts/brave_google_sign_in_permission_context.h"
-#include "brave/components/permissions/contexts/brave_open_ai_chat_permission_context.h"
-#include "brave/components/permissions/permission_lifetime_manager.h"
+#include "BnesBrowser/browser/geolocation/brave_geolocation_permission_context_delegate.h"
+#include "BnesBrowser/browser/permissions/permission_lifetime_manager_factory.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/permissions/contexts/brave_google_sign_in_permission_context.h"
+#include "BnesBrowser/components/permissions/contexts/brave_open_ai_chat_permission_context.h"
+#include "BnesBrowser/components/permissions/permission_lifetime_manager.h"
 #include "components/permissions/features.h"
 #include "components/permissions/permission_manager.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/permissions/contexts/brave_wallet_permission_context.h"
+#include "BnesBrowser/components/permissions/contexts/brave_wallet_permission_context.h"
 #endif
 
 #define GeolocationPermissionContextDelegate \

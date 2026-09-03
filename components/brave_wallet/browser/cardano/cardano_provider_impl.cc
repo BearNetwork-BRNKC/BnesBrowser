@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_provider_impl.h"
 
 #include <utility>
 #include <vector>
@@ -11,13 +11,13 @@
 #include "base/notimplemented.h"
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_provider_delegate.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_api_impl.h"
-#include "brave/components/brave_wallet/browser/cardano/cardano_dapp_utils.h"
-#include "brave/components/brave_wallet/common/cardano_address.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_provider_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_api_impl.h"
+#include "BnesBrowser/components/brave_wallet/browser/cardano/cardano_dapp_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/cardano_address.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 

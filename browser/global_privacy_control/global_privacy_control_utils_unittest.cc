@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/global_privacy_control/global_privacy_control_utils.h"
+#include "BnesBrowser/components/global_privacy_control/global_privacy_control_utils.h"
 
-#include "brave/components/global_privacy_control/pref_names.h"
+#include "BnesBrowser/components/global_privacy_control/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "components/sync_preferences/testing_pref_service_syncable.h"
 #include "content/public/test/browser_task_environment.h"

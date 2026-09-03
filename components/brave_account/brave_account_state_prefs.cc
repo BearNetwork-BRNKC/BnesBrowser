@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
 
 #include <optional>
 #include <utility>
@@ -13,8 +13,8 @@
 #include "base/json/values_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/brave_account/brave_account_service_constants.h"
-#include "brave/components/brave_account/pref_names.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_constants.h"
+#include "BnesBrowser/components/brave_account/pref_names.h"
 #include "components/prefs/scoped_user_pref_update.h"
 
 namespace brave_account {

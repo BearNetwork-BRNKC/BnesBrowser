@@ -9,8 +9,8 @@
 #include <optional>
 
 #include "base/functional/callback.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_ads/core/public/history/ad_history_item_info.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/ad_history_item_info.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

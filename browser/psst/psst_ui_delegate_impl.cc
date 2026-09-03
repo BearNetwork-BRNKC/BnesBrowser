@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/psst/psst_ui_delegate_impl.h"
+#include "BnesBrowser/browser/psst/psst_ui_delegate_impl.h"
 
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/components/psst/core/browser/pref_names.h"
-#include "brave/components/psst/core/common/psst_metadata_schema.h"
+#include "BnesBrowser/components/psst/core/browser/pref_names.h"
+#include "BnesBrowser/components/psst/core/common/psst_metadata_schema.h"
 #include "components/prefs/pref_service.h"
 
 namespace {

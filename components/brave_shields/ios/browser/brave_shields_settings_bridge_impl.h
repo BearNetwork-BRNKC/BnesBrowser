@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/components/brave_shields/ios/browser/brave_shields_settings_bridge.h"
-#include "brave/components/brave_shields/ios/common/shields_settings.mojom.objc.h"
+#include "BnesBrowser/components/brave_shields/ios/browser/brave_shields_settings_bridge.h"
+#include "BnesBrowser/components/brave_shields/ios/common/shields_settings.mojom.objc.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

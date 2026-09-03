@@ -3,18 +3,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/ios/browser/associated_content_driver_ios.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/associated_content_driver_ios.h"
 
 #include "base/strings/sys_string_conversions.h"
-#include "brave/base/apple/foundation_util.h"
-#include "brave/components/ai_chat/core/browser/associated_content_driver.h"
-#include "brave/components/ai_chat/core/browser/conversation_handler.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc+private.h"
-#include "brave/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
-#include "brave/components/ai_chat/ios/browser/ai_chat_delegate.h"
+#include "BnesBrowser/base/apple/foundation_util.h"
+#include "BnesBrowser/components/ai_chat/core/browser/associated_content_driver.h"
+#include "BnesBrowser/components/ai_chat/core/browser/conversation_handler.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-shared.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ios/ai_chat.mojom.objc+private.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/page_content_extractor.mojom.h"
+#include "BnesBrowser/components/ai_chat/ios/browser/ai_chat_delegate.h"
 #include "net/base/apple/url_conversions.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "url/gurl.h"

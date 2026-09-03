@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/script_injector/renderer/script_injector_render_frame_observer.h"
+#include "BnesBrowser/components/script_injector/renderer/script_injector_render_frame_observer.h"
 
 #include <optional>
 #include <utility>

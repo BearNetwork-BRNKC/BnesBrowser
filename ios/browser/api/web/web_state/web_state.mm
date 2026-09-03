@@ -9,7 +9,7 @@
 
 #include "base/check.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/api/web/web_state/web_state_native.h"
+#include "BnesBrowser/ios/browser/api/web/web_state/web_state_native.h"
 #include "ios/chrome/browser/shared/model/browser/browser.h"
 #include "ios/web/public/thread/web_thread.h"
 #include "ios/web/web_state/web_state_impl.h"

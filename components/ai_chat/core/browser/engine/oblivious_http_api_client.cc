@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/oblivious_http_api_client.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oblivious_http_api_client.h"
 
 #include <utility>
 
@@ -13,13 +13,13 @@
 #include "base/strings/string_util.h"
 #include "base/task/thread_pool.h"
 #include "base/types/expected.h"
-#include "brave/components/ai_chat/core/browser/engine/oai_parsing.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/api_request_helper/utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oai_parsing.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/api_request_helper/utils.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_request_headers.h"

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #ifdef __cplusplus
-#include "brave/ios/browser/api/ads/brave_ads.mojom.objc.h"
+#include "BnesBrowser/ios/browser/api/ads/brave_ads.mojom.objc.h"
 #else
 #import "brave_ads.mojom.objc.h"
 #endif

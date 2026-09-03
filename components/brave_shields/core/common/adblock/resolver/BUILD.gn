@@ -9,10 +9,10 @@ static_library("resolver") {
     "adblock_domain_resolver.h",
   ]
 
-  visibility = [ "//brave/components/brave_shields/core/common/adblock:*" ]
+  visibility = [ "//BnesBrowser/components/brave_shields/core/common/adblock:*" ]
 
   deps = [
-    "//brave/components/brave_shields/core/common/adblock/rs:rust_lib",
+    "//BnesBrowser/components/brave_shields/core/common/adblock/rs:rust_lib",
     "//net",
   ]
 }

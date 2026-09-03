@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 
 #include <memory>
 #include <string_view>
@@ -16,26 +16,26 @@
 #include "base/functional/bind.h"
 #include "base/run_loop.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/test/fake_token_generator.h"
-#include "brave/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
-#include "brave/components/brave_ads/core/internal/account/wallet/test/wallet_test_util.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_notifier_waiter.h"
-#include "brave/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
-#include "brave/components/brave_ads/core/internal/common/test/file_path_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/mock_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/test_environment_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/pref_registry_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_environment_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/time_test_util.h"
-#include "brave/components/brave_ads/core/internal/database/database_manager.h"
-#include "brave/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
-#include "brave/components/brave_ads/core/internal/global_state/global_state.h"
-#include "brave/components/brave_ads/core/public/ads.h"
-#include "brave/components/brave_ads/core/public/ads_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/test/fake_token_generator.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/tokens/token_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/wallet/test/wallet_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_notifier_waiter.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/operating_system/operating_system_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/file_path_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/mock_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/test_environment_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/local_state_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/pref_registry_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/profile_pref_value_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_environment_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/time_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/database/database_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/deprecated/client/client_state_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/global_state/global_state.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_constants.h"
 
 namespace brave_ads::test {
 

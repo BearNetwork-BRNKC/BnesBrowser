@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/content_settings/brave_autoplay_content_setting_bubble_model.h"
+#include "BnesBrowser/browser/ui/content_settings/brave_autoplay_content_setting_bubble_model.h"
 
 #include <memory>
 #include <string>
 
 #include "base/check.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/ui/brave_browser_content_setting_bubble_model_delegate.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/brave_browser_content_setting_bubble_model_delegate.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "components/content_settings/browser/page_specific_content_settings.h"

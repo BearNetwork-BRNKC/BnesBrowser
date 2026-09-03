@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
 
 #include <vector>
 
 #include "base/auto_reset.h"
 #include "base/test/task_environment.h"
 #include "base/test/test_future.h"
-#include "brave/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
-#include "brave/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
-#include "brave/components/services/brave_wallet/public/proto/zcash_grpc_data.pb.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/zcash_decoder.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/public/proto/zcash_grpc_data.pb.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

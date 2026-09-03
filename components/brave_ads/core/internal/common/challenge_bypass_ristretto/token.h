@@ -12,7 +12,7 @@
 #include <vector>
 
 #include "base/check.h"
-#include "brave/components/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/challenge_bypass_ristretto/token.h"
 
 namespace brave_ads::cbr {
 

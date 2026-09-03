@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_SKUS_RENDERER_SKUS_RENDER_FRAME_OBSERVER_H_
 #define BRAVE_COMPONENTS_SKUS_RENDERER_SKUS_RENDER_FRAME_OBSERVER_H_
 
-#include "brave/components/skus/renderer/skus_js_handler.h"
+#include "BnesBrowser/components/skus/renderer/skus_js_handler.h"
 #include "content/public/renderer/render_frame.h"
 #include "content/public/renderer/render_frame_observer.h"
 #include "v8/include/v8.h"

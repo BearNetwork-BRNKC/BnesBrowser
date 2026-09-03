@@ -7,7 +7,7 @@
 // Brave to support delta updates on Windows until we are on Omaha 4. See:
 // github.com/brave/brave-core/pull/31937
 
-#include "brave/installer/setup/archive_patch_helper.h"
+#include "BnesBrowser/installer/setup/archive_patch_helper.h"
 
 #include <stdint.h>
 
@@ -15,7 +15,7 @@
 
 #include "base/files/file_util.h"
 #include "base/logging.h"
-#include "brave/third_party/bspatch/mbspatch.h"
+#include "BnesBrowser/third_party/bspatch/mbspatch.h"
 #include "chrome/installer/util/lzma_util.h"
 #include "components/zucchini/zucchini.h"
 #include "components/zucchini/zucchini_integration.h"

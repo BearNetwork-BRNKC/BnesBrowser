@@ -9,11 +9,11 @@
 #include <cstdint>
 
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/user_attention/user_activity/user_activity_event_info.h"
-#include "brave/components/brave_ads/core/internal/user_attention/user_activity/user_activity_event_types.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/tabs/tab_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_attention/user_activity/user_activity_event_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_attention/user_activity/user_activity_event_types.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client_notifier_observer.h"
 #include "ui/base/page_transition_types.h"
 
 namespace base {

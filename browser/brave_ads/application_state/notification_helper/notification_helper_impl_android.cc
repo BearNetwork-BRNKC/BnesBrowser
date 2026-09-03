@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/application_state/notification_helper/notification_helper_impl_android.h"
+#include "BnesBrowser/browser/brave_ads/application_state/notification_helper/notification_helper_impl_android.h"
 
 #include "base/android/jni_string.h"
 #include "base/system/sys_info.h"
-#include "brave/browser/brave_ads/android/jni_headers/BraveAdsSignupDialog_jni.h"
-#include "brave/browser/brave_ads/android/jni_headers/BraveAds_jni.h"
-#include "brave/browser/brave_ads/application_state/application_state_util_android.h"
-#include "brave/build/android/jni_headers/BraveSiteChannelsManagerBridge_jni.h"
+#include "BnesBrowser/browser/brave_ads/android/jni_headers/BraveAdsSignupDialog_jni.h"
+#include "BnesBrowser/browser/brave_ads/android/jni_headers/BraveAds_jni.h"
+#include "BnesBrowser/browser/brave_ads/application_state/application_state_util_android.h"
+#include "BnesBrowser/build/android/jni_headers/BraveSiteChannelsManagerBridge_jni.h"
 #include "chrome/browser/notifications/jni_headers/NotificationSystemStatusUtil_jni.h"
 #include "chrome/browser/notifications/notification_channels_provider_android.h"
 

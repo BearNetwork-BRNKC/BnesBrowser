@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/brave_extension_management.h"
+#include "BnesBrowser/browser/extensions/brave_extension_management.h"
 
 #include <memory>
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/extensions/brave_extension_provider.h"
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/extensions/brave_extension_provider.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/extensions/extension_management_internal.h"
 #include "chrome/browser/extensions/external_policy_loader.h"
@@ -23,10 +23,10 @@
 #include "extensions/common/extension_urls.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_manager.h"
-#include "brave/components/tor/brave_tor_client_updater.h"
-#include "brave/components/tor/brave_tor_pluggable_transport_updater.h"
-#include "brave/components/tor/pref_names.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/components/tor/brave_tor_client_updater.h"
+#include "BnesBrowser/components/tor/brave_tor_pluggable_transport_updater.h"
+#include "BnesBrowser/components/tor/pref_names.h"
 #endif
 
 namespace extensions {

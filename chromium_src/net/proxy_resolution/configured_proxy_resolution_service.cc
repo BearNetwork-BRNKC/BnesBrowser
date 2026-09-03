@@ -5,7 +5,7 @@
 
 #include "net/proxy_resolution/configured_proxy_resolution_service.h"
 
-#include "brave/net/proxy_resolution/proxy_config_service_tor.h"
+#include "BnesBrowser/net/proxy_resolution/proxy_config_service_tor.h"
 #include "net/base/network_anonymization_key.h"
 
 namespace net {

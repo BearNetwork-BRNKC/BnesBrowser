@@ -3,8 +3,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/grit/brave_unscaled_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_unscaled_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/grit/generated_resources.h"
 #include "content/public/browser/web_ui_data_source.h"

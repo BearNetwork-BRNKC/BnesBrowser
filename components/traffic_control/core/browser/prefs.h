@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom-forward.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom-forward.h"
 
 class PrefService;
 

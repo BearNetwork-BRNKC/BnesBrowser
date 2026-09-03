@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
 source_set("brave_search") {
@@ -19,10 +19,10 @@ source_set("brave_search") {
   ]
 
   deps = [
-    "//brave/browser/brave_shields",
-    "//brave/components/brave_search/browser",
-    "//brave/components/brave_search/common",
-    "//brave/components/brave_shields/core/browser",
+    "//BnesBrowser/browser/brave_shields",
+    "//BnesBrowser/components/brave_search/browser",
+    "//BnesBrowser/components/brave_search/common",
+    "//BnesBrowser/components/brave_shields/core/browser",
     "//chrome/browser:browser_process",
     "//chrome/browser/content_extraction",
     "//chrome/browser/content_settings",
@@ -40,7 +40,7 @@ source_set("brave_search") {
 
   if (is_android) {
     deps += [
-      "//brave/android/java/org/chromium/chrome/browser/brave_search:jni_headers",
+      "//BnesBrowser/android/java/org/chromium/chrome/browser/brave_search:jni_headers",
       "//ui/android",
     ]
   } else if (is_mac) {
@@ -68,7 +68,7 @@ source_set("unit_tests") {
   deps = [
     ":brave_search",
     "//base",
-    "//brave/components/brave_search/browser",
+    "//BnesBrowser/components/brave_search/browser",
     "//chrome/test:test_support",
     "//content/test:test_support",
     "//testing/gtest",
@@ -87,10 +87,10 @@ if (!is_android) {
     deps = [
       ":brave_search",
       "//base/test:test_support",
-      "//brave/components/brave_ads/buildflags",
-      "//brave/components/brave_rewards/core",
-      "//brave/components/brave_search/browser",
-      "//brave/components/brave_search/common",
+      "//BnesBrowser/components/brave_ads/buildflags",
+      "//BnesBrowser/components/brave_rewards/core",
+      "//BnesBrowser/components/brave_search/browser",
+      "//BnesBrowser/components/brave_search/common",
       "//chrome/browser/profiles:profile",
       "//chrome/browser/search_engines",
       "//chrome/browser/ui",

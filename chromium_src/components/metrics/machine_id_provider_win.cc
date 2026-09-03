@@ -4,7 +4,7 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/command_line.h"
-#include "brave/components/constants/brave_switches.h"
+#include "BnesBrowser/components/constants/brave_switches.h"
 
 namespace {
 bool IsMachineIdDisabled() {

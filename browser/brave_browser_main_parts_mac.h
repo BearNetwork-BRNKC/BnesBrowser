@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/feature_list.h"
-#include "brave/browser/upgrade_when_idle/upgrade_when_idle.h"
+#include "BnesBrowser/browser/upgrade_when_idle/upgrade_when_idle.h"
 #include "chrome/browser/chrome_browser_main_mac.h"
 
 namespace brave {

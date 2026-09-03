@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 if (enable_brave_vpn_v1 && is_win) {
   source_set("vpn_unit_tests") {
@@ -13,8 +13,8 @@ if (enable_brave_vpn_v1 && is_win) {
     deps = [
       "//base",
       "//base/test:test_support",
-      "//brave/browser/brave_vpn/win/brave_vpn_helper:common",
-      "//brave/components/brave_vpn/common/buildflags",
+      "//BnesBrowser/browser/brave_vpn/win/brave_vpn_helper:common",
+      "//BnesBrowser/components/brave_vpn/common/buildflags",
       "//chrome/chrome_elf:nt_registry",
       "//chrome/install_static:install_static_util",
       "//chrome/installer/setup:lib",

@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # Deps for services/network:network_service
-brave_services_network_deps = [ "//brave/components/oblivious_http" ]
+brave_services_network_deps = [ "//BnesBrowser/components/oblivious_http" ]

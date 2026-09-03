@@ -8,10 +8,10 @@
 
 #include <memory>
 
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/browser/wallet_handler.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/ledger_bridge.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_handler.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.h"
 #include "content/public/browser/web_ui_controller.h"
 #include "content/public/browser/web_ui_message_handler.h"
 #include "content/public/browser/webui_config.h"
@@ -21,7 +21,7 @@
 #include "ui/webui/mojo_web_ui_controller.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/core/mojom/rewards_page.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_page.mojom.h"
 #endif
 
 namespace brave_wallet {

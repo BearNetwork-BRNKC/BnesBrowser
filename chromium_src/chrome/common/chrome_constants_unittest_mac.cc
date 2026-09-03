@@ -5,7 +5,7 @@
 
 #include <string>
 
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 #include "chrome/common/chrome_constants.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

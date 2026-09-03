@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/playlist/core/browser/playlist_exclusions.h"
+#include "BnesBrowser/components/playlist/core/browser/playlist_exclusions.h"
 
 #include <optional>
 #include <string_view>
@@ -16,8 +16,8 @@
 #include "base/strings/string_util.h"
 #include "base/task/thread_pool.h"
 #include "base/values.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 #include "url/gurl.h"
 

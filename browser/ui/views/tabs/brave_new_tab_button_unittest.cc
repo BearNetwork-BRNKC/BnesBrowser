@@ -3,11 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/brave_new_tab_button.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_new_tab_button.h"
 
 #include <memory>
 
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/ui/browser_window/test/mock_browser_window_interface.h"
 #include "chrome/test/views/chrome_views_test_base.h"
 #include "testing/gmock/include/gmock/gmock.h"

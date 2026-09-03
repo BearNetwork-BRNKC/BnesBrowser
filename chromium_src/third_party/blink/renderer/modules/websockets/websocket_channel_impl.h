@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_MODULES_WEBSOCKETS_WEBSOCKET_CHANNEL_IMPL_H_
 #define BRAVE_CHROMIUM_SRC_THIRD_PARTY_BLINK_RENDERER_MODULES_WEBSOCKETS_WEBSOCKET_CHANNEL_IMPL_H_
 
-#include "brave/third_party/blink/renderer/core/resource_pool_limiter/resource_pool_limiter.h"
+#include "BnesBrowser/third_party/blink/renderer/core/resource_pool_limiter/resource_pool_limiter.h"
 
 namespace blink {
 

@@ -3,13 +3,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/resources/brave_grit.gni")
+import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 
 repack("packed_resources") {
   testonly = true
   sources = [
-    "$root_gen_dir/brave/ios/web/test/test_resources.pak",
+    "$root_gen_dir/BnesBrowser/ios/web/test/test_resources.pak",
     "$root_gen_dir/ui/strings/app_locale_settings_en-US.pak",
   ]
   deps = [

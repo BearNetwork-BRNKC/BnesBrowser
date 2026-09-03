@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/js/edge_js.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/js/edge_js.h"
 #include "third_party/blink/renderer/platform/wtf/casting.h"
 
 namespace brave_page_graph {

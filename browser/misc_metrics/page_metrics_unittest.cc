@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
 
 #include <memory>
 
@@ -12,10 +12,10 @@
 #include "base/strings/string_number_conversions.h"
 #include "base/test/bind.h"
 #include "base/test/metrics/histogram_tester.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/misc_metrics/default_browser_monitor.h"
-#include "brave/components/misc_metrics/media_session_metrics.h"
-#include "brave/components/p3a_utils/test_event_relay_observer.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/misc_metrics/default_browser_monitor.h"
+#include "BnesBrowser/components/misc_metrics/media_session_metrics.h"
+#include "BnesBrowser/components/p3a_utils/test_event_relay_observer.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/history/history_service_factory.h"

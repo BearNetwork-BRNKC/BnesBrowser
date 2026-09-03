@@ -3,47 +3,47 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_local_state_prefs.h"
+#include "BnesBrowser/browser/brave_local_state_prefs.h"
 
 #include <string>
 
 #include "base/values.h"
-#include "brave/browser/brave_search/backup_results_service_impl.h"
-#include "brave/browser/brave_stats/buildflags.h"
-#include "brave/browser/metrics/buildflags/buildflags.h"
-#include "brave/browser/metrics/metrics_reporting_util.h"
-#include "brave/browser/misc_metrics/fingerprint_frequency_metrics.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/misc_metrics/uptime_monitor_impl.h"
-#include "brave/browser/search_engines/search_engine_tracker.h"
-#include "brave/browser/updater/buildflags.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_origin/brave_origin_prefs.h"
-#include "brave/components/brave_referrals/browser/brave_referrals_service.h"
-#include "brave/components/brave_search/browser/backup_results_metrics.h"
-#include "brave/components/brave_search_conversion/p3a.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/l10n/common/prefs.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/misc_metrics/general_browser_usage.h"
-#include "brave/components/misc_metrics/page_metrics.h"
-#include "brave/components/misc_metrics/privacy_hub_metrics.h"
-#include "brave/components/misc_metrics/quick_search_metrics.h"
-#include "brave/components/ntp_background_images/browser/ntp_background_images_service.h"
-#include "brave/components/ntp_background_images/common/view_counter_pref_registry.h"
-#include "brave/components/p3a/metric_log_store.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/p3a/rotation_scheduler.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/skus/browser/skus_utils.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_impl.h"
+#include "BnesBrowser/browser/brave_stats/buildflags.h"
+#include "BnesBrowser/browser/metrics/buildflags/buildflags.h"
+#include "BnesBrowser/browser/metrics/metrics_reporting_util.h"
+#include "BnesBrowser/browser/misc_metrics/fingerprint_frequency_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/uptime_monitor_impl.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_prefs.h"
+#include "BnesBrowser/components/brave_referrals/browser/brave_referrals_service.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_metrics.h"
+#include "BnesBrowser/components/brave_search_conversion/p3a.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/l10n/common/prefs.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/misc_metrics/general_browser_usage.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/components/misc_metrics/privacy_hub_metrics.h"
+#include "BnesBrowser/components/misc_metrics/quick_search_metrics.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_registry.h"
+#include "BnesBrowser/components/p3a/metric_log_store.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/p3a/rotation_scheduler.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/common/pref_names.h"
 #include "components/metrics/metrics_pref_names.h"
@@ -52,83 +52,83 @@
 #include "third_party/widevine/cdm/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_STATS_UPDATER)
-#include "brave/browser/brave_stats/brave_stats_updater.h"
+#include "BnesBrowser/browser/brave_stats/brave_stats_updater.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/browser/playlist/playlist_service_factory.h"
+#include "BnesBrowser/browser/playlist/playlist_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/ai_chat_metrics.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_metrics.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
-#include "brave/components/brave_ads/core/public/prefs/obsolete_pref_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_registry.h"
+#include "BnesBrowser/browser/brave_ads/analytics/p3a/brave_stats_helper.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/obsolete_pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_registry.h"
 #endif
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_ANDROID)
-#include "brave/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
+#include "BnesBrowser/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
 #endif
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/components/local_ai/core/pref_names.h"
+#include "BnesBrowser/components/local_ai/core/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 #endif
 
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_message_handler.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/p3a/p3a_core_metrics.h"
-#include "brave/browser/search_engines/pref_names.h"
-#include "brave/browser/themes/brave_dark_mode_utils.h"
-#include "brave/browser/ui/whats_new/whats_new_util.h"
+#include "BnesBrowser/browser/p3a/p3a_core_metrics.h"
+#include "BnesBrowser/browser/search_engines/pref_names.h"
+#include "BnesBrowser/browser/themes/brave_dark_mode_utils.h"
+#include "BnesBrowser/browser/ui/whats_new/whats_new_util.h"
 #include "chrome/browser/first_run/first_run.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/onboarding/onboarding_tab_helper.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/browser/onboarding/onboarding_tab_helper.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY_NATIVE)
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_WIDEVINE)
-#include "brave/browser/widevine/widevine_utils.h"
+#include "BnesBrowser/browser/widevine/widevine_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 #endif
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/updater_p3a.h"
+#include "BnesBrowser/browser/updater/updater_p3a.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/decentralized_dns/core/utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/decentralized_dns/core/utils.h"
 #endif
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 #endif
 
 namespace brave {

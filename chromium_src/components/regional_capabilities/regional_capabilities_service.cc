@@ -5,7 +5,7 @@
 
 #include "components/regional_capabilities/regional_capabilities_service.h"
 
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
 
 #include <components/regional_capabilities/regional_capabilities_service.cc>
 

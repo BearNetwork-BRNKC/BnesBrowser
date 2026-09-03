@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/common/eth_abi_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_abi_utils.h"
 
 #include <algorithm>
 #include <limits>
@@ -17,8 +17,8 @@
 #include "base/containers/span.h"
 #include "base/containers/to_vector.h"
 #include "base/strings/string_view_util.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
-#include "brave/components/brave_wallet/common/eth_address.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/common/eth_address.h"
 
 namespace brave_wallet::eth_abi {
 namespace {

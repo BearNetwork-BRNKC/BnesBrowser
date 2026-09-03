@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_LEGACY_MIGRATION_DATABASE_DATABASE_MIGRATION_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_LEGACY_MIGRATION_DATABASE_DATABASE_MIGRATION_H_
 
-#include "brave/components/brave_ads/core/internal/common/database/database_transaction_callback.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/database/database_transaction_callback.h"
 
 namespace brave_ads::database {
 

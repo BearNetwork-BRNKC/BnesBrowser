@@ -4,11 +4,11 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/p3a/pref_names.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/day_zero_browser_ui_expt/day_zero_browser_ui_expt_manager.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/p3a/pref_names.h"
 #include "chrome/browser/profiles/profile_manager_observer.h"
 #include "chrome/test/base/testing_browser_process.h"
 #include "chrome/test/base/testing_profile.h"

@@ -5,7 +5,7 @@
 
 #include "chrome/browser/ui/web_applications/web_app_launch_process.h"
 
-#include "brave/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/navigator/browser_navigator.h"
 #include "chrome/browser/ui/navigator/browser_navigator_params.h"
@@ -14,11 +14,11 @@
 #if BUILDFLAG(ENABLE_CONTAINERS)
 #include "base/command_line.h"
 #include "base/feature_list.h"
-#include "brave/browser/containers/container_specifier_utils.h"
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/components/containers/core/browser/command_line_container.h"
-#include "brave/components/containers/core/browser/container_specifier.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/container_specifier_utils.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/components/containers/core/browser/command_line_container.h"
+#include "BnesBrowser/components/containers/core/browser/container_specifier.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #endif  // BUILDFLAG(ENABLE_CONTAINERS)
 
 namespace web_app {

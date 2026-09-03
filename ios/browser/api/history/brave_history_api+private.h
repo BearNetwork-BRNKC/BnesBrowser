@@ -11,7 +11,7 @@
 #include <string>
 
 #include "base/time/time.h"
-#include "brave/ios/browser/api/history/brave_history_api.h"
+#include "BnesBrowser/ios/browser/api/history/brave_history_api.h"
 #include "url/gurl.h"
 
 NS_ASSUME_NONNULL_BEGIN

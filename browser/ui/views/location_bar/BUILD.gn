@@ -3,9 +3,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_news/common/buildflags/buildflags.gni")
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//build/config/features.gni")
+import("//build/config/ui.gni")
 
 assert(toolkit_views)
 
@@ -24,23 +25,23 @@ source_set("location_bar") {
   ]
 
   public_deps = [
-    "//brave/components/brave_news/common/buildflags",
-    "//brave/components/tor/buildflags",
+    "//BnesBrowser/components/brave_news/common/buildflags",
+    "//BnesBrowser/components/tor/buildflags",
   ]
 
   deps = [
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/app/theme:brave_theme_resources",
-    "//brave/app/vector_icons",
-    "//brave/browser/brave_shields",
-    "//brave/browser/ui:brave_tab_prefs",
-    "//brave/browser/ui/page_info",
-    "//brave/browser/ui/views/page_info",
-    "//brave/components/brave_search_conversion",
-    "//brave/components/commander/browser",
-    "//brave/components/commander/common",
-    "//brave/components/resources:strings",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/app/theme:brave_theme_resources",
+    "//BnesBrowser/app/vector_icons",
+    "//BnesBrowser/browser/brave_shields",
+    "//BnesBrowser/browser/ui:brave_tab_prefs",
+    "//BnesBrowser/browser/ui/page_info",
+    "//BnesBrowser/browser/ui/views/page_info",
+    "//BnesBrowser/components/brave_search_conversion",
+    "//BnesBrowser/components/commander/browser",
+    "//BnesBrowser/components/commander/common",
+    "//BnesBrowser/components/resources:strings",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser/image_fetcher",
     "//chrome/browser/profiles",
     "//chrome/browser/search_engines",
@@ -69,8 +70,8 @@ source_set("location_bar") {
     ]
 
     deps += [
-      "//brave/browser/tor",
-      "//brave/components/tor",
+      "//BnesBrowser/browser/tor",
+      "//BnesBrowser/components/tor",
     ]
   }
 }
@@ -79,12 +80,12 @@ source_set("browser_tests") {
   testonly = true
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
 
-  sources = [ "//brave/browser/ui/views/location_bar/brave_location_bar_view_browsertest.cc" ]
+  sources = [ "//BnesBrowser/browser/ui/views/location_bar/brave_location_bar_view_browsertest.cc" ]
 
   deps = [
     ":location_bar",
     "//base",
-    "//brave/components/brave_search_conversion",
+    "//BnesBrowser/components/brave_search_conversion",
     "//chrome/browser",
     "//chrome/browser/search_engines",
     "//chrome/browser/ui",

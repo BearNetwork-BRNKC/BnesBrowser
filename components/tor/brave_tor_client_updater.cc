@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/brave_tor_client_updater.h"
+#include "BnesBrowser/components/tor/brave_tor_client_updater.h"
 
 #include <memory>
 #include <string>
@@ -17,9 +17,9 @@
 #include "base/logging.h"
 #include "base/task/task_runner.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/tor/constants.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_switches.h"
+#include "BnesBrowser/components/tor/constants.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_switches.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/re2/src/re2/re2.h"

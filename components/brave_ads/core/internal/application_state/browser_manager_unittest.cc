@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager.h"
 
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
-#include "brave/components/brave_ads/core/internal/application_state/test/browser_manager_observer_mock.h"
-#include "brave/components/brave_ads/core/internal/common/test/mock_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/browser_manager_observer.h"
+#include "BnesBrowser/components/brave_ads/core/internal/application_state/test/browser_manager_observer_mock.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/mock_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

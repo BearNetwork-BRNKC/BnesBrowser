@@ -16,9 +16,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_chain_metadata_prefs.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_substrate_rpc.h"
 
 namespace brave_wallet {
 

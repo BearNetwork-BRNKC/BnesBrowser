@@ -3,10 +3,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_talk/buildflags/buildflags.gni")
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 
 source_set("policy") {
   sources = [
@@ -14,31 +14,31 @@ source_set("policy") {
     "configuration_policy_handler_list_factory_impl.mm",
   ]
   deps = [
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/brave_news/common",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_talk/buildflags",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/email_aliases/buildflags",
-    "//brave/components/p3a",
-    "//brave/components/playlist/core/common",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/brave_news/common",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_talk/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/email_aliases/buildflags",
+    "//BnesBrowser/components/p3a",
+    "//BnesBrowser/components/playlist/core/common",
     "//components/policy/core/browser",
     "//ios/chrome/browser/policy/model",
   ]
   if (enable_brave_vpn) {
-    deps += [ "//brave/components/brave_vpn/common" ]
+    deps += [ "//BnesBrowser/components/brave_vpn/common" ]
   }
   if (enable_brave_wallet) {
-    deps += [ "//brave/components/brave_wallet/browser:pref_names" ]
+    deps += [ "//BnesBrowser/components/brave_wallet/browser:pref_names" ]
   }
   if (enable_brave_talk) {
-    deps += [ "//brave/components/brave_talk" ]
+    deps += [ "//BnesBrowser/components/brave_talk" ]
   }
   if (enable_email_aliases) {
     deps += [
-      "//brave/components/email_aliases:pref_names",
-      "//brave/components/email_aliases:service",
+      "//BnesBrowser/components/email_aliases:pref_names",
+      "//BnesBrowser/components/email_aliases:service",
     ]
   }
 }

@@ -6,10 +6,10 @@
 #import <Cocoa/Cocoa.h>
 
 #include "base/files/file_path.h"
-#include "brave/browser/ui/commands/accelerator_service.h"
-#include "brave/browser/ui/commands/accelerator_service_factory.h"
-#include "brave/browser/ui/commands/default_accelerators.h"
-#include "brave/components/commands/common/accelerator_parsing.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service.h"
+#include "BnesBrowser/browser/ui/commands/accelerator_service_factory.h"
+#include "BnesBrowser/browser/ui/commands/default_accelerators.h"
+#include "BnesBrowser/components/commands/common/accelerator_parsing.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

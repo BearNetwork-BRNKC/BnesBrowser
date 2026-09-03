@@ -28,8 +28,8 @@ source_set("playlist") {
     ":playlist_compatibility_js",
     ":playlist_event_listeners_js",
     ":playlist_js",
-    "//brave/components/playlist/core/browser",
-    "//brave/components/playlist/core/common",
+    "//BnesBrowser/components/playlist/core/browser",
+    "//BnesBrowser/components/playlist/core/common",
     "//components/prefs",
     "//ios/chrome/browser/shared/model/profile",
     "//net",
@@ -37,7 +37,7 @@ source_set("playlist") {
   ]
   public_deps = [
     "//base",
-    "//brave/ios/web/js_messaging:message_handler_token",
+    "//BnesBrowser/ios/web/js_messaging:message_handler_token",
     "//ios/web/public",
     "//ios/web/public/js_messaging",
   ]
@@ -84,5 +84,5 @@ optimize_ts("playlist_compatibility_js") {
 
   sources = [ "resources/playlist_compatibility.ts" ]
 
-  deps = [ "//brave/ios/web/js_messaging:util_scripts" ]
+  deps = [ "//BnesBrowser/ios/web/js_messaging:util_scripts" ]
 }

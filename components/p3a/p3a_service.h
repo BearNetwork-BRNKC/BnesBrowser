@@ -20,16 +20,16 @@
 #include "base/metrics/histogram_base.h"
 #include "base/metrics/statistics_recorder.h"
 #include "base/scoped_observation.h"
-#include "brave/components/p3a/message_manager.h"
-#include "brave/components/p3a/metric_log_type.h"
-#include "brave/components/p3a/p3a_config.h"
-#include "brave/components/p3a/remote_config_manager.h"
-#include "brave/components/p3a_utils/event_relay.h"
+#include "BnesBrowser/components/p3a/message_manager.h"
+#include "BnesBrowser/components/p3a/metric_log_type.h"
+#include "BnesBrowser/components/p3a/p3a_config.h"
+#include "BnesBrowser/components/p3a/remote_config_manager.h"
+#include "BnesBrowser/components/p3a_utils/event_relay.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_change_registrar.h"
 
 #if !BUILDFLAG(IS_IOS)
-#include "brave/components/misc_metrics/default_browser_monitor.h"
+#include "BnesBrowser/components/misc_metrics/default_browser_monitor.h"
 #endif  // !BUILDFLAG(IS_IOS)
 
 class PrefRegistrySimple;

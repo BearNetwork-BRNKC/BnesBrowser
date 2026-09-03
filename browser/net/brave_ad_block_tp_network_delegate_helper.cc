@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_ad_block_tp_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_ad_block_tp_network_delegate_helper.h"
 
 #include <memory>
 #include <optional>
@@ -20,17 +20,17 @@
 #include "base/notreached.h"
 #include "base/strings/string_util.h"
 #include "base/timer/elapsed_timer.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_shields/ad_block_pref_service_factory.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/browser/net/url_context.h"
-#include "brave/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
-#include "brave/components/brave_shields/content/browser/ad_block_pref_service.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/content/public/browser/devtools/adblock_devtools_instumentation.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_shields/ad_block_pref_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/net/url_context.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_pref_service.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/content/public/browser/devtools/adblock_devtools_instumentation.h"
 #include "chrome/browser/net/secure_dns_config.h"
 #include "chrome/browser/net/system_network_context_manager.h"
 #include "components/prefs/pref_service.h"

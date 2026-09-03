@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/service/brave_wireguard_manager.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/service/brave_wireguard_manager.h"
 
 #include <string>
 
@@ -11,8 +11,8 @@
 #include "base/logging.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/win/windows_types.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
-#include "brave/components/brave_vpn/common/wireguard/wireguard_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/service/wireguard_tunnel_service.h"
+#include "BnesBrowser/components/brave_vpn/common/wireguard/wireguard_utils.h"
 
 namespace brave_vpn {
 

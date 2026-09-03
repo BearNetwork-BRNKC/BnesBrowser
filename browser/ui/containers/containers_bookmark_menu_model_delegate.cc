@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/containers/containers_bookmark_menu_model_delegate.h"
+#include "BnesBrowser/browser/ui/containers/containers_bookmark_menu_model_delegate.h"
 
 #include "base/check.h"
 #include "base/check_is_test.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/views/frame/browser_view.h"
 #include "ui/compositor/compositor.h"

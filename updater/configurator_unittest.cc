@@ -10,7 +10,7 @@
 #include "base/files/file_path.h"
 #include "base/memory/scoped_refptr.h"
 #include "base/test/task_environment.h"
-#include "brave/components/update_client/test_util.h"
+#include "BnesBrowser/components/update_client/test_util.h"
 #include "chrome/updater/external_constants.h"
 #include "chrome/updater/persisted_data.h"
 #include "chrome/updater/prefs_impl.h"

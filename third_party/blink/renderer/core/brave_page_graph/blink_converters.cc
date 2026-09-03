@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/blink_converters.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_converters.h"
 
 #include <memory>
 
 #include "base/no_destructor.h"
-#include "brave/v8/include/v8-isolate-page-graph-utils.h"
+#include "BnesBrowser/v8/include/v8-isolate-page-graph-utils.h"
 #include "third_party/blink/public/platform/platform.h"
 #include "third_party/blink/public/platform/web_v8_value_converter.h"
 #include "third_party/blink/renderer/core/dom/document.h"

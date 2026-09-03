@@ -11,14 +11,14 @@
 
 #include <vector>
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "components/permissions/permission_request.h"
 #include "components/permissions/request_type.h"
 #include "url/origin.h"
 
 #if BUILDFLAG(IS_ANDROID) && BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/permissions/brave_wallet_permission_prompt_android.h"
+#include "BnesBrowser/browser/permissions/brave_wallet_permission_prompt_android.h"
 #include "components/permissions/android/permission_prompt/permission_prompt_android.h"
 #endif
 

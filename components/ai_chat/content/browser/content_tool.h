@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/ai_chat/core/browser/tools/tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool.h"
 #include "content/public/browser/weak_document_ptr.h"
 #include "third_party/blink/public/mojom/content_extraction/script_tools.mojom-forward.h"
 

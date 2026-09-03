@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/tabs/tree_tab_model.h"
+#include "BnesBrowser/browser/ui/tabs/tree_tab_model.h"
 
 #include <cstddef>
 #include <optional>
@@ -11,7 +11,7 @@
 
 #include "base/containers/map_util.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/tabs/public/tree_tab_node_id.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node_id.h"
 
 TreeTabModel::TreeTabModel() = default;
 TreeTabModel::~TreeTabModel() = default;

@@ -9,7 +9,7 @@
 #include <string>
 
 #include "base/values.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
 
 namespace ai_chat {
 

@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/android/jni_string.h"
-#include "brave/browser/download/android/jni_headers/BraveMimeUtils_jni.h"
+#include "BnesBrowser/browser/download/android/jni_headers/BraveMimeUtils_jni.h"
 #include "chrome/browser/download/android/jni_headers/MimeUtils_jni.h"
 
 namespace {

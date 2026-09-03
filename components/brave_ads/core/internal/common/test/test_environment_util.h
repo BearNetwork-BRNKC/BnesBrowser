@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_COMMON_TEST_TEST_ENVIRONMENT_UTIL_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_COMMON_TEST_TEST_ENVIRONMENT_UTIL_H_
 
-#include "brave/components/brave_ads/core/internal/common/test/build_channel_test_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/build_channel_test_types.h"
 
 // Helpers for configuring global test environment state including device
 // identity, build channel, content settings, and platform.

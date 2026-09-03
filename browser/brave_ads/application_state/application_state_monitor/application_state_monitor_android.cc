@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_ads/application_state/application_state_monitor/application_state_monitor_android.h"
+#include "BnesBrowser/browser/brave_ads/application_state/application_state_monitor/application_state_monitor_android.h"
 
 #include <memory>
 
 #include "base/functional/bind.h"
 #include "base/functional/callback.h"
-#include "brave/browser/brave_ads/application_state/application_state_util_android.h"
+#include "BnesBrowser/browser/brave_ads/application_state/application_state_util_android.h"
 
 namespace brave_ads {
 

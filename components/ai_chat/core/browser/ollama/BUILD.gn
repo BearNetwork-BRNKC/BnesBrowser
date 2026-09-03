@@ -6,9 +6,9 @@
 static_library("ollama") {
   visibility = [
     ":unit_tests",
-    "//brave/browser/ai_chat/ollama",
-    "//brave/browser/ui",
-    "//brave/browser/ui/webui/ai_chat",
+    "//BnesBrowser/browser/ai_chat/ollama",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/browser/ui/webui/ai_chat",
   ]
 
   sources = [
@@ -20,9 +20,9 @@ static_library("ollama") {
 
   deps = [
     "//base",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
     "//components/keyed_service/core",
     "//components/prefs",
     "//mojo/public/cpp/bindings",
@@ -45,9 +45,9 @@ source_set("unit_tests") {
   deps = [
     ":ollama",
     "//base/test:test_support",
-    "//brave/components/ai_chat/core/browser",
-    "//brave/components/ai_chat/core/common",
-    "//brave/components/ai_chat/core/common/mojom",
+    "//BnesBrowser/components/ai_chat/core/browser",
+    "//BnesBrowser/components/ai_chat/core/common",
+    "//BnesBrowser/components/ai_chat/core/common/mojom",
     "//components/os_crypt/async/browser",
     "//components/os_crypt/async/browser:test_support",
     "//components/sync_preferences:test_support",

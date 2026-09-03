@@ -12,7 +12,7 @@
 
 #undef BRAVE_GET_SETTINGS_URL
 
-#include "brave/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
 
 namespace chrome {
 

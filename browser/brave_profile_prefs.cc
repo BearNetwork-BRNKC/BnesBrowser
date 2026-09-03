@@ -3,62 +3,62 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_profile_prefs.h"
+#include "BnesBrowser/browser/brave_profile_prefs.h"
 
 #include <string>
 
 #include "base/feature_list.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/browser/new_tab/new_tab_shows_options.h"
-#include "brave/browser/search_engines/search_engine_tracker.h"
-#include "brave/browser/translate/brave_translate_prefs_migration.h"
-#include "brave/browser/ui/bookmark/brave_bookmark_prefs.h"
-#include "brave/browser/ui/omnibox/brave_omnibox_client_impl.h"
-#include "brave/common/pref_names.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_account/prefs.h"
-#include "brave/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_origin/pref_names.h"
-#include "brave/components/brave_perf_predictor/browser/p3a_bandwidth_savings_tracker.h"
-#include "brave/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/pref_registry.h"
-#include "brave/components/brave_search/browser/brave_search_default_host.h"
-#include "brave/components/brave_search/common/brave_search_utils.h"
-#include "brave/components/brave_search_conversion/utils.h"
-#include "brave/components/brave_shields/content/browser/ad_block_pref_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/common/pref_names.h"
-#include "brave/components/brave_sync/brave_sync_prefs.h"
-#include "brave/components/brave_talk/buildflags/buildflags.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/brave_wayback_machine/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/de_amp/common/pref_names.h"
-#include "brave/components/debounce/core/browser/debounce_service.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/global_privacy_control/pref_names.h"
-#include "brave/components/ipfs/ipfs_prefs.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/view_counter_service.h"
-#include "brave/components/ntp_background_images/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/common/view_counter_pref_registry.h"
-#include "brave/components/omnibox/browser/brave_omnibox_prefs.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/query_filter/common/pref_names.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/search_engines/brave_prepopulated_engines.h"
-#include "brave/components/serp_metrics/pref_names.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/web_discovery/buildflags/buildflags.h"
-#include "brave/components/webcompat_reporter/common/pref_names.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
+#include "BnesBrowser/browser/search_engines/search_engine_tracker.h"
+#include "BnesBrowser/browser/translate/brave_translate_prefs_migration.h"
+#include "BnesBrowser/browser/ui/bookmark/brave_bookmark_prefs.h"
+#include "BnesBrowser/browser/ui/omnibox/brave_omnibox_client_impl.h"
+#include "BnesBrowser/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_account/prefs.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/brave_adaptive_captcha_service.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/pref_names.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/p3a_bandwidth_savings_tracker.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_registry.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_default_host.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_search_conversion/utils.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_pref_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_sync/brave_sync_prefs.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/de_amp/common/pref_names.h"
+#include "BnesBrowser/components/debounce/core/browser/debounce_service.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/global_privacy_control/pref_names.h"
+#include "BnesBrowser/components/ipfs/ipfs_prefs.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/view_counter_service.h"
+#include "BnesBrowser/components/ntp_background_images/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_registry.h"
+#include "BnesBrowser/components/omnibox/browser/brave_omnibox_prefs.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/query_filter/common/pref_names.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/search_engines/brave_prepopulated_engines.h"
+#include "BnesBrowser/components/serp_metrics/pref_names.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/web_discovery/buildflags/buildflags.h"
+#include "BnesBrowser/components/webcompat_reporter/common/pref_names.h"
 #include "build/build_config.h"
 #include "chrome/browser/new_tab_page/prefs/ntp_pref_names.h"
 #include "chrome/browser/prefetch/pref_names.h"
@@ -85,47 +85,47 @@
 #include "third_party/widevine/cdm/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_news/browser/brave_news_controller.h"
-#include "brave/components/brave_news/browser/brave_news_p3a.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/common/p3a_pref_names.h"
-#include "brave/components/brave_news/common/pref_names.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_controller.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_p3a.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/common/p3a_pref_names.h"
+#include "BnesBrowser/components/brave_news/common/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_NEWS)
 
 #if BUILDFLAG(ENABLE_BRAVE_TALK)
-#include "brave/components/brave_talk/pref_names.h"
+#include "BnesBrowser/components/brave_talk/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/model_service.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_service.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/components/email_aliases/email_aliases_service.h"
+#include "BnesBrowser/components/email_aliases/email_aliases_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/obsolete_pref_util.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_registry.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/obsolete_pref_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_registry.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WAYBACK_MACHINE)
-#include "brave/components/brave_wayback_machine/pref_names.h"
+#include "BnesBrowser/components/brave_wayback_machine/pref_names.h"
 #endif
 
 #if !BUILDFLAG(USE_GCM_FROM_PLATFORM)
-#include "brave/browser/gcm_driver/brave_gcm_utils.h"
+#include "BnesBrowser/browser/gcm_driver/brave_gcm_utils.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/components/speedreader/speedreader_pref_migration.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_migration.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
@@ -136,26 +136,26 @@
 #endif
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/themes/pref_names.h"
-#include "brave/browser/ui/tabs/brave_tab_prefs.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page_prefs.h"
-#include "brave/components/brave_private_new_tab_ui/common/pref_names.h"
+#include "BnesBrowser/browser/themes/pref_names.h"
+#include "BnesBrowser/browser/ui/tabs/brave_tab_prefs.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page_prefs.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/pref_names.h"
 #include "chrome/browser/ui/webui/bookmarks/bookmark_prefs.h"
 #include "chrome/browser/ui/webui/side_panel/bookmarks/bookmarks.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_WEB_DISCOVERY_NATIVE)
-#include "brave/components/web_discovery/browser/web_discovery_service.h"
+#include "BnesBrowser/components/web_discovery/browser/web_discovery_service.h"
 #endif
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
-#include "brave/components/request_otr/browser/request_otr_service.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_service.h"
 #endif
 
 #if defined(TOOLKIT_VIEWS)
-#include "brave/browser/ui/darker_theme/features.h"
-#include "brave/browser/ui/darker_theme/pref_names.h"
-#include "brave/components/sidebar/browser/pref_names.h"
+#include "BnesBrowser/browser/ui/darker_theme/features.h"
+#include "BnesBrowser/browser/ui/darker_theme/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EXTENSIONS)
@@ -164,19 +164,19 @@ using extensions::FeatureSwitch;
 #endif
 
 #if BUILDFLAG(ENABLE_CUSTOM_BACKGROUND)
-#include "brave/browser/ntp_background/ntp_background_prefs.h"
+#include "BnesBrowser/browser/ntp_background/ntp_background_prefs.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/browser/pref_names.h"
+#include "BnesBrowser/components/psst/core/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/components/local_ai/core/pref_names.h"
+#include "BnesBrowser/components/local_ai/core/pref_names.h"
 #endif
 
 namespace brave {

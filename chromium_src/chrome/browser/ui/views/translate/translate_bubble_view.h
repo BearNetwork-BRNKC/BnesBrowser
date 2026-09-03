@@ -20,7 +20,7 @@ using BraveTranslateBubbleView = TranslateBubbleView;
 #undef CreateTranslateIcon
 #undef TranslateBubbleView
 
-#include "brave/components/translate/core/common/brave_translate_features.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_features.h"
 
 class TranslateBubbleView : public TranslateBubbleView_ChromiumImpl {
   METADATA_HEADER(TranslateBubbleView, TranslateBubbleView_ChromiumImpl)

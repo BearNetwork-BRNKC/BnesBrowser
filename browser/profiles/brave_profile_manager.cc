@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/profiles/brave_profile_manager.h"
+#include "BnesBrowser/browser/profiles/brave_profile_manager.h"
 
 #include <string>
 #include <utility>
@@ -11,23 +11,23 @@
 
 #include "base/check.h"
 #include "base/path_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/browser/perf/brave_perf_features_processor.h"
-#include "brave/browser/profiles/profile_util.h"
-#include "brave/browser/request_otr/request_otr_service_factory.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_shields/content/browser/brave_shields_util.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_p3a.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/brave_constants.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/browser/perf/brave_perf_features_processor.h"
+#include "BnesBrowser/browser/profiles/profile_util.h"
+#include "BnesBrowser/browser/request_otr/request_otr_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_shields/content/browser/brave_shields_util.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/brave_constants.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/profiles/profile_attributes_entry.h"
@@ -43,29 +43,29 @@
 #include "net/base/features.h"
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/brave_ads/ads_service_factory.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/ntp_background_images/browser/ntp_p3a_util.h"
+#include "BnesBrowser/browser/brave_ads/ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_p3a_util.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/brave_rewards/rewards_service_factory.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_service_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
 #endif
 
 #if !BUILDFLAG(USE_GCM_FROM_PLATFORM)
-#include "brave/browser/gcm_driver/brave_gcm_channel_status.h"
+#include "BnesBrowser/browser/gcm_driver/brave_gcm_channel_status.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/tor/tor_constants.h"
+#include "BnesBrowser/components/tor/tor_constants.h"
 #endif
 
 using brave_shields::ControlType;

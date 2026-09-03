@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_SIDEBAR_BROWSER_CONSTANTS_H_
 #define BRAVE_COMPONENTS_SIDEBAR_BROWSER_CONSTANTS_H_
 
-#include "brave/components/brave_talk/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_talk/buildflags/buildflags.h"
 
 namespace sidebar {
 

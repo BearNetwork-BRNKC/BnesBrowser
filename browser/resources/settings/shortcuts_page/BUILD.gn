@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/common/typescript.gni")
+import("//BnesBrowser/components/common/typescript.gni")
 
 transpile_web_ui("commands_ui") {
   generate_grdp = true
@@ -14,11 +14,11 @@ transpile_web_ui("commands_ui") {
       ] ]
 
   public_deps = [
-    "//brave/components/commands/common:mojom_js",
+    "//BnesBrowser/components/commands/common:mojom_js",
     "//mojo/public/mojom/base",
   ]
 
   resource_name = "commands"
 
-  imports_from = [ "//brave/browser/resources/settings/" ]
+  imports_from = [ "//BnesBrowser/browser/resources/settings/" ]
 }

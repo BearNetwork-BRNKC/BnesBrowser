@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/chromium_src/chrome/browser/ui/webui/help/version_updater_mac.h"
+#include "BnesBrowser/chromium_src/chrome/browser/ui/webui/help/version_updater_mac.h"
 
 #include <memory>
 
@@ -17,9 +17,9 @@
 #include "base/strings/stringprintf.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/mac/keystone_glue.h"
-#include "brave/browser/sparkle_buildflags.h"
-#include "brave/browser/updater/buildflags.h"
+#include "BnesBrowser/browser/mac/keystone_glue.h"
+#include "BnesBrowser/browser/sparkle_buildflags.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
 #include "chrome/browser/obsolete_system/obsolete_system.h"
 #include "chrome/grit/branded_strings.h"
 #include "chrome/grit/generated_resources.h"
@@ -30,7 +30,7 @@
 #endif
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/updater/features.h"
+#include "BnesBrowser/browser/updater/features.h"
 #endif
 
 // KeystoneObserver is a simple notification observer for Keystone status

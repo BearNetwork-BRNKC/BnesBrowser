@@ -3,15 +3,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/skus/browser/skus_url_loader_impl.h"
+#include "BnesBrowser/components/skus/browser/skus_url_loader_impl.h"
 
 #include <utility>
 #include <vector>
 
 #include "base/logging.h"
 #include "base/strings/string_split.h"
-#include "brave/components/skus/browser/rs/cxx/src/lib.rs.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/browser/rs/cxx/src/lib.rs.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "net/base/load_flags.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/mojom/url_response_head.mojom.h"

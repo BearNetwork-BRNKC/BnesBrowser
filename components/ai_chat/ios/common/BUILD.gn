@@ -3,18 +3,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/ios/mojom/mojom_wrappers.gni")
+import("//BnesBrowser/build/ios/mojom/mojom_wrappers.gni")
 
 ios_objc_mojom_wrappers("mojom") {
-  mojom_target = "//brave/components/ai_chat/core/common/mojom"
+  mojom_target = "//BnesBrowser/components/ai_chat/core/common/mojom"
   sources = [
-    "//brave/components/ai_chat/core/common/mojom/ai_chat.mojom",
-    "//brave/components/ai_chat/core/common/mojom/common.mojom",
-    "//brave/components/ai_chat/core/common/mojom/settings_helper.mojom",
-    "//brave/components/ai_chat/core/common/mojom/tab_tracker.mojom",
-    "//brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom/common.mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom/settings_helper.mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom",
+    "//BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom",
   ]
-  output_dir = "$root_gen_dir/brave/components/ai_chat/core/common/mojom/ios"
+  output_dir = "$root_gen_dir/BnesBrowser/components/ai_chat/core/common/mojom/ios"
   generate_namespace = false
 
   # These types have pending_receiver arguments which aren't

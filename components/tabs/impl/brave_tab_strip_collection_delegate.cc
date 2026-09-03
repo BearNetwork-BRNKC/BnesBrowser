@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/tabs/public/brave_tab_strip_collection_delegate.h"
+#include "BnesBrowser/components/tabs/public/brave_tab_strip_collection_delegate.h"
 
 #include "components/split_tabs/split_tab_visual_data.h"
 

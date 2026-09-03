@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/ipfs/ipfs_api.h"
+#include "BnesBrowser/ios/browser/api/ipfs/ipfs_api.h"
 
 #include "base/memory/raw_ptr.h"
 #import "brave/base/apple/foundation_util.h"
-#include "brave/components/ipfs/ipfs_utils.h"
-#include "brave/ios/browser/api/ipfs/ipfs_api+private.h"
+#include "BnesBrowser/components/ipfs/ipfs_utils.h"
+#include "BnesBrowser/ios/browser/api/ipfs/ipfs_api+private.h"
 #include "components/user_prefs/user_prefs.h"
 #include "ios/chrome/browser/shared/model/profile/profile_ios.h"
 #include "ios/chrome/browser/shared/model/profile/profile_manager_ios.h"

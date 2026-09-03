@@ -20,7 +20,7 @@ android_library("java") {
     ":java_resources",
     "//base:base_java",
     "//base:supplier_java",
-    "//brave/browser/url_sanitizer/android:java",
+    "//BnesBrowser/browser/url_sanitizer/android:java",
     "//chrome/browser/android/lifecycle:java",
     "//chrome/browser/flags:java",
     "//chrome/browser/profiles/android:java",
@@ -36,5 +36,5 @@ android_library("java") {
 android_resources("java_resources") {
   sources = [ "java/brave-res/layout/brave_adaptive_preference_buttons.xml" ]
 
-  deps = [ "//brave/build/android:android_brave_strings_grd" ]
+  deps = [ "//BnesBrowser/build/android:android_brave_strings_grd" ]
 }

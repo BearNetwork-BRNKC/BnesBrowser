@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/decentralized_dns/core/utils.h"
+#include "BnesBrowser/components/decentralized_dns/core/utils.h"
 
 #include <string_view>
 
-#include "brave/components/decentralized_dns/core/constants.h"
-#include "brave/components/decentralized_dns/core/pref_names.h"
-#include "brave/net/decentralized_dns/constants.h"
+#include "BnesBrowser/components/decentralized_dns/core/constants.h"
+#include "BnesBrowser/components/decentralized_dns/core/pref_names.h"
+#include "BnesBrowser/net/decentralized_dns/constants.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

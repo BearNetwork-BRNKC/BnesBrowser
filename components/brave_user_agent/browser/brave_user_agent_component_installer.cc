@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
 
 #include <stdint.h>
 
@@ -14,9 +14,9 @@
 
 #include "base/files/file_path.h"
 #include "base/functional/bind.h"
-#include "brave/components/brave_component_updater/browser/brave_on_demand_updater.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
-#include "brave/components/brave_user_agent/common/features.h"
+#include "BnesBrowser/components/brave_component_updater/browser/brave_on_demand_updater.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/brave_user_agent/common/features.h"
 #include "components/component_updater/component_installer.h"
 #include "components/component_updater/component_updater_service.h"
 

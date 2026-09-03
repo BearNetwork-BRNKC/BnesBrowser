@@ -8,8 +8,8 @@
 
 #include <string>
 
-#include "brave/components/brave_wallet/browser/account_resolver_delegate.h"
-#include "brave/components/brave_wallet/browser/keyring_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/account_resolver_delegate.h"
+#include "BnesBrowser/components/brave_wallet/browser/keyring_service.h"
 
 namespace brave_wallet {
 

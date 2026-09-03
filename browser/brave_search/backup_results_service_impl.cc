@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_search/backup_results_service_impl.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_impl.h"
 
 #include <algorithm>
 #include <utility>
@@ -20,13 +20,13 @@
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/browser/brave_search/backup_results_view_manager.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/components/brave_search/browser/backup_results_allowed_urls.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/brave_search/browser/prefs.h"
-#include "brave/components/brave_search/common/features.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/browser/brave_search/backup_results_view_manager.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_allowed_urls.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/browser/prefs.h"
+#include "BnesBrowser/components/brave_search/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_extraction/inner_html.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"

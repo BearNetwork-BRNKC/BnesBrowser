@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/playlist/playlist_tab_helper.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_tab_helper.h"
 
 #import <Foundation/Foundation.h>
 
@@ -12,7 +12,7 @@
 
 #include "base/json/json_writer.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/ios/browser/playlist/playlist_tab_helper_bridge.h"
+#include "BnesBrowser/ios/browser/playlist/playlist_tab_helper_bridge.h"
 
 namespace playlist {
 

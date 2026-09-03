@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/themes/brave_dark_mode_utils.h"
+#include "BnesBrowser/browser/themes/brave_dark_mode_utils.h"
 
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "components/prefs/pref_registry_simple.h"
 
 namespace dark_mode {

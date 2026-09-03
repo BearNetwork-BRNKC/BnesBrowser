@@ -5,6 +5,6 @@
 
 #include "chrome/browser/prefs/chrome_pref_service_factory.h"
 
-#include "brave/components/brave_shields/core/common/pref_names.h"
+#include "BnesBrowser/components/brave_shields/core/common/pref_names.h"
 
 #include <chrome/browser/prefs/chrome_pref_service_factory.cc>

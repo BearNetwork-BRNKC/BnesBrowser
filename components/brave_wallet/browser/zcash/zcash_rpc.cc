@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_rpc.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_rpc.h"
 
 #include <utility>
 
@@ -11,11 +11,11 @@
 #include "base/check_is_test.h"
 #include "base/functional/bind.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
-#include "brave/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
-#include "brave/components/services/brave_wallet/public/proto/zcash_grpc_data.pb.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/brave_wallet_utils_service.h"
+#include "BnesBrowser/components/services/brave_wallet/public/cpp/utils/protobuf_utils.h"
+#include "BnesBrowser/components/services/brave_wallet/public/proto/zcash_grpc_data.pb.h"
 #include "net/base/load_flags.h"
 #include "net/http/http_request_headers.h"
 #include "net/http/http_status_code.h"

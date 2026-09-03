@@ -12,9 +12,9 @@
 #include "base/memory/raw_ref.h"
 #include "base/memory/weak_ptr.h"
 #include "base/one_shot_event.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/common/brave_news.mojom-params-data.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-params-data.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
 
 namespace brave_news {
 

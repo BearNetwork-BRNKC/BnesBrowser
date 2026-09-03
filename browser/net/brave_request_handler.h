@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_NET_BRAVE_REQUEST_HANDLER_H_
 
 #include "base/memory/scoped_refptr.h"
-#include "brave/browser/net/url_context.h"
+#include "BnesBrowser/browser/net/url_context.h"
 #include "net/base/completion_once_callback.h"
 
 class GURL;

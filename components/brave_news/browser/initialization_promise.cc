@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_news/browser/initialization_promise.h"
+#include "BnesBrowser/components/brave_news/browser/initialization_promise.h"
 
 #include <algorithm>
 #include <iterator>
@@ -18,10 +18,10 @@
 #include "base/memory/raw_ref.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/time/time.h"
-#include "brave/components/brave_news/browser/brave_news_pref_manager.h"
-#include "brave/components/brave_news/browser/channels_controller.h"
-#include "brave/components/brave_news/browser/publishers_controller.h"
-#include "brave/components/brave_news/common/subscriptions_snapshot.h"
+#include "BnesBrowser/components/brave_news/browser/brave_news_pref_manager.h"
+#include "BnesBrowser/components/brave_news/browser/channels_controller.h"
+#include "BnesBrowser/components/brave_news/browser/publishers_controller.h"
+#include "BnesBrowser/components/brave_news/common/subscriptions_snapshot.h"
 
 namespace brave_news {
 

@@ -9,7 +9,7 @@
 #include "base/memory/ref_counted.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/components/commander/browser/commander_frontend_delegate.h"
+#include "BnesBrowser/components/commander/browser/commander_frontend_delegate.h"
 #include "components/omnibox/browser/autocomplete_provider.h"
 
 class AutocompleteProviderClient;

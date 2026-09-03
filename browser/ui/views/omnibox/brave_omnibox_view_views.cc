@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/omnibox/brave_omnibox_view_views.h"
+#include "BnesBrowser/browser/ui/views/omnibox/brave_omnibox_view_views.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/functional/callback.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/ui/browser_commands.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
 #include "chrome/app/chrome_command_ids.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"

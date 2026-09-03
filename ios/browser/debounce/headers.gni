@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_debounce_public_headers =
-    [ "//brave/ios/browser/debounce/debounce_service_factory.h" ]
+    [ "//BnesBrowser/ios/browser/debounce/debounce_service_factory.h" ]

@@ -3,13 +3,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/containers/container_tab_tracker.h"
+#include "BnesBrowser/browser/containers/container_tab_tracker.h"
 
 #include "base/memory/ptr_util.h"
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/components/containers/content/browser/containers_web_contents_user_data.h"
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/components/containers/content/browser/containers_web_contents_user_data.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/tabs/public/tab_interface.h"
 #include "content/public/browser/navigation_handle.h"

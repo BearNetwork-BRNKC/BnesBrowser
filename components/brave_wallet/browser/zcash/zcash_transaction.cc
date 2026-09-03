@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/zcash/zcash_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_transaction.h"
 
 #include <algorithm>
 #include <optional>
@@ -12,9 +12,9 @@
 #include <utility>
 
 #include "base/strings/string_number_conversions.h"
-#include "brave/components/brave_wallet/browser/zcash/zcash_serializer.h"
-#include "brave/components/brave_wallet/common/value_conversion_utils.h"
-#include "brave/components/brave_wallet/common/zcash_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/zcash/zcash_serializer.h"
+#include "BnesBrowser/components/brave_wallet/common/value_conversion_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/zcash_utils.h"
 
 namespace brave_wallet {
 

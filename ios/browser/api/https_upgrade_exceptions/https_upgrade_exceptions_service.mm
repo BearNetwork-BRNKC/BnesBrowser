@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/api/https_upgrade_exceptions/https_upgrade_exceptions_service+private.h"
+#include "BnesBrowser/ios/browser/api/https_upgrade_exceptions/https_upgrade_exceptions_service+private.h"
 
 #include "base/feature_list.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
-#include "brave/ios/browser/application_context/brave_application_context_impl.h"
+#include "BnesBrowser/components/https_upgrade_exceptions/browser/https_upgrade_exceptions_service.h"
+#include "BnesBrowser/ios/browser/application_context/brave_application_context_impl.h"
 #include "ios/chrome/browser/shared/model/application_context/application_context.h"
 #include "net/base/apple/url_conversions.h"
 #include "net/base/features.h"

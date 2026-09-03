@@ -8,8 +8,8 @@
 
 #include <optional>
 
-#include "brave/components/sidebar/browser/sidebar_item.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "components/version_info/channel.h"
 #include "ui/views/bubble/bubble_border.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/flows/get_service_token.h"
+#include "BnesBrowser/components/brave_account/flows/get_service_token.h"
 
 #include <optional>
 #include <string>
@@ -16,13 +16,13 @@
 #include "base/time/time.h"
 #include "base/types/expected.h"
 #include "base/values.h"
-#include "brave/components/brave_account/brave_account_service_constants.h"
-#include "brave/components/brave_account/brave_account_service_test.h"
-#include "brave/components/brave_account/brave_account_state_prefs.h"
-#include "brave/components/brave_account/endpoints/service_token.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
-#include "brave/components/brave_account/mojom/get_service_token.mojom.h"
-#include "brave/components/brave_account/pref_names.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_constants.h"
+#include "BnesBrowser/components/brave_account/brave_account_service_test.h"
+#include "BnesBrowser/components/brave_account/brave_account_state_prefs.h"
+#include "BnesBrowser/components/brave_account/endpoints/service_token.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/mojom/get_service_token.mojom.h"
+#include "BnesBrowser/components/brave_account/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "components/prefs/scoped_user_pref_update.h"
 #include "mojo/public/cpp/bindings/remote.h"

@@ -11,8 +11,8 @@
 #include <vector>
 
 #include "base/functional/callback.h"
-#include "brave/components/psst/core/browser/matched_rule.h"
-#include "brave/components/psst/core/browser/psst_rule.h"
+#include "BnesBrowser/components/psst/core/browser/matched_rule.h"
+#include "BnesBrowser/components/psst/core/browser/psst_rule.h"
 #include "url/gurl.h"
 
 namespace psst {

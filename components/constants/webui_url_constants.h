@@ -9,7 +9,7 @@
 #include <string_view>
 
 #include "base/containers/fixed_flat_set.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
 #include "build/build_config.h"
 
 inline constexpr char kBraveAccountHost[] = "account";

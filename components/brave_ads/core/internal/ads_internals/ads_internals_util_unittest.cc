@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ads_internals/ads_internals_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_internals/ads_internals_util.h"
 
 #include <optional>
 
 #include "base/test/test_future.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/ad_units/test/ad_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/internal/creatives/conversions/test/creative_set_conversion_test_util.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/test/ad_event_test_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/ad_units/ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/test/ad_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/conversions/test/creative_set_conversion_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/test/ad_event_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/ad_info.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAdsAdsInternalsUtil*
 

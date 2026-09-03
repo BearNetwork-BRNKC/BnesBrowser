@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/vpn_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/vpn_utils.h"
 
 #include <windows.h>
 
@@ -21,8 +21,8 @@
 #include "base/notreached.h"
 #include "base/win/registry.h"
 #include "base/win/windows_types.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
 #include "chrome/common/channel_info.h"
 #include "components/version_info/channel.h"
 

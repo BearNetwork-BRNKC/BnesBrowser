@@ -5,8 +5,8 @@
 
 #include "third_party/blink/renderer/modules/webusb/usb_device.h"
 
-#include "brave/third_party/blink/renderer/brave_farbling_constants.h"
-#include "brave/third_party/blink/renderer/core/farbling/brave_session_cache.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_farbling_constants.h"
+#include "BnesBrowser/third_party/blink/renderer/core/farbling/brave_session_cache.h"
 #include "third_party/blink/renderer/platform/wtf/text/string_builder.h"
 
 #include <third_party/blink/renderer/modules/webusb/usb_device.cc>

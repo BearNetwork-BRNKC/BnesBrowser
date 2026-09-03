@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/web_discovery/browser/background_credential_helper.h"
+#include "BnesBrowser/components/web_discovery/browser/background_credential_helper.h"
 
 #include <utility>
 
@@ -13,8 +13,8 @@
 #include "base/containers/to_vector.h"
 #include "base/logging.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/web_discovery/browser/anonymous_credentials/lib.rs.h"
-#include "brave/components/web_discovery/browser/rsa.h"
+#include "BnesBrowser/components/web_discovery/browser/anonymous_credentials/lib.rs.h"
+#include "BnesBrowser/components/web_discovery/browser/rsa.h"
 #include "crypto/sha2.h"
 #include "third_party/rust/cxx/v1/cxx.h"
 

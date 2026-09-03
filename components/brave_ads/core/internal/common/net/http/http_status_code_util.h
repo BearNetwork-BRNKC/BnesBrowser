@@ -9,7 +9,7 @@
 #include <optional>
 #include <string>
 
-#include "brave/components/brave_ads/core/internal/common/net/http/http_status_code_class_types.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/net/http/http_status_code_class_types.h"
 
 namespace brave_ads {
 

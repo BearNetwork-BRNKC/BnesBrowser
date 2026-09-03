@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/playlist/thumbnail_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/thumbnail_view.h"
 
 #include <memory>
 
 #include "base/auto_reset.h"
-#include "brave/grit/brave_theme_resources.h"
+#include "BnesBrowser/grit/brave_theme_resources.h"
 #include "ui/base/metadata/metadata_impl_macros.h"
 #include "ui/gfx/canvas.h"
 #include "ui/gfx/image/image.h"

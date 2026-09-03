@@ -4,9 +4,9 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "base/test/scoped_feature_list.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/components/brave_vpn/common/features.h"
-#include "brave/components/skus/common/features.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/components/brave_vpn/common/features.h"
+#include "BnesBrowser/components/skus/common/features.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_command_controller.h"
 #include "chrome/browser/ui/test/test_browser_dialog.h"

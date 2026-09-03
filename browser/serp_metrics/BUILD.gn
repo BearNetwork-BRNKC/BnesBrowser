@@ -23,18 +23,18 @@ static_library("serp_metrics") {
 
   public_deps = [
     "//base",
-    "//brave/components/serp_metrics",
-    "//brave/components/serp_metrics/time_period_storage",
+    "//BnesBrowser/components/serp_metrics",
+    "//BnesBrowser/components/serp_metrics/time_period_storage",
     "//chrome/browser/profiles:profile",
     "//components/search_engines",
     "//content/public/browser",
   ]
 
   deps = [
-    "//brave/browser:browser_process",
-    "//brave/components/constants",
-    "//brave/components/serp_metrics:features",
-    "//brave/components/serp_metrics:prefs",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/serp_metrics:features",
+    "//BnesBrowser/components/serp_metrics:prefs",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile_util",
     "//components/keyed_service/core",
@@ -70,10 +70,10 @@ source_set("browser_tests") {
     ":serp_metrics",
     "//base",
     "//base/test:test_support",
-    "//brave/browser/serp_metrics",
-    "//brave/components/constants",
-    "//brave/components/serp_metrics",
-    "//brave/components/serp_metrics:features",
+    "//BnesBrowser/browser/serp_metrics",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/serp_metrics",
+    "//BnesBrowser/components/serp_metrics:features",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/profiles/keep_alive",
@@ -111,10 +111,10 @@ source_set("unit_tests") {
     ":serp_metrics",
     "//base",
     "//base/test:test_support",
-    "//brave/components/constants",
-    "//brave/components/serp_metrics",
-    "//brave/components/serp_metrics:prefs",
-    "//brave/components/serp_metrics/time_period_storage",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/serp_metrics",
+    "//BnesBrowser/components/serp_metrics:prefs",
+    "//BnesBrowser/components/serp_metrics/time_period_storage",
     "//chrome/browser/profiles:profile_util",
     "//components/prefs",
     "//components/prefs:test_support",
@@ -133,7 +133,7 @@ source_set("test_support") {
 
   public_deps = [
     ":serp_metrics",
-    "//brave/components/serp_metrics",
+    "//BnesBrowser/components/serp_metrics",
     "//testing/gmock",
   ]
 

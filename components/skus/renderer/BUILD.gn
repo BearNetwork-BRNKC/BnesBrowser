@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_vpn/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
 assert(!is_ios)
 
@@ -19,10 +19,10 @@ source_set("renderer") {
 
   deps = [
     "//base",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/brave_vpn/common/mojom",
-    "//brave/components/skus/common",
-    "//brave/components/skus/common:mojom",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/mojom",
+    "//BnesBrowser/components/skus/common",
+    "//BnesBrowser/components/skus/common:mojom",
     "//content/public/renderer",
     "//gin",
     "//mojo/public/cpp/bindings",
@@ -33,7 +33,7 @@ source_set("renderer") {
   ]
 
   if (enable_brave_vpn) {
-    deps += [ "//brave/components/brave_vpn/common" ]
+    deps += [ "//BnesBrowser/components/brave_vpn/common" ]
   }
 }
 
@@ -44,7 +44,7 @@ source_set("unit_tests") {
 
   deps = [
     "//base",
-    "//brave/components/skus/renderer",
+    "//BnesBrowser/components/skus/renderer",
     "//services/network:test_support",
     "//testing/gtest",
     "//third_party/blink/public:blink",

@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/public/ads_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_util.h"
 
-#include "brave/components/brave_ads/core/internal/command_line_switches/command_line_switches_constants.h"
-#include "brave/components/brave_ads/core/internal/command_line_switches/environment/environment_command_line_switch_parser_util.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
-#include "brave/components/brave_ads/core/public/common/locale/locale_util.h"
-#include "brave/components/l10n/common/ofac_sanction_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/command_line_switches/command_line_switches_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/command_line_switches/environment/environment_command_line_switch_parser_util.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/locale/locale_util.h"
+#include "BnesBrowser/components/l10n/common/ofac_sanction_util.h"
 #include "build/build_config.h"
 #include "components/prefs/pref_service.h"
 
 #if BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #endif  // BUILDFLAG(IS_ANDROID)
 
 namespace brave_ads {

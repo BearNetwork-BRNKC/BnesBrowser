@@ -6,7 +6,7 @@
 #ifndef BRAVE_BROWSER_UI_WEBUI_BRAVE_ORIGIN_STARTUP_BRAVE_ORIGIN_STARTUP_HANDLER_H_
 #define BRAVE_BROWSER_UI_WEBUI_BRAVE_ORIGIN_STARTUP_BRAVE_ORIGIN_STARTUP_HANDLER_H_
 
-#include "brave/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED));
 
@@ -15,8 +15,8 @@ static_assert(BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED));
 #include "base/functional/callback.h"
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_origin/mojom/brave_origin_startup.mojom.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/brave_origin/mojom/brave_origin_startup.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"
 #include "mojo/public/cpp/bindings/receiver.h"

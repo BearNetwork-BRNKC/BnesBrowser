@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/email_aliases/buildflags/buildflags.gni")
+import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
 assert(enable_email_aliases)
@@ -16,10 +16,10 @@ static_library("email_aliases") {
 
   deps = [
     "//base",
-    "//brave/browser/brave_account",
-    "//brave/components/brave_account",
-    "//brave/components/email_aliases:features",
-    "//brave/components/email_aliases:service",
+    "//BnesBrowser/browser/brave_account",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/email_aliases:features",
+    "//BnesBrowser/components/email_aliases:service",
     "//chrome/browser:browser_process",
     "//chrome/browser/profiles:profile",
     "//components/keyed_service/content",
@@ -30,7 +30,7 @@ static_library("email_aliases") {
     "//mojo/public/cpp/bindings",
   ]
 
-  public_deps = [ "//brave/components/email_aliases:mojom" ]
+  public_deps = [ "//BnesBrowser/components/email_aliases:mojom" ]
 }
 
 source_set("unit_tests") {
@@ -39,12 +39,12 @@ source_set("unit_tests") {
   deps = [
     ":email_aliases",
     "//base",
-    "//brave/browser/brave_account",
-    "//brave/components/brave_account",
-    "//brave/components/brave_account:features",
-    "//brave/components/email_aliases:features",
-    "//brave/components/email_aliases:pref_names",
-    "//brave/components/email_aliases:service",
+    "//BnesBrowser/browser/brave_account",
+    "//BnesBrowser/components/brave_account",
+    "//BnesBrowser/components/brave_account:features",
+    "//BnesBrowser/components/email_aliases:features",
+    "//BnesBrowser/components/email_aliases:pref_names",
+    "//BnesBrowser/components/email_aliases:service",
     "//chrome/browser/profiles",
     "//chrome/test:test_support",
     "//components/keyed_service/core",
@@ -68,20 +68,20 @@ if (toolkit_views) {
 
     deps = [
       ":email_aliases",
-      "//brave/browser/brave_account",
-      "//brave/browser/ui/email_aliases",
-      "//brave/components/brave_account",
-      "//brave/components/brave_account:features",
-      "//brave/components/brave_account:test_support",
-      "//brave/components/brave_account/endpoint_client:test_support",
-      "//brave/components/brave_account/endpoints",
-      "//brave/components/brave_account/mojom",
-      "//brave/components/email_aliases:email_aliases_api_types",
-      "//brave/components/email_aliases:features",
-      "//brave/components/email_aliases:pref_names",
-      "//brave/components/email_aliases:service",
-      "//brave/components/email_aliases:test_utils",
-      "//brave/components/resources:strings_grit",
+      "//BnesBrowser/browser/brave_account",
+      "//BnesBrowser/browser/ui/email_aliases",
+      "//BnesBrowser/components/brave_account",
+      "//BnesBrowser/components/brave_account:features",
+      "//BnesBrowser/components/brave_account:test_support",
+      "//BnesBrowser/components/brave_account/endpoint_client:test_support",
+      "//BnesBrowser/components/brave_account/endpoints",
+      "//BnesBrowser/components/brave_account/mojom",
+      "//BnesBrowser/components/email_aliases:email_aliases_api_types",
+      "//BnesBrowser/components/email_aliases:features",
+      "//BnesBrowser/components/email_aliases:pref_names",
+      "//BnesBrowser/components/email_aliases:service",
+      "//BnesBrowser/components/email_aliases:test_utils",
+      "//BnesBrowser/components/resources:strings_grit",
       "//chrome/browser",
       "//chrome/browser/autofill",
       "//chrome/browser/policy:test_support",
@@ -93,6 +93,6 @@ if (toolkit_views) {
       "//services/network:test_support",
     ]
 
-    data = [ "//brave/test/data/email_aliases" ]
+    data = [ "//BnesBrowser/test/data/email_aliases" ]
   }
 }

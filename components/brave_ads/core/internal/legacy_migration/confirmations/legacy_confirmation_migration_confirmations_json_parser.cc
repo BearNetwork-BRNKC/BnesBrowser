@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/legacy_migration/confirmations/legacy_confirmation_migration_confirmations_json_parser.h"
+#include "BnesBrowser/components/brave_ads/core/internal/legacy_migration/confirmations/legacy_confirmation_migration_confirmations_json_parser.h"
 
 #include <optional>
 #include <string_view>
@@ -11,14 +11,14 @@
 #include "base/json/json_reader.h"
 #include "base/json/values_util.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
-#include "brave/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
-#include "brave/components/brave_ads/core/internal/ad_units/ad_type.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
-#include "brave/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmation_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/account/confirmations/confirmations_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ad_units/ad_type.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/blinded_token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/public_key.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/token.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/challenge_bypass_ristretto/unblinded_token.h"
 
 namespace brave_ads::json::reader {
 

@@ -6,8 +6,8 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_PERMISSION_RULES_SEARCH_RESULT_ADS_SEARCH_RESULT_AD_PERMISSION_RULES_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_INTERNAL_SERVING_PERMISSION_RULES_SEARCH_RESULT_ADS_SEARCH_RESULT_AD_PERMISSION_RULES_H_
 
-#include "brave/components/brave_ads/core/internal/serving/permission_rules/permission_rules_base.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/serving/permission_rules/permission_rules_base.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/ad_event_info.h"
 
 namespace brave_ads {
 

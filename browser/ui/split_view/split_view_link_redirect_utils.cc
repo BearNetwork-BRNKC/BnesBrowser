@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/split_view/split_view_link_redirect_utils.h"
+#include "BnesBrowser/browser/ui/split_view/split_view_link_redirect_utils.h"
 
 #include <optional>
 
 #include "base/functional/bind.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/browser/ui/split_view/split_view_features.h"
+#include "BnesBrowser/browser/ui/split_view/split_view_features.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/navigator/browser_navigator.h"
 #include "chrome/browser/ui/navigator/browser_navigator_params.h"

@@ -8,7 +8,7 @@
 
 #include <memory>
 
-#include "brave/browser/ui/toolbar/bookmark_bar_sub_menu_model.h"
+#include "BnesBrowser/browser/ui/toolbar/bookmark_bar_sub_menu_model.h"
 #include "chrome/browser/ui/toolbar/bookmark_sub_menu_model.h"
 
 class Browser;

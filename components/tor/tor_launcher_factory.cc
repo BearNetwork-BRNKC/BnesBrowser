@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/tor/tor_launcher_factory.h"
+#include "BnesBrowser/components/tor/tor_launcher_factory.h"
 
 #include <utility>
 #include <vector>
@@ -15,10 +15,10 @@
 #include "base/no_destructor.h"
 #include "base/task/bind_post_task.h"
 #include "base/task/sequenced_task_runner.h"
-#include "brave/components/tor/constants.h"
-#include "brave/components/tor/tor_file_watcher.h"
-#include "brave/components/tor/tor_launcher_observer.h"
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/components/tor/constants.h"
+#include "BnesBrowser/components/tor/tor_file_watcher.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "components/grit/brave_components_strings.h"
 #include "content/public/browser/browser_task_traits.h"
 #include "content/public/browser/browser_thread.h"

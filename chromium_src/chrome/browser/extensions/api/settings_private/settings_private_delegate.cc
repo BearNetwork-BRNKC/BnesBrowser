@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/extensions/api/settings_private/brave_prefs_util.h"
+#include "BnesBrowser/browser/extensions/api/settings_private/brave_prefs_util.h"
 
 #define PrefsUtil BravePrefsUtil
 #include <chrome/browser/extensions/api/settings_private/settings_private_delegate.cc>

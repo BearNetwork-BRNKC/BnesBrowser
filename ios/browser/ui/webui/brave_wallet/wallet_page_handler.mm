@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_handler.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_handler.h"
 
 #include "base/notimplemented.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_wallet/ios/browser/wallet_page_handler_bridge.h"
-#include "brave/ios/browser/ui/webui/brave_wallet/wallet_page_handler_bridge_holder.h"
+#include "BnesBrowser/components/brave_wallet/ios/browser/wallet_page_handler_bridge.h"
+#include "BnesBrowser/ios/browser/ui/webui/brave_wallet/wallet_page_handler_bridge_holder.h"
 #include "ios/web/public/web_state.h"
 
 WalletPageHandler::WalletPageHandler(

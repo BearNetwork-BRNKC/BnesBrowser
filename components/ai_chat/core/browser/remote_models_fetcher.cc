@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/remote_models_fetcher.h"
+#include "BnesBrowser/components/ai_chat/core/browser/remote_models_fetcher.h"
 
 #include <utility>
 
@@ -11,10 +11,10 @@
 #include "base/location.h"
 #include "base/task/sequenced_task_runner.h"
 #include "base/time/time.h"
-#include "brave/components/ai_chat/core/browser/remote_models_serialization.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/ai_chat/core/browser/remote_models_serialization.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 

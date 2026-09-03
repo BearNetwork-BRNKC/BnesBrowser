@@ -8,7 +8,7 @@
 #include <string>
 
 #include "base/logging.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
 
 struct Environment {
   Environment() { logging::SetMinLogLevel(logging::LOG_FATAL); }

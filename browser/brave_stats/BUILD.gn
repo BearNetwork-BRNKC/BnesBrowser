@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import("//brave/browser/brave_stats/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/browser/brave_stats/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/buildflag_header.gni")
 
 buildflag_header("buildflags") {
@@ -17,13 +17,13 @@ buildflag_header("buildflags") {
 
 source_set("first_run_util") {
   sources = [
-    "//brave/browser/brave_stats/first_run_util.cc",
-    "//brave/browser/brave_stats/first_run_util.h",
+    "//BnesBrowser/browser/brave_stats/first_run_util.cc",
+    "//BnesBrowser/browser/brave_stats/first_run_util.h",
   ]
 
   deps = [
     "//base",
-    "//brave/components/constants",
+    "//BnesBrowser/components/constants",
     "//chrome/browser/first_run",
     "//components/prefs",
   ]
@@ -31,42 +31,42 @@ source_set("first_run_util") {
 
 source_set("brave_stats") {
   sources = [
-    "//brave/browser/brave_stats/brave_stats_updater_params.cc",
-    "//brave/browser/brave_stats/brave_stats_updater_params.h",
-    "//brave/browser/brave_stats/features.cc",
-    "//brave/browser/brave_stats/features.h",
-    "//brave/browser/brave_stats/switches.h",
+    "//BnesBrowser/browser/brave_stats/brave_stats_updater_params.cc",
+    "//BnesBrowser/browser/brave_stats/brave_stats_updater_params.h",
+    "//BnesBrowser/browser/brave_stats/features.cc",
+    "//BnesBrowser/browser/brave_stats/features.h",
+    "//BnesBrowser/browser/brave_stats/switches.h",
   ]
 
   if (enable_brave_stats_updater) {
     sources += [
-      "//brave/browser/brave_stats/brave_stats_updater.cc",
-      "//brave/browser/brave_stats/brave_stats_updater.h",
+      "//BnesBrowser/browser/brave_stats/brave_stats_updater.cc",
+      "//BnesBrowser/browser/brave_stats/brave_stats_updater.h",
     ]
   }
 
   public_deps = [
-    "//brave/browser/brave_stats:buildflags",
-    "//brave/browser/brave_stats:first_run_util",
-    "//brave/components/brave_stats/browser",
+    "//BnesBrowser/browser/brave_stats:buildflags",
+    "//BnesBrowser/browser/brave_stats:first_run_util",
+    "//BnesBrowser/components/brave_stats/browser",
   ]
 
   deps = [
     "//base",
-    "//brave/browser:browser_process",
-    "//brave/browser/misc_metrics",
-    "//brave/browser/serp_metrics",
-    "//brave/common",
-    "//brave/components/brave_origin",
-    "//brave/components/brave_policy:brave_policy_observer",
-    "//brave/components/brave_referrals/common",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/misc_metrics",
-    "//brave/components/serp_metrics",
-    "//brave/components/serp_metrics:features",
-    "//brave/components/serp_metrics:prefs",
-    "//brave/components/version_info",
+    "//BnesBrowser/browser:browser_process",
+    "//BnesBrowser/browser/misc_metrics",
+    "//BnesBrowser/browser/serp_metrics",
+    "//BnesBrowser/common",
+    "//BnesBrowser/components/brave_origin",
+    "//BnesBrowser/components/brave_policy:brave_policy_observer",
+    "//BnesBrowser/components/brave_referrals/common",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/serp_metrics",
+    "//BnesBrowser/components/serp_metrics:features",
+    "//BnesBrowser/components/serp_metrics:prefs",
+    "//BnesBrowser/components/version_info",
     "//chrome/browser:browser_process",
     "//chrome/browser/first_run",
     "//chrome/browser/headless",
@@ -82,8 +82,8 @@ source_set("brave_stats") {
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/browser",
-      "//brave/components/brave_wallet/browser:pref_names",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/components/brave_wallet/browser:pref_names",
     ]
   }
 }
@@ -95,12 +95,12 @@ source_set("browser_tests") {
 
   if (enable_brave_stats_updater) {
     sources +=
-        [ "//brave/browser/brave_stats/brave_stats_updater_browsertest.cc" ]
+        [ "//BnesBrowser/browser/brave_stats/brave_stats_updater_browsertest.cc" ]
   }
 
   deps = [
-    "//brave/browser/brave_stats",
-    "//brave/components/brave_referrals/browser",
+    "//BnesBrowser/browser/brave_stats",
+    "//BnesBrowser/components/brave_referrals/browser",
     "//chrome/browser",
     "//chrome/test:test_support",
   ]
@@ -112,23 +112,23 @@ source_set("unit_tests") {
   testonly = true
 
   sources = [
-    "//brave/browser/brave_stats/brave_stats_updater_util_unittest.cc",
-    "//brave/browser/brave_stats/first_run_util_unittest.cc",
+    "//BnesBrowser/browser/brave_stats/brave_stats_updater_util_unittest.cc",
+    "//BnesBrowser/browser/brave_stats/first_run_util_unittest.cc",
   ]
 
   if (enable_brave_stats_updater) {
-    sources += [ "//brave/browser/brave_stats/brave_stats_updater_unittest.cc" ]
+    sources += [ "//BnesBrowser/browser/brave_stats/brave_stats_updater_unittest.cc" ]
   }
 
   deps = [
-    "//brave/browser/brave_stats",
-    "//brave/browser/serp_metrics",
-    "//brave/browser/serp_metrics:test_support",
-    "//brave/components/brave_referrals/browser",
-    "//brave/components/brave_stats/browser",
-    "//brave/components/brave_wallet/common/buildflags",
-    "//brave/components/misc_metrics",
-    "//brave/components/serp_metrics:prefs",
+    "//BnesBrowser/browser/brave_stats",
+    "//BnesBrowser/browser/serp_metrics",
+    "//BnesBrowser/browser/serp_metrics:test_support",
+    "//BnesBrowser/components/brave_referrals/browser",
+    "//BnesBrowser/components/brave_stats/browser",
+    "//BnesBrowser/components/brave_wallet/common/buildflags",
+    "//BnesBrowser/components/misc_metrics",
+    "//BnesBrowser/components/serp_metrics:prefs",
     "//chrome/browser",
     "//chrome/browser/prefs",
     "//chrome/browser/profiles:profile_util",
@@ -138,8 +138,8 @@ source_set("unit_tests") {
 
   if (enable_brave_wallet) {
     deps += [
-      "//brave/components/brave_wallet/browser",
-      "//brave/components/brave_wallet/browser:pref_names",
+      "//BnesBrowser/components/brave_wallet/browser",
+      "//BnesBrowser/components/brave_wallet/browser:pref_names",
     ]
   }
 }

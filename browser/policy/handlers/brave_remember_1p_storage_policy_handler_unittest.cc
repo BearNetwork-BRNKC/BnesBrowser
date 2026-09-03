@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/policy/handlers/brave_remember_1p_storage_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_remember_1p_storage_policy_handler.h"
 
 #include "base/values.h"
 #include "components/content_settings/core/common/content_settings.h"

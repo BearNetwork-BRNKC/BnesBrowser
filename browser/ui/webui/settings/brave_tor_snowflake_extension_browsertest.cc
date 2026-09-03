@@ -5,7 +5,7 @@
 
 #include "base/memory/scoped_refptr.h"
 #include "base/path_service.h"
-#include "brave/browser/ui/webui/brave_settings_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_settings_ui.h"
 #include "chrome/browser/extensions/extension_service.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/test/base/in_process_browser_test.h"

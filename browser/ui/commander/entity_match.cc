@@ -8,12 +8,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "brave/browser/ui/commander/entity_match.h"
+#include "BnesBrowser/browser/ui/commander/entity_match.h"
 
 #include <utility>
 
 #include "base/check.h"
-#include "brave/browser/ui/commander/fuzzy_finder.h"
+#include "BnesBrowser/browser/ui/commander/fuzzy_finder.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"

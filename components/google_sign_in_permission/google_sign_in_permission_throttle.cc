@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/google_sign_in_permission/google_sign_in_permission_throttle.h"
+#include "BnesBrowser/components/google_sign_in_permission/google_sign_in_permission_throttle.h"
 
 #include <utility>
 #include <vector>
 
 #include "base/check_op.h"
 #include "base/functional/bind.h"
-#include "brave/components/google_sign_in_permission/google_sign_in_permission_util.h"
+#include "BnesBrowser/components/google_sign_in_permission/google_sign_in_permission_util.h"
 #include "components/user_prefs/user_prefs.h"
 #include "content/public/browser/navigation_controller.h"
 #include "content/public/browser/navigation_entry.h"

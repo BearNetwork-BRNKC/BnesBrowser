@@ -3,21 +3,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ai_chat/ai_chat_settings_helper.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_settings_helper.h"
 
 #include <utility>
 #include <vector>
 
 #include "base/check.h"
 #include "base/strings/strcat.h"
-#include "brave/brave_domains/service_domains.h"
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/skus/skus_service_factory.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_service.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/browser/model_validator.h"
-#include "brave/components/ai_chat/core/common/pref_names.h"
-#include "brave/net/base/url_util.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_service.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/model_validator.h"
+#include "BnesBrowser/components/ai_chat/core/common/pref_names.h"
+#include "BnesBrowser/net/base/url_util.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/browsing_data/core/browsing_data_utils.h"

@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_VIEWS_TABS_ACCENT_COLOR_BRAVE_TAB_ACCENT_COLOR_PALETTE_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
+#include "BnesBrowser/browser/ui/views/tabs/accent_color/brave_tab_accent_types.h"
 #include "ui/color/color_provider.h"
 
 namespace accent_color {

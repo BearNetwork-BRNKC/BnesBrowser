@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ephemeral_storage/ephemeral_storage_service.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_service.h"
 
 #include <cstddef>
 #include <optional>
@@ -13,16 +13,16 @@
 #include "base/functional/bind.h"
 #include "base/functional/callback_helpers.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/browser/ephemeral_storage/brave_ephemeral_storage_service_delegate.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_utils.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_pref_names.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_types.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/brave_ephemeral_storage_service_delegate.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_utils.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom-data-view.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_pref_names.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_types.h"
 #include "build/build_config.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/history/history_service_factory.h"

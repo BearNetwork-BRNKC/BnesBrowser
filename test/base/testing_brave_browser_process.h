@@ -16,8 +16,8 @@
 #include <memory>
 #include <string>
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 
 namespace brave_shields {
 class AdBlockService;

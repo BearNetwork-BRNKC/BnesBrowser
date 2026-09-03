@@ -9,9 +9,9 @@
 #include <string>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/bitflyer/bitflyer_server.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/bitflyer/bitflyer_server.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

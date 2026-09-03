@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_BRAVE_ADS_CORE_PUBLIC_PREFS_PREF_REGISTRY_H_
 #define BRAVE_COMPONENTS_BRAVE_ADS_CORE_PUBLIC_PREFS_PREF_REGISTRY_H_
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));
 

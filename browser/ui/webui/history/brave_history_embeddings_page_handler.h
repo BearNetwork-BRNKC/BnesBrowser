@@ -7,7 +7,7 @@
 #define BRAVE_BROWSER_UI_WEBUI_HISTORY_BRAVE_HISTORY_EMBEDDINGS_PAGE_HANDLER_H_
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/webui/history/brave_history_embeddings.mojom.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_embeddings.mojom.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
 #include "mojo/public/cpp/bindings/pending_remote.h"

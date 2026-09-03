@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_browser.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
 
 #include "base/test/run_until.h"
 #include "base/test/scoped_feature_list.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/bookmarks/bookmark_model_factory.h"
 #include "chrome/browser/devtools/devtools_window_testing.h"
 #include "chrome/browser/profiles/profile.h"

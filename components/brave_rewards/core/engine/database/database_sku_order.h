@@ -11,8 +11,8 @@
 #include <vector>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_rewards/core/engine/database/database_sku_order_items.h"
-#include "brave/components/brave_rewards/core/engine/database/database_table.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_sku_order_items.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database_table.h"
 
 namespace brave_rewards::internal {
 namespace database {

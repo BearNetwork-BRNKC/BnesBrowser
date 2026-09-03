@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/net/brave_site_hacks_network_delegate_helper.h"
+#include "BnesBrowser/browser/net/brave_site_hacks_network_delegate_helper.h"
 
 #include <memory>
 #include <string>
 #include <vector>
 
 #include "base/metrics/histogram_macros.h"
-#include "brave/components/brave_shields/content/browser/brave_shields_util.h"
-#include "brave/components/constants/url_constants.h"
-#include "brave/components/query_filter/browser/utils.h"
-#include "brave/components/query_filter/common/pref_names.h"
+#include "BnesBrowser/components/brave_shields/content/browser/brave_shields_util.h"
+#include "BnesBrowser/components/constants/url_constants.h"
+#include "BnesBrowser/components/query_filter/browser/utils.h"
+#include "BnesBrowser/components/query_filter/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/prefs/pref_service.h"
 #include "content/public/common/referrer.h"

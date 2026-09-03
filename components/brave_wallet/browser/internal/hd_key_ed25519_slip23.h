@@ -12,7 +12,7 @@
 
 #include "base/containers/span.h"
 #include "base/types/pass_key.h"
-#include "brave/components/brave_wallet/browser/internal/hd_key_common.h"
+#include "BnesBrowser/components/brave_wallet/browser/internal/hd_key_common.h"
 
 namespace brave_wallet {
 

@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/notification_ads/notification_ad_event_handler.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/notification_ads/notification_ad_event_handler.h"
 
 #include <optional>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
-#include "brave/components/brave_ads/core/internal/user_engagement/ad_events/notification_ads/notification_ad_event_factory.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/creatives/notification_ads/notification_ad_manager.h"
+#include "BnesBrowser/components/brave_ads/core/internal/user_engagement/ad_events/notification_ads/notification_ad_event_factory.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 
 namespace brave_ads {
 

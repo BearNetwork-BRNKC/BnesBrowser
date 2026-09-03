@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/segments/segment_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/segments/segment_util.h"
 
 #include <optional>
 
-#include "brave/components/brave_ads/core/internal/ads_core/ads_core_util.h"
-#include "brave/components/brave_ads/core/internal/catalog/catalog_info.h"
-#include "brave/components/brave_ads/core/internal/catalog/catalog_url_request_json_reader.h"
-#include "brave/components/brave_ads/core/internal/catalog/test/catalog_test_constants.h"
-#include "brave/components/brave_ads/core/internal/common/test/file_test_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/test_base.h"
-#include "brave/components/brave_ads/core/mojom/brave_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_core/ads_core_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/catalog_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/catalog_url_request_json_reader.h"
+#include "BnesBrowser/components/brave_ads/core/internal/catalog/test/catalog_test_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/file_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/test_base.h"
+#include "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.h"
 
 // npm run test -- brave_unit_tests --filter=BraveAds*
 

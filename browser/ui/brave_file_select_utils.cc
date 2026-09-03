@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/brave_file_select_utils.h"
+#include "BnesBrowser/browser/ui/brave_file_select_utils.h"
 
 #include <array>
 #include <unordered_map>
@@ -11,7 +11,7 @@
 #include "base/check.h"
 #include "base/i18n/rtl.h"
 #include "base/no_destructor.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/url_identity.h"
 #include "components/strings/grit/components_strings.h"

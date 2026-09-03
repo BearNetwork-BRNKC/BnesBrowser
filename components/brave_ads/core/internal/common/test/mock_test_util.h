@@ -11,8 +11,8 @@
 #include <vector>
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_ads/core/internal/ads_client/test/ads_client_mock.h"
-#include "brave/components/brave_ads/core/public/history/site_history.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/test/ads_client_mock.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/site_history.h"
 
 // Helpers for configuring `AdsClientMock` default behaviors in tests via
 // `ON_CALL`.

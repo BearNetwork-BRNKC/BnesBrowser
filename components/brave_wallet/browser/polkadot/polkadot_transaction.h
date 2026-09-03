@@ -9,9 +9,9 @@
 #include <vector>
 
 #include "base/values.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_extrinsic.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

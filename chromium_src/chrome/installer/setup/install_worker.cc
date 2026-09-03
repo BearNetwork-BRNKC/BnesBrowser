@@ -17,7 +17,7 @@
 #include "base/process/process.h"
 #include "base/version.h"
 #include "base/win/registry.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
 #include "build/buildflag.h"
 #include "chrome/install_static/install_util.h"
 #include "chrome/installer/setup/setup_util.h"
@@ -38,10 +38,10 @@
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN_V1)
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/install_utils.h"
-#include "brave/browser/brave_vpn/win/wireguard_utils_win.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/install_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/wireguard_utils_win.h"
 
 namespace {
 

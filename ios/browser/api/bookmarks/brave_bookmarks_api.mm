@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/bookmarks/brave_bookmarks_api.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/brave_bookmarks_api.h"
 
 #include "base/check.h"
 #include "base/compiler_specific.h"
@@ -15,7 +15,7 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/uuid.h"
-#include "brave/ios/browser/api/bookmarks/bookmark_model_listener_ios.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/bookmark_model_listener_ios.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/bookmarks/browser/bookmark_node.h"
 #include "components/bookmarks/browser/bookmark_utils.h"

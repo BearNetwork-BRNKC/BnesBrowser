@@ -14,8 +14,8 @@
 
 #include "base/test/bind.h"
 #include "base/test/task_environment.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
-#include "brave/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/test/test_rewards_engine_client.h"
 #include "mojo/public/cpp/bindings/associated_receiver.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

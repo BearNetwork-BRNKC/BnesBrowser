@@ -10,7 +10,7 @@
 
 #include "base/containers/flat_set.h"
 #include "base/types/expected.h"
-#include "brave/components/tabs/public/brave_tab_strip_collection_delegate.h"
+#include "BnesBrowser/components/tabs/public/brave_tab_strip_collection_delegate.h"
 
 class TreeTabModel;
 

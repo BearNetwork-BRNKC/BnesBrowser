@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_wallet/browser/solana_transaction.h"
+#include "BnesBrowser/components/brave_wallet/browser/solana_transaction.h"
 
 namespace brave_wallet {
 

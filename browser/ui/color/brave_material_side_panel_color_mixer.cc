@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/color/brave_material_side_panel_color_mixer.h"
+#include "BnesBrowser/browser/ui/color/brave_material_side_panel_color_mixer.h"
 
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "ui/color/color_provider.h"
 #include "ui/color/color_recipe.h"

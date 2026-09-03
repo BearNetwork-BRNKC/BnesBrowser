@@ -9,7 +9,7 @@
 #include "base/memory/raw_ref.h"
 #include "base/run_loop.h"
 #include "base/scoped_observation.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service_observer.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service_observer.h"
 
 namespace brave_ads {
 

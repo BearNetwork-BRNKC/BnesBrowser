@@ -6,7 +6,7 @@
 #include <Cocoa/Cocoa.h>
 #include <sys/param.h>
 
-#include "brave/common/importer/chrome_importer_utils.h"
+#include "BnesBrowser/common/importer/chrome_importer_utils.h"
 
 #include "base/apple/foundation_util.h"
 

@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/traffic_control/core/browser/traffic_control_service.h"
+#include "BnesBrowser/components/traffic_control/core/browser/traffic_control_service.h"
 
-#include "brave/components/traffic_control/core/browser/pref_names.h"
-#include "brave/components/traffic_control/core/browser/prefs.h"
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom.h"
+#include "BnesBrowser/components/traffic_control/core/browser/pref_names.h"
+#include "BnesBrowser/components/traffic_control/core/browser/prefs.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom.h"
 #include "components/prefs/pref_service.h"
 
 namespace traffic_control {

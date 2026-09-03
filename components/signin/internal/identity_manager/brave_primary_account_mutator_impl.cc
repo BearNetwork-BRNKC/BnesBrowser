@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h"
+#include "BnesBrowser/components/signin/internal/identity_manager/brave_primary_account_mutator_impl.h"
 
 #include "components/signin/public/base/account_consistency_method.h"
 

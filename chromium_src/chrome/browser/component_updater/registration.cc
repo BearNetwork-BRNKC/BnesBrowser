@@ -8,28 +8,28 @@
 #include "base/feature_list.h"
 #include "base/functional/bind.h"
 
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_global_features.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/extension_malware_blocklist/browser/extension_malware_blocklist_component_installer.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/p3a/component_installer.h"
-#include "brave/components/p3a/p3a_service.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/query_filter/browser/query_filter_component_installer.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_global_features.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_component_installer.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/extension_malware_blocklist/browser/extension_malware_blocklist_component_installer.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/p3a/component_installer.h"
+#include "BnesBrowser/components/p3a/p3a_service.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/query_filter/browser/query_filter_component_installer.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/component_updater/component_updater_utils.h"
 #include "extensions/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/components/psst/core/browser/psst_component_installer.h"
+#include "BnesBrowser/components/psst/core/browser/psst_component_installer.h"
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/web_mcp/core/browser/web_mcp_component_installer.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/web_mcp/core/browser/web_mcp_component_installer.h"
 #include "third_party/blink/public/common/features.h"
 #endif
 
@@ -38,12 +38,12 @@
 #endif  // BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/wallet_data_files_installer.h"
+#include "BnesBrowser/components/brave_wallet/browser/wallet_data_files_installer.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_WALLET)
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/components/local_ai/core/local_models_updater.h"
-#include "brave/components/local_ai/core/on_device_speech_models_component_installer.h"
+#include "BnesBrowser/components/local_ai/core/local_models_updater.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_models_component_installer.h"
 #endif
 
 namespace component_updater {

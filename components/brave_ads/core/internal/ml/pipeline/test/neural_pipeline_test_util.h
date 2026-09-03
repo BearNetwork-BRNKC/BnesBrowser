@@ -10,8 +10,8 @@
 #include <string>
 #include <vector>
 
-#include "brave/components/brave_ads/core/internal/common/resources/flat/text_classification_neural_model_generated.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/resources/flat/text_classification_neural_model_generated.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
 
 namespace brave_ads::ml::pipeline {
 

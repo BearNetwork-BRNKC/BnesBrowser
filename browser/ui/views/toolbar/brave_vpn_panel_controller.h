@@ -9,7 +9,7 @@
 #include <memory>
 
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
 #include "chrome/browser/ui/views/bubble/webui_bubble_manager.h"
 
 class BraveBrowserView;

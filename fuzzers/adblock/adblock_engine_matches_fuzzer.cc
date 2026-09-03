@@ -11,9 +11,9 @@
 #include "base/check.h"
 #include "base/files/file_path.h"
 #include "base/i18n/icu_util.h"
-#include "brave/components/brave_component_updater/browser/dat_file_util.h"
-#include "brave/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
-#include "brave/fuzzers/adblock/adblock_fuzzer.pb.h"
+#include "BnesBrowser/components/brave_component_updater/browser/dat_file_util.h"
+#include "BnesBrowser/components/brave_shields/core/common/adblock/rs/src/lib.rs.h"
+#include "BnesBrowser/fuzzers/adblock/adblock_fuzzer.pb.h"
 #include "testing/libfuzzer/proto/lpm_interface.h"
 #include "testing/libfuzzer/proto/url_proto_converter.h"
 

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_wireguard_service/brave_wireguard_service_crash_reporter_client.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_wireguard_service/brave_wireguard_service_crash_reporter_client.h"
 
 #include <memory>
 #include <string>
@@ -14,7 +14,7 @@
 #include "base/notreached.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/browser/brave_vpn/win/service_details.h"
+#include "BnesBrowser/browser/brave_vpn/win/service_details.h"
 #include "chrome/install_static/install_modes.h"
 #include "chrome/install_static/install_util.h"
 #include "chrome/install_static/product_install_details.h"

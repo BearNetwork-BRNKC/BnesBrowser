@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/time_period_storage/time_period_storage.h"
+#include "BnesBrowser/components/time_period_storage/time_period_storage.h"
 
 #include <algorithm>
 #include <numeric>
@@ -15,8 +15,8 @@
 #include "base/time/default_clock.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/time_period_storage/pref_time_period_store.h"
-#include "brave/components/time_period_storage/time_period_store.h"
+#include "BnesBrowser/components/time_period_storage/pref_time_period_store.h"
+#include "BnesBrowser/components/time_period_storage/time_period_store.h"
 #include "components/prefs/pref_service.h"
 
 namespace {

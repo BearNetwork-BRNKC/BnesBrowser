@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_wallet/browser/fil_nonce_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_nonce_tracker.h"
 
 #include <algorithm>
 #include <utility>
 
 #include "base/check.h"
-#include "brave/components/brave_wallet/browser/fil_tx_meta.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
-#include "brave/components/brave_wallet/browser/tx_state_manager.h"
+#include "BnesBrowser/components/brave_wallet/browser/fil_tx_meta.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/tx_state_manager.h"
 
 namespace brave_wallet {
 

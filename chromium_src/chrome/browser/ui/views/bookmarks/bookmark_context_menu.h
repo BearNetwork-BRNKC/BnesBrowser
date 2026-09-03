@@ -6,7 +6,7 @@
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_BOOKMARKS_BOOKMARK_CONTEXT_MENU_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_VIEWS_BOOKMARKS_BOOKMARK_CONTEXT_MENU_H_
 
-#include "brave/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
+#include "BnesBrowser/browser/ui/toolbar/brave_bookmark_context_menu_controller.h"
 
 #define BookmarkContextMenuController BraveBookmarkContextMenuController
 #include <chrome/browser/ui/views/bookmarks/bookmark_context_menu.h>  // IWYU pragma: export

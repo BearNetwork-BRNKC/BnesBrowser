@@ -3,20 +3,20 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/toolbar/wallet_button.h"
+#include "BnesBrowser/browser/ui/views/toolbar/wallet_button.h"
 
 #include <algorithm>
 #include <utility>
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/color/color_palette.h"
-#include "brave/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
-#include "brave/components/brave_wallet/browser/pref_names.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/color/color_palette.h"
+#include "BnesBrowser/browser/ui/views/brave_actions/brave_icon_with_badge_image_source.h"
+#include "BnesBrowser/components/brave_wallet/browser/pref_names.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface_iterator.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

@@ -6,12 +6,12 @@
 #include <memory>
 
 #include "base/check.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "chrome/browser/profiles/profile.h"
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 #include "net/proxy_resolution/proxy_config_service.h"
 #endif
 

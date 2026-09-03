@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h"
+#include "BnesBrowser/content/browser/screen_orientation/brave_screen_orientation_delegate_android.h"
 
-#include "brave/content/public/browser/navigation_entry_fullscreen.h"
+#include "BnesBrowser/content/public/browser/navigation_entry_fullscreen.h"
 #include "content/public/browser/navigation_controller.h"
 
 namespace content {

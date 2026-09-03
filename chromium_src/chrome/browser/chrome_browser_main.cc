@@ -5,13 +5,13 @@
 
 #include "chrome/browser/chrome_browser_main.h"
 
-#include "brave/browser/brave_browser_process_impl.h"
+#include "BnesBrowser/browser/brave_browser_process_impl.h"
 #include "build/build_config.h"
 #include "chrome/browser/metrics/chrome_browser_main_extra_parts_metrics.h"
 #include "chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.h"
 
 #if BUILDFLAG(IS_MAC)
-#include "brave/browser/brave_browser_main_parts_mac.h"
+#include "BnesBrowser/browser/brave_browser_main_parts_mac.h"
 #undef ChromeBrowserMainPartsMac
 #define ChromeBrowserMainPartsMac BraveBrowserMainPartsMac
 #endif  // BUILDFLAG(IS_MAC)

@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_content_browser_client.h"
+#include "BnesBrowser/browser/brave_content_browser_client.h"
 
 #include <algorithm>
 #include <optional>
@@ -20,91 +20,91 @@
 #include "base/strings/strcat.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/system/sys_info.h"
-#include "brave/browser/bluetooth/brave_bluetooth_delegate.h"
-#include "brave/browser/brave_account/brave_account_navigation_throttle.h"
-#include "brave/browser/brave_browser_features.h"
-#include "brave/browser/brave_browser_main_extra_parts.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_search/backup_results_navigation_throttle.h"
-#include "brave/browser/brave_search/backup_results_service_factory.h"
-#include "brave/browser/brave_shields/brave_shields_settings_service_factory.h"
-#include "brave/browser/brave_shields/brave_shields_web_contents_observer.h"
-#include "brave/browser/brave_stats/first_run_util.h"
-#include "brave/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
-#include "brave/browser/debounce/debounce_service_factory.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
-#include "brave/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/net/brave_proxying_url_loader_factory.h"
-#include "brave/browser/net/brave_proxying_web_socket.h"
-#include "brave/browser/net/features.h"
-#include "brave/browser/new_tab/new_tab_shows_navigation_throttle.h"
-#include "brave/browser/profiles/brave_renderer_updater.h"
-#include "brave/browser/profiles/brave_renderer_updater_factory.h"
-#include "brave/browser/skus/skus_service_factory.h"
-#include "brave/browser/ui/brave_ui_features.h"
-#include "brave/browser/ui/webui/skus_internals_ui.h"
-#include "brave/browser/updater/buildflags.h"
-#include "brave/browser/url_sanitizer/url_sanitizer_service_factory.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/body_sniffer/body_sniffer_throttle.h"
-#include "brave/components/brave_account/features.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_education/buildflags.h"
-#include "brave/components/brave_news/common/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/brave_origin/mojom/brave_origin_settings.mojom.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_search/browser/backup_results_service.h"
-#include "brave/components/brave_search/browser/brave_search_default_host.h"
-#include "brave/components/brave_search/browser/brave_search_default_host_private.h"
-#include "brave/components/brave_search/browser/brave_search_fallback_host.h"
-#include "brave/components/brave_search/common/brave_search_default.mojom.h"
-#include "brave/components/brave_search/common/brave_search_fallback.mojom.h"
-#include "brave/components/brave_search/common/brave_search_utils.h"
-#include "brave/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
-#include "brave/components/brave_shields/content/browser/ad_block_service.h"
-#include "brave/components/brave_shields/content/browser/brave_shields_util.h"
-#include "brave/components/brave_shields/content/browser/domain_block_navigation_throttle.h"
-#include "brave/components/brave_shields/core/browser/brave_shields_settings_service.h"
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_shields/core/common/features.h"
-#include "brave/components/brave_shields/core/common/shields_settings.mojom.h"
-#include "brave/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
-#include "brave/components/brave_vpn/common/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/constants/webui_url_constants.h"
-#include "brave/components/containers/buildflags/buildflags.h"
-#include "brave/components/cosmetic_filters/browser/cosmetic_filters_resources.h"
-#include "brave/components/cosmetic_filters/common/cosmetic_filters.mojom.h"
-#include "brave/components/de_amp/browser/de_amp_body_handler.h"
-#include "brave/components/debounce/content/browser/debounce_navigation_throttle.h"
-#include "brave/components/email_aliases/buildflags/buildflags.h"
-#include "brave/components/global_privacy_control/global_privacy_control_utils.h"
-#include "brave/components/google_sign_in_permission/google_sign_in_permission_throttle.h"
-#include "brave/components/google_sign_in_permission/google_sign_in_permission_util.h"
-#include "brave/components/local_ai/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
-#include "brave/components/password_strength_meter/password_strength_meter.mojom.h"
-#include "brave/components/playlist/core/common/buildflags/buildflags.h"
-#include "brave/components/psst/buildflags/buildflags.h"
-#include "brave/components/request_otr/common/buildflags/buildflags.h"
-#include "brave/components/skus/common/features.h"
-#include "brave/components/skus/common/skus_internals.mojom.h"
-#include "brave/components/skus/common/skus_sdk.mojom.h"
-#include "brave/components/skus/common/skus_utils.h"
-#include "brave/components/speedreader/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
-#include "brave/components/traffic_control/buildflags/buildflags.h"
-#include "brave/components/translate/core/common/brave_translate_switches.h"
-#include "brave/components/url_sanitizer/core/browser/url_sanitizer_service.h"
-#include "brave/bnes/bns_constants.h"
-#include "brave/bnes/bns_scheme_handler.h"
-#include "brave/bnes/bns_security.h"
-#include "brave/grit/brave_generated_resources.h"
-#include "brave/third_party/blink/renderer/brave_farbling_constants.h"
+#include "BnesBrowser/browser/bluetooth/brave_bluetooth_delegate.h"
+#include "BnesBrowser/browser/brave_account/brave_account_navigation_throttle.h"
+#include "BnesBrowser/browser/brave_browser_features.h"
+#include "BnesBrowser/browser/brave_browser_main_extra_parts.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_search/backup_results_navigation_throttle.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_settings_service_factory.h"
+#include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
+#include "BnesBrowser/browser/brave_stats/first_run_util.h"
+#include "BnesBrowser/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
+#include "BnesBrowser/browser/debounce/debounce_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_service_factory.h"
+#include "BnesBrowser/browser/ephemeral_storage/ephemeral_storage_tab_helper.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/net/brave_proxying_url_loader_factory.h"
+#include "BnesBrowser/browser/net/brave_proxying_web_socket.h"
+#include "BnesBrowser/browser/net/features.h"
+#include "BnesBrowser/browser/new_tab/new_tab_shows_navigation_throttle.h"
+#include "BnesBrowser/browser/profiles/brave_renderer_updater.h"
+#include "BnesBrowser/browser/profiles/brave_renderer_updater_factory.h"
+#include "BnesBrowser/browser/skus/skus_service_factory.h"
+#include "BnesBrowser/browser/ui/brave_ui_features.h"
+#include "BnesBrowser/browser/ui/webui/skus_internals_ui.h"
+#include "BnesBrowser/browser/updater/buildflags.h"
+#include "BnesBrowser/browser/url_sanitizer/url_sanitizer_service_factory.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/body_sniffer/body_sniffer_throttle.h"
+#include "BnesBrowser/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/brave_news/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/mojom/brave_origin_settings.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_search/browser/backup_results_service.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_default_host.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_default_host_private.h"
+#include "BnesBrowser/components/brave_search/browser/brave_search_fallback_host.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_default.mojom.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_fallback.mojom.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_engine_wrapper.h"
+#include "BnesBrowser/components/brave_shields/content/browser/ad_block_service.h"
+#include "BnesBrowser/components/brave_shields/content/browser/brave_shields_util.h"
+#include "BnesBrowser/components/brave_shields/content/browser/domain_block_navigation_throttle.h"
+#include "BnesBrowser/components/brave_shields/core/browser/brave_shields_settings_service.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_shields/core/common/features.h"
+#include "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.h"
+#include "BnesBrowser/components/brave_user_agent/browser/brave_user_agent_exceptions.h"
+#include "BnesBrowser/components/brave_vpn/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/constants/webui_url_constants.h"
+#include "BnesBrowser/components/containers/buildflags/buildflags.h"
+#include "BnesBrowser/components/cosmetic_filters/browser/cosmetic_filters_resources.h"
+#include "BnesBrowser/components/cosmetic_filters/common/cosmetic_filters.mojom.h"
+#include "BnesBrowser/components/de_amp/browser/de_amp_body_handler.h"
+#include "BnesBrowser/components/debounce/content/browser/debounce_navigation_throttle.h"
+#include "BnesBrowser/components/email_aliases/buildflags/buildflags.h"
+#include "BnesBrowser/components/global_privacy_control/global_privacy_control_utils.h"
+#include "BnesBrowser/components/google_sign_in_permission/google_sign_in_permission_throttle.h"
+#include "BnesBrowser/components/google_sign_in_permission/google_sign_in_permission_util.h"
+#include "BnesBrowser/components/local_ai/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.h"
+#include "BnesBrowser/components/password_strength_meter/password_strength_meter.mojom.h"
+#include "BnesBrowser/components/playlist/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/psst/buildflags/buildflags.h"
+#include "BnesBrowser/components/request_otr/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/skus/common/features.h"
+#include "BnesBrowser/components/skus/common/skus_internals.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_sdk.mojom.h"
+#include "BnesBrowser/components/skus/common/skus_utils.h"
+#include "BnesBrowser/components/speedreader/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/traffic_control/buildflags/buildflags.h"
+#include "BnesBrowser/components/translate/core/common/brave_translate_switches.h"
+#include "BnesBrowser/components/url_sanitizer/core/browser/url_sanitizer_service.h"
+#include "BnesBrowser/bnes/bns_constants.h"
+#include "BnesBrowser/bnes/bns_scheme_handler.h"
+#include "BnesBrowser/bnes/bns_security.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
+#include "BnesBrowser/third_party/blink/renderer/brave_farbling_constants.h"
 #include "build/build_config.h"
 #include "chrome/browser/bluetooth/chrome_bluetooth_delegate_impl_client.h"
 #include "chrome/browser/browser_process.h"
@@ -158,59 +158,59 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/hid/brave_hid_delegate.h"
-#include "brave/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
-#include "brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
-#include "brave/browser/ui/webui/brave_settings_ui.h"
-#include "brave/browser/ui/webui/brave_shields/shields_panel_ui.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.h"
-#include "brave/browser/ui/webui/brave_welcome_page/brave_welcome_page_ui.h"
-#include "brave/browser/ui/webui/history/brave_history_ui.h"
-#include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
-#include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
-#include "brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
-#include "brave/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.h"
+#include "BnesBrowser/browser/hid/brave_hid_delegate.h"
+#include "BnesBrowser/browser/ui/geolocation/brave_geolocation_permission_tab_helper.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_settings_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_shields/shields_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_ui.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
+#include "BnesBrowser/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
+#include "BnesBrowser/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
+#include "BnesBrowser/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.h"
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/ui/webui/history/brave_history_embeddings.mojom.h"
+#include "BnesBrowser/browser/ui/webui/history/brave_history_embeddings.mojom.h"
 #endif
 #endif  // !BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(ENABLE_LOCAL_AI)
-#include "brave/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
-#include "brave/components/local_ai/core/features.h"
-#include "brave/components/local_ai/core/on_device_speech_recognition.mojom.h"
+#include "BnesBrowser/browser/ui/webui/local_ai/on_device_speech_recognition_worker_ui.h"
+#include "BnesBrowser/components/local_ai/core/features.h"
+#include "BnesBrowser/components/local_ai/core/on_device_speech_recognition.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/browser/ui/webui/ads_internals/ads_internals_ui.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/browser/ui/webui/ads_internals/ads_internals_ui.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_ui.h"
-#include "brave/components/brave_rewards/content/rewards_protocol_navigation_throttle.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_ui.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_protocol_navigation_throttle.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_rewards/rewards_page_top_ui.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
 #endif  // !BUILDFLAG(ENABLE_BRAVE_REWARDS)
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
-#include "brave/browser/brave_wallet/brave_wallet_provider_delegate_impl.h"
-#include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
-#include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
-#include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
-#include "brave/components/brave_wallet/common/common_utils.h"
-#include "brave/components/decentralized_dns/content/decentralized_dns_navigation_throttle.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_provider_delegate_impl.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_service_factory.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_tab_helper.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_utils.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.h"
+#include "BnesBrowser/components/brave_wallet/common/common_utils.h"
+#include "BnesBrowser/components/decentralized_dns/content/decentralized_dns_navigation_throttle.h"
 #endif
 
 #if BUILDFLAG(ENABLE_REQUEST_OTR)
-#include "brave/browser/request_otr/request_otr_service_factory.h"
-#include "brave/components/request_otr/browser/request_otr_navigation_throttle.h"
-#include "brave/components/request_otr/browser/request_otr_storage_tab_helper.h"
+#include "BnesBrowser/browser/request_otr/request_otr_service_factory.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_navigation_throttle.h"
+#include "BnesBrowser/components/request_otr/browser/request_otr_storage_tab_helper.h"
 #endif
 
 using blink::web_pref::WebPreferences;
@@ -232,92 +232,92 @@ using extensions::ChromeContentBrowserClientExtensionsPart;
 #endif
 
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ai_chat/ai_chat_service_factory.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_ui.h"
-#include "brave/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_brave_search_throttle.h"
-#include "brave/components/ai_chat/content/browser/ai_chat_throttle.h"
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/bookmarks.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/common.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/customization_settings.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/history.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/ollama.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/settings_helper.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
-#include "brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_ui.h"
+#include "BnesBrowser/browser/ui/webui/ai_chat/ai_chat_untrusted_conversation_ui.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_brave_search_throttle.h"
+#include "BnesBrowser/components/ai_chat/content/browser/ai_chat_throttle.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/bookmarks.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/customization_settings.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/history.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ollama.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/settings_helper.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_CONTAINERS)
-#include "brave/components/containers/content/browser/storage_partition_utils.h"
-#include "brave/components/containers/core/common/features.h"
-#include "brave/components/containers/core/mojom/containers.mojom.h"
+#include "BnesBrowser/components/containers/content/browser/storage_partition_utils.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
+#include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
 #endif
 #if BUILDFLAG(ENABLE_TRAFFIC_CONTROL)
-#include "brave/components/traffic_control/core/common/features.h"
-#include "brave/components/traffic_control/core/mojom/traffic_control.mojom.h"
+#include "BnesBrowser/components/traffic_control/core/common/features.h"
+#include "BnesBrowser/components/traffic_control/core/mojom/traffic_control.mojom.h"
 #endif
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/split_view/split_view_link_navigation_throttle.h"
-#include "brave/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
-#include "brave/components/brave_account/mojom/brave_account.mojom.h"
-#include "brave/components/brave_account/mojom/brave_account_row.mojom.h"
-#include "brave/components/commands/common/commands.mojom.h"
-#include "brave/components/commands/common/features.h"
-#include "brave/ui/webui/brave_color_change_listener/brave_color_change_handler.h"
+#include "BnesBrowser/browser/ui/split_view/split_view_link_navigation_throttle.h"
+#include "BnesBrowser/browser/ui/webui/brave_account/brave_account_ui_desktop.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account.mojom.h"
+#include "BnesBrowser/components/brave_account/mojom/brave_account_row.mojom.h"
+#include "BnesBrowser/components/commands/common/commands.mojom.h"
+#include "BnesBrowser/components/commands/common/features.h"
+#include "BnesBrowser/ui/webui/brave_color_change_listener/brave_color_change_handler.h"
 #include "ui/webui/resources/cr_components/color_change_listener/color_change_listener.mojom.h"
 #include "ui/webui/resources/cr_components/theme_color_picker/theme_color_picker.mojom.h"
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/browser/ui/ai_chat/utils.h"
+#include "BnesBrowser/browser/ui/ai_chat/utils.h"
 #endif
 #else
-#include "brave/browser/ui/webui/brave_account/brave_account_ui_android.h"
+#include "BnesBrowser/browser/ui/webui/brave_account/brave_account_ui_android.h"
 #if BUILDFLAG(ENABLE_AI_CHAT)
-#include "brave/components/ai_chat/core/browser/android/ai_chat_iap_subscription_android.h"
+#include "BnesBrowser/components/ai_chat/core/browser/android/ai_chat_iap_subscription_android.h"
 #endif
-#include "brave/components/brave_origin/features.h"
-#include "brave/components/brave_origin/origin_iap_subscription.h"
+#include "BnesBrowser/components/brave_origin/features.h"
+#include "BnesBrowser/components/brave_origin/origin_iap_subscription.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/tor/onion_location_navigation_throttle.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_navigation_throttle.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/tor/onion_location_navigation_throttle.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_navigation_throttle.h"
 #include "net/base/net_errors.h"
 #include "net/base/url_util.h"
 #include "services/network/public/mojom/websocket.mojom.h"
 #endif
 
 #if BUILDFLAG(ENABLE_SPEEDREADER)
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/components/speedreader/speedreader_body_distiller.h"
-#include "brave/components/speedreader/speedreader_distilled_page_producer.h"
-#include "brave/components/speedreader/speedreader_util.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/components/speedreader/speedreader_body_distiller.h"
+#include "BnesBrowser/components/speedreader/speedreader_distilled_page_producer.h"
+#include "BnesBrowser/components/speedreader/speedreader_util.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
-#include "brave/components/speedreader/common/speedreader_toolbar.mojom.h"
+#include "BnesBrowser/browser/ui/webui/speedreader/speedreader_toolbar_ui.h"
+#include "BnesBrowser/components/speedreader/common/speedreader_toolbar.mojom.h"
 #endif
 #endif
 
 #if BUILDFLAG(ENABLE_WIDEVINE)
-#include "brave/browser/brave_drm_tab_helper.h"
+#include "BnesBrowser/browser/brave_drm_tab_helper.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
-#include "brave/browser/brave_vpn/brave_vpn_service_factory.h"
-#include "brave/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
-#include "brave/components/brave_vpn/common/brave_vpn_utils.h"
-#include "brave/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
+#include "BnesBrowser/browser/brave_vpn/brave_vpn_service_factory.h"
+#include "BnesBrowser/browser/ui/webui/brave_vpn/vpn_panel_ui.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_utils.h"
+#include "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
 #include "base/files/memory_mapped_file.h"
-#include "brave/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui.h"
+#include "BnesBrowser/browser/ui/webui/new_tab_takeover/android/new_tab_takeover_ui.h"
 #include "chrome/common/chrome_descriptors_android.h"
 #include "content/public/browser/posix_file_descriptor_info.h"
 #include "ui/base/resource/resource_bundle_android.h"
@@ -325,61 +325,61 @@ using extensions::ChromeContentBrowserClientExtensionsPart;
 
 #if !BUILDFLAG(IS_ANDROID)
 #if BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/browser/ui/webui/brave_news/brave_news_ui.h"
-#include "brave/browser/ui/webui/brave_news_internals/brave_news_internals_ui.h"
-#include "brave/components/brave_news/common/brave_news.mojom.h"
-#include "brave/components/brave_news/common/features.h"
+#include "BnesBrowser/browser/ui/webui/brave_news/brave_news_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_news_internals/brave_news_internals_ui.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom.h"
+#include "BnesBrowser/components/brave_news/common/features.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_NEWS)
-#include "brave/components/brave_shields/core/common/brave_shields_panel.mojom.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom.h"
 #include "components/omnibox/browser/searchbox.mojom.h"
 #endif  // !BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
-#include "brave/components/playlist/content/browser/playlist_background_web_contents_helper.h"
-#include "brave/components/playlist/content/browser/playlist_media_handler.h"
-#include "brave/components/playlist/core/common/features.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_background_web_contents_helper.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_media_handler.h"
+#include "BnesBrowser/components/playlist/core/common/features.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #endif  // BUILDFLAG(ENABLE_PLAYLIST)
 
 #if BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
-#include "brave/browser/ui/webui/playlist_ui.h"
+#include "BnesBrowser/browser/ui/webui/playlist_ui.h"
 #endif  // BUILDFLAG(ENABLE_PLAYLIST_WEBUI)
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/browser/ui/webui/brave_education/brave_education_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_page_ui.h"
 #endif
 
 #if BUILDFLAG(ENABLE_PSST)
-#include "brave/browser/ui/webui/psst/brave_psst_dialog_ui.h"
-#include "brave/components/psst/core/common/psst_ui_common.mojom-shared.h"
+#include "BnesBrowser/browser/ui/webui/psst/brave_psst_dialog_ui.h"
+#include "BnesBrowser/components/psst/core/common/psst_ui_common.mojom-shared.h"
 #endif
 
 #if BUILDFLAG(IS_BRAVE_ORIGIN_BRANDED)
-#include "brave/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
-#include "brave/components/brave_origin/mojom/brave_origin_startup.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_origin_startup/brave_origin_startup_ui.h"
+#include "BnesBrowser/components/brave_origin/mojom/brave_origin_startup.mojom.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 #endif
 
 #if BUILDFLAG(ENABLE_OMAHA4)
-#include "brave/browser/brave_browser_main_extra_parts_p3a.h"
+#include "BnesBrowser/browser/brave_browser_main_extra_parts_p3a.h"
 #endif
 
 #if BUILDFLAG(ENABLE_EMAIL_ALIASES)
-#include "brave/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
-#include "brave/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
-#include "brave/components/email_aliases/email_aliases.mojom.h"
-#include "brave/components/email_aliases/features.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_panel_ui.h"
+#include "BnesBrowser/browser/ui/webui/email_aliases/email_aliases_promo_ui.h"
+#include "BnesBrowser/components/email_aliases/email_aliases.mojom.h"
+#include "BnesBrowser/components/email_aliases/features.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_page/wallet_page_ui.h"
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
-#include "brave/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
-#include "brave/components/brave_wallet/common/ledger_bridge.mojom.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/ledger/ledger_ui.h"
+#include "BnesBrowser/browser/ui/webui/brave_wallet/wallet_panel/wallet_panel_ui.h"
+#include "BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.h"
 #endif
 #endif
 

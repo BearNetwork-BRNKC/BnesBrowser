@@ -6,7 +6,7 @@
 #ifndef BRAVE_COMPONENTS_PASSWORD_MANAGER_SERVICES_CSV_PASSWORD_CSV_SAFARI_PASSWORD_PARSER_SERVICE_H_
 #define BRAVE_COMPONENTS_PASSWORD_MANAGER_SERVICES_CSV_PASSWORD_CSV_SAFARI_PASSWORD_PARSER_SERVICE_H_
 
-#include "brave/components/password_manager/services/csv_password/public/mojom/csv_safari_password_parser.mojom.h"
+#include "BnesBrowser/components/password_manager/services/csv_password/public/mojom/csv_safari_password_parser.mojom.h"
 #include "mojo/public/cpp/bindings/remote.h"
 
 namespace password_manager {

@@ -20,9 +20,9 @@ source_set("browser_tests") {
     deps = [
       ":sessions",
       "//base/test:test_support",
-      "//brave/browser/ui/tabs:tab_strip",
-      "//brave/browser/ui/tabs:tree_tab",
-      "//brave/components/tabs",
+      "//BnesBrowser/browser/ui/tabs:tab_strip",
+      "//BnesBrowser/browser/ui/tabs:tree_tab",
+      "//BnesBrowser/components/tabs",
       "//chrome/browser",
       "//chrome/browser/prefs:util",
       "//chrome/browser/profiles:profile",

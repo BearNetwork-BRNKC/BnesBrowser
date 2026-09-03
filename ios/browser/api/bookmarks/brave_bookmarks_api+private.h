@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/bookmarks/brave_bookmarks_api.h"
+#include "BnesBrowser/ios/browser/api/bookmarks/brave_bookmarks_api.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

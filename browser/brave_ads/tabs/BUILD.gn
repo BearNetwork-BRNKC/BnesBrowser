@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_ads/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
 assert(enable_brave_ads)
 
@@ -20,10 +20,10 @@ source_set("tabs") {
   ]
 
   deps = [
-    "//brave/browser/brave_ads",
-    "//brave/components/brave_ads/browser",
-    "//brave/components/brave_ads/core/public:headers",
-    "//brave/components/brave_rewards/core",
+    "//BnesBrowser/browser/brave_ads",
+    "//BnesBrowser/components/brave_ads/browser",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_rewards/core",
     "//chrome/browser/profiles:profile",
     "//chrome/browser/ui",
     "//chrome/browser/ui/browser_window",
@@ -42,10 +42,10 @@ source_set("browser_tests") {
 
     deps = [
       ":tabs",
-      "//brave/browser/brave_ads",
-      "//brave/components/brave_ads/core/browser/service:test_support",
-      "//brave/components/brave_ads/core/public:headers",
-      "//brave/components/brave_rewards/core",
+      "//BnesBrowser/browser/brave_ads",
+      "//BnesBrowser/components/brave_ads/core/browser/service:test_support",
+      "//BnesBrowser/components/brave_ads/core/public:headers",
+      "//BnesBrowser/components/brave_rewards/core",
       "//chrome/browser/profiles/keep_alive",
       "//chrome/browser/ui",
       "//chrome/test:test_support",

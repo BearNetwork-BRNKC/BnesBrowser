@@ -3,14 +3,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
+import("//BnesBrowser/build/config.gni")
 import("//build/buildflag_header.gni")
 
 static_library("webui") {
   visibility = [
-    "//brave/browser/ui",
-    "//brave/ios/browser/ui/webui",
-    "//brave/ios/web/webui",
+    "//BnesBrowser/browser/ui",
+    "//BnesBrowser/ios/browser/ui/webui",
+    "//BnesBrowser/ios/web/webui",
   ]
 
   sources = [
@@ -22,11 +22,11 @@ static_library("webui") {
 
   deps = [
     "//base",
-    "//brave/components/brave_vpn/common/buildflags",
-    "//brave/components/constants",
-    "//brave/components/resources:static_resources",
-    "//brave/components/resources:strings_grit",
-    "//brave/components/tor/buildflags",
+    "//BnesBrowser/components/brave_vpn/common/buildflags",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/resources:static_resources",
+    "//BnesBrowser/components/resources:strings_grit",
+    "//BnesBrowser/components/tor/buildflags",
     "//components/resources:components_resources_grit",
     "//components/strings:components_strings",
     "//third_party/re2",

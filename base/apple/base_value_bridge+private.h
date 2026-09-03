@@ -7,7 +7,7 @@
 #define BRAVE_BASE_APPLE_BASE_VALUE_BRIDGE_PRIVATE_H_
 
 #include "base/values.h"
-#include "brave/base/apple/base_value_bridge.h"
+#include "BnesBrowser/base/apple/base_value_bridge.h"
 
 @class BaseValueBridge;
 

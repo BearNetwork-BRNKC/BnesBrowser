@@ -5,7 +5,7 @@
 
 #include "chrome/browser/favicon/favicon_utils.h"
 
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
 #include "content/public/browser/navigation_entry.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

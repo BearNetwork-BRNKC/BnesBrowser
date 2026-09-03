@@ -8,7 +8,7 @@
 
 #include <v8/src/builtins/builtins.h>  // IWYU pragma: export
 
-#include "brave/components/brave_page_graph/common/buildflags.h"
+#include "BnesBrowser/components/brave_page_graph/common/buildflags.h"
 
 namespace v8 {
 namespace internal {

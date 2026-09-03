@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_account/endpoints/auth_validate.h"
+#include "BnesBrowser/components/brave_account/endpoints/auth_validate.h"
 
 #include <optional>
 
 #include "base/no_destructor.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_account/endpoints/endpoint_test.h"
+#include "BnesBrowser/components/brave_account/endpoints/endpoint_test.h"
 #include "net/base/net_errors.h"
 #include "net/http/http_status_code.h"
 #include "testing/gtest/include/gtest/gtest.h"

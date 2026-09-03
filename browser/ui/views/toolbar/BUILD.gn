@@ -14,9 +14,9 @@ source_set("screenshot") {
   ]
 
   deps = [
-    "//brave/app:brave_generated_resources_grit_grit",
-    "//brave/browser/ui/screenshot",
-    "//brave/components/vector_icons",
+    "//BnesBrowser/app:brave_generated_resources_grit_grit",
+    "//BnesBrowser/browser/ui/screenshot",
+    "//BnesBrowser/components/vector_icons",
     "//chrome/browser:primitives",
     "//chrome/browser/ui/views/toolbar",
     "//skia",

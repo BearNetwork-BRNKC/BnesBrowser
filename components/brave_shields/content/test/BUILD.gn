@@ -20,10 +20,10 @@ source_set("test_support") {
   deps = [
     "//base",
     "//base/test:test_support",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/brave_component_updater/browser",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
     "//url",
   ]
 }
@@ -41,11 +41,11 @@ source_set("unit_tests") {
   ]
 
   deps = [
-    "//brave/components/brave_shields/content/browser",
-    "//brave/components/brave_shields/content/test:test_support",
-    "//brave/components/brave_shields/core/browser",
-    "//brave/components/brave_shields/core/common",
-    "//brave/components/brave_shields/core/common/adblock",
+    "//BnesBrowser/components/brave_shields/content/browser",
+    "//BnesBrowser/components/brave_shields/content/test:test_support",
+    "//BnesBrowser/components/brave_shields/core/browser",
+    "//BnesBrowser/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_shields/core/common/adblock",
     "//chrome/test:test_support",
     "//components/sync_preferences:test_support",
     "//testing/gtest",

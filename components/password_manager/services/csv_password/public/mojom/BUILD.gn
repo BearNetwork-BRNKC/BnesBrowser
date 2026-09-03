@@ -24,7 +24,7 @@ mojom("mojom") {
       traits_headers = [ "csv_safari_password_parser_traits.h" ]
       traits_sources = [ "csv_safari_password_parser_traits.cc" ]
       traits_public_deps =
-          [ "//brave/components/password_manager/core/browser/import:csv" ]
+          [ "//BnesBrowser/components/password_manager/core/browser/import:csv" ]
     },
   ]
 }

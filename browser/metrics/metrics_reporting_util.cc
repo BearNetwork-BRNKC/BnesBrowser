@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/metrics/metrics_reporting_util.h"
+#include "BnesBrowser/browser/metrics/metrics_reporting_util.h"
 
 #include <utility>
 
 #include "base/notreached.h"
-#include "brave/browser/metrics/brave_metrics_service_accessor.h"
-#include "brave/browser/metrics/buildflags/buildflags.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
+#include "BnesBrowser/browser/metrics/brave_metrics_service_accessor.h"
+#include "BnesBrowser/browser/metrics/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/metrics/metrics_reporting_state.h"
 #include "chrome/common/channel_info.h"

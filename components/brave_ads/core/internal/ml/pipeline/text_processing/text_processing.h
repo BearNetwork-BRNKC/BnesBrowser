@@ -12,10 +12,10 @@
 
 #include "base/files/memory_mapped_file.h"
 #include "base/types/expected.h"
-#include "brave/components/brave_ads/core/internal/ml/data/vector_data.h"
-#include "brave/components/brave_ads/core/internal/ml/model/linear/linear.h"
-#include "brave/components/brave_ads/core/internal/ml/model/neural/neural.h"
-#include "brave/components/brave_ads/core/internal/ml/transformation/transformation.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/vector_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/model/linear/linear.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/model/neural/neural.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/transformation/transformation.h"
 
 namespace base {
 class File;

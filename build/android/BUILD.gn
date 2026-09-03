@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/build/config.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/build/config.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//build/config/android/rules.gni")
 import("//third_party/jni_zero/jni_zero.gni")
 import("//tools/grit/grit_rule.gni")
@@ -14,7 +14,7 @@ _jarsigner = "//third_party/jdk/current/bin/jarsigner"
 _zipalign = "$android_sdk_build_tools/zipalign"
 
 action("sign_app_convert_aab_to_apk") {
-  script = "//brave/build/android/aab_to_apk.py"
+  script = "//BnesBrowser/build/android/aab_to_apk.py"
 
   deps = [ ":sign_app" ]
 
@@ -42,12 +42,12 @@ action("sign_app_convert_aab_to_apk") {
 }
 
 action("sign_app") {
-  script = "//brave/build/android/sign_apk.py"
+  script = "//BnesBrowser/build/android/sign_apk.py"
 
   deps = [
     # Make sure we have a copy prior to signing.
     ":brave",
-    "//brave:create_symbols_dist",
+    "//BnesBrowser:create_symbols_dist",
   ]
 
   if (target_android_output_format == "aab") {
@@ -134,7 +134,7 @@ copy("brave") {
 }
 
 java_strings_grd("android_brave_strings_grd") {
-  grd_file = "//brave/browser/ui/android/strings/android_brave_strings.grd"
+  grd_file = "//BnesBrowser/browser/ui/android/strings/android_brave_strings.grd"
   outputs = [
     "values/android_brave_strings.xml",
     "values-af/android_brave_strings.xml",
@@ -221,21 +221,21 @@ java_strings_grd("android_brave_strings_grd") {
 
 generate_jni("jni_headers") {
   sources = [
-    "//brave/android/java/org/chromium/chrome/browser/brave_leo/BraveLeoSettingsLauncherHelper.java",
-    "//brave/android/java/org/chromium/chrome/browser/day_zero/DayZeroHelper.java",
-    "//brave/android/java/org/chromium/chrome/browser/informers/BraveSyncAccountDeletedInformer.java",
-    "//brave/android/java/org/chromium/chrome/browser/notifications/channels/BraveSiteChannelsManagerBridge.java",
-    "//brave/android/java/org/chromium/chrome/browser/preferences/BravePrefServiceBridge.java",
-    "//brave/android/java/org/chromium/chrome/browser/util/TabUtils.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/brave_leo/BraveLeoSettingsLauncherHelper.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/day_zero/DayZeroHelper.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/informers/BraveSyncAccountDeletedInformer.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/notifications/channels/BraveSiteChannelsManagerBridge.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/preferences/BravePrefServiceBridge.java",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/util/TabUtils.java",
   ]
 
   if (enable_brave_wallet) {
-    sources += [ "//brave/android/java/org/chromium/chrome/browser/crypto_wallet/util/WalletDataFilesInstallerUtil.java" ]
+    sources += [ "//BnesBrowser/android/java/org/chromium/chrome/browser/crypto_wallet/util/WalletDataFilesInstallerUtil.java" ]
   }
 
   public_deps = [
-    "//brave/android/java/org/chromium/chrome/browser/search_engines:jni_headers",
-    "//brave/browser/signin/services/android:jni_headers",
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/search_engines:jni_headers",
+    "//BnesBrowser/browser/signin/services/android:jni_headers",
     "//chrome/android:chrome_jni_headers",
   ]
 }

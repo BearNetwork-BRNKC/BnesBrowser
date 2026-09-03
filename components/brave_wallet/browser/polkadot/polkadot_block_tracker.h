@@ -12,9 +12,9 @@
 #include "base/memory/weak_ptr.h"
 #include "base/observer_list.h"
 #include "base/time/time.h"
-#include "brave/components/brave_wallet/browser/block_tracker.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
-#include "brave/components/brave_wallet/browser/polkadot/polkadot_utils.h"
+#include "BnesBrowser/components/brave_wallet/browser/block_tracker.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_block_header.h"
+#include "BnesBrowser/components/brave_wallet/browser/polkadot/polkadot_utils.h"
 
 namespace brave_wallet {
 

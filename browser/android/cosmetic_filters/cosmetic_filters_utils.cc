@@ -3,9 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/android/cosmetic_filters/cosmetic_filters_utils.h"
+#include "BnesBrowser/browser/android/cosmetic_filters/cosmetic_filters_utils.h"
 
-#include "brave/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
+#include "BnesBrowser/browser/cosmetic_filters/cosmetic_filters_tab_helper.h"
 #include "chrome/android/chrome_jni_headers/BraveCosmeticFiltersUtils_jni.h"
 #include "chrome/browser/android/tab_android.h"
 

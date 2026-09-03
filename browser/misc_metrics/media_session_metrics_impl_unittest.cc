@@ -3,16 +3,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/media_session_metrics_impl.h"
+#include "BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h"
 
 #include <memory>
 #include <string>
 
 #include "base/test/metrics/histogram_tester.h"
 #include "base/test/task_environment.h"
-#include "brave/components/misc_metrics/uptime_monitor.h"
-#include "brave/components/p3a_utils/custom_attributes.h"
-#include "brave/components/p3a_utils/test_event_relay_observer.h"
+#include "BnesBrowser/components/misc_metrics/uptime_monitor.h"
+#include "BnesBrowser/components/p3a_utils/custom_attributes.h"
+#include "BnesBrowser/components/p3a_utils/test_event_relay_observer.h"
 #include "components/prefs/testing_pref_service.h"
 #include "content/public/test/mock_media_session.h"
 #include "mojo/public/cpp/bindings/remote.h"

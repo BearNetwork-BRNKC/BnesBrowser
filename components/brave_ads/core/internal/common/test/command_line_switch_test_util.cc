@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/command_line_switch_test_util.h"
 
 #include "base/check.h"
 #include "base/command_line.h"
 #include "base/strings/strcat.h"
-#include "brave/components/brave_ads/core/internal/common/strings/string_strip_util.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
-#include "brave/components/brave_ads/core/internal/common/test/internal/string_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/strings/string_strip_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/command_line_switch_test_util_internal.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/test/internal/string_test_util_internal.h"
 
 namespace brave_ads::test {
 

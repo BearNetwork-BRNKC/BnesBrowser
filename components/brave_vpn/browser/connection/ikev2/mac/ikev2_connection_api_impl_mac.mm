@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/connection/ikev2/mac/ikev2_connection_api_impl_mac.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/ikev2/mac/ikev2_connection_api_impl_mac.h"
 
 #import <NetworkExtension/NetworkExtension.h>
 #include <SystemConfiguration/SystemConfiguration.h>
@@ -18,9 +18,9 @@
 #include "base/files/file_path.h"
 #include "base/logging.h"
 #include "base/strings/sys_string_conversions.h"
-#include "brave/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/brave_vpn/common/pref_names.h"
+#include "BnesBrowser/components/brave_vpn/browser/connection/brave_vpn_connection_manager.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/brave_vpn/common/pref_names.h"
 #include "components/prefs/pref_service.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 

@@ -3,14 +3,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/variations/command_line_utils.h"
+#include "BnesBrowser/components/variations/command_line_utils.h"
 
 #include <string>
 
 #include "base/command_line.h"
 #include "base/strings/string_util.h"
-#include "brave/components/variations/buildflags.h"
-#include "brave/components/variations/switches.h"
+#include "BnesBrowser/components/variations/buildflags.h"
+#include "BnesBrowser/components/variations/switches.h"
 #include "components/variations/variations_switches.h"
 
 namespace variations {

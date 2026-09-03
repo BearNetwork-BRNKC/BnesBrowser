@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/tabs/brave_new_tab_button.h"
+#include "BnesBrowser/browser/ui/views/tabs/brave_new_tab_button.h"
 
 #include <utility>
 
 #include "base/check_deref.h"
 #include "base/memory/raw_ref.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/ui/tabs/features.h"
 #include "third_party/skia/include/core/SkPath.h"
 #include "third_party/skia/include/core/SkRRect.h"
@@ -22,11 +22,11 @@
 #include "base/containers/flat_set.h"
 #include "base/feature_list.h"
 #include "base/memory/raw_ref.h"
-#include "brave/browser/containers/containers_service_factory.h"
-#include "brave/browser/ui/browser_commands.h"
-#include "brave/browser/ui/containers/containers_menu_model.h"
-#include "brave/components/containers/core/browser/containers_service.h"
-#include "brave/components/containers/core/common/features.h"
+#include "BnesBrowser/browser/containers/containers_service_factory.h"
+#include "BnesBrowser/browser/ui/browser_commands.h"
+#include "BnesBrowser/browser/ui/containers/containers_menu_model.h"
+#include "BnesBrowser/components/containers/core/browser/containers_service.h"
+#include "BnesBrowser/components/containers/core/common/features.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_interface.h"

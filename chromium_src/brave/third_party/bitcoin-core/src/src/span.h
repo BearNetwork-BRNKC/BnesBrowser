@@ -12,6 +12,6 @@
 // missing a `<utility>` inclusion that is necessary when building with
 // clang modules.
 
-#include <brave/third_party/bitcoin-core/src/src/span.h>  // IWYU pragma: export
+#include <BnesBrowser/third_party/bitcoin-core/src/src/span.h>  // IWYU pragma: export
 
 #endif  // BRAVE_CHROMIUM_SRC_BRAVE_THIRD_PARTY_BITCOIN_CORE_SRC_SRC_SPAN_H_

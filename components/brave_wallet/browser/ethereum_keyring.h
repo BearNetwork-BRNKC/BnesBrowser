@@ -13,8 +13,8 @@
 
 #include "base/containers/span.h"
 #include "base/gtest_prod_util.h"
-#include "brave/components/brave_wallet/browser/secp256k1_hd_keyring.h"
-#include "brave/components/brave_wallet/common/brave_wallet_types.h"
+#include "BnesBrowser/components/brave_wallet/browser/secp256k1_hd_keyring.h"
+#include "BnesBrowser/components/brave_wallet/common/brave_wallet_types.h"
 
 namespace brave_wallet {
 

@@ -10,9 +10,9 @@
 
 #include "base/check_deref.h"
 #include "base/json/json_writer.h"
-#include "brave/components/brave_account/endpoint_client/is_endpoint.h"
-#include "brave/components/brave_account/endpoint_client/is_response.h"
-#include "brave/components/brave_account/endpoint_client/url_replacements.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_endpoint.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/is_response.h"
+#include "BnesBrowser/components/brave_account/endpoint_client/url_replacements.h"
 #include "net/http/http_status_code.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "services/network/public/cpp/url_loader_completion_status.h"

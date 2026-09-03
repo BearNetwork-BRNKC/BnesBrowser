@@ -3,12 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
+#include "BnesBrowser/browser/ntp_background/new_tab_takeover_infobar_delegate.h"
 
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
-#include "brave/components/ntp_background_images/common/infobar_constants.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/ntp_background_images/browser/new_tab_takeover_infobar_util.h"
+#include "BnesBrowser/components/ntp_background_images/common/infobar_constants.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "chrome/test/base/chrome_render_view_host_test_harness.h"
 #include "components/infobars/content/content_infobar_manager.h"
 #include "components/infobars/core/infobar.h"

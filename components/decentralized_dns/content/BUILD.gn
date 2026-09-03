@@ -3,7 +3,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
 assert(enable_brave_wallet)
 
@@ -23,10 +23,10 @@ static_library("content") {
 
   deps = [
     "//base",
-    "//brave/components/brave_wallet/browser:utils",
-    "//brave/components/decentralized_dns/core",
-    "//brave/components/resources:static_resources",
-    "//brave/components/resources:strings",
+    "//BnesBrowser/components/brave_wallet/browser:utils",
+    "//BnesBrowser/components/decentralized_dns/core",
+    "//BnesBrowser/components/resources:static_resources",
+    "//BnesBrowser/components/resources:strings",
     "//components/prefs",
     "//components/security_interstitials/content:security_interstitial_page",
     "//components/security_interstitials/core",

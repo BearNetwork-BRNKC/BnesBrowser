@@ -9,7 +9,7 @@
 #include <optional>
 #include <vector>
 
-#include "brave/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
+#include "BnesBrowser/browser/ui/views/frame/vertical_tabs/vertical_tab_strip_region_view.h"
 #include "chrome/browser/ui/views/tabs/dragging/tab_drag_controller.h"
 
 class BraveTabDragController : public TabDragController {

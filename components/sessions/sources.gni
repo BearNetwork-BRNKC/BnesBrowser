@@ -3,20 +3,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/containers/buildflags/buildflags.gni")
+import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
 brave_components_sessions_shared_public_deps =
-    [ "//brave/components/containers/buildflags" ]
+    [ "//BnesBrowser/components/containers/buildflags" ]
 
 brave_components_sessions_deps = []
 
 if (enable_containers) {
   brave_components_sessions_shared_public_deps += [
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/common",
   ]
   brave_components_sessions_deps += [
-    "//brave/components/containers/content/browser",
-    "//brave/components/containers/core/common",
+    "//BnesBrowser/components/containers/content/browser",
+    "//BnesBrowser/components/containers/core/common",
   ]
 }

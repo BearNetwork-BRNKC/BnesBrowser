@@ -10,9 +10,9 @@
 
 #include "base/memory/weak_ptr.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_rewards/core/engine/endpoints/brave/post_challenges.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine_helper.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/wallet_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/brave/post_challenges.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine_helper.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/wallet_provider.h"
 
 namespace brave_rewards::internal {
 

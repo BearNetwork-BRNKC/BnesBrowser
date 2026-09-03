@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/content/rewards_service_impl.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_impl.h"
 
 #include <stdint.h>
 
@@ -32,28 +32,28 @@
 #include "base/task/single_thread_task_runner.h"
 #include "base/task/thread_pool.h"
 #include "base/time/time.h"
-#include "brave/brave_domains/urls.h"
-#include "brave/components/api_request_helper/api_request_helper.h"
-#include "brave/components/brave_ads/buildflags/buildflags.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/brave_rewards/content/diagnostic_log.h"
-#include "brave/components/brave_rewards/content/logging.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service.h"
-#include "brave/components/brave_rewards/content/rewards_notification_service_impl.h"
-#include "brave/components/brave_rewards/content/rewards_p3a.h"
-#include "brave/components/brave_rewards/content/rewards_service_observer.h"
-#include "brave/components/brave_rewards/content/service_sandbox_type.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/engine/global_constants.h"
-#include "brave/components/brave_rewards/core/engine/hash_prefix_store.h"
-#include "brave/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
-#include "brave/components/brave_rewards/core/engine/rewards_database.h"
-#include "brave/components/brave_rewards/core/features.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/publisher_utils.h"
-#include "brave/components/brave_rewards/core/rewards_util.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/brave_domains/urls.h"
+#include "BnesBrowser/components/api_request_helper/api_request_helper.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/brave_rewards/content/diagnostic_log.h"
+#include "BnesBrowser/components/brave_rewards/content/logging.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_notification_service_impl.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_p3a.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service_observer.h"
+#include "BnesBrowser/components/brave_rewards/content/service_sandbox_type.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/global_constants.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/hash_prefix_store.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/parameters/rewards_parameters_provider.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_database.h"
+#include "BnesBrowser/components/brave_rewards/core/features.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/publisher_utils.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
 #include "components/country_codes/country_codes.h"
 #include "components/favicon/core/favicon_service.h"
 #include "components/grit/brave_components_strings.h"
@@ -78,12 +78,12 @@
 #include "url/gurl.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_ADS)
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
 #endif  // BUILDFLAG(ENABLE_BRAVE_ADS)
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/brave_wallet/browser/brave_wallet_service.h"
-#include "brave/components/brave_wallet/browser/json_rpc_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/brave_wallet_service.h"
+#include "BnesBrowser/components/brave_wallet/browser/json_rpc_service.h"
 #endif
 
 namespace brave_rewards {

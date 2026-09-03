@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/infobars/sync_cannot_run_infobar_delegate.h"
+#include "BnesBrowser/browser/infobars/sync_cannot_run_infobar_delegate.h"
 
 #include <memory>
 #include <string>
@@ -12,9 +12,9 @@
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/memory/raw_ptr.h"
-#include "brave/browser/ui/brave_pages.h"
-#include "brave/components/sync/service/brave_sync_service_impl.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/browser/ui/brave_pages.h"
+#include "BnesBrowser/components/sync/service/brave_sync_service_impl.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "chrome/browser/infobars/confirm_infobar_creator.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/sync/sync_service_factory.h"

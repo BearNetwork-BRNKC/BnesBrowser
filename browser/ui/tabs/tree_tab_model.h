@@ -11,7 +11,7 @@
 
 #include "base/callback_list.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/tabs/public/tree_tab_node.h"
+#include "BnesBrowser/components/tabs/public/tree_tab_node.h"
 
 // A model that contains TreeTabNodes. TreeTabNode provides metadata for tabs
 // related to tree tab functionality, such as level, height, and collapsed

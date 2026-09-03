@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_storage.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_storage.h"
 
 #include <string_view>
 #include <utility>
@@ -13,7 +13,7 @@
 #include "base/containers/circular_deque.h"
 #include "base/time/time.h"
 #include "base/values.h"
-#include "brave/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
+#include "BnesBrowser/components/serp_metrics/time_period_storage/serp_metrics_time_period_store.h"
 
 namespace serp_metrics {
 

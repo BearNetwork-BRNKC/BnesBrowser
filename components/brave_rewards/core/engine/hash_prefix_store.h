@@ -13,7 +13,7 @@
 #include "base/files/file_path.h"
 #include "base/files/memory_mapped_file.h"
 #include "base/sequence_checker.h"
-#include "brave/components/brave_rewards/core/mojom/rewards_database.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards_database.mojom.h"
 
 namespace brave_rewards::internal {
 

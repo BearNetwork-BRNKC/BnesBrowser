@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_request.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_request.h"
 
 #include <utility>
 
@@ -11,10 +11,10 @@
 #include "base/debug/dump_without_crashing.h"
 #include "base/json/json_writer.h"
 #include "base/logging.h"
-#include "brave/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
-#include "brave/components/brave_vpn/browser/api/vpn_response_parser.h"
-#include "brave/components/brave_vpn/common/brave_vpn_constants.h"
-#include "brave/components/skus/browser/skus_utils.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/brave_vpn_api_helper.h"
+#include "BnesBrowser/components/brave_vpn/browser/api/vpn_response_parser.h"
+#include "BnesBrowser/components/brave_vpn/common/brave_vpn_constants.h"
+#include "BnesBrowser/components/skus/browser/skus_utils.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "url/gurl.h"

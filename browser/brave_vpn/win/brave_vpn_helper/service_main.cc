@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/service_main.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/service_main.h"
 
 #include <utility>
 
@@ -15,8 +15,8 @@
 #include "base/task/single_thread_task_executor.h"
 #include "base/task/thread_pool.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
-#include "brave/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_constants.h"
+#include "BnesBrowser/browser/brave_vpn/win/brave_vpn_helper/brave_vpn_helper_utils.h"
 
 namespace brave_vpn {
 namespace {

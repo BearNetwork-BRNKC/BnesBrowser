@@ -3,15 +3,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_rewards/core/engine/wallet_provider/transfer.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/transfer.h"
 
 #include <utility>
 
 #include "base/check.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/uuid.h"
-#include "brave/components/brave_rewards/core/engine/database/database.h"
-#include "brave/components/brave_rewards/core/engine/rewards_engine.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/database/database.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_engine.h"
 
 namespace brave_rewards::internal::wallet_provider {
 

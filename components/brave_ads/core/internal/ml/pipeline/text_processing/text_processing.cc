@@ -3,18 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/ml/pipeline/text_processing/text_processing.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/pipeline/text_processing/text_processing.h"
 
 #include <algorithm>
 #include <utility>
 
 #include "base/check.h"
 #include "base/files/file.h"
-#include "brave/components/brave_ads/core/internal/common/strings/string_strip_util.h"
-#include "brave/components/brave_ads/core/internal/ml/data/text_data.h"
-#include "brave/components/brave_ads/core/internal/ml/pipeline/linear_pipeline_util.h"
-#include "brave/components/brave_ads/core/internal/ml/pipeline/neural_pipeline_util.h"
-#include "brave/components/brave_ads/core/internal/ml/pipeline/pipeline_info.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/strings/string_strip_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/data/text_data.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/pipeline/linear_pipeline_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/pipeline/neural_pipeline_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/pipeline/pipeline_info.h"
 
 namespace brave_ads::ml::pipeline {
 

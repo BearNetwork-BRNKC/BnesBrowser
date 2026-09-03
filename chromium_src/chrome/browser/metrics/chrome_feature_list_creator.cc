@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "base/strings/string_util.h"
-#include "brave/components/l10n/common/locale_util.h"
+#include "BnesBrowser/components/l10n/common/locale_util.h"
 
 #define BRAVE_CHROME_FEATURE_LIST_CREATOR_SETUP_INITIAL_PREFS              \
   if (!compressed_variations_seed.empty()) {                               \

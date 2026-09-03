@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_BRAVE_NEWS_COMMON_TYPES_H_
 
 #include "base/containers/flat_map.h"
-#include "brave/components/brave_news/common/brave_news.mojom-forward.h"
+#include "BnesBrowser/components/brave_news/common/brave_news.mojom-forward.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_map.h"
 
 namespace brave_news {

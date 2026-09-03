@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/js/edge_js_result.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/edge/js/edge_js_result.h"
 
 #include "base/check.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_script.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graph_item/node/js/node_js.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/graphml.h"
-#include "brave/third_party/blink/renderer/core/brave_page_graph/types.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/actor/node_script.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graph_item/node/js/node_js.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/graphml.h"
+#include "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/types.h"
 #include "third_party/blink/renderer/platform/wtf/casting.h"
 #include "third_party/blink/renderer/platform/wtf/text/strcat.h"
 #include "third_party/blink/renderer/platform/wtf/text/wtf_string.h"

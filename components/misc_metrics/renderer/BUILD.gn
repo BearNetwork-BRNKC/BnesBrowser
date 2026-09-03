@@ -13,9 +13,9 @@ source_set("renderer") {
 
   deps = [
     "//base",
-    "//brave/components/misc_metrics/common:mojom",
-    "//brave/components/resources:static_resources_grit",
-    "//brave/components/safe_builtins/renderer",
+    "//BnesBrowser/components/misc_metrics/common:mojom",
+    "//BnesBrowser/components/resources:static_resources_grit",
+    "//BnesBrowser/components/safe_builtins/renderer",
     "//content/public/renderer",
     "//gin",
     "//mojo/public/cpp/bindings",

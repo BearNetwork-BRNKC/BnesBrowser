@@ -6,9 +6,9 @@
 config("internal_config") {
   visibility = [
     ":*",
-    "//brave/components/brave_ads/core",
-    "//brave/components/brave_ads/core/browser",
-    "//brave/components/brave_ads/core/test:brave_ads_unit_tests",
+    "//BnesBrowser/components/brave_ads/core",
+    "//BnesBrowser/components/brave_ads/core/browser",
+    "//BnesBrowser/components/brave_ads/core/test:brave_ads_unit_tests",
   ]
 }
 
@@ -1164,15 +1164,15 @@ static_library("internal") {
 
   deps = [
     "//base",
-    "//brave/components/brave_ads/core/browser/service",
-    "//brave/components/brave_rewards/core",
-    "//brave/components/brave_search/common",
-    "//brave/components/challenge_bypass_ristretto",
-    "//brave/components/constants",
-    "//brave/components/l10n/common",
-    "//brave/components/ntp_background_images/common",
-    "//brave/components/version_info",
-    "//brave/vendor/bat-native-tweetnacl:tweetnacl",
+    "//BnesBrowser/components/brave_ads/core/browser/service",
+    "//BnesBrowser/components/brave_rewards/core",
+    "//BnesBrowser/components/brave_search/common",
+    "//BnesBrowser/components/challenge_bypass_ristretto",
+    "//BnesBrowser/components/constants",
+    "//BnesBrowser/components/l10n/common",
+    "//BnesBrowser/components/ntp_background_images/common",
+    "//BnesBrowser/components/version_info",
+    "//BnesBrowser/vendor/bat-native-tweetnacl:tweetnacl",
     "//components/country_codes",
     "//components/pref_registry",
     "//components/prefs",
@@ -1189,9 +1189,9 @@ static_library("internal") {
   ]
 
   public_deps = [
-    "//brave/components/brave_ads/core/internal/common/resources/flat:text_classification_model",
-    "//brave/components/brave_ads/core/mojom",
-    "//brave/components/brave_ads/core/public:headers",
+    "//BnesBrowser/components/brave_ads/core/internal/common/resources/flat:text_classification_model",
+    "//BnesBrowser/components/brave_ads/core/mojom",
+    "//BnesBrowser/components/brave_ads/core/public:headers",
   ]
 }
 
@@ -1200,8 +1200,8 @@ source_set("test_support") {
 
   visibility = [
     ":*",
-    "//brave/components/brave_ads/core/browser/virtual_pref:*",
-    "//brave/components/brave_ads/core/test:*",
+    "//BnesBrowser/components/brave_ads/core/browser/virtual_pref:*",
+    "//BnesBrowser/components/brave_ads/core/test:*",
   ]
 
   sources = [

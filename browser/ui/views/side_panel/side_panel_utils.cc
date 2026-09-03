@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/side_panel/side_panel_utils.h"
+#include "BnesBrowser/browser/ui/views/side_panel/side_panel_utils.h"
 
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/common/pref_names.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/common/pref_names.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/views/side_panel/side_panel.h"
 #include "chrome/common/pref_names.h"

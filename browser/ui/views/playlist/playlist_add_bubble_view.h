@@ -13,10 +13,10 @@
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/scoped_observation.h"
-#include "brave/browser/ui/views/playlist/playlist_bubble_view.h"
-#include "brave/browser/ui/views/playlist/selectable_list_view.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper_observer.h"
-#include "brave/components/playlist/core/common/mojom/playlist.mojom.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/selectable_list_view.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper_observer.h"
+#include "BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.h"
 #include "ui/base/metadata/metadata_header_macros.h"
 
 class ThumbnailProvider;

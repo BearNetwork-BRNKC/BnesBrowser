@@ -8,12 +8,12 @@
 
 #include "base/test/run_until.h"
 #include "base/types/expected.h"
-#include "brave/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
-#include "brave/components/ai_chat/core/browser/engine/engine_consumer.h"
-#include "brave/components/ai_chat/core/browser/tools/mock_tool.h"
-#include "brave/components/ai_chat/core/browser/tools/mock_tool_provider.h"
-#include "brave/components/ai_chat/core/browser/tools/tool_utils.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_conversation_ui_browsertest_base.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/engine_consumer.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/mock_tool.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/mock_tool_provider.h"
+#include "BnesBrowser/components/ai_chat/core/browser/tools/tool_utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
 #include "content/public/test/browser_test.h"
 #include "testing/gmock/include/gmock/gmock.h"
 

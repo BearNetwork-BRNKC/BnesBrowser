@@ -7,7 +7,7 @@
 #define BRAVE_COMPONENTS_EPHEMERAL_STORAGE_EPHEMERAL_STORAGE_SERVICE_OBSERVER_H_
 
 #include "base/observer_list_types.h"
-#include "brave/components/ephemeral_storage/ephemeral_storage_types.h"
+#include "BnesBrowser/components/ephemeral_storage/ephemeral_storage_types.h"
 
 namespace ephemeral_storage {
 

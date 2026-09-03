@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/test/base/brave_test_launcher_delegate.h"
+#include "BnesBrowser/test/base/brave_test_launcher_delegate.h"
 
 // Apply Brave-specific behavior change in the test launcher delegate.
 // * Suppress first run dialog (Mac/Linux).

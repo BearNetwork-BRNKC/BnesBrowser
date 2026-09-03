@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "brave/browser/ui/views/sidebar/sidebar_button_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_button_view.h"
 
 class SidebarItemView : public SidebarButtonView {
   METADATA_HEADER(SidebarItemView, SidebarButtonView)

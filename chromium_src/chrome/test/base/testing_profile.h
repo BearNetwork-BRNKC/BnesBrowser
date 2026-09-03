@@ -8,6 +8,6 @@
 
 #include <chrome/test/base/testing_profile.h>  // IWYU pragma: export
 
-#include "brave/test/base/brave_testing_profile.h"
+#include "BnesBrowser/test/base/brave_testing_profile.h"
 
 #endif  // BRAVE_CHROMIUM_SRC_CHROME_TEST_BASE_TESTING_PROFILE_H_

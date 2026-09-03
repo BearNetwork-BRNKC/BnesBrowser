@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/browser/ads_service_impl.h"
+#include "BnesBrowser/components/brave_ads/browser/ads_service_impl.h"
 
 #include <algorithm>
 #include <atomic>
@@ -39,29 +39,29 @@
 #include "base/timer/timer.h"
 #include "base/trace_event/trace_event.h"
 #include "base/values.h"
-#include "brave/components/brave_ads/browser/bat_ads_service_factory.h"
-#include "brave/components/brave_ads/browser/component_updater/resource_component.h"
-#include "brave/components/brave_ads/browser/device_id/device_id.h"
-#include "brave/components/brave_ads/browser/reminder/reminder_util.h"
-#include "brave/components/brave_ads/browser/tooltips/ads_tooltips_delegate.h"
-#include "brave/components/brave_ads/core/browser/network/http_client.h"
-#include "brave/components/brave_ads/core/browser/service/ads_service_observer.h"
-#include "brave/components/brave_ads/core/browser/virtual_pref/virtual_pref_provider.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_feature.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
-#include "brave/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_value_util.h"
-#include "brave/components/brave_ads/core/public/command_line_switches/command_line_switches_util.h"
-#include "brave/components/brave_ads/core/public/common/locale/locale_util.h"
-#include "brave/components/brave_ads/core/public/history/site_history.h"
-#include "brave/components/brave_ads/core/public/prefs/pref_names.h"
-#include "brave/components/brave_ads/core/public/user_attention/user_idle_detection/user_idle_detection_feature.h"
-#include "brave/components/brave_policy/policy_initialization_waiter.h"
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_rewards/core/mojom/rewards.mojom.h"
-#include "brave/components/brave_rewards/core/pref_names.h"
-#include "brave/components/brave_rewards/core/rewards_util.h"
-#include "brave/components/ntp_background_images/common/pref_names.h"
-#include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#include "BnesBrowser/components/brave_ads/browser/bat_ads_service_factory.h"
+#include "BnesBrowser/components/brave_ads/browser/component_updater/resource_component.h"
+#include "BnesBrowser/components/brave_ads/browser/device_id/device_id.h"
+#include "BnesBrowser/components/brave_ads/browser/reminder/reminder_util.h"
+#include "BnesBrowser/components/brave_ads/browser/tooltips/ads_tooltips_delegate.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/http_client.h"
+#include "BnesBrowser/components/brave_ads/core/browser/service/ads_service_observer.h"
+#include "BnesBrowser/components/brave_ads/core/browser/virtual_pref/virtual_pref_provider.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_feature.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_info.h"
+#include "BnesBrowser/components/brave_ads/core/public/ad_units/notification_ad/notification_ad_value_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/command_line_switches/command_line_switches_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/common/locale/locale_util.h"
+#include "BnesBrowser/components/brave_ads/core/public/history/site_history.h"
+#include "BnesBrowser/components/brave_ads/core/public/prefs/pref_names.h"
+#include "BnesBrowser/components/brave_ads/core/public/user_attention/user_idle_detection/user_idle_detection_feature.h"
+#include "BnesBrowser/components/brave_policy/policy_initialization_waiter.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.h"
+#include "BnesBrowser/components/brave_rewards/core/pref_names.h"
+#include "BnesBrowser/components/brave_rewards/core/rewards_util.h"
+#include "BnesBrowser/components/ntp_background_images/common/pref_names.h"
+#include "BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
 #include "build/build_config.h"
 #include "components/content_settings/core/browser/content_settings_type_set.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
@@ -80,11 +80,11 @@
 #include "url/gurl.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/components/brave_adaptive_captcha/pref_names.h"
+#include "BnesBrowser/components/brave_adaptive_captcha/pref_names.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/brave_rewards/content/rewards_service.h"
+#include "BnesBrowser/components/brave_rewards/content/rewards_service.h"
 #endif
 
 namespace brave_ads {

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_shields/content/browser/domain_block_page.h"
+#include "BnesBrowser/components/brave_shields/content/browser/domain_block_page.h"
 
 #include <utility>
 
@@ -11,7 +11,7 @@
 #include "base/notreached.h"
 #include "base/strings/string_number_conversions.h"
 #include "base/values.h"
-#include "brave/components/brave_shields/content/browser/domain_block_controller_client.h"
+#include "BnesBrowser/components/brave_shields/content/browser/domain_block_controller_client.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/grit/brave_components_strings.h"
 #include "components/security_interstitials/content/security_interstitial_controller_client.h"

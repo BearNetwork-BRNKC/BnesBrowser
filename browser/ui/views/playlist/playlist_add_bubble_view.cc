@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/playlist/playlist_add_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_add_bubble_view.h"
 
 #include <utility>
 
@@ -14,12 +14,12 @@
 #include "base/task/sequenced_task_runner.h"
 #include "base/task/task_runner.h"
 #include "base/time/time.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/views/playlist/playlist_action_icon_view.h"
-#include "brave/browser/ui/views/playlist/playlist_bubbles_controller.h"
-#include "brave/browser/ui/views/playlist/playlist_edit_bubble_view.h"
-#include "brave/browser/ui/views/playlist/thumbnail_provider.h"
-#include "brave/components/playlist/content/browser/playlist_tab_helper.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_action_icon_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_bubbles_controller.h"
+#include "BnesBrowser/browser/ui/views/playlist/playlist_edit_bubble_view.h"
+#include "BnesBrowser/browser/ui/views/playlist/thumbnail_provider.h"
+#include "BnesBrowser/components/playlist/content/browser/playlist_tab_helper.h"
 #include "chrome/grit/generated_resources.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/base/l10n/l10n_util.h"

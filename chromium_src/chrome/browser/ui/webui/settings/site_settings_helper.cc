@@ -5,12 +5,12 @@
 
 #include "chrome/browser/ui/webui/settings/site_settings_helper.h"
 
-#include "brave/components/brave_shields/core/common/brave_shield_constants.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
+#include "BnesBrowser/components/brave_shields/core/common/brave_shield_constants.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/content_settings/core/browser/brave_content_settings_pref_provider.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/browser/brave_wallet/brave_wallet_context_utils.h"
+#include "BnesBrowser/browser/brave_wallet/brave_wallet_context_utils.h"
 #endif
 
 #include <chrome/browser/ui/webui/settings/site_settings_helper.cc>

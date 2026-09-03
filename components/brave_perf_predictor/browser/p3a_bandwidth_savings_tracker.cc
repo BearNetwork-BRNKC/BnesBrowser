@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_perf_predictor/browser/p3a_bandwidth_savings_tracker.h"
+#include "BnesBrowser/components/brave_perf_predictor/browser/p3a_bandwidth_savings_tracker.h"
 
 #include <array>
 #include <memory>
@@ -12,8 +12,8 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/time/clock.h"
 #include "base/time/default_clock.h"
-#include "brave/components/brave_perf_predictor/common/pref_names.h"
-#include "brave/components/time_period_storage/weekly_storage.h"
+#include "BnesBrowser/components/brave_perf_predictor/common/pref_names.h"
+#include "BnesBrowser/components/time_period_storage/weekly_storage.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
 

@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 browser_api_web_webstate_public_headers =
-    [ "//brave/ios/browser/api/web/web_state/web_state.h" ]
+    [ "//BnesBrowser/ios/browser/api/web/web_state/web_state.h" ]

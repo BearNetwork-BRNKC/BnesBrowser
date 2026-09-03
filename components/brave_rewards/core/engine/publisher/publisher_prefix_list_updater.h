@@ -13,8 +13,8 @@
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/components/brave_rewards/core/engine/endpoint/rewards/rewards_server.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoint/rewards/rewards_server.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

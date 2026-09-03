@@ -8,7 +8,7 @@
 
 #include <vector>
 
-#include "brave/components/brave_ads/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_ads/buildflags/buildflags.h"
 #include "url/gurl.h"
 
 static_assert(BUILDFLAG(ENABLE_BRAVE_ADS));

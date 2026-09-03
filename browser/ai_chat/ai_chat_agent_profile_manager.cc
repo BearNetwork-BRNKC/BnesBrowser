@@ -3,17 +3,17 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ai_chat/ai_chat_agent_profile_manager.h"
+#include "BnesBrowser/browser/ai_chat/ai_chat_agent_profile_manager.h"
 
 #include <string>
 
-#include "brave/components/ai_chat/core/browser/utils.h"
-#include "brave/components/ai_chat/core/common/buildflags/buildflags.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/brave_origin/brave_origin_policy_manager.h"
-#include "brave/components/brave_origin/brave_origin_utils.h"
-#include "brave/components/brave_origin/profile_id.h"
-#include "brave/components/constants/brave_constants.h"
+#include "BnesBrowser/components/ai_chat/core/browser/utils.h"
+#include "BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_manager.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_utils.h"
+#include "BnesBrowser/components/brave_origin/profile_id.h"
+#include "BnesBrowser/components/constants/brave_constants.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"

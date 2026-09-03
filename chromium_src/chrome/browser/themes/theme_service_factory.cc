@@ -5,7 +5,7 @@
 
 #include "chrome/browser/themes/theme_service_factory.h"
 
-#include "brave/browser/themes/brave_theme_service.h"
+#include "BnesBrowser/browser/themes/brave_theme_service.h"
 
 #if !BUILDFLAG(IS_LINUX)
 #define BRAVE_THEMESERVICEFACTORY_BUILDSERVICEINSTANCEFOR \

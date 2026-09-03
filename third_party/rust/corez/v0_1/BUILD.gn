@@ -13,14 +13,14 @@ cargo_crate("lib") {
   epoch = "0.1"
   crate_type = "rlib"
   crate_root =
-      "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/lib.rs"
+      "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/lib.rs"
   sources = [
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/cursor.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/error.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/impls.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/traits.rs",
-    "//brave/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/lib.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/cursor.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/error.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/impls.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/io/traits.rs",
+    "//BnesBrowser/third_party/rust/chromium_crates_io/vendor/corez-v0_1/src/lib.rs",
   ]
   inputs = []
 

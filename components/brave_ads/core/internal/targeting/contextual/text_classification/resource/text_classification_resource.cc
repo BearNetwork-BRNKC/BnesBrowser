@@ -3,21 +3,21 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource.h"
 
 #include <utility>
 
 #include "base/functional/bind.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/brave_ads/core/internal/ads_client/ads_client_util.h"
-#include "brave/components/brave_ads/core/internal/common/logging_util.h"
-#include "brave/components/brave_ads/core/internal/common/resources/language_components.h"
-#include "brave/components/brave_ads/core/internal/ml/pipeline/text_processing/text_processing.h"
-#include "brave/components/brave_ads/core/internal/prefs/pref_path_util.h"
-#include "brave/components/brave_ads/core/internal/settings/settings.h"
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource_constants.h"
-#include "brave/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_feature.h"
-#include "brave/components/brave_ads/core/public/ads_client/ads_client.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ads_client/ads_client_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/logging_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/common/resources/language_components.h"
+#include "BnesBrowser/components/brave_ads/core/internal/ml/pipeline/text_processing/text_processing.h"
+#include "BnesBrowser/components/brave_ads/core/internal/prefs/pref_path_util.h"
+#include "BnesBrowser/components/brave_ads/core/internal/settings/settings.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/resource/text_classification_resource_constants.h"
+#include "BnesBrowser/components/brave_ads/core/internal/targeting/contextual/text_classification/text_classification_feature.h"
+#include "BnesBrowser/components/brave_ads/core/public/ads_client/ads_client.h"
 
 namespace brave_ads {
 

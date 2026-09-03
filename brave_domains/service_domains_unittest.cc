@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/brave_domains/service_domains.h"
+#include "BnesBrowser/brave_domains/service_domains.h"
 
 #include <cstring>
 
@@ -11,7 +11,7 @@
 #include "base/debug/debugging_buildflags.h"
 #include "base/files/file_path.h"
 #include "base/strings/strcat.h"
-#include "brave/brave_domains/buildflags.h"
+#include "BnesBrowser/brave_domains/buildflags.h"
 #include "build/build_config.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"

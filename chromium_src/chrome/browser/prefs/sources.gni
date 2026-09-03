@@ -3,29 +3,29 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//third_party/widevine/cdm/widevine.gni")
 
 brave_chromium_src_chrome_browser_prefs_deps = [
-  "//brave/browser/brave_stats:buildflags",
-  "//brave/components/brave_account",
-  "//brave/components/brave_ads/buildflags",
-  "//brave/components/brave_news/common/buildflags",
-  "//brave/components/brave_shields/core/common",
-  "//brave/components/brave_sync",
-  "//brave/components/brave_vpn/common/buildflags",
-  "//brave/components/brave_wallet/common/buildflags",
-  "//brave/components/constants",
+  "//BnesBrowser/browser/brave_stats:buildflags",
+  "//BnesBrowser/components/brave_account",
+  "//BnesBrowser/components/brave_ads/buildflags",
+  "//BnesBrowser/components/brave_news/common/buildflags",
+  "//BnesBrowser/components/brave_shields/core/common",
+  "//BnesBrowser/components/brave_sync",
+  "//BnesBrowser/components/brave_vpn/common/buildflags",
+  "//BnesBrowser/components/brave_wallet/common/buildflags",
+  "//BnesBrowser/components/constants",
   "//chrome/browser/profiles:profile",
   "//chrome/common:constants",
   "//third_party/widevine/cdm:buildflags",
 ]
 
 if (enable_widevine) {
-  brave_chromium_src_chrome_browser_prefs_deps += [ "//brave/browser/widevine" ]
+  brave_chromium_src_chrome_browser_prefs_deps += [ "//BnesBrowser/browser/widevine" ]
 }
 
 if (enable_brave_wallet) {
   brave_chromium_src_chrome_browser_prefs_deps +=
-      [ "//brave/components/brave_wallet/browser" ]
+      [ "//BnesBrowser/components/brave_wallet/browser" ]
 }

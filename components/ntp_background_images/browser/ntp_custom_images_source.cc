@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ntp_background_images/browser/ntp_custom_images_source.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_custom_images_source.h"
 
 #include <utility>
 
@@ -13,8 +13,8 @@
 #include "base/functional/bind.h"
 #include "base/memory/ref_counted_memory.h"
 #include "base/task/thread_pool.h"
-#include "brave/components/ntp_background_images/browser/brave_ntp_custom_background_service.h"
-#include "brave/components/ntp_background_images/browser/url_constants.h"
+#include "BnesBrowser/components/ntp_background_images/browser/brave_ntp_custom_background_service.h"
+#include "BnesBrowser/components/ntp_background_images/browser/url_constants.h"
 #include "content/public/browser/browser_thread.h"
 
 namespace ntp_background_images {

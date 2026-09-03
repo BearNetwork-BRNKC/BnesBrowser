@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/ai_chat/core/browser/engine/oai_message_utils.h"
+#include "BnesBrowser/components/ai_chat/core/browser/engine/oai_message_utils.h"
 
 #include "base/containers/adapters.h"
 #include "base/containers/span.h"
@@ -11,9 +11,9 @@
 #include "base/strings/escape.h"
 #include "base/strings/string_util.h"
 #include "base/values.h"
-#include "brave/components/ai_chat/core/browser/constants.h"
-#include "brave/components/ai_chat/core/common/features.h"
-#include "brave/components/ai_chat/core/common/prefs.h"
+#include "BnesBrowser/components/ai_chat/core/browser/constants.h"
+#include "BnesBrowser/components/ai_chat/core/common/features.h"
+#include "BnesBrowser/components/ai_chat/core/common/prefs.h"
 #include "components/prefs/pref_service.h"
 #include "third_party/abseil-cpp/absl/container/flat_hash_set.h"
 

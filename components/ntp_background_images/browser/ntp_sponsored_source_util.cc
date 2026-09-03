@@ -3,14 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_source_util.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_source_util.h"
 
 #include "base/check.h"
 #include "base/debug/crash_logging.h"
 #include "base/files/file_path.h"
 #include "base/files/file_util.h"
 #include "base/notreached.h"
-#include "brave/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
+#include "BnesBrowser/components/ntp_background_images/browser/ntp_sponsored_images_data.h"
 
 namespace ntp_background_images {
 

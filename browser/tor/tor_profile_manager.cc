@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/tor/tor_profile_manager.h"
+#include "BnesBrowser/browser/tor/tor_profile_manager.h"
 
 #include <algorithm>
 #include <optional>
@@ -12,12 +12,12 @@
 #include "base/check.h"
 #include "base/feature_list.h"
 #include "base/functional/callback_helpers.h"
-#include "brave/browser/tor/tor_profile_service_factory.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/tor/tor_constants.h"
-#include "brave/components/tor/tor_launcher_factory.h"
-#include "brave/components/tor/tor_launcher_observer.h"
-#include "brave/components/tor/tor_profile_service.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/tor/tor_constants.h"
+#include "BnesBrowser/components/tor/tor_launcher_factory.h"
+#include "BnesBrowser/components/tor/tor_launcher_observer.h"
+#include "BnesBrowser/components/tor/tor_profile_service.h"
 #include "chrome/browser/lifetime/application_lifetime_desktop.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"

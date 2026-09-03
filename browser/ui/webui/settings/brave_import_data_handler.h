@@ -10,7 +10,7 @@
 #include <unordered_map>
 
 #include "base/memory/weak_ptr.h"
-#include "brave/browser/ui/webui/settings/brave_importer_observer.h"
+#include "BnesBrowser/browser/ui/webui/settings/brave_importer_observer.h"
 #include "build/build_config.h"
 #include "chrome/browser/ui/webui/settings/import_data_handler.h"
 #include "content/public/browser/web_contents_observer.h"

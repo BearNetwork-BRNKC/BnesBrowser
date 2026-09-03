@@ -3,10 +3,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/brave_content_browser_client.h"
+#include "BnesBrowser/browser/brave_content_browser_client.h"
 
-#include "brave/components/brave_search/common/brave_search_utils.h"
-#include "brave/components/skus/common/skus_utils.h"
+#include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
+#include "BnesBrowser/components/skus/common/skus_utils.h"
 #include "build/build_config.h"
 #include "chrome/browser/chrome_content_browser_client.h"
 #include "chrome/test/base/testing_browser_process.h"
@@ -18,7 +18,7 @@
 
 #if BUILDFLAG(IS_WIN)
 #include "base/test/scoped_os_info_override_win.h"
-#include "brave/components/windows_recall/windows_recall.h"
+#include "BnesBrowser/components/windows_recall/windows_recall.h"
 #endif
 
 #if BUILDFLAG(IS_WIN)

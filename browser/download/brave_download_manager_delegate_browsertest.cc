@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/download/brave_download_manager_delegate.h"
+#include "BnesBrowser/browser/download/brave_download_manager_delegate.h"
 
 #include <cstdint>
 #include <memory>
@@ -21,7 +21,7 @@
 #include "base/test/scoped_feature_list.h"
 #include "base/test/test_future.h"
 #include "base/threading/thread_restrictions.h"
-#include "brave/components/image_metadata_stripper/common/features.h"
+#include "BnesBrowser/components/image_metadata_stripper/common/features.h"
 #include "chrome/browser/download/download_core_service.h"
 #include "chrome/browser/download/download_core_service_factory.h"
 #include "chrome/browser/download/download_prefs.h"

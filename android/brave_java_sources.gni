@@ -3,25 +3,25 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import("//brave/android/features/tab_ui/brave_tab_management_java_sources.gni")
-import("//brave/android/feed/brave_feed_java_sources.gni")
-import("//brave/android/java/org/chromium/chrome/browser/billing/sources.gni")
+import("//BnesBrowser/android/features/tab_ui/brave_tab_management_java_sources.gni")
+import("//BnesBrowser/android/feed/brave_feed_java_sources.gni")
+import("//BnesBrowser/android/java/org/chromium/chrome/browser/billing/sources.gni")
 import(
-    "//brave/android/java/org/chromium/chrome/browser/fullscreen/brave_fullscreen_java_sources.gni")
-import("//brave/android/java/org/chromium/chrome/browser/playlist/sources.gni")
-import("//brave/base/brave_base_shared_preferences_java.gni")
-import("//brave/browser/autofill/android/java_sources.gni")
-import("//brave/browser/bookmarks/android/sources.gni")
-import("//brave/browser/brave_ads/android/java_sources.gni")
-import("//brave/browser/hub/internal/android/java/java_sources.gni")
-import("//brave/browser/incognito/android/java_sources.gni")
-import("//brave/browser/share/android/java_sources.gni")
-import("//brave/browser/ui/messages/android/java_sources.gni")
+    "//BnesBrowser/android/java/org/chromium/chrome/browser/fullscreen/brave_fullscreen_java_sources.gni")
+import("//BnesBrowser/android/java/org/chromium/chrome/browser/playlist/sources.gni")
+import("//BnesBrowser/base/brave_base_shared_preferences_java.gni")
+import("//BnesBrowser/browser/autofill/android/java_sources.gni")
+import("//BnesBrowser/browser/bookmarks/android/sources.gni")
+import("//BnesBrowser/browser/brave_ads/android/java_sources.gni")
+import("//BnesBrowser/browser/hub/internal/android/java/java_sources.gni")
+import("//BnesBrowser/browser/incognito/android/java_sources.gni")
+import("//BnesBrowser/browser/share/android/java_sources.gni")
+import("//BnesBrowser/browser/ui/messages/android/java_sources.gni")
 import(
-    "//brave/components/cached_flags/brave_components_cached_flags_java_sources.gni")
-import("//brave/components/embedder_support/android/java_sources.gni")
-import("//brave/components/permissions/android/java_sources.gni")
-import("//brave/components/signin/public/android/java_sources.gni")
+    "//BnesBrowser/components/cached_flags/brave_components_cached_flags_java_sources.gni")
+import("//BnesBrowser/components/embedder_support/android/java_sources.gni")
+import("//BnesBrowser/components/permissions/android/java_sources.gni")
+import("//BnesBrowser/components/signin/public/android/java_sources.gni")
 
 brave_java_sources = [
   "../../brave/android/java/org/chromium/chrome/browser/BraveAdFreeCalloutDialogFragment.java",
@@ -527,48 +527,48 @@ brave_java_sources += brave_app_billing_sources
 brave_java_sources += brave_fullscreen_java_sources
 
 brave_browser_ui_android_appmenu_internal_sources = [
-  "//brave/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenu.java",
-  "//brave/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenuDummySuper.java",
-  "//brave/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenuHandlerImpl.java",
+  "//BnesBrowser/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenu.java",
+  "//BnesBrowser/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenuDummySuper.java",
+  "//BnesBrowser/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/BraveAppMenuHandlerImpl.java",
 ]
 
 brave_browser_ui_android_default_browser_promo_java_sources = [
   # TODO(alexeybarabash): BraveDefaultBrowserPromoUtils now causes crash on
   # debug build at start app
-  # "//brave/browser/ui/android/default_browser_promo/java/src/org/chromium/chrome/browser/ui/default_browser_promo/BraveDefaultBrowserPromoUtils.java"
+  # "//BnesBrowser/browser/ui/android/default_browser_promo/java/src/org/chromium/chrome/browser/ui/default_browser_promo/BraveDefaultBrowserPromoUtils.java"
 ]
 
 brave_browser_ui_android_toolbar_sources = [
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/BraveToolbarPositionController.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/adaptive/BraveAdaptiveToolbarPrefs.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/adaptive/settings/BraveRadioButtonGroupAdaptiveToolbarPreference.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/bottom/BraveBottomControlsMediator.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BottomTabSwitcherActionMenuCoordinator.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BraveTabSwitcherActionMenuCoordinator.java",
-  "//brave/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BraveToolbarLayout.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/BraveToolbarPositionController.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/adaptive/BraveAdaptiveToolbarPrefs.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/adaptive/settings/BraveRadioButtonGroupAdaptiveToolbarPreference.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/bottom/BraveBottomControlsMediator.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BottomTabSwitcherActionMenuCoordinator.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BraveTabSwitcherActionMenuCoordinator.java",
+  "//BnesBrowser/browser/ui/android/toolbar/java/src/org/chromium/chrome/browser/toolbar/top/BraveToolbarLayout.java",
 ]
 
 brave_java_base_sources = [
-  "//brave/android/java/org/chromium/base/BraveCommandLineInitUtil.java",
-  "//brave/android/java/org/chromium/base/BraveFeatureList.java",
-  "//brave/android/java/org/chromium/base/BravePreferenceKeys.java",
-  "//brave/android/java/org/chromium/base/BraveReflectionUtil.java",
-  "//brave/android/java/org/chromium/base/BraveUrlConstants.java",
+  "//BnesBrowser/android/java/org/chromium/base/BraveCommandLineInitUtil.java",
+  "//BnesBrowser/android/java/org/chromium/base/BraveFeatureList.java",
+  "//BnesBrowser/android/java/org/chromium/base/BravePreferenceKeys.java",
+  "//BnesBrowser/android/java/org/chromium/base/BraveReflectionUtil.java",
+  "//BnesBrowser/android/java/org/chromium/base/BraveUrlConstants.java",
 ]
 
 brave_java_base_module_sources = [
-  "//brave/android/java/org/chromium/chrome/browser/autofill/BraveAutofillService.java",
-  "//brave/android/java/org/chromium/chrome/browser/base/SplitCompatAutofillService.java",
-  "//brave/android/java/org/chromium/chrome/browser/base/SplitCompatJobIntentService.java",
-  "//brave/android/java/org/chromium/chrome/browser/media/ui/BraveMediaNotificationControllerServices.java",
-  "//brave/android/java/org/chromium/chrome/browser/playlist/hls_content/HlsService.java",
-  "//brave/android/java/org/chromium/chrome/browser/vpn/wireguard/WireguardService.java",
-  "//brave/android/java/org/chromium/chrome/browser/widget/quickactionsearchandbookmark/QuickActionSearchAndBookmarkWidgetService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/autofill/BraveAutofillService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/base/SplitCompatAutofillService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/base/SplitCompatJobIntentService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/media/ui/BraveMediaNotificationControllerServices.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/playlist/hls_content/HlsService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/vpn/wireguard/WireguardService.java",
+  "//BnesBrowser/android/java/org/chromium/chrome/browser/widget/quickactionsearchandbookmark/QuickActionSearchAndBookmarkWidgetService.java",
 ]
 
 brave_java_base_module_deps = [
   "//base:split_compat_java",
-  "//brave/third_party/android_deps:com_wireguard_android_java",
+  "//BnesBrowser/third_party/android_deps:com_wireguard_android_java",
   "//third_party/androidx:androidx_core_core_java",
   "//third_party/androidx:androidx_lifecycle_lifecycle_livedata_core_java",
   "//third_party/androidx:androidx_lifecycle_lifecycle_livedata_java",

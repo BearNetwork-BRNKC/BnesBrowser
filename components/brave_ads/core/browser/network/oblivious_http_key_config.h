@@ -14,7 +14,7 @@
 #include "base/memory/scoped_refptr.h"
 #include "base/memory/weak_ptr.h"
 #include "base/timer/wall_clock_timer.h"
-#include "brave/components/brave_ads/core/browser/network/oblivious_http_feature.h"
+#include "BnesBrowser/components/brave_ads/core/browser/network/oblivious_http_feature.h"
 #include "url/gurl.h"
 
 class PrefService;

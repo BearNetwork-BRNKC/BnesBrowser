@@ -5,12 +5,12 @@
 
 #include "chrome/browser/policy/configuration_policy_handler_list_factory.h"
 
-#include "brave/browser/policy/brave_simple_policy_map.h"
-#include "brave/browser/policy/handlers/brave_adblock_policy_handler.h"
-#include "brave/browser/policy/handlers/brave_fingerprinting_v2_policy_handler.h"
-#include "brave/browser/policy/handlers/brave_https_upgrade_policy_handler.h"
-#include "brave/browser/policy/handlers/brave_referrers_policy_handler.h"
-#include "brave/browser/policy/handlers/brave_remember_1p_storage_policy_handler.h"
+#include "BnesBrowser/browser/policy/brave_simple_policy_map.h"
+#include "BnesBrowser/browser/policy/handlers/brave_adblock_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_fingerprinting_v2_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_https_upgrade_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_referrers_policy_handler.h"
+#include "BnesBrowser/browser/policy/handlers/brave_remember_1p_storage_policy_handler.h"
 #include "components/policy/core/browser/configuration_policy_handler.h"
 
 #define BuildHandlerList BuildHandlerList_ChromiumImpl

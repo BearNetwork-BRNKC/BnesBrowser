@@ -4,14 +4,14 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/query_filter/common/internal/schema_utils.h"
+#include "BnesBrowser/components/query_filter/common/internal/schema_utils.h"
 
 #include <string>
 #include <vector>
 
 #include "base/containers/span.h"
 #include "base/values.h"
-#include "brave/components/query_filter/common/schema.h"
+#include "BnesBrowser/components/query_filter/common/schema.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace query_filter {

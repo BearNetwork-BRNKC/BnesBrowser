@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/speedreader/reader_mode_bubble.h"
+#include "BnesBrowser/browser/ui/views/speedreader/reader_mode_bubble.h"
 
 #include <memory>
 #include <string>
@@ -11,9 +11,9 @@
 
 #include "base/check.h"
 #include "base/check_op.h"
-#include "brave/browser/speedreader/speedreader_service_factory.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/components/speedreader/speedreader_service.h"
+#include "BnesBrowser/browser/speedreader/speedreader_service_factory.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/components/speedreader/speedreader_service.h"
 #include "chrome/browser/ui/views/location_bar/location_bar_bubble_delegate_view.h"
 #include "components/grit/brave_components_strings.h"
 #include "ui/base/l10n/l10n_util.h"

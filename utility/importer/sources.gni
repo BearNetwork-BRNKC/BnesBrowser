@@ -3,8 +3,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/brave_rewards/core/buildflags/buildflags.gni")
-import("//brave/components/tor/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
+import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 
 brave_utility_importer_sources = []
 brave_utility_importer_deps = []
@@ -12,19 +12,19 @@ brave_utility_importer_public_deps = []
 
 if (!is_android) {
   brave_utility_importer_sources += [
-    "//brave/utility/importer/brave_external_process_importer_bridge.cc",
-    "//brave/utility/importer/brave_external_process_importer_bridge.h",
-    "//brave/utility/importer/brave_profile_import_impl.cc",
-    "//brave/utility/importer/brave_profile_import_impl.h",
-    "//brave/utility/importer/chrome_importer.cc",
-    "//brave/utility/importer/chrome_importer.h",
+    "//BnesBrowser/utility/importer/brave_external_process_importer_bridge.cc",
+    "//BnesBrowser/utility/importer/brave_external_process_importer_bridge.h",
+    "//BnesBrowser/utility/importer/brave_profile_import_impl.cc",
+    "//BnesBrowser/utility/importer/brave_profile_import_impl.h",
+    "//BnesBrowser/utility/importer/chrome_importer.cc",
+    "//BnesBrowser/utility/importer/chrome_importer.h",
   ]
 
   brave_utility_importer_deps += [
     "//base",
-    "//brave/app:brave_generated_resources_grit",
-    "//brave/common/importer",
-    "//brave/common/importer:interfaces",
+    "//BnesBrowser/app:brave_generated_resources_grit",
+    "//BnesBrowser/common/importer",
+    "//BnesBrowser/common/importer:interfaces",
     "//chrome/app:branded_strings",
     "//components/user_data_importer/common",
   ]
@@ -32,9 +32,9 @@ if (!is_android) {
 
 if (enable_brave_rewards) {
   brave_utility_importer_public_deps +=
-      [ "//brave/components/services/bat_rewards:lib" ]
+      [ "//BnesBrowser/components/services/bat_rewards:lib" ]
 }
 
 if (enable_tor) {
-  brave_utility_importer_deps += [ "//brave/components/services/tor" ]
+  brave_utility_importer_deps += [ "//BnesBrowser/components/services/tor" ]
 }

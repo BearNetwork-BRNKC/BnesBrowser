@@ -4,4 +4,4 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 brave_chrome_browser_ui_autofill_deps =
-    [ "//brave/browser/autofill/android:jni_headers" ]
+    [ "//BnesBrowser/browser/autofill/android:jni_headers" ]

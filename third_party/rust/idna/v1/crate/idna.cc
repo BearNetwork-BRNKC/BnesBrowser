@@ -9,8 +9,8 @@
 #include "base/i18n/icu_util.h"
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
-#include "brave/third_party/rust/idna/v1/crate/idna.h"
-#include "brave/third_party/rust/idna/v1/crate/src/lib.rs.h"
+#include "BnesBrowser/third_party/rust/idna/v1/crate/idna.h"
+#include "BnesBrowser/third_party/rust/idna/v1/crate/src/lib.rs.h"
 #include "url/url_canon.h"
 
 namespace idna {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/browser/api/web_view/brave_web_frame.h"
+#include "BnesBrowser/ios/browser/api/web_view/brave_web_frame.h"
 
 namespace web {
 

@@ -4,11 +4,11 @@
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import(
-    "//brave/components/brave_policy/ad_block_only_mode/buildflags/buildflags.gni")
+    "//BnesBrowser/components/brave_policy/ad_block_only_mode/buildflags/buildflags.gni")
 
 static_library("ad_block_only_mode") {
   public_deps =
-      [ "//brave/components/brave_policy/ad_block_only_mode/buildflags" ]
+      [ "//BnesBrowser/components/brave_policy/ad_block_only_mode/buildflags" ]
 
   sources = [
     "ad_block_only_mode_policy_manager.cc",
@@ -17,8 +17,8 @@ static_library("ad_block_only_mode") {
 
   deps = [
     "//base",
-    "//brave/components/brave_policy:brave_policy_observer",
-    "//brave/components/brave_shields/core/common",
+    "//BnesBrowser/components/brave_policy:brave_policy_observer",
+    "//BnesBrowser/components/brave_shields/core/common",
     "//components/content_settings/core/common",
     "//components/policy/core/browser",
     "//components/policy/core/common",
@@ -35,8 +35,8 @@ source_set("unit_tests") {
     deps = [
       ":ad_block_only_mode",
       "//base/test:test_support",
-      "//brave/components/brave_policy:brave_policy_observer",
-      "//brave/components/brave_shields/core/common",
+      "//BnesBrowser/components/brave_policy:brave_policy_observer",
+      "//BnesBrowser/components/brave_shields/core/common",
       "//components/prefs",
       "//components/prefs:test_support",
       "//testing/gmock",

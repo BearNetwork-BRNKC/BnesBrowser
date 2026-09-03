@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/common/importer/chrome_importer_utils.h"
+#include "BnesBrowser/common/importer/chrome_importer_utils.h"
 
 #include <memory>
 #include <optional>
@@ -14,7 +14,7 @@
 #include "base/files/file_util.h"
 #include "base/json/json_reader.h"
 #include "base/values.h"
-#include "brave/common/importer/importer_constants.h"
+#include "BnesBrowser/common/importer/importer_constants.h"
 #include "components/user_data_importer/common/importer_data_types.h"
 #include "components/webdata/common/webdata_constants.h"
 

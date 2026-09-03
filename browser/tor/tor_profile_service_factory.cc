@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/tor/tor_profile_service_factory.h"
+#include "BnesBrowser/browser/tor/tor_profile_service_factory.h"
 
 #include <memory>
 
 #include "base/check_is_test.h"
 #include "base/no_destructor.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/tor/util.h"
-#include "brave/components/tor/brave_tor_client_updater.h"
-#include "brave/components/tor/brave_tor_pluggable_transport_updater.h"
-#include "brave/components/tor/pref_names.h"
-#include "brave/components/tor/tor_profile_service_impl.h"
-#include "brave/components/tor/tor_utils.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/tor/util.h"
+#include "BnesBrowser/components/tor/brave_tor_client_updater.h"
+#include "BnesBrowser/components/tor/brave_tor_pluggable_transport_updater.h"
+#include "BnesBrowser/components/tor/pref_names.h"
+#include "BnesBrowser/components/tor/tor_profile_service_impl.h"
+#include "BnesBrowser/components/tor/tor_utils.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"
 #include "components/keyed_service/content/browser_context_dependency_manager.h"

@@ -3,12 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/components/brave_private_cdn/private_cdn_request_helper.h"
+#include "BnesBrowser/components/brave_private_cdn/private_cdn_request_helper.h"
 
 #include <utility>
 
 #include "base/check_op.h"
-#include "brave/components/brave_private_cdn/headers.h"
+#include "BnesBrowser/components/brave_private_cdn/headers.h"
 #include "net/base/load_flags.h"
 #include "services/network/public/cpp/resource_request.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

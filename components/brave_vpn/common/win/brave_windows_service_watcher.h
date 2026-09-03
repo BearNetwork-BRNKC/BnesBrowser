@@ -13,7 +13,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/synchronization/waitable_event.h"
 #include "base/synchronization/waitable_event_watcher.h"
-#include "brave/components/brave_vpn/common/win/scoped_sc_handle.h"
+#include "BnesBrowser/components/brave_vpn/common/win/scoped_sc_handle.h"
 
 namespace brave {
 

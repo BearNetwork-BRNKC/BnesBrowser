@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at http://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/speedreader/speedreader_icon_view.h"
+#include "BnesBrowser/browser/ui/views/speedreader/speedreader_icon_view.h"
 
 #include <string>
 
-#include "brave/app/brave_command_ids.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/browser/ui/speedreader/speedreader_tab_helper.h"
-#include "brave/components/speedreader/common/features.h"
-#include "brave/components/speedreader/speedreader_pref_names.h"
-#include "brave/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/browser/ui/speedreader/speedreader_tab_helper.h"
+#include "BnesBrowser/components/speedreader/common/features.h"
+#include "BnesBrowser/components/speedreader/speedreader_pref_names.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/views/location_bar/location_bar_bubble_delegate_view.h"
 #include "chrome/browser/ui/views/page_action/page_action_icon_view.h"

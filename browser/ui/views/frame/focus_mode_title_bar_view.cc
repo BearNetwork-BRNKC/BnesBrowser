@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/views/frame/focus_mode_title_bar_view.h"
+#include "BnesBrowser/browser/ui/views/frame/focus_mode_title_bar_view.h"
 
 #include <string>
 
 #include "base/functional/bind.h"
-#include "brave/browser/ui/brave_scheme_utils.h"
-#include "brave/ui/color/nala/nala_color_id.h"
+#include "BnesBrowser/browser/ui/brave_scheme_utils.h"
+#include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"
 #include "chrome/browser/ui/tab_ui_helper.h"
 #include "components/url_formatter/url_formatter.h"

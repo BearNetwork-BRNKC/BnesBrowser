@@ -4,8 +4,8 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "base/android/jni_android.h"
-#include "brave/components/brave_account/android/features_jni_headers/BraveAccountFeatures_jni.h"
-#include "brave/components/brave_account/features.h"
+#include "BnesBrowser/components/brave_account/android/features_jni_headers/BraveAccountFeatures_jni.h"
+#include "BnesBrowser/components/brave_account/features.h"
 
 namespace brave_account {
 

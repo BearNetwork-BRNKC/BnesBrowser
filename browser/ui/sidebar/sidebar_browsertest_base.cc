@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/ui/sidebar/sidebar_browsertest_base.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_browsertest_base.h"
 
 #include <algorithm>
 #include <optional>
@@ -17,20 +17,20 @@
 #include "base/test/bind.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
-#include "brave/browser/ui/sidebar/sidebar_model.h"
-#include "brave/browser/ui/sidebar/sidebar_service_factory.h"
-#include "brave/browser/ui/views/frame/brave_browser_view.h"
-#include "brave/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
-#include "brave/browser/ui/views/sidebar/sidebar_container_view.h"
-#include "brave/browser/ui/views/sidebar/sidebar_control_view.h"
-#include "brave/browser/ui/views/sidebar/sidebar_items_contents_view.h"
-#include "brave/browser/ui/views/sidebar/sidebar_items_scroll_view.h"
-#include "brave/browser/ui/views/toolbar/brave_toolbar_view.h"
-#include "brave/browser/ui/views/toolbar/side_panel_button.h"
-#include "brave/components/brave_origin/buildflags/buildflags.h"
-#include "brave/components/constants/pref_names.h"
-#include "brave/components/sidebar/browser/sidebar_item.h"
-#include "brave/components/sidebar/browser/sidebar_service.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_model.h"
+#include "BnesBrowser/browser/ui/sidebar/sidebar_service_factory.h"
+#include "BnesBrowser/browser/ui/views/frame/brave_browser_view.h"
+#include "BnesBrowser/browser/ui/views/frame/split_view/brave_multi_contents_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_container_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_control_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_items_contents_view.h"
+#include "BnesBrowser/browser/ui/views/sidebar/sidebar_items_scroll_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/brave_toolbar_view.h"
+#include "BnesBrowser/browser/ui/views/toolbar/side_panel_button.h"
+#include "BnesBrowser/components/brave_origin/buildflags/buildflags.h"
+#include "BnesBrowser/components/constants/pref_names.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_item.h"
+#include "BnesBrowser/components/sidebar/browser/sidebar_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_window/public/browser_window_features.h"

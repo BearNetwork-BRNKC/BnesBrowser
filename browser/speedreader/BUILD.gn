@@ -3,9 +3,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import("//brave/components/ai_chat/core/common/buildflags/buildflags.gni")
-import("//brave/components/brave_wallet/common/buildflags/buildflags.gni")
-import("//brave/components/speedreader/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
+import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
 assert(enable_speedreader)
@@ -20,7 +20,7 @@ source_set("speedreader") {
 
   deps = [
     "//base",
-    "//brave/browser:browser_process",
+    "//BnesBrowser/browser:browser_process",
     "//chrome/browser:browser_process",
     "//chrome/browser/content_settings:content_settings_factory",
     "//chrome/browser/profiles",
@@ -31,9 +31,9 @@ source_set("speedreader") {
   ]
 
   public_deps = [
-    "//brave/components/speedreader",
-    "//brave/components/speedreader/common",
-    "//brave/components/speedreader/common:mojom",
+    "//BnesBrowser/components/speedreader",
+    "//BnesBrowser/components/speedreader/common",
+    "//BnesBrowser/components/speedreader/common:mojom",
   ]
 }
 
@@ -47,12 +47,12 @@ if (!is_android) {
 
     deps = [
       ":speedreader",
-      "//brave/app:generate_command_metadata",
-      "//brave/browser/speedreader",
-      "//brave/browser/ui/speedreader",
-      "//brave/browser/ui/views/frame/split_view",
-      "//brave/components/ai_chat/core/common/buildflags",
-      "//brave/components/brave_wallet/common/buildflags",
+      "//BnesBrowser/app:generate_command_metadata",
+      "//BnesBrowser/browser/speedreader",
+      "//BnesBrowser/browser/ui/speedreader",
+      "//BnesBrowser/browser/ui/views/frame/split_view",
+      "//BnesBrowser/components/ai_chat/core/common/buildflags",
+      "//BnesBrowser/components/brave_wallet/common/buildflags",
       "//chrome/browser",
       "//chrome/browser/ui",
       "//chrome/browser/ui:ui_features",
@@ -66,11 +66,11 @@ if (!is_android) {
     ]
 
     if (enable_ai_chat) {
-      deps += [ "//brave/components/ai_chat/core/common" ]
+      deps += [ "//BnesBrowser/components/ai_chat/core/common" ]
     }
 
     if (enable_brave_wallet) {
-      deps += [ "//brave/components/brave_wallet/browser:utils" ]
+      deps += [ "//BnesBrowser/components/brave_wallet/browser:utils" ]
     }
   }
 }

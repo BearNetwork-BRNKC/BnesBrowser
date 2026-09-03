@@ -11,8 +11,8 @@
 #include "base/containers/flat_map.h"
 #include "base/memory/raw_ptr.h"
 #include "base/observer_list.h"
-#include "brave/components/brave_origin/brave_origin_policy_info.h"
-#include "brave/components/brave_policy/brave_policy_observer.h"
+#include "BnesBrowser/components/brave_origin/brave_origin_policy_info.h"
+#include "BnesBrowser/components/brave_policy/brave_policy_observer.h"
 
 class PrefService;
 

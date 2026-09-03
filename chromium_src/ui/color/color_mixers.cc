@@ -3,8 +3,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/ui/color/brave_ref_color_mixer.h"
-#include "brave/ui/color/nala/nala_color_mixer.h"
+#include "BnesBrowser/ui/color/brave_ref_color_mixer.h"
+#include "BnesBrowser/ui/color/nala/nala_color_mixer.h"
 #include "ui/color/ref_color_mixer.h"
 
 #define AddRefColorMixer(...)         \

@@ -11,12 +11,12 @@
 
 #include "base/memory/raw_ptr.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/components/brave_education/buildflags.h"
+#include "BnesBrowser/components/brave_education/buildflags.h"
 #include "chrome/browser/shell_integration.h"
 #include "content/public/browser/web_ui_message_handler.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_EDUCATION)
-#include "brave/browser/ui/webui/brave_education/brave_education_server_checker.h"
+#include "BnesBrowser/browser/ui/webui/brave_education/brave_education_server_checker.h"
 #endif
 
 class Profile;

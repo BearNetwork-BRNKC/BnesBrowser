@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/ai_chat/core/browser/sync/ai_chat_sync_bridge.h"
+#include "BnesBrowser/components/ai_chat/core/browser/sync/ai_chat_sync_bridge.h"
 
 #include <algorithm>
 #include <memory>
@@ -13,10 +13,10 @@
 #include <utility>
 
 #include "base/strings/strcat.h"
-#include "brave/components/ai_chat/core/browser/ai_chat_database.h"
-#include "brave/components/ai_chat/core/browser/sync/ai_chat_sync_conversions.h"
-#include "brave/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
-#include "brave/components/sync/protocol/ai_chat_specifics.pb.h"
+#include "BnesBrowser/components/ai_chat/core/browser/ai_chat_database.h"
+#include "BnesBrowser/components/ai_chat/core/browser/sync/ai_chat_sync_conversions.h"
+#include "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom.h"
+#include "BnesBrowser/components/sync/protocol/ai_chat_specifics.pb.h"
 #include "components/sync/base/deletion_origin.h"
 #include "components/sync/model/data_type_local_change_processor.h"
 #include "components/sync/model/metadata_batch.h"

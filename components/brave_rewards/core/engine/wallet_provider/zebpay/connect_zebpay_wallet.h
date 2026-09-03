@@ -8,9 +8,9 @@
 
 #include <string>
 
-#include "brave/components/brave_rewards/core/engine/endpoints/zebpay/post_oauth_zebpay.h"
-#include "brave/components/brave_rewards/core/engine/rewards_callbacks.h"
-#include "brave/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/endpoints/zebpay/post_oauth_zebpay.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/rewards_callbacks.h"
+#include "BnesBrowser/components/brave_rewards/core/engine/wallet_provider/connect_external_wallet.h"
 
 namespace brave_rewards::internal {
 class RewardsEngine;

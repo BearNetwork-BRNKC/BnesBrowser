@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/ios/browser/api/opentabs/brave_tabgenerator_api.h"
+#include "BnesBrowser/ios/browser/api/opentabs/brave_tabgenerator_api.h"
 
 #include <memory>
 

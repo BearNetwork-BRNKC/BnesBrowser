@@ -3,16 +3,16 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/browser/ui/views/page_action/psst_action_controller.h"
+#include "BnesBrowser/browser/ui/views/page_action/psst_action_controller.h"
 
 #include "base/check_deref.h"
 #include "base/memory/weak_ptr.h"
-#include "brave/app/brave_command_ids.h"
-#include "brave/app/vector_icons/vector_icons.h"
-#include "brave/browser/ui/color/brave_color_id.h"
-#include "brave/components/psst/core/common/features.h"
-#include "brave/components/vector_icons/vector_icons.h"
-#include "brave/grit/brave_generated_resources.h"
+#include "BnesBrowser/app/brave_command_ids.h"
+#include "BnesBrowser/app/vector_icons/vector_icons.h"
+#include "BnesBrowser/browser/ui/color/brave_color_id.h"
+#include "BnesBrowser/components/psst/core/common/features.h"
+#include "BnesBrowser/components/vector_icons/vector_icons.h"
+#include "BnesBrowser/grit/brave_generated_resources.h"
 #include "cc/paint/paint_flags.h"
 #include "chrome/browser/ui/actions/chrome_action_id.h"
 #include "chrome/browser/ui/color/chrome_color_id.h"

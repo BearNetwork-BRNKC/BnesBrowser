@@ -10,7 +10,7 @@
 
 #include "base/component_export.h"
 #include "base/observer_list_types.h"
-#include "brave/components/commander/browser/commander_item_model.h"
+#include "BnesBrowser/components/commander/browser/commander_item_model.h"
 
 namespace commander {
 class COMPONENT_EXPORT(COMMANDER_BROWSER) CommanderFrontendDelegate {

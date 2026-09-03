@@ -3,19 +3,19 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/browser/misc_metrics/page_metrics_tab_helper.h"
+#include "BnesBrowser/browser/misc_metrics/page_metrics_tab_helper.h"
 
 #include "base/check_is_test.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/string_util.h"
-#include "brave/browser/brave_browser_process.h"
-#include "brave/browser/brave_search/backup_results_service_impl.h"
-#include "brave/browser/misc_metrics/media_session_metrics_impl.h"
-#include "brave/browser/misc_metrics/process_misc_metrics.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service.h"
-#include "brave/browser/misc_metrics/profile_misc_metrics_service_factory.h"
-#include "brave/components/misc_metrics/navigation_source_metrics.h"
-#include "brave/components/misc_metrics/page_metrics.h"
+#include "BnesBrowser/browser/brave_browser_process.h"
+#include "BnesBrowser/browser/brave_search/backup_results_service_impl.h"
+#include "BnesBrowser/browser/misc_metrics/media_session_metrics_impl.h"
+#include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service.h"
+#include "BnesBrowser/browser/misc_metrics/profile_misc_metrics_service_factory.h"
+#include "BnesBrowser/components/misc_metrics/navigation_source_metrics.h"
+#include "BnesBrowser/components/misc_metrics/page_metrics.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/profiles/profile.h"

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "brave/ios/web_view/public/cwv_favicon_status.h"
+#include "BnesBrowser/ios/web_view/public/cwv_favicon_status.h"
 
 namespace web {
 struct FaviconStatus;

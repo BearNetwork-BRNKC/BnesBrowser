@@ -3,33 +3,33 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-#include "brave/utility/brave_content_utility_client.h"
+#include "BnesBrowser/utility/brave_content_utility_client.h"
 
 #include <memory>
 #include <utility>
 
-#include "brave/components/brave_rewards/core/buildflags/buildflags.h"
-#include "brave/components/brave_wallet/common/buildflags/buildflags.h"
-#include "brave/components/tor/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_rewards/core/buildflags/buildflags.h"
+#include "BnesBrowser/components/brave_wallet/common/buildflags/buildflags.h"
+#include "BnesBrowser/components/tor/buildflags/buildflags.h"
 #include "mojo/public/cpp/bindings/service_factory.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/utility/importer/brave_profile_import_impl.h"
+#include "BnesBrowser/utility/importer/brave_profile_import_impl.h"
 #endif
 
 #if BUILDFLAG(ENABLE_TOR)
-#include "brave/components/services/tor/public/interfaces/tor.mojom.h"
-#include "brave/components/services/tor/tor_launcher_impl.h"
+#include "BnesBrowser/components/services/tor/public/interfaces/tor.mojom.h"
+#include "BnesBrowser/components/services/tor/tor_launcher_impl.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_REWARDS)
-#include "brave/components/services/bat_rewards/public/interfaces/rewards_engine_factory.mojom.h"
-#include "brave/components/services/bat_rewards/rewards_engine_factory.h"
+#include "BnesBrowser/components/services/bat_rewards/public/interfaces/rewards_engine_factory.mojom.h"
+#include "BnesBrowser/components/services/bat_rewards/rewards_engine_factory.h"
 #endif
 
 #if BUILDFLAG(ENABLE_BRAVE_WALLET)
-#include "brave/components/services/brave_wallet/brave_wallet_utils_service_impl.h"
-#include "brave/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
+#include "BnesBrowser/components/services/brave_wallet/brave_wallet_utils_service_impl.h"
+#include "BnesBrowser/components/services/brave_wallet/public/mojom/brave_wallet_utils_service.mojom.h"
 #endif
 
 namespace {

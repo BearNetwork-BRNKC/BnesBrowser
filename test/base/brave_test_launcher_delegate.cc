@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/test/base/brave_test_launcher_delegate.h"
+#include "BnesBrowser/test/base/brave_test_launcher_delegate.h"
 
 #include "build/build_config.h"
 
 #if !BUILDFLAG(IS_ANDROID)
-#include "brave/app/brave_main_delegate.h"
-#include "brave/browser/ui/brave_browser.h"
+#include "BnesBrowser/app/brave_main_delegate.h"
+#include "BnesBrowser/browser/ui/brave_browser.h"
 #endif
 
 #if BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
