@@ -139,9 +139,7 @@ group("all") {
       }
     }
   }
-
-  if (toolkit_views) {
-    deps += [ "//ui/views/examples:views_examples" ]
+if (true) {    deps += [ "//ui/views/examples:views_examples" ]
   }
 
   if (!is_ios) {

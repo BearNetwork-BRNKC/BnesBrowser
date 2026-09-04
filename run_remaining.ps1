@@ -8,7 +8,7 @@
 # Execution:
 #
 #   pwsh -NoProfile -ExecutionPolicy Bypass `
-#       -File S:\Ai_Agent\BNES\BnesBrowser\run_remaining.ps1 `
+#       -File E:\BnesBrowser-build\src\BnesBrowser\run_remaining.ps1 `
 #       -SafeBuild
 #
 # Optional:
@@ -67,7 +67,7 @@
 #   This system intentionally refuses to guess when upstream
 #   changes cross a BNES ownership boundary.
 #
-# pwsh -NoProfile -ExecutionPolicy Bypass ` -File S:\Ai_Agent\BNES\BnesBrowser\run_remaining.ps1 `-SafeBuild
+# pwsh -NoProfile -ExecutionPolicy Bypass ` -File E:\BnesBrowser-build\src\BnesBrowser\run_remaining.ps1 `-SafeBuild
 #
 # ============================================================
 
@@ -96,7 +96,7 @@ $OutName = 'Release_GN'
 $SetupName = 'BnesBrowser_setup.exe'
 $SetupPath = Join-Path $BuildRoot $SetupName
 
-$BnesCore = 'S:\Ai_Agent\BNES\BnesBrowser'
+$BnesCore = 'E:\BnesBrowser-build\src\BnesBrowser'
 
 $BnesStateDir = Join-Path $BuildRoot '.bnes'
 $ManifestRoot = Join-Path $BnesStateDir 'manifests'
@@ -122,6 +122,23 @@ $TransactionalMode = $SafeBuild -or
 if ($TransactionalMode) {
     $env:BNES_SAFE_BUILD = '1'
 }
+
+# ============================================================
+# CHROMIUM 152 BASELINE PINNING (被動式維護與版本鎖定)
+#
+# 政策：
+#   BnesBrowser 固定使用本地 Chromium 152.0.7977.64 基準線。
+#   除主動且明確升級需求外，一律停用任何對外連網 sync 與 hooks 更新，
+#   確保所有建置完全基於當前本地代碼解決衝突，避免上游漂移。
+# ============================================================
+
+$env:SKIP_SYNC = '1'
+$env:SKIP_HOOKS = '1'
+$env:DEPOT_TOOLS_UPDATE = '0'
+$env:CHROMIUM_BUILDTOOLS_PATH = (Join-Path $SrcDir 'buildtools')
+
+Write-Host '[PIN] Chromium 基準版本鎖定：152.0.7977.64 (被動式離線建置模式)' -ForegroundColor Cyan
+
 
 # ============================================================
 # ENVIRONMENT HELPERS
@@ -423,7 +440,7 @@ function Get-GitState {
 # SOURCE OWNERSHIP
 #
 # BNES canonical source:
-#   S:\Ai_Agent\BNES\BnesBrowser
+#   E:\BnesBrowser-build\src\BnesBrowser
 #
 # Build projection:
 #   E:\BnesBrowser-build\src\BnesBrowser
@@ -840,6 +857,14 @@ function Test-BnesCanonicalIntegrity {
 
     Write-Stage '驗證 BNES canonical source 完整性'
 
+    $canonicalFull = [System.IO.Path]::GetFullPath($BnesCore).TrimEnd('\', '/')
+    $projectionFull = [System.IO.Path]::GetFullPath($BraveDir).TrimEnd('\', '/')
+
+    if ($canonicalFull.Equals($projectionFull, [System.StringComparison]::OrdinalIgnoreCase)) {
+        Write-Info "Canonical source 與 projection 目錄相同（In-place 模式），由 Protected Overlay Guard 負責邊界保護，略過全目錄 Hash 比對。"
+        return
+    }
+
     $currentHash =
         Get-DirectoryManifestHash -Root $BnesCore
 
@@ -923,6 +948,14 @@ function Sync-BnesTree {
 
     if (-not (Test-Path -LiteralPath $BnesCore -PathType Container)) {
         throw "BNES canonical source 不存在：$BnesCore"
+    }
+
+    $canonicalFull = [System.IO.Path]::GetFullPath($BnesCore).TrimEnd('\', '/')
+    $projectionFull = [System.IO.Path]::GetFullPath($BraveDir).TrimEnd('\', '/')
+
+    if ($canonicalFull.Equals($projectionFull, [System.StringComparison]::OrdinalIgnoreCase)) {
+        Write-Info "Canonical source 與 projection 目錄相同 ($canonicalFull)，略過自我投影複製 (In-place build mode)。"
+        return
     }
 
     if (-not (Test-Path -LiteralPath $BraveDir -PathType Container)) {
@@ -1196,12 +1229,14 @@ function Initialize-BnesEnvironment {
     Write-Stage '初始化 BNES build environment'
 
     $depotTools = @(
-        Join-Path $BraveDir 'vendor\depot_tools'
-        Join-Path $SrcDir 'third_party\depot_tools'
-    ) |
-        Where-Object {
-            Test-Path -LiteralPath $_ -PathType Container
-        }
+        @(
+            Join-Path $BraveDir 'vendor\depot_tools'
+            Join-Path $SrcDir 'third_party\depot_tools'
+        ) |
+            Where-Object {
+                Test-Path -LiteralPath $_ -PathType Container
+            }
+    )
 
     if ($depotTools.Count -gt 0) {
         $env:PATH =
@@ -1210,20 +1245,23 @@ function Initialize-BnesEnvironment {
 
     $env:DEPOT_TOOLS_WIN_TOOLCHAIN = '0'
     $env:GYP_MSVS_VERSION = '2022'
+    $env:_CL_ = '/utf-8'
 
     $pythonPaths = @(
-        Join-Path $BraveDir 'script'
-        Join-Path $SrcDir 'tools\grit\grit\extern'
-        Join-Path $BraveDir 'vendor\requests'
-        Join-Path $BraveDir 'third_party\cryptography'
-        Join-Path $BraveDir 'third_party\macholib'
-        Join-Path $SrcDir 'build'
-        Join-Path $SrcDir 'third_party\depot_tools'
-        $env:PYTHONPATH
-    ) |
-        Where-Object {
-            -not [string]::IsNullOrWhiteSpace($_)
-        }
+        @(
+            Join-Path $BraveDir 'script'
+            Join-Path $SrcDir 'tools\grit\grit\extern'
+            Join-Path $BraveDir 'vendor\requests'
+            Join-Path $BraveDir 'third_party\cryptography'
+            Join-Path $BraveDir 'third_party\macholib'
+            Join-Path $SrcDir 'build'
+            Join-Path $SrcDir 'third_party\depot_tools'
+            $env:PYTHONPATH
+        ) |
+            Where-Object {
+                -not [string]::IsNullOrWhiteSpace($_)
+            }
+    )
 
     $env:PYTHONPATH =
         $pythonPaths -join ';'
@@ -1235,6 +1273,12 @@ function Initialize-BnesEnvironment {
         Join-Path `
             $SrcDir `
             'third_party\rust-toolchain'
+
+    $upstreamBraveDir = Join-Path $SrcDir 'brave'
+    if (-not (Test-Path -LiteralPath $upstreamBraveDir)) {
+        New-Item -ItemType Junction -Path $upstreamBraveDir -Target $BnesBrowserDir | Out-Null
+        Write-Ok "已建立上游相容 Junction: src\brave -> src\BnesBrowser"
+    }
 
     Write-Ok 'Build environment 初始化完成。'
 }
@@ -1615,6 +1659,12 @@ enable_pseudolocales = false
             throw "redirect_cc gn gen 失敗。EXIT=$gnExit"
         }
 
+        $genBrave = Join-Path $redirectDir 'gen\brave'
+        $genBnes = Join-Path $redirectDir 'gen\BnesBrowser'
+        if ((Test-Path -LiteralPath $genBrave) -and (-not (Test-Path -LiteralPath $genBnes))) {
+            New-Item -ItemType Junction -Path $genBnes -Target $genBrave -Force | Out-Null
+        }
+
         Write-Info "$ninjaCmd -C out/redirect_cc $ninjaTarget -j$jobs"
 
         & $ninjaCmd `
@@ -1829,6 +1879,22 @@ function Invoke-GnGen {
     }
 
     Write-Ok 'GN generation 完成。'
+
+    $genRoot = Join-Path $OutDir 'gen'
+    $genBrave = Join-Path $genRoot 'brave'
+    $genBnes = Join-Path $genRoot 'BnesBrowser'
+    if (Test-Path -LiteralPath $genBrave) {
+        if (-not (Test-Path -LiteralPath $genBnes)) {
+            New-Item -ItemType Junction -Path $genBnes -Target $genBrave -Force | Out-Null
+        } else {
+            Get-ChildItem -LiteralPath $genBrave -Directory | ForEach-Object {
+                $targetDir = Join-Path $genBnes $_.Name
+                if (-not (Test-Path -LiteralPath $targetDir)) {
+                    New-Item -ItemType Junction -Path $targetDir -Target $_.FullName -Force | Out-Null
+                }
+            }
+        }
+    }
 
     return 0
 }
@@ -2448,16 +2514,17 @@ $braveLitDeps = @(
     $buildconfigGn = Join-Path $SrcDir 'build\config\BUILDCONFIG.gn'
     if (Test-Path -LiteralPath $buildconfigGn -PathType Leaf) {
         $bc = [System.IO.File]::ReadAllText($buildconfigGn)
-        if ($bc -notmatch '//brave/build:compiler') {
-            $bcPatched = [regex]::Replace(
-                $bc,
+        $bcCleaned = $bc -replace '\s*"//BnesBrowser/build:compiler",\r?\n', "`n"
+        if ($bcCleaned -notmatch '//brave/build:compiler') {
+            $bcCleaned = [regex]::Replace(
+                $bcCleaned,
                 '(default_compiler_configs = \[)(\r?\n)',
                 { param($m) $m.Groups[1].Value + $m.Groups[2].Value + '  "//brave/build:compiler",' + $m.Groups[2].Value }
             )
-            if ($bcPatched -ne $bc) {
-                [System.IO.File]::WriteAllText($buildconfigGn, $bcPatched, $utf8NoBomChromium)
-                Write-Ok 'Patched build/config/BUILDCONFIG.gn with //brave/build:compiler (idempotent).'
-            }
+        }
+        if ($bcCleaned -ne $bc) {
+            [System.IO.File]::WriteAllText($buildconfigGn, $bcCleaned, $utf8NoBomChromium)
+            Write-Ok 'Patched build/config/BUILDCONFIG.gn with //brave/build:compiler (idempotent).'
         }
     }
 
@@ -2481,7 +2548,7 @@ $braveLitDeps = @(
     if (Test-Path -LiteralPath $searchEnginesBuild -PathType Leaf) {
         $se = [System.IO.File]::ReadAllText($searchEnginesBuild)
         if ($se -notmatch 'brave_third_party_search_engines_data_prepopulated_engines') {
-            $seLine = '  import("//brave/components/search_engines/sources.gni") additional_sources = brave_third_party_search_engines_data_prepopulated_engines_sources deps += brave_third_party_search_engines_data_prepopulated_engines_deps'
+            $seLine = '  import("//BnesBrowser/components/search_engines/sources.gni") additional_sources = brave_third_party_search_engines_data_prepopulated_engines_sources deps += brave_third_party_search_engines_data_prepopulated_engines_deps'
             $sePatched = [regex]::Replace(
                 $se,
                 '(json_to_struct\("prepopulated_engines"\) \{[\s\S]*?deps = \[ "//base" \]\r?\n)(\})',
@@ -2490,6 +2557,78 @@ $braveLitDeps = @(
             if ($sePatched -ne $se) {
                 [System.IO.File]::WriteAllText($searchEnginesBuild, $sePatched, $utf8NoBomChromium)
                 Write-Ok 'Patched third_party/search_engines_data/BUILD.gn with Brave engines (idempotent).'
+            }
+        }
+    }
+
+    $serdeWrapperBuild = Join-Path $SrcDir 'third_party\rust\serde_json_lenient\v0_2\wrapper\BUILD.gn'
+    if (Test-Path -LiteralPath $serdeWrapperBuild -PathType Leaf) {
+        $swb = [System.IO.File]::ReadAllText($serdeWrapperBuild)
+        if ($swb -notmatch 'enable_json_64bit_int_support') {
+            $swbContent = @'
+# Copyright 2022 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/rust/rust_static_library.gni")
+import("//BnesBrowser/components/json/buildflags/features.gni")
+
+rust_static_library("wrapper") {
+  crate_root = "lib.rs"
+  allow_unsafe = true
+  sources = [
+    "lib.rs",
+    "visitor.rs",
+  ]
+
+  cxx_bindings = [ "lib.rs" ]
+
+  public_deps = [
+    ":wrapper_functions",
+    "//BnesBrowser/components/json/buildflags",
+  ]
+  deps = [
+    "//third_party/rust/serde/v1:lib",
+    "//third_party/rust/serde_json_lenient/v0_2:lib",
+  ]
+
+  if (enable_json_64bit_int_support) {
+    features = [ "json_64bit_int_support" ]
+    sources += [ "//brave/chromium_src/third_party/rust/serde_json_lenient/v0_2/wrapper/large_integers.rs" ]
+    cxx_bindings += [ "//brave/chromium_src/third_party/rust/serde_json_lenient/v0_2/wrapper/large_integers.rs" ]
+  }
+}
+
+source_set("wrapper_functions") {
+  visibility = [ ":*" ]
+  deps = [
+    "//build/rust:cxx_cppdeps",
+    "//BnesBrowser/components/json/buildflags",
+  ]
+  sources = [ "functions.h" ]
+}
+'@
+            $utf8NoBomSerde = New-Object System.Text.UTF8Encoding($false)
+            [System.IO.File]::WriteAllText($serdeWrapperBuild, $swbContent, $utf8NoBomSerde)
+            Write-Ok 'Patched third_party/rust/serde_json_lenient/v0_2/wrapper/BUILD.gn with Brave json support (idempotent).'
+        }
+    }
+
+    $baseVersionInfoBuild = Join-Path $SrcDir 'base\version_info\BUILD.gn'
+    if (Test-Path -LiteralPath $baseVersionInfoBuild -PathType Leaf) {
+        $bv = [System.IO.File]::ReadAllText($baseVersionInfoBuild)
+        if ($bv -notmatch 'components/version_info') {
+            $bvPatched = $bv -replace 'public_deps = \[\r?\n\s*":generate_version_info",\r?\n\s*"//base",\r?\n\s*\]', @'
+  public_deps = [
+    ":generate_version_info",
+    "//base",
+    "//BnesBrowser/components/version_info",
+  ]
+  configs += [ "//BnesBrowser/build:version" ]
+'@
+            if ($bvPatched -ne $bv) {
+                [System.IO.File]::WriteAllText($baseVersionInfoBuild, $bvPatched, $utf8NoBomChromium)
+                Write-Ok 'Patched base/version_info/BUILD.gn with BnesBrowser version_info (idempotent).'
             }
         }
     }
@@ -2515,7 +2654,7 @@ $braveLitDeps = @(
 #   3. Deletes the stale generated regional_settings.cc / .h
 #      so that ninja regenerates them from the sanitized JSON.
 #
-# BNES canonical source (S:\Ai_Agent\BNES\BnesBrowser) is NEVER modified.
+# BNES canonical source (E:\BnesBrowser-build\src\BnesBrowser) is NEVER modified.
 # Only the disposable build tree (E:\BnesBrowser-build) is touched.
 # This patch is idempotent: a healthy tree is a no-op.
 # ============================================================
@@ -2681,7 +2820,16 @@ function Repair-GnUnresolvedDependencies {
         $original = $content
         $utf8     = New-Object System.Text.UTF8Encoding($false)
 
-        if ($content -notmatch '"mojo_bindings_js"') {
+        # 若已有 mojom("mojo_bindings")，則移除多餘的 compatibility stub 避免衝突
+        if ($content -match 'mojom\("mojo_bindings"\)') {
+            $content = $content -replace '(?s)\r?\n# BNES compatibility stub: mojo_bindings_js.*?\r?\n\}\r?\n?', ''
+            if ($content -ne $original) {
+                [System.IO.File]::WriteAllText($composeboxBgn, $content, $utf8)
+                $repaired++
+                Write-Ok 'Cleaned redundant mojo_bindings_js stub from composebox BUILD.gn.'
+            }
+        }
+        elseif ($content -notmatch '"mojo_bindings_js"') {
             $content += @'
 
 # BNES compatibility stub: mojo_bindings_js for composebox.
@@ -2723,14 +2871,12 @@ group("mojo_bindings_js") {
         $original = $content
         $utf8     = New-Object System.Text.UTF8Encoding($false)
 
+        # 移除任何舊的 BNES compatibility stub: mojo_bindings_js
+        $content = $content -replace '(?s)\r?\n# BNES compatibility stub: mojo_bindings_js.*?\r?\n\}\r?\n?', ''
+
         if ($content -match '"mojo_bindings_js"') {
-
-            # Target exists. If there's a visibility list that does NOT already
-            # include //brave/*, insert it after the first "[" of that list.
-            if ($content -match 'mojo_bindings_js' -and
-                $content -match 'visibility\s*=\s*\[' -and
+            if ($content -match 'visibility\s*=\s*\[' -and
                 $content -notmatch '"//brave/\*"') {
-
                 $content = [regex]::Replace(
                     $content,
                     '(visibility\s*=\s*\[)',
@@ -2741,22 +2887,10 @@ group("mojo_bindings_js") {
                 $repaired++
             }
         }
-        else {
-            # Target absent in this Chromium version — append a stub group.
-            $content += @'
-
-# BNES compatibility stub: mojo_bindings_js absent in pinned Chromium.
-# Satisfies brave_new_tab_page_refresh and brave_new_tab_ui dependencies.
-group("mojo_bindings_js") {
-  visibility = [ "//brave/*" ]
-}
-'@
-            $repaired++
-        }
 
         if ($content -ne $original) {
             [System.IO.File]::WriteAllText($omniboxBrowserBgn, $content, $utf8)
-            Write-Ok 'Patched components/omnibox/browser mojo_bindings_js.'
+            Write-Ok 'Cleaned/Patched components/omnibox/browser mojo_bindings_js (idempotent).'
         }
         else {
             Write-Info 'components/omnibox/browser: no patch needed.'
@@ -2794,28 +2928,17 @@ for p in sys.argv[1:]:
         $original = $content
         $utf8     = New-Object System.Text.UTF8Encoding($false)
 
-        # If a previous stub group() exists, remove it first
-        if ($content -match 'group\("delta_installer_unsigned"\)') {
+        # 移除任何舊的 action 或 group delta_installer_unsigned stub
+        if ($content -match 'generate_mini_installer\("delta_installer_unsigned"\)') {
+            $content = $content -replace '(?s)\r?\n# BNES compatibility stub: delta_installer_unsigned.*?\r?\n\}\r?\n?', ''
+            $content = $content -replace '(?s)action\("delta_installer_unsigned"\)\s*\{[^}]*\}', ''
             $content = $content -replace '(?s)group\("delta_installer_unsigned"\)\s*\{[^}]*\}', ''
         }
 
-        if ($content -notmatch '"delta_installer_unsigned"') {
-            $content += @'
-
-# BNES compatibility stub: delta_installer_unsigned.
-# brave/build/win:signed_delta_installer depends on this target and
-# expects $root_out_dir/delta_installer_unsigned.exe as input.
-# Satisfies GN dependency graph validation in skip_signing builds.
-action("delta_installer_unsigned") {
-  script = "//build/touch.py"
-  outputs = [ "$root_out_dir/delta_installer_unsigned.exe" ]
-  args = [ rebase_path(outputs[0], root_build_dir) ]
-  visibility = [ "//brave/build/win:*" ]
-}
-'@
+        if ($content -ne $original) {
             [System.IO.File]::WriteAllText($miniInstallerBgn, $content, $utf8)
             $repaired++
-            Write-Ok 'Added delta_installer_unsigned action stub to mini_installer BUILD.gn.'
+            Write-Ok 'Cleaned delta_installer_unsigned stub from mini_installer BUILD.gn.'
         }
     }
     else {
@@ -2879,32 +3002,36 @@ function Invoke-NinjaBuild {
             '12'
         }
 
-    $clangCl =
-        Join-Path `
-            $SrcDir `
-            'third_party\llvm-build\Release+Asserts\bin\clang-cl.exe'
-
-    if (Test-Path -LiteralPath $clangCl -PathType Leaf) {
-
-        $env:CC = $clangCl
-        $env:CXX = $clangCl
-        $env:CFLAGS = '/EHsc'
-        $env:CXXFLAGS = '/EHsc'
-    }
-
-    Remove-Item `
-        Env:CL `
-        -ErrorAction SilentlyContinue
-
-    Remove-Item `
-        Env:_CL_ `
-        -ErrorAction SilentlyContinue
+    Remove-Item Env:CL -ErrorAction SilentlyContinue
+    Remove-Item Env:_CL_ -ErrorAction SilentlyContinue
+    Remove-Item Env:CFLAGS -ErrorAction SilentlyContinue
+    Remove-Item Env:CXXFLAGS -ErrorAction SilentlyContinue
+    Remove-Item Env:CC -ErrorAction SilentlyContinue
+    Remove-Item Env:CXX -ErrorAction SilentlyContinue
 
     $ninjaCmd =
         Resolve-Ninja
 
     if (-not $ninjaCmd) {
         throw '找不到 ninja.exe / autoninja.bat。'
+    }
+
+    $genBnesComps = Join-Path $OutDir 'gen\BnesBrowser\components'
+    $genBraveComps = Join-Path $OutDir 'gen\brave\components'
+    if (Test-Path -LiteralPath $genBnesComps -PathType Container) {
+        if (-not (Test-Path -LiteralPath $genBraveComps -PathType Container)) {
+            New-Item -ItemType Directory -Path $genBraveComps -Force | Out-Null
+        }
+        Get-ChildItem -LiteralPath $genBnesComps -Directory | ForEach-Object {
+            $dest = Join-Path $genBraveComps $_.Name
+            if (-not (Test-Path -LiteralPath $dest)) {
+                New-Item -ItemType Junction -Path $dest -Target $_.FullName | Out-Null
+            } elseif ((Get-Item -LiteralPath $dest).LinkType -ne 'Junction') {
+                Copy-Item -Path "$dest\*" -Destination $_.FullName -Recurse -Force -ErrorAction SilentlyContinue
+                Remove-Item -Path $dest -Recurse -Force -ErrorAction SilentlyContinue
+                New-Item -ItemType Junction -Path $dest -Target $_.FullName -Force -ErrorAction SilentlyContinue | Out-Null
+            }
+        }
     }
 
     Write-Info "$ninjaCmd -C out/$OutName create_dist -j$jobs"
@@ -3175,11 +3302,11 @@ function Invoke-TransactionFailure {
         [Parameter(Mandatory = $true)]
         [System.Management.Automation.ErrorRecord]$ErrorRecord,
 
-        [Parameter(Mandatory = $true)]
-        [hashtable]$State,
+        [Parameter(Mandatory = $false)]
+        [hashtable]$State = $null,
 
-        [Parameter(Mandatory = $true)]
-        [hashtable]$CanonicalManifest
+        [Parameter(Mandatory = $false)]
+        [hashtable]$CanonicalManifest = $null
     )
 
     Write-Host ''

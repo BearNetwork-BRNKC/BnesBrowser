@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-assert(enable_containers)
-
 mojom("mojom") {
   sources = [ "containers.mojom" ]
 

@@ -6,9 +6,6 @@
 import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
-assert(enable_speedreader)
-assert(toolkit_views)
-
 source_set("speedreader") {
   sources = [
     "reader_mode_bubble.cc",

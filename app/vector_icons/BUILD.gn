@@ -28,9 +28,7 @@ aggregate_vector_icons("brave_vector_icons") {
     "user_menu_guest.icon",
     "web_discovery_infobar_close_button.icon",
   ]
-
-  if (toolkit_views) {
-    sources += [
+if (true) {    sources += [
       "sidebar_edit.icon",
       "sidebar_item_added_check.icon",
       "sidebar_items_down_arrow.icon",

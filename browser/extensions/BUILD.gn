@@ -22,8 +22,6 @@ import("//build/config/features.gni")
 import("//build/config/ui.gni")
 import("//components/gcm_driver/config.gni")
 
-assert(toolkit_views)
-
 source_set("component_loader") {
   sources = [
     "brave_component_loader.cc",

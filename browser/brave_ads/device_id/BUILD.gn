@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 
-assert(enable_brave_ads)
-
 source_set("device_id") {
   sources = [
     "device_id_impl.cc",

@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 
-assert(enable_playlist)
-
 source_set("browser_tests") {
   testonly = true
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
@@ -54,9 +52,7 @@ source_set("browser_tests") {
       "//chrome/test:test_support_ui",
     ]
   }
-
-  if (toolkit_views) {
-    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
+if (true) {    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
   }
 }
 

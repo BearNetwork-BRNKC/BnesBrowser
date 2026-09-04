@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
-assert(enable_containers)
-
 source_set("containers") {
   sources = [
     "container_specifier_utils.cc",

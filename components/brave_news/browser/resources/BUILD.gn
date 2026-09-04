@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 import("//BnesBrowser/components/common/typescript.gni")
 
-assert(enable_brave_news)
-
 transpile_web_ui("brave_news_internals") {
   output_module = false
   entry_points = [ [

@@ -9,8 +9,6 @@ import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 import("//ui/webui/resources/tools/generate_grd.gni")
 
-assert(enable_brave_ai_chat_agent_profile)
-
 resource_name = "ai_chat_agent_new_tab_page"
 
 # js resources

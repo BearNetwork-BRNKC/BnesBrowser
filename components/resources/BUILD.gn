@@ -78,12 +78,6 @@ brave_grit("static_resources") {
   }
 
   defines = [
-    "enable_ai_chat=$enable_ai_chat",
-    "enable_brave_vpn=$enable_brave_vpn",
-    "enable_brave_wallet=$enable_brave_wallet",
-    "enable_email_aliases=$enable_email_aliases",
-    "enable_playlist_webui=$enable_playlist_webui",
-    "enable_speedreader=$enable_speedreader",
   ]
 
   output_dir = "$root_gen_dir/components"
@@ -226,15 +220,6 @@ brave_grit("strings") {
   }
 
   defines = [
-    "enable_ai_chat=$enable_ai_chat",
-    "enable_brave_ai_chat_agent_profile=$enable_brave_ai_chat_agent_profile",
-    "enable_ai_chat_tab_management_tool=$enable_ai_chat_tab_management_tool",
-    "enable_email_aliases=$enable_email_aliases",
-    "enable_containers=$enable_containers",
-    "enable_speedreader=$enable_speedreader",
-    "enable_tor=$enable_tor",
-    "enable_brave_vpn=$enable_brave_vpn",
-    "enable_psst=$enable_psst",
   ]
 
   foreach(locale, all_chrome_locales) {

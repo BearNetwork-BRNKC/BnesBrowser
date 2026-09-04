@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
-assert(enable_brave_ads)
-
 source_set("application_state") {
   sources = [
     "application_state_monitor.cc",

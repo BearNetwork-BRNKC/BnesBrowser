@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
-assert(enable_containers)
-
 # Storage partition and session serialization utilities for Containers. This
 # target does NOT depend on //components/sessions and is safe to use from
 # sessions code (e.g. content_serialized_navigation_driver.cc).

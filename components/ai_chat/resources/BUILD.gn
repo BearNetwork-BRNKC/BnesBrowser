@@ -7,8 +7,6 @@ import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//BnesBrowser/components/common/typescript.gni")
 import("//tools/grit/preprocess_if_expr.gni")
 
-assert(enable_ai_chat)
-
 transpile_web_ui("ai_chat_ui") {
   resource_name = "ai_chat_ui"
   entry_points = [

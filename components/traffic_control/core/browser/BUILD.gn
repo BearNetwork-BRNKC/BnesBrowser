@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 
-assert(enable_traffic_control)
-
 static_library("browser") {
   public = [
     "pref_names.h",

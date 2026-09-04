@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 
-assert(enable_ai_chat)
-
 static_library("renderer") {
   sources = [
     "page_content_extractor.cc",

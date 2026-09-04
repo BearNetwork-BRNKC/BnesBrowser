@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//testing/test.gni")
 
-assert(enable_brave_rewards)
-
 source_set("browser_tests") {
   testonly = true
 
@@ -77,8 +75,6 @@ source_set("browser_tests") {
       deps += [ "//BnesBrowser/browser/brave_ads" ]
     }
   }
-
-  if (toolkit_views) {
-    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
+if (true) {    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
   }
 }

@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
-assert(enable_brave_vpn)
-
 # Browser sources shared between v1 and v2 implementations.
 static_library("browser") {
   sources = [

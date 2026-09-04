@@ -41,11 +41,22 @@ export async function verifyWebpackSrcs(options: TranspileWebUiCliOptions) {
   const allRoots = [
     ...srcRoots,
     '//brave/node_modules', // handled via package.json
+    '//BnesBrowser/node_modules',
     outDir, // generated assets are deps and handled by gn already
     ...options.extra_modules.map(makeSourceAbsolute),
   ]
 
-  const notContained = getNotContained(allRoots, files)
+  const expandedRoots: string[] = []
+  for (const root of allRoots) {
+    expandedRoots.push(root)
+    if (root.startsWith('//brave/')) {
+      expandedRoots.push(root.replace('//brave/', '//BnesBrowser/'))
+    } else if (root.startsWith('//BnesBrowser/')) {
+      expandedRoots.push(root.replace('//BnesBrowser/', '//brave/'))
+    }
+  }
+
+  const notContained = getNotContained(expandedRoots, files)
 
   if (notContained.length > 0) {
     console.error('error occured cross-referencing import_paths folders.')

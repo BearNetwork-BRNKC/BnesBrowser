@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//BnesBrowser/components/common/typescript.gni")
 
-assert(enable_brave_ads)
-
 transpile_web_ui("ads_internals_ui") {
   entry_points = [ [
         "ads_internals",

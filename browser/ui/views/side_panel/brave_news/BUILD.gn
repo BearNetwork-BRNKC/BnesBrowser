@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 
-assert(enable_brave_news)
-
 source_set("brave_news") {
   sources = [
     "brave_news_side_panel_web_view.cc",

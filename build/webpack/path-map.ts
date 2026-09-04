@@ -23,6 +23,14 @@ export function generatePathMap(genPath: string): PathMap {
   return {
     // Find files in the current build configurations /gen directory
     'gen': genPath,
+    'gen/brave': [
+      path.join(genPath, 'BnesBrowser'),
+      path.join(genPath, 'brave'),
+    ],
+    'gen/BnesBrowser': [
+      path.join(genPath, 'BnesBrowser'),
+      path.join(genPath, 'brave'),
+    ],
     // Generated resources at this path are available at chrome://resources and
     // whilst webpack will still bundle, we keep the alias to the served path
     // to minimize knowledge of specific gen/ paths and easily allow us to not

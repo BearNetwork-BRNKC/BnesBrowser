@@ -11,8 +11,6 @@ import("//testing/test.gni")
 import("//tools/grit/preprocess_if_expr.gni")
 import("//tools/json_schema_compiler/json_schema_api.gni")
 
-assert(enable_brave_wallet)
-
 preprocess_folder = "preprocessed"
 preprocess_mojo_manifest = "preprocessed_mojo_manifest.json"
 

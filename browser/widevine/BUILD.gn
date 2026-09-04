@@ -9,8 +9,6 @@ if (is_win) {
   import("//BnesBrowser/build/win/sign.gni")
 }
 
-assert(enable_widevine)
-
 # This has circular dependencies on //chrome/browser.
 # https://github.com/brave/brave-browser/issues/10644
 source_set("widevine") {
@@ -113,9 +111,7 @@ source_set("browser_tests") {
 
   sources = []
   deps = []
-
-  if (toolkit_views) {
-    sources += [ "widevine_permission_request_browsertest.cc" ]
+if (true) {    sources += [ "widevine_permission_request_browsertest.cc" ]
     deps += [
       "//BnesBrowser/browser/widevine",
       "//BnesBrowser/components/widevine:constants",

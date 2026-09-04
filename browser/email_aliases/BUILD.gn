@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/email_aliases/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
-assert(enable_email_aliases)
-
 static_library("email_aliases") {
   sources = [
     "email_aliases_service_factory.cc",
@@ -54,9 +52,7 @@ source_set("unit_tests") {
     "//ui/base",
   ]
 }
-
-if (toolkit_views) {
-  source_set("browser_tests") {
+if (true) {  source_set("browser_tests") {
     testonly = true
 
     defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]

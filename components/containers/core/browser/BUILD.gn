@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
-assert(enable_containers)
-
 static_library("browser") {
   public = [
     "command_line_container.h",

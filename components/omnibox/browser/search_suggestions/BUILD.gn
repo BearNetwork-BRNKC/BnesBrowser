@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/omnibox/buildflags/buildflags.gni")
 
-assert(enable_strict_query_check_for_search_suggestions)
-
 source_set("search_suggestions") {
   sources = [
     "query_check_constants.h",

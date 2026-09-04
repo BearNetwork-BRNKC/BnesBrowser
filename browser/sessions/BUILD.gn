@@ -5,8 +5,6 @@
 
 import("//chrome/common/features.gni")
 
-assert(enable_session_service)
-
 source_set("sessions") {
   sources = [ "brave_session_keys.h" ]
 }

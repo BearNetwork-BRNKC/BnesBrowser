@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 import("//build/config/ui.gni")
 
-assert(enable_speedreader)
-
 source_set("speedreader") {
   sources = [
     "page_distiller.cc",

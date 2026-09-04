@@ -44,9 +44,7 @@ source_set("internal") {
       "//BnesBrowser/components/playlist/core/common",
     ]
   }
-
-  if (toolkit_views) {
-    deps += [ "//BnesBrowser/browser/ui/sidebar" ]
+if (true) {    deps += [ "//BnesBrowser/browser/ui/sidebar" ]
   }
 
   if (!is_android) {

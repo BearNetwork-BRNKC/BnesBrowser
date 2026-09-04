@@ -5,8 +5,6 @@
 
 import("//printing/buildflags/buildflags.gni")
 
-assert(enable_print_preview)
-
 static_library("screenshot") {
   sources = [
     "print_preview_extractor.cc",

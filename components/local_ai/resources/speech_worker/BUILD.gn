@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/common/typescript.gni")
 import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
-assert(enable_local_ai)
-
 # Cross-origin-isolated worker that runs the Nemotron 0.6B int4 ONNX model
 # through onnxruntime-web at
 # chrome-untrusted://on-device-speech-recognition-worker/

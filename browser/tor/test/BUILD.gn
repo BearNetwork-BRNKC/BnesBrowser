@@ -9,8 +9,6 @@ import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//extensions/buildflags/buildflags.gni")
 
-assert(enable_tor)
-
 source_set("unit_tests") {
   testonly = true
 
@@ -99,9 +97,7 @@ source_set("browser_tests") {
       "//extensions/common",
     ]
   }
-
-  if (toolkit_views) {
-    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
+if (true) {    deps += [ "//BnesBrowser/browser/ui/views/location_bar" ]
   }
 
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]

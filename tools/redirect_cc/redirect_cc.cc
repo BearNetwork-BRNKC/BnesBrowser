@@ -22,7 +22,11 @@
 #if defined(REDIRECT_CC_AS_REWRAPPER)
 #include "base/base_paths.h"
 #include "base/path_service.h"
+#if __has_include("BnesBrowser/tools/redirect_cc/rewrapper_buildflags.h")
 #include "BnesBrowser/tools/redirect_cc/rewrapper_buildflags.h"  // nogncheck
+#elif __has_include("brave/tools/redirect_cc/rewrapper_buildflags.h")
+#include "brave/tools/redirect_cc/rewrapper_buildflags.h"  // nogncheck
+#endif
 #else  // defined(REDIRECT_CC_AS_REWRAPPER)
 #include "base/environment.h"
 #endif  // defined(REDIRECT_CC_AS_REWRAPPER)
@@ -31,6 +35,8 @@ const base::FilePath::StringViewType kIncludeQuotedFlag =
     FILE_PATH_LITERAL("-iquote");
 const base::FilePath::StringViewType kBraveChromiumSrc =
     FILE_PATH_LITERAL("brave/chromium_src");
+const base::FilePath::StringViewType kBnesChromiumSrc =
+    FILE_PATH_LITERAL("BnesBrowser/chromium_src");
 const base::FilePath::StringViewType kGen = FILE_PATH_LITERAL("gen");
 const base::FilePath::StringViewType kCompileFileFlags[] = {
     FILE_PATH_LITERAL("-c"),
@@ -94,27 +100,29 @@ class RedirectCC {
     // Find directories to work with first.
     for (const auto* arg : args_.subspan(first_compiler_arg_idx)) {
       base::FilePath::StringViewType arg_piece(arg);
-      if (arg_piece.starts_with(kIncludeQuotedFlag) &&
-          arg_piece.ends_with(kBraveChromiumSrc)) {
-        arg_piece.remove_prefix(kIncludeQuotedFlag.size());
-        brave_chromium_src_dir = base::FilePath::StringType(arg_piece);
-        arg_piece.remove_suffix(kBraveChromiumSrc.size());
-        chromium_src_dir_with_slash = base::FilePath::StringType(arg_piece);
-        break;
+      if (arg_piece.starts_with(kIncludeQuotedFlag)) {
+        if (arg_piece.ends_with(kBnesChromiumSrc)) {
+          arg_piece.remove_prefix(kIncludeQuotedFlag.size());
+          brave_chromium_src_dir = base::FilePath::StringType(arg_piece);
+          arg_piece.remove_suffix(kBnesChromiumSrc.size());
+          chromium_src_dir_with_slash = base::FilePath::StringType(arg_piece);
+          break;
+        } else if (arg_piece.ends_with(kBraveChromiumSrc)) {
+          arg_piece.remove_prefix(kIncludeQuotedFlag.size());
+          brave_chromium_src_dir = base::FilePath::StringType(arg_piece);
+          arg_piece.remove_suffix(kBraveChromiumSrc.size());
+          chromium_src_dir_with_slash = base::FilePath::StringType(arg_piece);
+          break;
+        }
       }
     }
 
     if (chromium_src_dir_with_slash.empty()) {
-#if defined(REDIRECT_CC_AS_REWRAPPER)
-      // We're called to execute a non-clang action. Just launch it as is.
+      // If chromium_src is not found or not needed, fallback directly to launching compiler.
       for (const auto* arg : args_.subspan(first_compiler_arg_idx)) {
         launch_argv.emplace_back(arg);
       }
       return Launch(launch_argv);
-#else   // defined(REDIRECT_CC_AS_REWRAPPER)
-      LOG(ERROR) << "Can't find chromium src dir";
-      return -1;
-#endif  // defined(REDIRECT_CC_AS_REWRAPPER)
     }
 
     bool compile_file_found = false;

@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
-assert(enable_local_ai)
-
 # Resolves open-tab URLs to URLIDs via HistoryService and ranks them with
 # HistoryEmbeddingsSearch. Shared by the tab_search WebUI page handler and the
 # AI Chat `tabSearch` markdown directive.

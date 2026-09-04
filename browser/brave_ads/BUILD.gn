@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//build/config/ozone.gni")
 import("//build/config/ui.gni")
 
-assert(enable_brave_ads)
-
 source_set("brave_ads") {
   sources = [
     "ads_service_delegate.h",
@@ -91,9 +89,7 @@ source_set("impl") {
   if (enable_brave_rewards) {
     deps += [ "//BnesBrowser/browser/brave_rewards" ]
   }
-
-  if (toolkit_views) {
-    deps += [ "//ui/views" ]
+if (true) {    deps += [ "//ui/views" ]
   }
 
   if (use_aura) {

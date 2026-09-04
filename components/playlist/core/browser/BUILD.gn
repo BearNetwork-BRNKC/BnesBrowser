@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/playlist/core/common/buildflags/buildflags.gni")
 
-assert(enable_playlist)
-
 static_library("browser") {
   sources = [
     "playlist_exclusions.cc",

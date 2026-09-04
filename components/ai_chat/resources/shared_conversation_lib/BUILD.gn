@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//BnesBrowser/components/common/typescript.gni")
 
-assert(enable_ai_chat)
-
 node_action("shared_conversation_lib") {
   script = "//BnesBrowser/node_modules/webpack/bin/webpack.js"
 

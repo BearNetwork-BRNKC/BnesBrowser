@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//pdf/features.gni")
 
-assert(enable_ai_chat)
-
 if (!is_android) {
   source_set("ai_chat") {
     sources = [

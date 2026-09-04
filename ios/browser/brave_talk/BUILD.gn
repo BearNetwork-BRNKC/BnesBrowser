@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_talk/buildflags/buildflags.gni")
 import("//ios/web/public/js_messaging/optimize_ts.gni")
 
-assert(enable_brave_talk)
-
 source_set("brave_talk") {
   sources = [
     "brave_talk_launcher_javascript_feature.h",

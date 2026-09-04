@@ -8,8 +8,6 @@ import("//BnesBrowser/components/common/typescript.gni")
 import("//BnesBrowser/resources/brave_grit.gni")
 import("//tools/grit/repack.gni")
 
-assert(enable_brave_rewards)
-
 pack_web_resources("internals_generated_resources") {
   resource_name = "rewards_internals"
   output_dir = "$root_gen_dir/BnesBrowser/components/brave_rewards/resources"

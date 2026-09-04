@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-assert(enable_traffic_control)
-
 mojom("mojom") {
   sources = [ "traffic_control.mojom" ]
 

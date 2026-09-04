@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//build/config/sanitizers/sanitizers.gni")
 import("//testing/test.gni")
 
-assert(enable_brave_ads)
-
 source_set("brave_ads_unit_tests") {
   testonly = true
 

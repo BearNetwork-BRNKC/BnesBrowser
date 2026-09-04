@@ -28,8 +28,6 @@ java_cpp_template("brave_config_java") {
   defines = [
     "BRAVE_ANDROID_DEVELOPER_OPTIONS_CODE=\"$brave_android_developer_options_code\"",
     "BRAVE_ANDROID_WEBCOMPAT_REPORT_ENDPOINT=\"$webcompat_report_api_endpoint\"",
-    "BRAVE_ANDROID_WEB_DISCOVERY_ENABLED=$enable_web_discovery_native",
-    "BRAVE_ANDROID_ENABLE_EMAIL_ALIASES=$enable_email_aliases",
   ]
 }
 

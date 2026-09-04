@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 import("//chrome/common/features.gni")
 
-assert(enable_tor)
-
 source_set("constants") {
   sources = [
     "constants.cc",

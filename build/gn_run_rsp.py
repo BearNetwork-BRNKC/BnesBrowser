@@ -77,6 +77,46 @@ def main():
     env = os.environ.copy()
     env.update(env_vars)
 
+    # On Windows, cc-rs/cargo build scripts invoke cl.exe directly without Ninja's
+    # wrapped environment block, causing "fatal error C1083: 'memory': No such file or directory"
+    # or incompatible MSVC STL errors. Point CC/CXX to hermetic clang-cl and provide /EHsc for
+    # binaryen / wasm-opt-sys C++ exception requirements.
+    if sys.platform == 'win32':
+        clang_cl = os.path.abspath(os.path.join(os.getcwd(), '../../third_party/llvm-build/Release+Asserts/bin/clang-cl.exe'))
+        if os.path.isfile(clang_cl):
+            if 'CC' not in env:
+                env['CC'] = clang_cl
+            if 'CXX' not in env:
+                env['CXX'] = clang_cl
+            if 'CFLAGS' not in env:
+                env['CFLAGS'] = '/EHsc'
+            elif '/EHsc' not in env['CFLAGS']:
+                env['CFLAGS'] += ' /EHsc'
+            if 'CXXFLAGS' not in env:
+                env['CXXFLAGS'] = '/EHsc'
+            elif '/EHsc' not in env['CXXFLAGS']:
+                env['CXXFLAGS'] += ' /EHsc'
+
+        if 'INCLUDE' not in env or not env['INCLUDE']:
+            env_x64 = os.path.join(os.getcwd(), 'environment.x64')
+            if os.path.isfile(env_x64):
+                try:
+                    with open(env_x64, 'rb') as f:
+                        data = f.read()
+                    for entry in data.split(b'\x00'):
+                        if not entry:
+                            continue
+                        try:
+                            line = entry.decode('latin1')
+                            if '=' in line:
+                                k, v = line.split('=', 1)
+                                if k.upper() in ('INCLUDE', 'LIB', 'LIBPATH') and k not in env:
+                                    env[k] = v
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+
     ret = subprocess.call(args, env=env)
     if ret != 0:
         if ret <= -100:

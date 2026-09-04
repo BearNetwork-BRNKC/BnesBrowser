@@ -39,9 +39,6 @@ brave_grit("resources") {
   defines = chrome_grit_defines
   defines += [
     "is_release_channel=$is_release_channel",
-    "enable_tor=$enable_tor",
-    "enable_brave_wallet=$enable_brave_wallet",
-    "enable_brave_wayback_machine=$enable_brave_wayback_machine",
   ]
 
   enable_input_discovery_for_gn_analyze = false
@@ -98,27 +95,6 @@ generate_grd("build_grd") {
 # compile (etc.) from that directory.
 preprocess_if_expr("preprocess") {
   defines = [
-    "enable_ai_chat=$enable_ai_chat",
-    "enable_brave_ads=$enable_brave_ads",
-    "enable_brave_news=$enable_brave_news",
-    "enable_brave_rewards=$enable_brave_rewards",
-    "enable_brave_talk=$enable_brave_talk",
-    "enable_tor=$enable_tor",
-    "enable_brave_wayback_machine=$enable_brave_wayback_machine",
-    "enable_brave_vpn=$enable_brave_vpn",
-    "enable_brave_vpn_wireguard=$enable_brave_vpn_wireguard",
-    "enable_brave_wallet=$enable_brave_wallet",
-    "enable_containers=$enable_containers",
-    "enable_email_aliases=$enable_email_aliases",
-    "enable_extensions=$enable_extensions",
-    "enable_local_ai=$enable_local_ai",
-    "enable_pin_shortcut=$enable_pin_shortcut",
-    "enable_playlist=$enable_playlist",
-    "enable_psst=$enable_psst",
-    "enable_speedreader=$enable_speedreader",
-    "enable_traffic_control=$enable_traffic_control",
-    "enable_web_discovery=$enable_web_discovery",
-    "enable_web_discovery_native=$enable_web_discovery_native",
   ]
   out_folder =
       "$root_gen_dir/chrome/browser/resources/settings/$preprocess_folder"

@@ -13,7 +13,6 @@ import("//BnesBrowser/components/ntp_background_images/buildflags/buildflags.gni
 import("//mojo/public/tools/bindings/mojom.gni")
 
 assert(!is_android)
-assert(enable_custom_background)
 
 mojom("mojom") {
   sources = [ "brave_new_tab_page.mojom" ]

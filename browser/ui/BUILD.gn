@@ -629,9 +629,7 @@ source_set("ui") {
       "//chrome/browser/ui/window_metadata",
     ]
   }
-
-  if (toolkit_views) {
-    sources += [
+if (true) {    sources += [
       "views/bookmarks/bookmark_bar_instructions_view.cc",
       "views/bookmarks/bookmark_bar_instructions_view.h",
       "views/bookmarks/brave_bookmark_bar_view.cc",
@@ -887,9 +885,7 @@ source_set("ui") {
       "startup/brave_obsolete_system_infobar_delegate.cc",
       "startup/brave_obsolete_system_infobar_delegate.h",
     ]
-
-    if (toolkit_views) {
-      sources += [
+if (true) {      sources += [
         "views/obsolete_system_confirm_dialog_view.cc",
         "views/obsolete_system_confirm_dialog_view.h",
       ]
@@ -1085,9 +1081,7 @@ source_set("ui") {
 
     deps += [ "//chrome/app/theme:chrome_unscaled_resources_grit" ]
   }
-
-  if (toolkit_views) {
-    sources += [
+if (true) {    sources += [
       "views/infobars/brave_confirm_infobar.cc",
       "views/infobars/brave_confirm_infobar.h",
       "views/infobars/brave_infobar_container_view.cc",
@@ -1154,9 +1148,7 @@ source_set("ui") {
 
   if (enable_brave_wayback_machine) {
     deps += [ "//BnesBrowser/components/brave_wayback_machine" ]
-
-    if (toolkit_views) {
-      sources += [
+if (true) {      sources += [
         "views/page_action/wayback_machine_action_icon_view.cc",
         "views/page_action/wayback_machine_action_icon_view.h",
         "views/page_action/wayback_machine_state_manager.cc",
@@ -1169,8 +1161,7 @@ source_set("ui") {
 
   if (enable_speedreader) {
     deps += [ "//BnesBrowser/browser/ui/speedreader" ]
-    if (toolkit_views) {
-      deps += [ "//BnesBrowser/browser/ui/views/speedreader" ]
+if (true) {      deps += [ "//BnesBrowser/browser/ui/views/speedreader" ]
     }
   }
 
@@ -1180,9 +1171,7 @@ source_set("ui") {
       "//BnesBrowser/components/request_otr/common",
     ]
   }
-
-  if (toolkit_views) {
-    deps += [
+if (true) {    deps += [
       "//BnesBrowser/browser/ui/sidebar",
       "//BnesBrowser/browser/ui/views/side_panel",
       "//BnesBrowser/browser/ui/views/sidebar",
@@ -1343,9 +1332,7 @@ source_set("ui") {
       "//mojo/public/cpp/bindings",
       "//ui/webui",
     ]
-
-    if (toolkit_views) {
-      sources += [
+if (true) {      sources += [
         "views/toolbar/brave_vpn_button.cc",
         "views/toolbar/brave_vpn_button.h",
         "views/toolbar/brave_vpn_panel_controller.cc",
@@ -1448,9 +1435,7 @@ source_set("ui") {
       "//components/user_prefs",
     ]
   }
-
-  if (toolkit_views) {
-    deps += [
+if (true) {    deps += [
       "//BnesBrowser/browser/ui/screenshot",
       "//components/constrained_window",
       "//ui/events",

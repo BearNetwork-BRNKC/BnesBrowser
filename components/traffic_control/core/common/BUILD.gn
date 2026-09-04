@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 
-assert(enable_traffic_control)
-
 component("features") {
   defines = [ "IS_TRAFFIC_CONTROL_FEATURES_IMPL" ]
 

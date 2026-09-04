@@ -10,8 +10,6 @@ import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-assert(enable_brave_education)
-
 mojom("mojo_bindings") {
   sources = [ "brave_education.mojom" ]
   webui_module_path = "/"

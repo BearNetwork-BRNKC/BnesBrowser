@@ -25,8 +25,11 @@ std::array<uint8_t, 16> Md5ForDefaultProtocolHandler(
   friend std::array<uint8_t, kSize> brave::Md5ForDefaultProtocolHandler( \
       base::span<const uint8_t> data)
 
+#define BRAVE_CRYPTO_OBSOLETE_MD5
+
 #include <crypto/obsolete/md5.h>  // IWYU pragma: export
 
+#undef BRAVE_CRYPTO_OBSOLETE_MD5
 #undef HashForTesting
 
 #endif  // BRAVE_CHROMIUM_SRC_CRYPTO_OBSOLETE_MD5_H_

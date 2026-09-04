@@ -25,6 +25,8 @@ def main():
         if args.install:
             execute_stdout([NPM, 'install', '--no-save', '--yes'], env=env)
         if args.build:
+            if not os.path.exists(os.path.join(WEB_DISCOVERY_DIR, 'node_modules', 'colors')):
+                execute_stdout([NPM, 'install', '--no-save', '--yes'], env=env)
             env["OUTPUT_PATH"] = args.output_path
             execute_stdout([NPM, 'run', 'build-module'], env=env)
 

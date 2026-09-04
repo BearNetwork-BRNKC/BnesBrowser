@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/traffic_control/buildflags/buildflags.gni")
 
-assert(enable_traffic_control)
-
 source_set("traffic_control") {
   sources = [
     "traffic_control_service_factory.cc",

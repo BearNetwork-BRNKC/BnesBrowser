@@ -8,7 +8,11 @@
 
 #include <stdint.h>
 
+#if __has_include("BnesBrowser/components/json/buildflags/buildflags.h")
 #include "BnesBrowser/components/json/buildflags/buildflags.h"
+#elif __has_include("brave/components/json/buildflags/buildflags.h")
+#include "brave/components/json/buildflags/buildflags.h"
+#endif
 #include "third_party/rust/cxx/v1/cxx.h"
 
 // We only disable 64-bit integer support when building redirect_cc, which means

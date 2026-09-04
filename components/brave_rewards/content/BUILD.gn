@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 import("//extensions/buildflags/buildflags.gni")
 
-assert(enable_brave_rewards)
-
 static_library("content") {
   sources = [
     "diagnostic_log.cc",

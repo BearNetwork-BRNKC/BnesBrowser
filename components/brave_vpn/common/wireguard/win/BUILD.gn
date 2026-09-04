@@ -7,7 +7,6 @@ import("//BnesBrowser/build/config.gni")
 import("//build/toolchain/win/midl.gni")
 
 assert(is_win)
-assert(enable_brave_vpn)
 
 midl("brave_wireguard_manager_idl") {
   sources = [ "brave_wireguard_manager_idl.idl" ]

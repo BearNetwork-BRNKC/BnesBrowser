@@ -8,5 +8,3 @@ import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 import("//tools/grit/preprocess_if_expr.gni")
 import("//tools/grit/repack.gni")
-
-assert(enable_local_ai)

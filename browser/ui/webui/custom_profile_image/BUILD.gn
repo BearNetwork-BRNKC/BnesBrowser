@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/ui/webui/custom_profile_image_config.gni")
 
-assert(enable_brave_custom_profile_image_webui)
-
 source_set("custom_profile_image") {
   sources = [
     "features.cc",

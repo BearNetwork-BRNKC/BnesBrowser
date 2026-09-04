@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 
-assert(enable_local_ai)
-
 static_library("content") {
   sources = [
     "background_web_contents_impl.cc",

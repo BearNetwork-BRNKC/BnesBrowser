@@ -9,8 +9,6 @@ import("//build/config/features.gni")
 import("//third_party/protobuf/proto_library.gni")
 import("//tools/json_schema_compiler/json_schema_api.gni")
 
-assert(enable_brave_wallet)
-
 static_library("browser") {
   sources = [
     "account_discovery_manager.cc",

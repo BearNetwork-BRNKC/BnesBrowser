@@ -4,8 +4,6 @@
 # you can obtain one at http://mozilla.org/MPL/2.0/.
 
 import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
-
-assert(enable_brave_wallet)
 import("//BnesBrowser/components/common/typescript.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 

@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//third_party/protobuf/proto_library.gni")
 
-assert(enable_brave_rewards)
-
 if (is_android) {
   import("//build/config/android/rules.gni")
 }

@@ -9,7 +9,7 @@
 // Defines the BRAVE_CHROMIUM_VERSION macro substituted into
 // GetProductNameAndVersionForUserAgent() by
 // rewrite/.../version_info_with_user_agent.h.yaml.
-#include "BnesBrowser/components/version_info/version_info_values.h"
+#include "brave/components/version_info/version_info_values.h"
 
 #include <components/version_info/version_info_with_user_agent.h>  // IWYU pragma: export
 

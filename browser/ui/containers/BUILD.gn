@@ -5,9 +5,6 @@
 
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
-assert(enable_containers,
-       "Containers feature must be enabled to build this target.")
-
 source_set("containers") {
   sources = [
     "container_model.cc",

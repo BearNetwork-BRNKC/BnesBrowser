@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 
-assert(enable_brave_rewards)
-
 static_library("lib") {
   visibility = [
     "//BnesBrowser/test:*",

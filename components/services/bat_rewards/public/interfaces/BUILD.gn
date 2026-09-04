@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_rewards/core/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-assert(enable_brave_rewards)
-
 mojom("interfaces") {
   sources = [ "rewards_engine_factory.mojom" ]
 

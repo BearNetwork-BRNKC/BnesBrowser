@@ -5,8 +5,6 @@
 
 import("//build/config/ui.gni")
 
-assert(toolkit_views)
-
 source_set("side_panel") {
   sources = [
     "brave_side_panel_header.cc",

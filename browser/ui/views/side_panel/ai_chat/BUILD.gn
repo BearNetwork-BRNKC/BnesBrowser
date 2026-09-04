@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/ai_chat/core/common/buildflags/buildflags.gni")
 import("//extensions/buildflags/buildflags.gni")
 
-assert(enable_ai_chat)
-
 source_set("ai_chat") {
   sources = [
     "ai_chat_movable_side_panel_web_view.cc",

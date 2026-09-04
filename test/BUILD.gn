@@ -460,9 +460,7 @@ test("brave_unit_tests") {
   if (enable_brave_vpn_v2) {
     deps += [ "//BnesBrowser/components/brave_vpn/browser/v2:unit_tests" ]
   }
-
-  if (toolkit_views) {
-    deps += [ "//chrome/browser/ui/views" ]
+if (true) {    deps += [ "//chrome/browser/ui/views" ]
   }
 
   if (enable_web_discovery_native) {
@@ -596,9 +594,7 @@ test("brave_unit_tests") {
     ]
     deps += [ "//BnesBrowser/browser/upgrade_when_idle:unit_tests" ]
   }
-
-  if (toolkit_views) {
-    sources +=
+if (true) {    sources +=
         [ "//BnesBrowser/browser/ui/views/brave_tooltips/brave_tooltips_unittest.cc" ]
     deps += [
       "//BnesBrowser/browser/onboarding:unit_tests",
@@ -897,9 +893,7 @@ if (!is_android) {
     ]
 
     data = [ "//BnesBrowser/test/data/" ]
-
-    if (toolkit_views) {
-      deps += [ "//BnesBrowser/components/sidebar/browser" ]
+if (true) {      deps += [ "//BnesBrowser/components/sidebar/browser" ]
     }
 
     if (enable_brave_rewards) {
@@ -1392,9 +1386,7 @@ test("brave_browser_tests") {
   }
 
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]
-
-  if (toolkit_views) {
-    sources += [
+if (true) {    sources += [
       "//BnesBrowser/browser/ui/views/bookmarks/bookmark_bar_browsertest.cc",
       "//BnesBrowser/browser/ui/views/frame/brave_non_client_hit_test_helper_browsertest.cc",
       "//BnesBrowser/browser/ui/views/omnibox/brave_omnibox_view_views_browsertest.cc",

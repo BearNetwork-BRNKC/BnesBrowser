@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_wayback_machine/buildflags/buildflags.gni")
 import("//testing/test.gni")
 
-assert(enable_brave_wayback_machine)
-
 static_library("brave_wayback_machine") {
   assert_no_deps = [ "//chrome/*" ]
 

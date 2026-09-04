@@ -5,7 +5,7 @@
 
 brave_locale_source_patterns = [
   "${root_gen_dir}/components/brave_components_strings_",
-  "${root_gen_dir}/brave/brave_generated_resources_",
+  "${root_gen_dir}/BnesBrowser/brave_generated_resources_",
 ]
 
 brave_locale_deps = [

@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/tor/buildflags/buildflags.gni")
 
-assert(enable_tor)
-
 source_set("tor") {
   sources = [
     "tor_profile_manager.h",

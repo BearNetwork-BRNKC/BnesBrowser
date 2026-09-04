@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/commander/common/buildflags/buildflags.gni")
 
-assert(enable_commander)
-
 component("common") {
   output_name = "commander_common"
   defines = [ "IS_COMMANDER_COMMON_IMPL" ]

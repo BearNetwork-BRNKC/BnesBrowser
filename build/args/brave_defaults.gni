@@ -27,3 +27,44 @@ enable_pseudolocales = false
 
 # Our copy of signature_generator.py doesn't support --ignore_missing_cert:
 ignore_missing_widevine_signing_cert = false
+
+declare_args() {
+  # BNES compatibility: Brave 152 removed these declare_args from
+  # brave_defaults.gni but BUILD.gn files still assert them.
+  enable_brave_ads = false
+  enable_brave_news = false
+  enable_brave_rewards = false
+  enable_brave_wallet = false
+  enable_brave_vpn = false
+  enable_brave_vpn_v1 = false
+  enable_brave_vpn_v2 = false
+  enable_tor = false
+  enable_ai_chat = false
+  enable_psst = false
+  enable_containers = true
+  enable_pin_shortcut = true
+  enable_playlist_webui = true
+  enable_request_otr = true
+  enable_speedreader = true
+  enable_text_recognition = true
+  enable_traffic_control = true
+  enable_local_ai = false
+  enable_extensions = true
+  enable_widevine = true
+  enable_print_preview = true
+  enable_session_service = true
+  enable_web_discovery_native = true
+  enable_brave_wayback_machine = true
+  enable_brave_talk = true
+  enable_brave_education = true
+  enable_custom_background = true
+  enable_brave_custom_profile_image_webui = true
+  enable_brave_ai_chat_agent_profile = false
+  enable_email_aliases = true
+  enable_commander = true
+  enable_playlist = true
+  enable_dsyms = true
+  enable_strict_query_check_for_search_suggestions = true
+  enable_brave_vpn_v2_apps = false
+  toolkit_views = false
+}

@@ -8,8 +8,6 @@ import("//BnesBrowser/components/brave_news/common/buildflags/buildflags.gni")
 import("//build/config/features.gni")
 import("//build/rust/rust_static_library.gni")
 
-assert(enable_brave_news)
-
 static_library("browser") {
   sources = [
     "background_history_querier.cc",

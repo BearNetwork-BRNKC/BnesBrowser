@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 import("//BnesBrowser/components/brave_wallet/common/buildflags/buildflags.gni")
 
-assert(enable_brave_ads)
-
 static_library("notifications") {
   sources = [
     "ads_notification_handler.cc",

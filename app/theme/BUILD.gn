@@ -14,7 +14,6 @@ brave_grit("brave_theme_resources") {
   source = "brave_theme_resources.grd"
   defines = chrome_grit_defines
   defines += [
-    "enable_playlist_webui=$enable_playlist_webui",
     "is_brave_origin_branded=$is_brave_origin_branded",
   ]
   outputs = [

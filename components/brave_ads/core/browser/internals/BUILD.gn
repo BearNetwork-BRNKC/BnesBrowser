@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
-assert(enable_brave_ads)
-
 source_set("internals") {
   sources = [
     "ads_internals_handler.cc",

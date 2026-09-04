@@ -26,9 +26,7 @@ group("ui") {
   if (enable_omaha4) {
     deps += [ "//BnesBrowser/browser/updater:features" ]
   }
-
-  if (toolkit_views) {
-    deps += [
+if (true) {    deps += [
       "//BnesBrowser/browser/ui/darker_theme",
       "//BnesBrowser/browser/ui/tabs:tabs_public",
       "//BnesBrowser/components/brave_news/common/buildflags",

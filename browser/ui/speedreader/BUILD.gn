@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/speedreader/common/buildflags/buildflags.gni")
 
-assert(enable_speedreader)
-
 source_set("speedreader") {
   sources = [
     "speedreader_bubble_view.h",

@@ -96,9 +96,7 @@ source_set("unit_tests") {
     "//content/test:test_support",
     "//testing/gtest",
   ]
-
-  if (toolkit_views) {
-    deps += [ "//chrome/browser/ui/views:layout_provider" ]
+if (true) {    deps += [ "//chrome/browser/ui/views:layout_provider" ]
   }
 
   if (enable_custom_background) {

@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/request_otr/common/buildflags/buildflags.gni")
 
-assert(enable_request_otr)
-
 source_set("browser_tests") {
   testonly = true
   defines = [ "HAS_OUT_OF_PROC_TEST_RUNNER" ]

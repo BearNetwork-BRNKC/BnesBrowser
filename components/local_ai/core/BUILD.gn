@@ -6,8 +6,6 @@
 import("//BnesBrowser/components/local_ai/buildflags/buildflags.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-assert(enable_local_ai)
-
 mojom_component("speech_recognition_mojom") {
   output_prefix = "on_device_speech_recognition_mojom"
   macro_prefix = "ON_DEVICE_SPEECH_RECOGNITION_MOJOM"

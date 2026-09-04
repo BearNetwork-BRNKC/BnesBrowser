@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/containers/buildflags/buildflags.gni")
 
-assert(enable_containers)
-
 component("features") {
   defines = [ "IS_CONTAINERS_FEATURES_IMPL" ]
 

@@ -8,8 +8,6 @@ import("//BnesBrowser/components/text_recognition/common/buildflags/buildflags.g
 import("//build/config/features.gni")
 import("//tools/json_schema_compiler/json_schema_api.gni")
 
-assert(enable_ai_chat)
-
 static_library("browser") {
   sources = [
     "ai_chat_credential_manager.cc",

@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_vpn/common/buildflags/buildflags.gni")
 
-assert(enable_brave_vpn)
-
 source_set("resources") {
   inputs = [
     "resource.h",

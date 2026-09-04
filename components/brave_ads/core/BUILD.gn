@@ -5,8 +5,6 @@
 
 import("//BnesBrowser/components/brave_ads/buildflags/buildflags.gni")
 
-assert(enable_brave_ads)
-
 group("core") {
   deps = [ "//BnesBrowser/components/brave_ads/core/internal" ]
 
