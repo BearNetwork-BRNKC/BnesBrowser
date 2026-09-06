@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { loadTimeData } from '../../../../common/loadTimeData'
-import * as LedgerMojom from 'gen/brave/components/brave_wallet/common/ledger_bridge.mojom.m.js' //
+import * as LedgerMojom from 'gen/BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.m.js' //
 
 const kLedgerMojoFrameId = 'ledger-mojo-bridge-frame'
 

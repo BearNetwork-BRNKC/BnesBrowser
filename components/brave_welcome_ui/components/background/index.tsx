@@ -16,8 +16,8 @@ import Stars02 from '../svg/stars02'
 import Stars03 from '../svg/stars03'
 import Stars04 from '../svg/stars04'
 import fullCompositeBgUrl
-  from 'gen/brave/components/brave_welcome_ui/background@2x.webp'
-import skyBgUrl from 'gen/brave/components/brave_welcome_ui/sky.webp'
+  from 'gen/BnesBrowser/components/brave_welcome_ui/background@2x.webp'
+import skyBgUrl from 'gen/BnesBrowser/components/brave_welcome_ui/sky.webp'
 
 interface BackgroundProps {
   children?: JSX.Element

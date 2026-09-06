@@ -6,7 +6,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { loadTimeData } from '$web-common/loadTimeData'
-import * as BraveAds from 'gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
+import * as BraveAds from 'gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
 
 export interface SponsoredRichMediaBackgroundInfo {
   url: string

@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { loadTimeData } from 'chrome://resources/js/load_time_data.js'
-import * as mojom from 'gen/brave/components/brave_rewards/core/mojom/rewards.mojom.m.js'
+import * as mojom from 'gen/BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom.m.js'
 
 import { Optional, optional } from '../../shared/lib/optional'
 import { externalWalletFromExtensionData } from '../../shared/lib/external_wallet'

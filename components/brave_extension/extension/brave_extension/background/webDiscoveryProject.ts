@@ -20,7 +20,7 @@ window.setWDPStartedCallbackForTesting = setWDPStartedCallbackForTesting
 
 async function startWDP() {
   if (window.WDP === undefined) {
-    const wdp = await import('gen/brave/web-discovery-project')
+    const wdp = await import('gen/BnesBrowser/web-discovery-project')
     window.WDP = new wdp.App({
       version: chrome.runtime.getManifest().version
     })

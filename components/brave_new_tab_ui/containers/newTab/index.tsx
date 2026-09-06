@@ -9,7 +9,7 @@ import * as React from 'react'
 import getNTPBrowserAPI from '../../api/background'
 import { addNewTopSite, editTopSite } from '../../api/topSites'
 import { recordClickedAdEvent } from '../../api/wallpaper'
-import * as BraveAds from 'gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
+import * as BraveAds from 'gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
 import {
   BraveTalkWidget as BraveTalk, Clock, EditTopSite, OverrideReadabilityColor, SearchPromotion, VPNWidget
 } from '../../components/default'

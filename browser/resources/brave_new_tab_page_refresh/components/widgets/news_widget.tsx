@@ -7,7 +7,7 @@ import * as React from 'react'
 import Button from '@brave/leo/react/button'
 import Icon from '@brave/leo/react/icon'
 
-import * as mojom from 'gen/brave/components/brave_news/common/brave_news.mojom.m.js'
+import * as mojom from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m.js'
 import { useBraveNews } from '../../../../../components/brave_news/browser/resources/shared/Context'
 import { getTranslatedChannelName } from '../../../../../components/brave_news/browser/resources/shared/channel'
 import { channelIcons } from '../../../../../components/brave_news/browser/resources/shared/Icons'

@@ -12,7 +12,7 @@ import { StubEmailAliasesService, demoData } from './utils/stubs'
 import {
   Alias,
   MAX_ALIASES,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 
 const stubEmailAliasesServiceAccountReadyInstance =
   new StubEmailAliasesService()

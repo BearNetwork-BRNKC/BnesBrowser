@@ -7,7 +7,7 @@ import {
   BraveNewsControllerRemote,
   FeedListenerInterface,
   FeedListenerReceiver
-} from 'gen/brave/components/brave_news/common/brave_news.mojom.m'
+} from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m'
 import getBraveNewsController, { canBindMojoListeners } from './api'
 
 export const addFeedListener = (listener: (feedHash: string) => void) =>

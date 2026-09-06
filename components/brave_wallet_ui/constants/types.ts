@@ -6,12 +6,12 @@
 import { EntityId } from '@reduxjs/toolkit'
 
 import { TimeDelta } from 'gen/mojo/public/mojom/base/time.mojom.m.js'
-import * as BraveWallet from 'gen/brave/components/brave_wallet/common/brave_wallet.mojom.m.js'
+import * as BraveWallet from 'gen/BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.m.js'
 import {
   ExternalWallet,
   ExternalWalletProvider,
 } from '../../brave_rewards/resources/shared/lib/external_wallet'
-import * as MeldTypes from 'gen/brave/components/brave_wallet/common/meld_integration.mojom.m.js'
+import * as MeldTypes from 'gen/BnesBrowser/components/brave_wallet/common/meld_integration.mojom.m.js'
 
 import Amount from '../utils/amount'
 
@@ -29,7 +29,7 @@ export {
   MeldCryptoWidget,
   CryptoBuySessionData,
   CryptoWidgetCustomerData,
-} from 'gen/brave/components/brave_wallet/common/meld_integration.mojom.m.js'
+} from 'gen/BnesBrowser/components/brave_wallet/common/meld_integration.mojom.m.js'
 export type NftDropdownOptionId = 'collected' | 'hidden'
 
 export type DAppConnectionOptionsType = 'networks' | 'accounts' | 'main'

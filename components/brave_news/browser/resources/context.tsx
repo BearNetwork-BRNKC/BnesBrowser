@@ -6,7 +6,7 @@
 import usePromise from '$web-common/usePromise';
 import {
   Signal
-} from 'gen/brave/components/brave_news/common/brave_news.mojom.m';
+} from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m';
 import * as React from 'react';
 import { BraveNewsContextProvider } from './shared/Context';
 import getBraveNewsController from './shared/api';

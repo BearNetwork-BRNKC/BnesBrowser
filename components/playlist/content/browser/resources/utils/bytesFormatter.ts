@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { PlaylistItem } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import { PlaylistItem } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 // Note that we hardly expect files to be bigger than 1TB. Generally, 4k 1 hour long
 // video is 30GB more or less. So it's unlikely for the |bytes| to exceed

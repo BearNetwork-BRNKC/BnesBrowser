@@ -6,7 +6,7 @@
 import {
   Playlist,
   PlaylistItem
-} from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m'
+} from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m'
 import { types } from '../constants/playlist_types'
 import { PlayerState } from '../reducers/states'
 export { types as PlaylistTypes } from '../constants/playlist_types'

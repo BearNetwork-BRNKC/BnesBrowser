@@ -18,7 +18,7 @@ import {
   FingerprintMode,
   CookieBlockMode,
   ContentSettingSource,
-} from 'gen/brave/components/brave_shields/core/common/shields_settings.mojom.m.js'
+} from 'gen/BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.m.js'
 
 import { ContentSetting } from 'gen/components/content_settings/core/common/content_settings.mojom.m'
 

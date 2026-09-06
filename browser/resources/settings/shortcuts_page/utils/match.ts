@@ -2,7 +2,7 @@
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
-import { type Command } from 'gen/brave/components/commands/common/commands.mojom.m'
+import { type Command } from 'gen/BnesBrowser/components/commands/common/commands.mojom.m'
 import { stringToKeys } from './accelerator'
 
 export const match = (query: string, command: Command) => {

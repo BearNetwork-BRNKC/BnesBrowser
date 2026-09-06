@@ -8,7 +8,7 @@ import { StateStore, createStateStore } from '$web-common/state_store'
 import {
   ConnectionState,
   Region,
-} from 'gen/brave/components/brave_vpn/common/mojom/brave_vpn.mojom.m'
+} from 'gen/BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.m'
 
 export { ConnectionState, Region }
 

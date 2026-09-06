@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { loadTimeData } from '$web-common/loadTimeData'
-import * as mojom from 'gen/brave/components/brave_vpn/common/mojom/brave_vpn.mojom.m'
+import * as mojom from 'gen/BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom.m'
 import { NewTabPageProxy } from './new_tab_page_proxy'
 import { debounce } from '$web-common/debounce'
 import { VpnActions, defaultVpnStore, ConnectionState } from './vpn_store'

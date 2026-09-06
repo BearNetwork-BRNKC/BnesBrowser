@@ -18,7 +18,7 @@ import { shouldPlayAnimations, useViewTypeTransition } from '../../state/hooks'
 
 // Logo is copied at build time based on branding (see BUILD.gn)
 import braveLogoUrl
-  from 'gen/brave/components/brave_welcome_ui/welcome_logo@2x.webp'
+  from 'gen/BnesBrowser/components/brave_welcome_ui/welcome_logo@2x.webp'
 
 function Welcome () {
   const { viewType, setViewType, scenes } = React.useContext(DataContext)

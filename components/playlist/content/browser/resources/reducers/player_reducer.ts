@@ -5,7 +5,7 @@
 
 import { Reducer } from 'redux'
 
-import { PlaylistItem } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m'
+import { PlaylistItem } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m'
 
 import { PlayerState } from './states'
 import { types } from '../constants/player_types'

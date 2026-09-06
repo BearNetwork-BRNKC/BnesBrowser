@@ -8,11 +8,11 @@ import {
   AccountState,
   Authentication,
   AuthenticationObserverCallbackRouter,
-} from 'gen/brave/components/brave_account/mojom/brave_account.mojom.m'
+} from 'gen/BnesBrowser/components/brave_account/mojom/brave_account.mojom.m'
 import {
   AliasesUpdate,
   EmailAliasesServiceObserverInterface,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 
 const emptyAliasesUpdate = {
   aliases: [],

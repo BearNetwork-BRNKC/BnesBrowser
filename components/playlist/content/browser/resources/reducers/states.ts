@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux'
 import {
   Playlist,
   PlaylistItem
-} from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+} from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 import { getItemDurationInSeconds } from '../utils/timeFormatter'
 import { getFormattedTotalBytes } from '../utils/bytesFormatter'

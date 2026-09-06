@@ -15,7 +15,7 @@ import { clickLeoButton } from './test_utils'
 import {
   Alias,
   EmailAliasesServiceInterface,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 
 const emptyResultPromise = Promise.resolve({})
 

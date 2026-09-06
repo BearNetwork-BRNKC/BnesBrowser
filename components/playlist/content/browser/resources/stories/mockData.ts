@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { Playlist } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import { Playlist } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 export const mockData: Playlist[] = [
   {

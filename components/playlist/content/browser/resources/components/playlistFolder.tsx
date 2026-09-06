@@ -21,7 +21,7 @@ import {
 import { color, font, spacing } from '@brave/leo/tokens/css/variables'
 import LeoButton from '@brave/leo/react/button'
 
-import { PlaylistItem as PlaylistItemMojo } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m'
+import { PlaylistItem as PlaylistItemMojo } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m'
 
 import EmptyFolderIcon from '../assets/playlist-empty-folder.svg'
 import { SortablePlaylistItem, PlaylistItem } from './playlistItem'

@@ -50,7 +50,7 @@ function getReporters() {
 
 function getBuildConfig() {
   // Try to find the build config in any of the possible build directories
-  const possiblePaths = getBuildOutputPathList('gen/brave/build_flags.json')
+  const possiblePaths = getBuildOutputPathList('gen/BnesBrowser/build_flags.json')
 
   for (const configPath of possiblePaths) {
     // Remove <rootDir> placeholder and resolve the actual path

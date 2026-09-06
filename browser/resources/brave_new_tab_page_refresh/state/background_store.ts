@@ -8,14 +8,14 @@ import { StateStore, createStateStore } from '$web-common/state_store'
 import {
   NewTabPageAdEventType,
   NewTabPageAdMetricType,
-} from 'gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
+} from 'gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
 
 import {
   BraveBackground,
   SponsoredImageBackground,
   SelectedBackground,
   SelectedBackgroundType,
-} from 'gen/brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.m.js'
+} from 'gen/BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.m.js'
 
 export {
   BraveBackground,

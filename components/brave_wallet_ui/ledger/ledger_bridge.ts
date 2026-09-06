@@ -17,7 +17,7 @@ import {
   LedgerProvider,
   TransportWrapper,
 } from '@glif/filecoin-wallet-provider'
-import * as LedgerMojom from 'gen/brave/components/brave_wallet/common/ledger_bridge.mojom.m.js' //
+import * as LedgerMojom from 'gen/BnesBrowser/components/brave_wallet/common/ledger_bridge.mojom.m.js' //
 
 const stripUndefinedFields = <T extends object>(obj: T): T => {
   return Object.fromEntries(

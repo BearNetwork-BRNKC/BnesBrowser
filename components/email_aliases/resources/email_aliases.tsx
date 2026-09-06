@@ -19,7 +19,7 @@ import {
   EmailAliasesServiceObserverInterface,
   EmailAliasesServiceObserverReceiver,
   EmailAliasesService,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 import {
   useEmailAliases,
   useBraveAccountState,

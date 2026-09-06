@@ -39,7 +39,7 @@ declare namespace NewTab {
     destinationUrl: string
   }
 
-  type NewTabPageAdMetricType = import('gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js').NewTabPageAdMetricType
+  type NewTabPageAdMetricType = import('gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js').NewTabPageAdMetricType
 
   export type BrandedWallpaper = {
     type: string

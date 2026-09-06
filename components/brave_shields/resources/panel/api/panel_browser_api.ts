@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // you can obtain one at https://mozilla.org/MPL/2.0/.
 
-import * as BraveShields from 'gen/brave/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
+import * as BraveShields from 'gen/BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
 // Provide access to all the generated types
-export * from 'gen/brave/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
-export * from 'gen/brave/components/brave_shields/core/common/shields_settings.mojom.m.js'
+export * from 'gen/BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
+export * from 'gen/BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.m.js'
 
 interface API {
   panelHandler: BraveShields.PanelHandlerRemote

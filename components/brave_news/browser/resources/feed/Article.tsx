@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 import Flex from '$web-common/Flex';
 import { spacing } from '@brave/leo/tokens/css/variables';
-import { Article as Info } from 'gen/brave/components/brave_news/common/brave_news.mojom.m';
+import { Article as Info } from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m';
 import * as React from 'react';
 import styled from 'styled-components';
 import { useBraveNews } from '../shared/Context';

@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import { uint128 } from 'gen/brave/components/brave_wallet/common/brave_wallet.mojom.m'
+import { uint128 } from 'gen/BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.m'
 import { bigIntToUint128, U128_MAX, Uint128ToBigInt } from './polkadot-utils'
 
 describe('bigIntToUint128', () => {

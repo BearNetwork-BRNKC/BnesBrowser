@@ -13,7 +13,7 @@ import Alert from '@brave/leo/react/alert'
 import { useCommands } from '../commands'
 import Dialog from '@brave/leo/react/dialog'
 import { formatLocale, getLocale } from '$web-common/locale'
-import { Accelerator } from 'gen/brave/components/commands/common/commands.mojom.m'
+import { Accelerator } from 'gen/BnesBrowser/components/commands/common/commands.mojom.m'
 import { commandsCache } from '../commands'
 
 const StyledDialog = styled(Dialog)`

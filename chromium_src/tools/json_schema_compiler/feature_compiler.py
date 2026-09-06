@@ -75,8 +75,11 @@ def Load(self, original_method):
         assert source_file.startswith(parent_dir_prefix), source_file
         source_file = source_file[len(parent_dir_prefix):]
 
-        # Skip files that we never override.
-        if source_file.startswith("brave/") or "/test/" in source_file:
+        # Skip files that we never override. ("BnesBrowser/" is this
+        # repository's renamed in-tree product directory, equivalent to
+        # the upstream "brave/" prefix.)
+        if source_file.startswith("brave/") or source_file.startswith(
+                "BnesBrowser/") or "/test/" in source_file:
             continue
 
         feature_definitions = brave_extender.GetFeatureDefinitions(source_file)

@@ -22,7 +22,7 @@ import {
 import Icon from '@brave/leo/react/icon'
 import { color, spacing } from '@brave/leo/tokens/css/variables'
 
-import { Playlist } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import { Playlist } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 import PlayLaterCardOverlayImage from '../assets/playlater-card-overlay.svg'
 import PlaylistInfo from './playlistInfo'

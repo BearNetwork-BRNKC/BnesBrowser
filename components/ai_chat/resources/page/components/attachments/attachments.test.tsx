@@ -13,7 +13,7 @@ import Attachments from './index'
 import {
   AssociatedContent,
   ContentType,
-} from 'gen/brave/components/ai_chat/core/common/mojom/common.mojom.m.js'
+} from 'gen/BnesBrowser/components/ai_chat/core/common/mojom/common.mojom.m.js'
 import {
   Bookmark,
   HistoryEntry,

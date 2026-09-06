@@ -5,7 +5,7 @@
 
 import * as React from 'react'
 
-import * as PlaylistMojo from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import * as PlaylistMojo from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 interface Props {
   playlists: PlaylistMojo.Playlist[]

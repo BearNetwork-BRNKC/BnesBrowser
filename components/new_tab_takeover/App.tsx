@@ -4,9 +4,9 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import * as React from 'react';
-import * as NTPBackgroundMediaMojom from 'gen/brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.m.js'
-import * as NewTabTakeoverMojom from 'gen/brave/components/new_tab_takeover/mojom/new_tab_takeover.mojom.m.js'
-import * as BraveAdsMojom from 'gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
+import * as NTPBackgroundMediaMojom from 'gen/BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.m.js'
+import * as NewTabTakeoverMojom from 'gen/BnesBrowser/components/new_tab_takeover/mojom/new_tab_takeover.mojom.m.js'
+import * as BraveAdsMojom from 'gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
 import { Url } from 'gen/url/mojom/url.mojom.m.js'
 
 import {

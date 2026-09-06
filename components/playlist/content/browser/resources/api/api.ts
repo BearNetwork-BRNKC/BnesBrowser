@@ -11,7 +11,7 @@ import {
   PlaylistPageHandlerRemote,
   PlaylistServiceObserverCallbackRouter,
   PlaylistServiceRemote,
-} from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+} from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 import { getPlaylistActions } from './getPlaylistActions'
 

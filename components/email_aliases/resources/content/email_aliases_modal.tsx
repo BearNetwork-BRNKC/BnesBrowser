@@ -25,7 +25,7 @@ import {
   Alias,
   EmailAliasesServiceInterface,
   MAX_ALIASES,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 import { EmailAliasLimitReached } from './email_alias_limit_reached'
 import './strings'
 

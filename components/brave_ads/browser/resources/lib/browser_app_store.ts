@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { loadTimeData } from 'chrome://resources/js/load_time_data.js'
-import * as AdsInternalsMojo from 'gen/brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.m.js'
+import * as AdsInternalsMojo from 'gen/BnesBrowser/components/services/bat_ads/public/interfaces/bat_ads.mojom.m.js'
 
 import { AppStore, defaultAppStore } from './app_store'
 

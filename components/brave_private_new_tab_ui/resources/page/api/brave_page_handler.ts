@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import * as BravePrivateNewTab from 'gen/brave/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.m.js'
+import * as BravePrivateNewTab from 'gen/BnesBrowser/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.m.js'
 
 // Provide access to all the generated types
-export * from 'gen/brave/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.m.js'
+export * from 'gen/BnesBrowser/components/brave_private_new_tab_ui/common/brave_private_new_tab.mojom.m.js'
 
 interface API {
   pageHandler: BravePrivateNewTab.PageHandlerRemote

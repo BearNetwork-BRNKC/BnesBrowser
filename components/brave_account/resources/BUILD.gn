@@ -56,7 +56,7 @@ build_webui("build") {
 
   webui_context_type = "trusted"
 
-  # use_brave_grit = true
+  use_brave_grit = true
   grit_output_dir = target_gen_dir
 
   ts_definitions = [ "//tools/typescript/definitions/chrome_send.d.ts" ]

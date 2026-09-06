@@ -14,7 +14,7 @@ import {
   AliasesUpdate,
   EmailAliasesMetricsRemote,
   EmailAliasesServiceInterface,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 import { useBraveAccountState, isAccountLoggedIn } from './use_email_aliases'
 
 const PageCol = styled(Col)`

@@ -18,9 +18,9 @@ with sys_path('//brave/tools/typescript'):
 
 
 def is_gen_brave_dir(out_dir):
-    GEN_BRAVE = 'gen/brave'
+    GEN_BRAVE = 'gen/BnesBrowser'
     dirs = out_dir.split('/')
-    # Test gen/brave/... and <target_toolchain>/gen/brave/...
+    # Test gen/BnesBrowser/... and <target_toolchain>/gen/BnesBrowser/...
     return '/'.join(dirs[:2]) == GEN_BRAVE or '/'.join(dirs[1:3]) == GEN_BRAVE
 
 

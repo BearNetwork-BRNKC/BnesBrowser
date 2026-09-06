@@ -23,7 +23,7 @@ import VideoFrame from './videoFrame'
 import * as playlistActions from '../actions/playlist_action_creators'
 import { getPlaylistAPI } from '../api/api'
 
-import * as PlaylistMojo from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import * as PlaylistMojo from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 import { getPlaylistActions } from '../api/getPlaylistActions'
 import postMessageToPlayer from '../api/playerApi'
 import { types } from '../constants/playlist_types'

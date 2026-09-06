@@ -9,5 +9,6 @@ import("buildflags.gni")
 buildflag_header("buildflags") {
   header = "buildflags.h"
   flags = [
+    "ENABLE_BRAVE_VPN=$enable_brave_vpn",
   ]
 }

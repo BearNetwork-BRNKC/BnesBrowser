@@ -5,7 +5,7 @@
 
 import { action } from 'typesafe-actions'
 
-import { Playlist } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m'
+import { Playlist } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m'
 import {
   CachingProgress,
   PlayerState,

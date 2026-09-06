@@ -12,7 +12,7 @@ import {
   SelectedPlaylistUpdatedPayload
 } from '../api/playerApi'
 
-import { PlaylistItem } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m'
+import { PlaylistItem } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m'
 
 export const selectPlaylistItem = (payload: ItemSelectedPayload) =>
   action(types.PLAYLIST_ITEM_SELECTED, payload)

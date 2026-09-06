@@ -15,7 +15,7 @@ import ContextualMenuAnchorButton from './contextualMenu'
 import {
   Playlist,
   PlaylistItem as PlaylistItemMojo
-} from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+} from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 import {
   formatTimeInSeconds,
   microSecondsToSeconds

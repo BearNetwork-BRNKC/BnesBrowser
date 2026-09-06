@@ -14,7 +14,7 @@ import {
 import {
   CoinType,
   ZCashShieldSyncStatus,
-} from 'gen/brave/components/brave_wallet/common/brave_wallet.mojom.m'
+} from 'gen/BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.m'
 import { useAccountsQuery } from '../../../common/slices/api.slice.extra'
 
 const StyledWrapper = styled.div`

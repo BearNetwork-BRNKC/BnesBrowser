@@ -3,13 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import * as BraveNewTabPage from 'gen/brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.m.js'
-import * as NTPBackgroundMedia from 'gen/brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.m.js'
+import * as BraveNewTabPage from 'gen/BnesBrowser/components/brave_new_tab_ui/brave_new_tab_page.mojom.m.js'
+import * as NTPBackgroundMedia from 'gen/BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom.m.js'
 
 import { images as backgrounds, solidColorsForBackground, gradientColorsForBackground } from '../data/backgrounds'
 
 // Provide access to all the generated types
-export * from 'gen/brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.m.js'
+export * from 'gen/BnesBrowser/components/brave_new_tab_ui/brave_new_tab_page.mojom.m.js'
 
 /**
  * Generates a random image for new tab backgrounds

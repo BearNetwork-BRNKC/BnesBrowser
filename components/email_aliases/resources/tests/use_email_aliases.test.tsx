@@ -9,12 +9,12 @@ import {
   isAccountLoggedIn,
   useEmailAliases,
 } from '../content/use_email_aliases'
-import type { AccountState } from 'gen/brave/components/brave_account/mojom/brave_account.mojom.m'
+import type { AccountState } from 'gen/BnesBrowser/components/brave_account/mojom/brave_account.mojom.m'
 import {
   Alias,
   AliasesUpdate,
   EmailAliasesServiceObserverInterface,
-} from 'gen/brave/components/email_aliases/email_aliases.mojom.m'
+} from 'gen/BnesBrowser/components/email_aliases/email_aliases.mojom.m'
 
 const makeLoggedOutAccountState = (): AccountState =>
   ({ loggedOut: {} }) as AccountState

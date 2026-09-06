@@ -30,7 +30,7 @@ import {
 } from '../../../utils/account-utils'
 import { suggestNewAccountName } from '../../../utils/address-utils'
 import { getEntitiesListFromEntityState } from '../../../utils/entities.utils'
-import { AddAccountArgs } from 'gen/brave/components/brave_wallet/common/brave_wallet.mojom.m'
+import { AddAccountArgs } from 'gen/BnesBrowser/components/brave_wallet/common/brave_wallet.mojom.m'
 import { networkEntityAdapter } from '../entities/network.entity'
 
 type ImportWalletResults = {

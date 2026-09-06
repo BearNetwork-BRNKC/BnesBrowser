@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import * as SkusInternalsMojo from 'gen/brave/components/skus/common/skus_internals.mojom.m.js'
+import * as SkusInternalsMojo from 'gen/BnesBrowser/components/skus/common/skus_internals.mojom.m.js'
 import * as React from 'react'
 import styled from 'styled-components'
 import { createRoot } from 'react-dom/client'

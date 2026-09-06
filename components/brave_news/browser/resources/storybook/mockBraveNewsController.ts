@@ -15,7 +15,7 @@ import {
   FeedItemV2,
   FeedV2,
   Image
-} from 'gen/brave/components/brave_news/common/brave_news.mojom.m'
+} from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m'
 import getBraveNewsController from '../shared/api'
 import { ConfigurationCachingWrapper } from '../shared/configurationCache'
 import { loadTimeData } from '$web-common/loadTimeData'

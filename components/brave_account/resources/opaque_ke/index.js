@@ -7,4 +7,4 @@ export {
   invalidLoginError,
   Login,
   Registration,
-} from 'gen/brave/components/brave_account/resources/opaque_ke/bundler/pkg'
+} from 'gen/BnesBrowser/components/brave_account/resources/opaque_ke/bundler/pkg'

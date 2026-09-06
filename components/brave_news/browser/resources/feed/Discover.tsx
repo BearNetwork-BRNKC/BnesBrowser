@@ -5,7 +5,7 @@
 import { getLocale } from '$web-common/locale';
 import Icon from '@brave/leo/react/icon';
 import { icon, spacing } from '@brave/leo/tokens/css/variables';
-import { Discover as Info } from 'gen/brave/components/brave_news/common/brave_news.mojom.m';
+import { Discover as Info } from 'gen/BnesBrowser/components/brave_news/common/brave_news.mojom.m';
 import * as React from 'react';
 import styled from 'styled-components';
 import PublisherCard from '../shared/PublisherCard';

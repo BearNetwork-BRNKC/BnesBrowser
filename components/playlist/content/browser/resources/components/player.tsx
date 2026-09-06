@@ -10,7 +10,7 @@ import styled, { css } from 'styled-components'
 import {
   Playlist,
   PlaylistItem
-} from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+} from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 import { color, font, radius, spacing } from '@brave/leo/tokens/css/variables'
 

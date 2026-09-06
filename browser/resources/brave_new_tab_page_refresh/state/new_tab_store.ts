@@ -8,7 +8,7 @@ import { StateStore, createStateStore } from '$web-common/state_store'
 import {
   ShieldsStats,
   ClockFormat,
-} from 'gen/brave/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.m.js'
+} from 'gen/BnesBrowser/browser/ui/webui/brave_new_tab_page_refresh/brave_new_tab_page.mojom.m.js'
 
 export { ShieldsStats, ClockFormat }
 

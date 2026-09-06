@@ -18,14 +18,14 @@ import {
   UIHandlerRemote,
   DataHandlerInterface,
   PanelHandlerInterface,
-} from 'gen/brave/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
+} from 'gen/BnesBrowser/components/brave_shields/core/common/brave_shields_panel.mojom.m.js'
 
 import {
   AdBlockMode,
   FingerprintMode,
   CookieBlockMode,
   HttpsUpgradeMode,
-} from 'gen/brave/components/brave_shields/core/common/shields_settings.mojom.m.js'
+} from 'gen/BnesBrowser/components/brave_shields/core/common/shields_settings.mojom.m.js'
 
 import { ContentSettingsType } from 'gen/components/content_settings/core/common/content_settings_types.mojom.m'
 

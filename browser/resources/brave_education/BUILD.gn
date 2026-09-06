@@ -13,6 +13,8 @@ build_webui("build") {
   grd_prefix = "brave_education"
 
   preprocessor_defines = [
+    "enable_ai_chat=$enable_ai_chat",
+    "enable_brave_wallet=$enable_brave_wallet",
   ]
   static_files = [ "brave_education.html" ]
   ts_files = [
@@ -36,5 +38,5 @@ build_webui("build") {
   mojo_files_deps =
       [ "//BnesBrowser/browser/ui/webui/brave_education:mojo_bindings_ts__generator" ]
   mojo_files = [ "$root_gen_dir/BnesBrowser/browser/ui/webui/brave_education/brave_education.mojom-webui.ts" ]
-  # use_brave_grit = true
+  use_brave_grit = true
 }

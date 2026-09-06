@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 import wallpaperImageUrl from '../../../../img/newtab/dummy-branded-wallpaper/background-1.jpg'
 import brandingImageUrl from '../../../../img/newtab/dummy-branded-wallpaper/logo.png'
-import { NewTabPageAdMetricType } from 'gen/brave/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
+import { NewTabPageAdMetricType } from 'gen/BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom.m.js'
 
 const dummyWallpaper: NewTab.BrandedWallpaper = {
   type: 'image',

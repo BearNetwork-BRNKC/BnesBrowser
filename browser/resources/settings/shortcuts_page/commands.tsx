@@ -10,7 +10,7 @@ import './strings'
 // by the main page.
 import '$web-common/disableDuplicateSvelteTrustedPolicies'
 
-import * as CommandsMojo from 'gen/brave/components/commands/common/commands.mojom.m.js'
+import * as CommandsMojo from 'gen/BnesBrowser/components/commands/common/commands.mojom.m.js'
 import * as React from 'react'
 import { createRoot } from 'react-dom/client'
 import styled, { StyleSheetManager } from 'styled-components'

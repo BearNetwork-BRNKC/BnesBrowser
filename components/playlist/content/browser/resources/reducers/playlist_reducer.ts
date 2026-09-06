@@ -8,7 +8,7 @@ import { Reducer } from 'redux'
 import { types } from '../constants/playlist_types'
 import { CachingProgress, PlaylistData } from './states'
 
-import { Playlist } from 'gen/brave/components/playlist/core/common/mojom/playlist.mojom.m.js'
+import { Playlist } from 'gen/BnesBrowser/components/playlist/core/common/mojom/playlist.mojom.m.js'
 
 import { fixUpMediaURL, fixUpThumbnailURL } from '../utils/urlFixer'
 

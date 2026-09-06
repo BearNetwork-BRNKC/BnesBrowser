@@ -110,7 +110,7 @@ enum FileType {
 }
 
 // ✅ CORRECT - import from generated bindings
-import { FileType } from 'gen/brave/components/ai_chat/core/common/mojom/ai_chat.mojom-webui.js'
+import { FileType } from 'gen/BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom-webui.js'
 ```
 
 ---

@@ -8,7 +8,7 @@ import { createRoot } from 'react-dom/client'
 import StyledComponentsProvider from '$web-common/StyledComponentsProvider'
 import { setIconBasePath } from '@brave/leo/react/icon'
 import { createPsstDialogApi } from './api/psst_dialog_api'
-import * as Mojom from 'gen/brave/components/psst/core/common/psst_ui_common.mojom.m.js'
+import * as Mojom from 'gen/BnesBrowser/components/psst/core/common/psst_ui_common.mojom.m.js'
 
 import { PsstDialogAPIProvider } from './api/psst_dialog_api_context'
 import { PsstProgressModal } from './components/PsstProgressModal'

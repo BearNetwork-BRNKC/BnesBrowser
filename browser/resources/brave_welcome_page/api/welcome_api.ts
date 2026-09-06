@@ -12,7 +12,7 @@ import {
   WelcomePageInterface,
   WelcomePageReceiver,
   WelcomePageHandlerInterface,
-} from 'gen/brave/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.m.js'
+} from 'gen/BnesBrowser/browser/ui/webui/brave_welcome_page/brave_welcome_page.mojom.m.js'
 
 import {
   Theme,

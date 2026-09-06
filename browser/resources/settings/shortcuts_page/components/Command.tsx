@@ -4,7 +4,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 import * as React from 'react'
-import type * as CommandsMojo from 'gen/brave/components/commands/common/commands.mojom.m.js'
+import type * as CommandsMojo from 'gen/BnesBrowser/components/commands/common/commands.mojom.m.js'
 import styled from 'styled-components'
 import Keys from './Keys'
 import ConfigureShortcut from './ConfigureShortcut'

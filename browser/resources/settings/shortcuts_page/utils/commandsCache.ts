@@ -9,7 +9,7 @@ import {
   CommandsListenerReceiver,
   CommandsService,
   CommandsServiceRemote
-} from 'gen/brave/components/commands/common/commands.mojom.m.js'
+} from 'gen/BnesBrowser/components/commands/common/commands.mojom.m.js'
 
 export const api = CommandsService.getRemote()
 
