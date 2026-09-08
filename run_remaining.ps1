@@ -27,6 +27,7 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 # 從鎖定的本機 Chromium 樹建置；絕不重新取得或更新外部工具鏈。
 $env:DEPOT_TOOLS_WIN_TOOLCHAIN = '0'
 $env:DEPOT_TOOLS_UPDATE = '0'
+$env:PYTHONUTF8 = '1'
 
 $ProjectRoot = $PSScriptRoot
 $SourceRoot = Split-Path -Parent $ProjectRoot

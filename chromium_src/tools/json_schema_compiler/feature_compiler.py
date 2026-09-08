@@ -77,8 +77,8 @@ def Load(self, original_method):
 
         # Skip files that we never override. ("BnesBrowser/" is this
         # repository's renamed in-tree product directory, equivalent to
-        # the upstream "brave/" prefix.)
-        if source_file.startswith("brave/") or source_file.startswith(
+        # the upstream "BnesBrowser/" prefix.)
+        if source_file.startswith("BnesBrowser/") or source_file.startswith(
                 "BnesBrowser/") or "/test/" in source_file:
             continue
 

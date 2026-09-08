@@ -26,7 +26,7 @@
 #include "ui/base/l10n/l10n_util.h"
 
 #if BUILDFLAG(ENABLE_SPARKLE)
-#import "brave/browser/mac/sparkle_glue.h"
+#import "BnesBrowser/browser/mac/sparkle_glue.h"
 #endif
 
 #if BUILDFLAG(ENABLE_OMAHA4)

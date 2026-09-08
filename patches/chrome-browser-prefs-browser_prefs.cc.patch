@@ -36,22 +36,22 @@ index c2fba47e0d9d961297f0aa8d88276dabfd32f636..f1876b9f6d24a12c5a1f817483cdbf7c
    // or cleared here, and that pref is also used in iOS Chrome, it may also need
    // to be migrated or cleared specifically for iOS as well. This could be by
 @@ -2447,12 +2452,16 @@ void MigrateObsoleteLocalStatePrefs(PrefService* local_state) {
-   // doing the migration in feature code that's called by all platforms instead
-   // of here, or by calling migration code in the appropriate place for iOS
-   // specifically, e.g. ios/chrome/browser/shared/model/prefs/browser_prefs.mm.
+    // doing the migration in feature code that's called by all platforms instead
+    // of here, or by calling migration code in the appropriate place for iOS
+    // specifically, e.g. ios/chrome/browser/shared/model/prefs/browser_prefs.mm.
 +  }();
-+  MigrateObsoleteBraveLocalStatePrefsAfterChromium(local_state);
- }
++  brave::MigrateObsoleteBraveLocalStatePrefsAfterChromium(local_state);
+  }
  
  // This method should be periodically pruned of year+ old migrations.
  // See chrome/browser/prefs/README.md for details.
- void MigrateObsoleteProfilePrefs(PrefService* profile_prefs,
-                                  const base::FilePath& profile_path) {
+  void MigrateObsoleteProfilePrefs(PrefService* profile_prefs,
+                                   const base::FilePath& profile_path) {
 +  [&]() -> void {
-+  MigrateObsoleteBraveProfilePrefsBeforeChromium(profile_prefs);
-   // IMPORTANT NOTE: This code is *not* run on iOS Chrome. If a pref is migrated
-   // or cleared here, and that pref is also used in iOS Chrome, it may also need
-   // to be migrated or cleared specifically for iOS as well. This could be by
++  brave::MigrateObsoleteBraveProfilePrefsBeforeChromium(profile_prefs);
+    // IMPORTANT NOTE: This code is *not* run on iOS Chrome. If a pref is migrated
+    // or cleared here, and that pref is also used in iOS Chrome, it may also need
+    // to be migrated or cleared specifically for iOS as well. This could be by
 @@ -2562,6 +2571,7 @@ void MigrateObsoleteProfilePrefs(PrefService* profile_prefs,
    profile_prefs->ClearPref(kObsoletePasswordsUseUPMLocalAndSeparateStores);
    profile_prefs->ClearPref(kObsoleteEmptyProfileStoreLoginDatabase);
@@ -69,10 +69,10 @@ index c2fba47e0d9d961297f0aa8d88276dabfd32f636..f1876b9f6d24a12c5a1f817483cdbf7c
  
    // Added 09/2025.
 @@ -2741,4 +2752,7 @@ void MigrateObsoleteProfilePrefs(PrefService* profile_prefs,
-   // doing the migration in feature code that's called by all platforms instead
-   // of here, or by calling migration code in the appropriate place for iOS
-   // specifically, e.g. ios/chrome/browser/shared/model/prefs/browser_prefs.mm.
+    // doing the migration in feature code that's called by all platforms instead
+    // of here, or by calling migration code in the appropriate place for iOS
+    // specifically, e.g. ios/chrome/browser/shared/model/prefs/browser_prefs.mm.
 +  }();
-+  MigrateObsoleteBraveProfilePrefsAfterChromium(profile_prefs,
-+                                                 profile_path);
- }
++  brave::MigrateObsoleteBraveProfilePrefsAfterChromium(profile_prefs,
++                                                       profile_path);
+  }

@@ -32,7 +32,7 @@ const pathMap = generatePathMapWithWebMocks(genPath)
 pathMap['$storybook'] = path.resolve(__dirname, '../../web/storybook')
 
 const buildFlags = JSON.parse(
-  fs.readFileSync(path.join(genPath, 'brave/build_flags.json'), 'utf8'),
+  fs.readFileSync(path.join(genPath, 'BnesBrowser/build_flags.json'), 'utf8'),
 )
 buildFlags.is_storybook = true
 

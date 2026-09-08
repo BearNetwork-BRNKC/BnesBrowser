@@ -6,10 +6,13 @@
 #define BRAVE_BROWSER_BRAVE_LOCAL_STATE_PREFS_H_
 
 class PrefRegistrySimple;
+class PrefService;
 
 namespace brave {
 
 void RegisterLocalStatePrefs(PrefRegistrySimple* registry);
+
+void MigrateObsoleteBraveLocalStatePrefsAfterChromium(PrefService* local_state);
 
 }  // namespace brave
 

@@ -217,13 +217,13 @@ mod ffi {
 
     #[namespace = "skus::mojom"]
     extern "C++" {
-        include!("brave/components/skus/common/skus_sdk.mojom-shared.h");
+        include!("BnesBrowser/components/skus/common/skus_sdk.mojom-shared.h");
 
         type SkusResultCode;
     }
 
     unsafe extern "C++" {
-        include!("brave/components/skus/browser/rs/cxx/src/shim.h");
+        include!("BnesBrowser/components/skus/browser/rs/cxx/src/shim.h");
 
         type SkusContext;
         type SkusUrlLoader;

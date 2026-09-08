@@ -30,8 +30,6 @@ static_library("crypto") {
 
   deps = [
     "//base",
-    # "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
-    # "//BnesBrowser/vendor/bat-native-tweetnacl:tweetnacl",
     "//crypto",
     "//third_party/boringssl",
   ]
@@ -101,6 +99,7 @@ source_set("time_limited_codes") {
   deps = [
     ":crypto",
     "//base",
+    "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
   ]
 }
 

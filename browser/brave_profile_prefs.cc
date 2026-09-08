@@ -7,7 +7,9 @@
 
 #include <string>
 
+#include "base/files/file_path.h"
 #include "base/feature_list.h"
+#include "components/prefs/pref_service.h"
 #include "BnesBrowser/browser/brave_browser_features.h"
 #include "BnesBrowser/browser/brave_shields/brave_shields_web_contents_observer.h"
 #include "BnesBrowser/browser/new_tab/new_tab_shows_options.h"
@@ -27,6 +29,7 @@
 #include "BnesBrowser/components/brave_perf_predictor/browser/perf_predictor_tab_helper.h"
 #include "BnesBrowser/components/brave_rewards/core/pref_names.h"
 #include "BnesBrowser/components/brave_rewards/core/pref_registry.h"
+#include "BnesBrowser/browser/brave_rewards/rewards_prefs_util.h"
 #include "BnesBrowser/components/brave_search/browser/brave_search_default_host.h"
 #include "BnesBrowser/components/brave_search/common/brave_search_utils.h"
 #include "BnesBrowser/components/brave_search_conversion/utils.h"
@@ -634,6 +637,31 @@ void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry) {
       brave_shields::prefs::kShredBrowsingHistoryEnabled, false);
 
   OverrideDefaultPrefValues(registry);
+}
+
+void MigrateObsoleteBraveProfilePrefsBeforeChromium(PrefService* profile_prefs) {
+}
+
+void MigrateObsoleteBraveProfilePrefsAfterChromium(
+    PrefService* profile_prefs,
+    const base::FilePath& profile_path) {
+#if BUILDFLAG(ENABLE_BRAVE_ADS)
+  brave_ads::MigrateObsoleteProfilePrefs(profile_prefs);
+#endif
+  brave_account::prefs::MigrateObsoleteProfilePrefs(profile_prefs);
+#if BUILDFLAG(ENABLE_BRAVE_REWARDS)
+  brave_rewards::MigrateObsoleteProfilePrefs(profile_prefs);
+#endif
+  brave_shields::MigrateObsoleteProfilePrefs(profile_prefs);
+#if BUILDFLAG(ENABLE_BRAVE_WALLET)
+  brave_wallet::MigrateObsoleteProfilePrefs(profile_prefs);
+#endif
+#if BUILDFLAG(ENABLE_CUSTOM_BACKGROUND)
+  ntp_background_images::MigrateObsoleteProfilePrefs(profile_prefs);
+#endif
+#if BUILDFLAG(ENABLE_SPEEDREADER)
+  speedreader::MigrateObsoleteProfilePrefs(profile_prefs);
+#endif
 }
 
 }  // namespace brave

@@ -131,7 +131,7 @@ TEST_F(BraveTemplateURLPrepopulateDataTest,
       << "Upstream enabled switches::kPrepopulatedEnginesMigration. This means "
          "we need to check upstream's prepopulated engines' migrate_to_id "
          "values and see if any of search engines we override in "
-         "brave/components/search_engines/brave_prepopulated_engines.h/cc need "
+         "BnesBrowser/components/search_engines/brave_prepopulated_engines.h/cc need "
          "to be migrated to new IDs as well.";
 }
 

@@ -45,7 +45,6 @@ static_library("browser") {
     "//base/version_info",
     "//BnesBrowser/components/containers/core/common",
     "//BnesBrowser/components/resources:strings",
-    # "//BnesBrowser/third_party/bip39wally-core-native:bip39wally-core",
     "//BnesBrowser/ui/color:nala_color_id",
     "//components/keyed_service/core",
     "//components/pref_registry",

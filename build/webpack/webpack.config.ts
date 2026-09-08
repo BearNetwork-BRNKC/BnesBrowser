@@ -33,7 +33,7 @@ export function createWebpackConfig(
   const rootGenDir = path.resolve(options.root_gen_dir)
   const pathMap = generatePathMap(rootGenDir)
   const buildFlags = JSON.parse(
-    fs.readFileSync(path.join(rootGenDir, 'brave/build_flags.json'), 'utf8'),
+    fs.readFileSync(path.join(rootGenDir, 'BnesBrowser/build_flags.json'), 'utf8'),
   )
   const tsConfigPath = path.join(rootGenDir, 'tsconfig-webpack.json')
 

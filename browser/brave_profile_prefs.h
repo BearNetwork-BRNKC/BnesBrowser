@@ -6,13 +6,21 @@
 #ifndef BRAVE_BROWSER_BRAVE_PROFILE_PREFS_H_
 #define BRAVE_BROWSER_BRAVE_PROFILE_PREFS_H_
 
+#include "base/files/file_path.h"
+
 namespace user_prefs {
 class PrefRegistrySyncable;
 }
 
+class PrefService;
+
 namespace brave {
 
 void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry);
+
+void MigrateObsoleteBraveProfilePrefsBeforeChromium(PrefService* profile_prefs);
+void MigrateObsoleteBraveProfilePrefsAfterChromium(PrefService* profile_prefs,
+                                                    const base::FilePath& profile_path);
 
 }  // namespace brave
 

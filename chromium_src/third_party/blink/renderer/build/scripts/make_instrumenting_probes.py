@@ -18,7 +18,7 @@ should_apply_pg_changes = False
 
 def _add_page_graph_to_config(config):
     config["observers"]["PageGraph"] = {
-        "include_path": "brave/third_party/blink/renderer/core/brave_page_graph",
+        "include_path": "BnesBrowser/third_party/blink/renderer/core/brave_page_graph",
         "probes": [
             "NodeCreated",
             "DidCommitLoad",
@@ -46,8 +46,8 @@ def _add_page_graph_to_config(config):
 
     if _IS_PG_WEBAPI_PROBES_ENABLED:
         config["settings"]["includes"].extend([
-            "brave/third_party/blink/renderer/core/brave_page_graph/blink_converters.h",
-            "brave/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h",
+            "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_converters.h",
+            "BnesBrowser/third_party/blink/renderer/core/brave_page_graph/blink_probe_types.h",
         ])
         config["observers"]["PageGraph"]["probes"].extend([
             "RegisterPageGraphBindingEvent",

@@ -8,6 +8,7 @@
 #include <string>
 
 #include "base/values.h"
+#include "components/prefs/pref_service.h"
 #include "BnesBrowser/browser/brave_search/backup_results_service_impl.h"
 #include "BnesBrowser/browser/brave_stats/buildflags.h"
 #include "BnesBrowser/browser/metrics/buildflags/buildflags.h"
@@ -35,6 +36,7 @@
 #include "BnesBrowser/components/misc_metrics/privacy_hub_metrics.h"
 #include "BnesBrowser/components/misc_metrics/quick_search_metrics.h"
 #include "BnesBrowser/components/ntp_background_images/browser/ntp_background_images_service.h"
+#include "BnesBrowser/components/ntp_background_images/buildflags/buildflags.h"
 #include "BnesBrowser/components/ntp_background_images/common/view_counter_pref_registry.h"
 #include "BnesBrowser/components/p3a/metric_log_store.h"
 #include "BnesBrowser/components/p3a/p3a_service.h"
@@ -304,6 +306,27 @@ void RegisterLocalStatePrefs(PrefRegistrySimple* registry) {
 #if !BUILDFLAG(IS_IOS)
   registry->RegisterBooleanPref(
       brave_shields::prefs::kAllowElementBlockerInPrivateMode, false);
+#endif
+}
+
+void MigrateObsoleteBraveLocalStatePrefsAfterChromium(
+    PrefService* local_state) {
+#if BUILDFLAG(ENABLE_BRAVE_ADS)
+  brave_ads::MigrateObsoleteLocalStatePrefs(local_state);
+#endif
+#if BUILDFLAG(ENABLE_BRAVE_STATS_UPDATER)
+  brave_stats::MigrateObsoleteLocalStatePrefs(local_state);
+#endif
+#if BUILDFLAG(ENABLE_BRAVE_WALLET)
+  brave_wallet::MigrateObsoleteLocalStatePrefs(local_state);
+  decentralized_dns::MigrateObsoleteLocalStatePrefs(local_state);
+#endif
+  misc_metrics::UptimeMonitorImpl::MigrateObsoletePrefs(local_state);
+  brave_search_conversion::p3a::MigrateObsoleteLocalStatePrefs(local_state);
+  brave_search::BackupResultsMetrics::MigrateObsoleteLocalStatePrefs(local_state);
+  brave_l10n::MigrateObsoleteLocalStatePrefs(local_state);
+#if BUILDFLAG(ENABLE_CUSTOM_BACKGROUND)
+  ntp_background_images::NTPBackgroundImagesService::MigrateObsoleteLocalStatePrefs(local_state);
 #endif
 }
 

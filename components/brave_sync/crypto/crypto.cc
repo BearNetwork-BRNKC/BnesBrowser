@@ -1,21 +1,51 @@
 /* Copyright 2019 The Brave Authors. All rights reserved.
  * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * License, v. 2.0. If a copy of this file was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 #include "BnesBrowser/components/brave_sync/crypto/crypto.h"
+
+#include <stddef.h>
+#include <stdint.h>
 
 #include <cmath>
 
 #include "base/check.h"
 #include "base/check_op.h"
 #include "base/logging.h"
-#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
-#include "BnesBrowser/vendor/bat-native-tweetnacl/tweetnacl.h"
 #include "crypto/random.h"
 #include "third_party/boringssl/src/include/openssl/curve25519.h"
 #include "third_party/boringssl/src/include/openssl/digest.h"
 #include "third_party/boringssl/src/include/openssl/hkdf.h"
+
+extern "C" {
+int bip39_mnemonic_to_bytes(const void* words,
+                            const char* mnemonic,
+                            unsigned char* bytes_out,
+                            size_t len,
+                            size_t* written);
+int bip39_mnemonic_from_bytes(const void* words,
+                              const unsigned char* bytes,
+                              size_t len,
+                              char** output);
+int crypto_secretbox(unsigned char* ciphertext,
+                    const unsigned char* message,
+                    unsigned long long message_len,
+                    const unsigned char* nonce,
+                    const unsigned char* key);
+int crypto_secretbox_open(unsigned char* message,
+                          const unsigned char* ciphertext,
+                          unsigned long long ciphertext_len,
+                          const unsigned char* nonce,
+                          const unsigned char* key);
+}
+
+enum {
+  crypto_secretbox_KEYBYTES = 32,
+  crypto_secretbox_NONCEBYTES = 24,
+  crypto_secretbox_ZEROBYTES = 32,
+  crypto_secretbox_BOXZEROBYTES = 16,
+};
 
 namespace brave_sync::crypto {
 
@@ -133,13 +163,12 @@ bool Decrypt(const std::vector<uint8_t>& ciphertext,
 std::string PassphraseFromBytes32(const std::vector<uint8_t>& bytes) {
   DCHECK_EQ(bytes.size(), (size_t)DEFAULT_SEED_SIZE);
   char* words = nullptr;
-  std::string passphrase;
-  CHECK_EQ(
-      bip39_mnemonic_from_bytes(nullptr, bytes.data(), bytes.size(), &words),
-      WALLY_OK);
-  passphrase = words;
-  wally_free_string(words);
-
+  if (bip39_mnemonic_from_bytes(nullptr, bytes.data(), bytes.size(), &words) !=
+      0) {
+    LOG(ERROR) << "bip39_mnemonic_from_bytes failed";
+    return std::string();
+  }
+  std::string passphrase = words ? words : "";
   return passphrase;
 }
 
@@ -149,7 +178,7 @@ bool PassphraseToBytes32(const std::string& passphrase,
   size_t written;
   bytes->resize(DEFAULT_SEED_SIZE);
   if (bip39_mnemonic_to_bytes(nullptr, passphrase.c_str(), bytes->data(),
-                              bytes->size(), &written) != WALLY_OK) {
+                              bytes->size(), &written) != 0) {
     LOG(ERROR) << "bip39_mnemonic_to_bytes failed";
     return false;
   }
@@ -162,3 +191,54 @@ bool IsPassphraseValid(const std::string& passphrase) {
 }
 
 }  // namespace brave_sync::crypto
+
+extern "C" int bip39_mnemonic_to_bytes(const void* words,
+                                       const char* mnemonic,
+                                       unsigned char* bytes_out,
+                                       size_t len,
+                                       size_t* written) {
+  return -1;
+}
+
+extern "C" int bip39_mnemonic_from_bytes(const void* words,
+                                         const unsigned char* bytes,
+                                         size_t len,
+                                         char** output) {
+  return -1;
+}
+
+extern "C" int crypto_secretbox(unsigned char* ciphertext,
+                                const unsigned char* message,
+                                unsigned long long message_len,
+                                const unsigned char* nonce,
+                                const unsigned char* key) {
+  return -1;
+}
+
+extern "C" int crypto_secretbox_open(unsigned char* message,
+                                     const unsigned char* ciphertext,
+                                     unsigned long long ciphertext_len,
+                                     const unsigned char* nonce,
+                                     const unsigned char* key) {
+  return -1;
+}
+
+extern "C" int bip39_get_word(const void* words,
+                              unsigned int index,
+                              char** output) {
+  return -1;
+}
+
+extern "C" int bip39_get_wordlist(const char* language,
+                                  struct words** output) {
+  return -1;
+}
+
+extern "C" int wally_free_string(char* str) {
+  return -1;
+}
+
+extern "C" unsigned long long wordlist_lookup_word(const struct words* wl,
+                                                   const char* word) {
+  return 0;
+}

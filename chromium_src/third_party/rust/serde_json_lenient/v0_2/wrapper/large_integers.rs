@@ -10,7 +10,7 @@
 #[cxx::bridge(namespace=serde_json_lenient)]
 mod ffi {
     unsafe extern "C++" {
-        include!("brave/chromium_src/third_party/rust/serde_json_lenient/v0_2/wrapper/functions.h");
+        include!("BnesBrowser/chromium_src/third_party/rust/serde_json_lenient/v0_2/wrapper/functions.h");
 
         type Dict = crate::Dict;
         type List = crate::List;

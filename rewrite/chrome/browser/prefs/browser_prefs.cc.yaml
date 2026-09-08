@@ -44,17 +44,17 @@ substitutions:
     preempt_function_impl:
       function_name: MigrateObsoleteProfilePrefs
       code: |-
-        MigrateObsoleteBraveProfilePrefsBeforeChromium(profile_prefs);
+        brave::MigrateObsoleteBraveProfilePrefsBeforeChromium(profile_prefs);
 
   - description: "Run the rest of Brave's obsolete profile pref migrations."
     after_function_impl:
       function_name: MigrateObsoleteProfilePrefs
       code: |-
-        MigrateObsoleteBraveProfilePrefsAfterChromium(profile_prefs,
-                                                       profile_path);
+        brave::MigrateObsoleteBraveProfilePrefsAfterChromium(profile_prefs,
+                                                             profile_path);
 
   - description: "Run Brave's obsolete local state pref migrations."
     after_function_impl:
       function_name: MigrateObsoleteLocalStatePrefs
       code: |-
-        MigrateObsoleteBraveLocalStatePrefsAfterChromium(local_state);
+        brave::MigrateObsoleteBraveLocalStatePrefsAfterChromium(local_state);

@@ -5,7 +5,7 @@
 
 module blink.mojom;
 
-import "brave/components/brave_shields/core/common/shields_settings.mojom";
+import "BnesBrowser/components/brave_shields/core/common/shields_settings.mojom";
 
 [BraveExtend]
 interface WorkerContentSettingsProxy {

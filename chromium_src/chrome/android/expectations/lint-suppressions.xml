@@ -80,7 +80,7 @@
         <ignore regexp="The resource `R.string.brave_quick_action_search` appears to be unused" />
         <ignore regexp="The resource `R.drawable.ic_quick_action_search_and_bookmark_widget_preview` appears to be unused" />
         <ignore regexp="The resource `R.drawable.widget_preview appears` appears to be unused" />
-        <ignore regexp="brave/android/java/brave-res/drawable-night-nodpi/widget_preview.png" />
+        <ignore regexp="BnesBrowser/android/java/brave-res/drawable-night-nodpi/widget_preview.png" />
 
         <!-- Is used at brave_base_module_resources -->
         <ignore regexp="The resource `R.drawable.themed_app_icon` appears to be unused" />
@@ -91,7 +91,7 @@
         <ignore regexp="The resource `R.color.settings_search_logo_color_3` appears to be unused" />
     </issue>
     <issue id="ImpliedQuantity">
-        <ignore regexp="brave/build/android/android_brave_strings_grd"/>
+        <ignore regexp="BnesBrowser/build/android/android_brave_strings_grd"/>
     </issue>
 
     <!-- This is inherited from upstream -->

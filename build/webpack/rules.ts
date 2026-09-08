@@ -142,7 +142,7 @@ export function tsLoaderRule({
 /**
  * Strips code behind disabled build flags (`#if`/`#endif` style comments).
  *
- * @param buildFlags The parsed contents of brave/build_flags.json.
+ * @param buildFlags The parsed contents of BnesBrowser/build_flags.json.
  */
 export function ifdefLoaderRule(buildFlags: {
   [key: string]: boolean

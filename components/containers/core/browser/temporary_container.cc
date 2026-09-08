@@ -1,6 +1,6 @@
 // Copyright (c) 2026 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
-// License, v. 2.0. If a copy of the MPL was not distributed with this file,
+// License, v. 2.0. If a copy of this file was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 #include "BnesBrowser/components/containers/core/browser/temporary_container.h"
@@ -17,7 +17,6 @@
 #include "base/uuid.h"
 #include "BnesBrowser/components/containers/core/mojom/containers.mojom-shared.h"
 #include "BnesBrowser/components/containers/core/mojom/containers.mojom.h"
-#include "BnesBrowser/third_party/bip39wally-core-native/include/wally_bip39.h"
 #include "BnesBrowser/ui/color/nala/nala_color_id.h"
 #include "third_party/skia/include/core/SkColor.h"
 #include "ui/color/color_provider.h"
@@ -26,26 +25,22 @@
 namespace containers {
 namespace {
 
-// Generates a random temporary container name using first two BIP39 mnemonic
-// words generated from random entropy. The first word is title cased.
-std::string GenerateTemporaryContainerName() {
-  std::array<uint8_t, 16> entropy;
-  base::RandBytes(entropy);
-  char* words_cstr = nullptr;
-  CHECK_EQ(bip39_mnemonic_from_bytes(nullptr, entropy.data(), entropy.size(),
-                                     &words_cstr),
-           WALLY_OK);
-  std::string mnemonic(words_cstr);
-  wally_free_string(words_cstr);
+constexpr char kContainerNameChars[] =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-  const auto words = base::SplitStringPiece(
-      mnemonic, " ", base::TRIM_WHITESPACE, base::SPLIT_WANT_NONEMPTY);
-  CHECK_GE(words.size(), 2u);
-  std::string word_0(words[0]);
-  // Title case the first word.
-  CHECK(!word_0.empty());
-  word_0[0] = base::ToUpperASCII(word_0[0]);
-  return base::StrCat({word_0, " ", words[1]});
+// Generates a random temporary container name. The first character is title
+// cased.
+std::string GenerateTemporaryContainerName() {
+  const int kNameLength = 8;
+  const int kCharCount = static_cast<int>(std::size(kContainerNameChars));
+  std::string name;
+  name.reserve(kNameLength);
+  for (int i = 0; i < kNameLength; ++i) {
+    int idx = base::RandIntInclusive(0, kCharCount - 1);
+    name.push_back(kContainerNameChars[idx]);
+  }
+  name[0] = base::ToUpperASCII(name[0]);
+  return name;
 }
 
 // Picks a random container icon from the available icons.
