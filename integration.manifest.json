@@ -1,9 +1,35 @@
 {
   "manifest_type": "integration.manifest.json",
-  "manifest_version": "1-draft",
+  "manifest_version": "1",
   "generated": "2026-09-08",
-  "status": "draft（完整逐項盤點為後續工作，本檔為初次盤點基準）",
+  "formalized": "2026-09-09",
+  "status": "v1 正式版（Milestone 1 收斂時升級；本檔為 Integration Layer ownership 與盤點基準）",
   "layer": "Integration",
+  "milestone1_closure": {
+    "debrave_complete": true,
+    "completed": "2026-09-09",
+    "junction_removed": true,
+    "fix_categories": [
+      "GN //brave/ 命名空間（116 檔 .gn/.gni）",
+      "Rust #[path] 相對路徑（1 檔）",
+      "Proto/Mojo import 路徑（22 檔）",
+      "HTML 內嵌資源路徑（7 檔）",
+      "Python 建置腳本（27 檔：brave_chromium_utils/mojom parser override/installer archive 等）",
+      "Rust include!（2 檔：idna/url lib.rs）",
+      "BnesBrowser/resources/resource_ids.spec key 路徑（修復 Duplicate resource ID 53000）",
+      "API schema implemented_in（3 檔）",
+      "third_party/win_build_output/midl 參照檔（30 檔）"
+    ],
+    "verification": [
+      "GN regen 於無 Junction 狀態下成功（build.ninja 中 ../../brave/ = 0）",
+      "ninja -n dry-run EXIT=0",
+      "完整 create_dist EXIT=0 → BnesBrowser_setup.exe SHA-256 3AFD5C03425EC4EFCE819858AC5AFBFE570A10A317DBFE666403AAFC973F7EB6"
+    ],
+    "known_residuals": [
+      "//brave/ 命名空間掃描 129 號殘留於 .gn/.gni 文字（非阻斷，已存 .bnes-build/brave_namespace_scan.txt，擇日清掃）",
+      "mojom parser override 改指 BnesBrowser/chromium_src；win_build_output/midl 參照檔路徑已更新"
+    ]
+  },
   "areas": [
     {
       "area": "patches (Chromium/Brave 源碼補丁，經 redirect 投影至 src/)",
