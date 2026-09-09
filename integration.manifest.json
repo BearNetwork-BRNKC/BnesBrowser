@@ -48,6 +48,15 @@
     "version_source": "version_info::GetBraveVersionNumberForDisplay()（建置生成，來自 package.json 版本）",
     "bnes_protection": "bnes/ 目錄零修改（bnes.integrity.lock 不變）；引擎樹零修改（僅用 chrome/browser/upgrade_detector 公開 API）"
   },
+  "background_auto_update": {
+    "area": "階段二背景自動更新（計畫書第六十八節 68.3；Milestone 6 交付項）",
+    "added": "2026-09-09",
+    "layer": "Product + Release Tooling",
+    "trust_root": "ML-DSA-65 公鑰內嵌於 browser/bnes_update/bnes_update_public_key.h（由 bnes_release_signer pubheader 生成）",
+    "private_key": "seed 32B 存放 .bnes-build/keys/bnes_update_seed.bin（必須轉移至離線保管）",
+    "release_manifest": "bnes-update-manifest.json {version, installer_sha256, installer_url}，簽名附加 bnes-update-manifest.sig（raw 3309 bytes，空 context）",
+    "client_pipeline": "查 GitHub API → 新版 → 下載清單+簽名 → ML-DSA-65 驗證 → manifest 欄位驗證（版本嚴格遞增/HTTPS/SHA-256 格式）→ DownloadToFile → 串流 SHA-256 比對 → 靜默執行 --do-not-launch-chrome；任一失敗靜默中止並清理暫存"
+  },
   "areas": [
     {
       "area": "patches (Chromium/Brave 源碼補丁，經 redirect 投影至 src/)",

@@ -51,9 +51,9 @@
 
   "integration_manifest": {
     "path": "src/BnesBrowser/integration.manifest.json",
-    "status": "v1 正式版（含階段一更新通知條目，2026-09-09）",
-    "sha256": "62B0E3077B8955A71F091B7ABDDAAC093F03EE451087F41DDF42A1A33E978AFF",
-    "note": "debrave 完成後升級 v1；2026-09-09 增補階段一更新通知條目與 .grd 殘留修復紀錄。"
+    "status": "v1 正式版（含階段一/二更新管線條目，2026-09-09）",
+    "sha256": "6C0B204B9BB9C00DB65ACC656A08C5739977491D2F1A283B2A08B819117DC7D7",
+    "note": "debrave 完成後升級 v1；2026-09-09 增補更新通知與背景自動更新條目、.grd 殘留修復紀錄。"
   },
 
   "artifact": {
