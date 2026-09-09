@@ -51,12 +51,20 @@ if ($chromeVer -ne $lock.chromium.version) {
 }
 Ok "Chromium 版本一致：$chromeVer"
 
-# 3. Chromium commit
+# 3. Chromium commit（pinned base 或以其為祖先的 overlay snapshot）
 $chromiumHead = (git -C $SrcRoot rev-parse HEAD).Trim()
-if ($chromiumHead -ne $lock.chromium.commit) {
-    Fail "Chromium commit 不符：engine.lock=$($lock.chromium.commit)，實際=$chromiumHead（禁止未授權 Engine Revision 變更）"
+$lockedCommit = $lock.chromium.commit
+if ($chromiumHead -ne $lockedCommit) {
+    # 允許 overlay snapshot：HEAD 必須以 locked commit 為祖先（pinned base 未變更）
+    git -C $SrcRoot merge-base --is-ancestor $lockedCommit $chromiumHead 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Fail "Chromium commit 不符且 HEAD 不以 pinned base ($lockedCommit) 為祖先：實際=$chromiumHead（禁止未授權 Engine Revision 變更）"
+    }
+    $snapNote = if ($lock.chromium.overlay_snapshot_commit -and $chromiumHead -eq $lock.chromium.overlay_snapshot_commit) { '（= engine.lock 記錄的 overlay snapshot）' } else { '（overlay snapshot，engine.lock 尚未記錄此 commit，請同步更新）' }
+    Ok "Chromium pinned base 為祖先：base=$lockedCommit，HEAD=$chromiumHead $snapNote"
+} else {
+    Ok "Chromium commit 一致：$chromiumHead"
 }
-Ok "Chromium commit 一致：$chromiumHead"
 
 # 4. Product repository 狀態
 $productHead = (git -C $RepoRoot rev-parse HEAD).Trim()

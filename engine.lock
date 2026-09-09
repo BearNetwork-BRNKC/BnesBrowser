@@ -13,14 +13,16 @@
   "chromium": {
     "version": "152.0.7977.64",
     "commit": "506c834ecceaa943c5f41e6cfe7f68acb5c45346",
-    "source": "src/ (chromium git HEAD, 2026-09-08 驗證)"
+    "source": "src/ (chromium git HEAD, 2026-09-08 驗證)",
+    "overlay_snapshot_commit": "8efd8dde19e7e6c56b94226118f95f8fdaa92632",
+    "overlay_snapshot_note": "2026-09-09 Milestone 1 去 brave 化完成的 Overlay Snapshot commit，直接疊於 pinned base 之上（parent = commit）。Pinned upstream base 未變更；HEAD 必須為 base 本身或以其為祖先的 overlay snapshot。"
   },
 
   "product": {
     "repository": "https://github.com/BearNetwork-BRNKC/BnesBrowser.git",
     "note": "src/brave 與 src/BnesBrowser 為同一 git repository（origin 已指向 BnesBrowser.git）。",
     "revision_built_reference_build": "eb0a678d5fd1e4b5150e980921fa36715b743e32",
-    "revision_current_head": "90651c0290b12754e2e35aa689ca045bd7c118b7",
+    "revision_current_head": "d65f637935ee98cea3ce5ae6ee5b9bb03146d046",
     "head_committed": "2026-09-08T10:15:03+08:00",
     "provenance_note": "Reference Build (SHA-256: 00D4F173...D5A637) 於 revision_built_reference_build 時建置；current_head 為其後的產品 repo 初始 commit。兩者皆予記錄以保持 Build Provenance 可追溯。"
   },
