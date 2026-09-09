@@ -5,8 +5,11 @@
 
 #include "BnesBrowser/browser/brave_browser_main_extra_parts.h"
 
+#include <memory>
+
 #include "base/metrics/histogram_macros.h"
 #include "BnesBrowser/browser/brave_browser_process_impl.h"
+#include "BnesBrowser/browser/bnes_update/bnes_update_checker.h"
 #include "BnesBrowser/browser/misc_metrics/process_misc_metrics.h"
 #include "BnesBrowser/browser/misc_metrics/uptime_monitor_impl.h"
 #include "BnesBrowser/components/brave_shields/core/browser/brave_shields_p3a.h"
@@ -77,6 +80,16 @@ void BraveBrowserMainExtraParts::PreProfileInit() {
 
 void BraveBrowserMainExtraParts::PostBrowserStart() {
   g_brave_browser_process->StartBraveServices();
+
+#if !BUILDFLAG(IS_ANDROID)
+  // BNES update notification (plan section 68.3, Phase A): check GitHub
+  // Releases for a newer product version and raise the built-in
+  // "update available" UI. Notification only; never downloads or runs
+  // anything. All failures are silent.
+  bnes_update_checker_ = std::make_unique<bnes_update::BnesUpdateChecker>(
+      g_browser_process->shared_url_loader_factory());
+  bnes_update_checker_->Start();
+#endif  // !BUILDFLAG(IS_ANDROID)
 }
 
 void BraveBrowserMainExtraParts::PreMainMessageLoopRun() {

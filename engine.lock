@@ -51,9 +51,9 @@
 
   "integration_manifest": {
     "path": "src/BnesBrowser/integration.manifest.json",
-    "status": "v1 正式版（Milestone 1 收斂，2026-09-09）",
-    "sha256": "AC262B0D1DE548E1D1E8F401129B7C53668C63B1DA9561E4FDADD376A8595B48",
-    "note": "debrave 完成後升級為 v1 正式版；涵蓋 1,105 patches 盤點與 10 類去 brave 化修復紀錄。"
+    "status": "v1 正式版（含階段一更新通知條目，2026-09-09）",
+    "sha256": "62B0E3077B8955A71F091B7ABDDAAC093F03EE451087F41DDF42A1A33E978AFF",
+    "note": "debrave 完成後升級 v1；2026-09-09 增補階段一更新通知條目與 .grd 殘留修復紀錄。"
   },
 
   "artifact": {

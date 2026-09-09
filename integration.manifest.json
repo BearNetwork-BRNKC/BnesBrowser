@@ -27,8 +27,26 @@
     ],
     "known_residuals": [
       "//brave/ 命名空間掃描 129 號殘留於 .gn/.gni 文字（非阻斷，已存 .bnes-build/brave_namespace_scan.txt，擇日清掃）",
-      "mojom parser override 改指 BnesBrowser/chromium_src；win_build_output/midl 參照檔路徑已更新"
+      "mojom parser override 改指 BnesBrowser/chromium_src；win_build_output/midl 參照檔路徑已更新",
+      "〔2026-09-09 補〕5 個 .grd/.grdp 內 13 處 ${root_gen_dir}/brave/ 殘留已修復為 BnesBrowser/（ai_chat_ui_resources.grdp / brave_extension/extension/resources.grd / brave_components_resources.grd / br_elements_resources_v3.grdp / page_specific_v3.grdp）——此類殘留於 GN 層掃描不可見，僅在資源重打包時浮現"
     ]
+  },
+  "update_notification": {
+    "area": "階段一更新通知（計畫書第六十八節 68.3；Milestone 2 交付項）",
+    "added": "2026-09-09",
+    "layer": "Product",
+    "files_added": [
+      "BnesBrowser/browser/bnes_update/bnes_update_checker.h",
+      "BnesBrowser/browser/bnes_update/bnes_update_checker.cc",
+      "BnesBrowser/browser/bnes_update/BUILD.gn"
+    ],
+    "files_modified": [
+      "BnesBrowser/browser/BUILD.gn（core deps + //BnesBrowser/browser/bnes_update）",
+      "BnesBrowser/browser/brave_browser_main_extra_parts.h/.cc（PostBrowserStart 啟動檢查器）"
+    ],
+    "behavior": "24h 週期 + 隨機抖動查詢 GitHub Releases API；tag 嚴格數字比對（malformed 一律不觸發）；新版時經 UpgradeDetector::NotifyUpgradeForTesting() 升起內建更新 UI；不下載、不執行任何安裝；全部失敗路徑靜默；每 session 至多通知一次",
+    "version_source": "version_info::GetBraveVersionNumberForDisplay()（建置生成，來自 package.json 版本）",
+    "bnes_protection": "bnes/ 目錄零修改（bnes.integrity.lock 不變）；引擎樹零修改（僅用 chrome/browser/upgrade_detector 公開 API）"
   },
   "areas": [
     {

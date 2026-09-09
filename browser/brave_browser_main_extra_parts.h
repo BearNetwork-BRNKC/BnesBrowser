@@ -6,9 +6,15 @@
 #ifndef BRAVE_BROWSER_BRAVE_BROWSER_MAIN_EXTRA_PARTS_H_
 #define BRAVE_BROWSER_BRAVE_BROWSER_MAIN_EXTRA_PARTS_H_
 
+#include <memory>
+
 #include "base/compiler_specific.h"
 #include "chrome/browser/chrome_browser_main.h"
 #include "chrome/browser/chrome_browser_main_extra_parts.h"
+
+namespace bnes_update {
+class BnesUpdateChecker;
+}  // namespace bnes_update
 
 class BraveBrowserMainExtraParts : public ChromeBrowserMainExtraParts {
  public:
@@ -23,6 +29,9 @@ class BraveBrowserMainExtraParts : public ChromeBrowserMainExtraParts {
   void PreMainMessageLoopRun() override;
   void PreProfileInit() override;
   void PostDestroyThreads() override;
+
+ private:
+  std::unique_ptr<bnes_update::BnesUpdateChecker> bnes_update_checker_;
 };
 
 #endif  // BRAVE_BROWSER_BRAVE_BROWSER_MAIN_EXTRA_PARTS_H_

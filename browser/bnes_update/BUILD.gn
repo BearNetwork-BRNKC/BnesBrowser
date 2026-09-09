@@ -1,0 +1,22 @@
+# Copyright (c) 2026 The BNES Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this file,
+# You can obtain one at https://mozilla.org/MPL/2.0/.
+
+# Phase A updater (BNES_BROWSER_ARCHITECTURE_EVOLUTION_PLAN.md section 68.3):
+# update notification only. Never downloads or executes installers.
+source_set("bnes_update") {
+  sources = [
+    "bnes_update_checker.cc",
+    "bnes_update_checker.h",
+  ]
+
+  deps = [
+    "//base",
+    "//BnesBrowser/components/version_info",
+    "//chrome/browser/upgrade_detector:impl",
+    "//chrome/browser/upgrade_detector:upgrade_detector",
+    "//services/network/public/cpp",
+    "//url",
+  ]
+}
