@@ -22,7 +22,7 @@
     "repository": "https://github.com/BearNetwork-BRNKC/BnesBrowser.git",
     "note": "src/brave 與 src/BnesBrowser 為同一 git repository（origin 已指向 BnesBrowser.git）。",
     "revision_built_reference_build": "eb0a678d5fd1e4b5150e980921fa36715b743e32",
-    "revision_current_head": "d65f637935ee98cea3ce5ae6ee5b9bb03146d046",
+    "revision_current_head": "05dd805fb3db892aba0cba755ef4a51d727c66bc",
     "head_committed": "2026-09-08T10:15:03+08:00",
     "provenance_note": "Reference Build (SHA-256: 00D4F173...D5A637) 於 revision_built_reference_build 時建置；current_head 為其後的產品 repo 初始 commit。兩者皆予記錄以保持 Build Provenance 可追溯。"
   },

@@ -70,7 +70,13 @@ if ($chromiumHead -ne $lockedCommit) {
 $productHead = (git -C $RepoRoot rev-parse HEAD).Trim()
 $productDirty = @(git -C $RepoRoot status --porcelain).Count
 if ($productHead -ne $lock.product.revision_current_head) {
-    Warn "Product HEAD 與 engine.lock 記錄不同（lock=$($lock.product.revision_current_head)，實際=$productHead）；如為有意識的新 commit，請同步更新 engine.lock。"
+    # 自指語義：engine.lock 位於本 repo 內，無法記錄包含自身的 commit。
+    # 因此要求 lock 記錄的 head 是實際 HEAD 的祖先（或相等）；否則視為未授權分叉。
+    git -C $RepoRoot merge-base --is-ancestor $lock.product.revision_current_head $productHead 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Fail "Product HEAD 與 engine.lock 記錄分叉（lock=$($lock.product.revision_current_head)，實際=$productHead）；禁止未授權歷史分叉。"
+    }
+    Ok "Product HEAD 為 lock 記錄之後續：lock=$($lock.product.revision_current_head)，HEAD=$productHead"
 } else {
     Ok "Product HEAD 一致：$productHead"
 }
