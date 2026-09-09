@@ -1,0 +1,107 @@
+{
+  "manifest_type": "bnes.integrity.lock",
+  "manifest_version": 1,
+  "generated": "2026-09-08",
+  "regenerated_note": "de-brave migration: build_and_test.ps1 / check-h5.2-env.ps1 路徑修正",
+  "protected_root": "bnes/",
+  "file_count": 19,
+  "total_bytes": 60021.0,
+  "policy": "任何未列於此清單的 bnes/ 檔案視為違規；任何 hash/size 不符即 STOP，不得自動修復。",
+  "files": [
+    {
+      "path": "bnes/bns_constants.h",
+      "size_bytes": 1437,
+      "sha256": "754c1169e1894185636081430015338365e1c9cc16a580a9ed2a4f6dbaaf6566"
+    },
+    {
+      "path": "bnes/bns_resolver.cc",
+      "size_bytes": 4166,
+      "sha256": "949bdbd26b70bbd3e039cda686dd72b348500f21d70d7f94b9bfa9b3592c5946"
+    },
+    {
+      "path": "bnes/bns_resolver.h",
+      "size_bytes": 1846,
+      "sha256": "164fea9e4091105b26a7ebccccf2aa0b02965604a7a3ece23193f28630df29e7"
+    },
+    {
+      "path": "bnes/bns_scheme_handler.cc",
+      "size_bytes": 3210,
+      "sha256": "f531b25265de30bdcd9d43d4dd76247e423df3ab6460bb0899ab1f858c87b425"
+    },
+    {
+      "path": "bnes/bns_scheme_handler.h",
+      "size_bytes": 2448,
+      "sha256": "11f9aa1a6210fe5a2091d7113fd658e7c21c70dc01541a338c738521cad46dab"
+    },
+    {
+      "path": "bnes/bns_security_unittest.cc",
+      "size_bytes": 5421,
+      "sha256": "051e3036f017c7a0d954fec78000aa1f025c1b98274a62cc269d61d8440c5755"
+    },
+    {
+      "path": "bnes/bns_security.cc",
+      "size_bytes": 4807,
+      "sha256": "6ec341b09200523bcb3a70fd3dd189de0cb98bc890ee885fec5fd6e588d882ea"
+    },
+    {
+      "path": "bnes/bns_security.h",
+      "size_bytes": 1634,
+      "sha256": "f2029a6cd58a21b1b995117e888eae4ada3fb881a1b10445437f52fc1d033d19"
+    },
+    {
+      "path": "bnes/BUILD.gn",
+      "size_bytes": 1046,
+      "sha256": "e82acd5d8a40e113824d8ac1e8f9397629c9f9cde55200a477ea141fcc987a54"
+    },
+    {
+      "path": "bnes/protected_overlays.json",
+      "size_bytes": 3285,
+      "sha256": "3651ccef75213e22a57b1801301c2d7c15e009bbddbc25de24b17e7dff27903c"
+    },
+    {
+      "path": "bnes/scripts/check-h5.2-env.ps1",
+      "size_bytes": 10325,
+      "sha256": "7f4151046f04f18776732259ca0688812f94f904215c4fbf0c0fd0edb851f33d"
+    },
+    {
+      "path": "bnes/scripts/check-protected-overlays.ps1",
+      "size_bytes": 3955,
+      "sha256": "08e55ec6a82ec6d4704fabbacd96232320c25b5ae2b81b0095fcb3d2ec501f3f"
+    },
+    {
+      "path": "bnes/test_harness/build_and_test.ps1",
+      "size_bytes": 1970,
+      "sha256": "1ec1a8f4892bc65884c78b827b2da4474bbd8ea04620902768408a514f824af5"
+    },
+    {
+      "path": "bnes/test_harness/test_main.cc",
+      "size_bytes": 175,
+      "sha256": "29fdff1dde75226272a9dcd93874ab84d73b5c6d53df26df978050b62855d520"
+    },
+    {
+      "path": "bnes/test_harness/base/strings/string_util.h",
+      "size_bytes": 1830,
+      "sha256": "502b11840c6983f514875ccb480b688b2a3f77c4eb719703c862ad809127b035"
+    },
+    {
+      "path": "bnes/test_harness/net/base/ip_address.h",
+      "size_bytes": 3097,
+      "sha256": "e5f0b292738f32f5d2dfc39164a8db8d927759bc39fe576772d0fdcd4969c8ad"
+    },
+    {
+      "path": "bnes/test_harness/testing/gtest/include/gtest/gtest.h",
+      "size_bytes": 4903,
+      "sha256": "dfeee183c6b5e06539e6803779265c4879dbffc42f1042155fe131f20ebafd57"
+    },
+    {
+      "path": "bnes/test_harness/url/gurl.h",
+      "size_bytes": 4030,
+      "sha256": "3cee76495c8f6ef8b4bf4b86c97fdb9e0f7a4c8d8772dfe8073b31e9bfd95604"
+    },
+    {
+      "path": "bnes/test_harness/url/url_constants.h",
+      "size_bytes": 436,
+      "sha256": "4b6d5b977a2e679a9b5d837ca8201e8e3bac886bc97a04b9e150f7e422276deb"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "manifest_type": "integration.manifest.json",
+  "manifest_version": "1-draft",
+  "generated": "2026-09-08",
+  "status": "draft（完整逐項盤點為後續工作，本檔為初次盤點基準）",
+  "layer": "Integration",
+  "areas": [
+    {
+      "area": "patches (Chromium/Brave 源碼補丁，經 redirect 投影至 src/)",
+      "total_patch_count": 1105,
+      "subdirectories": [
+        {
+          "area": "patches/third_party",
+          "patch_count": 37
+        },
+        {
+          "area": "patches/v8",
+          "patch_count": 2
+        }
+      ]
+    },
+    {
+      "area": "redirect_cc",
+      "build_flag": "is_redirect_cc_build=false（build/redirect_cc.gni，本次建置未啟用 redirect 投影）",
+      "source": "build/redirect_cc.gni"
+    },
+    {
+      "area": "gn_integration",
+      "bnes_targets": [
+        "//BnesBrowser/bnes:security",
+        "//BnesBrowser/bnes:scheme_handler"
+      ],
+      "namespace_note": "Product/Integration 源碼以 //BnesBrowser/ GN namespace 引用"
+    },
+    {
+      "area": "known_build_fixes",
+      "entries": [
+        "BnesBrowser/components/brave_sync/BUILD.gn: time_limited_codes 加入 //BnesBrowser/third_party/bip39wally-core-native:bip39wally-core 相依（2026-09-08，修復 chrome.dll 連結）",
+        "建置啟動路徑規範：必須以大寫 E:\\BnesBrowser-build 啟動。generate_expired_histograms_array.py 的 CheckUnsyncedHistograms 以 case-sensitive set 比較 abspath，小寫 e:\\ 會導致 expired_histograms_array.h 產生失敗（NINJA_EXIT=1，2026-09-09 確認）",
+        "resume_create_dist.cmd 重寫為純 ASCII + CRLF（2026-09-08）：UTF-8 中文註解會在非 UTF-8 codepage 下使 cmd 批次解析錯亂"
+      ]
+    }
+  ]
+}

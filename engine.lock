@@ -1,0 +1,68 @@
+{
+  "manifest_type": "engine.lock",
+  "lock_version": 1,
+  "created": "2026-09-08",
+  "authority": "本檔為 Engine Revision 唯一權威（BNES_BROWSER_ARCHITECTURE_EVOLUTION_PLAN.md 第十四條）。所有欄位取自本機工作樹實際驗證值，非猜測。",
+
+  "engine": {
+    "name": "BnesEngine",
+    "mode": "source",
+    "platform": "win-x64"
+  },
+
+  "chromium": {
+    "version": "152.0.7977.64",
+    "commit": "506c834ecceaa943c5f41e6cfe7f68acb5c45346",
+    "source": "src/ (chromium git HEAD, 2026-09-08 驗證)"
+  },
+
+  "product": {
+    "repository": "https://github.com/BearNetwork-BRNKC/BnesBrowser.git",
+    "note": "src/brave 與 src/BnesBrowser 為同一 git repository（origin 已指向 BnesBrowser.git）。",
+    "revision_built_reference_build": "eb0a678d5fd1e4b5150e980921fa36715b743e32",
+    "revision_current_head": "90651c0290b12754e2e35aa689ca045bd7c118b7",
+    "head_committed": "2026-09-08T10:15:03+08:00",
+    "provenance_note": "Reference Build (SHA-256: 00D4F173...D5A637) 於 revision_built_reference_build 時建置；current_head 為其後的產品 repo 初始 commit。兩者皆予記錄以保持 Build Provenance 可追溯。"
+  },
+
+  "toolchain": {
+    "os": "Windows 10",
+    "compiler": "clang-cl, llvm-build Release+Asserts, clang major 23 (third_party/llvm-build/lib/clang/23)",
+    "linker": "lld-link",
+    "msvc_version": "14.42.34433",
+    "msvc_source": "VS2022 Community, vcvars_ver=14.42 (build log libpath 驗證)",
+    "windows_sdk_version": "10.0.26100.0",
+    "gn_version": "2486 (641ace93dd95)",
+    "gn_executable": "src/buildtools/win/gn.exe",
+    "ninja_version": "1.12.1",
+    "ninja_executable": "src/third_party/ninja/ninja.exe",
+    "ninja_note": "本工作樹禁用 autoninja（siso 狀態檔）；一律直接呼叫 ninja.exe。",
+    "python": "PYTHONUTF8=1, PYTHONPATH 含 src/brave/script（brave_chromium_utils）",
+    "depot_tools_win_toolchain": 0
+  },
+
+  "build_configuration": {
+    "out_dir": "src/out/Release_GN",
+    "args_gn_sha256": "EC8BFA712604DECA32310C469AB9D044971681CC9D397BAEF23FF6931C9B8007",
+    "args_gn_backup": "E:/BnesBrowser-build/args.gn.bak"
+  },
+
+  "integration_manifest": {
+    "path": "src/BnesBrowser/integration.manifest.json",
+    "status": "draft",
+    "sha256": "2448028d7da365cbe7c73ac5ed35a0ff261da170663229c1a0b723e1b6dcce2b",
+    "note": "integration.manifest.json 尚未完成盤點；完成後填入其 sha256。"
+  },
+
+  "artifact": {
+    "name": null,
+    "version": null,
+    "sha256": "2448028d7da365cbe7c73ac5ed35a0ff261da170663229c1a0b723e1b6dcce2b",
+    "note": "Source Engine Mode；BnesEngine Artifact 將於 Phase A (Milestone 3) 建立。"
+  },
+
+  "bnes_core_integrity": {
+    "path": "src/BnesBrowser/bnes.integrity.lock",
+    "file_count": 19
+  }
+}
