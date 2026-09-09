@@ -16,7 +16,9 @@ source_set("bnes_update") {
     "//BnesBrowser/components/version_info",
     "//chrome/browser/upgrade_detector:impl",
     "//chrome/browser/upgrade_detector:upgrade_detector",
+    "//crypto",
     "//services/network/public/cpp",
+    "//third_party/boringssl",
     "//url",
   ]
 }

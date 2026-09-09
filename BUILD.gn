@@ -297,6 +297,7 @@ group("BnesBrowser") {
     "build/$target_os:brave",
     "//BnesBrowser/bnes:security",
     "//BnesBrowser/bnes:scheme_handler",
+    "//BnesBrowser/tools/bnes_release_signer:bnes_release_signer",
   ]
   if (!is_android && !is_ios) {
     deps += [
