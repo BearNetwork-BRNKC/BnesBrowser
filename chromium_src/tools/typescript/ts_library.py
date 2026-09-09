@@ -13,7 +13,7 @@ import override_utils
 
 from brave_chromium_utils import get_webui_overridden_but_referenced_files, sys_path
 
-with sys_path('//brave/tools/typescript'):
+with sys_path('//BnesBrowser/tools/typescript'):
     import tsc_timeout_retry
 
 

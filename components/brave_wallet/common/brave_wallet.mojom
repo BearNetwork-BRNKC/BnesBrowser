@@ -5,7 +5,7 @@
 
 module brave_wallet.mojom;
 
-import "brave/components/brave_wallet/common/meld_integration.mojom";
+import "BnesBrowser/components/brave_wallet/common/meld_integration.mojom";
 import "mojo/public/mojom/base/time.mojom";
 import "mojo/public/mojom/base/values.mojom";
 import "url/mojom/origin.mojom";

@@ -94,7 +94,7 @@ hooks = [
     'action': ['vpython3',
                'tools/cr/install_extra_deps.py',
                'sync',
-               'src/brave/third_party/updater/mac']
+               'src/BnesBrowser/third_party/updater/mac']
   },
   {
     'name': 'update_pip',
@@ -123,7 +123,7 @@ hooks = [
     'action': ['vpython3',
                'tools/cr/install_extra_deps.py',
                'sync',
-               'src/brave/third_party/brave-vpn-wireguard-nt-dlls']
+               'src/BnesBrowser/third_party/brave-vpn-wireguard-nt-dlls']
   },
   {
     'name': 'wireguard_tunnel',
@@ -132,14 +132,14 @@ hooks = [
     'action': ['vpython3',
                'tools/cr/install_extra_deps.py',
                'sync',
-               'src/brave/third_party/brave-vpn-wireguard-tunnel-dlls']
+               'src/BnesBrowser/third_party/brave-vpn-wireguard-tunnel-dlls']
   },
   {
     'name': 'download_wintun',
     'pattern': '.',
     'condition': 'checkout_win',
     'action': ['vpython3', 'build/win/download_wintun.py',
-               'wintun/wintun-0.14.1.zip', '//brave/third_party/wintun',
+               'wintun/wintun-0.14.1.zip', '//BnesBrowser/third_party/wintun',
                '07c256185d6ee3652e09fa55c0b673e2624b565e02c4b9091c79ca7d2f24ef51'],
   },
   {
@@ -223,10 +223,10 @@ hooks = [
     'action': ['vpython3',
                'tools/cr/install_extra_deps.py',
                'sync',
-               'src/brave/third_party/ast-grep/ast-grep-linux',
-               'src/brave/third_party/ast-grep/ast-grep-mac',
-               'src/brave/third_party/ast-grep/ast-grep-mac_arm64',
-               'src/brave/third_party/ast-grep/ast-grep-win']
+               'src/BnesBrowser/third_party/ast-grep/ast-grep-linux',
+               'src/BnesBrowser/third_party/ast-grep/ast-grep-mac',
+               'src/BnesBrowser/third_party/ast-grep/ast-grep-mac_arm64',
+               'src/BnesBrowser/third_party/ast-grep/ast-grep-win']
   },
   {
     'name': 'download_node',
@@ -234,10 +234,10 @@ hooks = [
     'action': ['vpython3',
                'tools/cr/install_extra_deps.py',
                'sync',
-               'src/brave/third_party/node/node-linux-x64',
-               'src/brave/third_party/node/node-mac-x64',
-               'src/brave/third_party/node/node-mac-arm64',
-               'src/brave/third_party/node/node-win-x64']
+               'src/BnesBrowser/third_party/node/node-linux-x64',
+               'src/BnesBrowser/third_party/node/node-mac-x64',
+               'src/BnesBrowser/third_party/node/node-mac-arm64',
+               'src/BnesBrowser/third_party/node/node-win-x64']
   },
 ]
 

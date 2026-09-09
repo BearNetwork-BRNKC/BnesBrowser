@@ -10,7 +10,7 @@ import re
 import brave_chromium_utils
 import override_utils
 
-with brave_chromium_utils.sys_path('//brave/tools/typescript'):
+with brave_chromium_utils.sys_path('//BnesBrowser/tools/typescript'):
     import tsc_timeout_retry
 
 

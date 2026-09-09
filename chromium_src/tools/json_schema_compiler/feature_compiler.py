@@ -10,7 +10,7 @@ import override_utils
 class BraveFeatureDefinitionExtender:
     # This is executed for all important files. List all of them so we can fail
     # in case something new appears in the repository or if an existing file is
-    # being moved somewhere. "True" means //brave/chromium_src/... counterpart
+    # being moved somewhere. "True" means //BnesBrowser/chromium_src/... counterpart
     # must exist.
     KNOWN_FILES = {
         "chrome/common/apps/platform_apps/api/_api_features.json": False,
@@ -35,7 +35,7 @@ class BraveFeatureDefinitionExtender:
 
         with open(
                 brave_chromium_utils.wspath(
-                    f"//brave/chromium_src/{source_file}"), "r") as f:
+                    f"//BnesBrowser/chromium_src/{source_file}"), "r") as f:
             parsed_json = json_parse.Parse(f.read())
         return parsed_json
 
@@ -58,7 +58,7 @@ class BraveFeatureDefinitionExtender:
                 )
             # Ensure override file exists if it has to.
             overridden_filepath = brave_chromium_utils.wspath(
-                f"//brave/chromium_src/{source_file}")
+                f"//BnesBrowser/chromium_src/{source_file}")
             assert should_exist == os.path.exists(
                 overridden_filepath), overridden_filepath
 

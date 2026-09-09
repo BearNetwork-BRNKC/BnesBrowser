@@ -8,7 +8,7 @@
 $ErrorActionPreference = "Stop"
 
 $RootDir = "S:\Ai_Agent\BNES\BnesBrowser\bnes"
-$BraveRoot = "S:\Ai_Agent\BNES\BnesBrowser"
+$BraveRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $HarnessDir = Join-Path $RootDir "test_harness"
 $OutputDir = Join-Path $HarnessDir "out"
 

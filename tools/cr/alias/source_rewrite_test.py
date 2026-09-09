@@ -216,52 +216,52 @@ class UpdateGnReferencesTest(unittest.TestCase):
     # ----- BUILD.gn move: directory rename, root references -----
 
     def test_build_gn_root_reference_rewritten(self):
-        """`"//brave/foo"` → `"//brave/bar"` when foo's BUILD.gn moves."""
+        """`"//BnesBrowser/foo"` → `"//BnesBrowser/bar"` when foo's BUILD.gn moves."""
         self._write('consumer/BUILD.gn',
-                    'deps = [ "//brave/components/api_request_helper" ]\n')
+                    'deps = [ "//BnesBrowser/components/api_request_helper" ]\n')
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_test"',
+        self.assertIn('"//BnesBrowser/components/api_test"',
                       self._read('consumer/BUILD.gn'))
 
     def test_build_gn_root_reference_with_target_rewritten(self):
-        """`"//brave/foo:target"` is rewritten and target preserved."""
+        """`"//BnesBrowser/foo:target"` is rewritten and target preserved."""
         self._write(
             'consumer/BUILD.gn',
-            'deps = [ "//brave/components/api_request_helper:test_support" ]\n'
+            'deps = [ "//BnesBrowser/components/api_request_helper:test_support" ]\n'
         )
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_test:test_support"',
+        self.assertIn('"//BnesBrowser/components/api_test:test_support"',
                       self._read('consumer/BUILD.gn'))
 
     def test_build_gn_root_reference_with_subpath_rewritten(self):
-        """`"//brave/foo/sub"` is rewritten and subpath preserved."""
+        """`"//BnesBrowser/foo/sub"` is rewritten and subpath preserved."""
         self._write(
             'consumer/BUILD.gn',
-            'sources = [ "//brave/components/api_request_helper/foo.h" ]\n')
+            'sources = [ "//BnesBrowser/components/api_request_helper/foo.h" ]\n')
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_test/foo.h"',
+        self.assertIn('"//BnesBrowser/components/api_test/foo.h"',
                       self._read('consumer/BUILD.gn'))
 
     def test_build_gn_similar_prefix_not_rewritten(self):
-        """`"//brave/foo_v2"` is NOT touched when only `foo` moved."""
+        """`"//BnesBrowser/foo_v2"` is NOT touched when only `foo` moved."""
         self._write('consumer/BUILD.gn',
-                    'deps = [ "//brave/components/api_request_helper_v2" ]\n')
+                    'deps = [ "//BnesBrowser/components/api_request_helper_v2" ]\n')
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_request_helper_v2"',
+        self.assertIn('"//BnesBrowser/components/api_request_helper_v2"',
                       self._read('consumer/BUILD.gn'))
 
     def test_build_gn_root_reference_in_gni_rewritten(self):
         """The walk applies to .gni files too, not just BUILD.gn."""
         self._write(
             'config/sources.gni',
-            'shared_deps = [ "//brave/components/api_request_helper" ]\n')
+            'shared_deps = [ "//BnesBrowser/components/api_request_helper" ]\n')
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_test"',
+        self.assertIn('"//BnesBrowser/components/api_test"',
                       self._read('config/sources.gni'))
 
     # ----- BUILD.gn move: relative references -----
@@ -391,15 +391,15 @@ class UpdateGnReferencesTest(unittest.TestCase):
     # ----- C++ file move: root reference in .gn/.gni only -----
 
     def test_cpp_root_reference_in_build_gn_rewritten(self):
-        """`"//brave/foo/bar.h"` in BUILD.gn is rewritten when bar.h moves."""
+        """`"//BnesBrowser/foo/bar.h"` in BUILD.gn is rewritten when bar.h moves."""
         self._write(
             'consumer/BUILD.gn', 'sources = [\n'
-            '  "//brave/components/api_request_helper/api_request_helper.h"\n'
+            '  "//BnesBrowser/components/api_request_helper/api_request_helper.h"\n'
             ']\n')
         update_references(
             Path('brave/components/api_request_helper/api_request_helper.h'),
             Path('brave/components/api_test/api_test.h'))
-        self.assertIn('"//brave/components/api_test/api_test.h"',
+        self.assertIn('"//BnesBrowser/components/api_test/api_test.h"',
                       self._read('consumer/BUILD.gn'))
 
     def test_cpp_relative_reference_in_build_gn_not_rewritten(self):
@@ -425,10 +425,10 @@ class UpdateGnReferencesTest(unittest.TestCase):
     def test_excluded_out_dir_skipped(self):
         """A BUILD.gn under out/ is not rewritten."""
         self._write('out/Default/gen/BUILD.gn',
-                    'deps = [ "//brave/components/api_request_helper" ]\n')
+                    'deps = [ "//BnesBrowser/components/api_request_helper" ]\n')
         update_references(Path('brave/components/api_request_helper/BUILD.gn'),
                           Path('brave/components/api_test/BUILD.gn'))
-        self.assertIn('"//brave/components/api_request_helper"',
+        self.assertIn('"//BnesBrowser/components/api_request_helper"',
                       self._read('out/Default/gen/BUILD.gn'))
 
 

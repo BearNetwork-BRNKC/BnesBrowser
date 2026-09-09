@@ -171,7 +171,7 @@ def _parse_target_ninja(path, out_dir):
 
     label_name = variables.get('label_name')
     target_out_dir = variables.get('target_out_dir', '')
-    # `obj/brave/ios/swift` -> `//brave/ios/swift`
+    # `obj/brave/ios/swift` -> `//BnesBrowser/ios/swift`
     label_dir = '//' + target_out_dir.removeprefix('obj/')
     label = f'{label_dir}:{label_name}'
     return Target(label, variables['module_name'], sources, variables, out_dir)

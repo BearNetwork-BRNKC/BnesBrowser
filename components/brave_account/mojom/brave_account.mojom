@@ -5,12 +5,12 @@
 
 module brave_account.mojom;
 
-import "brave/components/brave_account/mojom/change_password.mojom";
-import "brave/components/brave_account/mojom/get_service_token.mojom";
-import "brave/components/brave_account/mojom/login.mojom";
-import "brave/components/brave_account/mojom/register.mojom";
-import "brave/components/brave_account/mojom/resend_verification_email.mojom";
-import "brave/components/brave_account/mojom/reset_password.mojom";
+import "BnesBrowser/components/brave_account/mojom/change_password.mojom";
+import "BnesBrowser/components/brave_account/mojom/get_service_token.mojom";
+import "BnesBrowser/components/brave_account/mojom/login.mojom";
+import "BnesBrowser/components/brave_account/mojom/register.mojom";
+import "BnesBrowser/components/brave_account/mojom/resend_verification_email.mojom";
+import "BnesBrowser/components/brave_account/mojom/reset_password.mojom";
 
 // These enum values are persisted to Preferences. Never reorder, repurpose,
 // or recycle a value — only append new ones with the next unused number.

@@ -11,7 +11,7 @@ import override_utils
 
 from py_utils import cloud_storage
 
-with brave_chromium_utils.sys_path('//brave/tools/perf'):
+with brave_chromium_utils.sys_path('//BnesBrowser/tools/perf'):
     from components.path_util import GetPageSetsDataPath, GetBraveDir
 
 _WPR_ARCHIVES_TO_REPLACE = [

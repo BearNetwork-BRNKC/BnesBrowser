@@ -19,7 +19,7 @@ from brave_chromium_utils import wspath
 
 
 def update_midl_files():
-    midl_dir = wspath("//brave/win_build_output/midl")
+    midl_dir = wspath("//BnesBrowser/win_build_output/midl")
     with os.scandir(midl_dir) as entries:
         for entry in entries:
             if not entry.is_dir():

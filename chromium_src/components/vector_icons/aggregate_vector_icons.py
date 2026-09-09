@@ -17,8 +17,8 @@ VERBOSE = False  # Set to True to print verbose messages.
 # Loads the leo overrides from leo_overrides.json.
 def LoadLeoOverrides():
     leo_overrides_config_path = brave_chromium_utils.wspath(
-        '//brave/components/vector_icons/leo_overrides.json')
-    leo_override_format = '//brave/node_modules/@brave/leo/icons-skia/{}.icon'
+        '//BnesBrowser/components/vector_icons/leo_overrides.json')
+    leo_override_format = '//BnesBrowser/node_modules/@brave/leo/icons-skia/{}.icon'
 
     with open(leo_overrides_config_path, 'r') as f:
         leo_overrides_config = json.load(f)

@@ -479,7 +479,7 @@ class ChromiumSrcOverridesChecker:
                     f"No source for override {display_override_filepath}. " +
                     "If this is not a true override, then add the path to " +
                     "the `path_excludes` in " +
-                    "//brave/chromium_src/check_chromium_src_config.json5." +
+                    "//BnesBrowser/chromium_src/check_chromium_src_config.json5." +
                     "Otherwise, the upstream file is gone and a fix " +
                     "is required.")
                 continue
@@ -497,10 +497,10 @@ class ChromiumSrcOverridesChecker:
         if not os.path.isfile(override_path):
             self.add_error(
                 "Path listed in " +
-                "//brave/chromium_src/check_chromium_src_config.json5 " +
+                "//BnesBrowser/chromium_src/check_chromium_src_config.json5 " +
                 f"cannot be found: chromium_src/{path}. If the file was " +
                 "removed then also remove it from the list in " +
-                "//brave/chromium_src/check_chromium_src_config.json5")
+                "//BnesBrowser/chromium_src/check_chromium_src_config.json5")
             return False
         return True
 

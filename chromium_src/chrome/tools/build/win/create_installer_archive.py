@@ -26,8 +26,9 @@ def CopyAllFilesToStagingDir(original_function, config, distribution,
                       enable_hidpi, include_snapshotblob, include_dxc,
                       component_build, component_ffmpeg_build, verbose)
     brave_extension_locales_src_dir_path = os.path.realpath(
-        os.path.join(get_src_dir(), 'brave', 'components', 'brave_extension',
-                     'extension', 'brave_extension', '_locales'))
+        os.path.join(get_src_dir(), 'BnesBrowser', 'components',
+                     'brave_extension', 'extension', 'brave_extension',
+                     '_locales'))
     CopyExtensionLocalization('brave_extension',
                               brave_extension_locales_src_dir_path, config,
                               staging_dir, g_archive_inputs)

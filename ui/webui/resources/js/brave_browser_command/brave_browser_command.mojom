@@ -8,7 +8,7 @@
 module brave_browser_command.mojom;
 
 [EnableIf=enable_ai_chat]
-import "brave/components/ai_chat/core/common/mojom/ai_chat.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom";
 
 // The set of browser commands sent by brave.com content, and understood by the
 // browser. They may trigger actions in the browser such as navigating to a

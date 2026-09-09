@@ -87,7 +87,7 @@ def CheckOverriddenSourceIncludeOriginalHeaderOnlyViaQuotes(
 
 def CheckOverrides(input_api, output_api):
     items = []
-    with brave_chromium_utils.sys_path('//brave/tools/chromium_src'):
+    with brave_chromium_utils.sys_path('//BnesBrowser/tools/chromium_src'):
         import check_chromium_src
     # None will make filter pick Chromium's DEFAULT_FILES_TO_CHECK.
     file_filter = lambda f: input_api.FilterSourceFile(

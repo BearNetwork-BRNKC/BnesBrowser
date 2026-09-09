@@ -8,7 +8,7 @@
     "namespace": "webDiscovery",
     "description": "Includes Web Discovery functions for the Brave extension",
     "compiler_options": {
-      "implemented_in": "brave/browser/extensions/api/web_discovery_api.h"
+      "implemented_in": "BnesBrowser/browser/extensions/api/web_discovery_api.h"
     },
     "functions": [
       {

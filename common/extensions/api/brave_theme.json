@@ -7,7 +7,7 @@
     "namespace": "braveTheme",
     "description": "Use the <code>chrome.braveTheme</code> API to get/set brave theme",
     "compiler_options": {
-      "implemented_in": "brave/browser/extensions/api/brave_theme_api.h"
+      "implemented_in": "BnesBrowser/browser/extensions/api/brave_theme_api.h"
     },
     "functions": [
       {

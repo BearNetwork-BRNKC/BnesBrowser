@@ -82,7 +82,7 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("brave/third_party/rust/url/v2/crate/parse.h");
+        include!("BnesBrowser/third_party/rust/url/v2/crate/parse.h");
         #[allow(dead_code)]
         fn InitializeICUForTesting();
         fn ParseURL(url: &str) -> ParseResult;

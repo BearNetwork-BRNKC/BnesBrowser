@@ -152,7 +152,7 @@ if ($foundSrc) {
 # Expected brave mount: <chromium_src>/brave -> this tree when integrated
 $braveMount = $null
 if ($foundSrc) {
-  $braveMount = Join-Path $foundSrc "brave"
+  $braveMount = Join-Path $foundSrc "BnesBrowser"; if (-not (Test-Path $braveMount)) { $braveMount = Join-Path $foundSrc "brave" }
   if (Test-Path $braveMount) {
     Add-Result "brave_mount" "PASS" $braveMount
   } else {
@@ -205,7 +205,7 @@ if ($missing.Count -eq 0) {
 $componentsBuild = Join-Path $BraveCore "components\BUILD.gn"
 if (Test-Path $componentsBuild) {
   $text = Get-Content $componentsBuild -Raw
-  if ($text -match '//brave/bnes:unit_tests') {
+  if ($text -match '//(brave|BnesBrowser)/bnes:unit_tests') {
     Add-Result "bnes_gn_wire" "PASS" "components/BUILD.gn deps //brave/bnes:unit_tests"
   } else {
     Add-Result "bnes_gn_wire" "FAIL" "components/BUILD.gn missing //brave/bnes:unit_tests"

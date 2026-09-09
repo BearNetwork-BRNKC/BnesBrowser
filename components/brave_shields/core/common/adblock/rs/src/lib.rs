@@ -117,7 +117,7 @@ mod ffi {
 
     unsafe extern "C++" {
         include!(
-            "brave/components/brave_shields/core/common/adblock/resolver/adblock_domain_resolver.h"
+            "BnesBrowser/components/brave_shields/core/common/adblock/resolver/adblock_domain_resolver.h"
         );
 
         /// Wrapper function for

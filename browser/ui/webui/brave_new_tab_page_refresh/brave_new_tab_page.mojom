@@ -5,8 +5,8 @@
 
 module brave_new_tab_page_refresh.mojom;
 
-import "brave/components/brave_ads/core/mojom/brave_ads.mojom";
-import "brave/components/brave_vpn/common/mojom/brave_vpn.mojom";
+import "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom";
+import "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom";
 
 struct BraveBackground {
   string author;

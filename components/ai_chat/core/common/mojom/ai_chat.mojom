@@ -5,9 +5,9 @@
 
 module ai_chat.mojom;
 
-import "brave/components/ai_chat/core/common/mojom/common.mojom";
-import "brave/components/ai_chat/core/common/mojom/untrusted_frame.mojom";
-import "brave/components/ai_chat/core/common/mojom/tab_tracker.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/untrusted_frame.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/tab_tracker.mojom";
 import "mojo/public/mojom/base/time.mojom";
 import "url/mojom/url.mojom";
 

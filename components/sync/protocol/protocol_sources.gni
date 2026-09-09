@@ -4,6 +4,6 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 
 brave_sync_protocol_sources = [
-  "//brave/components/sync/protocol/ai_chat_specifics.proto",
-  "//brave/components/sync/protocol/brave_device_info_specifics.proto",
+  "//BnesBrowser/components/sync/protocol/ai_chat_specifics.proto",
+  "//BnesBrowser/components/sync/protocol/brave_device_info_specifics.proto",
 ]

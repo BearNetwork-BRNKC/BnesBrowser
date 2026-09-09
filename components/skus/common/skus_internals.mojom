@@ -5,7 +5,7 @@
 
 module skus.mojom;
 
-import "brave/components/skus/common/skus_sdk.mojom";
+import "BnesBrowser/components/skus/common/skus_sdk.mojom";
 
 interface SkusInternals {
   GetEventLog() => (string response);

@@ -5,7 +5,7 @@
 
 module ntp_background_images.mojom;
 
-import "brave/components/brave_ads/core/mojom/brave_ads.mojom";
+import "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom";
 
 interface SponsoredRichMediaAdEventHandler {
   MaybeReportRichMediaAdEvent(

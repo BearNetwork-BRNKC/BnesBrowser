@@ -46,7 +46,7 @@ def CheckLeoVariables(input_api, output_api):
     try:
         parts = [
             brave_chromium_utils.wspath(
-                '//brave/node_modules/@brave/leo/src/scripts/audit-tokens.js'),
+                '//BnesBrowser/node_modules/@brave/leo/src/scripts/audit-tokens.js'),
             '--ignore',
             '.storybook-out',
         ]
@@ -138,7 +138,7 @@ def CheckTypeScriptSuppressionsHaveReasons(input_api, output_api):
 def CheckPatchFormatted(input_api, output_api):
     cmd = [
         brave_chromium_utils.wspath(
-            '//brave/build/commands/scripts/format.ts'), '--presubmit'
+            '//BnesBrowser/build/commands/scripts/format.ts'), '--presubmit'
     ]
     if input_api.PRESUBMIT_ALL_BRAVE:
         cmd.append('--all-files')
@@ -162,7 +162,7 @@ def CheckESLint(input_api, output_api):
     if input_api.PRESUBMIT_ALL_BRAVE:
         cmd = [
             brave_chromium_utils.wspath(
-                '//brave/node_modules/eslint/bin/eslint.js'),
+                '//BnesBrowser/node_modules/eslint/bin/eslint.js'),
             '--quiet',
             '.',
         ]
@@ -416,7 +416,7 @@ def CheckNalaIconOverridesExistUpstream(input_api, output_api):
     patch, so it never conflicts during a roll. This check runs unconditionally
     so such removals surface as a presubmit failure.
     """
-    icons_gni = brave_chromium_utils.wspath('//brave/android/nala/icons.gni')
+    icons_gni = brave_chromium_utils.wspath('//BnesBrowser/android/nala/icons.gni')
     if not os.path.exists(icons_gni):
         return []
 
@@ -473,7 +473,7 @@ def CheckNalaRasterOverridesMatchUpstream(input_api, output_api):
 
     nala_icon_raster_overrides in android/nala/icons.gni generate density PNGs
     from a Nala vector to override upstream Chromium icons that ship as
-    density-qualified PNGs (see //brave/build/android/nala_vd_rasterizer). Each
+    density-qualified PNGs (see //BnesBrowser/build/android/nala_vd_rasterizer). Each
     entry hard-codes that the upstream icon is PNG-only and which density
     buckets it defines. A Chromium roll can silently invalidate either: convert
     the icon to a vector, or add a density bucket the override does not cover
@@ -481,7 +481,7 @@ def CheckNalaRasterOverridesMatchUpstream(input_api, output_api):
     roll because the overlay isn't a patch. This check runs unconditionally so
     such drift fails presubmit instead of shipping a stale or missing icon.
     """
-    icons_gni = brave_chromium_utils.wspath('//brave/android/nala/icons.gni')
+    icons_gni = brave_chromium_utils.wspath('//BnesBrowser/android/nala/icons.gni')
     if not os.path.exists(icons_gni):
         return []
     with open(icons_gni, encoding='utf-8') as f:

@@ -556,7 +556,7 @@ mod ffi {
 
     unsafe extern "C++" {
         include!(
-            "brave/components/brave_wallet/browser/zcash/rust/cxx_orchard_shard_tree_delegate.h"
+            "BnesBrowser/components/brave_wallet/browser/zcash/rust/cxx_orchard_shard_tree_delegate.h"
         );
 
         type CxxOrchardShardTreeDelegate;

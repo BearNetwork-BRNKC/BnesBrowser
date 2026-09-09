@@ -6,8 +6,8 @@
 module brave_new_tab_page.mojom;
 
 import "url/mojom/url.mojom";
-import "brave/components/brave_vpn/common/mojom/brave_vpn.mojom";
-import "brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom";
+import "BnesBrowser/components/brave_vpn/common/mojom/brave_vpn.mojom";
+import "BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom";
 
 const string kRandomSolidColorValue = "solid";
 const string kRandomGradientColorValue = "gradient";

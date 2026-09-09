@@ -68,11 +68,11 @@ class EntryLineParseTest(unittest.TestCase):
         `rewrite_plan` to orphan-drop the reassign."""
         entry_line = rebase.EntryLine.parse(
             'pick 04d3a656bb1 # reassign!859ab9caa74! [cr150][ios] Add '
-            '//brave/ios/browser/svg to visibility for //third_party/expat\n')
+            '//BnesBrowser/ios/browser/svg to visibility for //third_party/expat\n')
         self.assertEqual(entry_line.subcommand, ['reassign', '859ab9caa74'])
         self.assertEqual(
             entry_line.message,
-            '[cr150][ios] Add //brave/ios/browser/svg to visibility for '
+            '[cr150][ios] Add //BnesBrowser/ios/browser/svg to visibility for '
             '//third_party/expat')
         self.assertEqual(entry_line.reassign_target_hash, '859ab9caa74')
 
@@ -578,10 +578,10 @@ class RewritePlanTest(unittest.TestCase):
         silently dropped and the target was left untouched."""
         path = self._todo(
             'pick 7606227b5da # [cr150][ios] Add backend promo provider\n'
-            'pick 859ab9caa74 # [cr150][ios] Add //brave/ios/browser/svg '
+            'pick 859ab9caa74 # [cr150][ios] Add //BnesBrowser/ios/browser/svg '
             'to visibility for //third_party/expat\n'
             'pick 04d3a656bb1 # reassign!859ab9caa74! [cr150][ios] Add '
-            '//brave/ios/browser/svg to visibility for '
+            '//BnesBrowser/ios/browser/svg to visibility for '
             '//third_party/expat # empty\n'
             'pick 9c160e03412 # [cr150] wip-reassing-bug\n')
 
@@ -591,9 +591,9 @@ class RewritePlanTest(unittest.TestCase):
             path.read_text(),
             'pick 7606227b5da # [cr150][ios] Add backend promo provider\n'
             'pick 04d3a656bb1 # reassign!859ab9caa74! [cr150][ios] Add '
-            '//brave/ios/browser/svg to visibility for '
+            '//BnesBrowser/ios/browser/svg to visibility for '
             '//third_party/expat # empty\n'
-            'squash 859ab9caa74 # [cr150][ios] Add //brave/ios/browser/svg '
+            'squash 859ab9caa74 # [cr150][ios] Add //BnesBrowser/ios/browser/svg '
             'to visibility for //third_party/expat\n'
             'pick 9c160e03412 # [cr150] wip-reassing-bug\n')
 

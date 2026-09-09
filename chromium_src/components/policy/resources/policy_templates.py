@@ -25,7 +25,7 @@ def _LoadPolicies(orig_func):
     #
     # Brave specific entries are get copied into place by `update_policy_files`.
     # We copy the files from:
-    # `//brave/components/policy/resources/templates/policy_definitions/BraveSoftware` # pylint: disable=line-too-long
+    # `//BnesBrowser/components/policy/resources/templates/policy_definitions/BraveSoftware` # pylint: disable=line-too-long
     # to:
     # `//components/policy/resources/templates/policy_definitions`
     policy_definition_yaml = policies['policy_definitions']
@@ -69,7 +69,7 @@ def sync_policy_files():
     #
     # That auto-generated value (ex: `policy::key::kTorDisabled`) is referenced
     # when we map to a preference in our policy map:
-    # `//brave/browser/policy/brave_simple_policy_map.h`
+    # `//BnesBrowser/browser/policy/brave_simple_policy_map.h`
     #
     # When the code below is ran this will copy the group policy files from
     # Brave's policy definitions to Chromium's policy definitions.

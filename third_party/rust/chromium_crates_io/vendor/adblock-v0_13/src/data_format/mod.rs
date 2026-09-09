@@ -90,7 +90,7 @@ mod tests {
 
         let mut hasher = sha2::Sha512::new();
 
-        hasher.update("brave/adblock-rust");
+        hasher.update("BnesBrowser/adblock-rust");
 
         let result = hasher.finalize();
 

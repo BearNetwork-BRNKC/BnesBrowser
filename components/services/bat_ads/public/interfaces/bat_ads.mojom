@@ -4,7 +4,7 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 module bat_ads.mojom;
 
-import "brave/components/brave_ads/core/mojom/brave_ads.mojom";
+import "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom";
 import "mojo/public/mojom/base/big_string.mojom";
 import "mojo/public/mojom/base/file.mojom";
 import "mojo/public/mojom/base/file_path.mojom";

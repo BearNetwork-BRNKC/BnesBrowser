@@ -15,7 +15,7 @@ with brave_chromium_utils.sys_path('//third_party/node'):
 @override_utils.override_function(globals())
 def Run(_original_function, **kwargs):
     node_args = [
-        brave_chromium_utils.wspath('//brave/node_modules/eslint/bin/eslint'),
+        brave_chromium_utils.wspath('//BnesBrowser/node_modules/eslint/bin/eslint'),
         '--quiet'
     ]
     if os.environ.get('PRESUBMIT_FIX') == '1':

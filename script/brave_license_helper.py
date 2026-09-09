@@ -396,13 +396,13 @@ def ReportBraveIncompleteMetadataFile(path):
             'License File. You can fix it in one of these ways:'
             '\n* If this is a Rust crate that you added and it has a custom '
             'License File name, you can configure the custom name in '
-            '//brave/third_party/rust/chromium_crates_io/gnrt_config.toml.'
+            '//BnesBrowser/third_party/rust/chromium_crates_io/gnrt_config.toml.'
             '\n* If this is a Rust crate that does not have a LICENSE file, '
             'then either add LICENSE file in the same folder where the '
             'README.chromium file is if the code has MIT license, or configure '
             'the custom relative path to shared Apache-2.0 or MPL-2.0 licenses '
-            '(in //brave/commone/licenses) in '
-            '//brave/third_party/rust/chromium_crates_io/gnrt_config.toml'
+            '(in //BnesBrowser/commone/licenses) in '
+            '//BnesBrowser/third_party/rust/chromium_crates_io/gnrt_config.toml'
             '\n* If this is a Rust crate that is just a reference to an '
             'upstream crate, then add it as an exception to prune_paths in '
-            '//brave/script/brave_license_helper.py.\n')
+            '//BnesBrowser/script/brave_license_helper.py.\n')

@@ -153,6 +153,8 @@ def _ApplyBraveAstChanges(brave_ast, parsed_ast):
 # be used.
 def _PatchInBraveMojomAst(mojom_abspath, parsed_ast, enabled_features):
     # Get this script absolute location.
+    # NOTE: this override is exec'd inside the chromium mojom_parser module,
+    # so __file__ is the chromium copy: <src>/mojo/public/tools/mojom/.
     this_py_path = os.path.realpath(__file__)
 
     # Get the original chromium dir location.
@@ -162,12 +164,14 @@ def _PatchInBraveMojomAst(mojom_abspath, parsed_ast, enabled_features):
     if len(chromium_original_dir) >= len(mojom_abspath) + 1:
         raise RuntimeError("Could not get original chromium src dir")
 
-    # Build brave/chromium_src path.
-    chromium_src_abspath = os.path.join(chromium_original_dir, 'brave',
+    # Build the product chromium_src path.
+    # De-brave migration (2026-09-09): the legacy <src>\brave junction is
+    # removed; chromium_src now lives at <src>\BnesBrowser\chromium_src.
+    chromium_src_abspath = os.path.join(chromium_original_dir, 'BnesBrowser',
                                         'chromium_src')
     if not os.path.isdir(chromium_src_abspath):
         raise RuntimeError(
-            "Could not find brave/chromium_src. %s is not a dir" %
+            "Could not find BnesBrowser/chromium_src. %s is not a dir" %
             chromium_src_abspath)
 
     # Relative path.

@@ -85,7 +85,7 @@ def fetch_and_stage(dep_url, dest_dir, sha256):
 
     # The archive nests everything under a top-level 'wintun/' folder.
     # Extract to a scratch dir, then lift the inner contents up so
-    # callers reference '//brave/third_party/wintun/...' directly.
+    # callers reference '//BnesBrowser/third_party/wintun/...' directly.
     inner = join(dest_dir, 'wintun')
     if not exists(inner):
         raise ValueError(f'Expected a top-level "wintun/" directory in '

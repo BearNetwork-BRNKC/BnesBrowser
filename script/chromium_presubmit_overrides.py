@@ -27,7 +27,7 @@ def load_presubmit_config():
         return json5.load(
             open(
                 brave_chromium_utils.wspath(
-                    '//brave/chromium_presubmit_config.json5')))
+                    '//BnesBrowser/chromium_presubmit_config.json5')))
 
 
 config = load_presubmit_config()

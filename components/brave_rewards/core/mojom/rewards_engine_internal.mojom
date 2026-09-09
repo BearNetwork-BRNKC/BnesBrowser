@@ -5,7 +5,7 @@
 
 module brave_rewards.mojom;
 
-import "brave/components/brave_rewards/core/mojom/rewards.mojom";
+import "BnesBrowser/components/brave_rewards/core/mojom/rewards.mojom";
 
 // The following definitions are used internally by the Rewards engine.
 

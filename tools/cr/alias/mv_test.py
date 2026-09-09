@@ -372,7 +372,7 @@ class ReferencesTest(_Base):
         # Consumer at an unrelated dir uses a root reference.
         self._commit(
             'browser/BUILD.gn',
-            'deps = [ "//brave/components/api_request_helper:test_support" ]\n'
+            'deps = [ "//BnesBrowser/components/api_request_helper:test_support" ]\n'
         )
         # Sibling under components/ uses a relative reference.
         self._commit('components/ai_chat/BUILD.gn',
@@ -386,7 +386,7 @@ class ReferencesTest(_Base):
 
         browser_content = (self._brave / 'browser' /
                            'BUILD.gn').read_text(encoding='utf-8')
-        self.assertIn('"//brave/components/api_test:test_support"',
+        self.assertIn('"//BnesBrowser/components/api_test:test_support"',
                       browser_content)
         self.assertNotIn('api_request_helper', browser_content)
 

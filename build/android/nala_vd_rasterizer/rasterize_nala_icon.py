@@ -7,7 +7,7 @@
 
 Invokes the NalaVdRasterizer java_binary wrapper once, rendering the input
 vector into every requested density bucket. Used by the per-icon actions in
-//brave/android/nala/BUILD.gn to override upstream raster icons with PNGs
+//BnesBrowser/android/nala/BUILD.gn to override upstream raster icons with PNGs
 derived from the Nala vector (the single source of truth).
 """
 

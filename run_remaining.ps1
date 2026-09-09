@@ -36,7 +36,7 @@ $BuildRoot = Split-Path -Parent $SourceRoot
 # 設定 PYTHONPATH 包含 BnesBrowser/script 與 brave/script，供 Python 工具鏈載入 brave_chromium_utils
 $pythonPaths = @(
     (Join-Path $ProjectRoot 'script'),
-    (Join-Path $SourceRoot 'brave\script')
+    (Join-Path $SourceRoot 'BnesBrowser\script')
 )
 if ($env:PYTHONPATH) {
     $env:PYTHONPATH = ($pythonPaths -join [System.IO.Path]::PathSeparator) + [System.IO.Path]::PathSeparator + $env:PYTHONPATH

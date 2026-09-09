@@ -5,8 +5,8 @@
 
 module ai_chat.mojom;
 
-import "brave/components/ai_chat/core/common/mojom/ai_chat.mojom";
-import "brave/components/ai_chat/core/common/mojom/common.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/ai_chat.mojom";
+import "BnesBrowser/components/ai_chat/core/common/mojom/common.mojom";
 
 enum OperationResult {
   Success,

@@ -40,7 +40,7 @@ BINARY_CHECKSUMS = {
 }
 
 # Download directory (relative to brave core)
-INSTALL_DIR = brave_chromium_utils.wspath('//brave/third_party/opengrep/bin')
+INSTALL_DIR = brave_chromium_utils.wspath('//BnesBrowser/third_party/opengrep/bin')
 
 
 def GetPlatformDistName():

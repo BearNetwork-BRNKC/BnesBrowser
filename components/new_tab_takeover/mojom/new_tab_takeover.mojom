@@ -6,8 +6,8 @@
 module new_tab_takeover.mojom;
 
 import "url/mojom/url.mojom";
-import "brave/components/ntp_background_images/browser/mojom/ntp_background_images.mojom";
-import "brave/components/brave_ads/core/mojom/brave_ads.mojom";
+import "BnesBrowser/components/ntp_background_images/browser/mojom/ntp_background_images.mojom";
+import "BnesBrowser/components/brave_ads/core/mojom/brave_ads.mojom";
 
 interface NewTabTakeover {
   SetSponsoredRichMediaAdEventHandler(
