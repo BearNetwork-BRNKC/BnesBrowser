@@ -39,6 +39,20 @@ pnpm install
 
 > **注意**：初次同步 Chromium 源碼需下載數十 GB 的資料，完整建置依硬體規格可能需要數小時。
 
+## 關於程式碼簽章與 SmartScreen 警告
+
+BnesBrowser 目前**未購買商業程式碼簽章憑證**，因此首次執行安裝程式時，Windows SmartScreen 可能顯示「Windows 已保護您的電腦」警告。請點選 **「更多資訊 → 仍要執行」** 繼續安裝。
+
+這是我們的刻意選擇，而非疏忽：
+
+> 商業 CA（憑證授權單位）體系的本質是**付費換取信任**——花錢就被標記為安全，不花錢就被標記為「不明的發行者」。這種中心化的信任評級機制，與 Web3 世界「信任源於密碼學驗證而非機構背書」的精神相悖。
+>
+> BnesBrowser 選擇以**密碼學方式**建立更新完整性（版本清單經離線保管的金鑰簽署、Releases 頁面公開 SHA-256 供自行驗證），而非向中心化機構購買信任評級。請務必在安裝前透過 `Get-FileHash`（PowerShell）比對 Releases 頁面公告的 SHA-256。
+
+## 更新
+
+BnesBrowser 會在偵測到新版本時於瀏覽器內顯示更新通知，並引導至本頁面的 [Releases](https://github.com/BearNetwork-BRNKC/BnesBrowser/releases) 下載最新版本。
+
 ## 參與貢獻
 
 歡迎提交 Issue 與 Pull Request。提交前請參閱 [CONTRIBUTING.md](./CONTRIBUTING.md)。
